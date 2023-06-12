@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
-            pictureBox2 = new PictureBox();
             label2 = new Label();
             label1 = new Label();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -66,15 +66,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1348, 876);
             panel1.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = Properties.Resources.Log_In_admin__8_;
-            pictureBox2.Location = new Point(813, 714);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(254, 47);
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -122,6 +113,15 @@
             textBox1.TabIndex = 1;
             textBox1.Click += textBox1_Click;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.Log_In_admin__8_;
+            pictureBox2.Location = new Point(814, 715);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(255, 47);
+            pictureBox2.TabIndex = 3;
+            pictureBox2.TabStop = false;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -142,10 +142,10 @@
 
         private PictureBox pictureBox1;
         private Panel panel1;
-        private PictureBox pictureBox2;
         private Label label2;
         private Label label1;
         private TextBox textBox2;
         private TextBox textBox1;
+        private PictureBox pictureBox2;
     }
 }

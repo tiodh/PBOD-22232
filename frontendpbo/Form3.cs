@@ -23,7 +23,6 @@ namespace frontendpbo
                 label2.Location = new System.Drawing.Point(679, 543);
                 textBox1.Location = new System.Drawing.Point(679, 412);
                 textBox2.Location = new System.Drawing.Point(679, 543);
-                textBox2.Location = new System.Drawing.Point(813, 714);
                 pictureBox2.Location = new System.Drawing.Point(813, 714);
             }
 
@@ -64,6 +63,11 @@ namespace frontendpbo
             {
                 label1.Visible = true;
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
