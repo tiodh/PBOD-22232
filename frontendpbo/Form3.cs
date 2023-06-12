@@ -24,6 +24,7 @@ namespace frontendpbo
                 textBox1.Location = new System.Drawing.Point(679, 412);
                 textBox2.Location = new System.Drawing.Point(679, 543);
                 textBox2.Location = new System.Drawing.Point(813, 714);
+                textBox2.Location = new System.Drawing.Point(813, 714);
             }
 
 
