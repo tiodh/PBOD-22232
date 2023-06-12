@@ -69,6 +69,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackgroundImage = Properties.Resources.Log_In_admin__8_;
             pictureBox2.Location = new Point(813, 714);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(254, 47);
