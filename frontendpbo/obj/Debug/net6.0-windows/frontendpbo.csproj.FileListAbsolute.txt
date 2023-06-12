@@ -55,3 +55,26 @@ E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\fron
 E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete

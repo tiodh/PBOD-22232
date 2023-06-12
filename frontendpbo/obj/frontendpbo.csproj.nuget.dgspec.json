@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\PBO\\PROJEEK KELASS\\Coba Github\\frontendpbo\\frontendpbo\\frontendpbo.csproj": {}
+    "C:\\Users\\ASUS\\Source\\Repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\PBO\\PROJEEK KELASS\\Coba Github\\frontendpbo\\frontendpbo\\frontendpbo.csproj": {
+    "C:\\Users\\ASUS\\Source\\Repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\PBO\\PROJEEK KELASS\\Coba Github\\frontendpbo\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Source\\Repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\PBO\\PROJEEK KELASS\\Coba Github\\frontendpbo\\frontendpbo\\frontendpbo.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\PBO\\PROJEEK KELASS\\Coba Github\\frontendpbo\\frontendpbo\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Source\\Repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Source\\Repos\\PBOD-22232\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +44,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

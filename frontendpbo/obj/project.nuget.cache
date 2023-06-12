@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "eDPgkR10Q/7vUyyUh1qyuFqsjqm9ubKapk4UZUnGxFVTX+KZ7P9g0zzjzSrszpm6g2DOZQXvW8fg/rOP/cF0IA==",
+  "dgSpecHash": "e4g35kH6NpP/WsP3BUSku+Vx4/8nRUSQIcqVEBgHy2q/Ph1XwurMZXfpKpE1HyGsBajKuL9ygb1fqWOYWlW6bQ==",
   "success": true,
-  "projectFilePath": "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\PBO\\PROJEEK KELASS\\Coba Github\\frontendpbo\\frontendpbo\\frontendpbo.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ASUS\\Source\\Repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
