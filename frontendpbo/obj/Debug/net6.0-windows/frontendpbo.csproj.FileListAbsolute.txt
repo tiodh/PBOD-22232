@@ -1,0 +1,57 @@
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\TM\DATA PENGGUNA\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
