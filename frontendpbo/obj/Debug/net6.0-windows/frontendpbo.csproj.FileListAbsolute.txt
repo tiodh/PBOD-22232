@@ -55,3 +55,23 @@ E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\fron
 E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 E:\RANDOM FILE KULIAH\SEMESTER 2\PBO\PROJEEK KELASS\Coba Github\frontendpbo\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+D:\PROJEKKELASPBOD\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
