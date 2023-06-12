@@ -16,6 +16,22 @@ namespace frontendpbo
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            Rectangle bounds = Screen.PrimaryScreen.Bounds;
+            //if (bounds.Width == 1920 && bounds.Height == 1080)
+            //{
+            //    label1.Location = new System.Drawing.Point(679, 412);
+            //    label2.Location = new System.Drawing.Point(679, 543);
+            //    textBox1.Location = new System.Drawing.Point(679, 412);
+            //    textBox2.Location = new System.Drawing.Point(679, 543);
+            //}
+            //else if(bounds.Width == 1920 && bounds.Height == 1080)
+            //{
+            //    label1.Location = new System.Drawing.Point(679, 412);
+            //    label2.Location = new System.Drawing.Point(679, 543);
+            //    textBox1.Location = new System.Drawing.Point(679, 412);
+            //    textBox2.Location = new System.Drawing.Point(679, 543);
+            //}
+
 
         }
 
