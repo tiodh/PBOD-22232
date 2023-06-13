@@ -28,671 +28,671 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.side = new System.Windows.Forms.Panel();
-            this.menu = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.mainside = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.edit11 = new System.Windows.Forms.Button();
-            this.ulasan = new System.Windows.Forms.Button();
-            this.edit10 = new System.Windows.Forms.Button();
-            this.keamanan = new System.Windows.Forms.Button();
-            this.edit9 = new System.Windows.Forms.Button();
-            this.transaksi = new System.Windows.Forms.Button();
-            this.edit8 = new System.Windows.Forms.Button();
-            this.informasi = new System.Windows.Forms.Button();
-            this.edit7 = new System.Windows.Forms.Button();
-            this.umkm = new System.Windows.Forms.Button();
-            this.edit6 = new System.Windows.Forms.Button();
-            this.acara = new System.Windows.Forms.Button();
-            this.edit5 = new System.Windows.Forms.Button();
-            this.saranaPrasarana = new System.Windows.Forms.Button();
-            this.edit4 = new System.Windows.Forms.Button();
-            this.tempatMakan = new System.Windows.Forms.Button();
-            this.edit3 = new System.Windows.Forms.Button();
-            this.transportasi = new System.Windows.Forms.Button();
-            this.edit2 = new System.Windows.Forms.Button();
-            this.penginapan = new System.Windows.Forms.Button();
-            this.edit1 = new System.Windows.Forms.Button();
-            this.wisata = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dashboard = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.side.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menu)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.mainside.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.SuspendLayout();
+            side = new Panel();
+            menu = new PictureBox();
+            panel3 = new Panel();
+            pictureBox1 = new PictureBox();
+            panel2 = new Panel();
+            label1 = new Label();
+            mainside = new Panel();
+            panel4 = new Panel();
+            button4 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            panel1 = new Panel();
+            edit11 = new Button();
+            ulasan = new Button();
+            edit10 = new Button();
+            keamanan = new Button();
+            edit9 = new Button();
+            transaksi = new Button();
+            edit8 = new Button();
+            informasi = new Button();
+            edit7 = new Button();
+            umkm = new Button();
+            edit6 = new Button();
+            acara = new Button();
+            edit5 = new Button();
+            saranaPrasarana = new Button();
+            edit4 = new Button();
+            tempatMakan = new Button();
+            edit3 = new Button();
+            transportasi = new Button();
+            edit2 = new Button();
+            penginapan = new Button();
+            edit1 = new Button();
+            wisata = new Button();
+            panel5 = new Panel();
+            button1 = new Button();
+            dashboard = new Button();
+            pictureBox2 = new PictureBox();
+            side.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)menu).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
+            mainside.SuspendLayout();
+            panel4.SuspendLayout();
+            panel1.SuspendLayout();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            SuspendLayout();
             // 
             // side
             // 
-            this.side.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.side.BackgroundImage = global::frontendpbo.Properties.Resources.sidebar;
-            this.side.Controls.Add(this.menu);
-            this.side.Dock = System.Windows.Forms.DockStyle.Left;
-            this.side.Location = new System.Drawing.Point(0, 0);
-            this.side.Margin = new System.Windows.Forms.Padding(2);
-            this.side.Name = "side";
-            this.side.Size = new System.Drawing.Size(53, 957);
-            this.side.TabIndex = 0;
+            side.BackColor = SystemColors.ActiveCaption;
+            side.BackgroundImage = Properties.Resources.sidebar;
+            side.Controls.Add(menu);
+            side.Dock = DockStyle.Left;
+            side.Location = new Point(0, 0);
+            side.Margin = new Padding(2);
+            side.Name = "side";
+            side.Size = new Size(53, 957);
+            side.TabIndex = 0;
             // 
             // menu
             // 
-            this.menu.BackColor = System.Drawing.Color.Transparent;
-            this.menu.Image = global::frontendpbo.Properties.Resources.garis3;
-            this.menu.Location = new System.Drawing.Point(8, 20);
-            this.menu.Margin = new System.Windows.Forms.Padding(2);
-            this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(37, 55);
-            this.menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu.TabIndex = 0;
-            this.menu.TabStop = false;
+            menu.BackColor = Color.Transparent;
+            menu.Image = Properties.Resources.garis3;
+            menu.Location = new Point(8, 20);
+            menu.Margin = new Padding(2);
+            menu.Name = "menu";
+            menu.Size = new Size(37, 55);
+            menu.SizeMode = PictureBoxSizeMode.Zoom;
+            menu.TabIndex = 0;
+            menu.TabStop = false;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(9, 9);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(4);
-            this.panel3.Size = new System.Drawing.Size(1524, 82);
-            this.panel3.TabIndex = 2;
+            panel3.Controls.Add(pictureBox1);
+            panel3.Dock = DockStyle.Bottom;
+            panel3.Location = new Point(9, 9);
+            panel3.Margin = new Padding(2);
+            panel3.Name = "panel3";
+            panel3.Padding = new Padding(4);
+            panel3.Size = new Size(1524, 82);
+            panel3.TabIndex = 2;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::frontendpbo.Properties.Resources.Rectangle_28__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1516, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.Rectangle_28__1_;
+            pictureBox1.Location = new Point(4, 4);
+            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1516, 74);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(382, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
-            this.panel2.Size = new System.Drawing.Size(1542, 91);
-            this.panel2.TabIndex = 1;
+            panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(panel3);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(382, 0);
+            panel2.Margin = new Padding(2);
+            panel2.Name = "panel2";
+            panel2.Padding = new Padding(9, 0, 9, 0);
+            panel2.Size = new Size(1542, 91);
+            panel2.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 248);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 20);
-            this.label1.TabIndex = 4;
+            label1.AutoSize = true;
+            label1.Location = new Point(59, 248);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 20);
+            label1.TabIndex = 4;
             // 
             // mainside
             // 
-            this.mainside.AutoScroll = true;
-            this.mainside.BackColor = System.Drawing.Color.Transparent;
-            this.mainside.BackgroundImage = global::frontendpbo.Properties.Resources.sidebar;
-            this.mainside.Controls.Add(this.panel4);
-            this.mainside.Controls.Add(this.panel1);
-            this.mainside.Controls.Add(this.panel5);
-            this.mainside.Controls.Add(this.label1);
-            this.mainside.Controls.Add(this.pictureBox2);
-            this.mainside.Dock = System.Windows.Forms.DockStyle.Left;
-            this.mainside.Location = new System.Drawing.Point(53, 0);
-            this.mainside.Margin = new System.Windows.Forms.Padding(2);
-            this.mainside.Name = "mainside";
-            this.mainside.Size = new System.Drawing.Size(329, 957);
-            this.mainside.TabIndex = 0;
+            mainside.AutoScroll = true;
+            mainside.BackColor = Color.Transparent;
+            mainside.BackgroundImage = Properties.Resources.sidebar;
+            mainside.Controls.Add(panel4);
+            mainside.Controls.Add(panel1);
+            mainside.Controls.Add(panel5);
+            mainside.Controls.Add(label1);
+            mainside.Controls.Add(pictureBox2);
+            mainside.Dock = DockStyle.Left;
+            mainside.Location = new Point(53, 0);
+            mainside.Margin = new Padding(2);
+            mainside.Name = "mainside";
+            mainside.Size = new Size(329, 957);
+            mainside.TabIndex = 0;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 1224);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(308, 166);
-            this.panel4.TabIndex = 15;
+            panel4.Controls.Add(button4);
+            panel4.Controls.Add(button3);
+            panel4.Controls.Add(button2);
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(0, 1224);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(308, 166);
+            panel4.TabIndex = 15;
             // 
             // button4
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(0, 90);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(308, 45);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Data Riwayat Kunjungan";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
+            button4.Dock = DockStyle.Top;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button4.Location = new Point(0, 90);
+            button4.Name = "button4";
+            button4.Size = new Size(308, 45);
+            button4.TabIndex = 2;
+            button4.Text = "Data Riwayat Kunjungan";
+            button4.TextAlign = ContentAlignment.MiddleLeft;
+            button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(0, 45);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(308, 45);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Data Pengunjung";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
+            button3.Dock = DockStyle.Top;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button3.Location = new Point(0, 45);
+            button3.Name = "button3";
+            button3.Size = new Size(308, 45);
+            button3.TabIndex = 1;
+            button3.Text = "Data Pengunjung";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(308, 45);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Data Pengguna";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            button2.Dock = DockStyle.Top;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Location = new Point(0, 0);
+            button2.Name = "button2";
+            button2.Size = new Size(308, 45);
+            button2.TabIndex = 0;
+            button2.Text = "Data Pengguna";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel1.Controls.Add(this.edit11);
-            this.panel1.Controls.Add(this.ulasan);
-            this.panel1.Controls.Add(this.edit10);
-            this.panel1.Controls.Add(this.keamanan);
-            this.panel1.Controls.Add(this.edit9);
-            this.panel1.Controls.Add(this.transaksi);
-            this.panel1.Controls.Add(this.edit8);
-            this.panel1.Controls.Add(this.informasi);
-            this.panel1.Controls.Add(this.edit7);
-            this.panel1.Controls.Add(this.umkm);
-            this.panel1.Controls.Add(this.edit6);
-            this.panel1.Controls.Add(this.acara);
-            this.panel1.Controls.Add(this.edit5);
-            this.panel1.Controls.Add(this.saranaPrasarana);
-            this.panel1.Controls.Add(this.edit4);
-            this.panel1.Controls.Add(this.tempatMakan);
-            this.panel1.Controls.Add(this.edit3);
-            this.panel1.Controls.Add(this.transportasi);
-            this.panel1.Controls.Add(this.edit2);
-            this.panel1.Controls.Add(this.penginapan);
-            this.panel1.Controls.Add(this.edit1);
-            this.panel1.Controls.Add(this.wisata);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 204);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.panel1.Size = new System.Drawing.Size(308, 1020);
-            this.panel1.TabIndex = 14;
+            panel1.BackColor = Color.Transparent;
+            panel1.BackgroundImageLayout = ImageLayout.None;
+            panel1.Controls.Add(edit11);
+            panel1.Controls.Add(ulasan);
+            panel1.Controls.Add(edit10);
+            panel1.Controls.Add(keamanan);
+            panel1.Controls.Add(edit9);
+            panel1.Controls.Add(transaksi);
+            panel1.Controls.Add(edit8);
+            panel1.Controls.Add(informasi);
+            panel1.Controls.Add(edit7);
+            panel1.Controls.Add(umkm);
+            panel1.Controls.Add(edit6);
+            panel1.Controls.Add(acara);
+            panel1.Controls.Add(edit5);
+            panel1.Controls.Add(saranaPrasarana);
+            panel1.Controls.Add(edit4);
+            panel1.Controls.Add(tempatMakan);
+            panel1.Controls.Add(edit3);
+            panel1.Controls.Add(transportasi);
+            panel1.Controls.Add(edit2);
+            panel1.Controls.Add(penginapan);
+            panel1.Controls.Add(edit1);
+            panel1.Controls.Add(wisata);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 204);
+            panel1.Name = "panel1";
+            panel1.Padding = new Padding(15, 0, 0, 0);
+            panel1.Size = new Size(308, 1020);
+            panel1.TabIndex = 14;
             // 
             // edit11
             // 
-            this.edit11.BackColor = System.Drawing.Color.Violet;
-            this.edit11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edit11.FlatAppearance.BorderSize = 0;
-            this.edit11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit11.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edit11.Location = new System.Drawing.Point(15, 945);
-            this.edit11.Margin = new System.Windows.Forms.Padding(0);
-            this.edit11.Name = "edit11";
-            this.edit11.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.edit11.Size = new System.Drawing.Size(293, 45);
-            this.edit11.TabIndex = 43;
-            this.edit11.Text = "Edit";
-            this.edit11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit11.UseVisualStyleBackColor = false;
+            edit11.BackColor = Color.Violet;
+            edit11.Dock = DockStyle.Top;
+            edit11.FlatAppearance.BorderSize = 0;
+            edit11.FlatStyle = FlatStyle.Flat;
+            edit11.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            edit11.Location = new Point(15, 945);
+            edit11.Margin = new Padding(0);
+            edit11.Name = "edit11";
+            edit11.Padding = new Padding(20, 0, 0, 0);
+            edit11.Size = new Size(293, 45);
+            edit11.TabIndex = 43;
+            edit11.Text = "Edit";
+            edit11.TextAlign = ContentAlignment.MiddleLeft;
+            edit11.UseVisualStyleBackColor = false;
             // 
             // ulasan
             // 
-            this.ulasan.BackColor = System.Drawing.Color.Transparent;
-            this.ulasan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ulasan.FlatAppearance.BorderSize = 0;
-            this.ulasan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ulasan.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ulasan.Location = new System.Drawing.Point(15, 900);
-            this.ulasan.Margin = new System.Windows.Forms.Padding(0);
-            this.ulasan.Name = "ulasan";
-            this.ulasan.Size = new System.Drawing.Size(293, 45);
-            this.ulasan.TabIndex = 42;
-            this.ulasan.Text = "Ulasan dan Komentar";
-            this.ulasan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ulasan.UseVisualStyleBackColor = false;
+            ulasan.BackColor = Color.Transparent;
+            ulasan.Dock = DockStyle.Top;
+            ulasan.FlatAppearance.BorderSize = 0;
+            ulasan.FlatStyle = FlatStyle.Flat;
+            ulasan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            ulasan.Location = new Point(15, 900);
+            ulasan.Margin = new Padding(0);
+            ulasan.Name = "ulasan";
+            ulasan.Size = new Size(293, 45);
+            ulasan.TabIndex = 42;
+            ulasan.Text = "Ulasan dan Komentar";
+            ulasan.TextAlign = ContentAlignment.MiddleLeft;
+            ulasan.UseVisualStyleBackColor = false;
             // 
             // edit10
             // 
-            this.edit10.BackColor = System.Drawing.Color.Transparent;
-            this.edit10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edit10.FlatAppearance.BorderSize = 0;
-            this.edit10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit10.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edit10.Location = new System.Drawing.Point(15, 855);
-            this.edit10.Margin = new System.Windows.Forms.Padding(0);
-            this.edit10.Name = "edit10";
-            this.edit10.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.edit10.Size = new System.Drawing.Size(293, 45);
-            this.edit10.TabIndex = 40;
-            this.edit10.Text = "Edit";
-            this.edit10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit10.UseVisualStyleBackColor = false;
+            edit10.BackColor = Color.Transparent;
+            edit10.Dock = DockStyle.Top;
+            edit10.FlatAppearance.BorderSize = 0;
+            edit10.FlatStyle = FlatStyle.Flat;
+            edit10.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            edit10.Location = new Point(15, 855);
+            edit10.Margin = new Padding(0);
+            edit10.Name = "edit10";
+            edit10.Padding = new Padding(20, 0, 0, 0);
+            edit10.Size = new Size(293, 45);
+            edit10.TabIndex = 40;
+            edit10.Text = "Edit";
+            edit10.TextAlign = ContentAlignment.MiddleLeft;
+            edit10.UseVisualStyleBackColor = false;
             // 
             // keamanan
             // 
-            this.keamanan.BackColor = System.Drawing.Color.Transparent;
-            this.keamanan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.keamanan.FlatAppearance.BorderSize = 0;
-            this.keamanan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.keamanan.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.keamanan.Location = new System.Drawing.Point(15, 810);
-            this.keamanan.Margin = new System.Windows.Forms.Padding(0);
-            this.keamanan.Name = "keamanan";
-            this.keamanan.Size = new System.Drawing.Size(293, 45);
-            this.keamanan.TabIndex = 39;
-            this.keamanan.Text = "Keamanan dan Keselamatan";
-            this.keamanan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.keamanan.UseVisualStyleBackColor = false;
+            keamanan.BackColor = Color.Transparent;
+            keamanan.Dock = DockStyle.Top;
+            keamanan.FlatAppearance.BorderSize = 0;
+            keamanan.FlatStyle = FlatStyle.Flat;
+            keamanan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            keamanan.Location = new Point(15, 810);
+            keamanan.Margin = new Padding(0);
+            keamanan.Name = "keamanan";
+            keamanan.Size = new Size(293, 45);
+            keamanan.TabIndex = 39;
+            keamanan.Text = "Keamanan dan Keselamatan";
+            keamanan.TextAlign = ContentAlignment.MiddleLeft;
+            keamanan.UseVisualStyleBackColor = false;
             // 
             // edit9
             // 
-            this.edit9.BackColor = System.Drawing.Color.Transparent;
-            this.edit9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edit9.FlatAppearance.BorderSize = 0;
-            this.edit9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit9.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edit9.Location = new System.Drawing.Point(15, 765);
-            this.edit9.Margin = new System.Windows.Forms.Padding(0);
-            this.edit9.Name = "edit9";
-            this.edit9.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.edit9.Size = new System.Drawing.Size(293, 45);
-            this.edit9.TabIndex = 26;
-            this.edit9.Text = "Edit";
-            this.edit9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit9.UseVisualStyleBackColor = false;
+            edit9.BackColor = Color.Transparent;
+            edit9.Dock = DockStyle.Top;
+            edit9.FlatAppearance.BorderSize = 0;
+            edit9.FlatStyle = FlatStyle.Flat;
+            edit9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            edit9.Location = new Point(15, 765);
+            edit9.Margin = new Padding(0);
+            edit9.Name = "edit9";
+            edit9.Padding = new Padding(20, 0, 0, 0);
+            edit9.Size = new Size(293, 45);
+            edit9.TabIndex = 26;
+            edit9.Text = "Edit";
+            edit9.TextAlign = ContentAlignment.MiddleLeft;
+            edit9.UseVisualStyleBackColor = false;
             // 
             // transaksi
             // 
-            this.transaksi.BackColor = System.Drawing.Color.Transparent;
-            this.transaksi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.transaksi.FlatAppearance.BorderSize = 0;
-            this.transaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.transaksi.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.transaksi.Location = new System.Drawing.Point(15, 720);
-            this.transaksi.Margin = new System.Windows.Forms.Padding(0);
-            this.transaksi.Name = "transaksi";
-            this.transaksi.Size = new System.Drawing.Size(293, 45);
-            this.transaksi.TabIndex = 25;
-            this.transaksi.Text = "Transaksi Tiket";
-            this.transaksi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.transaksi.UseVisualStyleBackColor = false;
+            transaksi.BackColor = Color.Transparent;
+            transaksi.Dock = DockStyle.Top;
+            transaksi.FlatAppearance.BorderSize = 0;
+            transaksi.FlatStyle = FlatStyle.Flat;
+            transaksi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            transaksi.Location = new Point(15, 720);
+            transaksi.Margin = new Padding(0);
+            transaksi.Name = "transaksi";
+            transaksi.Size = new Size(293, 45);
+            transaksi.TabIndex = 25;
+            transaksi.Text = "Transaksi Tiket";
+            transaksi.TextAlign = ContentAlignment.MiddleLeft;
+            transaksi.UseVisualStyleBackColor = false;
             // 
             // edit8
             // 
-            this.edit8.BackColor = System.Drawing.Color.Transparent;
-            this.edit8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edit8.FlatAppearance.BorderSize = 0;
-            this.edit8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit8.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edit8.Location = new System.Drawing.Point(15, 675);
-            this.edit8.Margin = new System.Windows.Forms.Padding(0);
-            this.edit8.Name = "edit8";
-            this.edit8.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.edit8.Size = new System.Drawing.Size(293, 45);
-            this.edit8.TabIndex = 23;
-            this.edit8.Text = "Edit";
-            this.edit8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit8.UseVisualStyleBackColor = false;
+            edit8.BackColor = Color.Transparent;
+            edit8.Dock = DockStyle.Top;
+            edit8.FlatAppearance.BorderSize = 0;
+            edit8.FlatStyle = FlatStyle.Flat;
+            edit8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            edit8.Location = new Point(15, 675);
+            edit8.Margin = new Padding(0);
+            edit8.Name = "edit8";
+            edit8.Padding = new Padding(20, 0, 0, 0);
+            edit8.Size = new Size(293, 45);
+            edit8.TabIndex = 23;
+            edit8.Text = "Edit";
+            edit8.TextAlign = ContentAlignment.MiddleLeft;
+            edit8.UseVisualStyleBackColor = false;
             // 
             // informasi
             // 
-            this.informasi.BackColor = System.Drawing.Color.Transparent;
-            this.informasi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.informasi.FlatAppearance.BorderSize = 0;
-            this.informasi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.informasi.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.informasi.Location = new System.Drawing.Point(15, 630);
-            this.informasi.Margin = new System.Windows.Forms.Padding(0);
-            this.informasi.Name = "informasi";
-            this.informasi.Size = new System.Drawing.Size(293, 45);
-            this.informasi.TabIndex = 22;
-            this.informasi.Text = "Informasi";
-            this.informasi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.informasi.UseVisualStyleBackColor = false;
+            informasi.BackColor = Color.Transparent;
+            informasi.Dock = DockStyle.Top;
+            informasi.FlatAppearance.BorderSize = 0;
+            informasi.FlatStyle = FlatStyle.Flat;
+            informasi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            informasi.Location = new Point(15, 630);
+            informasi.Margin = new Padding(0);
+            informasi.Name = "informasi";
+            informasi.Size = new Size(293, 45);
+            informasi.TabIndex = 22;
+            informasi.Text = "Informasi";
+            informasi.TextAlign = ContentAlignment.MiddleLeft;
+            informasi.UseVisualStyleBackColor = false;
             // 
             // edit7
             // 
-            this.edit7.BackColor = System.Drawing.Color.Transparent;
-            this.edit7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edit7.FlatAppearance.BorderSize = 0;
-            this.edit7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit7.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edit7.Location = new System.Drawing.Point(15, 585);
-            this.edit7.Margin = new System.Windows.Forms.Padding(0);
-            this.edit7.Name = "edit7";
-            this.edit7.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.edit7.Size = new System.Drawing.Size(293, 45);
-            this.edit7.TabIndex = 20;
-            this.edit7.Text = "Edit";
-            this.edit7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit7.UseVisualStyleBackColor = false;
+            edit7.BackColor = Color.Transparent;
+            edit7.Dock = DockStyle.Top;
+            edit7.FlatAppearance.BorderSize = 0;
+            edit7.FlatStyle = FlatStyle.Flat;
+            edit7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            edit7.Location = new Point(15, 585);
+            edit7.Margin = new Padding(0);
+            edit7.Name = "edit7";
+            edit7.Padding = new Padding(20, 0, 0, 0);
+            edit7.Size = new Size(293, 45);
+            edit7.TabIndex = 20;
+            edit7.Text = "Edit";
+            edit7.TextAlign = ContentAlignment.MiddleLeft;
+            edit7.UseVisualStyleBackColor = false;
             // 
             // umkm
             // 
-            this.umkm.BackColor = System.Drawing.Color.Transparent;
-            this.umkm.Dock = System.Windows.Forms.DockStyle.Top;
-            this.umkm.FlatAppearance.BorderSize = 0;
-            this.umkm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.umkm.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.umkm.Location = new System.Drawing.Point(15, 540);
-            this.umkm.Margin = new System.Windows.Forms.Padding(0);
-            this.umkm.Name = "umkm";
-            this.umkm.Size = new System.Drawing.Size(293, 45);
-            this.umkm.TabIndex = 19;
-            this.umkm.Text = "UMKM";
-            this.umkm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.umkm.UseVisualStyleBackColor = false;
+            umkm.BackColor = Color.Transparent;
+            umkm.Dock = DockStyle.Top;
+            umkm.FlatAppearance.BorderSize = 0;
+            umkm.FlatStyle = FlatStyle.Flat;
+            umkm.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            umkm.Location = new Point(15, 540);
+            umkm.Margin = new Padding(0);
+            umkm.Name = "umkm";
+            umkm.Size = new Size(293, 45);
+            umkm.TabIndex = 19;
+            umkm.Text = "UMKM";
+            umkm.TextAlign = ContentAlignment.MiddleLeft;
+            umkm.UseVisualStyleBackColor = false;
             // 
             // edit6
             // 
-            this.edit6.BackColor = System.Drawing.Color.Transparent;
-            this.edit6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edit6.FlatAppearance.BorderSize = 0;
-            this.edit6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit6.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edit6.Location = new System.Drawing.Point(15, 495);
-            this.edit6.Margin = new System.Windows.Forms.Padding(0);
-            this.edit6.Name = "edit6";
-            this.edit6.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.edit6.Size = new System.Drawing.Size(293, 45);
-            this.edit6.TabIndex = 17;
-            this.edit6.Text = "Edit";
-            this.edit6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit6.UseVisualStyleBackColor = false;
+            edit6.BackColor = Color.Transparent;
+            edit6.Dock = DockStyle.Top;
+            edit6.FlatAppearance.BorderSize = 0;
+            edit6.FlatStyle = FlatStyle.Flat;
+            edit6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            edit6.Location = new Point(15, 495);
+            edit6.Margin = new Padding(0);
+            edit6.Name = "edit6";
+            edit6.Padding = new Padding(20, 0, 0, 0);
+            edit6.Size = new Size(293, 45);
+            edit6.TabIndex = 17;
+            edit6.Text = "Edit";
+            edit6.TextAlign = ContentAlignment.MiddleLeft;
+            edit6.UseVisualStyleBackColor = false;
             // 
             // acara
             // 
-            this.acara.BackColor = System.Drawing.Color.Transparent;
-            this.acara.Dock = System.Windows.Forms.DockStyle.Top;
-            this.acara.FlatAppearance.BorderSize = 0;
-            this.acara.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.acara.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.acara.Location = new System.Drawing.Point(15, 450);
-            this.acara.Margin = new System.Windows.Forms.Padding(0);
-            this.acara.Name = "acara";
-            this.acara.Size = new System.Drawing.Size(293, 45);
-            this.acara.TabIndex = 16;
-            this.acara.Text = " Event Acara";
-            this.acara.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.acara.UseVisualStyleBackColor = false;
+            acara.BackColor = Color.Transparent;
+            acara.Dock = DockStyle.Top;
+            acara.FlatAppearance.BorderSize = 0;
+            acara.FlatStyle = FlatStyle.Flat;
+            acara.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            acara.Location = new Point(15, 450);
+            acara.Margin = new Padding(0);
+            acara.Name = "acara";
+            acara.Size = new Size(293, 45);
+            acara.TabIndex = 16;
+            acara.Text = " Event Acara";
+            acara.TextAlign = ContentAlignment.MiddleLeft;
+            acara.UseVisualStyleBackColor = false;
             // 
             // edit5
             // 
-            this.edit5.BackColor = System.Drawing.Color.Transparent;
-            this.edit5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edit5.FlatAppearance.BorderSize = 0;
-            this.edit5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit5.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edit5.Location = new System.Drawing.Point(15, 405);
-            this.edit5.Margin = new System.Windows.Forms.Padding(0);
-            this.edit5.Name = "edit5";
-            this.edit5.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.edit5.Size = new System.Drawing.Size(293, 45);
-            this.edit5.TabIndex = 14;
-            this.edit5.Text = "Edit";
-            this.edit5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit5.UseVisualStyleBackColor = false;
+            edit5.BackColor = Color.Transparent;
+            edit5.Dock = DockStyle.Top;
+            edit5.FlatAppearance.BorderSize = 0;
+            edit5.FlatStyle = FlatStyle.Flat;
+            edit5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            edit5.Location = new Point(15, 405);
+            edit5.Margin = new Padding(0);
+            edit5.Name = "edit5";
+            edit5.Padding = new Padding(20, 0, 0, 0);
+            edit5.Size = new Size(293, 45);
+            edit5.TabIndex = 14;
+            edit5.Text = "Edit";
+            edit5.TextAlign = ContentAlignment.MiddleLeft;
+            edit5.UseVisualStyleBackColor = false;
             // 
             // saranaPrasarana
             // 
-            this.saranaPrasarana.BackColor = System.Drawing.Color.Transparent;
-            this.saranaPrasarana.Dock = System.Windows.Forms.DockStyle.Top;
-            this.saranaPrasarana.FlatAppearance.BorderSize = 0;
-            this.saranaPrasarana.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saranaPrasarana.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.saranaPrasarana.Location = new System.Drawing.Point(15, 360);
-            this.saranaPrasarana.Margin = new System.Windows.Forms.Padding(0);
-            this.saranaPrasarana.Name = "saranaPrasarana";
-            this.saranaPrasarana.Size = new System.Drawing.Size(293, 45);
-            this.saranaPrasarana.TabIndex = 13;
-            this.saranaPrasarana.Text = "Sarana Prasarana";
-            this.saranaPrasarana.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.saranaPrasarana.UseVisualStyleBackColor = false;
+            saranaPrasarana.BackColor = Color.Transparent;
+            saranaPrasarana.Dock = DockStyle.Top;
+            saranaPrasarana.FlatAppearance.BorderSize = 0;
+            saranaPrasarana.FlatStyle = FlatStyle.Flat;
+            saranaPrasarana.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            saranaPrasarana.Location = new Point(15, 360);
+            saranaPrasarana.Margin = new Padding(0);
+            saranaPrasarana.Name = "saranaPrasarana";
+            saranaPrasarana.Size = new Size(293, 45);
+            saranaPrasarana.TabIndex = 13;
+            saranaPrasarana.Text = "Sarana Prasarana";
+            saranaPrasarana.TextAlign = ContentAlignment.MiddleLeft;
+            saranaPrasarana.UseVisualStyleBackColor = false;
             // 
             // edit4
             // 
-            this.edit4.BackColor = System.Drawing.Color.Transparent;
-            this.edit4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edit4.FlatAppearance.BorderSize = 0;
-            this.edit4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit4.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edit4.Location = new System.Drawing.Point(15, 315);
-            this.edit4.Margin = new System.Windows.Forms.Padding(0);
-            this.edit4.Name = "edit4";
-            this.edit4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.edit4.Size = new System.Drawing.Size(293, 45);
-            this.edit4.TabIndex = 11;
-            this.edit4.Text = "Edit";
-            this.edit4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit4.UseVisualStyleBackColor = false;
+            edit4.BackColor = Color.Transparent;
+            edit4.Dock = DockStyle.Top;
+            edit4.FlatAppearance.BorderSize = 0;
+            edit4.FlatStyle = FlatStyle.Flat;
+            edit4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            edit4.Location = new Point(15, 315);
+            edit4.Margin = new Padding(0);
+            edit4.Name = "edit4";
+            edit4.Padding = new Padding(20, 0, 0, 0);
+            edit4.Size = new Size(293, 45);
+            edit4.TabIndex = 11;
+            edit4.Text = "Edit";
+            edit4.TextAlign = ContentAlignment.MiddleLeft;
+            edit4.UseVisualStyleBackColor = false;
             // 
             // tempatMakan
             // 
-            this.tempatMakan.BackColor = System.Drawing.Color.Transparent;
-            this.tempatMakan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tempatMakan.FlatAppearance.BorderSize = 0;
-            this.tempatMakan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tempatMakan.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tempatMakan.Location = new System.Drawing.Point(15, 270);
-            this.tempatMakan.Margin = new System.Windows.Forms.Padding(0);
-            this.tempatMakan.Name = "tempatMakan";
-            this.tempatMakan.Size = new System.Drawing.Size(293, 45);
-            this.tempatMakan.TabIndex = 10;
-            this.tempatMakan.Text = "Tempat Makan";
-            this.tempatMakan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tempatMakan.UseVisualStyleBackColor = false;
+            tempatMakan.BackColor = Color.Transparent;
+            tempatMakan.Dock = DockStyle.Top;
+            tempatMakan.FlatAppearance.BorderSize = 0;
+            tempatMakan.FlatStyle = FlatStyle.Flat;
+            tempatMakan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tempatMakan.Location = new Point(15, 270);
+            tempatMakan.Margin = new Padding(0);
+            tempatMakan.Name = "tempatMakan";
+            tempatMakan.Size = new Size(293, 45);
+            tempatMakan.TabIndex = 10;
+            tempatMakan.Text = "Tempat Makan";
+            tempatMakan.TextAlign = ContentAlignment.MiddleLeft;
+            tempatMakan.UseVisualStyleBackColor = false;
             // 
             // edit3
             // 
-            this.edit3.BackColor = System.Drawing.Color.Transparent;
-            this.edit3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edit3.FlatAppearance.BorderSize = 0;
-            this.edit3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit3.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edit3.Location = new System.Drawing.Point(15, 225);
-            this.edit3.Margin = new System.Windows.Forms.Padding(0);
-            this.edit3.Name = "edit3";
-            this.edit3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.edit3.Size = new System.Drawing.Size(293, 45);
-            this.edit3.TabIndex = 8;
-            this.edit3.Text = "Edit";
-            this.edit3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit3.UseVisualStyleBackColor = false;
+            edit3.BackColor = Color.Transparent;
+            edit3.Dock = DockStyle.Top;
+            edit3.FlatAppearance.BorderSize = 0;
+            edit3.FlatStyle = FlatStyle.Flat;
+            edit3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            edit3.Location = new Point(15, 225);
+            edit3.Margin = new Padding(0);
+            edit3.Name = "edit3";
+            edit3.Padding = new Padding(20, 0, 0, 0);
+            edit3.Size = new Size(293, 45);
+            edit3.TabIndex = 8;
+            edit3.Text = "Edit";
+            edit3.TextAlign = ContentAlignment.MiddleLeft;
+            edit3.UseVisualStyleBackColor = false;
             // 
             // transportasi
             // 
-            this.transportasi.BackColor = System.Drawing.Color.Transparent;
-            this.transportasi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.transportasi.FlatAppearance.BorderSize = 0;
-            this.transportasi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.transportasi.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.transportasi.Location = new System.Drawing.Point(15, 180);
-            this.transportasi.Margin = new System.Windows.Forms.Padding(0);
-            this.transportasi.Name = "transportasi";
-            this.transportasi.Size = new System.Drawing.Size(293, 45);
-            this.transportasi.TabIndex = 7;
-            this.transportasi.Text = "Transportasi";
-            this.transportasi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.transportasi.UseVisualStyleBackColor = false;
+            transportasi.BackColor = Color.Transparent;
+            transportasi.Dock = DockStyle.Top;
+            transportasi.FlatAppearance.BorderSize = 0;
+            transportasi.FlatStyle = FlatStyle.Flat;
+            transportasi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            transportasi.Location = new Point(15, 180);
+            transportasi.Margin = new Padding(0);
+            transportasi.Name = "transportasi";
+            transportasi.Size = new Size(293, 45);
+            transportasi.TabIndex = 7;
+            transportasi.Text = "Transportasi";
+            transportasi.TextAlign = ContentAlignment.MiddleLeft;
+            transportasi.UseVisualStyleBackColor = false;
             // 
             // edit2
             // 
-            this.edit2.BackColor = System.Drawing.Color.Transparent;
-            this.edit2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edit2.FlatAppearance.BorderSize = 0;
-            this.edit2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit2.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edit2.Location = new System.Drawing.Point(15, 135);
-            this.edit2.Margin = new System.Windows.Forms.Padding(0);
-            this.edit2.Name = "edit2";
-            this.edit2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.edit2.Size = new System.Drawing.Size(293, 45);
-            this.edit2.TabIndex = 5;
-            this.edit2.Text = "Edit";
-            this.edit2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit2.UseVisualStyleBackColor = false;
+            edit2.BackColor = Color.Transparent;
+            edit2.Dock = DockStyle.Top;
+            edit2.FlatAppearance.BorderSize = 0;
+            edit2.FlatStyle = FlatStyle.Flat;
+            edit2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            edit2.Location = new Point(15, 135);
+            edit2.Margin = new Padding(0);
+            edit2.Name = "edit2";
+            edit2.Padding = new Padding(20, 0, 0, 0);
+            edit2.Size = new Size(293, 45);
+            edit2.TabIndex = 5;
+            edit2.Text = "Edit";
+            edit2.TextAlign = ContentAlignment.MiddleLeft;
+            edit2.UseVisualStyleBackColor = false;
             // 
             // penginapan
             // 
-            this.penginapan.BackColor = System.Drawing.Color.Transparent;
-            this.penginapan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.penginapan.FlatAppearance.BorderSize = 0;
-            this.penginapan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.penginapan.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.penginapan.Location = new System.Drawing.Point(15, 90);
-            this.penginapan.Margin = new System.Windows.Forms.Padding(0);
-            this.penginapan.Name = "penginapan";
-            this.penginapan.Size = new System.Drawing.Size(293, 45);
-            this.penginapan.TabIndex = 4;
-            this.penginapan.Text = "Penginapan";
-            this.penginapan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.penginapan.UseVisualStyleBackColor = false;
+            penginapan.BackColor = Color.Transparent;
+            penginapan.Dock = DockStyle.Top;
+            penginapan.FlatAppearance.BorderSize = 0;
+            penginapan.FlatStyle = FlatStyle.Flat;
+            penginapan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            penginapan.Location = new Point(15, 90);
+            penginapan.Margin = new Padding(0);
+            penginapan.Name = "penginapan";
+            penginapan.Size = new Size(293, 45);
+            penginapan.TabIndex = 4;
+            penginapan.Text = "Penginapan";
+            penginapan.TextAlign = ContentAlignment.MiddleLeft;
+            penginapan.UseVisualStyleBackColor = false;
             // 
             // edit1
             // 
-            this.edit1.BackColor = System.Drawing.Color.Transparent;
-            this.edit1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.edit1.FlatAppearance.BorderSize = 0;
-            this.edit1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit1.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edit1.Location = new System.Drawing.Point(15, 45);
-            this.edit1.Margin = new System.Windows.Forms.Padding(0);
-            this.edit1.Name = "edit1";
-            this.edit1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.edit1.Size = new System.Drawing.Size(293, 45);
-            this.edit1.TabIndex = 2;
-            this.edit1.Text = "Edit";
-            this.edit1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.edit1.UseVisualStyleBackColor = false;
+            edit1.BackColor = Color.Transparent;
+            edit1.Dock = DockStyle.Top;
+            edit1.FlatAppearance.BorderSize = 0;
+            edit1.FlatStyle = FlatStyle.Flat;
+            edit1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            edit1.Location = new Point(15, 45);
+            edit1.Margin = new Padding(0);
+            edit1.Name = "edit1";
+            edit1.Padding = new Padding(20, 0, 0, 0);
+            edit1.Size = new Size(293, 45);
+            edit1.TabIndex = 2;
+            edit1.Text = "Edit";
+            edit1.TextAlign = ContentAlignment.MiddleLeft;
+            edit1.UseVisualStyleBackColor = false;
             // 
             // wisata
             // 
-            this.wisata.BackColor = System.Drawing.Color.Transparent;
-            this.wisata.Dock = System.Windows.Forms.DockStyle.Top;
-            this.wisata.FlatAppearance.BorderSize = 0;
-            this.wisata.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wisata.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wisata.Location = new System.Drawing.Point(15, 0);
-            this.wisata.Margin = new System.Windows.Forms.Padding(0);
-            this.wisata.Name = "wisata";
-            this.wisata.Size = new System.Drawing.Size(293, 45);
-            this.wisata.TabIndex = 1;
-            this.wisata.Text = "Wisata";
-            this.wisata.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.wisata.UseVisualStyleBackColor = false;
+            wisata.BackColor = Color.Transparent;
+            wisata.Dock = DockStyle.Top;
+            wisata.FlatAppearance.BorderSize = 0;
+            wisata.FlatStyle = FlatStyle.Flat;
+            wisata.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            wisata.Location = new Point(15, 0);
+            wisata.Margin = new Padding(0);
+            wisata.Name = "wisata";
+            wisata.Size = new Size(293, 45);
+            wisata.TabIndex = 1;
+            wisata.Text = "Wisata";
+            wisata.TextAlign = ContentAlignment.MiddleLeft;
+            wisata.UseVisualStyleBackColor = false;
+            wisata.Click += wisata_Click;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.button1);
-            this.panel5.Controls.Add(this.dashboard);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 115);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(308, 89);
-            this.panel5.TabIndex = 13;
+            panel5.BackColor = Color.Transparent;
+            panel5.Controls.Add(button1);
+            panel5.Controls.Add(dashboard);
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(0, 115);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(308, 89);
+            panel5.TabIndex = 13;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(0, 45);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
-            this.button1.Size = new System.Drawing.Size(308, 43);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Rembangan";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            button1.BackColor = Color.Transparent;
+            button1.Dock = DockStyle.Top;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(0, 45);
+            button1.Name = "button1";
+            button1.Padding = new Padding(0, 0, 50, 0);
+            button1.Size = new Size(308, 43);
+            button1.TabIndex = 11;
+            button1.Text = "Rembangan";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = false;
             // 
             // dashboard
             // 
-            this.dashboard.BackColor = System.Drawing.Color.Transparent;
-            this.dashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dashboard.FlatAppearance.BorderSize = 0;
-            this.dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dashboard.Font = new System.Drawing.Font("Futura Md BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dashboard.ForeColor = System.Drawing.Color.Black;
-            this.dashboard.Location = new System.Drawing.Point(0, 0);
-            this.dashboard.Name = "dashboard";
-            this.dashboard.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
-            this.dashboard.Size = new System.Drawing.Size(308, 45);
-            this.dashboard.TabIndex = 10;
-            this.dashboard.Text = "Dashboard";
-            this.dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dashboard.UseVisualStyleBackColor = false;
+            dashboard.BackColor = Color.Transparent;
+            dashboard.Dock = DockStyle.Top;
+            dashboard.FlatAppearance.BorderSize = 0;
+            dashboard.FlatStyle = FlatStyle.Flat;
+            dashboard.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dashboard.ForeColor = Color.Black;
+            dashboard.Location = new Point(0, 0);
+            dashboard.Name = "dashboard";
+            dashboard.Padding = new Padding(0, 0, 50, 0);
+            dashboard.Size = new Size(308, 45);
+            dashboard.TabIndex = 10;
+            dashboard.Text = "Dashboard";
+            dashboard.TextAlign = ContentAlignment.MiddleLeft;
+            dashboard.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Image = global::frontendpbo.Properties.Resources.logo;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(308, 115);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Dock = DockStyle.Top;
+            pictureBox2.Image = Properties.Resources.logo;
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(308, 115);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 957);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.mainside);
-            this.Controls.Add(this.side);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form2";
-            this.Text = "Form1";
-            this.side.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.menu)).EndInit();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.mainside.ResumeLayout(false);
-            this.mainside.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1924, 957);
+            Controls.Add(panel2);
+            Controls.Add(mainside);
+            Controls.Add(side);
+            Margin = new Padding(2);
+            Name = "Form2";
+            Text = "Form1";
+            side.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)menu).EndInit();
+            panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
+            mainside.ResumeLayout(false);
+            mainside.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

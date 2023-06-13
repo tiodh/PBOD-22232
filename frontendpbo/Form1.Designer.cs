@@ -30,7 +30,7 @@
         {
             side = new Panel();
             menu = new PictureBox();
-            panel5 = new Panel();
+            panelContent = new Panel();
             panel3 = new Panel();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
@@ -76,15 +76,15 @@
             menu.TabStop = false;
             menu.Click += menu_Click_1;
             // 
-            // panel5
+            // panelContent
             // 
-            panel5.BackColor = SystemColors.AppWorkspace;
-            panel5.Dock = DockStyle.Fill;
-            panel5.Location = new Point(285, 91);
-            panel5.Margin = new Padding(2);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(1639, 695);
-            panel5.TabIndex = 3;
+            panelContent.BackColor = SystemColors.AppWorkspace;
+            panelContent.Dock = DockStyle.Fill;
+            panelContent.Location = new Point(285, 91);
+            panelContent.Margin = new Padding(2);
+            panelContent.Name = "panelContent";
+            panelContent.Size = new Size(1639, 695);
+            panelContent.TabIndex = 3;
             // 
             // panel3
             // 
@@ -235,13 +235,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1924, 786);
             Controls.Add(label1);
-            Controls.Add(panel5);
+            Controls.Add(panelContent);
             Controls.Add(panel2);
             Controls.Add(mainside);
             Controls.Add(side);
             Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
+            WindowState = FormWindowState.Maximized;
             Load += Form1_Load;
             Resize += Form1_Resize;
             side.ResumeLayout(false);
@@ -258,7 +259,7 @@
         #endregion
 
         private Panel side;
-        private Panel panel5;
+        private Panel panelContent;
         private PictureBox menu;
         private Panel mainside;
         private Panel panel3;

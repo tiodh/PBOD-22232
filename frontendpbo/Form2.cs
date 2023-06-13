@@ -15,10 +15,15 @@ namespace frontendpbo
         public Form2()
         {
             InitializeComponent();
-            this.WindowState= FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wisata_Click(object sender, EventArgs e)
         {
 
         }

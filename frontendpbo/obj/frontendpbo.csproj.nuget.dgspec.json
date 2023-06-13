@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\source\\repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+    "D:\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\source\\repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+    "D:\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "D:\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectPath": "D:\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\PBOD-22232\\frontendpbo\\obj\\",
+        "outputPath": "D:\\PBOD-22232\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,10 +45,6 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "Guna.UI2.WinForms": {
-              "target": "Package",
-              "version": "[2.0.4.4, )"
-            },
             "Npgsql": {
               "target": "Package",
               "version": "[7.0.4, )"

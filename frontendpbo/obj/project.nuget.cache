@@ -1,14 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vqpxoQklm9dbdIeE+mpdsA5Cafnqde/2REslteW6i30zNccYoPOikIxQg19cQlDQBwz+jjH3/fqcQM4WMNO0Xg==",
+  "dgSpecHash": "s7Ul46n+AbdyxISV77xlvUZ/K8IKbWzBMXhHbJX9BlycPfca/HxklVPH47Kg71jZAcopGmQ5fz9klLjF11Qrjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+  "projectFilePath": "D:\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ASUS\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.4\\guna.ui2.winforms.2.0.4.4.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
