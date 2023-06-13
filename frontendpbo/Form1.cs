@@ -131,5 +131,10 @@ namespace frontendpbo
         {
             openChildForm(new Form4());
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form3());
+        }
     }
 }

@@ -165,6 +165,7 @@
             button6.TabIndex = 9;
             button6.Text = "Kebon Agung";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button3
             // 
