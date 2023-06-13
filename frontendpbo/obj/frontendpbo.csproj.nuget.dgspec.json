@@ -45,6 +45,10 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "Guna.UI2.WinForms": {
+              "target": "Package",
+              "version": "[2.0.4.4, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[7.0.4, )"

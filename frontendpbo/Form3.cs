@@ -61,5 +61,10 @@ namespace frontendpbo
                 label1.Visible = true;
             }
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

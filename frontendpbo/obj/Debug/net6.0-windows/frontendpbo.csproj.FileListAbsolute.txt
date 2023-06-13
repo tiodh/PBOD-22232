@@ -95,3 +95,6 @@ C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refin
 C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\ASUS\source\repos\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS\source\repos\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\ASUS\source\repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
