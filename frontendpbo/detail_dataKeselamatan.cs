@@ -25,38 +25,22 @@ namespace frontendpbo
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            label1.Visible = false;
-            if (textBox2.TextLength == 0)
-            {
-                label2.Visible = true;
-            }
+
         }
 
         private void textBox_tlpHospital_TextChanged(object sender, EventArgs e)
         {
-            label1.Visible = false;
-            if (textBox2.TextLength == 0)
-            {
-                label2.Visible = true;
-            }
+
         }
 
         private void textBox_alamatHospital_TextChanged(object sender, EventArgs e)
         {
-            label1.Visible = false;
-            if (textBox2.TextLength == 0)
-            {
-                label2.Visible = true;
-            }
+
         }
 
         private void textBox_deskripsiHospital_TextChanged(object sender, EventArgs e)
         {
-            label1.Visible = false;
-            if (textBox2.TextLength == 0)
-            {
-                label2.Visible = true;
-            }
+
         }
     }
 }

@@ -30,10 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(detail_dataKeselamatan));
             panel1 = new Panel();
-            textBox_deskripsiHospital = new TextBox();
-            textBox_alamatHospital = new TextBox();
-            textBox_tlpHospital = new TextBox();
-            textBox_lembagaHospital = new TextBox();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
             textBox_deskripsiPolisi = new TextBox();
@@ -47,6 +43,10 @@
             textBox_hpBencana = new TextBox();
             textBox_lembagaBencana = new TextBox();
             pictureBox3 = new PictureBox();
+            textBox_deskripsiHospital = new TextBox();
+            textBox_alamatHospital = new TextBox();
+            textBox_tlpHospital = new TextBox();
+            textBox_lembagaHospital = new TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -67,50 +67,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1264, 240);
             panel1.TabIndex = 0;
-            // 
-            // textBox_deskripsiHospital
-            // 
-            textBox_deskripsiHospital.BorderStyle = BorderStyle.FixedSingle;
-            textBox_deskripsiHospital.Location = new Point(374, 174);
-            textBox_deskripsiHospital.Name = "textBox_deskripsiHospital";
-            textBox_deskripsiHospital.Size = new Size(850, 27);
-            textBox_deskripsiHospital.TabIndex = 1;
-            textBox_deskripsiHospital.Text = "Deskripsi";
-            textBox_deskripsiHospital.TextAlign = HorizontalAlignment.Center;
-            textBox_deskripsiHospital.TextChanged += textBox_deskripsiHospital_TextChanged;
-            // 
-            // textBox_alamatHospital
-            // 
-            textBox_alamatHospital.BorderStyle = BorderStyle.FixedSingle;
-            textBox_alamatHospital.Location = new Point(374, 128);
-            textBox_alamatHospital.Name = "textBox_alamatHospital";
-            textBox_alamatHospital.Size = new Size(850, 27);
-            textBox_alamatHospital.TabIndex = 1;
-            textBox_alamatHospital.Text = "Alamat";
-            textBox_alamatHospital.TextAlign = HorizontalAlignment.Center;
-            textBox_alamatHospital.TextChanged += textBox_alamatHospital_TextChanged;
-            // 
-            // textBox_tlpHospital
-            // 
-            textBox_tlpHospital.BorderStyle = BorderStyle.FixedSingle;
-            textBox_tlpHospital.Location = new Point(374, 85);
-            textBox_tlpHospital.Name = "textBox_tlpHospital";
-            textBox_tlpHospital.Size = new Size(850, 27);
-            textBox_tlpHospital.TabIndex = 1;
-            textBox_tlpHospital.Text = "No Telpon";
-            textBox_tlpHospital.TextAlign = HorizontalAlignment.Center;
-            textBox_tlpHospital.TextChanged += textBox_tlpHospital_TextChanged;
-            // 
-            // textBox_lembagaHospital
-            // 
-            textBox_lembagaHospital.BorderStyle = BorderStyle.FixedSingle;
-            textBox_lembagaHospital.Location = new Point(374, 39);
-            textBox_lembagaHospital.Name = "textBox_lembagaHospital";
-            textBox_lembagaHospital.Size = new Size(850, 27);
-            textBox_lembagaHospital.TabIndex = 1;
-            textBox_lembagaHospital.Text = "Nama Lembaga";
-            textBox_lembagaHospital.TextAlign = HorizontalAlignment.Center;
-            textBox_lembagaHospital.TextChanged += textBox1_TextChanged;
             // 
             // pictureBox1
             // 
@@ -251,6 +207,50 @@
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
+            // textBox_deskripsiHospital
+            // 
+            textBox_deskripsiHospital.BorderStyle = BorderStyle.FixedSingle;
+            textBox_deskripsiHospital.Location = new Point(374, 174);
+            textBox_deskripsiHospital.Name = "textBox_deskripsiHospital";
+            textBox_deskripsiHospital.Size = new Size(850, 27);
+            textBox_deskripsiHospital.TabIndex = 1;
+            textBox_deskripsiHospital.Text = "Deskripsi";
+            textBox_deskripsiHospital.TextAlign = HorizontalAlignment.Center;
+            textBox_deskripsiHospital.TextChanged += textBox_deskripsiHospital_TextChanged;
+            // 
+            // textBox_alamatHospital
+            // 
+            textBox_alamatHospital.BorderStyle = BorderStyle.FixedSingle;
+            textBox_alamatHospital.Location = new Point(374, 128);
+            textBox_alamatHospital.Name = "textBox_alamatHospital";
+            textBox_alamatHospital.Size = new Size(850, 27);
+            textBox_alamatHospital.TabIndex = 1;
+            textBox_alamatHospital.Text = "Alamat";
+            textBox_alamatHospital.TextAlign = HorizontalAlignment.Center;
+            textBox_alamatHospital.TextChanged += textBox_alamatHospital_TextChanged;
+            // 
+            // textBox_tlpHospital
+            // 
+            textBox_tlpHospital.BorderStyle = BorderStyle.FixedSingle;
+            textBox_tlpHospital.Location = new Point(374, 85);
+            textBox_tlpHospital.Name = "textBox_tlpHospital";
+            textBox_tlpHospital.Size = new Size(850, 27);
+            textBox_tlpHospital.TabIndex = 1;
+            textBox_tlpHospital.Text = "No Telpon";
+            textBox_tlpHospital.TextAlign = HorizontalAlignment.Center;
+            textBox_tlpHospital.TextChanged += textBox_tlpHospital_TextChanged;
+            // 
+            // textBox_lembagaHospital
+            // 
+            textBox_lembagaHospital.BorderStyle = BorderStyle.FixedSingle;
+            textBox_lembagaHospital.Location = new Point(374, 39);
+            textBox_lembagaHospital.Name = "textBox_lembagaHospital";
+            textBox_lembagaHospital.Size = new Size(850, 27);
+            textBox_lembagaHospital.TabIndex = 1;
+            textBox_lembagaHospital.Text = "Nama Lembaga";
+            textBox_lembagaHospital.TextAlign = HorizontalAlignment.Center;
+            textBox_lembagaHospital.TextChanged += textBox1_TextChanged;
+            // 
             // detail_dataKeselamatan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -278,10 +278,6 @@
         #endregion
 
         private Panel panel1;
-        private TextBox textBox_deskripsiHospital;
-        private TextBox textBox_alamatHospital;
-        private TextBox textBox_tlpHospital;
-        private TextBox textBox_lembagaHospital;
         private PictureBox pictureBox1;
         private Panel panel2;
         private TextBox textBox_deskripsiPolisi;
@@ -295,5 +291,9 @@
         private TextBox textBox_hpBencana;
         private TextBox textBox_lembagaBencana;
         private PictureBox pictureBox3;
+        private TextBox textBox_deskripsiHospital;
+        private TextBox textBox_alamatHospital;
+        private TextBox textBox_tlpHospital;
+        private TextBox textBox_lembagaHospital;
     }
 }
