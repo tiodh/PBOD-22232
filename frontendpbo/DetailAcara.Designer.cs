@@ -1,6 +1,6 @@
 ﻿namespace frontendpbo
 {
-    partial class DetailEvent
+    partial class DetailAcara
     {
         /// <summary>
         /// Required designer variable.
@@ -251,7 +251,7 @@
             pictureBox5.TabIndex = 12;
             pictureBox5.TabStop = false;
             // 
-            // DetailEvent
+            // DetailAcara
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -259,7 +259,7 @@
             ClientSize = new Size(1071, 868);
             Controls.Add(panelChildForm);
             Controls.Add(panelJudul);
-            Name = "DetailEvent";
+            Name = "DetailAcara";
             Text = "EVENT ACARA";
             panelJudul.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();

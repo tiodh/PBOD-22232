@@ -1,6 +1,6 @@
 ﻿namespace frontendpbo
 {
-    partial class DetailEvent2
+    partial class DetailAcara2
     {
         /// <summary>
         /// Required designer variable.
@@ -59,9 +59,9 @@
             // 
             labelNama.Anchor = AnchorStyles.None;
             labelNama.AutoSize = true;
-            labelNama.BackColor = Color.LightGray;
+            labelNama.BackColor = Color.Black;
             labelNama.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            labelNama.ForeColor = SystemColors.ActiveCaptionText;
+            labelNama.ForeColor = SystemColors.ButtonHighlight;
             labelNama.Location = new Point(697, 154);
             labelNama.Name = "labelNama";
             labelNama.Size = new Size(132, 30);
@@ -72,9 +72,9 @@
             // 
             labelID.Anchor = AnchorStyles.None;
             labelID.AutoSize = true;
-            labelID.BackColor = Color.LightGray;
+            labelID.BackColor = Color.Black;
             labelID.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            labelID.ForeColor = SystemColors.ActiveCaptionText;
+            labelID.ForeColor = SystemColors.ButtonHighlight;
             labelID.Location = new Point(697, 97);
             labelID.Name = "labelID";
             labelID.Size = new Size(35, 30);
@@ -85,9 +85,9 @@
             // 
             labelObjek.Anchor = AnchorStyles.None;
             labelObjek.AutoSize = true;
-            labelObjek.BackColor = Color.LightGray;
+            labelObjek.BackColor = Color.Black;
             labelObjek.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            labelObjek.ForeColor = SystemColors.ActiveCaptionText;
+            labelObjek.ForeColor = SystemColors.ButtonHighlight;
             labelObjek.Location = new Point(697, 220);
             labelObjek.Name = "labelObjek";
             labelObjek.Size = new Size(145, 30);
@@ -98,9 +98,9 @@
             // 
             labelTglPelaksanaan.Anchor = AnchorStyles.None;
             labelTglPelaksanaan.AutoSize = true;
-            labelTglPelaksanaan.BackColor = Color.LightGray;
+            labelTglPelaksanaan.BackColor = Color.Black;
             labelTglPelaksanaan.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            labelTglPelaksanaan.ForeColor = SystemColors.ActiveCaptionText;
+            labelTglPelaksanaan.ForeColor = SystemColors.ButtonHighlight;
             labelTglPelaksanaan.Location = new Point(697, 285);
             labelTglPelaksanaan.Name = "labelTglPelaksanaan";
             labelTglPelaksanaan.Size = new Size(169, 30);
@@ -111,9 +111,9 @@
             // 
             labelDeskripsi.Anchor = AnchorStyles.None;
             labelDeskripsi.AutoSize = true;
-            labelDeskripsi.BackColor = Color.LightGray;
+            labelDeskripsi.BackColor = Color.Black;
             labelDeskripsi.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            labelDeskripsi.ForeColor = SystemColors.ActiveCaptionText;
+            labelDeskripsi.ForeColor = SystemColors.ButtonHighlight;
             labelDeskripsi.Location = new Point(73, 423);
             labelDeskripsi.Name = "labelDeskripsi";
             labelDeskripsi.Size = new Size(104, 30);
@@ -166,15 +166,15 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.LightGray;
             pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.pxfuel;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1071, 860);
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
             // 
-            // DetailEvent2
+            // Form3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -192,7 +192,7 @@
             Controls.Add(labelNama);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Name = "DetailEvent2";
+            Name = "Form3";
             Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

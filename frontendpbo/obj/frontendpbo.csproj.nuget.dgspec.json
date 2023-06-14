@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Detail Event\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+    "D:\\Event Acara\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "D:\\Detail Event\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+    "D:\\Event Acara\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Detail Event\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "D:\\Event Acara\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "D:\\Detail Event\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectPath": "D:\\Event Acara\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "packagesPath": "C:\\Users\\JHIK RANA INALA\\.nuget\\packages\\",
-        "outputPath": "D:\\Detail Event\\PBOD-22232\\frontendpbo\\obj\\",
+        "outputPath": "D:\\Event Acara\\PBOD-22232\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JHIK RANA INALA\\AppData\\Roaming\\NuGet\\NuGet.Config",

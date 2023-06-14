@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace frontendpbo
 {
-    public partial class DetailEvent : Form
+    public partial class DetailAcara : Form
     {
-        public DetailEvent()
+        public DetailAcara()
         {
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            openChildForm(new DetailEvent2());
+            openChildForm(new DetailAcara2());
         }
         private Form activeForm = null;
         private void openChildForm(Form childForm)

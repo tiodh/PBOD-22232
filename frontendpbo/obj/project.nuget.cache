@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "knKxrvuglLlbxT1qLgZ+S4rGre+slTSs2OHPfQYFhWnK8lJrV8yrGD2IGv/M8T58YdPd4Ii+4pi/WBtqWMOnAw==",
+  "dgSpecHash": "Ptg7UUWM7dgfTOQIhKSi3cnjBepe/xQMatLvE8I2jLyKOX/EjVqt3xBWaD765JkM4ANbatwTdEq+ttxN7FRmew==",
   "success": true,
-  "projectFilePath": "D:\\Detail Event\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+  "projectFilePath": "D:\\Event Acara\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JHIK RANA INALA\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\JHIK RANA INALA\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
