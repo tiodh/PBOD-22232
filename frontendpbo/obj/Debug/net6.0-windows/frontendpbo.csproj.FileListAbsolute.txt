@@ -207,3 +207,34 @@ D:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselam
 D:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
 D:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
 D:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.detail_dataKeselamatan.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselamatan.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailEvent.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.detail_dataKeselamatan.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form4.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+D:\Detail Event\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+D:\Detail Event\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+D:\Detail Event\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+D:\Detail Event\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+D:\Detail Event\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+D:\Detail Event\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Detail Event\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+D:\Detail Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailEvent2.resources

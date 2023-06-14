@@ -10,6 +10,12 @@
     <Compile Update="crud_informasi_pengumuman.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DetailEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailEvent2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DetailWisata.cs">
       <SubType>Form</SubType>
     </Compile>
