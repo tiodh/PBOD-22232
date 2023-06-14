@@ -129,7 +129,7 @@
             // 
             // update_informasipengumuman
             // 
-            update_informasipengumuman.BackColor = Color.FromArgb(192, 255, 255);
+            update_informasipengumuman.BackColor = Color.Yellow;
             update_informasipengumuman.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             update_informasipengumuman.Location = new Point(378, 746);
             update_informasipengumuman.Name = "update_informasipengumuman";
