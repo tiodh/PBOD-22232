@@ -39,10 +39,8 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             dateTimePicker1 = new DateTimePicker();
-            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -59,9 +57,9 @@
             // 
             labelNama.Anchor = AnchorStyles.None;
             labelNama.AutoSize = true;
-            labelNama.BackColor = Color.Black;
+            labelNama.BackColor = Color.LightGray;
             labelNama.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            labelNama.ForeColor = SystemColors.ButtonHighlight;
+            labelNama.ForeColor = SystemColors.ControlText;
             labelNama.Location = new Point(697, 154);
             labelNama.Name = "labelNama";
             labelNama.Size = new Size(132, 30);
@@ -72,9 +70,9 @@
             // 
             labelID.Anchor = AnchorStyles.None;
             labelID.AutoSize = true;
-            labelID.BackColor = Color.Black;
+            labelID.BackColor = Color.LightGray;
             labelID.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            labelID.ForeColor = SystemColors.ButtonHighlight;
+            labelID.ForeColor = SystemColors.ControlText;
             labelID.Location = new Point(697, 97);
             labelID.Name = "labelID";
             labelID.Size = new Size(35, 30);
@@ -85,9 +83,9 @@
             // 
             labelObjek.Anchor = AnchorStyles.None;
             labelObjek.AutoSize = true;
-            labelObjek.BackColor = Color.Black;
+            labelObjek.BackColor = Color.LightGray;
             labelObjek.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            labelObjek.ForeColor = SystemColors.ButtonHighlight;
+            labelObjek.ForeColor = SystemColors.ControlText;
             labelObjek.Location = new Point(697, 220);
             labelObjek.Name = "labelObjek";
             labelObjek.Size = new Size(145, 30);
@@ -98,9 +96,9 @@
             // 
             labelTglPelaksanaan.Anchor = AnchorStyles.None;
             labelTglPelaksanaan.AutoSize = true;
-            labelTglPelaksanaan.BackColor = Color.Black;
+            labelTglPelaksanaan.BackColor = Color.LightGray;
             labelTglPelaksanaan.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            labelTglPelaksanaan.ForeColor = SystemColors.ButtonHighlight;
+            labelTglPelaksanaan.ForeColor = SystemColors.ControlText;
             labelTglPelaksanaan.Location = new Point(697, 285);
             labelTglPelaksanaan.Name = "labelTglPelaksanaan";
             labelTglPelaksanaan.Size = new Size(169, 30);
@@ -111,9 +109,9 @@
             // 
             labelDeskripsi.Anchor = AnchorStyles.None;
             labelDeskripsi.AutoSize = true;
-            labelDeskripsi.BackColor = Color.Black;
+            labelDeskripsi.BackColor = Color.LightGray;
             labelDeskripsi.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            labelDeskripsi.ForeColor = SystemColors.ButtonHighlight;
+            labelDeskripsi.ForeColor = SystemColors.ControlText;
             labelDeskripsi.Location = new Point(73, 423);
             labelDeskripsi.Name = "labelDeskripsi";
             labelDeskripsi.Size = new Size(104, 30);
@@ -164,21 +162,11 @@
             dateTimePicker1.Size = new Size(300, 31);
             dateTimePicker1.TabIndex = 11;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.pxfuel;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1071, 860);
-            pictureBox1.TabIndex = 12;
-            pictureBox1.TabStop = false;
-            // 
-            // Form3
+            // DetailAcara2
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightBlue;
+            BackColor = Color.LightGray;
             ClientSize = new Size(1071, 860);
             Controls.Add(dateTimePicker1);
             Controls.Add(textBox3);
@@ -191,12 +179,10 @@
             Controls.Add(labelID);
             Controls.Add(labelNama);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Name = "Form3";
+            Name = "DetailAcara2";
             Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -213,6 +199,5 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private DateTimePicker dateTimePicker1;
-        private PictureBox pictureBox1;
     }
 }

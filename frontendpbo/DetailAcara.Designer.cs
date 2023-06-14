@@ -67,6 +67,7 @@
             // 
             // pictureBox6
             // 
+            pictureBox6.BackColor = Color.LightGray;
             pictureBox6.Dock = DockStyle.Fill;
             pictureBox6.Location = new Point(0, 0);
             pictureBox6.Name = "pictureBox6";
