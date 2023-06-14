@@ -202,3 +202,8 @@ C:\Users\ARJUNA\source\repos\SaranaFIX\PBOD-22232\frontendpbo\obj\Debug\net6.0-w
 C:\Users\ARJUNA\source\repos\SaranaFIX\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 C:\Users\ARJUNA\source\repos\SaranaFIX\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\ARJUNA\source\repos\SaranaFIX\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+D:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
+D:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselamatan.resources
+D:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
+D:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
+D:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.detail_dataKeselamatan.resources
