@@ -159,7 +159,7 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             button6.ForeColor = Color.Black;
-            button6.Location = new Point(-45, 208);
+            button6.Location = new Point(-40, 208);
             button6.Name = "button6";
             button6.Size = new Size(275, 63);
             button6.TabIndex = 9;
@@ -213,7 +213,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             button4.ForeColor = Color.Black;
-            button4.Location = new Point(-44, 161);
+            button4.Location = new Point(-40, 161);
             button4.Name = "button4";
             button4.Size = new Size(275, 63);
             button4.TabIndex = 3;
