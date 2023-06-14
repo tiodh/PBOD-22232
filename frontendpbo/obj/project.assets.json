@@ -163,24 +163,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asus\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Neo_Bitose\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "projectUniqueName": "D:\\Tugas\\PBO\\tugas_akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "projectName": "frontendpbo",
-      "projectPath": "D:\\PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "D:\\PBO\\PBOD-22232\\frontendpbo\\obj\\",
+      "projectPath": "D:\\Tugas\\PBO\\tugas_akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "packagesPath": "C:\\Users\\Neo_Bitose\\.nuget\\packages\\",
+      "outputPath": "D:\\Tugas\\PBO\\tugas_akhir\\PBOD-22232\\frontendpbo\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Neo_Bitose\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -188,7 +183,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -231,7 +225,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
