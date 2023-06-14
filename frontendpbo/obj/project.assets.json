@@ -168,11 +168,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Event Acara\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "projectUniqueName": "C:\\Users\\JHIK RANA INALA\\Downloads\\ACARA\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "projectName": "frontendpbo",
-      "projectPath": "D:\\Event Acara\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "projectPath": "C:\\Users\\JHIK RANA INALA\\Downloads\\ACARA\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "packagesPath": "C:\\Users\\JHIK RANA INALA\\.nuget\\packages\\",
-      "outputPath": "D:\\Event Acara\\PBOD-22232\\frontendpbo\\obj\\",
+      "outputPath": "C:\\Users\\JHIK RANA INALA\\Downloads\\ACARA\\PBOD-22232\\frontendpbo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JHIK RANA INALA\\AppData\\Roaming\\NuGet\\NuGet.Config",
