@@ -10,8 +10,5 @@
     <Compile Update="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Sarana.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>
