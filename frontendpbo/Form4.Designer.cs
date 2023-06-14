@@ -34,17 +34,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(52, 33);
+            label1.Location = new Point(46, 28);
             label1.Name = "label1";
-            label1.Size = new Size(100, 20);
+            label1.Size = new Size(87, 17);
             label1.TabIndex = 0;
             label1.Text = "REMBANGAN";
             // 
             // Form4
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1639, 695);
+            ClientSize = new Size(1434, 591);
             ControlBox = false;
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
