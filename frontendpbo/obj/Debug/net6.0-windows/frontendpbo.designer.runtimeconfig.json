@@ -12,13 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
       "C:\\Users\\ASUS\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\ASUS\\.nuget\\packages",
-=======
-      "C:\\Users\\ARJUNA\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ARJUNA\\.nuget\\packages",
->>>>>>> c9767ee509f31719c1b99a2f0a4651843920316c
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
