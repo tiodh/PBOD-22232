@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace frontendpbo.Models
+{
+    internal class Wisata
+    {
+        public int id_wisata { get; set; }
+
+    }
+}
