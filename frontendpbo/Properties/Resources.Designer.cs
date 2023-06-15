@@ -143,6 +143,26 @@ namespace frontendpbo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Log_In_admin__17_ {
+            get {
+                object obj = ResourceManager.GetObject("Log In admin (17)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Log_In_admin__19_ {
+            get {
+                object obj = ResourceManager.GetObject("Log In admin (19)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Log_In_admin__8_ {
             get {
                 object obj = ResourceManager.GetObject("Log In admin (8)", resourceCulture);
