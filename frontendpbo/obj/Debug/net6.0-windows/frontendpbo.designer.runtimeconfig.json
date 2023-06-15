@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\alya\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\alya\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\Neo_Bitose\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Neo_Bitose\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
