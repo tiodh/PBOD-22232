@@ -190,3 +190,45 @@ C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\
 C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Pengunjung.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselamatan.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DeletedanUpdateDataTempatMakan.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailAcara.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailAcara2.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetaildanReadDataTempatMakan.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailHotel.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.detail_dataKeselamatan.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Detail_sarpras.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.wisata.resources
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+D:\PROJEKKELASPBOD\hiii\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll

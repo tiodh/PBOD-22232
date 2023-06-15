@@ -83,6 +83,16 @@ namespace frontendpbo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bglogin {
+            get {
+                object obj = ResourceManager.GetObject("bglogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap elm1 {
             get {
                 object obj = ResourceManager.GetObject("elm1", resourceCulture);
@@ -226,6 +236,16 @@ namespace frontendpbo.Properties {
         internal static System.Drawing.Bitmap sidebar {
             get {
                 object obj = ResourceManager.GetObject("sidebar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TEXTBOX {
+            get {
+                object obj = ResourceManager.GetObject("TEXTBOX", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

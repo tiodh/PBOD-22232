@@ -18,36 +18,24 @@ namespace frontendpbo
             this.WindowState = FormWindowState.Maximized;
             Rectangle bounds = Screen.PrimaryScreen.Bounds;
             this.Size = new System.Drawing.Size(bounds.Width, bounds.Height);
-            if (bounds.Width == 1920 && bounds.Height == 1080)
+            if (bounds.Height < 1000)
             {
-                label1.Location = new System.Drawing.Point(702, 425);
-                label2.Location = new System.Drawing.Point(702, 556);
-                textBox1.Location = new System.Drawing.Point(708, 422);
-                textBox2.Location = new System.Drawing.Point(708, 553);
-                button1.Location = new System.Drawing.Point(823, 780);
+
+                panel3.Size = new System.Drawing.Size(736, 460);
+                label1.Location = new System.Drawing.Point(177, 182);
+                textBox1.Location = new System.Drawing.Point(177, 182);
+                textBox1.Width = 392;
+                label2.Location = new System.Drawing.Point(177, 281);
+                textBox2.Location = new System.Drawing.Point(177, 281);
+                textBox2.Width = 392;
             }
             else
             {
-                if (bounds.Height < 1000)
-                {
-                    textBox1.Width = 524;
-                    textBox2.Width = 524;
-                    button1.Size = new System.Drawing.Size(275, 63);
-                    textBox1.Location = new System.Drawing.Point(708 - ((1920 - bounds.Width) / 2), 427 - ((1080 - bounds.Height) / 2));
-                    textBox2.Location = new System.Drawing.Point(708 - ((1920 - bounds.Width) / 2), 560 - ((1080 - bounds.Height) / 2));
-                    label1.Location = new System.Drawing.Point(702 - ((1920 - bounds.Width) / 2), 430 - ((1080 - bounds.Height) / 2));
-                    label2.Location = new System.Drawing.Point(702 - ((1920 - bounds.Width) / 2), 561 - ((1080 - bounds.Height) / 2));
-                    button1.Location = new System.Drawing.Point(823 - ((1920 - bounds.Width) / 2), 780 - ((1080 - bounds.Height) / 2));
-                }
-                else
-                {
-                    textBox1.Location = new System.Drawing.Point(708 - ((1920 - bounds.Width) / 2), 422 - ((1080 - bounds.Height) / 2));
-                    textBox2.Location = new System.Drawing.Point(708 - ((1920 - bounds.Width) / 2), 553 - ((1080 - bounds.Height) / 2));
-                    label1.Location = new System.Drawing.Point(702 - ((1920 - bounds.Width) / 2), 425 - ((1080 - bounds.Height) / 2));
-                    label2.Location = new System.Drawing.Point(702 - ((1920 - bounds.Width) / 2), 556 - ((1080 - bounds.Height) / 2));
-                    button1.Location = new System.Drawing.Point(823 - ((1920 - bounds.Width) / 2), 780 - ((1080 - bounds.Height) / 2));
-                }
+                panel3.Height = 610;
             }
+
+            panel3.Location = new System.Drawing.Point(587 - ((1920 - bounds.Width) / 2), 224 - ((1080 - bounds.Height) / 2));
+
         }
 
 
