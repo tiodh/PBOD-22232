@@ -150,3 +150,43 @@ D:\2023\Mata Kuliah\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontend
 D:\2023\Mata Kuliah\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
 D:\2023\Mata Kuliah\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
 D:\2023\Mata Kuliah\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Pengunjung.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselamatan.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailAcara.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailAcara2.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailHotel.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.detail_dataKeselamatan.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Detail_sarpras.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.wisata.resources
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+C:\Users\Muhammad Ainol Yakin\Documents\DETAIL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
