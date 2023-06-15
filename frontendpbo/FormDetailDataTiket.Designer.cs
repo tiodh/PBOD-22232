@@ -35,6 +35,7 @@
             JudulDataTiketRead = new Label();
             BGJudulTampilanTiket = new PictureBox();
             panelDetailTiket = new Panel();
+            btnClearTket = new Button();
             label3 = new Label();
             label1 = new Label();
             SearchTiket = new TextBox();
@@ -58,7 +59,6 @@
             labelInfoTiketParkir = new Label();
             imageListKendaraan = new ImageList(components);
             imageListDetailTiket = new ImageList(components);
-            btnClearTket = new Button();
             PanelReadDataTiket.SuspendLayout();
             panelJudulReadData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BGJudulTampilanTiket).BeginInit();
@@ -103,7 +103,7 @@
             JudulDataTiketRead.BackColor = Color.FromArgb(111, 106, 248);
             JudulDataTiketRead.Font = new Font("Trebuchet MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             JudulDataTiketRead.ForeColor = Color.White;
-            JudulDataTiketRead.Location = new Point(268, 21);
+            JudulDataTiketRead.Location = new Point(324, 22);
             JudulDataTiketRead.Name = "JudulDataTiketRead";
             JudulDataTiketRead.Size = new Size(383, 24);
             JudulDataTiketRead.TabIndex = 2;
@@ -144,6 +144,16 @@
             panelDetailTiket.Padding = new Padding(5);
             panelDetailTiket.Size = new Size(964, 468);
             panelDetailTiket.TabIndex = 11;
+            // 
+            // btnClearTket
+            // 
+            btnClearTket.Location = new Point(866, 61);
+            btnClearTket.Name = "btnClearTket";
+            btnClearTket.Size = new Size(75, 23);
+            btnClearTket.TabIndex = 19;
+            btnClearTket.Text = "Clear";
+            btnClearTket.UseVisualStyleBackColor = true;
+            btnClearTket.Click += btnClearTket_Click;
             // 
             // label3
             // 
@@ -377,16 +387,6 @@
             imageListDetailTiket.ImageStream = (ImageListStreamer)resources.GetObject("imageListDetailTiket.ImageStream");
             imageListDetailTiket.TransparentColor = Color.Transparent;
             imageListDetailTiket.Images.SetKeyName(0, "Tiket Rembangan.png");
-            // 
-            // btnClearTket
-            // 
-            btnClearTket.Location = new Point(866, 61);
-            btnClearTket.Name = "btnClearTket";
-            btnClearTket.Size = new Size(75, 23);
-            btnClearTket.TabIndex = 19;
-            btnClearTket.Text = "Clear";
-            btnClearTket.UseVisualStyleBackColor = true;
-            btnClearTket.Click += btnClearTket_Click;
             // 
             // FormDetailDataTiket
             // 

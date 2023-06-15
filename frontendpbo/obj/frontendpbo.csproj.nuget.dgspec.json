@@ -40,9 +40,17 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "LiveCharts.NetCore": {
+              "target": "Package",
+              "version": "[0.9.7, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "OxyPlot.WindowsForms": {
+              "target": "Package",
+              "version": "[2.1.2, )"
             }
           },
           "imports": [

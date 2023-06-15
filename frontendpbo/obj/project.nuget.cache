@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "FlPpxzm8186eQiCk90Nnm3RKzXZYAbPD5ko+GbGFcF06RarDc/6lqlEeD1v0QdAqZ7+ET5JUGMRduQJFv6OQuA==",
+  "dgSpecHash": "vpy2UKCKKr3QmHAMmebUzrsWZKAzyQrValO/CG+3l3dE4EqJ/2GMo0Qsb5MRf+MIqJvuvq1UKl+vOIVpPf0Ixw==",
   "success": true,
   "projectFilePath": "D:\\VIVI\\.PERKULIAHAN\\.SEMESTER 2\\PBO\\Frontend Dari Alip\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\QISA\\.nuget\\packages\\livecharts.netcore\\0.9.7\\livecharts.netcore.0.9.7.nupkg.sha512",
     "C:\\Users\\QISA\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\QISA\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\QISA\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\QISA\\.nuget\\packages\\oxyplot.windowsforms\\2.1.2\\oxyplot.windowsforms.2.1.2.nupkg.sha512",
     "C:\\Users\\QISA\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
