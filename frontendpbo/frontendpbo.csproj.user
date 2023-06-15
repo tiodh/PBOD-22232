@@ -10,7 +10,13 @@
     <Compile Update="crud_informasi_pengumuman.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DetailHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="detail_dataKeselamatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Detail_sarpras.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">
