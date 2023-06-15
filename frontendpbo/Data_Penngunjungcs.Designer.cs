@@ -1,6 +1,6 @@
 ﻿namespace frontendpbo
 {
-    partial class Form4
+    partial class Data_Penngunjungcs
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             SuspendLayout();
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(52, 33);
-            label1.Name = "label1";
-            label1.Size = new Size(100, 20);
-            label1.TabIndex = 0;
-            label1.Text = "REMBANGAN";
-            // 
-            // Form4
+            // Data_Penngunjungcs
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1639, 695);
-            ControlBox = false;
-            Controls.Add(label1);
+            ClientSize = new Size(1440, 1024);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form4";
-            WindowState = FormWindowState.Maximized;
+            Name = "Data_Penngunjungcs";
+            Text = "Data_Penngunjungcs";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
     }
 }
