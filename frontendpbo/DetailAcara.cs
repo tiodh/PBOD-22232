@@ -10,42 +10,29 @@ using System.Windows.Forms;
 
 namespace frontendpbo
 {
-    public partial class Form2 : Form
+    public partial class DetailAcara : Form
     {
-        public Form2()
+        public DetailAcara()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
         }
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetailAcara2());
+        }
         private Form activeForm = null;
-
         private void openChildForm(Form childForm)
         {
-            if (activeForm != null) activeForm.Close();
+            if (activeForm != null)
+                activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panelContent.Controls.Add(childForm);
-            panelContent.Tag = childForm;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void wisata_Click(object sender, EventArgs e)
-        {
-            openChildForm(new DetailWisata());
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
