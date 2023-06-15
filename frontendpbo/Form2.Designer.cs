@@ -217,6 +217,7 @@
             button2.Text = "Data Pengguna";
             button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // panel1
             // 
@@ -642,6 +643,7 @@
             button1.Text = "Rembangan";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // dashboard
             // 
