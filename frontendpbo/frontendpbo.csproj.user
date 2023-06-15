@@ -1,10 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="CreateSarana.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="CRUD_dataKeselamatan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="crud_informasi_pengumuman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DeletedanUpdateDataTempatMakan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailAcara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailAcara2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetaildanReadDataTempatMakan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DetailWisata.cs">
