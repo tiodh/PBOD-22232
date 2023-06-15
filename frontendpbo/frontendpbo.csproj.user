@@ -16,10 +16,16 @@
     <Compile Update="Data_Penngunjungcs.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DeletedanUpdateDataTempatMakan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DetailAcara.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DetailAcara2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetaildanReadDataTempatMakan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DetailHotel.cs">

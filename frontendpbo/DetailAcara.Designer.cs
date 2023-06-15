@@ -32,28 +32,28 @@
             pictureBox6 = new PictureBox();
             buttonJudul = new Button();
             panelChildForm = new Panel();
-            textBox1 = new TextBox();
-            button1 = new Button();
-            pictureBox4 = new PictureBox();
+            textBoxsearch1 = new TextBox();
+            buttonsearcheventacara = new Button();
+            pictureBoxacara4 = new PictureBox();
             buttonGambar5 = new Button();
-            buttonEevent4 = new Button();
-            pictureBox3 = new PictureBox();
+            buttonEvent4 = new Button();
+            pictureBoxacara3 = new PictureBox();
             buttonGambar3 = new Button();
             buttonEvent3 = new Button();
-            pictureBox2 = new PictureBox();
+            pictureboxacara2 = new PictureBox();
             buttonGambar2 = new Button();
             buttonEvent2 = new Button();
-            pictureBox1 = new PictureBox();
+            pictureBoxacara1 = new PictureBox();
             buttonGambar1 = new Button();
             buttonEvent1 = new Button();
             pictureBox5 = new PictureBox();
             panelJudul.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panelChildForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxacara4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxacara3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureboxacara2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxacara1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
@@ -95,18 +95,18 @@
             // 
             // panelChildForm
             // 
-            panelChildForm.Controls.Add(textBox1);
-            panelChildForm.Controls.Add(button1);
-            panelChildForm.Controls.Add(pictureBox4);
+            panelChildForm.Controls.Add(textBoxsearch1);
+            panelChildForm.Controls.Add(buttonsearcheventacara);
+            panelChildForm.Controls.Add(pictureBoxacara4);
             panelChildForm.Controls.Add(buttonGambar5);
-            panelChildForm.Controls.Add(buttonEevent4);
-            panelChildForm.Controls.Add(pictureBox3);
+            panelChildForm.Controls.Add(buttonEvent4);
+            panelChildForm.Controls.Add(pictureBoxacara3);
             panelChildForm.Controls.Add(buttonGambar3);
             panelChildForm.Controls.Add(buttonEvent3);
-            panelChildForm.Controls.Add(pictureBox2);
+            panelChildForm.Controls.Add(pictureboxacara2);
             panelChildForm.Controls.Add(buttonGambar2);
             panelChildForm.Controls.Add(buttonEvent2);
-            panelChildForm.Controls.Add(pictureBox1);
+            panelChildForm.Controls.Add(pictureBoxacara1);
             panelChildForm.Controls.Add(buttonGambar1);
             panelChildForm.Controls.Add(buttonEvent1);
             panelChildForm.Controls.Add(pictureBox5);
@@ -117,36 +117,36 @@
             panelChildForm.Size = new Size(857, 579);
             panelChildForm.TabIndex = 1;
             // 
-            // textBox1
+            // textBoxsearch1
             // 
-            textBox1.Anchor = AnchorStyles.None;
-            textBox1.Location = new Point(258, 17);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(206, 27);
-            textBox1.TabIndex = 14;
-            textBox1.Text = "Masukan Nama";
-            textBox1.TextChanged += textBox1_TextChanged;
+            textBoxsearch1.Anchor = AnchorStyles.None;
+            textBoxsearch1.Location = new Point(258, 17);
+            textBoxsearch1.Name = "textBoxsearch1";
+            textBoxsearch1.Size = new Size(206, 27);
+            textBoxsearch1.TabIndex = 14;
+            textBoxsearch1.Text = "Masukan Nama";
+            textBoxsearch1.TextChanged += textBox1_TextChanged;
             // 
-            // button1
+            // buttonsearcheventacara
             // 
-            button1.Anchor = AnchorStyles.None;
-            button1.Location = new Point(482, 15);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 13;
-            button1.Text = "Search";
-            button1.UseVisualStyleBackColor = true;
+            buttonsearcheventacara.Anchor = AnchorStyles.None;
+            buttonsearcheventacara.Location = new Point(482, 15);
+            buttonsearcheventacara.Name = "buttonsearcheventacara";
+            buttonsearcheventacara.Size = new Size(94, 29);
+            buttonsearcheventacara.TabIndex = 13;
+            buttonsearcheventacara.Text = "Search";
+            buttonsearcheventacara.UseVisualStyleBackColor = true;
             // 
-            // pictureBox4
+            // pictureBoxacara4
             // 
-            pictureBox4.Anchor = AnchorStyles.None;
-            pictureBox4.Image = Properties.Resources.a2;
-            pictureBox4.Location = new Point(482, 348);
-            pictureBox4.Margin = new Padding(2);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(323, 168);
-            pictureBox4.TabIndex = 11;
-            pictureBox4.TabStop = false;
+            pictureBoxacara4.Anchor = AnchorStyles.None;
+            pictureBoxacara4.Image = Properties.Resources.a2;
+            pictureBoxacara4.Location = new Point(482, 348);
+            pictureBoxacara4.Margin = new Padding(2);
+            pictureBoxacara4.Name = "pictureBoxacara4";
+            pictureBoxacara4.Size = new Size(323, 168);
+            pictureBoxacara4.TabIndex = 11;
+            pictureBoxacara4.TabStop = false;
             // 
             // buttonGambar5
             // 
@@ -159,30 +159,30 @@
             buttonGambar5.TabIndex = 10;
             buttonGambar5.UseVisualStyleBackColor = false;
             // 
-            // buttonEevent4
+            // buttonEvent4
             // 
-            buttonEevent4.Anchor = AnchorStyles.None;
-            buttonEevent4.BackColor = Color.DarkSlateBlue;
-            buttonEevent4.Font = new Font("Lucida Fax", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonEevent4.ForeColor = Color.White;
-            buttonEevent4.Location = new Point(482, 534);
-            buttonEevent4.Margin = new Padding(2);
-            buttonEevent4.Name = "buttonEevent4";
-            buttonEevent4.Size = new Size(318, 38);
-            buttonEevent4.TabIndex = 9;
-            buttonEevent4.Text = "EVENT ACARA 4";
-            buttonEevent4.UseVisualStyleBackColor = false;
+            buttonEvent4.Anchor = AnchorStyles.None;
+            buttonEvent4.BackColor = Color.DarkSlateBlue;
+            buttonEvent4.Font = new Font("Lucida Fax", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonEvent4.ForeColor = Color.White;
+            buttonEvent4.Location = new Point(482, 534);
+            buttonEvent4.Margin = new Padding(2);
+            buttonEvent4.Name = "buttonEvent4";
+            buttonEvent4.Size = new Size(318, 38);
+            buttonEvent4.TabIndex = 9;
+            buttonEvent4.Text = "EVENT ACARA 4";
+            buttonEvent4.UseVisualStyleBackColor = false;
             // 
-            // pictureBox3
+            // pictureBoxacara3
             // 
-            pictureBox3.Anchor = AnchorStyles.None;
-            pictureBox3.Image = Properties.Resources.a2;
-            pictureBox3.Location = new Point(66, 348);
-            pictureBox3.Margin = new Padding(2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(323, 168);
-            pictureBox3.TabIndex = 8;
-            pictureBox3.TabStop = false;
+            pictureBoxacara3.Anchor = AnchorStyles.None;
+            pictureBoxacara3.Image = Properties.Resources.a2;
+            pictureBoxacara3.Location = new Point(66, 348);
+            pictureBoxacara3.Margin = new Padding(2);
+            pictureBoxacara3.Name = "pictureBoxacara3";
+            pictureBoxacara3.Size = new Size(323, 168);
+            pictureBoxacara3.TabIndex = 8;
+            pictureBoxacara3.TabStop = false;
             // 
             // buttonGambar3
             // 
@@ -208,17 +208,18 @@
             buttonEvent3.TabIndex = 6;
             buttonEvent3.Text = "EVENT ACARA 3";
             buttonEvent3.UseVisualStyleBackColor = false;
+            buttonEvent3.Click += buttonEvent3_Click;
             // 
-            // pictureBox2
+            // pictureboxacara2
             // 
-            pictureBox2.Anchor = AnchorStyles.None;
-            pictureBox2.Image = Properties.Resources.a2;
-            pictureBox2.Location = new Point(482, 76);
-            pictureBox2.Margin = new Padding(2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(323, 168);
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
+            pictureboxacara2.Anchor = AnchorStyles.None;
+            pictureboxacara2.Image = Properties.Resources.a2;
+            pictureboxacara2.Location = new Point(482, 76);
+            pictureboxacara2.Margin = new Padding(2);
+            pictureboxacara2.Name = "pictureboxacara2";
+            pictureboxacara2.Size = new Size(323, 168);
+            pictureboxacara2.TabIndex = 5;
+            pictureboxacara2.TabStop = false;
             // 
             // buttonGambar2
             // 
@@ -245,17 +246,17 @@
             buttonEvent2.Text = "EVENT ACARA 2";
             buttonEvent2.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // pictureBoxacara1
             // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.Image = Properties.Resources.a2;
-            pictureBox1.Location = new Point(66, 76);
-            pictureBox1.Margin = new Padding(2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(323, 168);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBoxacara1.Anchor = AnchorStyles.None;
+            pictureBoxacara1.Image = Properties.Resources.a2;
+            pictureBoxacara1.Location = new Point(66, 76);
+            pictureBoxacara1.Margin = new Padding(2);
+            pictureBoxacara1.Name = "pictureBoxacara1";
+            pictureBoxacara1.Size = new Size(323, 168);
+            pictureBoxacara1.TabIndex = 2;
+            pictureBoxacara1.TabStop = false;
+            pictureBoxacara1.Click += pictureBox1_Click;
             // 
             // buttonGambar1
             // 
@@ -303,6 +304,7 @@
             ClientSize = new Size(857, 694);
             Controls.Add(panelChildForm);
             Controls.Add(panelJudul);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2);
             Name = "DetailAcara";
             Text = "EVENT ACARA";
@@ -310,10 +312,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panelChildForm.ResumeLayout(false);
             panelChildForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxacara4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxacara3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureboxacara2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxacara1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
@@ -324,20 +326,20 @@
         private Panel panelChildForm;
         private Button buttonEvent1;
         private Button buttonJudul;
-        private PictureBox pictureBox4;
+        private PictureBox pictureBoxacara4;
         private Button buttonGambar5;
-        private Button buttonEevent4;
-        private PictureBox pictureBox3;
+        private Button buttonEvent4;
+        private PictureBox pictureBoxacara3;
         private Button buttonGambar3;
         private Button buttonEvent3;
-        private PictureBox pictureBox2;
+        private PictureBox pictureboxacara2;
         private Button buttonGambar2;
         private Button buttonEvent2;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBoxacara1;
         private Button buttonGambar1;
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
-        private Button button1;
-        private TextBox textBox1;
+        private Button buttonsearcheventacara;
+        private TextBox textBoxsearch1;
     }
 }
