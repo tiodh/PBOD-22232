@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace frontendpbo
 {
-    public partial class CRUD_Data_Keselamatan : Form
+    public partial class DetailWisata : Form
     {
-        public CRUD_Data_Keselamatan()
+        public DetailWisata()
         {
             InitializeComponent();
-        }
-
-        private void Data_Keselamatan_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ReadData()
-        {
-
         }
     }
 }
