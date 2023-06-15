@@ -95,3 +95,27 @@ C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refin
 C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\ASUS\Source\Repos\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailDataTiket.resources
