@@ -10,7 +10,16 @@
     <Compile Update="crud_informasi_pengumuman.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DetailAcara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailAcara2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DetailHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailWisata.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="detail_dataKeselamatan.cs">
@@ -29,6 +38,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="wisata.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
