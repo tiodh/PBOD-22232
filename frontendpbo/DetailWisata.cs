@@ -16,5 +16,10 @@ namespace frontendpbo
         {
             InitializeComponent();
         }
+
+        private void DetailWisata_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
