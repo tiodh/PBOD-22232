@@ -39,6 +39,9 @@
             textBox3 = new TextBox();
             textBox4 = new TextBox();
             textBox5 = new TextBox();
+            btnCreate = new Button();
+            btnUpdate = new Button();
+            btnDelete = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -61,7 +64,7 @@
             dataGridView1.Location = new Point(63, 107);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(781, 479);
+            dataGridView1.Size = new Size(781, 494);
             dataGridView1.TabIndex = 1;
             // 
             // label2
@@ -81,7 +84,7 @@
             textBox1.Location = new Point(879, 147);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(408, 26);
+            textBox1.Size = new Size(426, 34);
             textBox1.TabIndex = 3;
             // 
             // label3
@@ -123,7 +126,7 @@
             textBox2.Location = new Point(879, 262);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(408, 26);
+            textBox2.Size = new Size(426, 33);
             textBox2.TabIndex = 7;
             // 
             // textBox3
@@ -132,7 +135,7 @@
             textBox3.Location = new Point(879, 374);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(408, 26);
+            textBox3.Size = new Size(426, 31);
             textBox3.TabIndex = 8;
             // 
             // textBox4
@@ -141,7 +144,7 @@
             textBox4.Location = new Point(879, 485);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(408, 26);
+            textBox4.Size = new Size(426, 30);
             textBox4.TabIndex = 9;
             // 
             // textBox5
@@ -155,11 +158,47 @@
             textBox5.TabIndex = 10;
             textBox5.Text = "Search Pengguna";
             // 
+            // btnCreate
+            // 
+            btnCreate.BackColor = Color.LimeGreen;
+            btnCreate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCreate.Location = new Point(879, 556);
+            btnCreate.Name = "btnCreate";
+            btnCreate.Size = new Size(128, 45);
+            btnCreate.TabIndex = 11;
+            btnCreate.Text = "Create";
+            btnCreate.UseVisualStyleBackColor = false;
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.BackColor = Color.Orange;
+            btnUpdate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUpdate.Location = new Point(1028, 556);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(128, 45);
+            btnUpdate.TabIndex = 12;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = false;
+            // 
+            // btnDelete
+            // 
+            btnDelete.BackColor = Color.IndianRed;
+            btnDelete.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnDelete.Location = new Point(1177, 556);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(128, 45);
+            btnDelete.TabIndex = 13;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = false;
+            // 
             // DataPengguna
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1350, 650);
+            Controls.Add(btnDelete);
+            Controls.Add(btnUpdate);
+            Controls.Add(btnCreate);
             Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
@@ -192,5 +231,8 @@
         private TextBox textBox3;
         private TextBox textBox4;
         private TextBox textBox5;
+        private Button btnCreate;
+        private Button btnUpdate;
+        private Button btnDelete;
     }
 }
