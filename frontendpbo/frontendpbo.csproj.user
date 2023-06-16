@@ -1,6 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
   <ItemGroup>
+    <Compile Update="AddPengunjung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CreateSarana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CRUD_dataKeselamatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="crud_informasi_pengumuman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DataPengguna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Data_Penngunjungcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DeletedanUpdateDataTempatMakan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailAcara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailAcara2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetaildanReadDataTempatMakan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailWisata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="detail_dataKeselamatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Detail_sarpras.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -10,7 +53,16 @@
     <Compile Update="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form4.cs">
+    <Compile Update="FormDetailDataTiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormEditEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RiwayatKunjungan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="wisata.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -66,6 +66,7 @@
             button1 = new Button();
             dashboard = new Button();
             pictureBox2 = new PictureBox();
+            panelContent = new Panel();
             side.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)menu).BeginInit();
             panel3.SuspendLayout();
@@ -87,17 +88,17 @@
             side.Location = new Point(0, 0);
             side.Margin = new Padding(2);
             side.Name = "side";
-            side.Size = new Size(53, 957);
+            side.Size = new Size(46, 813);
             side.TabIndex = 0;
             // 
             // menu
             // 
             menu.BackColor = Color.Transparent;
             menu.Image = Properties.Resources.garis3;
-            menu.Location = new Point(8, 20);
+            menu.Location = new Point(7, 17);
             menu.Margin = new Padding(2);
             menu.Name = "menu";
-            menu.Size = new Size(37, 55);
+            menu.Size = new Size(32, 47);
             menu.SizeMode = PictureBoxSizeMode.Zoom;
             menu.TabIndex = 0;
             menu.TabStop = false;
@@ -106,21 +107,21 @@
             // 
             panel3.Controls.Add(pictureBox1);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(9, 9);
+            panel3.Location = new Point(8, 7);
             panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
-            panel3.Padding = new Padding(4);
-            panel3.Size = new Size(1524, 82);
+            panel3.Padding = new Padding(4, 3, 4, 3);
+            panel3.Size = new Size(1334, 70);
             panel3.TabIndex = 2;
             // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.Rectangle_28__1_;
-            pictureBox1.Location = new Point(4, 4);
+            pictureBox1.Location = new Point(4, 3);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1516, 74);
+            pictureBox1.Size = new Size(1326, 64);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -131,20 +132,20 @@
             panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(panel3);
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(382, 0);
+            panel2.Location = new Point(334, 0);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
-            panel2.Padding = new Padding(9, 0, 9, 0);
-            panel2.Size = new Size(1542, 91);
+            panel2.Padding = new Padding(8, 0, 8, 0);
+            panel2.Size = new Size(1350, 77);
             panel2.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(59, 248);
+            label1.Location = new Point(52, 211);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(0, 20);
+            label1.Size = new Size(0, 17);
             label1.TabIndex = 4;
             // 
             // mainside
@@ -158,10 +159,10 @@
             mainside.Controls.Add(label1);
             mainside.Controls.Add(pictureBox2);
             mainside.Dock = DockStyle.Left;
-            mainside.Location = new Point(53, 0);
+            mainside.Location = new Point(46, 0);
             mainside.Margin = new Padding(2);
             mainside.Name = "mainside";
-            mainside.Size = new Size(329, 957);
+            mainside.Size = new Size(288, 813);
             mainside.TabIndex = 0;
             // 
             // panel4
@@ -170,9 +171,9 @@
             panel4.Controls.Add(button3);
             panel4.Controls.Add(button2);
             panel4.Dock = DockStyle.Top;
-            panel4.Location = new Point(0, 1224);
+            panel4.Location = new Point(0, 1041);
             panel4.Name = "panel4";
-            panel4.Size = new Size(308, 166);
+            panel4.Size = new Size(271, 141);
             panel4.TabIndex = 15;
             // 
             // button4
@@ -181,9 +182,9 @@
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button4.Location = new Point(0, 90);
+            button4.Location = new Point(0, 76);
             button4.Name = "button4";
-            button4.Size = new Size(308, 45);
+            button4.Size = new Size(271, 38);
             button4.TabIndex = 2;
             button4.Text = "Data Riwayat Kunjungan";
             button4.TextAlign = ContentAlignment.MiddleLeft;
@@ -195,9 +196,9 @@
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.Location = new Point(0, 45);
+            button3.Location = new Point(0, 38);
             button3.Name = "button3";
-            button3.Size = new Size(308, 45);
+            button3.Size = new Size(271, 38);
             button3.TabIndex = 1;
             button3.Text = "Data Pengunjung";
             button3.TextAlign = ContentAlignment.MiddleLeft;
@@ -211,11 +212,12 @@
             button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button2.Location = new Point(0, 0);
             button2.Name = "button2";
-            button2.Size = new Size(308, 45);
+            button2.Size = new Size(271, 38);
             button2.TabIndex = 0;
             button2.Text = "Data Pengguna";
             button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // panel1
             // 
@@ -244,10 +246,10 @@
             panel1.Controls.Add(edit1);
             panel1.Controls.Add(wisata);
             panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 204);
+            panel1.Location = new Point(0, 174);
             panel1.Name = "panel1";
-            panel1.Padding = new Padding(15, 0, 0, 0);
-            panel1.Size = new Size(308, 1020);
+            panel1.Padding = new Padding(13, 0, 0, 0);
+            panel1.Size = new Size(271, 867);
             panel1.TabIndex = 14;
             // 
             // edit11
@@ -257,11 +259,11 @@
             edit11.FlatAppearance.BorderSize = 0;
             edit11.FlatStyle = FlatStyle.Flat;
             edit11.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit11.Location = new Point(15, 945);
+            edit11.Location = new Point(13, 798);
             edit11.Margin = new Padding(0);
             edit11.Name = "edit11";
-            edit11.Padding = new Padding(20, 0, 0, 0);
-            edit11.Size = new Size(293, 45);
+            edit11.Padding = new Padding(18, 0, 0, 0);
+            edit11.Size = new Size(258, 38);
             edit11.TabIndex = 43;
             edit11.Text = "Edit";
             edit11.TextAlign = ContentAlignment.MiddleLeft;
@@ -274,10 +276,10 @@
             ulasan.FlatAppearance.BorderSize = 0;
             ulasan.FlatStyle = FlatStyle.Flat;
             ulasan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            ulasan.Location = new Point(15, 900);
+            ulasan.Location = new Point(13, 760);
             ulasan.Margin = new Padding(0);
             ulasan.Name = "ulasan";
-            ulasan.Size = new Size(293, 45);
+            ulasan.Size = new Size(258, 38);
             ulasan.TabIndex = 42;
             ulasan.Text = "Ulasan dan Komentar";
             ulasan.TextAlign = ContentAlignment.MiddleLeft;
@@ -290,11 +292,11 @@
             edit10.FlatAppearance.BorderSize = 0;
             edit10.FlatStyle = FlatStyle.Flat;
             edit10.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit10.Location = new Point(15, 855);
+            edit10.Location = new Point(13, 722);
             edit10.Margin = new Padding(0);
             edit10.Name = "edit10";
-            edit10.Padding = new Padding(20, 0, 0, 0);
-            edit10.Size = new Size(293, 45);
+            edit10.Padding = new Padding(18, 0, 0, 0);
+            edit10.Size = new Size(258, 38);
             edit10.TabIndex = 40;
             edit10.Text = "Edit";
             edit10.TextAlign = ContentAlignment.MiddleLeft;
@@ -307,10 +309,10 @@
             keamanan.FlatAppearance.BorderSize = 0;
             keamanan.FlatStyle = FlatStyle.Flat;
             keamanan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            keamanan.Location = new Point(15, 810);
+            keamanan.Location = new Point(13, 684);
             keamanan.Margin = new Padding(0);
             keamanan.Name = "keamanan";
-            keamanan.Size = new Size(293, 45);
+            keamanan.Size = new Size(258, 38);
             keamanan.TabIndex = 39;
             keamanan.Text = "Keamanan dan Keselamatan";
             keamanan.TextAlign = ContentAlignment.MiddleLeft;
@@ -323,11 +325,11 @@
             edit9.FlatAppearance.BorderSize = 0;
             edit9.FlatStyle = FlatStyle.Flat;
             edit9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit9.Location = new Point(15, 765);
+            edit9.Location = new Point(13, 646);
             edit9.Margin = new Padding(0);
             edit9.Name = "edit9";
-            edit9.Padding = new Padding(20, 0, 0, 0);
-            edit9.Size = new Size(293, 45);
+            edit9.Padding = new Padding(18, 0, 0, 0);
+            edit9.Size = new Size(258, 38);
             edit9.TabIndex = 26;
             edit9.Text = "Edit";
             edit9.TextAlign = ContentAlignment.MiddleLeft;
@@ -340,10 +342,10 @@
             transaksi.FlatAppearance.BorderSize = 0;
             transaksi.FlatStyle = FlatStyle.Flat;
             transaksi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            transaksi.Location = new Point(15, 720);
+            transaksi.Location = new Point(13, 608);
             transaksi.Margin = new Padding(0);
             transaksi.Name = "transaksi";
-            transaksi.Size = new Size(293, 45);
+            transaksi.Size = new Size(258, 38);
             transaksi.TabIndex = 25;
             transaksi.Text = "Transaksi Tiket";
             transaksi.TextAlign = ContentAlignment.MiddleLeft;
@@ -356,11 +358,11 @@
             edit8.FlatAppearance.BorderSize = 0;
             edit8.FlatStyle = FlatStyle.Flat;
             edit8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit8.Location = new Point(15, 675);
+            edit8.Location = new Point(13, 570);
             edit8.Margin = new Padding(0);
             edit8.Name = "edit8";
-            edit8.Padding = new Padding(20, 0, 0, 0);
-            edit8.Size = new Size(293, 45);
+            edit8.Padding = new Padding(18, 0, 0, 0);
+            edit8.Size = new Size(258, 38);
             edit8.TabIndex = 23;
             edit8.Text = "Edit";
             edit8.TextAlign = ContentAlignment.MiddleLeft;
@@ -373,10 +375,10 @@
             informasi.FlatAppearance.BorderSize = 0;
             informasi.FlatStyle = FlatStyle.Flat;
             informasi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            informasi.Location = new Point(15, 630);
+            informasi.Location = new Point(13, 532);
             informasi.Margin = new Padding(0);
             informasi.Name = "informasi";
-            informasi.Size = new Size(293, 45);
+            informasi.Size = new Size(258, 38);
             informasi.TabIndex = 22;
             informasi.Text = "Informasi";
             informasi.TextAlign = ContentAlignment.MiddleLeft;
@@ -389,11 +391,11 @@
             edit7.FlatAppearance.BorderSize = 0;
             edit7.FlatStyle = FlatStyle.Flat;
             edit7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit7.Location = new Point(15, 585);
+            edit7.Location = new Point(13, 494);
             edit7.Margin = new Padding(0);
             edit7.Name = "edit7";
-            edit7.Padding = new Padding(20, 0, 0, 0);
-            edit7.Size = new Size(293, 45);
+            edit7.Padding = new Padding(18, 0, 0, 0);
+            edit7.Size = new Size(258, 38);
             edit7.TabIndex = 20;
             edit7.Text = "Edit";
             edit7.TextAlign = ContentAlignment.MiddleLeft;
@@ -406,10 +408,10 @@
             umkm.FlatAppearance.BorderSize = 0;
             umkm.FlatStyle = FlatStyle.Flat;
             umkm.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            umkm.Location = new Point(15, 540);
+            umkm.Location = new Point(13, 456);
             umkm.Margin = new Padding(0);
             umkm.Name = "umkm";
-            umkm.Size = new Size(293, 45);
+            umkm.Size = new Size(258, 38);
             umkm.TabIndex = 19;
             umkm.Text = "UMKM";
             umkm.TextAlign = ContentAlignment.MiddleLeft;
@@ -422,11 +424,11 @@
             edit6.FlatAppearance.BorderSize = 0;
             edit6.FlatStyle = FlatStyle.Flat;
             edit6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit6.Location = new Point(15, 495);
+            edit6.Location = new Point(13, 418);
             edit6.Margin = new Padding(0);
             edit6.Name = "edit6";
-            edit6.Padding = new Padding(20, 0, 0, 0);
-            edit6.Size = new Size(293, 45);
+            edit6.Padding = new Padding(18, 0, 0, 0);
+            edit6.Size = new Size(258, 38);
             edit6.TabIndex = 17;
             edit6.Text = "Edit";
             edit6.TextAlign = ContentAlignment.MiddleLeft;
@@ -439,10 +441,10 @@
             acara.FlatAppearance.BorderSize = 0;
             acara.FlatStyle = FlatStyle.Flat;
             acara.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            acara.Location = new Point(15, 450);
+            acara.Location = new Point(13, 380);
             acara.Margin = new Padding(0);
             acara.Name = "acara";
-            acara.Size = new Size(293, 45);
+            acara.Size = new Size(258, 38);
             acara.TabIndex = 16;
             acara.Text = " Event Acara";
             acara.TextAlign = ContentAlignment.MiddleLeft;
@@ -455,11 +457,11 @@
             edit5.FlatAppearance.BorderSize = 0;
             edit5.FlatStyle = FlatStyle.Flat;
             edit5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit5.Location = new Point(15, 405);
+            edit5.Location = new Point(13, 342);
             edit5.Margin = new Padding(0);
             edit5.Name = "edit5";
-            edit5.Padding = new Padding(20, 0, 0, 0);
-            edit5.Size = new Size(293, 45);
+            edit5.Padding = new Padding(18, 0, 0, 0);
+            edit5.Size = new Size(258, 38);
             edit5.TabIndex = 14;
             edit5.Text = "Edit";
             edit5.TextAlign = ContentAlignment.MiddleLeft;
@@ -472,10 +474,10 @@
             saranaPrasarana.FlatAppearance.BorderSize = 0;
             saranaPrasarana.FlatStyle = FlatStyle.Flat;
             saranaPrasarana.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            saranaPrasarana.Location = new Point(15, 360);
+            saranaPrasarana.Location = new Point(13, 304);
             saranaPrasarana.Margin = new Padding(0);
             saranaPrasarana.Name = "saranaPrasarana";
-            saranaPrasarana.Size = new Size(293, 45);
+            saranaPrasarana.Size = new Size(258, 38);
             saranaPrasarana.TabIndex = 13;
             saranaPrasarana.Text = "Sarana Prasarana";
             saranaPrasarana.TextAlign = ContentAlignment.MiddleLeft;
@@ -488,11 +490,11 @@
             edit4.FlatAppearance.BorderSize = 0;
             edit4.FlatStyle = FlatStyle.Flat;
             edit4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit4.Location = new Point(15, 315);
+            edit4.Location = new Point(13, 266);
             edit4.Margin = new Padding(0);
             edit4.Name = "edit4";
-            edit4.Padding = new Padding(20, 0, 0, 0);
-            edit4.Size = new Size(293, 45);
+            edit4.Padding = new Padding(18, 0, 0, 0);
+            edit4.Size = new Size(258, 38);
             edit4.TabIndex = 11;
             edit4.Text = "Edit";
             edit4.TextAlign = ContentAlignment.MiddleLeft;
@@ -505,10 +507,10 @@
             tempatMakan.FlatAppearance.BorderSize = 0;
             tempatMakan.FlatStyle = FlatStyle.Flat;
             tempatMakan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            tempatMakan.Location = new Point(15, 270);
+            tempatMakan.Location = new Point(13, 228);
             tempatMakan.Margin = new Padding(0);
             tempatMakan.Name = "tempatMakan";
-            tempatMakan.Size = new Size(293, 45);
+            tempatMakan.Size = new Size(258, 38);
             tempatMakan.TabIndex = 10;
             tempatMakan.Text = "Tempat Makan";
             tempatMakan.TextAlign = ContentAlignment.MiddleLeft;
@@ -521,11 +523,11 @@
             edit3.FlatAppearance.BorderSize = 0;
             edit3.FlatStyle = FlatStyle.Flat;
             edit3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit3.Location = new Point(15, 225);
+            edit3.Location = new Point(13, 190);
             edit3.Margin = new Padding(0);
             edit3.Name = "edit3";
-            edit3.Padding = new Padding(20, 0, 0, 0);
-            edit3.Size = new Size(293, 45);
+            edit3.Padding = new Padding(18, 0, 0, 0);
+            edit3.Size = new Size(258, 38);
             edit3.TabIndex = 8;
             edit3.Text = "Edit";
             edit3.TextAlign = ContentAlignment.MiddleLeft;
@@ -538,10 +540,10 @@
             transportasi.FlatAppearance.BorderSize = 0;
             transportasi.FlatStyle = FlatStyle.Flat;
             transportasi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            transportasi.Location = new Point(15, 180);
+            transportasi.Location = new Point(13, 152);
             transportasi.Margin = new Padding(0);
             transportasi.Name = "transportasi";
-            transportasi.Size = new Size(293, 45);
+            transportasi.Size = new Size(258, 38);
             transportasi.TabIndex = 7;
             transportasi.Text = "Transportasi";
             transportasi.TextAlign = ContentAlignment.MiddleLeft;
@@ -554,11 +556,11 @@
             edit2.FlatAppearance.BorderSize = 0;
             edit2.FlatStyle = FlatStyle.Flat;
             edit2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit2.Location = new Point(15, 135);
+            edit2.Location = new Point(13, 114);
             edit2.Margin = new Padding(0);
             edit2.Name = "edit2";
-            edit2.Padding = new Padding(20, 0, 0, 0);
-            edit2.Size = new Size(293, 45);
+            edit2.Padding = new Padding(18, 0, 0, 0);
+            edit2.Size = new Size(258, 38);
             edit2.TabIndex = 5;
             edit2.Text = "Edit";
             edit2.TextAlign = ContentAlignment.MiddleLeft;
@@ -571,10 +573,10 @@
             penginapan.FlatAppearance.BorderSize = 0;
             penginapan.FlatStyle = FlatStyle.Flat;
             penginapan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            penginapan.Location = new Point(15, 90);
+            penginapan.Location = new Point(13, 76);
             penginapan.Margin = new Padding(0);
             penginapan.Name = "penginapan";
-            penginapan.Size = new Size(293, 45);
+            penginapan.Size = new Size(258, 38);
             penginapan.TabIndex = 4;
             penginapan.Text = "Penginapan";
             penginapan.TextAlign = ContentAlignment.MiddleLeft;
@@ -587,11 +589,11 @@
             edit1.FlatAppearance.BorderSize = 0;
             edit1.FlatStyle = FlatStyle.Flat;
             edit1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit1.Location = new Point(15, 45);
+            edit1.Location = new Point(13, 38);
             edit1.Margin = new Padding(0);
             edit1.Name = "edit1";
-            edit1.Padding = new Padding(20, 0, 0, 0);
-            edit1.Size = new Size(293, 45);
+            edit1.Padding = new Padding(18, 0, 0, 0);
+            edit1.Size = new Size(258, 38);
             edit1.TabIndex = 2;
             edit1.Text = "Edit";
             edit1.TextAlign = ContentAlignment.MiddleLeft;
@@ -604,10 +606,10 @@
             wisata.FlatAppearance.BorderSize = 0;
             wisata.FlatStyle = FlatStyle.Flat;
             wisata.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wisata.Location = new Point(15, 0);
+            wisata.Location = new Point(13, 0);
             wisata.Margin = new Padding(0);
             wisata.Name = "wisata";
-            wisata.Size = new Size(293, 45);
+            wisata.Size = new Size(258, 38);
             wisata.TabIndex = 1;
             wisata.Text = "Wisata";
             wisata.TextAlign = ContentAlignment.MiddleLeft;
@@ -620,9 +622,9 @@
             panel5.Controls.Add(button1);
             panel5.Controls.Add(dashboard);
             panel5.Dock = DockStyle.Top;
-            panel5.Location = new Point(0, 115);
+            panel5.Location = new Point(0, 98);
             panel5.Name = "panel5";
-            panel5.Size = new Size(308, 89);
+            panel5.Size = new Size(271, 76);
             panel5.TabIndex = 13;
             // 
             // button1
@@ -633,14 +635,15 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(0, 45);
+            button1.Location = new Point(0, 38);
             button1.Name = "button1";
-            button1.Padding = new Padding(0, 0, 50, 0);
-            button1.Size = new Size(308, 43);
+            button1.Padding = new Padding(0, 0, 44, 0);
+            button1.Size = new Size(271, 37);
             button1.TabIndex = 11;
             button1.Text = "Rembangan";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // dashboard
             // 
@@ -652,8 +655,8 @@
             dashboard.ForeColor = Color.Black;
             dashboard.Location = new Point(0, 0);
             dashboard.Name = "dashboard";
-            dashboard.Padding = new Padding(0, 0, 50, 0);
-            dashboard.Size = new Size(308, 45);
+            dashboard.Padding = new Padding(0, 0, 44, 0);
+            dashboard.Size = new Size(271, 38);
             dashboard.TabIndex = 10;
             dashboard.Text = "Dashboard";
             dashboard.TextAlign = ContentAlignment.MiddleLeft;
@@ -665,22 +668,32 @@
             pictureBox2.Image = Properties.Resources.logo;
             pictureBox2.Location = new Point(0, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(308, 115);
+            pictureBox2.Size = new Size(271, 98);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
+            // panelContent
+            // 
+            panelContent.Dock = DockStyle.Fill;
+            panelContent.Location = new Point(334, 77);
+            panelContent.Name = "panelContent";
+            panelContent.Size = new Size(1350, 736);
+            panelContent.TabIndex = 2;
+            // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1924, 957);
+            ClientSize = new Size(1684, 813);
+            Controls.Add(panelContent);
             Controls.Add(panel2);
             Controls.Add(mainside);
             Controls.Add(side);
             Margin = new Padding(2);
             Name = "Form2";
             Text = "Form1";
+            Load += Form2_Load;
             side.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)menu).EndInit();
             panel3.ResumeLayout(false);
@@ -735,5 +748,6 @@
         private Button penginapan;
         private Button edit1;
         private Button wisata;
+        private Panel panelContent;
     }
 }
