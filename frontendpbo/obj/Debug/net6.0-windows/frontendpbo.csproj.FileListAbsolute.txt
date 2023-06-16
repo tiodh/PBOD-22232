@@ -138,3 +138,47 @@ D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\o
 D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
 D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
 D:\VIVI\.PERKULIAHAN\.SEMESTER 2\PBO\Frontend Dari Alip\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.wisata.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Pengunjung.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselamatan.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DeletedanUpdateDataTempatMakan.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailAcara.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailAcara2.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetaildanReadDataTempatMakan.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailHotel.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.detail_dataKeselamatan.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Detail_sarpras.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailDataTiket.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.wisata.resources
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+D:\KULIAH\2. SEMESTER 2\PBO\Project Akhir Data Pengguna\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DataPengguna.resources

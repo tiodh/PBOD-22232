@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace frontendpbo
 {
-    public partial class Form4 : Form
+    public partial class DataPengguna : Form
     {
-        public Form4()
+        public DataPengguna()
         {
             InitializeComponent();
         }

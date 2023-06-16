@@ -14,6 +14,9 @@
     <Compile Update="crud_informasi_pengumuman.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DataPengguna.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Data_Penngunjungcs.cs">
       <SubType>Form</SubType>
     </Compile>
