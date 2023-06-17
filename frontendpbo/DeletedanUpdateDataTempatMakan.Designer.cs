@@ -84,6 +84,7 @@
             LokasiTempatMakantextBox2.Name = "LokasiTempatMakantextBox2";
             LokasiTempatMakantextBox2.Size = new Size(488, 27);
             LokasiTempatMakantextBox2.TabIndex = 5;
+            LokasiTempatMakantextBox2.TextChanged += LokasiTempatMakantextBox2_TextChanged;
             // 
             // NamaTempatMakantextBox1
             // 
@@ -91,6 +92,7 @@
             NamaTempatMakantextBox1.Name = "NamaTempatMakantextBox1";
             NamaTempatMakantextBox1.Size = new Size(488, 27);
             NamaTempatMakantextBox1.TabIndex = 4;
+            NamaTempatMakantextBox1.TextChanged += NamaTempatMakantextBox1_TextChanged;
             // 
             // NoTeleponTempatMakanlabel4
             // 
@@ -145,6 +147,7 @@
             CRUDTempatMakandataGridView1.RowTemplate.Height = 29;
             CRUDTempatMakandataGridView1.Size = new Size(792, 709);
             CRUDTempatMakandataGridView1.TabIndex = 1;
+            CRUDTempatMakandataGridView1.CellClick += CRUDTempatMakandataGridView1_CellClick;
             CRUDTempatMakandataGridView1.CellContentClick += CRUDTempatMakandataGridView1_CellContentClick;
             // 
             // ClearTempatMakanbutton1
@@ -167,6 +170,7 @@
             TambahTempatMakanbutton2.TabIndex = 3;
             TambahTempatMakanbutton2.Text = "Tambah";
             TambahTempatMakanbutton2.UseVisualStyleBackColor = false;
+            TambahTempatMakanbutton2.Click += TambahTempatMakanbutton2_Click;
             // 
             // EditTempatMakanbutton3
             // 
@@ -201,7 +205,8 @@
             Controls.Add(CRUDTempatMakanpanel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "DeletedanUpdateDataTempatMakan";
-            Text = "Form5";
+            Text = "CRUD Data Tempat Makan";
+            Load += DeletedanUpdateDataTempatMakan_Load;
             CRUDTempatMakanpanel1.ResumeLayout(false);
             CRUDTempatMakanpanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)CRUDTempatMakandataGridView1).EndInit();

@@ -223,7 +223,6 @@ C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debu
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
-C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form4.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.wisata.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
@@ -237,3 +236,12 @@ C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debu
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Pengunjung.resources
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailHotel.resources
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Detail_sarpras.resources
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
