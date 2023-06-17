@@ -7,10 +7,19 @@
     <Compile Update="CreateSarana.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CRUDTrasnportasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="CRUD_dataKeselamatan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="crud_informasi_pengumuman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="crud_umkm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DataPengguna.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Data_Penngunjungcs.cs">
@@ -40,6 +49,12 @@
     <Compile Update="Detail_sarpras.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="EditTiketing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="form.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -47,6 +62,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDetailDataTiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormDetailTransportasi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormEditEvent.cs">
