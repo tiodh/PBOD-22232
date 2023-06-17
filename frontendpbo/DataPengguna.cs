@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace frontendpbo
 {
-    public partial class FormEditEvent : Form
+    public partial class DataPengguna : Form
     {
-        public FormEditEvent()
+        public DataPengguna()
         {
             InitializeComponent();
-        }
-
-        private void FormEditEvent_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -8,7 +8,9 @@ namespace frontendpbo.Models
 {
     internal class Wisata
     {
-        public int id_wisata { get; set; }
-
+        public int Id_Wisata { get; set; }
+        public string Nama_Wisata{ get; set; }
+        public string Deskripsi { get; set; }
+        public string Lokasi { get; set; }
     }
 }

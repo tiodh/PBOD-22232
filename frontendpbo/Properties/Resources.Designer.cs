@@ -73,16 +73,6 @@ namespace frontendpbo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap a2 {
-            get {
-                object obj = ResourceManager.GetObject("a2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap elm1 {
             get {
                 object obj = ResourceManager.GetObject("elm1", resourceCulture);
@@ -143,19 +133,9 @@ namespace frontendpbo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Log_In_admin__17_ {
+        internal static System.Drawing.Bitmap Kendaraan_ICon {
             get {
-                object obj = ResourceManager.GetObject("Log In admin (17)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Log_In_admin__19_ {
-            get {
-                object obj = ResourceManager.GetObject("Log In admin (19)", resourceCulture);
+                object obj = ResourceManager.GetObject("Kendaraan ICon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,16 +173,6 @@ namespace frontendpbo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pxfuel {
-            get {
-                object obj = ResourceManager.GetObject("pxfuel", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Rectangle_28 {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 28", resourceCulture);
@@ -226,16 +196,6 @@ namespace frontendpbo.Properties {
         internal static System.Drawing.Bitmap sidebar {
             get {
                 object obj = ResourceManager.GetObject("sidebar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ungu2 {
-            get {
-                object obj = ResourceManager.GetObject("ungu2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

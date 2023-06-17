@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "GBSQEUyvtByzqj9HMuxPVQvqkLhWDSPy+Dg6O6eCIPptenqE5VBDV7OCvH6GtO0zRqxN3y3Sx3ByAnuFGbdyLA==",
+  "dgSpecHash": "q3+pJFZ5sd/zFs+3btsIKgAP8ivDhManF/vD8Bxe8aN1lpqWmzR2QHk4LcCEUzlKH0L/IDq0uccxLORgBIsEdw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Farrell\\Dropbox\\PC\\Documents\\PBO Github\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+  "projectFilePath": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\PBO_umkm_akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Farrell\\.nuget\\packages\\livecharts.netcore\\0.9.7\\livecharts.netcore.0.9.7.nupkg.sha512",
-    "C:\\Users\\Farrell\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Farrell\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
-    "C:\\Users\\Farrell\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
-    "C:\\Users\\Farrell\\.nuget\\packages\\oxyplot.windowsforms\\2.1.2\\oxyplot.windowsforms.2.1.2.nupkg.sha512",
-    "C:\\Users\\Farrell\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\rangga\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\rangga\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\rangga\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

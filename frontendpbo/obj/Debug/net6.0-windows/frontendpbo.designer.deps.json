@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "LiveCharts.NetCore/0.9.7": {
-        "runtime": {
-          "lib/netcoreapp3.1/LiveCharts.dll": {
-            "assemblyVersion": "0.9.7.0",
-            "fileVersion": "0.9.7.0"
-          }
-        }
-      },
       "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -34,25 +26,6 @@
           }
         }
       },
-      "OxyPlot.Core/2.1.2": {
-        "runtime": {
-          "lib/netstandard2.0/OxyPlot.dll": {
-            "assemblyVersion": "2.1.2.0",
-            "fileVersion": "2.1.2.0"
-          }
-        }
-      },
-      "OxyPlot.WindowsForms/2.1.2": {
-        "dependencies": {
-          "OxyPlot.Core": "2.1.2"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/OxyPlot.WindowsForms.dll": {
-            "assemblyVersion": "2.1.2.0",
-            "fileVersion": "2.1.2.0"
-          }
-        }
-      },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "runtime": {
           "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
@@ -64,13 +37,6 @@
     }
   },
   "libraries": {
-    "LiveCharts.NetCore/0.9.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vRLJNyQAhYxw8TvGL9tY3Xskhi3JqhC74mWN+KWLheDCqsHpg8CwicLUvz/7MjWhNPcQ3HL1DmiPfnf8QkaAwg==",
-      "path": "livecharts.netcore/0.9.7",
-      "hashPath": "livecharts.netcore.0.9.7.nupkg.sha512"
-    },
     "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -84,20 +50,6 @@
       "sha512": "sha512-7UVPYy2RP0ci04PED1tc9ZCaTw/DfSdSkLiGEFCAvwMwsgA/bAluj1liNzP1IpN0MFofnOF0cm1zJfmbEuCehg==",
       "path": "npgsql/7.0.4",
       "hashPath": "npgsql.7.0.4.nupkg.sha512"
-    },
-    "OxyPlot.Core/2.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-/BuPL1Wa7ZhpKA2DBe72md+S8PgIHF+UP/NsKfO9BiheXnbns1/tqS7s2MWIR1xFy5i+PWVC67KziGPY48mNgA==",
-      "path": "oxyplot.core/2.1.2",
-      "hashPath": "oxyplot.core.2.1.2.nupkg.sha512"
-    },
-    "OxyPlot.WindowsForms/2.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0RXF5bDDjJO8H/ZyE3NrrIDRVD/P9MjhcZ+Z9rlkbanHr8qZQFHn0ffe/GuTJKe8pFLZEzapDzB7wRgyUeaCIQ==",
-      "path": "oxyplot.windowsforms/2.1.2",
-      "hashPath": "oxyplot.windowsforms.2.1.2.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "type": "package",

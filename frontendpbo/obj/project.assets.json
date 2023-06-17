@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "LiveCharts.NetCore/0.9.7": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.1/LiveCharts.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/LiveCharts.dll": {}
-        }
-      },
       "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
@@ -44,38 +35,6 @@
           }
         }
       },
-      "OxyPlot.Core/2.1.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/OxyPlot.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/OxyPlot.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "OxyPlot.WindowsForms/2.1.2": {
-        "type": "package",
-        "dependencies": {
-          "OxyPlot.Core": "2.1.2"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/OxyPlot.WindowsForms.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/OxyPlot.WindowsForms.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WindowsForms"
-        ]
-      },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
@@ -95,19 +54,6 @@
     }
   },
   "libraries": {
-    "LiveCharts.NetCore/0.9.7": {
-      "sha512": "vRLJNyQAhYxw8TvGL9tY3Xskhi3JqhC74mWN+KWLheDCqsHpg8CwicLUvz/7MjWhNPcQ3HL1DmiPfnf8QkaAwg==",
-      "type": "package",
-      "path": "livecharts.netcore/0.9.7",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net452/LiveCharts.dll",
-        "lib/netcoreapp3.1/LiveCharts.dll",
-        "livecharts.netcore.0.9.7.nupkg.sha512",
-        "livecharts.netcore.nuspec"
-      ]
-    },
     "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
       "sha512": "/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
       "type": "package",
@@ -185,44 +131,6 @@
         "postgresql.png"
       ]
     },
-    "OxyPlot.Core/2.1.2": {
-      "sha512": "/BuPL1Wa7ZhpKA2DBe72md+S8PgIHF+UP/NsKfO9BiheXnbns1/tqS7s2MWIR1xFy5i+PWVC67KziGPY48mNgA==",
-      "type": "package",
-      "path": "oxyplot.core/2.1.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "OxyPlot_128.png",
-        "lib/net40/OxyPlot.dll",
-        "lib/net40/OxyPlot.xml",
-        "lib/net45/OxyPlot.dll",
-        "lib/net45/OxyPlot.xml",
-        "lib/netstandard1.0/OxyPlot.dll",
-        "lib/netstandard1.0/OxyPlot.xml",
-        "lib/netstandard2.0/OxyPlot.dll",
-        "lib/netstandard2.0/OxyPlot.xml",
-        "oxyplot.core.2.1.2.nupkg.sha512",
-        "oxyplot.core.nuspec"
-      ]
-    },
-    "OxyPlot.WindowsForms/2.1.2": {
-      "sha512": "0RXF5bDDjJO8H/ZyE3NrrIDRVD/P9MjhcZ+Z9rlkbanHr8qZQFHn0ffe/GuTJKe8pFLZEzapDzB7wRgyUeaCIQ==",
-      "type": "package",
-      "path": "oxyplot.windowsforms/2.1.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "OxyPlot_128.png",
-        "lib/net40/OxyPlot.WindowsForms.dll",
-        "lib/net40/OxyPlot.WindowsForms.xml",
-        "lib/net45/OxyPlot.WindowsForms.dll",
-        "lib/net45/OxyPlot.WindowsForms.xml",
-        "lib/netcoreapp3.1/OxyPlot.WindowsForms.dll",
-        "lib/netcoreapp3.1/OxyPlot.WindowsForms.xml",
-        "oxyplot.windowsforms.2.1.2.nupkg.sha512",
-        "oxyplot.windowsforms.nuspec"
-      ]
-    },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "type": "package",
@@ -251,29 +159,27 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "LiveCharts.NetCore >= 0.9.7",
-      "Npgsql >= 7.0.4",
-      "OxyPlot.WindowsForms >= 2.1.2"
+      "Npgsql >= 7.0.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Farrell\\.nuget\\packages\\": {},
+    "C:\\Users\\rangga\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Farrell\\Dropbox\\PC\\Documents\\PBO Github\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "projectUniqueName": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\PBO_umkm_akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "projectName": "frontendpbo",
-      "projectPath": "C:\\Users\\Farrell\\Dropbox\\PC\\Documents\\PBO Github\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-      "packagesPath": "C:\\Users\\Farrell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Farrell\\Dropbox\\PC\\Documents\\PBO Github\\PBOD-22232\\frontendpbo\\obj\\",
+      "projectPath": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\PBO_umkm_akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "packagesPath": "C:\\Users\\rangga\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\PBO_umkm_akhir\\PBOD-22232\\frontendpbo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Farrell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rangga\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -282,7 +188,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -301,17 +206,9 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
-          "LiveCharts.NetCore": {
-            "target": "Package",
-            "version": "[0.9.7, )"
-          },
           "Npgsql": {
             "target": "Package",
             "version": "[7.0.4, )"
-          },
-          "OxyPlot.WindowsForms": {
-            "target": "Package",
-            "version": "[2.1.2, )"
           }
         },
         "imports": [
@@ -333,7 +230,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
