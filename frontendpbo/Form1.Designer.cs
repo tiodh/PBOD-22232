@@ -28,238 +28,239 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.side = new System.Windows.Forms.Panel();
-            this.menu = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.mainside = new System.Windows.Forms.Panel();
-            this.dashboard = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.side.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menu)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.mainside.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.SuspendLayout();
+            side = new Panel();
+            menu = new PictureBox();
+            panelContent = new Panel();
+            panel3 = new Panel();
+            pictureBox1 = new PictureBox();
+            panel2 = new Panel();
+            mainside = new Panel();
+            dashboard = new Button();
+            button6 = new Button();
+            button3 = new Button();
+            pictureBox2 = new PictureBox();
+            button1 = new Button();
+            button4 = new Button();
+            label1 = new Label();
+            side.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)menu).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
+            mainside.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            SuspendLayout();
             // 
             // side
             // 
-            this.side.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.side.BackgroundImage = global::frontendpbo.Properties.Resources.sidebar;
-            this.side.Controls.Add(this.menu);
-            this.side.Dock = System.Windows.Forms.DockStyle.Left;
-            this.side.Location = new System.Drawing.Point(0, 0);
-            this.side.Margin = new System.Windows.Forms.Padding(2);
-            this.side.Name = "side";
-            this.side.Size = new System.Drawing.Size(53, 786);
-            this.side.TabIndex = 0;
+            side.BackColor = SystemColors.ActiveCaption;
+            side.BackgroundImage = Properties.Resources.sidebar;
+            side.Controls.Add(menu);
+            side.Dock = DockStyle.Left;
+            side.Location = new Point(0, 0);
+            side.Margin = new Padding(2);
+            side.Name = "side";
+            side.Size = new Size(53, 786);
+            side.TabIndex = 0;
             // 
             // menu
             // 
-            this.menu.BackColor = System.Drawing.Color.Transparent;
-            this.menu.Image = global::frontendpbo.Properties.Resources.garis3;
-            this.menu.Location = new System.Drawing.Point(8, 20);
-            this.menu.Margin = new System.Windows.Forms.Padding(2);
-            this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(37, 55);
-            this.menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu.TabIndex = 0;
-            this.menu.TabStop = false;
-            this.menu.Click += new System.EventHandler(this.menu_Click_1);
+            menu.BackColor = Color.Transparent;
+            menu.Image = Properties.Resources.garis3;
+            menu.Location = new Point(8, 20);
+            menu.Margin = new Padding(2);
+            menu.Name = "menu";
+            menu.Size = new Size(37, 55);
+            menu.SizeMode = PictureBoxSizeMode.Zoom;
+            menu.TabIndex = 0;
+            menu.TabStop = false;
+            menu.Click += menu_Click_1;
             // 
-            // panel5
+            // panelContent
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(285, 91);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1639, 695);
-            this.panel5.TabIndex = 3;
+            panelContent.BackColor = SystemColors.AppWorkspace;
+            panelContent.Dock = DockStyle.Fill;
+            panelContent.Location = new Point(285, 91);
+            panelContent.Margin = new Padding(2);
+            panelContent.Name = "panelContent";
+            panelContent.Size = new Size(1639, 695);
+            panelContent.TabIndex = 3;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(9, 9);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(4);
-            this.panel3.Size = new System.Drawing.Size(1621, 82);
-            this.panel3.TabIndex = 2;
+            panel3.Controls.Add(pictureBox1);
+            panel3.Dock = DockStyle.Bottom;
+            panel3.Location = new Point(9, 9);
+            panel3.Margin = new Padding(2);
+            panel3.Name = "panel3";
+            panel3.Padding = new Padding(4);
+            panel3.Size = new Size(1621, 82);
+            panel3.TabIndex = 2;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::frontendpbo.Properties.Resources.Rectangle_28__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1613, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.Rectangle_28__1_;
+            pictureBox1.Location = new Point(4, 4);
+            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1613, 74);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(285, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(9, 0, 9, 0);
-            this.panel2.Size = new System.Drawing.Size(1639, 91);
-            this.panel2.TabIndex = 1;
+            panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(panel3);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(285, 0);
+            panel2.Margin = new Padding(2);
+            panel2.Name = "panel2";
+            panel2.Padding = new Padding(9, 0, 9, 0);
+            panel2.Size = new Size(1639, 91);
+            panel2.TabIndex = 1;
             // 
             // mainside
             // 
-            this.mainside.BackColor = System.Drawing.Color.Transparent;
-            this.mainside.BackgroundImage = global::frontendpbo.Properties.Resources.sidebar;
-            this.mainside.Controls.Add(this.dashboard);
-            this.mainside.Controls.Add(this.button6);
-            this.mainside.Controls.Add(this.button3);
-            this.mainside.Controls.Add(this.pictureBox2);
-            this.mainside.Controls.Add(this.button1);
-            this.mainside.Controls.Add(this.button4);
-            this.mainside.Dock = System.Windows.Forms.DockStyle.Left;
-            this.mainside.Location = new System.Drawing.Point(53, 0);
-            this.mainside.Margin = new System.Windows.Forms.Padding(2);
-            this.mainside.Name = "mainside";
-            this.mainside.Size = new System.Drawing.Size(232, 786);
-            this.mainside.TabIndex = 0;
+            mainside.BackColor = Color.Transparent;
+            mainside.BackgroundImage = Properties.Resources.sidebar;
+            mainside.Controls.Add(dashboard);
+            mainside.Controls.Add(button6);
+            mainside.Controls.Add(button3);
+            mainside.Controls.Add(pictureBox2);
+            mainside.Controls.Add(button1);
+            mainside.Controls.Add(button4);
+            mainside.Dock = DockStyle.Left;
+            mainside.Location = new Point(53, 0);
+            mainside.Margin = new Padding(2);
+            mainside.Name = "mainside";
+            mainside.Size = new Size(232, 786);
+            mainside.TabIndex = 0;
             // 
             // dashboard
             // 
-            this.dashboard.BackColor = System.Drawing.Color.Transparent;
-            this.dashboard.FlatAppearance.BorderSize = 0;
-            this.dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dashboard.Font = new System.Drawing.Font("Futura Md BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dashboard.ForeColor = System.Drawing.Color.Black;
-            this.dashboard.Location = new System.Drawing.Point(-43, 116);
-            this.dashboard.Name = "dashboard";
-            this.dashboard.Size = new System.Drawing.Size(275, 63);
-            this.dashboard.TabIndex = 10;
-            this.dashboard.Text = "Dashboard";
-            this.dashboard.UseVisualStyleBackColor = false;
+            dashboard.BackColor = Color.Transparent;
+            dashboard.FlatAppearance.BorderSize = 0;
+            dashboard.FlatStyle = FlatStyle.Flat;
+            dashboard.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            dashboard.ForeColor = Color.Black;
+            dashboard.Location = new Point(-43, 116);
+            dashboard.Name = "dashboard";
+            dashboard.Size = new Size(275, 63);
+            dashboard.TabIndex = 10;
+            dashboard.Text = "Dashboard";
+            dashboard.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Futura Md BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(-45, 208);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(275, 63);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "Kebon Agung";
-            this.button6.UseVisualStyleBackColor = false;
+            button6.BackColor = Color.Transparent;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            button6.ForeColor = Color.Black;
+            button6.Location = new Point(-45, 208);
+            button6.Name = "button6";
+            button6.Size = new Size(275, 63);
+            button6.TabIndex = 9;
+            button6.Text = "Kebon Agung";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Futura Md BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(-45, 307);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(275, 63);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Patemon";
-            this.button3.UseVisualStyleBackColor = false;
+            button3.BackColor = Color.Transparent;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            button3.ForeColor = Color.Black;
+            button3.Location = new Point(-45, 307);
+            button3.Name = "button3";
+            button3.Size = new Size(275, 63);
+            button3.TabIndex = 8;
+            button3.Text = "Patemon";
+            button3.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Image = global::frontendpbo.Properties.Resources.logo;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(232, 115);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Dock = DockStyle.Top;
+            pictureBox2.Image = Properties.Resources.logo;
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(232, 115);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Futura Md BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(-45, 257);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(275, 63);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Watu Ulo";
-            this.button1.UseVisualStyleBackColor = false;
+            button1.BackColor = Color.Transparent;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(-45, 257);
+            button1.Name = "button1";
+            button1.Size = new Size(275, 63);
+            button1.TabIndex = 7;
+            button1.Text = "Watu Ulo";
+            button1.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Futura Md BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(-44, 161);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(275, 63);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Rembangan";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            button4.BackColor = Color.Transparent;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            button4.ForeColor = Color.Black;
+            button4.Location = new Point(-44, 161);
+            button4.Name = "button4";
+            button4.Size = new Size(275, 63);
+            button4.TabIndex = 3;
+            button4.Text = "Rembangan";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(407, 254);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 20);
-            this.label1.TabIndex = 4;
+            label1.AutoSize = true;
+            label1.Location = new Point(407, 254);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 20);
+            label1.TabIndex = 4;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 786);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.mainside);
-            this.Controls.Add(this.side);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.Resize += new System.EventHandler(this.Form1_Resize);
-            this.side.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.menu)).EndInit();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.mainside.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1924, 786);
+            Controls.Add(label1);
+            Controls.Add(panelContent);
+            Controls.Add(panel2);
+            Controls.Add(mainside);
+            Controls.Add(side);
+            Margin = new Padding(2);
+            Name = "Form1";
+            Text = "Form1";
+            WindowState = FormWindowState.Maximized;
+            Load += Form1_Load;
+            Resize += Form1_Resize;
+            side.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)menu).EndInit();
+            panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
+            mainside.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Panel side;
-        private Panel panel5;
+        private Panel panelContent;
         private PictureBox menu;
         private Panel mainside;
         private Panel panel3;

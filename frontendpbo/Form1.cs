@@ -12,7 +12,7 @@ namespace frontendpbo
         public Form1()
         {
             InitializeComponent();
-            mainside.Visible = false;
+            mainside.Visible = true;
         }
 
         private void hidemainside()
@@ -31,16 +31,7 @@ namespace frontendpbo
             }
             else
                 mainside.Visible = false;
-
         }
-
-
- 
-
-
-
-
-
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -113,7 +104,7 @@ namespace frontendpbo
 
         private void rembangan_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -121,8 +112,29 @@ namespace frontendpbo
 
         }
 
+        private Form activeForm = null;
+
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null) activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelContent.Controls.Add(childForm);
+            panelContent.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
+            openChildForm(new Pengunjung());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form3());
         }
     }
 }
