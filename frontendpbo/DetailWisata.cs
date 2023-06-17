@@ -1,4 +1,5 @@
-﻿using System;
+﻿using frontendpbo.Contexts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace frontendpbo
 {
     public partial class DetailWisata : Form
     {
+        ContextWisata contextWisata;
         public DetailWisata()
         {
             InitializeComponent();
+            contextWisata = new Contexts.ContextWisata();
         }
 
         private void DetailWisata_Load(object sender, EventArgs e)
