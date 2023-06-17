@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,12 @@ namespace frontendpbo
         {
             InitializeComponent();
         }
+
+        void loaddata()
+        {
+            
+        }
+
 
         private void DeskripsiTempatMakanlabel3_Click(object sender, EventArgs e)
         {
@@ -51,5 +58,78 @@ namespace frontendpbo
         {
 
         }
+
+        private void TambahTempatMakanbutton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Create.contohCreate(NamaTempatMakantextBox1.Text, LokasiTempatMakantextBox2.Text, DeskripsiTempatMakantextBox3.Text, NoTeleponTempatMakantextBox4.Text);
+                loaddata();
+
+                NamaTempatMakantextBox1.Text = "";
+                LokasiTempatMakantextBox2.Text = "";
+                DeskripsiTempatMakantextBox3.Text = "";
+                NoTeleponTempatMakantextBox4.Text = "";
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+        }
+
+        private void NamaTempatMakantextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LokasiTempatMakantextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeletedanUpdateDataTempatMakan_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CRUDTempatMakandataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CRUDTempatMakandataGridView1.CurrentRow.Selected = true;
+            NamaTempatMakantextBox1.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            LokasiTempatMakantextBox2.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            DeskripsiTempatMakantextBox3.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            NoTeleponTempatMakantextBox4.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+        }
     }
+    class Create
+    {
+        static public void contohCreate(string nama_tempat_makan, string lokasi_tempat_makan, string deskripsi_tempat_makan, string no_telepon_tempat_makan)
+        {
+
+            NpgsqlConnection connection = new NpgsqlConnection();
+
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Tempat Makan;";
+            connection.ConnectionString = constr;
+            DataTable dt = new DataTable();
+            try
+            {
+                connection.Open();
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = connection;
+                string StrSql = $"insert into rembangan (nama_tempat_makan, lokasi_tempat_makan, deskripsi_tempat_makan, no_telepon_tempat_makan) values ('{nama_tempat_makan}', '{lokasi_tempat_makan}', '{deskripsi_tempat_makan}', '{no_telepon_tempat_makan}');";
+                cmd.CommandText = StrSql;
+                cmd.CommandType = CommandType.Text;
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                da.Fill(dt);
+                cmd.Dispose();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+    }
+
 }
