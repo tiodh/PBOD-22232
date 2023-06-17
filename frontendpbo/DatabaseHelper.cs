@@ -13,7 +13,7 @@ namespace frontendpbo
         NpgsqlConnection conn = null;
 
         public DatabaseHelper()
-        {
+        { 
             conn = new NpgsqlConnection(ConnectionString);
         }
 
