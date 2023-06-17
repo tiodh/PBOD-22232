@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "s7Ul46n+AbdyxISV77xlvUZ/K8IKbWzBMXhHbJX9BlycPfca/HxklVPH47Kg71jZAcopGmQ5fz9klLjF11Qrjw==",
+  "dgSpecHash": "q3+pJFZ5sd/zFs+3btsIKgAP8ivDhManF/vD8Bxe8aN1lpqWmzR2QHk4LcCEUzlKH0L/IDq0uccxLORgBIsEdw==",
   "success": true,
-  "projectFilePath": "D:\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+  "projectFilePath": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\PBO_umkm_akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\rangga\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\rangga\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\rangga\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
