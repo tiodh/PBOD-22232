@@ -156,3 +156,17 @@ C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_umkm.resources
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
