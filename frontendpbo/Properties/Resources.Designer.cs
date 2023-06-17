@@ -133,6 +133,16 @@ namespace frontendpbo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Kendaraan_ICon {
+            get {
+                object obj = ResourceManager.GetObject("Kendaraan ICon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Log_In_admin__8_ {
             get {
                 object obj = ResourceManager.GetObject("Log In admin (8)", resourceCulture);
