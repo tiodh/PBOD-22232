@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "gSZUvOHANTL7nqn3sSuDynoBB4YDQnC/Fk1qdnRBNr32hNuYfvbwSHLPAlkuOqJmW+DKvUoVIh4jginpwy8BrA==",
+  "dgSpecHash": "1XVF+viOpNnfaKGdaSqvo8OwRJYfapPpeAkpxvCceuhCcK68RgtGOYmZsU+5C8sOAIePHPMiLaUNcMU/uwAxyA==",
   "success": true,
-  "projectFilePath": "D:\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+  "projectFilePath": "C:\\Users\\Harata\\PBO-D_22232_ProjectAkhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ASUS\\.nuget\\packages\\livecharts.netcore\\0.9.7\\livecharts.netcore.0.9.7.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\oxyplot.windowsforms\\2.1.2\\oxyplot.windowsforms.2.1.2.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\Harata\\.nuget\\packages\\livecharts.netcore\\0.9.7\\livecharts.netcore.0.9.7.nupkg.sha512",
+    "C:\\Users\\Harata\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Harata\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\Harata\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\Harata\\.nuget\\packages\\oxyplot.windowsforms\\2.1.2\\oxyplot.windowsforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\Harata\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
