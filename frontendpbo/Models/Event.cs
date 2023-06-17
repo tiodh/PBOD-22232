@@ -14,4 +14,11 @@ namespace frontendpbo.Models
         public DateTime Tanggal_Event { get; set; }
         public int Wisata_ID { get; set; }
     }
+
+    public class Event
+    {
+        Event.eventbaru = new event();
+
+
+    }
 }
