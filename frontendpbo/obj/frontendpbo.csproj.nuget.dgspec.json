@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project Akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+    "C:\\Users\\LENOVO NHUK 512\\Downloads\\Zenna_3091\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "D:\\Project Akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+    "C:\\Users\\LENOVO NHUK 512\\Downloads\\Zenna_3091\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project Akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO NHUK 512\\Downloads\\Zenna_3091\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "D:\\Project Akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\Project Akhir\\PBOD-22232\\frontendpbo\\obj\\",
+        "projectPath": "C:\\Users\\LENOVO NHUK 512\\Downloads\\Zenna_3091\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "packagesPath": "C:\\Users\\LENOVO NHUK 512\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO NHUK 512\\Downloads\\Zenna_3091\\PBOD-22232\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO NHUK 512\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,9 +45,17 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "LiveCharts.NetCore": {
+              "target": "Package",
+              "version": "[0.9.7, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "OxyPlot.WindowsForms": {
+              "target": "Package",
+              "version": "[2.1.2, )"
             }
           },
           "imports": [
@@ -64,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
