@@ -39,6 +39,7 @@
             update_informasipengumuman = new Button();
             Clear_informasipengumuman = new Button();
             dataGridView_informasipengumuman = new DataGridView();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView_informasipengumuman).BeginInit();
             SuspendLayout();
             // 
@@ -164,11 +165,20 @@
             dataGridView_informasipengumuman.TabIndex = 11;
             dataGridView_informasipengumuman.CellContentClick += dataGridView_informasipengumuman_CellContentClick;
             // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Location = new Point(1110, 62);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(256, 20);
+            textBox1.TabIndex = 12;
+            // 
             // crud_informasi_pengumuman
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1422, 977);
+            Controls.Add(textBox1);
             Controls.Add(dataGridView_informasipengumuman);
             Controls.Add(Clear_informasipengumuman);
             Controls.Add(delete_informasipengumuman);
@@ -202,5 +212,6 @@
         private Button update_informasipengumuman;
         private Button Clear_informasipengumuman;
         private DataGridView dataGridView_informasipengumuman;
+        private TextBox textBox1;
     }
 }
