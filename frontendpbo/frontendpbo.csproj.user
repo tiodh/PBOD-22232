@@ -52,6 +52,9 @@
     <Compile Update="EditTiketing.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Edit_Riwayat_Kunjungan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="form.cs">
       <SubType>Form</SubType>
     </Compile>
