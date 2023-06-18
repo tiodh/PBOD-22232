@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
+using static CUD_DataTiket.CUDEditTiket;
 
 namespace frontendpbo
 {
@@ -19,9 +20,15 @@ namespace frontendpbo
         public static DataTable ReadData()
         {
             ConnectDB connectData = new ConnectDB();
-            DataTable dt = connectData.ExecuteSQL("select id_admin, nama_lengkap, username, email_admin from admin");
+            DataTable dt = connectData.ExecuteSQL("select * from admin");
 
             return dt;
+        }
+        public static void UpdateData(string namaLengkap, string username, string email, string password, int idadmin)
+        {
+            ConnectDB connectData = new ConnectDB();
+            string update = $"update admin set nama_lengkap = '{namaLengkap}', username = '{username}', email_admin = '{email}', password = '{password}' \nwhere id_admin = {idadmin};";
+            connectData.ExecuteSQL(update);
         }
     }
     class ConnectDB
@@ -31,7 +38,7 @@ namespace frontendpbo
         public ConnectDB()
         {
             connect = new NpgsqlConnection();
-            string constr = "Server=localhost;Port=5432;User Id=hamzah;Password=adminpbo;Database=dataPengguna";
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=09102022;Database=Tugas PBO";
             connect.ConnectionString = constr;
         }
 
