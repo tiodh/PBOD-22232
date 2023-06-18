@@ -148,17 +148,6 @@ namespace frontendpbo
 
                 CRUDTempatMakandataGridView1.CurrentRow.Selected = false;
             }
-            //DialogResult dialogResult = MessageBox.Show("APAKAH ANDA YAKIN?", "UPDATE TEMPAT MAKAN", MessageBoxButtons.YesNo);
-            //if (dialogResult == DialogResult.Yes)
-            //{
-            //    string sql = $"update tempat makan set lokasi_tempat_makan = '{LokasiTempatMakantextBox2.Text}', deskripsi_tempat_makan = '{DeskripsiTempatMakantextBox3.Text}', no_telepon_tempat_makan = '{NoTeleponTempatMakantextBox4.Text}' where nama_tempat_makan = {NamaTempatMakantextBox1.Text}";
-            //    MessageBox.Show("Berhasil!");
-            //    EditTempatMakanbutton3.PerformClick();
-            //}
-            //else if (dialogResult == DialogResult.No)
-            //{
-            //    MessageBox.Show("Gagal!");
-            //}
         }
     }
     class CreateTempatMakan
