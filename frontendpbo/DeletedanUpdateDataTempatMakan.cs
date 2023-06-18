@@ -65,7 +65,7 @@ namespace frontendpbo
         {
             try
             {
-                Create.contohCreate(NamaTempatMakantextBox1.Text, LokasiTempatMakantextBox2.Text, DeskripsiTempatMakantextBox3.Text, NoTeleponTempatMakantextBox4.Text);
+                CreatePenginapan.Create(NamaTempatMakantextBox1.Text, LokasiTempatMakantextBox2.Text, DeskripsiTempatMakantextBox3.Text, NoTeleponTempatMakantextBox4.Text);
                 loaddata();
 
                 NamaTempatMakantextBox1.Text = "";
@@ -162,9 +162,9 @@ namespace frontendpbo
             NoTeleponTempatMakantextBox4.Text = "";
         }
     }
-    class Create
+    class CreatePenginapan
     {
-        static public void contohCreate(string nama_tempat_makan, string lokasi_tempat_makan, string deskripsi_tempat_makan, string no_telepon_tempat_makan)
+        static public void Create(string nama_tempat_makan, string lokasi_tempat_makan, string deskripsi_tempat_makan, string no_telepon_tempat_makan)
         {
 
             NpgsqlConnection connection = new NpgsqlConnection();
