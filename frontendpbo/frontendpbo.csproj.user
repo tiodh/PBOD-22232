@@ -7,7 +7,7 @@
     <Compile Update="CreateSarana.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CRUDTrasnportasi.cs">
+    <Compile Update="CRUDTransportasi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CRUD_dataKeselamatan.cs">
@@ -74,6 +74,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormEditEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormEditUlasan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormShowUlasan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="RiwayatKunjungan.cs">
