@@ -20,7 +20,7 @@ namespace frontendpbo
 
         void loaddata()
         {
-
+            Read();
         }
 
 
@@ -51,7 +51,7 @@ namespace frontendpbo
 
         private void CRUDTempatMakandataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            loaddata();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -90,7 +90,7 @@ namespace frontendpbo
 
         private void DeletedanUpdateDataTempatMakan_Load(object sender, EventArgs e)
         {
-
+            loaddata();
         }
 
         private void CRUDTempatMakandataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -117,6 +117,10 @@ namespace frontendpbo
                 {
                     cmd.CommandText = sql;
                     NpgsqlDataReader reader = cmd.ExecuteReader();
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
+                    CRUDTempatMakandataGridView1.DataSource = dt;
+
                 }
             }
             return isSuccess;
