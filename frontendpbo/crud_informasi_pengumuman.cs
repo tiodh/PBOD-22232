@@ -66,11 +66,6 @@ namespace frontendpbo
 
             return dt;
         }
-        void loadgrid()
-        {
-            dataGridView_informasipengumuman.DataSource = Class_crud_informasi_pengumuman.read();
-        }
-
         private void crud_informasi_pengumuman_Load(object sender, EventArgs e)
         {
             showdata();
