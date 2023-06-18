@@ -72,7 +72,7 @@
             // pictureBox_gambar_rembangan
             // 
             pictureBox_gambar_rembangan.Image = (Image)resources.GetObject("pictureBox_gambar_rembangan.Image");
-            pictureBox_gambar_rembangan.Location = new Point(466, 12);
+            pictureBox_gambar_rembangan.Location = new Point(497, 12);
             pictureBox_gambar_rembangan.Name = "pictureBox_gambar_rembangan";
             pictureBox_gambar_rembangan.Size = new Size(500, 255);
             pictureBox_gambar_rembangan.TabIndex = 1;
