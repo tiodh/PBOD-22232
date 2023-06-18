@@ -20,7 +20,7 @@ namespace frontendpbo
 
         void loaddata()
         {
-            
+
         }
 
 
@@ -121,6 +121,11 @@ namespace frontendpbo
             }
             return isSuccess;
         }
+
+        private void EditTempatMakanbutton3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     class Create
     {
@@ -152,5 +157,5 @@ namespace frontendpbo
         }
     }
 
-    
+
 }

@@ -108,6 +108,7 @@
             Tambahbutton2.TabIndex = 7;
             Tambahbutton2.Text = "Tambah";
             Tambahbutton2.UseVisualStyleBackColor = false;
+            Tambahbutton2.Click += Tambahbutton2_Click;
             // 
             // Editbutton3
             // 

@@ -246,9 +246,12 @@ C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debu
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDDataPenginapan.resources
-C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDTrasnportasi.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_umkm.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DataPengguna.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.form.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailDataTiket.resources
 C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailTransportasi.resources
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDTransportasi.resources
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\CUD_DataTiket.EditTiketing.resources
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditUlasan.resources
+C:\Users\Farrell\Dropbox\PC\Documents\PBO Github\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormShowUlasan.resources
