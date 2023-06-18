@@ -159,7 +159,7 @@
             ClearTempatMakanbutton1.TabIndex = 2;
             ClearTempatMakanbutton1.Text = "Clear";
             ClearTempatMakanbutton1.UseVisualStyleBackColor = false;
-            ClearTempatMakanbutton1.Click += button1_Click;
+            ClearTempatMakanbutton1.Click += ClearTempatMakanbutton1_Click;
             // 
             // TambahTempatMakanbutton2
             // 
@@ -181,6 +181,7 @@
             EditTempatMakanbutton3.TabIndex = 4;
             EditTempatMakanbutton3.Text = "Edit";
             EditTempatMakanbutton3.UseVisualStyleBackColor = false;
+            EditTempatMakanbutton3.Click += EditTempatMakanbutton3_Click;
             // 
             // HapusTempatMakanbutton4
             // 
@@ -191,6 +192,7 @@
             HapusTempatMakanbutton4.TabIndex = 5;
             HapusTempatMakanbutton4.Text = "Hapus";
             HapusTempatMakanbutton4.UseVisualStyleBackColor = false;
+            HapusTempatMakanbutton4.Click += HapusTempatMakanbutton4_Click;
             // 
             // DeletedanUpdateDataTempatMakan
             // 

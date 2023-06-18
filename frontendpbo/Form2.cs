@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CUD_DataTiket;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -56,6 +57,11 @@ namespace frontendpbo
         private void button2_Click(object sender, EventArgs e)
         {
             openChildForm(new DataPengguna());
+        }
+
+        private void edit9_Click(object sender, EventArgs e)
+        {
+            openChildForm(new EditTiketing());
         }
     }
 }
