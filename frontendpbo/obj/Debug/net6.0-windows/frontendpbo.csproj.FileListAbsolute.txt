@@ -465,3 +465,4 @@ C:\Users\TUF\OneDrive\Documents\projekPBO\PBOD-22232\frontendpbo\bin\Debug\net6.
 C:\Users\TUF\OneDrive\Documents\projekPBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
 C:\Users\TUF\OneDrive\Documents\projekPBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\TUF\OneDrive\Documents\projekPBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\TUF\OneDrive\Documents\projekPBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Edit_Riwayat_Kunjungan.resources
