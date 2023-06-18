@@ -46,6 +46,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(111, 106, 248);
@@ -57,6 +58,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.BackgroundColor = SystemColors.ActiveBorder;
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -69,6 +71,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ActiveCaptionText;
@@ -80,7 +83,10 @@
             // 
             // textBox1
             // 
+            textBox1.Anchor = AnchorStyles.Right;
             textBox1.BackColor = Color.FromArgb(111, 106, 248);
+            textBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = SystemColors.Window;
             textBox1.Location = new Point(879, 147);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
@@ -89,6 +95,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Right;
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ActiveCaptionText;
@@ -100,6 +107,7 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ActiveCaptionText;
@@ -111,6 +119,7 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.Right;
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ActiveCaptionText;
@@ -122,7 +131,10 @@
             // 
             // textBox2
             // 
+            textBox2.Anchor = AnchorStyles.Right;
             textBox2.BackColor = Color.FromArgb(111, 106, 248);
+            textBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.ForeColor = SystemColors.Window;
             textBox2.Location = new Point(879, 262);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
@@ -131,7 +143,10 @@
             // 
             // textBox3
             // 
+            textBox3.Anchor = AnchorStyles.Right;
             textBox3.BackColor = Color.FromArgb(111, 106, 248);
+            textBox3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox3.ForeColor = SystemColors.Window;
             textBox3.Location = new Point(879, 374);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
@@ -140,7 +155,10 @@
             // 
             // textBox4
             // 
+            textBox4.Anchor = AnchorStyles.Right;
             textBox4.BackColor = Color.FromArgb(111, 106, 248);
+            textBox4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox4.ForeColor = SystemColors.Window;
             textBox4.Location = new Point(879, 485);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
@@ -149,6 +167,7 @@
             // 
             // textBox5
             // 
+            textBox5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox5.BackColor = SystemColors.ActiveBorder;
             textBox5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             textBox5.Location = new Point(606, 66);
@@ -160,6 +179,7 @@
             // 
             // btnCreate
             // 
+            btnCreate.Anchor = AnchorStyles.Right;
             btnCreate.BackColor = Color.LimeGreen;
             btnCreate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCreate.Location = new Point(944, 556);
@@ -171,6 +191,7 @@
             // 
             // btnUpdate
             // 
+            btnUpdate.Anchor = AnchorStyles.Right;
             btnUpdate.BackColor = Color.Orange;
             btnUpdate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnUpdate.Location = new Point(1128, 556);
