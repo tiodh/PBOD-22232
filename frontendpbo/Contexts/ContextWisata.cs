@@ -17,16 +17,16 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=PETAJEMBER";
+            string conStr = "Server=localhost;Port=5432;Username=postgres;Password=1;Database=PETAJEMBER;";
 
-            using(NpgsqlConnection conn = new NpgsqlConnection(conStr))
+            using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql = "SELECT * FROM objek_wisata";
 
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
                 {
-                    cmd.CommandText = conStr;
+                    cmd.CommandText = sql;
                     NpgsqlDataReader reader = cmd.ExecuteReader();
 
                     listWisata.Clear();
