@@ -46,12 +46,21 @@ namespace frontendpbo
 
         private void btnCreateEvent_Click(object sender, EventArgs e)
         {
-            
+            int id_event = int.Parse(tbIdEvent.Text);
+            DateOnly tanggal = DateOnly.Parse(dateTimePicker1.Value.ToShortDateString());
+            int wisata = int.Parse(tbIdWisata.Text);
+            Crud.CreateData(id_event, tbNamaEvent.Text, tbdeskripsi.Text, tanggal, wisata);
+            LoadData();
+
         }
 
         private void btnUpdateEvent_Click(object sender, EventArgs e)
         {
-            
+            int id_event = int.Parse(tbIdEvent.Text);
+            DateOnly tanggal = DateOnly.Parse(dateTimePicker1.Value.ToShortDateString());
+            int wisata = int.Parse(tbIdWisata.Text);
+            Crud.UpdateData(id_event, tbNamaEvent.Text, tbdeskripsi.Text, tanggal, wisata);
+            LoadData();
         }
 
         private void btnDeleteEvent_Click(object sender, EventArgs e)
@@ -68,12 +77,27 @@ namespace frontendpbo
     }
     class Crud
     {
+        public static void CreateData(int kode, string nama, string desk, DateOnly tgl, int wisata)
+        {
+            Connec koneksidb = new Connec();
+            string querycreate = $"insert into eventacara (id_event, nama_event, deskripsi_Event, tanggal_pelaksana, wisata_id) values ('{kode}', '{nama}', '{desk}', '{tgl}', '{wisata}');";
+            koneksidb.Run(querycreate);
+        }
+
+        public static void UpdateData(int kode, string nama, string desk, DateOnly tgl, int wisata)
+        {
+            Connec connectdb = new Connec();
+            string queryupdate = $"update eventacara set nama_event = '{nama}', deskripsi_Event = '{desk}', tanggal_pelaksana = '{tgl}' where id_event = {kode}";
+            connectdb.Run(queryupdate);
+        }
+
         public static void DeleteData(int kode)
         {
             Connec connectdb = new Connec();
             string querydelete = $"delete from eventacara where id_event = {kode}::integer;;";
             connectdb.Run(querydelete);
         }
+
 
     }
     class Connec
