@@ -16,5 +16,10 @@ namespace frontendpbo
         {
             InitializeComponent();
         }
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Kode yang akan dieksekusi ketika perubahan terjadi pada ComboBox Kategori
+        }
+
     }
 }
