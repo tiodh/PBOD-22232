@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tugas Akhir PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+    "C:\\Users\\ytnon\\Documents\\PBO\\yasminFIX\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "D:\\Tugas Akhir PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+    "C:\\Users\\ytnon\\Documents\\PBO\\yasminFIX\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tugas Akhir PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "C:\\Users\\ytnon\\Documents\\PBO\\yasminFIX\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "D:\\Tugas Akhir PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-        "packagesPath": "C:\\Users\\unsiyah\\.nuget\\packages\\",
-        "outputPath": "D:\\Tugas Akhir PBO\\PBOD-22232\\frontendpbo\\obj\\",
+        "projectPath": "C:\\Users\\ytnon\\Documents\\PBO\\yasminFIX\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "packagesPath": "C:\\Users\\ytnon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ytnon\\Documents\\PBO\\yasminFIX\\PBOD-22232\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\unsiyah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ytnon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +72,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -127,6 +127,9 @@
   <data name="new" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="a2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\a2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="garis3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\garis3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,11 +145,23 @@
   <data name="Rectangle 28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Log In admin (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Log In admin (8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="001-safety" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-safety.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PROFIL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PROFIL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Log In admin (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Log In admin (8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bglogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bglogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kendaraan ICon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kendaraan ICon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TEXTBOX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\textbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,16 +172,7 @@
   <data name="sidebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sidebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Kendaraan ICon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kendaraan ICon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="a2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\a2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bglogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\bglogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TEXTBOX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\textbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shield_safe_secure_safety_protection_security_tick_icon_224700" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shield_safe_secure_safety_protection_security_tick_icon_224700.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
