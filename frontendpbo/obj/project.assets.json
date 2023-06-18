@@ -263,11 +263,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TUF\\OneDrive\\Documents\\projekPBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "projectUniqueName": "D:\\PROJEKKELASPBOD\\LASTCLONEEEEEE\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "projectName": "frontendpbo",
-      "projectPath": "C:\\Users\\TUF\\OneDrive\\Documents\\projekPBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "projectPath": "D:\\PROJEKKELASPBOD\\LASTCLONEEEEEE\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "packagesPath": "C:\\Users\\TUF\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TUF\\OneDrive\\Documents\\projekPBO\\PBOD-22232\\frontendpbo\\obj\\",
+      "outputPath": "D:\\PROJEKKELASPBOD\\LASTCLONEEEEEE\\PBOD-22232\\frontendpbo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
