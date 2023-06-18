@@ -91,40 +91,44 @@
             // 
             // Clearbutton1
             // 
+            Clearbutton1.BackColor = Color.Lime;
             Clearbutton1.Location = new Point(590, 675);
             Clearbutton1.Name = "Clearbutton1";
             Clearbutton1.Size = new Size(123, 49);
             Clearbutton1.TabIndex = 6;
             Clearbutton1.Text = "Clear";
-            Clearbutton1.UseVisualStyleBackColor = true;
+            Clearbutton1.UseVisualStyleBackColor = false;
             // 
             // Tambahbutton2
             // 
+            Tambahbutton2.BackColor = Color.FromArgb(128, 128, 255);
             Tambahbutton2.Location = new Point(807, 675);
             Tambahbutton2.Name = "Tambahbutton2";
             Tambahbutton2.Size = new Size(123, 49);
             Tambahbutton2.TabIndex = 7;
             Tambahbutton2.Text = "Tambah";
-            Tambahbutton2.UseVisualStyleBackColor = true;
+            Tambahbutton2.UseVisualStyleBackColor = false;
             // 
             // Editbutton3
             // 
+            Editbutton3.BackColor = Color.Gold;
             Editbutton3.Location = new Point(1008, 675);
             Editbutton3.Name = "Editbutton3";
             Editbutton3.Size = new Size(123, 49);
             Editbutton3.TabIndex = 8;
             Editbutton3.Text = "Edit";
-            Editbutton3.UseVisualStyleBackColor = true;
+            Editbutton3.UseVisualStyleBackColor = false;
             Editbutton3.Click += Editbutton3_Click;
             // 
             // Deletebutton4
             // 
+            Deletebutton4.BackColor = Color.Red;
             Deletebutton4.Location = new Point(1205, 675);
             Deletebutton4.Name = "Deletebutton4";
             Deletebutton4.Size = new Size(123, 49);
             Deletebutton4.TabIndex = 9;
             Deletebutton4.Text = "Hapus";
-            Deletebutton4.UseVisualStyleBackColor = true;
+            Deletebutton4.UseVisualStyleBackColor = false;
             Deletebutton4.Click += Deletebutton4_Click;
             // 
             // CRUDDataPenginapan
