@@ -236,6 +236,7 @@
             dataGridView1_umkm.RowTemplate.Height = 29;
             dataGridView1_umkm.Size = new Size(738, 464);
             dataGridView1_umkm.TabIndex = 18;
+            dataGridView1_umkm.CellClick += dataGridView1_umkm_CellClick;
             dataGridView1_umkm.CellContentClick += dataGridView1_umkm_CellContentClick;
             // 
             // crud_umkm
