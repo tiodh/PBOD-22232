@@ -16,5 +16,10 @@ namespace frontendpbo
         {
             InitializeComponent();
         }
+
+        private void FormEditEvent_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

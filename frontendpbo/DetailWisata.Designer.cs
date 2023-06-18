@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetailWisata));
             panel_detail_wisata = new Panel();
+            Rembangan_detail_wisata = new Label();
             dataGridView_detail_wisata = new DataGridView();
             pictureBox_gambar_rembangan = new PictureBox();
-            Rembangan_detail_wisata = new Label();
             panel_detail_wisata.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView_detail_wisata).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_gambar_rembangan).BeginInit();
@@ -48,6 +48,17 @@
             panel_detail_wisata.Size = new Size(1388, 692);
             panel_detail_wisata.TabIndex = 0;
             // 
+            // Rembangan_detail_wisata
+            // 
+            Rembangan_detail_wisata.AutoSize = true;
+            Rembangan_detail_wisata.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            Rembangan_detail_wisata.Location = new Point(628, 12);
+            Rembangan_detail_wisata.Name = "Rembangan_detail_wisata";
+            Rembangan_detail_wisata.Size = new Size(153, 29);
+            Rembangan_detail_wisata.TabIndex = 1;
+            Rembangan_detail_wisata.Text = "Rembangan";
+            Rembangan_detail_wisata.TextAlign = ContentAlignment.TopCenter;
+            // 
             // dataGridView_detail_wisata
             // 
             dataGridView_detail_wisata.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -61,22 +72,11 @@
             // pictureBox_gambar_rembangan
             // 
             pictureBox_gambar_rembangan.Image = (Image)resources.GetObject("pictureBox_gambar_rembangan.Image");
-            pictureBox_gambar_rembangan.Location = new Point(466, 12);
+            pictureBox_gambar_rembangan.Location = new Point(497, 12);
             pictureBox_gambar_rembangan.Name = "pictureBox_gambar_rembangan";
             pictureBox_gambar_rembangan.Size = new Size(500, 255);
             pictureBox_gambar_rembangan.TabIndex = 1;
             pictureBox_gambar_rembangan.TabStop = false;
-            // 
-            // Rembangan_detail_wisata
-            // 
-            Rembangan_detail_wisata.AutoSize = true;
-            Rembangan_detail_wisata.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Rembangan_detail_wisata.Location = new Point(628, 12);
-            Rembangan_detail_wisata.Name = "Rembangan_detail_wisata";
-            Rembangan_detail_wisata.Size = new Size(153, 29);
-            Rembangan_detail_wisata.TabIndex = 1;
-            Rembangan_detail_wisata.Text = "Rembangan";
-            Rembangan_detail_wisata.TextAlign = ContentAlignment.TopCenter;
             // 
             // DetailWisata
             // 
@@ -88,6 +88,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "DetailWisata";
             Text = "DetailWisata";
+            Load += DetailWisata_Load;
             panel_detail_wisata.ResumeLayout(false);
             panel_detail_wisata.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView_detail_wisata).EndInit();
