@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Pd2JXUs5KpAzgDaIrBAwRZmO5zyaPG5LSE5H3IXyX/2UnWvQqcVgFayxKb9UVlUpD1pJFtDiqCxHNTLlaUHlrQ==",
+  "success": true,
+  "projectFilePath": "C:\\Project Pbo\\Delete and Create\\Delete and Create.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mibat\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\mibat\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\mibat\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
