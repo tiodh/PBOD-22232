@@ -33,7 +33,6 @@ namespace frontendpbo.Contexts
                     while (reader.Read())
                     {
                         Wisata wisata = new Wisata();
-
                         wisata.Id_Wisata = (int)reader["id_wisata"];
                         wisata.Nama_Wisata = (string)reader["nama_wisata"];
                         wisata.Deskripsi = (string)reader["deskripsi_wisata"];
@@ -42,7 +41,6 @@ namespace frontendpbo.Contexts
                     }
                 }
             }
-
             return isSuccess;
         }
 
