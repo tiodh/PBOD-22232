@@ -411,3 +411,4 @@ C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Edit_Riwayat_Kunjungan.resources
