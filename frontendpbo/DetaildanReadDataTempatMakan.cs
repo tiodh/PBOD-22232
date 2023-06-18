@@ -42,30 +42,14 @@ namespace frontendpbo
 
         }
 
+        private void HapusTempatMakanbutton4_click(object sender, EventArgs e)
+        {
+
+        }
+
         private void SearchButtonTempatMakan_Click(object sender, EventArgs e)
         {
-            string keyword = SearchDataTempatMakantextBox1.Text.ToLower();
-
-            bool labelFound = false;
-            foreach (Label label in CafeRembanganpanel2.Controls.OfType<Label>())
-            {
-                bool match = label.Text.ToLower().Contains(keyword);
-                label.Visible = match;
-
-                if (match)
-                {
-                    labelFound = true;
-                }
-                else
-                {
-                    Panel panel = label.Parent as Panel;
-                    if (panel != null)
-                    {
-                        panel.Visible = false;
-                    }
-                }
-            }
-
+            
         }
 
     }

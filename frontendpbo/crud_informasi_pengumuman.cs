@@ -66,7 +66,6 @@ namespace frontendpbo
 
             return dt;
         }
-
         private void crud_informasi_pengumuman_Load(object sender, EventArgs e)
         {
             showdata();
@@ -155,7 +154,9 @@ namespace frontendpbo
 
         private void Clear_informasipengumuman_Click(object sender, EventArgs e)
         {
+
             Application.Exit();
+
         }
 
         private void create_informasipengumuman_Click(object sender, EventArgs e)
@@ -175,6 +176,7 @@ namespace frontendpbo
             loadData("");
             resetMe();
             showdata();
+
 
         }
 

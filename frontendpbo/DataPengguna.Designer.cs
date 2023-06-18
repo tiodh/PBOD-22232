@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            dataGridView1 = new DataGridView();
+            DGVdataPengguna = new DataGridView();
             label2 = new Label();
             tbNama = new TextBox();
             label3 = new Label();
@@ -38,10 +38,10 @@
             tbEmail = new TextBox();
             tbUsername = new TextBox();
             tbPassword = new TextBox();
-            textBox5 = new TextBox();
-            btnCreate = new Button();
-            btnUpdate = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tbSearchDataPengguna = new TextBox();
+            btnCreateDataPengguna = new Button();
+            btnUpdateDataPengguna = new Button();
+            ((System.ComponentModel.ISupportInitialize)DGVdataPengguna).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -56,18 +56,21 @@
             label1.TabIndex = 0;
             label1.Text = "Data Pengguna";
             // 
-            // dataGridView1
+            // DGVdataPengguna
             // 
-            dataGridView1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.BackgroundColor = SystemColors.ActiveBorder;
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(63, 107);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(781, 494);
-            dataGridView1.TabIndex = 1;
+            DGVdataPengguna.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            DGVdataPengguna.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            DGVdataPengguna.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            DGVdataPengguna.BackgroundColor = SystemColors.ActiveBorder;
+            DGVdataPengguna.BorderStyle = BorderStyle.None;
+            DGVdataPengguna.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVdataPengguna.Location = new Point(63, 107);
+            DGVdataPengguna.Name = "DGVdataPengguna";
+            DGVdataPengguna.RowHeadersWidth = 51;
+            DGVdataPengguna.RowTemplate.Height = 25;
+            DGVdataPengguna.Size = new Size(781, 494);
+            DGVdataPengguna.TabIndex = 1;
+            DGVdataPengguna.CellClick += DGVdataPengguna_CellClick;
             // 
             // label2
             // 
@@ -165,51 +168,54 @@
             tbPassword.Size = new Size(426, 30);
             tbPassword.TabIndex = 9;
             // 
-            // textBox5
+            // tbSearchDataPengguna
             // 
-            textBox5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            textBox5.BackColor = SystemColors.ActiveBorder;
-            textBox5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(606, 66);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(238, 24);
-            textBox5.TabIndex = 10;
-            textBox5.Text = "Search Pengguna";
+            tbSearchDataPengguna.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            tbSearchDataPengguna.BackColor = SystemColors.ActiveBorder;
+            tbSearchDataPengguna.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            tbSearchDataPengguna.Location = new Point(606, 66);
+            tbSearchDataPengguna.Multiline = true;
+            tbSearchDataPengguna.Name = "tbSearchDataPengguna";
+            tbSearchDataPengguna.Size = new Size(238, 24);
+            tbSearchDataPengguna.TabIndex = 10;
+            tbSearchDataPengguna.Text = "Search Pengguna";
+            tbSearchDataPengguna.Click += tbSearchDataPengguna_Click;
+            tbSearchDataPengguna.TextChanged += tbSearchDataPengguna_TextChanged;
             // 
-            // btnCreate
+            // btnCreateDataPengguna
             // 
-            btnCreate.Anchor = AnchorStyles.Right;
-            btnCreate.BackColor = Color.LimeGreen;
-            btnCreate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCreate.Location = new Point(944, 556);
-            btnCreate.Name = "btnCreate";
-            btnCreate.Size = new Size(128, 45);
-            btnCreate.TabIndex = 11;
-            btnCreate.Text = "Create";
-            btnCreate.UseVisualStyleBackColor = false;
-            btnCreate.Click += btnCreate_Click_1;
+            btnCreateDataPengguna.Anchor = AnchorStyles.Right;
+            btnCreateDataPengguna.BackColor = Color.LimeGreen;
+            btnCreateDataPengguna.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCreateDataPengguna.Location = new Point(944, 556);
+            btnCreateDataPengguna.Name = "btnCreateDataPengguna";
+            btnCreateDataPengguna.Size = new Size(128, 45);
+            btnCreateDataPengguna.TabIndex = 11;
+            btnCreateDataPengguna.Text = "Create";
+            btnCreateDataPengguna.UseVisualStyleBackColor = false;
+            btnCreateDataPengguna.Click += btnCreateDataPengguna_Click;
             // 
-            // btnUpdate
+            // btnUpdateDataPengguna
             // 
-            btnUpdate.Anchor = AnchorStyles.Right;
-            btnUpdate.BackColor = Color.Orange;
-            btnUpdate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnUpdate.Location = new Point(1128, 556);
-            btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(128, 45);
-            btnUpdate.TabIndex = 12;
-            btnUpdate.Text = "Update";
-            btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdateDataPengguna.Anchor = AnchorStyles.Right;
+            btnUpdateDataPengguna.BackColor = Color.Orange;
+            btnUpdateDataPengguna.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUpdateDataPengguna.Location = new Point(1128, 556);
+            btnUpdateDataPengguna.Name = "btnUpdateDataPengguna";
+            btnUpdateDataPengguna.Size = new Size(128, 45);
+            btnUpdateDataPengguna.TabIndex = 12;
+            btnUpdateDataPengguna.Text = "Update";
+            btnUpdateDataPengguna.UseVisualStyleBackColor = false;
+            btnUpdateDataPengguna.Click += btnUpdateDataPengguna_Click;
             // 
             // DataPengguna
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1350, 650);
-            Controls.Add(btnUpdate);
-            Controls.Add(btnCreate);
-            Controls.Add(textBox5);
+            Controls.Add(btnUpdateDataPengguna);
+            Controls.Add(btnCreateDataPengguna);
+            Controls.Add(tbSearchDataPengguna);
             Controls.Add(tbPassword);
             Controls.Add(tbUsername);
             Controls.Add(tbEmail);
@@ -218,12 +224,12 @@
             Controls.Add(label3);
             Controls.Add(tbNama);
             Controls.Add(label2);
-            Controls.Add(dataGridView1);
+            Controls.Add(DGVdataPengguna);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "DataPengguna";
             Text = "Form4";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DGVdataPengguna).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -231,7 +237,7 @@
         #endregion
 
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView DGVdataPengguna;
         private Label label2;
         private TextBox tbNama;
         private Label label3;
@@ -240,8 +246,8 @@
         private TextBox tbEmail;
         private TextBox tbUsername;
         private TextBox tbPassword;
-        private TextBox textBox5;
-        private Button btnCreate;
-        private Button btnUpdate;
+        private TextBox tbSearchDataPengguna;
+        private Button btnCreateDataPengguna;
+        private Button btnUpdateDataPengguna;
     }
 }
