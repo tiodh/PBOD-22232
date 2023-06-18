@@ -73,6 +73,7 @@
             // 
             // panel3
             // 
+            panel3.BackgroundImage = Properties.Resources.searchbg1;
             panel3.BackgroundImageLayout = ImageLayout.Stretch;
             panel3.Controls.Add(label1);
             panel3.Controls.Add(textBox1);
