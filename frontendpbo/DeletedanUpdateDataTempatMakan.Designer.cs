@@ -181,6 +181,7 @@
             EditTempatMakanbutton3.TabIndex = 4;
             EditTempatMakanbutton3.Text = "Edit";
             EditTempatMakanbutton3.UseVisualStyleBackColor = false;
+            EditTempatMakanbutton3.Click += EditTempatMakanbutton3_Click;
             // 
             // HapusTempatMakanbutton4
             // 
