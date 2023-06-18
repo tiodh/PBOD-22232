@@ -20,7 +20,7 @@ namespace frontendpbo
 
         void loaddata()
         {
-            
+            Read();
         }
 
 
@@ -51,7 +51,7 @@ namespace frontendpbo
 
         private void CRUDTempatMakandataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            loaddata();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace frontendpbo
         {
             try
             {
-                Create.contohCreate(NamaTempatMakantextBox1.Text, LokasiTempatMakantextBox2.Text, DeskripsiTempatMakantextBox3.Text, NoTeleponTempatMakantextBox4.Text);
+                CreatePenginapan.Create(NamaTempatMakantextBox1.Text, LokasiTempatMakantextBox2.Text, DeskripsiTempatMakantextBox3.Text, NoTeleponTempatMakantextBox4.Text);
                 loaddata();
 
                 NamaTempatMakantextBox1.Text = "";
@@ -90,7 +90,7 @@ namespace frontendpbo
 
         private void DeletedanUpdateDataTempatMakan_Load(object sender, EventArgs e)
         {
-
+            loaddata();
         }
 
         private void CRUDTempatMakandataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -101,10 +101,39 @@ namespace frontendpbo
             DeskripsiTempatMakantextBox3.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             NoTeleponTempatMakantextBox4.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
+
+        public bool Read()
+        {
+            bool isSuccess = false;
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Tempat Makan;";
+
+            using (NpgsqlConnection conn = new NpgsqlConnection(constr))
+            {
+                string sql =
+                    @"SELECT nama_tempat_makan, lokasi_tempat_makan, deskripsi_tempat_makan, no_telepon_tempat_makan
+                  FROM rembangan";
+                conn.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                {
+                    cmd.CommandText = sql;
+                    NpgsqlDataReader reader = cmd.ExecuteReader();
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
+                    CRUDTempatMakandataGridView1.DataSource = dt;
+
+                }
+            }
+            return isSuccess;
+        }
+
+        private void EditTempatMakanbutton3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-    class Create
+    class CreatePenginapan
     {
-        static public void contohCreate(string nama_tempat_makan, string lokasi_tempat_makan, string deskripsi_tempat_makan, string no_telepon_tempat_makan)
+        static public void Create(string nama_tempat_makan, string lokasi_tempat_makan, string deskripsi_tempat_makan, string no_telepon_tempat_makan)
         {
 
             NpgsqlConnection connection = new NpgsqlConnection();
@@ -131,5 +160,6 @@ namespace frontendpbo
             }
         }
     }
+
 
 }

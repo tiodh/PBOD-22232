@@ -15,3 +15,11 @@ namespace frontendpbo.Models
         public int Wisata_ID { get; set; }
     }
 }
+
+/*    public class Event
+    {
+        Event.eventbaru = new event();
+
+
+    }
+}*/

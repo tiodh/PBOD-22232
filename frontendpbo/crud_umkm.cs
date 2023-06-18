@@ -16,6 +16,10 @@ namespace frontendpbo
         {
             InitializeComponent();
         }
+        void loadgrid()
+        {
+            dataGridView1_umkm.DataSource = Class_crud_umkm.read();
+        }
         private void textBox1_nama_umkm_TextChanged(object sender, EventArgs e)
         {
 
@@ -23,7 +27,7 @@ namespace frontendpbo
 
         private void crud_umkm_Load(object sender, EventArgs e)
         {
-
+            loadgrid();
         }
 
         private void textBox2_desk_umkm_TextChanged(object sender, EventArgs e)
@@ -62,6 +66,27 @@ namespace frontendpbo
         }
 
         private void button2_add_umkm_Click(object sender, EventArgs e)
+        {
+            Class_crud_umkm.made(Convert.ToInt32(textBox5_id_umkm.Text), textBox1_nama_umkm.Text, textBox2_desk_umkm.Text, textBox3_pemilik_umkm.Text, textBox4_telepon_umkm.Text);
+            loadgrid();
+            textBox5_id_umkm.Text = "";
+            textBox1_nama_umkm.Text = "";
+            textBox2_desk_umkm.Text = "";
+            textBox3_pemilik_umkm.Text = "";
+            textBox4_telepon_umkm.Text = "";
+        }
+
+        private void dataGridView1_umkm_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_id_umkm_TextChanged(object sender, EventArgs e)
         {
 
         }
