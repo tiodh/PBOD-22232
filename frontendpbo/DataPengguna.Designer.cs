@@ -28,224 +28,226 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.btnCreate = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.SuspendLayout();
+            label1 = new Label();
+            DGVdataPengguna = new DataGridView();
+            label2 = new Label();
+            tbNama = new TextBox();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            tbEmail = new TextBox();
+            tbUsername = new TextBox();
+            tbPassword = new TextBox();
+            tbSearchDataPengguna = new TextBox();
+            btnCreateDataPengguna = new Button();
+            btnUpdateDataPengguna = new Button();
+            ((System.ComponentModel.ISupportInitialize)DGVdataPengguna).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(106)))), ((int)(((byte)(248)))));
-            this.label1.Location = new System.Drawing.Point(72, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Data Pengguna";
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(111, 106, 248);
+            label1.Location = new Point(63, 26);
+            label1.Name = "label1";
+            label1.Size = new Size(253, 37);
+            label1.TabIndex = 0;
+            label1.Text = "Data Pengguna";
             // 
-            // dataGridView1
+            // DGVdataPengguna
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(72, 143);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(893, 659);
-            this.dataGridView1.TabIndex = 1;
+            DGVdataPengguna.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            DGVdataPengguna.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            DGVdataPengguna.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            DGVdataPengguna.BackgroundColor = SystemColors.ActiveBorder;
+            DGVdataPengguna.BorderStyle = BorderStyle.None;
+            DGVdataPengguna.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVdataPengguna.Location = new Point(63, 107);
+            DGVdataPengguna.Name = "DGVdataPengguna";
+            DGVdataPengguna.RowHeadersWidth = 51;
+            DGVdataPengguna.RowTemplate.Height = 25;
+            DGVdataPengguna.Size = new Size(781, 494);
+            DGVdataPengguna.TabIndex = 1;
+            DGVdataPengguna.CellClick += DGVdataPengguna_CellClick;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(1005, 143);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(292, 29);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nama Lengkap Pengguna";
+            label2.Anchor = AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ActiveCaptionText;
+            label2.Location = new Point(879, 107);
+            label2.Name = "label2";
+            label2.Size = new Size(231, 24);
+            label2.TabIndex = 2;
+            label2.Text = "Nama Lengkap Pengguna";
             // 
-            // textBox1
+            // tbNama
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(106)))), ((int)(((byte)(248)))));
-            this.textBox1.Location = new System.Drawing.Point(1005, 196);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(486, 44);
-            this.textBox1.TabIndex = 3;
+            tbNama.Anchor = AnchorStyles.Right;
+            tbNama.BackColor = Color.FromArgb(111, 106, 248);
+            tbNama.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tbNama.ForeColor = SystemColors.Window;
+            tbNama.Location = new Point(879, 147);
+            tbNama.Multiline = true;
+            tbNama.Name = "tbNama";
+            tbNama.Size = new Size(426, 34);
+            tbNama.TabIndex = 3;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(1005, 299);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 29);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Email Pengguna";
+            label3.Anchor = AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ActiveCaptionText;
+            label3.Location = new Point(879, 224);
+            label3.Name = "label3";
+            label3.Size = new Size(150, 24);
+            label3.TabIndex = 4;
+            label3.Text = "Email Pengguna";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(1005, 449);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 29);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Username";
+            label4.Anchor = AnchorStyles.Right;
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.ActiveCaptionText;
+            label4.Location = new Point(879, 337);
+            label4.Name = "label4";
+            label4.Size = new Size(97, 24);
+            label4.TabIndex = 5;
+            label4.Text = "Username";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(1010, 599);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 29);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Password";
+            label5.Anchor = AnchorStyles.Right;
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = SystemColors.ActiveCaptionText;
+            label5.Location = new Point(884, 449);
+            label5.Name = "label5";
+            label5.Size = new Size(92, 24);
+            label5.TabIndex = 6;
+            label5.Text = "Password";
             // 
-            // textBox2
+            // tbEmail
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(106)))), ((int)(((byte)(248)))));
-            this.textBox2.Location = new System.Drawing.Point(1005, 349);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(486, 43);
-            this.textBox2.TabIndex = 7;
+            tbEmail.Anchor = AnchorStyles.Right;
+            tbEmail.BackColor = Color.FromArgb(111, 106, 248);
+            tbEmail.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tbEmail.ForeColor = SystemColors.Window;
+            tbEmail.Location = new Point(879, 262);
+            tbEmail.Multiline = true;
+            tbEmail.Name = "tbEmail";
+            tbEmail.Size = new Size(426, 33);
+            tbEmail.TabIndex = 7;
             // 
-            // textBox3
+            // tbUsername
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(106)))), ((int)(((byte)(248)))));
-            this.textBox3.Location = new System.Drawing.Point(1005, 499);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(486, 40);
-            this.textBox3.TabIndex = 8;
+            tbUsername.Anchor = AnchorStyles.Right;
+            tbUsername.BackColor = Color.FromArgb(111, 106, 248);
+            tbUsername.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tbUsername.ForeColor = SystemColors.Window;
+            tbUsername.Location = new Point(879, 374);
+            tbUsername.Multiline = true;
+            tbUsername.Name = "tbUsername";
+            tbUsername.Size = new Size(426, 31);
+            tbUsername.TabIndex = 8;
             // 
-            // textBox4
+            // tbPassword
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(106)))), ((int)(((byte)(248)))));
-            this.textBox4.Location = new System.Drawing.Point(1005, 647);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(486, 39);
-            this.textBox4.TabIndex = 9;
+            tbPassword.Anchor = AnchorStyles.Right;
+            tbPassword.BackColor = Color.FromArgb(111, 106, 248);
+            tbPassword.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tbPassword.ForeColor = SystemColors.Window;
+            tbPassword.Location = new Point(879, 485);
+            tbPassword.Multiline = true;
+            tbPassword.Name = "tbPassword";
+            tbPassword.Size = new Size(426, 30);
+            tbPassword.TabIndex = 9;
             // 
-            // textBox5
+            // tbSearchDataPengguna
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(693, 88);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(271, 31);
-            this.textBox5.TabIndex = 10;
-            this.textBox5.Text = "Search Pengguna";
+            tbSearchDataPengguna.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            tbSearchDataPengguna.BackColor = SystemColors.ActiveBorder;
+            tbSearchDataPengguna.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            tbSearchDataPengguna.Location = new Point(606, 66);
+            tbSearchDataPengguna.Multiline = true;
+            tbSearchDataPengguna.Name = "tbSearchDataPengguna";
+            tbSearchDataPengguna.Size = new Size(238, 24);
+            tbSearchDataPengguna.TabIndex = 10;
+            tbSearchDataPengguna.Text = "Search Pengguna";
+            tbSearchDataPengguna.Click += tbSearchDataPengguna_Click;
+            tbSearchDataPengguna.TextChanged += tbSearchDataPengguna_TextChanged;
             // 
-            // btnCreate
+            // btnCreateDataPengguna
             // 
-            this.btnCreate.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCreate.Location = new System.Drawing.Point(1005, 741);
-            this.btnCreate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(146, 60);
-            this.btnCreate.TabIndex = 11;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = false;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            btnCreateDataPengguna.Anchor = AnchorStyles.Right;
+            btnCreateDataPengguna.BackColor = Color.LimeGreen;
+            btnCreateDataPengguna.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCreateDataPengguna.Location = new Point(944, 556);
+            btnCreateDataPengguna.Name = "btnCreateDataPengguna";
+            btnCreateDataPengguna.Size = new Size(128, 45);
+            btnCreateDataPengguna.TabIndex = 11;
+            btnCreateDataPengguna.Text = "Create";
+            btnCreateDataPengguna.UseVisualStyleBackColor = false;
+            btnCreateDataPengguna.Click += btnCreateDataPengguna_Click;
             // 
-            // btnUpdate
+            // btnUpdateDataPengguna
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Orange;
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdate.Location = new System.Drawing.Point(1175, 741);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(146, 60);
-            this.btnUpdate.TabIndex = 12;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDelete.Location = new System.Drawing.Point(1345, 741);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(146, 60);
-            this.btnDelete.TabIndex = 13;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
+            btnUpdateDataPengguna.Anchor = AnchorStyles.Right;
+            btnUpdateDataPengguna.BackColor = Color.Orange;
+            btnUpdateDataPengguna.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUpdateDataPengguna.Location = new Point(1128, 556);
+            btnUpdateDataPengguna.Name = "btnUpdateDataPengguna";
+            btnUpdateDataPengguna.Size = new Size(128, 45);
+            btnUpdateDataPengguna.TabIndex = 12;
+            btnUpdateDataPengguna.Text = "Update";
+            btnUpdateDataPengguna.UseVisualStyleBackColor = false;
+            btnUpdateDataPengguna.Click += btnUpdateDataPengguna_Click;
             // 
             // DataPengguna
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1543, 867);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "DataPengguna";
-            this.Text = "Form4";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1350, 650);
+            Controls.Add(btnUpdateDataPengguna);
+            Controls.Add(btnCreateDataPengguna);
+            Controls.Add(tbSearchDataPengguna);
+            Controls.Add(tbPassword);
+            Controls.Add(tbUsername);
+            Controls.Add(tbEmail);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(tbNama);
+            Controls.Add(label2);
+            Controls.Add(DGVdataPengguna);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "DataPengguna";
+            Text = "Form4";
+            ((System.ComponentModel.ISupportInitialize)DGVdataPengguna).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView DGVdataPengguna;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox tbNama;
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private Button btnCreate;
-        private Button btnUpdate;
-        private Button btnDelete;
+        private TextBox tbEmail;
+        private TextBox tbUsername;
+        private TextBox tbPassword;
+        private TextBox tbSearchDataPengguna;
+        private Button btnCreateDataPengguna;
+        private Button btnUpdateDataPengguna;
     }
 }
