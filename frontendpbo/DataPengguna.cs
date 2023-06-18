@@ -15,11 +15,22 @@ namespace frontendpbo
         public DataPengguna()
         {
             InitializeComponent();
+            showDB();
         }
 
-        private void btnCreate_Click(object sender, EventArgs e)
+        void showDB()
         {
+            dataGridView1.DataSource = CRU_DataPengguna.ReadData();
+        }
 
+        private void btnCreate_Click_1(object sender, EventArgs e)
+        {
+            CRU_DataPengguna.CreateData(tbNama.Text, tbUsername.Text, tbEmail.Text, tbPassword.Text);
+            showDB();
+            tbNama.Text = "";
+            tbEmail.Text = "";
+            tbUsername.Text = "";
+            tbPassword.Text = "";
         }
     }
 }

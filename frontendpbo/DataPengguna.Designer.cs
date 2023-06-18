@@ -31,13 +31,13 @@
             label1 = new Label();
             dataGridView1 = new DataGridView();
             label2 = new Label();
-            textBox1 = new TextBox();
+            tbNama = new TextBox();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            tbEmail = new TextBox();
+            tbUsername = new TextBox();
+            tbPassword = new TextBox();
             textBox5 = new TextBox();
             btnCreate = new Button();
             btnUpdate = new Button();
@@ -81,17 +81,17 @@
             label2.TabIndex = 2;
             label2.Text = "Nama Lengkap Pengguna";
             // 
-            // textBox1
+            // tbNama
             // 
-            textBox1.Anchor = AnchorStyles.Right;
-            textBox1.BackColor = Color.FromArgb(111, 106, 248);
-            textBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = SystemColors.Window;
-            textBox1.Location = new Point(879, 147);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(426, 34);
-            textBox1.TabIndex = 3;
+            tbNama.Anchor = AnchorStyles.Right;
+            tbNama.BackColor = Color.FromArgb(111, 106, 248);
+            tbNama.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tbNama.ForeColor = SystemColors.Window;
+            tbNama.Location = new Point(879, 147);
+            tbNama.Multiline = true;
+            tbNama.Name = "tbNama";
+            tbNama.Size = new Size(426, 34);
+            tbNama.TabIndex = 3;
             // 
             // label3
             // 
@@ -129,41 +129,41 @@
             label5.TabIndex = 6;
             label5.Text = "Password";
             // 
-            // textBox2
+            // tbEmail
             // 
-            textBox2.Anchor = AnchorStyles.Right;
-            textBox2.BackColor = Color.FromArgb(111, 106, 248);
-            textBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = SystemColors.Window;
-            textBox2.Location = new Point(879, 262);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(426, 33);
-            textBox2.TabIndex = 7;
+            tbEmail.Anchor = AnchorStyles.Right;
+            tbEmail.BackColor = Color.FromArgb(111, 106, 248);
+            tbEmail.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tbEmail.ForeColor = SystemColors.Window;
+            tbEmail.Location = new Point(879, 262);
+            tbEmail.Multiline = true;
+            tbEmail.Name = "tbEmail";
+            tbEmail.Size = new Size(426, 33);
+            tbEmail.TabIndex = 7;
             // 
-            // textBox3
+            // tbUsername
             // 
-            textBox3.Anchor = AnchorStyles.Right;
-            textBox3.BackColor = Color.FromArgb(111, 106, 248);
-            textBox3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.ForeColor = SystemColors.Window;
-            textBox3.Location = new Point(879, 374);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(426, 31);
-            textBox3.TabIndex = 8;
+            tbUsername.Anchor = AnchorStyles.Right;
+            tbUsername.BackColor = Color.FromArgb(111, 106, 248);
+            tbUsername.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tbUsername.ForeColor = SystemColors.Window;
+            tbUsername.Location = new Point(879, 374);
+            tbUsername.Multiline = true;
+            tbUsername.Name = "tbUsername";
+            tbUsername.Size = new Size(426, 31);
+            tbUsername.TabIndex = 8;
             // 
-            // textBox4
+            // tbPassword
             // 
-            textBox4.Anchor = AnchorStyles.Right;
-            textBox4.BackColor = Color.FromArgb(111, 106, 248);
-            textBox4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.ForeColor = SystemColors.Window;
-            textBox4.Location = new Point(879, 485);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(426, 30);
-            textBox4.TabIndex = 9;
+            tbPassword.Anchor = AnchorStyles.Right;
+            tbPassword.BackColor = Color.FromArgb(111, 106, 248);
+            tbPassword.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tbPassword.ForeColor = SystemColors.Window;
+            tbPassword.Location = new Point(879, 485);
+            tbPassword.Multiline = true;
+            tbPassword.Name = "tbPassword";
+            tbPassword.Size = new Size(426, 30);
+            tbPassword.TabIndex = 9;
             // 
             // textBox5
             // 
@@ -188,6 +188,7 @@
             btnCreate.TabIndex = 11;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = false;
+            btnCreate.Click += btnCreate_Click_1;
             // 
             // btnUpdate
             // 
@@ -209,13 +210,13 @@
             Controls.Add(btnUpdate);
             Controls.Add(btnCreate);
             Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
+            Controls.Add(tbPassword);
+            Controls.Add(tbUsername);
+            Controls.Add(tbEmail);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(tbNama);
             Controls.Add(label2);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
@@ -232,13 +233,13 @@
         private Label label1;
         private DataGridView dataGridView1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox tbNama;
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox tbEmail;
+        private TextBox tbUsername;
+        private TextBox tbPassword;
         private TextBox textBox5;
         private Button btnCreate;
         private Button btnUpdate;
