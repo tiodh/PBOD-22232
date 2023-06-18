@@ -159,7 +159,6 @@
             ClearTempatMakanbutton1.TabIndex = 2;
             ClearTempatMakanbutton1.Text = "Clear";
             ClearTempatMakanbutton1.UseVisualStyleBackColor = false;
-            ClearTempatMakanbutton1.Click += ClearTempatMakanbutton1_Click;
             // 
             // TambahTempatMakanbutton2
             // 
@@ -192,7 +191,6 @@
             HapusTempatMakanbutton4.TabIndex = 5;
             HapusTempatMakanbutton4.Text = "Hapus";
             HapusTempatMakanbutton4.UseVisualStyleBackColor = false;
-            HapusTempatMakanbutton4.Click += HapusTempatMakanbutton4_Click;
             // 
             // DeletedanUpdateDataTempatMakan
             // 
