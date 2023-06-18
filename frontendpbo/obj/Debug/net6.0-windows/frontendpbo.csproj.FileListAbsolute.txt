@@ -133,7 +133,6 @@ C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
-C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form4.resources
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
@@ -168,3 +167,9 @@ C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
 C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.wisata.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\CUD_DataTiket.EditTiketing.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditUlasan.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\PBO_umkm_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormShowUlasan.resources
