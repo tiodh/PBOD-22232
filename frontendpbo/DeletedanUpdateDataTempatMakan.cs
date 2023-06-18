@@ -101,6 +101,26 @@ namespace frontendpbo
             DeskripsiTempatMakantextBox3.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             NoTeleponTempatMakantextBox4.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
+
+        public bool Read()
+        {
+            bool isSuccess = false;
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Tempat Makan;";
+
+            using (NpgsqlConnection conn = new NpgsqlConnection(constr))
+            {
+                string sql =
+                    @"SELECT nama_tempat_makan, lokasi_tempat_makan, deskripsi_tempat_makan, no_telepon_tempat_makan
+                  FROM rembangan";
+                conn.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                {
+                    cmd.CommandText = sql;
+                    NpgsqlDataReader reader = cmd.ExecuteReader();
+                }
+            }
+            return isSuccess;
+        }
     }
     class Create
     {
@@ -132,4 +152,5 @@ namespace frontendpbo
         }
     }
 
+    
 }
