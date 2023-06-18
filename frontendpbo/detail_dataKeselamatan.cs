@@ -1,4 +1,5 @@
-﻿using System;
+﻿using frontendpbo.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,15 +15,35 @@ namespace frontendpbo
 {
     public partial class detail_dataKeselamatan : Form
     {
+        ReadKeselamatanContext readKeselamatanContext;
         public detail_dataKeselamatan()
         {
             InitializeComponent();
+            readKeselamatanContext = new ReadKeselamatanContext();
         }
 
         private void detail_dataKeselamatan_Load(object sender, EventArgs e)
         {
+            ShowItems();
         }
+        private void ShowItems()
+        {
+            readKeselamatanContext.Read();
+            List<readKeselamatan> readKeselamatanList;
+            readKeselamatanList = readKeselamatanContext.readKeselamatanList;
 
+            flowLayoutPanel1.Controls.Clear();
+            foreach (var readKeselamatan in readKeselamatanList)
+            {
+                string nama = readKeselamatan.nama;
+                string noTlp = readKeselamatan.noTlp;
+                string alamat = readKeselamatan.alamat;
+                string deskripsi = readKeselamatan.deskripsi;
+                Panel readKeselamatanItem = new ReadKeselamatanItem(nama, noTlp, alamat, deskripsi).CreateItem();
+                flowLayoutPanel1.Controls.Add(readKeselamatanItem);
+            }
+
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
