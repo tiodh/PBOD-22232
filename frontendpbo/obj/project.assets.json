@@ -257,19 +257,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AMIRUL277\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "projectUniqueName": "D:\\2023\\Mata Kuliah\\PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "projectName": "frontendpbo",
-      "projectPath": "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-      "packagesPath": "C:\\Users\\AMIRUL277\\.nuget\\packages\\",
-      "outputPath": "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\obj\\",
+      "projectPath": "D:\\2023\\Mata Kuliah\\PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\2023\\Mata Kuliah\\PBO\\PBOD-22232\\frontendpbo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AMIRUL277\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -327,7 +327,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
