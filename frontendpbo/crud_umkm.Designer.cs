@@ -44,6 +44,8 @@
             label1_umkm = new Label();
             pictureBox1_umkm = new PictureBox();
             dataGridView1_umkm = new DataGridView();
+            textBox5_id_umkm = new TextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1_umkm).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1_umkm).BeginInit();
             SuspendLayout();
@@ -236,7 +238,31 @@
             dataGridView1_umkm.RowTemplate.Height = 29;
             dataGridView1_umkm.Size = new Size(738, 464);
             dataGridView1_umkm.TabIndex = 18;
+            dataGridView1_umkm.CellClick += dataGridView1_umkm_CellClick;
             dataGridView1_umkm.CellContentClick += dataGridView1_umkm_CellContentClick;
+            // 
+            // textBox5_id_umkm
+            // 
+            textBox5_id_umkm.BackColor = Color.Plum;
+            textBox5_id_umkm.Font = new Font("Arial", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox5_id_umkm.Location = new Point(302, 353);
+            textBox5_id_umkm.Multiline = true;
+            textBox5_id_umkm.Name = "textBox5_id_umkm";
+            textBox5_id_umkm.Size = new Size(233, 37);
+            textBox5_id_umkm.TabIndex = 33;
+            textBox5_id_umkm.TextChanged += textBox5_id_umkm_TextChanged;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Cambria", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(302, 317);
+            label1.Name = "label1";
+            label1.Size = new Size(111, 27);
+            label1.TabIndex = 34;
+            label1.Text = "ID UMKM";
+            label1.Click += label1_Click;
             // 
             // crud_umkm
             // 
@@ -244,6 +270,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkViolet;
             ClientSize = new Size(1422, 995);
+            Controls.Add(label1);
+            Controls.Add(textBox5_id_umkm);
             Controls.Add(button5_edit_umkm);
             Controls.Add(button4_read_umkm);
             Controls.Add(button3_clear_umkm);
@@ -287,5 +315,7 @@
         private Label label1_umkm;
         private PictureBox pictureBox1_umkm;
         private DataGridView dataGridView1_umkm;
+        private TextBox textBox5_id_umkm;
+        private Label label1;
     }
 }
