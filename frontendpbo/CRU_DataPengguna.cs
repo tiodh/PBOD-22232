@@ -20,14 +20,14 @@ namespace frontendpbo
         public static DataTable ReadData()
         {
             ConnectDB connectData = new ConnectDB();
-            DataTable dt = connectData.ExecuteSQL("select * from admin");
+            DataTable dt = connectData.ExecuteSQL("select * from admin \n order by id_admin");
 
             return dt;
         }
         public static void UpdateData(string namaLengkap, string username, string email, string password, int idadmin)
         {
             ConnectDB connectData = new ConnectDB();
-            string update = $"update admin set nama_lengkap = '{namaLengkap}', username = '{username}', email_admin = '{email}', password = '{password}' \nwhere id_admin = {idadmin};";
+            string update = $"update admin set nama_lengkap = '{namaLengkap}', username = '{username}', email_admin = '{email}', password = '{password}' \nwhere id_admin = {idadmin}  ;";
             connectData.ExecuteSQL(update);
         }
     }
