@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+    "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\PBO_umkm_akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+    "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\PBO_umkm_akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\PBO_umkm_akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-        "packagesPath": "C:\\Users\\AMIRUL277\\.nuget\\packages\\",
-        "outputPath": "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\obj\\",
+        "projectPath": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\PBO_umkm_akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "packagesPath": "C:\\Users\\rangga\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\PBO_umkm_akhir\\PBOD-22232\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\AMIRUL277\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rangga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

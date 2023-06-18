@@ -21,5 +21,10 @@ namespace frontendpbo
         {
 
         }
+
+        private void DataPengguna_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
