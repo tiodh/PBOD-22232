@@ -83,7 +83,7 @@
             dataGridViewEditUlasan.RowTemplate.Height = 33;
             dataGridViewEditUlasan.Size = new Size(817, 614);
             dataGridViewEditUlasan.TabIndex = 5;
-            
+            dataGridViewEditUlasan.CellClick += dataGridViewEditUlasan_CellClick;
             // 
             // buttonCreate
             // 
@@ -104,7 +104,6 @@
             buttonDelete.TabIndex = 7;
             buttonDelete.Text = "DELETE";
             buttonDelete.UseVisualStyleBackColor = false;
-           
             // 
             // labelCariBerdasarkanE
             // 
@@ -150,7 +149,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormEditUlasan";
             Text = "FormEditUlasan";
-            
+            Load += FormEditUlasan_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewEditUlasan).EndInit();
             ResumeLayout(false);
             PerformLayout();

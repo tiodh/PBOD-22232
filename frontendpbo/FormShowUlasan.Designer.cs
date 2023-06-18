@@ -124,7 +124,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormShowUlasan";
             Text = "FormShowUlasan";
-            
+            Load += FormShowUlasan_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewsShowUlasan).EndInit();
             ResumeLayout(false);
             PerformLayout();
