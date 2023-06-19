@@ -184,6 +184,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1422, 977);
             panel1.TabIndex = 3;
+            panel1.Paint += panel1_Paint;
             // 
             // detail_dataKeselamatan
             // 
