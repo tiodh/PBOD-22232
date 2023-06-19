@@ -26,5 +26,24 @@ namespace frontendpbo
         {
 
         }
+
+        
+
+        private void ShowItems()
+        {
+            contextWisata.Read();
+            List<Wisata> wisata;
+            wisata = contextWisata.listWisata;
+
+            flowLayoutPanel1.Controls.Clear();
+            foreach (var i in wisata)
+            {
+                string Nama = i.Nama_Wisata;
+                string Desk = i.Deskripsi;
+                string Alamat = i.Lokasi;
+                //flowLayoutPanel1.Controls.Add();
+            }
+
+        }
     }
 }
