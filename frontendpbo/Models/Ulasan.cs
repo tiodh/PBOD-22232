@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace frontendpbo.Models
 {
-    internal class Ulasan
+    public class Ulasan
     {
-        public int ID { get; set; }
-        public string Nama_User { get; set; }
-        public string Description { get; set; }
-        public int Wisata_ID { get; set; }
+        public int id_ulasan { get; set; }
+        public string nama_user { get; set; }
+        public string deskripsi_ulasan { get; set; }
+        public string wisata_id { get; set; }
     }
 }
