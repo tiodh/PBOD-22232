@@ -12,7 +12,7 @@ namespace frontendpbo
 {
     public class Class_crud_umkm
     {
-        public static void made(int idumkm,string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
+        public static void made(int idumkm, string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
         {
             conec conecsidb = new conec();
             string create = "insert into umkm_pbo_1.umkm (id_umkm,nama_umkm, deskripsi_umkm, pemilik_umkm, no_telepon_umkm)\r" +
