@@ -44,7 +44,6 @@
             // 
             // datagridcrudwisata1
             // 
-            datagridcrudwisata1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             datagridcrudwisata1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             datagridcrudwisata1.Location = new Point(662, 51);
             datagridcrudwisata1.Name = "datagridcrudwisata1";
@@ -70,13 +69,12 @@
             // 
             btntambahwisata.BackColor = Color.FromArgb(128, 128, 255);
             btntambahwisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btntambahwisata.Location = new Point(181, 813);
+            btntambahwisata.Location = new Point(180, 813);
             btntambahwisata.Name = "btntambahwisata";
             btntambahwisata.Size = new Size(129, 63);
             btntambahwisata.TabIndex = 2;
             btntambahwisata.Text = "Tambah";
             btntambahwisata.UseVisualStyleBackColor = false;
-            btntambahwisata.Click += btntambahwisata_Click;
             // 
             // btneditwisata
             // 
@@ -126,7 +124,7 @@
             textBox2_Deskripsi_Wisata.BackColor = SystemColors.Control;
             textBox2_Deskripsi_Wisata.BorderStyle = BorderStyle.FixedSingle;
             textBox2_Deskripsi_Wisata.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2_Deskripsi_Wisata.Location = new Point(38, 149);
+            textBox2_Deskripsi_Wisata.Location = new Point(38, 150);
             textBox2_Deskripsi_Wisata.Multiline = true;
             textBox2_Deskripsi_Wisata.Name = "textBox2_Deskripsi_Wisata";
             textBox2_Deskripsi_Wisata.Size = new Size(555, 482);
@@ -136,7 +134,7 @@
             // 
             label2_Deskripsi_Wisata.AutoSize = true;
             label2_Deskripsi_Wisata.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2_Deskripsi_Wisata.Location = new Point(38, 123);
+            label2_Deskripsi_Wisata.Location = new Point(38, 122);
             label2_Deskripsi_Wisata.Name = "label2_Deskripsi_Wisata";
             label2_Deskripsi_Wisata.Size = new Size(103, 25);
             label2_Deskripsi_Wisata.TabIndex = 9;
@@ -168,7 +166,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1584, 1051);
+            ClientSize = new Size(1440, 1024);
             Controls.Add(label3_Lokasi_Wisata);
             Controls.Add(textBox3_Lokasi_Wisata);
             Controls.Add(label2_Deskripsi_Wisata);

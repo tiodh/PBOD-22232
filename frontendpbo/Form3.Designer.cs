@@ -68,7 +68,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1541, 845);
             panel2.TabIndex = 3;
-            panel2.Paint += panel2_Paint;
             // 
             // panel3
             // 
@@ -96,7 +95,6 @@
             button1.TabIndex = 8;
             button1.Text = "Log in";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // panel5
             // 
