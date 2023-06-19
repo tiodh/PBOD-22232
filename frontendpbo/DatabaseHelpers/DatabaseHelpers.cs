@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
 
-namespace frontendpbo.DatabaseHelpers
+namespace frontendpbo.Helpers
 {
     internal class DatabaseHelpers
     {
-        string connString = "Host=localhost;Username=postgres;Password=1;Database=";
+        string connString = "Host=localhost;Username=postgres;Password=fukakouryokuRoman;Database=peta_jember";
         NpgsqlConnection conn;
 
         public void connect()
