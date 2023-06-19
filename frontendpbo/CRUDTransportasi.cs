@@ -17,7 +17,7 @@ namespace frontendpbo
         private string id = "";
         private int intRow = 0;
 
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; Port = 5432; User Id = postgres; Password = Paulus21.; Database = transportasi");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; Port = 5433; User Id = postgres; Password = 12345678; Database = data_transportasi");
         NpgsqlCommand cmd = default(NpgsqlCommand);
         string sql = string.Empty;
         public CRUDTransportasi()
@@ -83,6 +83,7 @@ namespace frontendpbo
 
         private void loadData(string keyword)
         {
+            DataTable dataTable = null;
             try
             {
                 sql = "SELECT id_transportasi, nama_transportasi, jenis_transportasi, deskripsi FROM Transportasi";
@@ -105,6 +106,30 @@ namespace frontendpbo
                     TampilData.DataSource = null;
                 }
 
+                string searchText = TampilanData.Text.Trim();
+
+                if (!string.IsNullOrEmpty(searchText))
+                {
+                    using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5433;User Id=postgres;Password=12345678;Database=data_transportasi;"))
+                    {
+                        string sql = "SELECT * FROM transportasi WHERE nama_transportasi ILIKE '%' || @searchText || '%' " +
+                        "OR jenis_transportasi ILIKE '%' || @searchText || '%' ";
+                        using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
+                        {
+                            command.Parameters.AddWithValue("@searchText", searchText);
+
+                            using (NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(command))
+                            {
+                                if (dataTable == null)
+                                    dataTable = new DataTable();
+
+                                adapter.Fill(dataTable);
+                                TampilData.DataSource = dataTable;
+                            }
+                        }
+                    }
+                }
+
             }
             catch (Exception ex)
             {
@@ -122,7 +147,7 @@ namespace frontendpbo
         private void showdata()
         {
             NpgsqlCommand cmd = new NpgsqlCommand("Select * from Transportasi where nama_transportasi like '%" + TampilData.Text + "'", conn);
-            NpgsqlDataAdapter da = new NpgsqlDataAdapter();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.SelectCommand = cmd;
             da.Fill(dt);
@@ -221,9 +246,18 @@ namespace frontendpbo
                 resetMe();
                 showdata();
 
-                UpdateTransportasi.Text = "Update ()"; 
-                DeleteTransportasi.Text = "Delete ()"; 
+                UpdateTransportasi.Text = "Update ()";
+                DeleteTransportasi.Text = "Delete ()";
             }
+        }
+
+        private void TampilanData_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = TampilanData.Text.Trim();
+            loadData(keyword);
         }
     }
 }
+
+
+//Yang bisa jalan
