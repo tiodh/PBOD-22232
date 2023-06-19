@@ -10,7 +10,7 @@ using System.Windows.Forms.VisualStyles;
 
 namespace frontendpbo
 {
-    public class Class_crud_umkm : Form
+    public class   : Form
     {
         public static void made(int idumkm, string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
         {
