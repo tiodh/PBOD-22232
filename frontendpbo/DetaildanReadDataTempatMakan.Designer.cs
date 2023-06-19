@@ -138,6 +138,7 @@
             CafeRembanganpanel2.Name = "CafeRembanganpanel2";
             CafeRembanganpanel2.Size = new Size(1215, 268);
             CafeRembanganpanel2.TabIndex = 5;
+            CafeRembanganpanel2.Paint += CafeRembanganpanel2_Paint;
             // 
             // NoTeleponCafeRembanganlabel5
             // 
