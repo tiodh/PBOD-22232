@@ -172,3 +172,4 @@ C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDDataPenginapan.resources
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDTransportasi.resources
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\CUD_DataTiket.EditTiketing.resources
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Edit_Riwayat_Kunjungan.resources
