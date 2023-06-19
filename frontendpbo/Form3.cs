@@ -46,7 +46,7 @@ namespace frontendpbo
 
         private Models.Admin DataAdmin()
         {
-            admin.Username = textBox1.Text; 
+            admin.Username = textBox1.Text;
             admin.Password = textBox2.Text;
             return admin;
         }

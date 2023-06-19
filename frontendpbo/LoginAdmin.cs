@@ -16,7 +16,8 @@ namespace frontendpbo
         public LoginAdmin()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
+            this.Size = new System.Drawing.Size(1200,800);
         }
 
         private void LoginAdmin_Load(object sender, EventArgs e)

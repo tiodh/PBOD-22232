@@ -60,8 +60,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.Transparent;
-            panel2.BackgroundImage = Properties.Resources.bglogin;
+            panel2.BackColor = Color.Indigo;
             panel2.Controls.Add(panel3);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 0);
