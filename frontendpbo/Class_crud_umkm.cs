@@ -10,15 +10,25 @@ using System.Windows.Forms.VisualStyles;
 
 namespace frontendpbo
 {
-    public class Class_crud_umkm
+    public class Class_crud_umkm : Form
     {
-        public static void made(int idumkm,string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
+        public static void made(int idumkm, string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
         {
             conec conecsidb = new conec();
             string create = "insert into umkm_pbo_1.umkm (id_umkm,nama_umkm, deskripsi_umkm, pemilik_umkm, no_telepon_umkm)\r" +
                 $"\nvalues ('{idumkm}','{namumkm}','{deskripsiumkm}','{pemilikumkm}','{noteleponumkm}');";
             conecsidb.Eksekusi(create);
         }
+
+        public static void edit(int idumkm, string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
+        {
+            conec conecsidb = new conec();
+            string update = $"UPDATE umkm_pbo_1.umkm " +
+                $"SET nama_umkm = '{namumkm}', deskripsi_umkm = '{deskripsiumkm}', pemilik_umkm = '{pemilikumkm}', no_telepon_umkm = '{noteleponumkm}' " +
+                $"WHERE id_umkm = {idumkm};";
+            conecsidb.Eksekusi(update);
+        }
+
         public static DataTable read()
         {
             conec conecsidb = new conec();
@@ -27,7 +37,11 @@ namespace frontendpbo
             return dt;
         }
     }
-    class conec
+
+
+  
+    
+        class conec
     {
         public NpgsqlConnection connection;
         public conec()
@@ -39,7 +53,7 @@ namespace frontendpbo
         public DataTable Eksekusi(string sql)
         {
             NpgsqlConnection connection = new NpgsqlConnection();
-            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = 140704;Database=umkm_pbo";
+            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = aini123;Database=DataUmkm";
             DataTable dt = new DataTable();
             try
             {

@@ -257,19 +257,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PBO TUGAS AKHIR\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "projectUniqueName": "D:\\aini nitip\\project-akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "projectName": "frontendpbo",
-      "projectPath": "D:\\PBO TUGAS AKHIR\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\PBO TUGAS AKHIR\\PBOD-22232\\frontendpbo\\obj\\",
+      "projectPath": "D:\\aini nitip\\project-akhir\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "D:\\aini nitip\\project-akhir\\PBOD-22232\\frontendpbo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -327,7 +327,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
