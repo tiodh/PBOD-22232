@@ -13,6 +13,5 @@ namespace frontendpbo.Models
         public string Lokasi_Tempat { get; set; }
         public string Deskripsi { get; set; }
         public string No_Telepon { get; set; }
-        public int Wisata_ID { get; set; }
     }
 }
