@@ -20,6 +20,8 @@ namespace frontendpbo
         {
             InitializeComponent();
             contextWisata = new Contexts.ContextWisata();
+
+            ShowItems();
         }
 
         private void DetailWisata_Load(object sender, EventArgs e)
@@ -27,22 +29,27 @@ namespace frontendpbo
 
         }
 
-        
-
         private void ShowItems()
         {
-            contextWisata.Read();
-            List<Wisata> wisata;
-            wisata = contextWisata.listWisata;
+            List<Wisata> wisataList = contextWisata.ReadtoCard();
+            cardDetail(wisataList);
+        }
 
+        private void cardDetail(List<Wisata> wisataList)
+        {
             flowLayoutPanel1.Controls.Clear();
-            foreach (var i in wisata)
+
+            foreach (Wisata w in wisataList)
             {
-                string Nama = i.Nama_Wisata;
-                string Desk = i.Deskripsi;
-                string Alamat = i.Lokasi;
-                //flowLayoutPanel1.Controls.Add();
+                DWisata dWisata = new DWisata();
+                dWisata.SetData(w);
+                flowLayoutPanel1.Controls.Add(dWisata);
             }
+        }
+
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
