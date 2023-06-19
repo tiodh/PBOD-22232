@@ -101,8 +101,8 @@ namespace frontendpbo
 
         private void Login_Click(object sender, EventArgs e)
         {
-            //LoginAdmin form = new LoginAdmin();
-            //form.ShowDialog();
+            LoginAdmin form = new LoginAdmin();
+            form.ShowDialog();
         }
     }
 }
