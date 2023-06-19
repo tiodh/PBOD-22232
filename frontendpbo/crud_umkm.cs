@@ -137,7 +137,7 @@ namespace frontendpbo
         {
             NpgsqlConnection connection = new NpgsqlConnection();
 
-            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=aini123;Database=DataUmkm;";
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=aini123;Database=peta_jember;";
             connection.ConnectionString = constr;
             DataTable dt = new DataTable();
             try
@@ -145,7 +145,7 @@ namespace frontendpbo
                 connection.Open();
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = connection;
-                string StrSql = $"Update public.DataUmkm set nama_umkm = '{nama_umkm}', deskripsi_umkm = '{deskripsi_umkm}', pemilik_umkm = '{pemilik_umkm}', no_telepon_umkm = '{no_telepon_umkm}' where id_umkm = '{id_umkm}'";
+                string StrSql = $"Update public.peta_jember set nama_umkm = '{nama_umkm}', deskripsi_umkm = '{deskripsi_umkm}', pemilik_umkm = '{pemilik_umkm}', no_telepon_umkm = '{no_telepon_umkm}' where id_umkm = '{id_umkm}'";
                 cmd.CommandText = StrSql;
                 cmd.CommandType = CommandType.Text;
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);

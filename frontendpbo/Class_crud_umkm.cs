@@ -10,12 +10,12 @@ using System.Windows.Forms.VisualStyles;
 
 namespace frontendpbo
 {
-    public class   : Form
+    public class  Class_crud_umkm : Form
     {
         public static void made(int idumkm, string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
         {
             conec conecsidb = new conec();
-            string create = "insert into umkm_pbo_1.umkm (id_umkm,nama_umkm, deskripsi_umkm, pemilik_umkm, no_telepon_umkm)\r" +
+            string create = "insert peta_jember(id_umkm,nama_umkm, deskripsi_umkm, pemilik_umkm, no_telepon_umkm)\r" +
                 $"\nvalues ('{idumkm}','{namumkm}','{deskripsiumkm}','{pemilikumkm}','{noteleponumkm}');";
             conecsidb.Eksekusi(create);
         }
@@ -23,7 +23,7 @@ namespace frontendpbo
         public static void edit(int idumkm, string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
         {
             conec conecsidb = new conec();
-            string update = $"UPDATE umkm_pbo_1.umkm " +
+            string update = $"UPDATE peta_jember " +
                 $"SET nama_umkm = '{namumkm}', deskripsi_umkm = '{deskripsiumkm}', pemilik_umkm = '{pemilikumkm}', no_telepon_umkm = '{noteleponumkm}' " +
                 $"WHERE id_umkm = {idumkm};";
             conecsidb.Eksekusi(update);
@@ -32,7 +32,7 @@ namespace frontendpbo
         public static DataTable read()
         {
             conec conecsidb = new conec();
-            DataTable dt = conecsidb.Eksekusi("SELECT * FROM umkm_pbo_1.umkm;");
+            DataTable dt = conecsidb.Eksekusi("SELECT * FROM \"umkm\";");
 
             return dt;
         }
@@ -53,7 +53,7 @@ namespace frontendpbo
         public DataTable Eksekusi(string sql)
         {
             NpgsqlConnection connection = new NpgsqlConnection();
-            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = aini123;Database=DataUmkm";
+            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = aini123;Database=peta_jember";
             DataTable dt = new DataTable();
             try
             {
