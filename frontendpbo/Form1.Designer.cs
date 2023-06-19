@@ -106,12 +106,11 @@
             Login.TabIndex = 0;
             Login.Text = "Login";
             Login.TextAlign = ContentAlignment.MiddleCenter;
-            Login.Click += Login_Click;
+            /*Login.Click += Login_Click;*/
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.FromArgb(111, 106, 248);
-            pictureBox1.Image = Properties.Resources.Dashboard;
             pictureBox1.Location = new Point(228, 11);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
@@ -178,7 +177,7 @@
             button2.TabIndex = 11;
             button2.Text = "Patemon";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            /*button2.Click += button2_Click;*/
             // 
             // dashboard
             // 
