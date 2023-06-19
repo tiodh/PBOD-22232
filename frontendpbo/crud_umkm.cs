@@ -132,7 +132,7 @@ namespace frontendpbo
         {
             NpgsqlConnection connection = new NpgsqlConnection();
 
-            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=140724;Database=umkm_pbo;";
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=aini123;Database=DataUmkm;";
             connection.ConnectionString = constr;
             DataTable dt = new DataTable();
             try

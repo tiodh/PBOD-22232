@@ -10,7 +10,7 @@ using System.Windows.Forms.VisualStyles;
 
 namespace frontendpbo
 {
-    public class Class_crud_umkm
+    public class Class_crud_umkm : Form
     {
         public static void made(int idumkm, string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
         {
@@ -39,21 +39,21 @@ namespace frontendpbo
     }
 
 
-  
-    
-        class conec
+
+
+    class conec
     {
         public NpgsqlConnection connection;
         public conec()
         {
             NpgsqlConnection connection = new NpgsqlConnection();
-            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = 140704;Database=umkm_pbo";
+            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = aini123;Database=DataUmkm";
         }
 
         public DataTable Eksekusi(string sql)
         {
             NpgsqlConnection connection = new NpgsqlConnection();
-            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = 140704;Database=umkm_pbo";
+            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = aini123;Database=DataUmkm";
             DataTable dt = new DataTable();
             try
             {
