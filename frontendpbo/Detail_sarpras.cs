@@ -16,5 +16,10 @@ namespace frontendpbo
         {
             InitializeComponent();
         }
+
+        private void Detail_sarpras_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

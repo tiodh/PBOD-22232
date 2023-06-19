@@ -338,6 +338,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Detail_sarpras";
             Text = "Detail_sarpras";
+            Load += Detail_sarpras_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel5.ResumeLayout(false);

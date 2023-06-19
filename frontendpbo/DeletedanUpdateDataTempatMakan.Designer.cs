@@ -159,7 +159,6 @@
             ClearTempatMakanbutton1.TabIndex = 2;
             ClearTempatMakanbutton1.Text = "Clear";
             ClearTempatMakanbutton1.UseVisualStyleBackColor = false;
-            ClearTempatMakanbutton1.Click += button1_Click;
             // 
             // TambahTempatMakanbutton2
             // 

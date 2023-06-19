@@ -42,6 +42,7 @@
             LokasiCafeRembanganlabel7 = new Label();
             JudulCafeRembanganlabel8 = new Label();
             CafeRembanganTempatMakanpictureBox2 = new PictureBox();
+            SearchButtonTempatMakan = new Button();
             RestoRembanganpanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)RestoRembanganTempatMakanpictureBox1).BeginInit();
             CafeRembanganpanel2.SuspendLayout();
@@ -119,7 +120,7 @@
             // SearchDataTempatMakantextBox1
             // 
             SearchDataTempatMakantextBox1.BorderStyle = BorderStyle.FixedSingle;
-            SearchDataTempatMakantextBox1.Location = new Point(996, 159);
+            SearchDataTempatMakantextBox1.Location = new Point(932, 174);
             SearchDataTempatMakantextBox1.Name = "SearchDataTempatMakantextBox1";
             SearchDataTempatMakantextBox1.Size = new Size(324, 27);
             SearchDataTempatMakantextBox1.TabIndex = 1;
@@ -137,6 +138,7 @@
             CafeRembanganpanel2.Name = "CafeRembanganpanel2";
             CafeRembanganpanel2.Size = new Size(1215, 268);
             CafeRembanganpanel2.TabIndex = 5;
+            CafeRembanganpanel2.Paint += CafeRembanganpanel2_Paint;
             // 
             // NoTeleponCafeRembanganlabel5
             // 
@@ -190,11 +192,21 @@
             CafeRembanganTempatMakanpictureBox2.TabIndex = 0;
             CafeRembanganTempatMakanpictureBox2.TabStop = false;
             // 
+            // SearchButtonTempatMakan
+            // 
+            SearchButtonTempatMakan.Location = new Point(1285, 174);
+            SearchButtonTempatMakan.Name = "SearchButtonTempatMakan";
+            SearchButtonTempatMakan.Size = new Size(46, 32);
+            SearchButtonTempatMakan.TabIndex = 6;
+            SearchButtonTempatMakan.UseVisualStyleBackColor = true;
+            SearchButtonTempatMakan.Click += SearchButtonTempatMakan_Click;
+            // 
             // DetaildanReadDataTempatMakan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1422, 977);
+            Controls.Add(SearchButtonTempatMakan);
             Controls.Add(CafeRembanganpanel2);
             Controls.Add(SearchDataTempatMakantextBox1);
             Controls.Add(RestoRembanganpanel1);
@@ -227,5 +239,6 @@
         private Label LokasiCafeRembanganlabel7;
         private Label JudulCafeRembanganlabel8;
         private PictureBox CafeRembanganTempatMakanpictureBox2;
+        private Button SearchButtonTempatMakan;
     }
 }

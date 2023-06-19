@@ -63,6 +63,16 @@ namespace frontendpbo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _001_safety {
+            get {
+                object obj = ResourceManager.GetObject("001-safety", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _new {
             get {
                 object obj = ResourceManager.GetObject("new", resourceCulture);
@@ -206,6 +216,36 @@ namespace frontendpbo.Properties {
         internal static System.Drawing.Bitmap Rectangle_28__1_ {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 28 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap searchbg {
+            get {
+                object obj = ResourceManager.GetObject("searchbg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap searchbg1 {
+            get {
+                object obj = ResourceManager.GetObject("searchbg1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shield_safe_secure_safety_protection_security_tick_icon_224700 {
+            get {
+                object obj = ResourceManager.GetObject("shield_safe_secure_safety_protection_security_tick_icon_224700", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
