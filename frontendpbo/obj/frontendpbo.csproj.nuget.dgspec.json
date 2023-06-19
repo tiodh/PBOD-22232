@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Documents\\PBO\\pbo lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+    "C:\\Users\\Aditya\\Documents\\PBO\\PROJEK AKHIR PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Documents\\PBO\\pbo lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+    "C:\\Users\\Aditya\\Documents\\PBO\\PROJEK AKHIR PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\PBO\\pbo lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "C:\\Users\\Aditya\\Documents\\PBO\\PROJEK AKHIR PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "C:\\Users\\Lenovo\\Documents\\PBO\\pbo lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Documents\\PBO\\pbo lagi\\PBOD-22232\\frontendpbo\\obj\\",
+        "projectPath": "C:\\Users\\Aditya\\Documents\\PBO\\PROJEK AKHIR PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "packagesPath": "C:\\Users\\Aditya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aditya\\Documents\\PBO\\PROJEK AKHIR PBO\\PBOD-22232\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aditya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
