@@ -15,11 +15,11 @@ namespace frontendpbo.Contexts
         public bool insert(Wisata wisata)
         {
             bool isSuccess = false;
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=PETAJEMBER;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=PETAJEMBER;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql =
-                    "INSERT INTO wisata(nama_wisata, deskripsi_wisata, lokasi_wisata) values (:nama_wisata,:deskripsi_wisata,:lokasi_wisata)";
+                    "INSERT INTO objek_wisata(nama_wisata, deskripsi_wisata, lokasi_wisata) values (:nama_wisata,:deskripsi_wisata,:lokasi_wisata)";
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
                 {

@@ -359,3 +359,5 @@ D:\KULIAH\Semester 2\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\
 D:\KULIAH\Semester 2\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 D:\KULIAH\Semester 2\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 D:\KULIAH\Semester 2\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+D:\KULIAH\Semester 2\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Edit_Riwayat_Kunjungan.resources
+D:\KULIAH\Semester 2\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.LoginAdmin.resources
