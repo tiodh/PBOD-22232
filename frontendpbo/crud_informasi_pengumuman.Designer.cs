@@ -39,7 +39,7 @@
             UpdateInformasiPengumuman = new Button();
             Exit_informasipengumuman = new Button();
             TampilInformasi = new DataGridView();
-            textBox1 = new TextBox();
+            SearchingInformasitextBox1 = new TextBox();
             IDWisata = new TextBox();
             label_id = new Label();
             ((System.ComponentModel.ISupportInitialize)TampilInformasi).BeginInit();
@@ -49,10 +49,9 @@
             // 
             label_namainformasi.Anchor = AnchorStyles.Left;
             label_namainformasi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label_namainformasi.Location = new Point(80, 213);
-            label_namainformasi.Margin = new Padding(4, 0, 4, 0);
+            label_namainformasi.Location = new Point(64, 170);
             label_namainformasi.Name = "label_namainformasi";
-            label_namainformasi.Size = new Size(198, 38);
+            label_namainformasi.Size = new Size(158, 30);
             label_namainformasi.TabIndex = 0;
             label_namainformasi.Text = "Nama Informasi";
             label_namainformasi.Click += label_namainformasi_Click;
@@ -61,10 +60,9 @@
             // 
             NamaInformasi.BorderStyle = BorderStyle.None;
             NamaInformasi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            NamaInformasi.Location = new Point(80, 255);
-            NamaInformasi.Margin = new Padding(4);
+            NamaInformasi.Location = new Point(64, 204);
             NamaInformasi.Name = "NamaInformasi";
-            NamaInformasi.Size = new Size(740, 28);
+            NamaInformasi.Size = new Size(592, 23);
             NamaInformasi.TabIndex = 1;
             NamaInformasi.TextChanged += textBox_namainformasi_TextChanged;
             // 
@@ -72,11 +70,10 @@
             // 
             DeskripsiInformasi.BorderStyle = BorderStyle.None;
             DeskripsiInformasi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            DeskripsiInformasi.Location = new Point(80, 358);
-            DeskripsiInformasi.Margin = new Padding(4);
+            DeskripsiInformasi.Location = new Point(64, 286);
             DeskripsiInformasi.Multiline = true;
             DeskripsiInformasi.Name = "DeskripsiInformasi";
-            DeskripsiInformasi.Size = new Size(740, 256);
+            DeskripsiInformasi.Size = new Size(592, 205);
             DeskripsiInformasi.TabIndex = 3;
             DeskripsiInformasi.TextChanged += textBox_deskripsiinformasi_TextChanged;
             // 
@@ -84,10 +81,9 @@
             // 
             label_deskripsiinformasi.Anchor = AnchorStyles.Left;
             label_deskripsiinformasi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label_deskripsiinformasi.Location = new Point(80, 316);
-            label_deskripsiinformasi.Margin = new Padding(4, 0, 4, 0);
+            label_deskripsiinformasi.Location = new Point(64, 253);
             label_deskripsiinformasi.Name = "label_deskripsiinformasi";
-            label_deskripsiinformasi.Size = new Size(278, 38);
+            label_deskripsiinformasi.Size = new Size(222, 30);
             label_deskripsiinformasi.TabIndex = 2;
             label_deskripsiinformasi.Text = "Deskripsi Informasi";
             // 
@@ -95,10 +91,9 @@
             // 
             TanggalInformasi.BorderStyle = BorderStyle.None;
             TanggalInformasi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            TanggalInformasi.Location = new Point(80, 698);
-            TanggalInformasi.Margin = new Padding(4);
+            TanggalInformasi.Location = new Point(64, 558);
             TanggalInformasi.Name = "TanggalInformasi";
-            TanggalInformasi.Size = new Size(740, 28);
+            TanggalInformasi.Size = new Size(592, 23);
             TanggalInformasi.TabIndex = 5;
             TanggalInformasi.TextChanged += textBox_tanggalinformasi_TextChanged;
             // 
@@ -106,10 +101,9 @@
             // 
             label_tanggalinformasi.Anchor = AnchorStyles.Left;
             label_tanggalinformasi.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label_tanggalinformasi.Location = new Point(80, 656);
-            label_tanggalinformasi.Margin = new Padding(4, 0, 4, 0);
+            label_tanggalinformasi.Location = new Point(64, 525);
             label_tanggalinformasi.Name = "label_tanggalinformasi";
-            label_tanggalinformasi.Size = new Size(278, 38);
+            label_tanggalinformasi.Size = new Size(222, 30);
             label_tanggalinformasi.TabIndex = 4;
             label_tanggalinformasi.Text = "Tanggal Informasi";
             // 
@@ -117,10 +111,9 @@
             // 
             CreateInformasiPengumuman.BackColor = Color.FromArgb(192, 255, 192);
             CreateInformasiPengumuman.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            CreateInformasiPengumuman.Location = new Point(264, 932);
-            CreateInformasiPengumuman.Margin = new Padding(4);
+            CreateInformasiPengumuman.Location = new Point(211, 746);
             CreateInformasiPengumuman.Name = "CreateInformasiPengumuman";
-            CreateInformasiPengumuman.Size = new Size(161, 79);
+            CreateInformasiPengumuman.Size = new Size(129, 63);
             CreateInformasiPengumuman.TabIndex = 6;
             CreateInformasiPengumuman.Text = "Create";
             CreateInformasiPengumuman.UseVisualStyleBackColor = false;
@@ -130,10 +123,9 @@
             // 
             DeleteInformasiPengumuman.BackColor = Color.Red;
             DeleteInformasiPengumuman.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            DeleteInformasiPengumuman.Location = new Point(679, 932);
-            DeleteInformasiPengumuman.Margin = new Padding(4);
+            DeleteInformasiPengumuman.Location = new Point(543, 746);
             DeleteInformasiPengumuman.Name = "DeleteInformasiPengumuman";
-            DeleteInformasiPengumuman.Size = new Size(161, 79);
+            DeleteInformasiPengumuman.Size = new Size(129, 63);
             DeleteInformasiPengumuman.TabIndex = 9;
             DeleteInformasiPengumuman.Text = "Delete";
             DeleteInformasiPengumuman.UseVisualStyleBackColor = false;
@@ -143,10 +135,9 @@
             // 
             UpdateInformasiPengumuman.BackColor = Color.Yellow;
             UpdateInformasiPengumuman.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            UpdateInformasiPengumuman.Location = new Point(472, 932);
-            UpdateInformasiPengumuman.Margin = new Padding(4);
+            UpdateInformasiPengumuman.Location = new Point(378, 746);
             UpdateInformasiPengumuman.Name = "UpdateInformasiPengumuman";
-            UpdateInformasiPengumuman.Size = new Size(161, 79);
+            UpdateInformasiPengumuman.Size = new Size(129, 63);
             UpdateInformasiPengumuman.TabIndex = 8;
             UpdateInformasiPengumuman.Text = "Update";
             UpdateInformasiPengumuman.UseVisualStyleBackColor = false;
@@ -156,10 +147,9 @@
             // 
             Exit_informasipengumuman.BackColor = Color.Lime;
             Exit_informasipengumuman.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Exit_informasipengumuman.Location = new Point(54, 932);
-            Exit_informasipengumuman.Margin = new Padding(4);
+            Exit_informasipengumuman.Location = new Point(43, 746);
             Exit_informasipengumuman.Name = "Exit_informasipengumuman";
-            Exit_informasipengumuman.Size = new Size(161, 79);
+            Exit_informasipengumuman.Size = new Size(129, 63);
             Exit_informasipengumuman.TabIndex = 10;
             Exit_informasipengumuman.Text = "Exit";
             Exit_informasipengumuman.UseVisualStyleBackColor = false;
@@ -172,51 +162,51 @@
             TampilInformasi.BorderStyle = BorderStyle.None;
             TampilInformasi.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             TampilInformasi.ImeMode = ImeMode.NoControl;
-            TampilInformasi.Location = new Point(885, 168);
-            TampilInformasi.Margin = new Padding(4);
+            TampilInformasi.Location = new Point(708, 134);
             TampilInformasi.Name = "TampilInformasi";
             TampilInformasi.ReadOnly = true;
             TampilInformasi.RowHeadersWidth = 51;
             TampilInformasi.RowTemplate.Height = 29;
-            TampilInformasi.Size = new Size(822, 844);
+            TampilInformasi.Size = new Size(658, 675);
             TampilInformasi.TabIndex = 11;
             TampilInformasi.CellContentClick += dataGridView_informasipengumuman_CellContentClick;
             // 
-            // textBox1
+            // SearchingInformasitextBox1
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(1388, 78);
-            textBox1.Margin = new Padding(4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(320, 24);
-            textBox1.TabIndex = 12;
+            SearchingInformasitextBox1.BackColor = SystemColors.ScrollBar;
+            SearchingInformasitextBox1.BorderStyle = BorderStyle.None;
+            SearchingInformasitextBox1.Location = new Point(1110, 62);
+            SearchingInformasitextBox1.Name = "SearchingInformasitextBox1";
+            SearchingInformasitextBox1.Size = new Size(256, 20);
+            SearchingInformasitextBox1.TabIndex = 12;
+            SearchingInformasitextBox1.TextChanged += SearchingPengumumantextBox1_TextChanged;
             // 
             // IDWisata
             // 
-            IDWisata.Location = new Point(80, 168);
+            IDWisata.Location = new Point(64, 134);
+            IDWisata.Margin = new Padding(2);
             IDWisata.Name = "IDWisata";
-            IDWisata.Size = new Size(150, 31);
+            IDWisata.Size = new Size(121, 27);
             IDWisata.TabIndex = 13;
             // 
             // label_id
             // 
             label_id.Anchor = AnchorStyles.Left;
             label_id.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label_id.Location = new Point(80, 127);
-            label_id.Margin = new Padding(4, 0, 4, 0);
+            label_id.Location = new Point(64, 102);
             label_id.Name = "label_id";
-            label_id.Size = new Size(198, 38);
+            label_id.Size = new Size(158, 30);
             label_id.TabIndex = 14;
             label_id.Text = "ID";
             // 
             // crud_informasi_pengumuman
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1778, 1106);
+            ClientSize = new Size(1422, 882);
             Controls.Add(label_id);
             Controls.Add(IDWisata);
-            Controls.Add(textBox1);
+            Controls.Add(SearchingInformasitextBox1);
             Controls.Add(TampilInformasi);
             Controls.Add(Exit_informasipengumuman);
             Controls.Add(DeleteInformasiPengumuman);
@@ -229,7 +219,6 @@
             Controls.Add(NamaInformasi);
             Controls.Add(label_namainformasi);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4);
             Name = "crud_informasi_pengumuman";
             Text = "crud_informasi_pengumuman";
             Load += crud_informasi_pengumuman_Load;
@@ -251,7 +240,7 @@
         private Button UpdateInformasiPengumuman;
         private Button Exit_informasipengumuman;
         private DataGridView TampilInformasi;
-        private TextBox textBox1;
+        private TextBox SearchingInformasitextBox1;
         private TextBox IDWisata;
         private Label label_id;
     }

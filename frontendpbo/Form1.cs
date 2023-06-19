@@ -12,7 +12,7 @@ namespace frontendpbo
         public Form1()
         {
             InitializeComponent();
-            mainside.Visible = false;
+            mainside.Visible = true;
         }
 
 
@@ -73,7 +73,7 @@ namespace frontendpbo
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            pictureBox1.Location = new System.Drawing.Point(25, (panel3.Height - pictureBox1.Height) / 2);
+
             int taskbarHeight = Screen.PrimaryScreen.Bounds.Height - Screen.PrimaryScreen.WorkingArea.Height;
             this.Height -= taskbarHeight;
         }
@@ -116,24 +116,7 @@ namespace frontendpbo
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
-            form.Show();
-        }
-
-        private void Login_Click(object sender, EventArgs e)
-        {
-            LoginAdmin formlog = new LoginAdmin();
-            formlog.ShowDialog();
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
+            openChildForm(new Form3());
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

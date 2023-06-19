@@ -17,7 +17,7 @@ namespace frontendpbo
         private string id = "";
         private int intRow = 0;
 
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; Port = 5432; User Id = postgres; Password = mafia0890; Database = wisata");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; Port = 5432; User Id = postgres; Password = 1; Database = Data Informasi Pengumuman");
         NpgsqlCommand cmd = default(NpgsqlCommand);
         string sql = string.Empty;
 
@@ -66,6 +66,7 @@ namespace frontendpbo
 
             return dt;
         }
+
         private void crud_informasi_pengumuman_Load(object sender, EventArgs e)
         {
             showdata();
@@ -86,6 +87,7 @@ namespace frontendpbo
 
         private void loadData(string keyword)
         {
+            DataTable dataTable = null;
             try
             {
                 sql = "SELECT id_wisata, nama_informasi, deskripsi_informasi, tanggal_informasi FROM pengumuman";
@@ -94,7 +96,8 @@ namespace frontendpbo
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("keyword", strKeyword);
-                DataTable dt = new DataTable();
+                DataTable dt = PerformCRUD(cmd);
+
                 int rowCount = dt.Rows.Count;
                 if (rowCount > 0)
                 {
@@ -107,13 +110,37 @@ namespace frontendpbo
                 {
                     TampilInformasi.DataSource = null;
                 }
+                string searchText = SearchingInformasitextBox1.Text.Trim();
 
+                if (!string.IsNullOrEmpty(searchText))
+                {
+                    using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Informasi Pengumuman;"))
+                    {
+                        string sql = "SELECT * FROM pengumuman WHERE nama_informasi ILIKE '%' || @searchText || '%' " +
+                        "OR deskripsi_informasi ILIKE '%' || @searchText || '%' " +
+                        "OR tanggal_informasi::text ILIKE '%' || @searchText || '%'";
+                        using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
+                        {
+                            command.Parameters.AddWithValue("@searchText", searchText);
+
+                            using (NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(command))
+                            {
+                                if (dataTable == null)
+                                    dataTable = new DataTable();
+
+                                adapter.Fill(dataTable);
+                                TampilInformasi.DataSource = dataTable;
+                            }
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred while loading data: " + ex.Message, "Data Loading Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
         private void execute(string mySQL, string param)
         {
@@ -130,10 +157,10 @@ namespace frontendpbo
             da.Fill(dt);
             TampilInformasi.DataSource = dt;
 
-            TampilInformasi.Columns["id_transportasi"].Width = 120;
-            TampilInformasi.Columns["nama_transportasi"].Width = 300;
-            TampilInformasi.Columns["jenis_transportasi"].Width = 300;
-            TampilInformasi.Columns["deskripsi"].Width = 1000;
+            TampilInformasi.Columns["id_wisata"].Width = 120;
+            TampilInformasi.Columns["nama_informasi"].Width = 300;
+            TampilInformasi.Columns["deskripsi_informasi"].Width = 300;
+            TampilInformasi.Columns["tanggal_informasi"].Width = 1000;
         }
 
         private void textBox_namainformasi_TextChanged(object sender, EventArgs e)
@@ -154,9 +181,7 @@ namespace frontendpbo
 
         private void Clear_informasipengumuman_Click(object sender, EventArgs e)
         {
-
             Application.Exit();
-
         }
 
         private void create_informasipengumuman_Click(object sender, EventArgs e)
@@ -176,7 +201,6 @@ namespace frontendpbo
             loadData("");
             resetMe();
             showdata();
-
 
         }
 
@@ -261,5 +285,42 @@ namespace frontendpbo
         {
 
         }
+
+        private void SearchingPengumumantextBox1_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = SearchingInformasitextBox1.Text.Trim();
+            loadData(keyword);
+        }
     }
+
+    class read
+    {
+        static public DataTable contohSelect()
+        {
+            NpgsqlConnection connection = new NpgsqlConnection();
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Informasi Pengumuman;";
+            connection.ConnectionString = constr;
+            DataTable dt = new DataTable();
+            try
+            {
+                connection.Open();
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = connection;
+                string StrSql = "SELECT * FROM pengumuman";
+                cmd.CommandText = StrSql;
+                cmd.CommandType = CommandType.Text;
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                da.Fill(dt);
+                cmd.Dispose();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return dt;
+        }
+    }
+
+
 }

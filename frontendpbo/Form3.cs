@@ -1,6 +1,4 @@
-﻿using frontendpbo.Contexts;
-using frontendpbo.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,13 +12,9 @@ namespace frontendpbo
 {
     public partial class Form3 : Form
     {
-        ContextAdmin contextAdmin;
-        Admin admin = new Admin();
         public Form3()
         {
             InitializeComponent();
-            contextAdmin = new ContextAdmin();
-
             this.WindowState = FormWindowState.Maximized;
             Rectangle bounds = Screen.PrimaryScreen.Bounds;
             this.Size = new System.Drawing.Size(bounds.Width, bounds.Height);
@@ -42,13 +36,6 @@ namespace frontendpbo
 
             panel3.Location = new System.Drawing.Point(587 - ((1920 - bounds.Width) / 2), 224 - ((1080 - bounds.Height) / 2));
 
-        }
-
-        private Models.Admin DataAdmin()
-        {
-            admin.Username = textBox1.Text;
-            admin.Password = textBox2.Text;
-            return admin;
         }
 
 
@@ -91,37 +78,6 @@ namespace frontendpbo
             if (textBox1.TextLength == 0)
             {
                 label1.Visible = true;
-            }
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string username = textBox1.Text;
-            string password = textBox2.Text;
-
-            Admin admin = new Admin
-            {
-                Username = username,
-                Password = password
-            };
-
-            bool loginSuccess = contextAdmin.Login(admin);
-
-            if (loginSuccess)
-            {
-                // Lakukan tindakan yang diperlukan setelah login berhasil
-                MessageBox.Show("Login berhasil!");
-            }
-            else
-            {
-                // Kosongkan field password atau lakukan tindakan yang diperlukan
-                textBox2.Clear();
-                MessageBox.Show("Username atau password salah. Silakan coba lagi.");
             }
         }
     }
