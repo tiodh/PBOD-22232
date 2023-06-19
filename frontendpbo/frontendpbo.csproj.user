@@ -52,6 +52,9 @@
     <Compile Update="Detail_sarpras.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="detail_umkm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="EditTiketing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +89,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormShowUlasan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="jenis_umkm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="RiwayatKunjungan.cs">
