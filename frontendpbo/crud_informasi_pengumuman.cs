@@ -291,6 +291,11 @@ namespace frontendpbo
             string keyword = SearchingInformasitextBox1.Text.Trim();
             loadData(keyword);
         }
+
+        private void NamaInformasi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
     class read

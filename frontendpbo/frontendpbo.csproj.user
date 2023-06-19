@@ -34,10 +34,10 @@
     <Compile Update="DetailAcara.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetailAcara2.cs">
+    <Compile Update="DetaildanReadDataTempatMakan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetaildanReadDataTempatMakan.cs">
+    <Compile Update="DetailEvent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DetailHotel.cs">
@@ -95,6 +95,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="jenis_umkm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="RiwayatKunjungan.cs">

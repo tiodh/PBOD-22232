@@ -124,6 +124,11 @@ namespace frontendpbo
         {
 
         }
+
+        private void textBox1_nama_umkm_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
     class EditUmkm
