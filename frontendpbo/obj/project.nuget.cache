@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mFMIAXBGuqk+1jVQ8AQSOYaFei5uRHY1UPwI+ScrqjIqGoVpmvHQY+itXoFzL26fuGczHV5KetPFSUiFuqildA==",
+  "dgSpecHash": "0Oox72hXGuYq+i0xw3oDgV9frivXVbz3ju3tuY6jlf2XYIm0q0wdrvN7f/kCiwRu1isNecMccytZvi1AK+XAQA==",
   "success": true,
-  "projectFilePath": "D:\\PROJEKKELASPBOD\\LASTCLONEEEEEE\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+  "projectFilePath": "D:\\PROJEKKELASPBOD\\linaa\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TUF\\.nuget\\packages\\livecharts.netcore\\0.9.7\\livecharts.netcore.0.9.7.nupkg.sha512",
     "C:\\Users\\TUF\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
