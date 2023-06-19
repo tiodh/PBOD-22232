@@ -18,7 +18,7 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=PETAJEMBER";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using(NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
@@ -49,7 +49,7 @@ namespace frontendpbo.Contexts
         {
             List<Wisata> searchResults = new List<Wisata>();
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=PETAJEMBER";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
@@ -85,7 +85,7 @@ namespace frontendpbo.Contexts
         public bool Insert(Wisata wisata)
         {
             bool isSuccess = false;
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=PETAJEMBER;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql =
@@ -114,7 +114,7 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=PETAJEMBER;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
             using(NpgsqlConnection conn = new NpgsqlConnection( conStr ))
             {
                 string sql = @"UPDATE SET nama_wisata = :nama_wisata, deskripsi_wisata = :deskripsi,lokasi_wisata = :lokasi where id_wisata = :id_wisata";
@@ -155,7 +155,7 @@ namespace frontendpbo.Contexts
         {
             List<Wisata> listWisata = new List<Wisata>();
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=PETAJEMBER";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {

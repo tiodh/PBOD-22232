@@ -58,7 +58,7 @@
             // 
             dWisata1.Location = new Point(3, 3);
             dWisata1.Name = "dWisata1";
-            dWisata1.Size = new Size(1395, 350);
+            dWisata1.Size = new Size(1395, 318);
             dWisata1.TabIndex = 0;
             // 
             // DetailWisata
