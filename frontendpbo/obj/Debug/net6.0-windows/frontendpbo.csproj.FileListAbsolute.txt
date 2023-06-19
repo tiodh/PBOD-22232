@@ -427,7 +427,6 @@ C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-w
 C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
 C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DeletedanUpdateDataTempatMakan.resources
 C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailAcara.resources
-C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailAcara2.resources
 C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetaildanReadDataTempatMakan.resources
 C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailHotel.resources
 C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
@@ -471,3 +470,4 @@ C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\bin\Debug\net6.0-w
 C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
 C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\Lenovo\Documents\PBO\pbo lagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DWisata.resources
