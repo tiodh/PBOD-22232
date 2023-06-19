@@ -134,7 +134,8 @@ namespace frontendpbo
 
         private void button6_Click(object sender, EventArgs e)
         {
-            //openChildForm(new Form3());
+            Form2 form = new Form2();
+            form.Show();
         }
 
         private void Login_Click(object sender, EventArgs e)
