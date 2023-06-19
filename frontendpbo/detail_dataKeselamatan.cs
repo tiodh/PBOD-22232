@@ -42,8 +42,8 @@ namespace frontendpbo
                 Panel readKeselamatanItem = new ReadKeselamatanItem(nama, noTlp, alamat, deskripsi).CreateItem();
                 flowLayoutPanel1.Controls.Add(readKeselamatanItem);
             }
-
         }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
