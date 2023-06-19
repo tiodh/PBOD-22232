@@ -21,5 +21,10 @@ namespace frontendpbo
         {
             panel3.Location = new System.Drawing.Point((panel1.Width - panel3.Width) / 2);
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
