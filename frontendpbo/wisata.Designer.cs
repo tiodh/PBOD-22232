@@ -46,7 +46,7 @@
             // 
             // datagridcrudwisata1
             // 
-            datagridcrudwisata1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            datagridcrudwisata1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             datagridcrudwisata1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             datagridcrudwisata1.Location = new Point(662, 122);
             datagridcrudwisata1.Name = "datagridcrudwisata1";
@@ -176,6 +176,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(743, 27);
             textBox1.TabIndex = 13;
+            textBox1.TextChanged += textBox1_TextChanged_1;
             // 
             // label1
             // 

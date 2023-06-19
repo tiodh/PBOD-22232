@@ -574,3 +574,4 @@ D:\KULIAH\Semester 2\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\fronten
 D:\KULIAH\Semester 2\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 D:\KULIAH\Semester 2\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
 D:\KULIAH\Semester 2\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DWisata.resources
+D:\KULIAH\Semester 2\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.detail_umkm.resources
