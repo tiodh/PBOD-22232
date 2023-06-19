@@ -38,22 +38,8 @@ namespace CUD_DataTiket
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4UpdateTIket_Click(object sender, EventArgs e)
         {
-            if (idtiket == 0)
-            {
-                MessageBox.Show("Pilih data yang mau di update", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                CUDEditTiket.UpdateTiket(txtNamaTiket.Text, Convert.ToInt32(txtHargaTiket.Text), txtDeskTiket.Text, Convert.ToInt32(txtIDTIket.Text), idtiket);
-                loadgrid();
-                txtIDTIket.Text = "";
-                txtNamaTiket.Text = "";
-                txtDeskTiket.Text = "";
-                txtHargaTiket.Text = "";
-                DataGridViewEditTiket.CurrentRow.Selected = false;
-            }
         }
 
         private void DataGridViewEditTiket_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -93,8 +79,9 @@ namespace CUD_DataTiket
         private void DataGridViewEditTiket_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewEditTiket.CurrentRow.Selected = true;
+            IDTiketlabel6.Visible = false;
+            txtIDTIket.Visible = false;
             idtiket = Convert.ToInt32(DataGridViewEditTiket.Rows[e.RowIndex].Cells[0].Value);
-            txtIDTIket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtNamaTiket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtDeskTiket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtHargaTiket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[3].Value.ToString();
@@ -190,6 +177,8 @@ namespace CUD_DataTiket
 
         private void btnClearDataTket_Click_1(object sender, EventArgs e)
         {
+            CariTiket.Text = " ";
+            NamaKolom.Text = " ";
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -218,6 +207,24 @@ namespace CUD_DataTiket
 
         private void label4_Click(object sender, EventArgs e)
         {
+        }
+
+        private void button4UpdateTIket_Click_1(object sender, EventArgs e)
+        {
+
+            if (idtiket == 0)
+            {
+                MessageBox.Show("Pilih data yang mau di update", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                CUDEditTiket.UpdateTiket(txtNamaTiket.Text, txtDeskTiket.Text, Convert.ToInt32(txtHargaTiket.Text), idtiket);
+                loadgrid();
+                txtIDTIket.Text = "";
+                txtNamaTiket.Text = "";
+                txtDeskTiket.Text = "";
+                txtHargaTiket.Text = "";
+            }
         }
     }
 }
