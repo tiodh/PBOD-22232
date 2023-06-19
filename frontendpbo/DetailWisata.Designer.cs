@@ -28,79 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetailWisata));
-            panel_detail_wisata = new Panel();
-            Rembangan_detail_wisata = new Label();
-            dataGridView_detail_wisata = new DataGridView();
-            pictureBox_gambar_rembangan = new PictureBox();
-            panel_detail_wisata.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView_detail_wisata).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_gambar_rembangan).BeginInit();
+            label1 = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            dWisata1 = new DWisata();
+            dWisata2 = new DWisata();
+            dWisata3 = new DWisata();
+            dWisata4 = new DWisata();
+            dWisata5 = new DWisata();
+            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
-            // panel_detail_wisata
+            // label1
             // 
-            panel_detail_wisata.BackColor = SystemColors.AppWorkspace;
-            panel_detail_wisata.Controls.Add(Rembangan_detail_wisata);
-            panel_detail_wisata.Controls.Add(dataGridView_detail_wisata);
-            panel_detail_wisata.Location = new Point(12, 273);
-            panel_detail_wisata.Name = "panel_detail_wisata";
-            panel_detail_wisata.Size = new Size(1388, 692);
-            panel_detail_wisata.TabIndex = 0;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(23, 41);
+            label1.Name = "label1";
+            label1.Size = new Size(121, 20);
+            label1.TabIndex = 1;
+            label1.Text = "DETAIL WISATA";
             // 
-            // Rembangan_detail_wisata
+            // flowLayoutPanel1
             // 
-            Rembangan_detail_wisata.AutoSize = true;
-            Rembangan_detail_wisata.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            Rembangan_detail_wisata.Location = new Point(628, 12);
-            Rembangan_detail_wisata.Name = "Rembangan_detail_wisata";
-            Rembangan_detail_wisata.Size = new Size(153, 29);
-            Rembangan_detail_wisata.TabIndex = 1;
-            Rembangan_detail_wisata.Text = "Rembangan";
-            Rembangan_detail_wisata.TextAlign = ContentAlignment.TopCenter;
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.Controls.Add(dWisata1);
+            flowLayoutPanel1.Controls.Add(dWisata2);
+            flowLayoutPanel1.Controls.Add(dWisata3);
+            flowLayoutPanel1.Controls.Add(dWisata4);
+            flowLayoutPanel1.Controls.Add(dWisata5);
+            flowLayoutPanel1.Location = new Point(12, 143);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1398, 822);
+            flowLayoutPanel1.TabIndex = 2;
+            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
-            // dataGridView_detail_wisata
+            // dWisata1
             // 
-            dataGridView_detail_wisata.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView_detail_wisata.Location = new Point(14, 55);
-            dataGridView_detail_wisata.Name = "dataGridView_detail_wisata";
-            dataGridView_detail_wisata.RowHeadersWidth = 51;
-            dataGridView_detail_wisata.RowTemplate.Height = 29;
-            dataGridView_detail_wisata.Size = new Size(1350, 612);
-            dataGridView_detail_wisata.TabIndex = 0;
+            dWisata1.Dock = DockStyle.Top;
+            dWisata1.Location = new Point(3, 3);
+            dWisata1.Name = "dWisata1";
+            dWisata1.Size = new Size(1327, 350);
+            dWisata1.TabIndex = 0;
             // 
-            // pictureBox_gambar_rembangan
+            // dWisata2
             // 
-            pictureBox_gambar_rembangan.Image = (Image)resources.GetObject("pictureBox_gambar_rembangan.Image");
-            pictureBox_gambar_rembangan.Location = new Point(497, 12);
-            pictureBox_gambar_rembangan.Name = "pictureBox_gambar_rembangan";
-            pictureBox_gambar_rembangan.Size = new Size(500, 255);
-            pictureBox_gambar_rembangan.TabIndex = 1;
-            pictureBox_gambar_rembangan.TabStop = false;
+            dWisata2.Dock = DockStyle.Top;
+            dWisata2.Location = new Point(3, 359);
+            dWisata2.Name = "dWisata2";
+            dWisata2.Size = new Size(1327, 350);
+            dWisata2.TabIndex = 1;
+            // 
+            // dWisata3
+            // 
+            dWisata3.Dock = DockStyle.Top;
+            dWisata3.Location = new Point(3, 715);
+            dWisata3.Name = "dWisata3";
+            dWisata3.Size = new Size(1327, 350);
+            dWisata3.TabIndex = 2;
+            // 
+            // dWisata4
+            // 
+            dWisata4.Dock = DockStyle.Top;
+            dWisata4.Location = new Point(3, 1071);
+            dWisata4.Name = "dWisata4";
+            dWisata4.Size = new Size(1327, 350);
+            dWisata4.TabIndex = 3;
+            // 
+            // dWisata5
+            // 
+            dWisata5.Dock = DockStyle.Top;
+            dWisata5.Location = new Point(3, 1427);
+            dWisata5.Name = "dWisata5";
+            dWisata5.Size = new Size(1327, 350);
+            dWisata5.TabIndex = 4;
             // 
             // DetailWisata
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1422, 977);
-            Controls.Add(pictureBox_gambar_rembangan);
-            Controls.Add(panel_detail_wisata);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "DetailWisata";
             Text = "DetailWisata";
             Load += DetailWisata_Load;
-            panel_detail_wisata.ResumeLayout(false);
-            panel_detail_wisata.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView_detail_wisata).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_gambar_rembangan).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Panel panel_detail_wisata;
-        private DataGridView dataGridView_detail_wisata;
-        private Label Rembangan_detail_wisata;
-        private PictureBox pictureBox_gambar_rembangan;
+        private Label label1;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private DWisata dWisata1;
+        private DWisata dWisata2;
+        private DWisata dWisata3;
+        private DWisata dWisata4;
+        private DWisata dWisata5;
     }
 }

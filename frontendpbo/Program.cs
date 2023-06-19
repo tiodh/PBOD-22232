@@ -1,5 +1,3 @@
-using tampil_data_umkm;
-
 namespace frontendpbo
 {
     internal static class Program
@@ -13,7 +11,7 @@ namespace frontendpbo
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new jenis_umkm());
+            Application.Run(new DetailWisata());
         }
     }
 }

@@ -52,6 +52,9 @@
     <Compile Update="detail_umkm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DWisata.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="EditTiketing.cs">
       <SubType>Form</SubType>
     </Compile>
