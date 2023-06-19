@@ -596,7 +596,6 @@ E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DataPenggun
 E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
 E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DeletedanUpdateDataTempatMakan.resources
 E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailAcara.resources
-E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailAcara2.resources
 E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetaildanReadDataTempatMakan.resources
 E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailHotel.resources
 E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
@@ -630,3 +629,4 @@ E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
 E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+E:\Event\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.LoginAdmin.resources
