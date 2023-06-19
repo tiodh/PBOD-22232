@@ -23,7 +23,7 @@ namespace frontendpbo
 
             return dt;
         }
-        public static void UpdateData(string namaLengkap, string username, string email, string password, int idadmin)
+        public static void UpdateData(string email, string namaLengkap, string username, string password, int idadmin)
         {
             ConnectDB connectData = new ConnectDB();
             string update = $"update admin set nama_lengkap = '{namaLengkap}', username = '{username}', email_admin = '{email}', password = '{password}' \nwhere id_admin = {idadmin}  ;";
@@ -38,7 +38,7 @@ namespace frontendpbo
         public ConnectDB()
         {
             connect = new NpgsqlConnection();
-            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=09102022;Database=Tugas PBO";
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
             connect.ConnectionString = constr;
         }
 
