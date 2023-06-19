@@ -17,14 +17,17 @@ namespace frontendpbo
         {
             InitializeComponent();
             //this.WindowState = FormWindowState.Maximized;
-            this.Size = new System.Drawing.Size(1200,800);
+            this.Size = new System.Drawing.Size(1200, 800);
         }
 
         private void LoginAdmin_Load(object sender, EventArgs e)
         {
             panel2.Location = new System.Drawing.Point(
-                (ClientSize.Width - panel2.Width) / 2,
-                (ClientSize.Height - panel2.Height) / 2);
+                (panel1.Width - panel2.Width) / 2,
+                (panel1.Height - panel2.Height) / 2);
+            panel1.Location = new System.Drawing.Point(
+                (ClientSize.Width - panel1.Width) / 2,
+                (ClientSize.Height - panel1.Height) / 2);
             button1.Location = new System.Drawing.Point((panel2.Width - button1.Width) / 2, (panel2.Height - button1.Height));
             MinimizeBox = false;
             MaximizeBox = false;

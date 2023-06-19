@@ -139,7 +139,7 @@ namespace frontendpbo
 
         private void Login_Click(object sender, EventArgs e)
         {
-            Form3 formlog = new Form3();
+            LoginAdmin formlog = new LoginAdmin();
             formlog.ShowDialog();
         }
 
