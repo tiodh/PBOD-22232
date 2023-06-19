@@ -25,7 +25,7 @@ namespace frontendpbo
 
         private void wisata_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -44,6 +44,11 @@ namespace frontendpbo
         }
 
         private void label2_Deskripsi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btntambahwisata_Click(object sender, EventArgs e)
         {
 
         }

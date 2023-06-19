@@ -39,17 +39,20 @@
             label2_Deskripsi_Wisata = new Label();
             textBox3_Lokasi_Wisata = new TextBox();
             label3_Lokasi_Wisata = new Label();
+            textBox1 = new TextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)datagridcrudwisata1).BeginInit();
             SuspendLayout();
             // 
             // datagridcrudwisata1
             // 
+            datagridcrudwisata1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             datagridcrudwisata1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            datagridcrudwisata1.Location = new Point(662, 51);
+            datagridcrudwisata1.Location = new Point(662, 122);
             datagridcrudwisata1.Name = "datagridcrudwisata1";
             datagridcrudwisata1.RowHeadersWidth = 51;
             datagridcrudwisata1.RowTemplate.Height = 29;
-            datagridcrudwisata1.Size = new Size(743, 825);
+            datagridcrudwisata1.Size = new Size(743, 754);
             datagridcrudwisata1.TabIndex = 0;
             datagridcrudwisata1.CellContentClick += datagridwisata1_CellContentClick;
             // 
@@ -75,6 +78,7 @@
             btntambahwisata.TabIndex = 2;
             btntambahwisata.Text = "Tambah";
             btntambahwisata.UseVisualStyleBackColor = false;
+            btntambahwisata.Click += btntambahwisata_Click;
             // 
             // btneditwisata
             // 
@@ -162,11 +166,34 @@
             label3_Lokasi_Wisata.TabIndex = 11;
             label3_Lokasi_Wisata.Text = "Lokasi :";
             // 
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.Control;
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(662, 79);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(743, 27);
+            textBox1.TabIndex = 13;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(662, 51);
+            label1.Name = "label1";
+            label1.Size = new Size(105, 25);
+            label1.TabIndex = 12;
+            label1.Text = "Cari Data :";
+            // 
             // wisata
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1440, 1024);
+            Controls.Add(textBox1);
+            Controls.Add(label1);
             Controls.Add(label3_Lokasi_Wisata);
             Controls.Add(textBox3_Lokasi_Wisata);
             Controls.Add(label2_Deskripsi_Wisata);
@@ -200,5 +227,7 @@
         private Label label2_Deskripsi_Wisata;
         private TextBox textBox3_Lokasi_Wisata;
         private Label label3_Lokasi_Wisata;
+        private TextBox textBox1;
+        private Label label1;
     }
 }
