@@ -38,10 +38,13 @@
             Bulan = new ComboBox();
             Tahun = new ComboBox();
             Kategori = new ComboBox();
-            dataGridView1 = new DataGridView();
+            panel2 = new Panel();
+            status_Database = new Label();
+            DataGrid_Utama = new DataGridView();
             panel1.SuspendLayout();
             panel_ReadData.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DataGrid_Utama).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -52,7 +55,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1440, 68);
+            panel1.Size = new Size(1422, 68);
             panel1.TabIndex = 0;
             // 
             // Header
@@ -69,6 +72,7 @@
             // 
             panel_ReadData.Anchor = AnchorStyles.None;
             panel_ReadData.AutoSize = true;
+            panel_ReadData.Controls.Add(DataGrid_Utama);
             panel_ReadData.Controls.Add(button1);
             panel_ReadData.Controls.Add(label3);
             panel_ReadData.Controls.Add(label2);
@@ -76,11 +80,11 @@
             panel_ReadData.Controls.Add(Bulan);
             panel_ReadData.Controls.Add(Tahun);
             panel_ReadData.Controls.Add(Kategori);
-            panel_ReadData.Controls.Add(dataGridView1);
             panel_ReadData.Location = new Point(12, 74);
             panel_ReadData.Name = "panel_ReadData";
             panel_ReadData.Size = new Size(1416, 494);
             panel_ReadData.TabIndex = 1;
+            panel_ReadData.Paint += panel_ReadData_Paint;
             // 
             // button1
             // 
@@ -90,6 +94,7 @@
             button1.TabIndex = 6;
             button1.Text = "Terapkan";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label3
             // 
@@ -125,6 +130,8 @@
             Bulan.Name = "Bulan";
             Bulan.Size = new Size(151, 28);
             Bulan.TabIndex = 3;
+            Bulan.Text = "All Month";
+            Bulan.SelectedIndexChanged += Bulan_SelectedIndexChanged;
             // 
             // Tahun
             // 
@@ -133,6 +140,7 @@
             Tahun.Name = "Tahun";
             Tahun.Size = new Size(151, 28);
             Tahun.TabIndex = 2;
+            Tahun.Text = "All Years";
             // 
             // Kategori
             // 
@@ -141,35 +149,58 @@
             Kategori.Name = "Kategori";
             Kategori.Size = new Size(151, 28);
             Kategori.TabIndex = 1;
+            Kategori.Text = "All category";
             Kategori.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
-            // dataGridView1
+            // panel2
             // 
-            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.GridColor = SystemColors.ButtonHighlight;
-            dataGridView1.Location = new Point(3, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(855, 487);
-            dataGridView1.TabIndex = 0;
+            panel2.BackColor = SystemColors.ActiveCaption;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(status_Database);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(0, 943);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1422, 34);
+            panel2.TabIndex = 2;
+            // 
+            // status_Database
+            // 
+            status_Database.AutoSize = true;
+            status_Database.Location = new Point(1228, 5);
+            status_Database.Name = "status_Database";
+            status_Database.Size = new Size(133, 20);
+            status_Database.TabIndex = 3;
+            status_Database.Text = "Database : Normal";
+            status_Database.Click += status_Database_Click;
+            // 
+            // DataGrid_Utama
+            // 
+            DataGrid_Utama.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DataGrid_Utama.Location = new Point(3, 3);
+            DataGrid_Utama.Name = "DataGrid_Utama";
+            DataGrid_Utama.RowHeadersWidth = 51;
+            DataGrid_Utama.RowTemplate.Height = 29;
+            DataGrid_Utama.Size = new Size(835, 487);
+            DataGrid_Utama.TabIndex = 7;
             // 
             // Data_Penngunjungcs
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1440, 1024);
+            ClientSize = new Size(1422, 977);
+            Controls.Add(panel2);
             Controls.Add(panel_ReadData);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Data_Penngunjungcs";
             Text = "Data_Penngunjungcs";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel_ReadData.ResumeLayout(false);
             panel_ReadData.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DataGrid_Utama).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -179,7 +210,6 @@
         private Panel panel1;
         private Label Header;
         private Panel panel_ReadData;
-        private DataGridView dataGridView1;
         private Button button1;
         private Label label3;
         private Label label2;
@@ -187,5 +217,8 @@
         private ComboBox Bulan;
         private ComboBox Tahun;
         private ComboBox Kategori;
+        private Panel panel2;
+        private Label status_Database;
+        private DataGridView DataGrid_Utama;
     }
 }
