@@ -33,15 +33,16 @@
             panelContent = new Panel();
             panel3 = new Panel();
             pictureBox1 = new PictureBox();
+            Login = new Label();
             panel2 = new Panel();
             mainside = new Panel();
             dashboard = new Button();
             button6 = new Button();
             button3 = new Button();
             pictureBox2 = new PictureBox();
-            button1 = new Button();
-            button4 = new Button();
             label1 = new Label();
+            button2 = new Button();
+            button5 = new Button();
             side.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)menu).BeginInit();
             panel3.SuspendLayout();
@@ -80,34 +81,46 @@
             // 
             panelContent.BackColor = SystemColors.AppWorkspace;
             panelContent.Dock = DockStyle.Fill;
-            panelContent.Location = new Point(285, 91);
+            panelContent.Location = new Point(285, 115);
             panelContent.Margin = new Padding(2);
             panelContent.Name = "panelContent";
-            panelContent.Size = new Size(1639, 695);
+            panelContent.Size = new Size(1639, 671);
             panelContent.TabIndex = 3;
             // 
             // panel3
             // 
+            panel3.BackgroundImage = Properties.Resources.header;
+            panel3.BackgroundImageLayout = ImageLayout.Stretch;
             panel3.Controls.Add(pictureBox1);
-            panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(9, 9);
+            panel3.Controls.Add(Login);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(20, 15);
             panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
             panel3.Padding = new Padding(4);
-            panel3.Size = new Size(1621, 82);
+            panel3.Size = new Size(1599, 85);
             panel3.TabIndex = 2;
             // 
             // pictureBox1
             // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.Rectangle_28__1_;
-            pictureBox1.Location = new Point(4, 4);
-            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Image = Properties.Resources.Dashboard;
+            pictureBox1.Location = new Point(24, 21);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1613, 74);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 3;
+            pictureBox1.Size = new Size(287, 39);
+            pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            // 
+            // Login
+            // 
+            Login.Dock = DockStyle.Right;
+            Login.Font = new Font("Perpetua", 17F, FontStyle.Bold, GraphicsUnit.Point);
+            Login.Location = new Point(1473, 4);
+            Login.Name = "Login";
+            Login.Size = new Size(122, 77);
+            Login.TabIndex = 0;
+            Login.Text = "Login";
+            Login.TextAlign = ContentAlignment.MiddleCenter;
+            Login.Click += Login_Click;
             // 
             // panel2
             // 
@@ -117,20 +130,20 @@
             panel2.Location = new Point(285, 0);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
-            panel2.Padding = new Padding(9, 0, 9, 0);
-            panel2.Size = new Size(1639, 91);
+            panel2.Padding = new Padding(20, 15, 20, 15);
+            panel2.Size = new Size(1639, 115);
             panel2.TabIndex = 1;
             // 
             // mainside
             // 
             mainside.BackColor = Color.Transparent;
             mainside.BackgroundImage = Properties.Resources.sidebar;
+            mainside.Controls.Add(button5);
+            mainside.Controls.Add(button2);
             mainside.Controls.Add(dashboard);
             mainside.Controls.Add(button6);
             mainside.Controls.Add(button3);
             mainside.Controls.Add(pictureBox2);
-            mainside.Controls.Add(button1);
-            mainside.Controls.Add(button4);
             mainside.Dock = DockStyle.Left;
             mainside.Location = new Point(53, 0);
             mainside.Margin = new Padding(2);
@@ -141,44 +154,47 @@
             // dashboard
             // 
             dashboard.BackColor = Color.Transparent;
+            dashboard.Dock = DockStyle.Top;
             dashboard.FlatAppearance.BorderSize = 0;
             dashboard.FlatStyle = FlatStyle.Flat;
             dashboard.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             dashboard.ForeColor = Color.Black;
-            dashboard.Location = new Point(-43, 116);
+            dashboard.Location = new Point(0, 223);
             dashboard.Name = "dashboard";
-            dashboard.Size = new Size(275, 63);
+            dashboard.Size = new Size(232, 54);
             dashboard.TabIndex = 10;
-            dashboard.Text = "Dashboard";
+            dashboard.Text = "Watu Ulo";
             dashboard.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
             button6.BackColor = Color.Transparent;
+            button6.Dock = DockStyle.Top;
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             button6.ForeColor = Color.Black;
-            button6.Location = new Point(-45, 208);
+            button6.Location = new Point(0, 169);
             button6.Name = "button6";
-            button6.Size = new Size(275, 63);
+            button6.Size = new Size(232, 54);
             button6.TabIndex = 9;
-            button6.Text = "Kebon Agung";
+            button6.Text = "Rembangan";
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
             // button3
             // 
             button3.BackColor = Color.Transparent;
+            button3.Dock = DockStyle.Top;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             button3.ForeColor = Color.Black;
-            button3.Location = new Point(-45, 307);
+            button3.Location = new Point(0, 115);
             button3.Name = "button3";
-            button3.Size = new Size(275, 63);
+            button3.Size = new Size(232, 54);
             button3.TabIndex = 8;
-            button3.Text = "Patemon";
+            button3.Text = "Dashboard";
             button3.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
@@ -192,35 +208,6 @@
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
-            // button1
-            // 
-            button1.BackColor = Color.Transparent;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(-45, 257);
-            button1.Name = "button1";
-            button1.Size = new Size(275, 63);
-            button1.TabIndex = 7;
-            button1.Text = "Watu Ulo";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.Transparent;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            button4.ForeColor = Color.Black;
-            button4.Location = new Point(-44, 161);
-            button4.Name = "button4";
-            button4.Size = new Size(275, 63);
-            button4.TabIndex = 3;
-            button4.Text = "Rembangan";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -229,6 +216,37 @@
             label1.Name = "label1";
             label1.Size = new Size(0, 20);
             label1.TabIndex = 4;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Transparent;
+            button2.Dock = DockStyle.Top;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = Color.Black;
+            button2.Location = new Point(0, 277);
+            button2.Name = "button2";
+            button2.Size = new Size(232, 54);
+            button2.TabIndex = 11;
+            button2.Text = "Patemon";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.Transparent;
+            button5.Dock = DockStyle.Top;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            button5.ForeColor = Color.Black;
+            button5.Location = new Point(0, 331);
+            button5.Name = "button5";
+            button5.Size = new Size(232, 54);
+            button5.TabIndex = 12;
+            button5.Text = "Kebon Agung";
+            button5.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -264,14 +282,15 @@
         private PictureBox menu;
         private Panel mainside;
         private Panel panel3;
-        private PictureBox pictureBox1;
         private Panel panel2;
         private Label label1;
-        private Button button4;
         private PictureBox pictureBox2;
         private Button button3;
-        private Button button1;
         private Button button6;
         private Button dashboard;
+        private Label Login;
+        private PictureBox pictureBox1;
+        private Button button5;
+        private Button button2;
     }
 }
