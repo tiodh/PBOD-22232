@@ -141,6 +141,8 @@
             label101 = new Label();
             label102 = new Label();
             pictureBox8 = new PictureBox();
+            panel1DetailUMKM = new Panel();
+            txtsearchdetailumkm = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -149,12 +151,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panel1DetailUMKM.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = SystemColors.ActiveBorder;
-            pictureBox1.Location = new Point(108, 108);
+            pictureBox1.Location = new Point(16, 38);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(207, 143);
             pictureBox1.TabIndex = 0;
@@ -613,7 +616,7 @@
             label26.AutoSize = true;
             label26.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label26.ForeColor = SystemColors.ButtonHighlight;
-            label26.Location = new Point(340, 229);
+            label26.Location = new Point(236, 122);
             label26.Name = "label26";
             label26.Size = new Size(94, 22);
             label26.TabIndex = 59;
@@ -624,7 +627,7 @@
             label25.AutoSize = true;
             label25.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label25.ForeColor = SystemColors.ButtonHighlight;
-            label25.Location = new Point(354, 260);
+            label25.Location = new Point(250, 144);
             label25.Name = "label25";
             label25.Size = new Size(44, 16);
             label25.TabIndex = 60;
@@ -636,7 +639,7 @@
             label24.AutoSize = true;
             label24.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label24.ForeColor = SystemColors.ButtonHighlight;
-            label24.Location = new Point(468, 165);
+            label24.Location = new Point(352, 74);
             label24.Name = "label24";
             label24.Size = new Size(129, 22);
             label24.TabIndex = 57;
@@ -648,7 +651,7 @@
             label23.AutoSize = true;
             label23.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label23.ForeColor = SystemColors.ButtonHighlight;
-            label23.Location = new Point(482, 196);
+            label23.Location = new Point(365, 103);
             label23.Name = "label23";
             label23.Size = new Size(31, 16);
             label23.TabIndex = 58;
@@ -660,7 +663,7 @@
             label22.AutoSize = true;
             label22.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label22.ForeColor = SystemColors.ButtonHighlight;
-            label22.Location = new Point(340, 165);
+            label22.Location = new Point(232, 75);
             label22.Name = "label22";
             label22.Size = new Size(114, 22);
             label22.TabIndex = 55;
@@ -671,7 +674,7 @@
             label21.AutoSize = true;
             label21.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label21.ForeColor = SystemColors.ButtonHighlight;
-            label21.Location = new Point(354, 196);
+            label21.Location = new Point(246, 97);
             label21.Name = "label21";
             label21.Size = new Size(26, 16);
             label21.TabIndex = 56;
@@ -683,7 +686,7 @@
             label20.AutoSize = true;
             label20.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label20.ForeColor = SystemColors.ButtonHighlight;
-            label20.Location = new Point(468, 108);
+            label20.Location = new Point(356, 18);
             label20.Name = "label20";
             label20.Size = new Size(140, 22);
             label20.TabIndex = 53;
@@ -694,7 +697,7 @@
             label19.AutoSize = true;
             label19.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label19.ForeColor = SystemColors.ButtonHighlight;
-            label19.Location = new Point(482, 139);
+            label19.Location = new Point(370, 49);
             label19.Name = "label19";
             label19.Size = new Size(62, 16);
             label19.TabIndex = 54;
@@ -706,7 +709,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(482, 261);
+            label3.Location = new Point(366, 144);
             label3.Name = "label3";
             label3.Size = new Size(69, 16);
             label3.TabIndex = 34;
@@ -718,7 +721,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(354, 139);
+            label2.Location = new Point(246, 49);
             label2.Name = "label2";
             label2.Size = new Size(55, 16);
             label2.TabIndex = 33;
@@ -730,7 +733,7 @@
             label3_umkm.AutoSize = true;
             label3_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label3_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label3_umkm.Location = new Point(468, 229);
+            label3_umkm.Location = new Point(360, 121);
             label3_umkm.Name = "label3_umkm";
             label3_umkm.Size = new Size(94, 22);
             label3_umkm.TabIndex = 32;
@@ -741,18 +744,19 @@
             label2_umkm.AutoSize = true;
             label2_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label2_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label2_umkm.Location = new Point(340, 108);
+            label2_umkm.Location = new Point(232, 18);
             label2_umkm.Name = "label2_umkm";
             label2_umkm.Size = new Size(122, 22);
             label2_umkm.TabIndex = 31;
             label2_umkm.Text = "Nama UMKM";
+            label2_umkm.Click += label2_umkm_Click;
             // 
             // label6_umkm
             // 
             label6_umkm.AutoSize = true;
             label6_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label6_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label6_umkm.Location = new Point(108, 83);
+            label6_umkm.Location = new Point(16, 1);
             label6_umkm.Name = "label6_umkm";
             label6_umkm.Size = new Size(102, 22);
             label6_umkm.TabIndex = 30;
@@ -1386,6 +1390,35 @@
             pictureBox8.TabIndex = 103;
             pictureBox8.TabStop = false;
             // 
+            // panel1DetailUMKM
+            // 
+            panel1DetailUMKM.Controls.Add(label22);
+            panel1DetailUMKM.Controls.Add(label2_umkm);
+            panel1DetailUMKM.Controls.Add(label2);
+            panel1DetailUMKM.Controls.Add(label21);
+            panel1DetailUMKM.Controls.Add(label24);
+            panel1DetailUMKM.Controls.Add(label3_umkm);
+            panel1DetailUMKM.Controls.Add(label3);
+            panel1DetailUMKM.Controls.Add(label20);
+            panel1DetailUMKM.Controls.Add(label19);
+            panel1DetailUMKM.Controls.Add(label23);
+            panel1DetailUMKM.Controls.Add(label26);
+            panel1DetailUMKM.Controls.Add(label25);
+            panel1DetailUMKM.Controls.Add(label6_umkm);
+            panel1DetailUMKM.Controls.Add(pictureBox1);
+            panel1DetailUMKM.Location = new Point(108, 83);
+            panel1DetailUMKM.Name = "panel1DetailUMKM";
+            panel1DetailUMKM.Size = new Size(518, 210);
+            panel1DetailUMKM.TabIndex = 159;
+            // 
+            // txtsearchdetailumkm
+            // 
+            txtsearchdetailumkm.Location = new Point(861, 62);
+            txtsearchdetailumkm.Name = "txtsearchdetailumkm";
+            txtsearchdetailumkm.Size = new Size(253, 23);
+            txtsearchdetailumkm.TabIndex = 160;
+            txtsearchdetailumkm.TextChanged += txtsearchdetailumkm_TextChanged;
+            // 
             // detail_umkm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1393,6 +1426,7 @@
             AutoScroll = true;
             BackColor = Color.DarkViolet;
             ClientSize = new Size(1197, 552);
+            Controls.Add(txtsearchdetailumkm);
             Controls.Add(label51);
             Controls.Add(label52);
             Controls.Add(label53);
@@ -1491,21 +1525,8 @@
             Controls.Add(label15);
             Controls.Add(label16);
             Controls.Add(pictureBox2);
-            Controls.Add(label25);
-            Controls.Add(label26);
-            Controls.Add(label23);
-            Controls.Add(label24);
-            Controls.Add(label21);
-            Controls.Add(label22);
-            Controls.Add(label19);
-            Controls.Add(label20);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label3_umkm);
-            Controls.Add(label2_umkm);
-            Controls.Add(label6_umkm);
             Controls.Add(label1);
-            Controls.Add(pictureBox1);
+            Controls.Add(panel1DetailUMKM);
             Name = "detail_umkm";
             Text = "Form1";
             Load += Second_Load;
@@ -1517,6 +1538,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            panel1DetailUMKM.ResumeLayout(false);
+            panel1DetailUMKM.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1636,5 +1659,7 @@
         private Label label101;
         private Label label102;
         private PictureBox pictureBox8;
+        private Panel panel1DetailUMKM;
+        private TextBox txtsearchdetailumkm;
     }
 }

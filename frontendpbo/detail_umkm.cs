@@ -49,8 +49,17 @@ namespace tampil_data_umkm
 
         private void Second_Load(object sender, EventArgs e)
         {
-            
+
         }
 
+        private void label2_umkm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtsearchdetailumkm_TextChanged(object sender, EventArgs e)
+        {
+            //if (txtsearchdetailumkm.Text == ;)   
+        }
     }
 }
