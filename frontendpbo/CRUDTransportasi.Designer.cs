@@ -62,9 +62,9 @@
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(TampilData);
             panel1.Location = new Point(-1, -2);
-            panel1.Margin = new Padding(4, 5, 4, 5);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1719, 942);
+            panel1.Size = new Size(1375, 754);
             panel1.TabIndex = 0;
             // 
             // panel2
@@ -84,72 +84,71 @@
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(UpdateTransportasi);
-            panel2.Location = new Point(46, 490);
-            panel2.Margin = new Padding(4, 5, 4, 5);
+            panel2.Location = new Point(37, 392);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1609, 428);
+            panel2.Size = new Size(1287, 342);
             panel2.TabIndex = 15;
             // 
             // SearchTransportasi
             // 
-            SearchTransportasi.Location = new Point(363, 100);
-            SearchTransportasi.Margin = new Padding(4, 5, 4, 5);
+            SearchTransportasi.Location = new Point(290, 80);
+            SearchTransportasi.Margin = new Padding(3, 4, 3, 4);
             SearchTransportasi.Name = "SearchTransportasi";
-            SearchTransportasi.Size = new Size(107, 38);
+            SearchTransportasi.Size = new Size(86, 30);
             SearchTransportasi.TabIndex = 15;
             SearchTransportasi.Text = "SEARCH";
             SearchTransportasi.UseVisualStyleBackColor = true;
             // 
             // TampilanData
             // 
-            TampilanData.Location = new Point(41, 102);
-            TampilanData.Margin = new Padding(4, 5, 4, 5);
+            TampilanData.Location = new Point(33, 82);
+            TampilanData.Margin = new Padding(3, 4, 3, 4);
             TampilanData.Name = "TampilanData";
-            TampilanData.Size = new Size(290, 31);
+            TampilanData.Size = new Size(233, 27);
             TampilanData.TabIndex = 14;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(37, 45);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(30, 36);
             label6.Name = "label6";
-            label6.Size = new Size(319, 28);
+            label6.Size = new Size(271, 23);
             label6.TabIndex = 13;
             label6.Text = "TAMPILKAN DATA BERDASARKAN";
             // 
             // IDTransportasi
             // 
-            IDTransportasi.Location = new Point(1003, 35);
-            IDTransportasi.Margin = new Padding(4, 5, 4, 5);
+            IDTransportasi.Location = new Point(802, 28);
+            IDTransportasi.Margin = new Padding(3, 4, 3, 4);
             IDTransportasi.Name = "IDTransportasi";
-            IDTransportasi.Size = new Size(517, 31);
+            IDTransportasi.Size = new Size(414, 27);
             IDTransportasi.TabIndex = 6;
             // 
             // NamaTransportasi
             // 
-            NamaTransportasi.Location = new Point(1003, 93);
-            NamaTransportasi.Margin = new Padding(4, 5, 4, 5);
+            NamaTransportasi.Location = new Point(802, 74);
+            NamaTransportasi.Margin = new Padding(3, 4, 3, 4);
             NamaTransportasi.Name = "NamaTransportasi";
-            NamaTransportasi.Size = new Size(517, 31);
+            NamaTransportasi.Size = new Size(414, 27);
             NamaTransportasi.TabIndex = 7;
             // 
             // JenisTransportasi
             // 
-            JenisTransportasi.Location = new Point(1003, 165);
-            JenisTransportasi.Margin = new Padding(4, 5, 4, 5);
+            JenisTransportasi.Location = new Point(802, 132);
+            JenisTransportasi.Margin = new Padding(3, 4, 3, 4);
             JenisTransportasi.Name = "JenisTransportasi";
-            JenisTransportasi.Size = new Size(517, 31);
+            JenisTransportasi.Size = new Size(414, 27);
             JenisTransportasi.TabIndex = 8;
             // 
             // DeskripsiTransportasi
             // 
-            DeskripsiTransportasi.Location = new Point(1003, 228);
-            DeskripsiTransportasi.Margin = new Padding(4, 5, 4, 5);
+            DeskripsiTransportasi.Location = new Point(802, 182);
+            DeskripsiTransportasi.Margin = new Padding(3, 4, 3, 4);
             DeskripsiTransportasi.Multiline = true;
             DeskripsiTransportasi.Name = "DeskripsiTransportasi";
-            DeskripsiTransportasi.Size = new Size(517, 139);
+            DeskripsiTransportasi.Size = new Size(414, 112);
             DeskripsiTransportasi.TabIndex = 9;
             // 
             // label1
@@ -157,10 +156,9 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(743, 45);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(594, 36);
             label1.Name = "label1";
-            label1.Size = new Size(250, 28);
+            label1.Size = new Size(211, 23);
             label1.TabIndex = 0;
             label1.Text = "ID TRANSPORTASI           :";
             // 
@@ -169,20 +167,19 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(741, 103);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(593, 82);
             label2.Name = "label2";
-            label2.Size = new Size(247, 28);
+            label2.Size = new Size(210, 23);
             label2.TabIndex = 1;
             label2.Text = "NAMA TRANSPORTASI    :";
             // 
             // CreateTransportasi
             // 
             CreateTransportasi.BackColor = Color.Green;
-            CreateTransportasi.Location = new Point(743, 292);
-            CreateTransportasi.Margin = new Padding(4, 5, 4, 5);
+            CreateTransportasi.Location = new Point(594, 234);
+            CreateTransportasi.Margin = new Padding(3, 4, 3, 4);
             CreateTransportasi.Name = "CreateTransportasi";
-            CreateTransportasi.Size = new Size(177, 108);
+            CreateTransportasi.Size = new Size(142, 86);
             CreateTransportasi.TabIndex = 10;
             CreateTransportasi.Text = "CREATE DATA";
             CreateTransportasi.UseVisualStyleBackColor = false;
@@ -191,23 +188,23 @@
             // DeleteTransportasi
             // 
             DeleteTransportasi.BackColor = Color.Red;
-            DeleteTransportasi.Location = new Point(277, 292);
-            DeleteTransportasi.Margin = new Padding(4, 5, 4, 5);
+            DeleteTransportasi.Location = new Point(222, 234);
+            DeleteTransportasi.Margin = new Padding(3, 4, 3, 4);
             DeleteTransportasi.Name = "DeleteTransportasi";
-            DeleteTransportasi.Size = new Size(177, 108);
+            DeleteTransportasi.Size = new Size(142, 86);
             DeleteTransportasi.TabIndex = 12;
             DeleteTransportasi.Text = "DELETE DATA";
             DeleteTransportasi.UseVisualStyleBackColor = false;
+            DeleteTransportasi.Click += DeleteTransportasi_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(741, 165);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(593, 132);
             label3.Name = "label3";
-            label3.Size = new Size(250, 28);
+            label3.Size = new Size(212, 23);
             label3.TabIndex = 2;
             label3.Text = "JENIS TRANSPORTASI      :";
             // 
@@ -216,23 +213,23 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(741, 230);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(593, 184);
             label4.Name = "label4";
-            label4.Size = new Size(249, 28);
+            label4.Size = new Size(209, 23);
             label4.TabIndex = 3;
             label4.Text = "DESKRIPSI                       :";
             // 
             // UpdateTransportasi
             // 
             UpdateTransportasi.BackColor = Color.Yellow;
-            UpdateTransportasi.Location = new Point(26, 292);
-            UpdateTransportasi.Margin = new Padding(4, 5, 4, 5);
+            UpdateTransportasi.Location = new Point(21, 234);
+            UpdateTransportasi.Margin = new Padding(3, 4, 3, 4);
             UpdateTransportasi.Name = "UpdateTransportasi";
-            UpdateTransportasi.Size = new Size(177, 108);
+            UpdateTransportasi.Size = new Size(142, 86);
             UpdateTransportasi.TabIndex = 11;
             UpdateTransportasi.Text = "UPDATE DATA";
             UpdateTransportasi.UseVisualStyleBackColor = false;
+            UpdateTransportasi.Click += UpdateTransportasi_Click;
             // 
             // panel3
             // 
@@ -241,9 +238,10 @@
             panel3.Controls.Add(pictureBox1);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
+            panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
-            panel3.Padding = new Padding(11, 0, 11, 0);
-            panel3.Size = new Size(1719, 113);
+            panel3.Padding = new Padding(9, 0, 9, 0);
+            panel3.Size = new Size(1375, 90);
             panel3.TabIndex = 14;
             // 
             // label7
@@ -252,10 +250,9 @@
             label7.BackColor = Color.FromArgb(111, 106, 248);
             label7.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(330, 25);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Location = new Point(264, 20);
             label7.Name = "label7";
-            label7.Size = new Size(828, 55);
+            label7.Size = new Size(686, 46);
             label7.TabIndex = 5;
             label7.Text = "TAMPILAN ADMIN DATA TRANSPORTASI";
             // 
@@ -264,9 +261,10 @@
             pictureBox1.BackColor = Color.White;
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.Rectangle_28__1_;
-            pictureBox1.Location = new Point(11, 0);
+            pictureBox1.Location = new Point(9, 0);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1697, 113);
+            pictureBox1.Size = new Size(1357, 90);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -279,23 +277,24 @@
             TampilData.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             TampilData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             TampilData.GridColor = Color.White;
-            TampilData.Location = new Point(46, 135);
-            TampilData.Margin = new Padding(4, 5, 4, 5);
+            TampilData.Location = new Point(37, 108);
+            TampilData.Margin = new Padding(3, 4, 3, 4);
             TampilData.Name = "TampilData";
             TampilData.ReadOnly = true;
             TampilData.RowHeadersWidth = 62;
             TampilData.RowTemplate.Height = 25;
-            TampilData.Size = new Size(1609, 338);
+            TampilData.Size = new Size(1287, 270);
             TampilData.TabIndex = 5;
+            TampilData.CellContentClick += TampilData_CellContentClick;
             // 
-            // CRUDTrasnportasi
+            // CRUDTransportasi
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1713, 937);
+            ClientSize = new Size(1370, 750);
             Controls.Add(panel1);
-            Margin = new Padding(4, 5, 4, 5);
-            Name = "CRUDTrasnportasi";
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "CRUDTransportasi";
             Text = "Form4";
             Load += CRUDTrasnportasi_Load;
             panel1.ResumeLayout(false);

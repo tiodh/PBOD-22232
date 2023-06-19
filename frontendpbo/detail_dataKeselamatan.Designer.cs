@@ -28,230 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(detail_dataKeselamatan));
-            panel1 = new Panel();
-            textBox_deskripsiHospital = new TextBox();
-            textBox_alamatHospital = new TextBox();
-            textBox_tlpHospital = new TextBox();
-            textBox_lembagaHospital = new TextBox();
-            pictureBox1 = new PictureBox();
-            panel2 = new Panel();
-            textBox_deskripsiPolisi = new TextBox();
-            textBox_alamatPolisi = new TextBox();
-            textBox_hpPolisi = new TextBox();
-            textBox_lembagaPolisi = new TextBox();
-            pictureBox2 = new PictureBox();
-            panel3 = new Panel();
-            textBox_deskripsiBencana = new TextBox();
-            textBox_alamatBencana = new TextBox();
-            textBox_hpBencana = new TextBox();
-            textBox_lembagaBencana = new TextBox();
-            pictureBox3 = new PictureBox();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            panelDetail = new Panel();
+            panelDeskripsi = new Panel();
+            lbDeskripsi = new Label();
+            panelAlamat = new Panel();
+            lbAlamat = new Label();
+            panelNomor = new Panel();
+            lbNomor = new Label();
+            panelNama = new Panel();
+            lbNama = new Label();
+            pbIcon = new PictureBox();
             textBox_searchingdataKeselamatan = new TextBox();
             button_searchDetailkeselamatan = new Button();
+            panel1 = new Panel();
+            flowLayoutPanel1.SuspendLayout();
+            panelDetail.SuspendLayout();
+            panelDeskripsi.SuspendLayout();
+            panelAlamat.SuspendLayout();
+            panelNomor.SuspendLayout();
+            panelNama.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbIcon).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // flowLayoutPanel1
             // 
-            panel1.BackColor = SystemColors.ButtonFace;
-            panel1.Controls.Add(textBox_deskripsiHospital);
-            panel1.Controls.Add(textBox_alamatHospital);
-            panel1.Controls.Add(textBox_tlpHospital);
-            panel1.Controls.Add(textBox_lembagaHospital);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(102, 88);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1264, 240);
-            panel1.TabIndex = 0;
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.AutoScrollMinSize = new Size(898, 1688);
+            flowLayoutPanel1.Controls.Add(panelDetail);
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel1.Location = new Point(84, 113);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1281, 985);
+            flowLayoutPanel1.TabIndex = 0;
             // 
-            // textBox_deskripsiHospital
+            // panelDetail
             // 
-            textBox_deskripsiHospital.BorderStyle = BorderStyle.FixedSingle;
-            textBox_deskripsiHospital.Location = new Point(374, 174);
-            textBox_deskripsiHospital.Name = "textBox_deskripsiHospital";
-            textBox_deskripsiHospital.Size = new Size(850, 27);
-            textBox_deskripsiHospital.TabIndex = 1;
-            textBox_deskripsiHospital.Text = "Deskripsi";
-            textBox_deskripsiHospital.TextAlign = HorizontalAlignment.Center;
-            textBox_deskripsiHospital.TextChanged += textBox_deskripsiHospital_TextChanged;
+            panelDetail.BackColor = SystemColors.ButtonFace;
+            panelDetail.Controls.Add(panelDeskripsi);
+            panelDetail.Controls.Add(panelAlamat);
+            panelDetail.Controls.Add(panelNomor);
+            panelDetail.Controls.Add(panelNama);
+            panelDetail.Controls.Add(pbIcon);
+            panelDetail.Location = new Point(3, 3);
+            panelDetail.Name = "panelDetail";
+            panelDetail.Size = new Size(1264, 240);
+            panelDetail.TabIndex = 6;
             // 
-            // textBox_alamatHospital
+            // panelDeskripsi
             // 
-            textBox_alamatHospital.BorderStyle = BorderStyle.FixedSingle;
-            textBox_alamatHospital.Location = new Point(374, 128);
-            textBox_alamatHospital.Name = "textBox_alamatHospital";
-            textBox_alamatHospital.Size = new Size(850, 27);
-            textBox_alamatHospital.TabIndex = 1;
-            textBox_alamatHospital.Text = "Alamat";
-            textBox_alamatHospital.TextAlign = HorizontalAlignment.Center;
-            textBox_alamatHospital.TextChanged += textBox_alamatHospital_TextChanged;
+            panelDeskripsi.BackColor = SystemColors.Window;
+            panelDeskripsi.Controls.Add(lbDeskripsi);
+            panelDeskripsi.Location = new Point(374, 170);
+            panelDeskripsi.Name = "panelDeskripsi";
+            panelDeskripsi.Size = new Size(850, 27);
+            panelDeskripsi.TabIndex = 5;
             // 
-            // textBox_tlpHospital
+            // lbDeskripsi
             // 
-            textBox_tlpHospital.BorderStyle = BorderStyle.FixedSingle;
-            textBox_tlpHospital.Location = new Point(374, 85);
-            textBox_tlpHospital.Name = "textBox_tlpHospital";
-            textBox_tlpHospital.Size = new Size(850, 27);
-            textBox_tlpHospital.TabIndex = 1;
-            textBox_tlpHospital.Text = "No Telpon";
-            textBox_tlpHospital.TextAlign = HorizontalAlignment.Center;
-            textBox_tlpHospital.TextChanged += textBox_tlpHospital_TextChanged;
+            lbDeskripsi.AutoSize = true;
+            lbDeskripsi.Location = new Point(15, 3);
+            lbDeskripsi.Name = "lbDeskripsi";
+            lbDeskripsi.Size = new Size(69, 20);
+            lbDeskripsi.TabIndex = 0;
+            lbDeskripsi.Text = "Deskripsi";
             // 
-            // textBox_lembagaHospital
+            // panelAlamat
             // 
-            textBox_lembagaHospital.BorderStyle = BorderStyle.FixedSingle;
-            textBox_lembagaHospital.Location = new Point(374, 39);
-            textBox_lembagaHospital.Name = "textBox_lembagaHospital";
-            textBox_lembagaHospital.Size = new Size(850, 27);
-            textBox_lembagaHospital.TabIndex = 1;
-            textBox_lembagaHospital.Text = "Nama Lembaga";
-            textBox_lembagaHospital.TextAlign = HorizontalAlignment.Center;
-            textBox_lembagaHospital.TextChanged += textBox1_TextChanged;
+            panelAlamat.BackColor = SystemColors.Window;
+            panelAlamat.Controls.Add(lbAlamat);
+            panelAlamat.Location = new Point(374, 125);
+            panelAlamat.Name = "panelAlamat";
+            panelAlamat.Size = new Size(850, 27);
+            panelAlamat.TabIndex = 4;
             // 
-            // pictureBox1
+            // lbAlamat
             // 
-            pictureBox1.Dock = DockStyle.Left;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(330, 240);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            lbAlamat.AutoSize = true;
+            lbAlamat.Location = new Point(15, 3);
+            lbAlamat.Name = "lbAlamat";
+            lbAlamat.Size = new Size(57, 20);
+            lbAlamat.TabIndex = 0;
+            lbAlamat.Text = "Alamat";
             // 
-            // panel2
+            // panelNomor
             // 
-            panel2.BackColor = SystemColors.ButtonFace;
-            panel2.Controls.Add(textBox_deskripsiPolisi);
-            panel2.Controls.Add(textBox_alamatPolisi);
-            panel2.Controls.Add(textBox_hpPolisi);
-            panel2.Controls.Add(textBox_lembagaPolisi);
-            panel2.Controls.Add(pictureBox2);
-            panel2.Location = new Point(102, 387);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1264, 240);
-            panel2.TabIndex = 0;
+            panelNomor.BackColor = SystemColors.Window;
+            panelNomor.Controls.Add(lbNomor);
+            panelNomor.Location = new Point(374, 80);
+            panelNomor.Name = "panelNomor";
+            panelNomor.Size = new Size(850, 27);
+            panelNomor.TabIndex = 3;
             // 
-            // textBox_deskripsiPolisi
+            // lbNomor
             // 
-            textBox_deskripsiPolisi.BorderStyle = BorderStyle.FixedSingle;
-            textBox_deskripsiPolisi.Location = new Point(374, 174);
-            textBox_deskripsiPolisi.Name = "textBox_deskripsiPolisi";
-            textBox_deskripsiPolisi.Size = new Size(850, 27);
-            textBox_deskripsiPolisi.TabIndex = 1;
-            textBox_deskripsiPolisi.Text = "Deskripsi";
-            textBox_deskripsiPolisi.TextAlign = HorizontalAlignment.Center;
+            lbNomor.AutoSize = true;
+            lbNomor.Location = new Point(15, 3);
+            lbNomor.Name = "lbNomor";
+            lbNomor.Size = new Size(86, 20);
+            lbNomor.TabIndex = 0;
+            lbNomor.Text = "No Telepon";
             // 
-            // textBox_alamatPolisi
+            // panelNama
             // 
-            textBox_alamatPolisi.BorderStyle = BorderStyle.FixedSingle;
-            textBox_alamatPolisi.Location = new Point(374, 128);
-            textBox_alamatPolisi.Name = "textBox_alamatPolisi";
-            textBox_alamatPolisi.Size = new Size(850, 27);
-            textBox_alamatPolisi.TabIndex = 1;
-            textBox_alamatPolisi.Text = "Alamat";
-            textBox_alamatPolisi.TextAlign = HorizontalAlignment.Center;
+            panelNama.BackColor = SystemColors.Window;
+            panelNama.Controls.Add(lbNama);
+            panelNama.Location = new Point(374, 35);
+            panelNama.Name = "panelNama";
+            panelNama.Size = new Size(850, 27);
+            panelNama.TabIndex = 2;
             // 
-            // textBox_hpPolisi
+            // lbNama
             // 
-            textBox_hpPolisi.BorderStyle = BorderStyle.FixedSingle;
-            textBox_hpPolisi.Location = new Point(374, 85);
-            textBox_hpPolisi.Name = "textBox_hpPolisi";
-            textBox_hpPolisi.Size = new Size(850, 27);
-            textBox_hpPolisi.TabIndex = 1;
-            textBox_hpPolisi.Text = "No Telpon";
-            textBox_hpPolisi.TextAlign = HorizontalAlignment.Center;
+            lbNama.AutoSize = true;
+            lbNama.Location = new Point(15, 3);
+            lbNama.Name = "lbNama";
+            lbNama.Size = new Size(115, 20);
+            lbNama.TabIndex = 0;
+            lbNama.Text = "Nama Lembaga";
             // 
-            // textBox_lembagaPolisi
+            // pbIcon
             // 
-            textBox_lembagaPolisi.BorderStyle = BorderStyle.FixedSingle;
-            textBox_lembagaPolisi.Location = new Point(374, 39);
-            textBox_lembagaPolisi.Name = "textBox_lembagaPolisi";
-            textBox_lembagaPolisi.Size = new Size(850, 27);
-            textBox_lembagaPolisi.TabIndex = 1;
-            textBox_lembagaPolisi.Text = "Nama Lembaga";
-            textBox_lembagaPolisi.TextAlign = HorizontalAlignment.Center;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Dock = DockStyle.Left;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(330, 240);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = SystemColors.ButtonFace;
-            panel3.Controls.Add(textBox_deskripsiBencana);
-            panel3.Controls.Add(textBox_alamatBencana);
-            panel3.Controls.Add(textBox_hpBencana);
-            panel3.Controls.Add(textBox_lembagaBencana);
-            panel3.Controls.Add(pictureBox3);
-            panel3.Location = new Point(102, 693);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(1264, 240);
-            panel3.TabIndex = 0;
-            // 
-            // textBox_deskripsiBencana
-            // 
-            textBox_deskripsiBencana.BorderStyle = BorderStyle.FixedSingle;
-            textBox_deskripsiBencana.Location = new Point(374, 174);
-            textBox_deskripsiBencana.Name = "textBox_deskripsiBencana";
-            textBox_deskripsiBencana.Size = new Size(850, 27);
-            textBox_deskripsiBencana.TabIndex = 1;
-            textBox_deskripsiBencana.Text = "Deskripsi";
-            textBox_deskripsiBencana.TextAlign = HorizontalAlignment.Center;
-            // 
-            // textBox_alamatBencana
-            // 
-            textBox_alamatBencana.BorderStyle = BorderStyle.FixedSingle;
-            textBox_alamatBencana.Location = new Point(374, 128);
-            textBox_alamatBencana.Name = "textBox_alamatBencana";
-            textBox_alamatBencana.Size = new Size(850, 27);
-            textBox_alamatBencana.TabIndex = 1;
-            textBox_alamatBencana.Text = "Alamat";
-            textBox_alamatBencana.TextAlign = HorizontalAlignment.Center;
-            // 
-            // textBox_hpBencana
-            // 
-            textBox_hpBencana.BorderStyle = BorderStyle.FixedSingle;
-            textBox_hpBencana.Location = new Point(374, 85);
-            textBox_hpBencana.Name = "textBox_hpBencana";
-            textBox_hpBencana.Size = new Size(850, 27);
-            textBox_hpBencana.TabIndex = 1;
-            textBox_hpBencana.Text = "No Telpon";
-            textBox_hpBencana.TextAlign = HorizontalAlignment.Center;
-            // 
-            // textBox_lembagaBencana
-            // 
-            textBox_lembagaBencana.BorderStyle = BorderStyle.FixedSingle;
-            textBox_lembagaBencana.Location = new Point(374, 39);
-            textBox_lembagaBencana.Name = "textBox_lembagaBencana";
-            textBox_lembagaBencana.Size = new Size(850, 27);
-            textBox_lembagaBencana.TabIndex = 1;
-            textBox_lembagaBencana.Text = "Nama Lembaga";
-            textBox_lembagaBencana.TextAlign = HorizontalAlignment.Center;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Dock = DockStyle.Left;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(0, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(330, 240);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 0;
-            pictureBox3.TabStop = false;
+            pbIcon.Dock = DockStyle.Left;
+            pbIcon.Image = Properties.Resources.shield_safe_secure_safety_protection_security_tick_icon_224700;
+            pbIcon.Location = new Point(0, 0);
+            pbIcon.Name = "pbIcon";
+            pbIcon.Size = new Size(330, 240);
+            pbIcon.SizeMode = PictureBoxSizeMode.Zoom;
+            pbIcon.TabIndex = 0;
+            pbIcon.TabStop = false;
             // 
             // textBox_searchingdataKeselamatan
             // 
@@ -269,6 +175,16 @@
             button_searchDetailkeselamatan.Text = "Search";
             button_searchDetailkeselamatan.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            panel1.AutoSize = true;
+            panel1.Controls.Add(flowLayoutPanel1);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1422, 977);
+            panel1.TabIndex = 3;
+            // 
             // detail_dataKeselamatan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -276,47 +192,41 @@
             ClientSize = new Size(1422, 977);
             Controls.Add(button_searchDetailkeselamatan);
             Controls.Add(textBox_searchingdataKeselamatan);
-            Controls.Add(panel3);
-            Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "detail_dataKeselamatan";
             Text = "detail_dataKeselamatan";
             Load += detail_dataKeselamatan_Load;
+            flowLayoutPanel1.ResumeLayout(false);
+            panelDetail.ResumeLayout(false);
+            panelDeskripsi.ResumeLayout(false);
+            panelDeskripsi.PerformLayout();
+            panelAlamat.ResumeLayout(false);
+            panelAlamat.PerformLayout();
+            panelNomor.ResumeLayout(false);
+            panelNomor.PerformLayout();
+            panelNama.ResumeLayout(false);
+            panelNama.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbIcon).EndInit();
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Panel panel1;
-        private PictureBox pictureBox1;
-        private Panel panel2;
-        private TextBox textBox_deskripsiPolisi;
-        private TextBox textBox_alamatPolisi;
-        private TextBox textBox_hpPolisi;
-        private TextBox textBox_lembagaPolisi;
-        private PictureBox pictureBox2;
-        private Panel panel3;
-        private TextBox textBox_deskripsiBencana;
-        private TextBox textBox_alamatBencana;
-        private TextBox textBox_hpBencana;
-        private TextBox textBox_lembagaBencana;
-        private PictureBox pictureBox3;
-        private TextBox textBox_deskripsiHospital;
-        private TextBox textBox_alamatHospital;
-        private TextBox textBox_tlpHospital;
-        private TextBox textBox_lembagaHospital;
         private TextBox textBox_searchingdataKeselamatan;
         private Button button_searchDetailkeselamatan;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel1;
+        private Panel panelDetail;
+        private Panel panelDeskripsi;
+        private Label lbDeskripsi;
+        private Panel panelAlamat;
+        private Label lbAlamat;
+        private Panel panelNomor;
+        private Label lbNomor;
+        private Panel panelNama;
+        private Label lbNama;
+        private PictureBox pbIcon;
     }
 }

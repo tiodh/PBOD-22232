@@ -52,7 +52,7 @@ namespace frontendpbo
 
         private void button3_clear_umkm_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void button4_read_umkm_Click(object sender, EventArgs e)

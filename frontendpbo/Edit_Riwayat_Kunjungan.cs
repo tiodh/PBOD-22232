@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace frontendpbo
 {
-    public partial class Data_Penngunjungcs : Form
+    public partial class Edit_Riwayat_Kunjungan : Form
     {
-        public Data_Penngunjungcs()
+        public Edit_Riwayat_Kunjungan()
         {
             InitializeComponent();
+        }
+
+        private void Edit_Riwayat_Kunjungan_Load(object sender, EventArgs e)
+        {
+            panel3.Location = new System.Drawing.Point((panel1.Width - panel3.Width) / 2);
         }
     }
 }

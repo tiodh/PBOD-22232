@@ -19,7 +19,7 @@ namespace CUD_DataTiket
 
         private void btnTambahTiket_Click(object sender, EventArgs e)
         {
-            CUDEditTiket.BuatTIket(txtNamaTiket.Text, txtDeskTiket.Text, Convert.ToInt32(txtHargaTiket.Text),Convert.ToInt32(txtIDTIket.Text));
+            CUDEditTiket.BuatTIket(txtNamaTiket.Text, txtDeskTiket.Text, Convert.ToInt32(txtHargaTiket.Text), Convert.ToInt32(txtIDTIket.Text));
             loadgrid();
 
             txtIDTIket.Text = "";
@@ -159,6 +159,65 @@ namespace CUD_DataTiket
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void JudulDataTiketRead_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IDTiketlabel6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPopUpInfo_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnClearDataTket_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void panelDetailTiket_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
         }
     }
 }

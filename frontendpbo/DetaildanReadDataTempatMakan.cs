@@ -41,5 +41,16 @@ namespace frontendpbo
         {
 
         }
+
+        private void HapusTempatMakanbutton4_click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SearchButtonTempatMakan_Click(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }
