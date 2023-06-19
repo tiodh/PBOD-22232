@@ -123,7 +123,6 @@ D:\Project Akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.For
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Pengunjung.resources
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
-C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDTrasnportasi.resources
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselamatan.resources
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DataPengguna.resources
@@ -170,3 +169,6 @@ C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDDataPenginapan.resources
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDTransportasi.resources
+C:\Users\Harata\PBO-D_22232_ProjectAkhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\CUD_DataTiket.EditTiketing.resources
