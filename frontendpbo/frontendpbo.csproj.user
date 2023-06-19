@@ -31,25 +31,19 @@
     <Compile Update="DeletedanUpdateDataTempatMakan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetailAcara.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="DetaildanReadDataTempatMakan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DetailEvent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetailHotel.cs">
+    <Compile Update="DetailSarpras.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DetailWisata.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="detail_dataKeselamatan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Detail_sarpras.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="detail_umkm.cs">
