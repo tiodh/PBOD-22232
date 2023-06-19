@@ -17,7 +17,7 @@ namespace frontendpbo
         private string id = "";
         private int intRow = 0;
 
-        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; Port = 5433; User Id = postgres; Password = 12345678; Database = data_transportasi");
+        NpgsqlConnection conn = new NpgsqlConnection("Server = localhost; Port = 5432; User Id = postgres; Password = Paulus21.; Database = transportasi");
         NpgsqlCommand cmd = default(NpgsqlCommand);
         string sql = string.Empty;
         public CRUDTransportasi()
@@ -110,7 +110,7 @@ namespace frontendpbo
 
                 if (!string.IsNullOrEmpty(searchText))
                 {
-                    using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5433;User Id=postgres;Password=12345678;Database=data_transportasi;"))
+                    using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=Paulus21.;Database=transportasi;"))
                     {
                         string sql = "SELECT * FROM transportasi WHERE nama_transportasi ILIKE '%' || @searchText || '%' " +
                         "OR jenis_transportasi ILIKE '%' || @searchText || '%' ";
@@ -256,8 +256,49 @@ namespace frontendpbo
             string keyword = TampilanData.Text.Trim();
             loadData(keyword);
         }
+
+        private void SearchTransportasi_Click(object sender, EventArgs e)
+        {
+            string searchText = TampilanData.Text.Trim();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                MessageBox.Show("Please enter a search keyword.", "Empty Search Field",
+                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            TampilData.DataSource = null;
+
+            // Perform the search query
+            using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=Paulus21.;Database=transportasi;"))
+            {
+                string sql = "SELECT * FROM transportasi WHERE nama_transportasi ILIKE '%' || @searchText || '%' " +
+                             "OR jenis_transportasi ILIKE '%' || @searchText || '%'";
+                using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@searchText", searchText);
+
+                    using (NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(command))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        if (dataTable.Rows.Count > 0)
+                        {
+                            // Display the search results in the DataGridView
+                            TampilData.AutoGenerateColumns = true;
+                            TampilData.DataSource = dataTable;
+                        }
+                        else
+                        {
+                            MessageBox.Show("No results found.", "Search Results",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-
-//Yang bisa jalan
