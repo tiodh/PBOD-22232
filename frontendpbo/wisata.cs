@@ -1,4 +1,5 @@
-﻿using System;
+﻿using frontendpbo.Contexts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,19 @@ namespace frontendpbo
 {
     public partial class wisata : Form
     {
+        ContextWisata contextWisata;
         public wisata()
         {
             InitializeComponent();
+            contextWisata = new ContextWisata();
+
+            contextWisata.Read();
+            datagridcrudwisata1.DataSource = contextWisata.listWisata;
         }
 
         private void wisata_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

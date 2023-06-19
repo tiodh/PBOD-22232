@@ -30,14 +30,12 @@
         {
             label1 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            lblNama = new Label();
-            lblDesc = new Label();
-            lblLoka = new Label();
+            dWisata1 = new DWisata();
+            dWisata2 = new DWisata();
+            dWisata3 = new DWisata();
+            dWisata4 = new DWisata();
+            dWisata5 = new DWisata();
             flowLayoutPanel1.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -52,62 +50,57 @@
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Controls.Add(panel1);
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.Controls.Add(dWisata1);
+            flowLayoutPanel1.Controls.Add(dWisata2);
+            flowLayoutPanel1.Controls.Add(dWisata3);
+            flowLayoutPanel1.Controls.Add(dWisata4);
+            flowLayoutPanel1.Controls.Add(dWisata5);
             flowLayoutPanel1.Location = new Point(12, 143);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(1398, 822);
             flowLayoutPanel1.TabIndex = 2;
+            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
-            // panel1
+            // dWisata1
             // 
-            panel1.Controls.Add(lblLoka);
-            panel1.Controls.Add(lblDesc);
-            panel1.Controls.Add(lblNama);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(3, 3);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1395, 270);
-            panel1.TabIndex = 0;
+            dWisata1.Dock = DockStyle.Top;
+            dWisata1.Location = new Point(3, 3);
+            dWisata1.Name = "dWisata1";
+            dWisata1.Size = new Size(1327, 350);
+            dWisata1.TabIndex = 0;
             // 
-            // pictureBox1
+            // dWisata2
             // 
-            pictureBox1.Dock = DockStyle.Left;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(408, 270);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            dWisata2.Dock = DockStyle.Top;
+            dWisata2.Location = new Point(3, 359);
+            dWisata2.Name = "dWisata2";
+            dWisata2.Size = new Size(1327, 350);
+            dWisata2.TabIndex = 1;
             // 
-            // lblNama
+            // dWisata3
             // 
-            lblNama.AutoSize = true;
-            lblNama.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNama.Location = new Point(426, 14);
-            lblNama.Name = "lblNama";
-            lblNama.Size = new Size(48, 28);
-            lblNama.TabIndex = 1;
-            lblNama.Text = "N/A";
+            dWisata3.Dock = DockStyle.Top;
+            dWisata3.Location = new Point(3, 715);
+            dWisata3.Name = "dWisata3";
+            dWisata3.Size = new Size(1327, 350);
+            dWisata3.TabIndex = 2;
             // 
-            // lblDesc
+            // dWisata4
             // 
-            lblDesc.AutoSize = true;
-            lblDesc.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDesc.Location = new Point(426, 101);
-            lblDesc.Name = "lblDesc";
-            lblDesc.Size = new Size(48, 28);
-            lblDesc.TabIndex = 2;
-            lblDesc.Text = "N/A";
+            dWisata4.Dock = DockStyle.Top;
+            dWisata4.Location = new Point(3, 1071);
+            dWisata4.Name = "dWisata4";
+            dWisata4.Size = new Size(1327, 350);
+            dWisata4.TabIndex = 3;
             // 
-            // lblLoka
+            // dWisata5
             // 
-            lblLoka.AutoSize = true;
-            lblLoka.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLoka.Location = new Point(426, 57);
-            lblLoka.Name = "lblLoka";
-            lblLoka.Size = new Size(48, 28);
-            lblLoka.TabIndex = 3;
-            lblLoka.Text = "N/A";
+            dWisata5.Dock = DockStyle.Top;
+            dWisata5.Location = new Point(3, 1427);
+            dWisata5.Name = "dWisata5";
+            dWisata5.Size = new Size(1327, 350);
+            dWisata5.TabIndex = 4;
             // 
             // DetailWisata
             // 
@@ -121,9 +114,6 @@
             Text = "DetailWisata";
             Load += DetailWisata_Load;
             flowLayoutPanel1.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -131,10 +121,10 @@
         #endregion
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Panel panel1;
-        private PictureBox pictureBox1;
-        private Label lblNama;
-        private Label lblDesc;
-        private Label lblLoka;
+        private DWisata dWisata1;
+        private DWisata dWisata2;
+        private DWisata dWisata3;
+        private DWisata dWisata4;
+        private DWisata dWisata5;
     }
 }
