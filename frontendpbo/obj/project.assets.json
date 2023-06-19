@@ -257,24 +257,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Fahmi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KULIAH\\Semester 2\\PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "projectUniqueName": "C:\\file baru\\Project_Akhir_PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "projectName": "frontendpbo",
-      "projectPath": "D:\\KULIAH\\Semester 2\\PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\KULIAH\\Semester 2\\PBO\\PBOD-22232\\frontendpbo\\obj\\",
+      "projectPath": "C:\\file baru\\Project_Akhir_PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "packagesPath": "C:\\Users\\Fahmi\\.nuget\\packages\\",
+      "outputPath": "C:\\file baru\\Project_Akhir_PBO\\PBOD-22232\\frontendpbo\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Fahmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -282,7 +277,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -333,7 +327,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

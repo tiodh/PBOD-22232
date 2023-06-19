@@ -25,10 +25,10 @@ namespace frontendpbo.Contexts
 
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, connection))
                 {
-                    cmd.Parameters.Add(new NpgsqlParameter(": id", ulasan.ID));
-                    cmd.Parameters.Add(new NpgsqlParameter(": Nama", ulasan.Nama_User));
-                    cmd.Parameters.Add(new NpgsqlParameter(": Deskripsi", ulasan.Description));
-                    cmd.Parameters.Add(new NpgsqlParameter(": ID Wisata", ulasan.Wisata_ID));
+                    cmd.Parameters.Add(new NpgsqlParameter(": id", ulasan.id_ulasan));
+                    cmd.Parameters.Add(new NpgsqlParameter(": Nama", ulasan.nama_user));
+                    cmd.Parameters.Add(new NpgsqlParameter(": Deskripsi", ulasan.deskripsi_ulasan));
+                    cmd.Parameters.Add(new NpgsqlParameter(": ID Wisata", ulasan.wisata_id));
 
                     cmd.CommandType = System.Data.CommandType.Text;
                     int jmlDataBaru = cmd.ExecuteNonQuery();
@@ -65,10 +65,10 @@ namespace frontendpbo.Contexts
                     {
                         Ulasan ulasan = new Ulasan();
                         Wisata wisata = new Wisata();
-                        ulasan.ID = (int)reader["id_ulasan"];
-                        ulasan.Nama_User = (string)reader["nama_user"];
-                        ulasan.Description= (string)reader["deskripsi_ulasan"];
-                        ulasan.Wisata_ID = (int)reader["id_wisata"];
+                        ulasan.id_ulasan = (int)reader["id_ulasan"];
+                        ulasan.nama_user = (string)reader["nama_user"];
+                        ulasan.deskripsi_ulasan= (string)reader["deskripsi_ulasan"];
+                        ulasan.wisata_id = (string)reader["id_wisata"];
                         listUlasan.Add(ulasan);
                     }
                 }
