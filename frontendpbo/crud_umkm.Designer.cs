@@ -28,273 +28,277 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button5_edit_umkm = new Button();
-            button4_read_umkm = new Button();
-            button3_clear_umkm = new Button();
-            label6_umkm = new Label();
-            button2_add_umkm = new Button();
-            label5_umkm = new Label();
-            textBox4_telepon_umkm = new TextBox();
-            label4_umkm = new Label();
-            textBox3_pemilik_umkm = new TextBox();
-            label3_umkm = new Label();
-            textBox2_desk_umkm = new TextBox();
-            label2_umkm = new Label();
-            textBox1_nama_umkm = new TextBox();
-            label1_umkm = new Label();
-            pictureBox1_umkm = new PictureBox();
-            dataGridView1_umkm = new DataGridView();
-            textBox5_id_umkm = new TextBox();
-            label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1_umkm).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1_umkm).BeginInit();
-            SuspendLayout();
+            this.button5_edit_umkm = new System.Windows.Forms.Button();
+            this.button4_read_umkm = new System.Windows.Forms.Button();
+            this.button3_clear_umkm = new System.Windows.Forms.Button();
+            this.label6_umkm = new System.Windows.Forms.Label();
+            this.button2_add_umkm = new System.Windows.Forms.Button();
+            this.label5_umkm = new System.Windows.Forms.Label();
+            this.textBox4_telepon_umkm = new System.Windows.Forms.TextBox();
+            this.label4_umkm = new System.Windows.Forms.Label();
+            this.textBox3_pemilik_umkm = new System.Windows.Forms.TextBox();
+            this.label3_umkm = new System.Windows.Forms.Label();
+            this.textBox2_desk_umkm = new System.Windows.Forms.TextBox();
+            this.label2_umkm = new System.Windows.Forms.Label();
+            this.textBox1_nama_umkm = new System.Windows.Forms.TextBox();
+            this.label1_umkm = new System.Windows.Forms.Label();
+            this.pictureBox1_umkm = new System.Windows.Forms.PictureBox();
+            this.dataGridView1_umkm = new System.Windows.Forms.DataGridView();
+            this.textBox5_id_umkm = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1_umkm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_umkm)).BeginInit();
+            this.SuspendLayout();
             // 
             // button5_edit_umkm
             // 
-            button5_edit_umkm.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            button5_edit_umkm.AutoSize = true;
-            button5_edit_umkm.BackColor = Color.Khaki;
-            button5_edit_umkm.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button5_edit_umkm.Location = new Point(1089, 878);
-            button5_edit_umkm.Name = "button5_edit_umkm";
-            button5_edit_umkm.Size = new Size(138, 77);
-            button5_edit_umkm.TabIndex = 32;
-            button5_edit_umkm.Text = "Edit";
-            button5_edit_umkm.UseVisualStyleBackColor = false;
-            button5_edit_umkm.Click += button5_edit_umkm_Click;
+            this.button5_edit_umkm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button5_edit_umkm.AutoSize = true;
+            this.button5_edit_umkm.BackColor = System.Drawing.Color.Khaki;
+            this.button5_edit_umkm.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5_edit_umkm.Location = new System.Drawing.Point(953, 658);
+            this.button5_edit_umkm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5_edit_umkm.Name = "button5_edit_umkm";
+            this.button5_edit_umkm.Size = new System.Drawing.Size(121, 58);
+            this.button5_edit_umkm.TabIndex = 32;
+            this.button5_edit_umkm.Text = "Edit";
+            this.button5_edit_umkm.UseVisualStyleBackColor = false;
             // 
             // button4_read_umkm
             // 
-            button4_read_umkm.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            button4_read_umkm.AutoSize = true;
-            button4_read_umkm.BackColor = Color.LightSeaGreen;
-            button4_read_umkm.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button4_read_umkm.Location = new Point(911, 878);
-            button4_read_umkm.Name = "button4_read_umkm";
-            button4_read_umkm.Size = new Size(138, 77);
-            button4_read_umkm.TabIndex = 31;
-            button4_read_umkm.Text = "Read";
-            button4_read_umkm.UseVisualStyleBackColor = false;
-            button4_read_umkm.Click += button4_read_umkm_Click;
+            this.button4_read_umkm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button4_read_umkm.AutoSize = true;
+            this.button4_read_umkm.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button4_read_umkm.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4_read_umkm.Location = new System.Drawing.Point(797, 658);
+            this.button4_read_umkm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4_read_umkm.Name = "button4_read_umkm";
+            this.button4_read_umkm.Size = new System.Drawing.Size(121, 58);
+            this.button4_read_umkm.TabIndex = 31;
+            this.button4_read_umkm.Text = "Read";
+            this.button4_read_umkm.UseVisualStyleBackColor = false;
             // 
             // button3_clear_umkm
             // 
-            button3_clear_umkm.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            button3_clear_umkm.AutoSize = true;
-            button3_clear_umkm.BackColor = Color.OrangeRed;
-            button3_clear_umkm.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3_clear_umkm.Location = new Point(724, 878);
-            button3_clear_umkm.Name = "button3_clear_umkm";
-            button3_clear_umkm.Size = new Size(138, 77);
-            button3_clear_umkm.TabIndex = 30;
-            button3_clear_umkm.Text = "Clear";
-            button3_clear_umkm.UseVisualStyleBackColor = false;
-            button3_clear_umkm.Click += button3_clear_umkm_Click;
+            this.button3_clear_umkm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button3_clear_umkm.AutoSize = true;
+            this.button3_clear_umkm.BackColor = System.Drawing.Color.OrangeRed;
+            this.button3_clear_umkm.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3_clear_umkm.Location = new System.Drawing.Point(634, 658);
+            this.button3_clear_umkm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3_clear_umkm.Name = "button3_clear_umkm";
+            this.button3_clear_umkm.Size = new System.Drawing.Size(121, 58);
+            this.button3_clear_umkm.TabIndex = 30;
+            this.button3_clear_umkm.Text = "Clear";
+            this.button3_clear_umkm.UseVisualStyleBackColor = false;
             // 
             // label6_umkm
             // 
-            label6_umkm.AutoSize = true;
-            label6_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label6_umkm.Location = new Point(26, 169);
-            label6_umkm.Name = "label6_umkm";
-            label6_umkm.Size = new Size(124, 27);
-            label6_umkm.TabIndex = 29;
-            label6_umkm.Text = "Foto Kedai";
+            this.label6_umkm.AutoSize = true;
+            this.label6_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6_umkm.Location = new System.Drawing.Point(23, 127);
+            this.label6_umkm.Name = "label6_umkm";
+            this.label6_umkm.Size = new System.Drawing.Size(102, 22);
+            this.label6_umkm.TabIndex = 29;
+            this.label6_umkm.Text = "Foto Kedai";
             // 
             // button2_add_umkm
             // 
-            button2_add_umkm.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            button2_add_umkm.AutoSize = true;
-            button2_add_umkm.BackColor = Color.Lime;
-            button2_add_umkm.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2_add_umkm.Location = new Point(1258, 878);
-            button2_add_umkm.Name = "button2_add_umkm";
-            button2_add_umkm.Size = new Size(138, 77);
-            button2_add_umkm.TabIndex = 28;
-            button2_add_umkm.Text = "Add";
-            button2_add_umkm.UseVisualStyleBackColor = false;
-            button2_add_umkm.Click += button2_add_umkm_Click;
+            this.button2_add_umkm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button2_add_umkm.AutoSize = true;
+            this.button2_add_umkm.BackColor = System.Drawing.Color.Lime;
+            this.button2_add_umkm.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2_add_umkm.Location = new System.Drawing.Point(1101, 658);
+            this.button2_add_umkm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2_add_umkm.Name = "button2_add_umkm";
+            this.button2_add_umkm.Size = new System.Drawing.Size(121, 58);
+            this.button2_add_umkm.TabIndex = 28;
+            this.button2_add_umkm.Text = "Add";
+            this.button2_add_umkm.UseVisualStyleBackColor = false;
             // 
             // label5_umkm
             // 
-            label5_umkm.AutoSize = true;
-            label5_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label5_umkm.Location = new Point(26, 892);
-            label5_umkm.Name = "label5_umkm";
-            label5_umkm.Size = new Size(175, 27);
-            label5_umkm.TabIndex = 27;
-            label5_umkm.Text = "Nomor Telepon";
+            this.label5_umkm.AutoSize = true;
+            this.label5_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5_umkm.Location = new System.Drawing.Point(23, 669);
+            this.label5_umkm.Name = "label5_umkm";
+            this.label5_umkm.Size = new System.Drawing.Size(144, 22);
+            this.label5_umkm.TabIndex = 27;
+            this.label5_umkm.Text = "Nomor Telepon";
             // 
             // textBox4_telepon_umkm
             // 
-            textBox4_telepon_umkm.BackColor = Color.Plum;
-            textBox4_telepon_umkm.Location = new Point(26, 922);
-            textBox4_telepon_umkm.Multiline = true;
-            textBox4_telepon_umkm.Name = "textBox4_telepon_umkm";
-            textBox4_telepon_umkm.Size = new Size(509, 50);
-            textBox4_telepon_umkm.TabIndex = 26;
-            textBox4_telepon_umkm.WordWrap = false;
-            textBox4_telepon_umkm.TextChanged += textBox4_telepon_umkm_TextChanged;
+            this.textBox4_telepon_umkm.BackColor = System.Drawing.Color.Plum;
+            this.textBox4_telepon_umkm.Location = new System.Drawing.Point(23, 692);
+            this.textBox4_telepon_umkm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox4_telepon_umkm.Multiline = true;
+            this.textBox4_telepon_umkm.Name = "textBox4_telepon_umkm";
+            this.textBox4_telepon_umkm.Size = new System.Drawing.Size(446, 38);
+            this.textBox4_telepon_umkm.TabIndex = 26;
+            this.textBox4_telepon_umkm.WordWrap = false;
             // 
             // label4_umkm
             // 
-            label4_umkm.AutoSize = true;
-            label4_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label4_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label4_umkm.Location = new Point(26, 793);
-            label4_umkm.Name = "label4_umkm";
-            label4_umkm.Size = new Size(92, 27);
-            label4_umkm.TabIndex = 25;
-            label4_umkm.Text = "Pemilik";
+            this.label4_umkm.AutoSize = true;
+            this.label4_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4_umkm.Location = new System.Drawing.Point(23, 595);
+            this.label4_umkm.Name = "label4_umkm";
+            this.label4_umkm.Size = new System.Drawing.Size(78, 22);
+            this.label4_umkm.TabIndex = 25;
+            this.label4_umkm.Text = "Pemilik";
             // 
             // textBox3_pemilik_umkm
             // 
-            textBox3_pemilik_umkm.BackColor = Color.Plum;
-            textBox3_pemilik_umkm.Location = new Point(26, 823);
-            textBox3_pemilik_umkm.Multiline = true;
-            textBox3_pemilik_umkm.Name = "textBox3_pemilik_umkm";
-            textBox3_pemilik_umkm.Size = new Size(509, 50);
-            textBox3_pemilik_umkm.TabIndex = 24;
-            textBox3_pemilik_umkm.WordWrap = false;
-            textBox3_pemilik_umkm.TextChanged += textBox3_pemilik_umkm_TextChanged;
+            this.textBox3_pemilik_umkm.BackColor = System.Drawing.Color.Plum;
+            this.textBox3_pemilik_umkm.Location = new System.Drawing.Point(23, 617);
+            this.textBox3_pemilik_umkm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3_pemilik_umkm.Multiline = true;
+            this.textBox3_pemilik_umkm.Name = "textBox3_pemilik_umkm";
+            this.textBox3_pemilik_umkm.Size = new System.Drawing.Size(446, 38);
+            this.textBox3_pemilik_umkm.TabIndex = 24;
+            this.textBox3_pemilik_umkm.WordWrap = false;
             // 
             // label3_umkm
             // 
-            label3_umkm.AutoSize = true;
-            label3_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label3_umkm.Location = new Point(26, 503);
-            label3_umkm.Name = "label3_umkm";
-            label3_umkm.Size = new Size(115, 27);
-            label3_umkm.TabIndex = 23;
-            label3_umkm.Text = "Deskripsi";
+            this.label3_umkm.AutoSize = true;
+            this.label3_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3_umkm.Location = new System.Drawing.Point(23, 377);
+            this.label3_umkm.Name = "label3_umkm";
+            this.label3_umkm.Size = new System.Drawing.Size(94, 22);
+            this.label3_umkm.TabIndex = 23;
+            this.label3_umkm.Text = "Deskripsi";
             // 
             // textBox2_desk_umkm
             // 
-            textBox2_desk_umkm.BackColor = Color.Plum;
-            textBox2_desk_umkm.Location = new Point(26, 533);
-            textBox2_desk_umkm.Multiline = true;
-            textBox2_desk_umkm.Name = "textBox2_desk_umkm";
-            textBox2_desk_umkm.Size = new Size(509, 244);
-            textBox2_desk_umkm.TabIndex = 22;
-            textBox2_desk_umkm.WordWrap = false;
-            textBox2_desk_umkm.TextChanged += textBox2_desk_umkm_TextChanged;
+            this.textBox2_desk_umkm.BackColor = System.Drawing.Color.Plum;
+            this.textBox2_desk_umkm.Location = new System.Drawing.Point(23, 400);
+            this.textBox2_desk_umkm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2_desk_umkm.Multiline = true;
+            this.textBox2_desk_umkm.Name = "textBox2_desk_umkm";
+            this.textBox2_desk_umkm.Size = new System.Drawing.Size(446, 184);
+            this.textBox2_desk_umkm.TabIndex = 22;
+            this.textBox2_desk_umkm.WordWrap = false;
             // 
             // label2_umkm
             // 
-            label2_umkm.AutoSize = true;
-            label2_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label2_umkm.Location = new Point(26, 402);
-            label2_umkm.Name = "label2_umkm";
-            label2_umkm.Size = new Size(147, 27);
-            label2_umkm.TabIndex = 21;
-            label2_umkm.Text = "Nama UMKM";
+            this.label2_umkm.AutoSize = true;
+            this.label2_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2_umkm.Location = new System.Drawing.Point(23, 302);
+            this.label2_umkm.Name = "label2_umkm";
+            this.label2_umkm.Size = new System.Drawing.Size(122, 22);
+            this.label2_umkm.TabIndex = 21;
+            this.label2_umkm.Text = "Nama UMKM";
             // 
             // textBox1_nama_umkm
             // 
-            textBox1_nama_umkm.BackColor = Color.Plum;
-            textBox1_nama_umkm.Location = new Point(26, 432);
-            textBox1_nama_umkm.Multiline = true;
-            textBox1_nama_umkm.Name = "textBox1_nama_umkm";
-            textBox1_nama_umkm.Size = new Size(509, 50);
-            textBox1_nama_umkm.TabIndex = 20;
-            textBox1_nama_umkm.WordWrap = false;
-            textBox1_nama_umkm.TextChanged += textBox1_nama_umkm_TextChanged;
+            this.textBox1_nama_umkm.BackColor = System.Drawing.Color.Plum;
+            this.textBox1_nama_umkm.Location = new System.Drawing.Point(23, 324);
+            this.textBox1_nama_umkm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1_nama_umkm.Multiline = true;
+            this.textBox1_nama_umkm.Name = "textBox1_nama_umkm";
+            this.textBox1_nama_umkm.Size = new System.Drawing.Size(446, 38);
+            this.textBox1_nama_umkm.TabIndex = 20;
+            this.textBox1_nama_umkm.WordWrap = false;
+            this.textBox1_nama_umkm.TextChanged += new System.EventHandler(this.textBox1_nama_umkm_TextChanged_1);
             // 
             // label1_umkm
             // 
-            label1_umkm.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label1_umkm.Font = new Font("Cambria", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            label1_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label1_umkm.Location = new Point(405, 23);
-            label1_umkm.Name = "label1_umkm";
-            label1_umkm.Size = new Size(619, 70);
-            label1_umkm.TabIndex = 17;
-            label1_umkm.Text = "Masukan Data UMKM";
-            label1_umkm.TextAlign = ContentAlignment.TopCenter;
+            this.label1_umkm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1_umkm.Font = new System.Drawing.Font("Cambria", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1_umkm.Location = new System.Drawing.Point(354, 17);
+            this.label1_umkm.Name = "label1_umkm";
+            this.label1_umkm.Size = new System.Drawing.Size(542, 52);
+            this.label1_umkm.TabIndex = 17;
+            this.label1_umkm.Text = "Masukan Data UMKM";
+            this.label1_umkm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pictureBox1_umkm
             // 
-            pictureBox1_umkm.BackColor = SystemColors.ActiveBorder;
-            pictureBox1_umkm.Location = new Point(26, 199);
-            pictureBox1_umkm.Name = "pictureBox1_umkm";
-            pictureBox1_umkm.Size = new Size(237, 191);
-            pictureBox1_umkm.TabIndex = 19;
-            pictureBox1_umkm.TabStop = false;
+            this.pictureBox1_umkm.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox1_umkm.Location = new System.Drawing.Point(23, 149);
+            this.pictureBox1_umkm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1_umkm.Name = "pictureBox1_umkm";
+            this.pictureBox1_umkm.Size = new System.Drawing.Size(207, 143);
+            this.pictureBox1_umkm.TabIndex = 19;
+            this.pictureBox1_umkm.TabStop = false;
             // 
             // dataGridView1_umkm
             // 
-            dataGridView1_umkm.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1_umkm.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridView1_umkm.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridView1_umkm.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1_umkm.Location = new Point(658, 169);
-            dataGridView1_umkm.Name = "dataGridView1_umkm";
-            dataGridView1_umkm.RowHeadersWidth = 51;
-            dataGridView1_umkm.RowTemplate.Height = 29;
-            dataGridView1_umkm.Size = new Size(738, 464);
-            dataGridView1_umkm.TabIndex = 18;
-            dataGridView1_umkm.CellClick += dataGridView1_umkm_CellClick;
-            dataGridView1_umkm.CellContentClick += dataGridView1_umkm_CellContentClick;
+            this.dataGridView1_umkm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1_umkm.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1_umkm.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1_umkm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1_umkm.Location = new System.Drawing.Point(576, 127);
+            this.dataGridView1_umkm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1_umkm.Name = "dataGridView1_umkm";
+            this.dataGridView1_umkm.RowHeadersWidth = 51;
+            this.dataGridView1_umkm.RowTemplate.Height = 29;
+            this.dataGridView1_umkm.Size = new System.Drawing.Size(646, 348);
+            this.dataGridView1_umkm.TabIndex = 18;
             // 
             // textBox5_id_umkm
             // 
-            textBox5_id_umkm.BackColor = Color.Plum;
-            textBox5_id_umkm.Font = new Font("Arial", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox5_id_umkm.Location = new Point(302, 353);
-            textBox5_id_umkm.Multiline = true;
-            textBox5_id_umkm.Name = "textBox5_id_umkm";
-            textBox5_id_umkm.Size = new Size(233, 37);
-            textBox5_id_umkm.TabIndex = 33;
-            textBox5_id_umkm.TextChanged += textBox5_id_umkm_TextChanged;
+            this.textBox5_id_umkm.BackColor = System.Drawing.Color.Plum;
+            this.textBox5_id_umkm.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox5_id_umkm.Location = new System.Drawing.Point(264, 265);
+            this.textBox5_id_umkm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox5_id_umkm.Multiline = true;
+            this.textBox5_id_umkm.Name = "textBox5_id_umkm";
+            this.textBox5_id_umkm.Size = new System.Drawing.Size(204, 29);
+            this.textBox5_id_umkm.TabIndex = 33;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Cambria", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(302, 317);
-            label1.Name = "label1";
-            label1.Size = new Size(111, 27);
-            label1.TabIndex = 34;
-            label1.Text = "ID UMKM";
-            label1.Click += label1_Click;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cambria", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(264, 238);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 21);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "ID UMKM";
             // 
             // crud_umkm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkViolet;
-            ClientSize = new Size(1422, 995);
-            Controls.Add(label1);
-            Controls.Add(textBox5_id_umkm);
-            Controls.Add(button5_edit_umkm);
-            Controls.Add(button4_read_umkm);
-            Controls.Add(button3_clear_umkm);
-            Controls.Add(label6_umkm);
-            Controls.Add(button2_add_umkm);
-            Controls.Add(label5_umkm);
-            Controls.Add(textBox4_telepon_umkm);
-            Controls.Add(label4_umkm);
-            Controls.Add(textBox3_pemilik_umkm);
-            Controls.Add(label3_umkm);
-            Controls.Add(textBox2_desk_umkm);
-            Controls.Add(label2_umkm);
-            Controls.Add(textBox1_nama_umkm);
-            Controls.Add(label1_umkm);
-            Controls.Add(pictureBox1_umkm);
-            Controls.Add(dataGridView1_umkm);
-            Name = "crud_umkm";
-            Text = "crud_umkm";
-            Load += crud_umkm_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1_umkm).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1_umkm).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkViolet;
+            this.ClientSize = new System.Drawing.Size(1244, 746);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox5_id_umkm);
+            this.Controls.Add(this.button5_edit_umkm);
+            this.Controls.Add(this.button4_read_umkm);
+            this.Controls.Add(this.button3_clear_umkm);
+            this.Controls.Add(this.label6_umkm);
+            this.Controls.Add(this.button2_add_umkm);
+            this.Controls.Add(this.label5_umkm);
+            this.Controls.Add(this.textBox4_telepon_umkm);
+            this.Controls.Add(this.label4_umkm);
+            this.Controls.Add(this.textBox3_pemilik_umkm);
+            this.Controls.Add(this.label3_umkm);
+            this.Controls.Add(this.textBox2_desk_umkm);
+            this.Controls.Add(this.label2_umkm);
+            this.Controls.Add(this.textBox1_nama_umkm);
+            this.Controls.Add(this.label1_umkm);
+            this.Controls.Add(this.pictureBox1_umkm);
+            this.Controls.Add(this.dataGridView1_umkm);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "crud_umkm";
+            this.Text = "crud_umkm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1_umkm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_umkm)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
