@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "PzwJbkTpnBwJL1YJt5/GQKf9bm5ofiAW53ki9lIX06YIgee0BahsSxdBFtr+bW3zB1sisZ8Xv86vm1aPvmiiaQ==",
+  "dgSpecHash": "6jPIYnSvGv3mPcVNVjkMLdn3Q8AwX+9uHp4wDitgrjkpQtkkiCt8XwMratcm7/SCnRkAMJ9emhNdwbeTXCSp6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\PBO\\pbo lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+  "projectFilePath": "D:\\maya\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Lenovo\\.nuget\\packages\\livecharts.netcore\\0.9.7\\livecharts.netcore.0.9.7.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\oxyplot.windowsforms\\2.1.2\\oxyplot.windowsforms.2.1.2.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\JHIK RANA INALA\\.nuget\\packages\\livecharts.netcore\\0.9.7\\livecharts.netcore.0.9.7.nupkg.sha512",
+    "C:\\Users\\JHIK RANA INALA\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\JHIK RANA INALA\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\JHIK RANA INALA\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\JHIK RANA INALA\\.nuget\\packages\\oxyplot.windowsforms\\2.1.2\\oxyplot.windowsforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\JHIK RANA INALA\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
