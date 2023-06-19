@@ -51,7 +51,7 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(tbx_user);
             panel2.Controls.Add(tbx_pasw);
-            panel2.Location = new Point(81, 153);
+            panel2.Location = new Point(81, 189);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
             panel2.Size = new Size(573, 491);
@@ -121,9 +121,9 @@
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(panel2);
-            panel1.Location = new Point(501, 179);
+            panel1.Location = new Point(501, 107);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 528);
+            panel1.Size = new Size(800, 600);
             panel1.TabIndex = 3;
             // 
             // LoginAdmin
