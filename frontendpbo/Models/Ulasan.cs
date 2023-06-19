@@ -8,9 +8,9 @@ namespace frontendpbo.Models
 {
     internal class Ulasan
     {
-        public string ID { get; set; }
+        public int ID { get; set; }
         public string Nama_User { get; set; }
         public string Description { get; set; }
-        public string Wisata_ID { get; set; }
+        public int Wisata_ID { get; set; }
     }
 }

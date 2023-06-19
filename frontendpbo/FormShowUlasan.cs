@@ -12,9 +12,14 @@ namespace frontendpbo
 {
     public partial class FormShowUlasan : Form
     {
+        Contexts.ContextUlasan ulasanContext;
         public FormShowUlasan()
         {
             InitializeComponent();
+            ulasanContext = new Contexts.ContextUlasan();
+
+            ulasanContext.Read();
+            dataGridViewsShowUlasan.DataSource = ulasanContext.listUlasan;
         }
     }
 }
