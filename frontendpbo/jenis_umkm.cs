@@ -34,5 +34,20 @@ namespace tampil_data_umkm
             secondForm.Show();
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void umkm1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void umkm2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
