@@ -33,9 +33,9 @@
             btnDeleteEvent = new Button();
             btnUpdateEvent = new Button();
             btnCreateEvent = new Button();
-            tbIdWisata = new TextBox();
+            tvIdWisata = new TextBox();
             dateTimePicker1 = new DateTimePicker();
-            tbdeskripsi = new TextBox();
+            textBox1 = new TextBox();
             tbNamaEvent = new TextBox();
             tbIdEvent = new TextBox();
             labelIdWisata = new Label();
@@ -54,22 +54,22 @@
             btnClose.FlatStyle = FlatStyle.Flat;
             btnClose.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnClose.ForeColor = Color.Black;
-            btnClose.Location = new Point(743, 31);
+            btnClose.Location = new Point(849, 41);
+            btnClose.Margin = new Padding(3, 4, 3, 4);
             btnClose.Name = "btnClose";
-            btnClose.Size = new Size(75, 31);
+            btnClose.Size = new Size(86, 41);
             btnClose.TabIndex = 31;
             btnClose.Text = "X";
             btnClose.UseVisualStyleBackColor = false;
-            btnClose.Click += btnClose_Click;
             // 
             // labelEditEvent
             // 
             labelEditEvent.AutoSize = true;
             labelEditEvent.BackColor = Color.Transparent;
             labelEditEvent.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            labelEditEvent.Location = new Point(46, 23);
+            labelEditEvent.Location = new Point(53, 31);
             labelEditEvent.Name = "labelEditEvent";
-            labelEditEvent.Size = new Size(111, 30);
+            labelEditEvent.Size = new Size(145, 37);
             labelEditEvent.TabIndex = 30;
             labelEditEvent.Text = "Edit Event";
             // 
@@ -80,13 +80,13 @@
             btnDeleteEvent.FlatStyle = FlatStyle.Flat;
             btnDeleteEvent.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnDeleteEvent.ForeColor = Color.White;
-            btnDeleteEvent.Location = new Point(708, 324);
+            btnDeleteEvent.Location = new Point(809, 432);
+            btnDeleteEvent.Margin = new Padding(3, 4, 3, 4);
             btnDeleteEvent.Name = "btnDeleteEvent";
-            btnDeleteEvent.Size = new Size(75, 23);
+            btnDeleteEvent.Size = new Size(86, 31);
             btnDeleteEvent.TabIndex = 29;
             btnDeleteEvent.Text = "Delete";
             btnDeleteEvent.UseVisualStyleBackColor = false;
-            btnDeleteEvent.Click += btnDeleteEvent_Click;
             // 
             // btnUpdateEvent
             // 
@@ -95,13 +95,13 @@
             btnUpdateEvent.FlatStyle = FlatStyle.Flat;
             btnUpdateEvent.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnUpdateEvent.ForeColor = Color.White;
-            btnUpdateEvent.Location = new Point(607, 324);
+            btnUpdateEvent.Location = new Point(694, 432);
+            btnUpdateEvent.Margin = new Padding(3, 4, 3, 4);
             btnUpdateEvent.Name = "btnUpdateEvent";
-            btnUpdateEvent.Size = new Size(75, 23);
+            btnUpdateEvent.Size = new Size(86, 31);
             btnUpdateEvent.TabIndex = 28;
             btnUpdateEvent.Text = "Update";
             btnUpdateEvent.UseVisualStyleBackColor = false;
-            btnUpdateEvent.Click += btnUpdateEvent_Click;
             // 
             // btnCreateEvent
             // 
@@ -110,47 +110,52 @@
             btnCreateEvent.FlatStyle = FlatStyle.Flat;
             btnCreateEvent.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnCreateEvent.ForeColor = Color.White;
-            btnCreateEvent.Location = new Point(506, 325);
+            btnCreateEvent.Location = new Point(578, 433);
+            btnCreateEvent.Margin = new Padding(3, 4, 3, 4);
             btnCreateEvent.Name = "btnCreateEvent";
-            btnCreateEvent.Size = new Size(75, 23);
+            btnCreateEvent.Size = new Size(86, 31);
             btnCreateEvent.TabIndex = 27;
             btnCreateEvent.Text = "Create";
             btnCreateEvent.UseVisualStyleBackColor = false;
-            btnCreateEvent.Click += btnCreateEvent_Click;
             // 
-            // tbIdWisata
+            // tvIdWisata
             // 
-            tbIdWisata.Location = new Point(215, 449);
-            tbIdWisata.Name = "tbIdWisata";
-            tbIdWisata.Size = new Size(200, 23);
-            tbIdWisata.TabIndex = 26;
+            tvIdWisata.Location = new Point(246, 599);
+            tvIdWisata.Margin = new Padding(3, 4, 3, 4);
+            tvIdWisata.Name = "tvIdWisata";
+            tvIdWisata.Size = new Size(228, 27);
+            tvIdWisata.TabIndex = 26;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(215, 418);
+            dateTimePicker1.Location = new Point(246, 557);
+            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.Size = new Size(228, 27);
             dateTimePicker1.TabIndex = 25;
             // 
-            // tbdeskripsi
+            // textBox1
             // 
-            tbdeskripsi.Location = new Point(215, 387);
-            tbdeskripsi.Name = "tbdeskripsi";
-            tbdeskripsi.Size = new Size(200, 23);
-            tbdeskripsi.TabIndex = 24;
+            textBox1.Location = new Point(246, 516);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(228, 27);
+            textBox1.TabIndex = 24;
             // 
             // tbNamaEvent
             // 
-            tbNamaEvent.Location = new Point(215, 356);
+            tbNamaEvent.Location = new Point(246, 475);
+            tbNamaEvent.Margin = new Padding(3, 4, 3, 4);
             tbNamaEvent.Name = "tbNamaEvent";
-            tbNamaEvent.Size = new Size(200, 23);
+            tbNamaEvent.Size = new Size(228, 27);
             tbNamaEvent.TabIndex = 23;
             // 
             // tbIdEvent
             // 
-            tbIdEvent.Location = new Point(215, 325);
+            tbIdEvent.Location = new Point(246, 433);
+            tbIdEvent.Margin = new Padding(3, 4, 3, 4);
             tbIdEvent.Name = "tbIdEvent";
-            tbIdEvent.Size = new Size(200, 23);
+            tbIdEvent.Size = new Size(228, 27);
             tbIdEvent.TabIndex = 22;
             // 
             // labelIdWisata
@@ -158,9 +163,9 @@
             labelIdWisata.AutoSize = true;
             labelIdWisata.BackColor = Color.Transparent;
             labelIdWisata.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            labelIdWisata.Location = new Point(46, 451);
+            labelIdWisata.Location = new Point(53, 601);
             labelIdWisata.Name = "labelIdWisata";
-            labelIdWisata.Size = new Size(77, 21);
+            labelIdWisata.Size = new Size(96, 28);
             labelIdWisata.TabIndex = 21;
             labelIdWisata.Text = "Id Wisata";
             // 
@@ -169,9 +174,9 @@
             labelTglEvent.AutoSize = true;
             labelTglEvent.BackColor = Color.Transparent;
             labelTglEvent.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            labelTglEvent.Location = new Point(46, 420);
+            labelTglEvent.Location = new Point(53, 560);
             labelTglEvent.Name = "labelTglEvent";
-            labelTglEvent.Size = new Size(110, 21);
+            labelTglEvent.Size = new Size(138, 28);
             labelTglEvent.TabIndex = 20;
             labelTglEvent.Text = "Tanggal Event";
             // 
@@ -180,9 +185,9 @@
             labelDeskripsiEvent.AutoSize = true;
             labelDeskripsiEvent.BackColor = Color.Transparent;
             labelDeskripsiEvent.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            labelDeskripsiEvent.Location = new Point(46, 389);
+            labelDeskripsiEvent.Location = new Point(53, 519);
             labelDeskripsiEvent.Name = "labelDeskripsiEvent";
-            labelDeskripsiEvent.Size = new Size(120, 21);
+            labelDeskripsiEvent.Size = new Size(151, 28);
             labelDeskripsiEvent.TabIndex = 19;
             labelDeskripsiEvent.Text = "Deskripsi Event";
             // 
@@ -191,9 +196,9 @@
             labelNamaEvent.AutoSize = true;
             labelNamaEvent.BackColor = Color.Transparent;
             labelNamaEvent.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            labelNamaEvent.Location = new Point(46, 358);
+            labelNamaEvent.Location = new Point(53, 477);
             labelNamaEvent.Name = "labelNamaEvent";
-            labelNamaEvent.Size = new Size(96, 21);
+            labelNamaEvent.Size = new Size(121, 28);
             labelNamaEvent.TabIndex = 18;
             labelNamaEvent.Text = "Nama Event";
             // 
@@ -202,9 +207,9 @@
             labelIdEvent.AutoSize = true;
             labelIdEvent.BackColor = Color.Transparent;
             labelIdEvent.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            labelIdEvent.Location = new Point(46, 327);
+            labelIdEvent.Location = new Point(53, 436);
             labelIdEvent.Name = "labelIdEvent";
-            labelIdEvent.Size = new Size(70, 21);
+            labelIdEvent.Size = new Size(88, 28);
             labelIdEvent.TabIndex = 17;
             labelIdEvent.Text = "ID Event";
             // 
@@ -212,26 +217,27 @@
             // 
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(46, 68);
+            dataGridView1.Location = new Point(53, 91);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(772, 220);
+            dataGridView1.Size = new Size(882, 293);
             dataGridView1.TabIndex = 16;
             // 
             // FormEditEvent
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(865, 494);
+            ClientSize = new Size(989, 659);
             Controls.Add(btnClose);
             Controls.Add(labelEditEvent);
             Controls.Add(btnDeleteEvent);
             Controls.Add(btnUpdateEvent);
             Controls.Add(btnCreateEvent);
-            Controls.Add(tbIdWisata);
+            Controls.Add(tvIdWisata);
             Controls.Add(dateTimePicker1);
-            Controls.Add(tbdeskripsi);
+            Controls.Add(textBox1);
             Controls.Add(tbNamaEvent);
             Controls.Add(tbIdEvent);
             Controls.Add(labelIdWisata);
@@ -241,6 +247,7 @@
             Controls.Add(labelIdEvent);
             Controls.Add(dataGridView1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FormEditEvent";
             Text = "FormEditEvent";
             Load += FormEditEvent_Load;
@@ -256,9 +263,9 @@
         private Button btnDeleteEvent;
         private Button btnUpdateEvent;
         private Button btnCreateEvent;
-        private TextBox tbIdWisata;
+        private TextBox tvIdWisata;
         private DateTimePicker dateTimePicker1;
-        private TextBox tbdeskripsi;
+        private TextBox textBox1;
         private TextBox tbNamaEvent;
         private TextBox tbIdEvent;
         private Label labelIdWisata;

@@ -133,6 +133,16 @@ namespace frontendpbo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_12__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 12 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hder {
             get {
                 object obj = ResourceManager.GetObject("hder", resourceCulture);
@@ -195,7 +205,7 @@ namespace frontendpbo.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Log_In_admin__20_ {
             get {
-                object obj = ResourceManager.GetObject("Log In admin (20)", resourceCulture);
+                object obj = ResourceManager.GetObject("Log_In_admin__20_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

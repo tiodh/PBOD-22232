@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.DirectoryServices;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,24 +16,31 @@ namespace frontendpbo
     public partial class wisata : Form
     {
         ContextWisata contextWisata;
-        Wisata wisatas = new Wisata();
+        private List<Wisata> listWisata; // Daftar semua data wisata
+        private List<Wisata> searchResults; // Daftar hasil pencarian
         public wisata()
         {
             InitializeComponent();
+            contextWisata = new ContextWisata();
 
-            contextWisata = new Contexts.ContextWisata();
+            ReadData();
+            datagridcrudwisata1.DataSource = contextWisata.GetListWisata();
+        }
 
+        private void ReadData()
+        {
             contextWisata.Read();
             datagridcrudwisata1.DataSource = contextWisata.listWisata;
         }
 
-        private Models.Wisata DataWisata()
+        public Models.Wisata GetWisata()
         {
-            wisatas.Nama_Wisata = textBox1_Nama_Wisata.Text;
-            wisatas.Deskripsi = textBox2_Deskripsi_Wisata.Text;
-            wisatas.Lokasi = textBox3_Lokasi_Wisata.Text;
+            Models.Wisata wst = new Models.Wisata();
+            wst.Nama_Wisata = textBox1_Nama_Wisata.Text;
+            wst.Deskripsi = textBox2_Deskripsi_Wisata.Text;
+            wst.Lokasi = textBox3_Lokasi_Wisata.Text;
 
-            return wisatas;
+            return wst;
         }
 
         private void wisata_Load(object sender, EventArgs e)
@@ -62,10 +70,17 @@ namespace frontendpbo
 
         private void btntambahwisata_Click(object sender, EventArgs e)
         {
-            Models.Wisata wisata = this.DataWisata();
-            contextWisata.insert(wisata);
+            Models.Wisata wisatas = this.GetWisata();
+            contextWisata.Insert(wisatas);
             datagridcrudwisata1.DataSource = null;
-            datagridcrudwisata1.DataSource = contextWisata.listWisata;
+            ReadData();
         }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+            List<Wisata> searchResults = contextWisata.Search(textBox1.Text);
+            datagridcrudwisata1.DataSource = searchResults;
+        }
+
     }
 }

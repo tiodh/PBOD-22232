@@ -20,9 +20,35 @@ namespace frontendpbo
         {
             InitializeComponent();
             contextWisata = new Contexts.ContextWisata();
+
+            ShowItems();
         }
 
         private void DetailWisata_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShowItems()
+        {
+            List<Wisata> wisataList = contextWisata.ReadtoCard();
+            cardDetail(wisataList);
+        }
+
+        private void cardDetail(List<Wisata> wisataList)
+        {
+            flowLayoutPanel1.Controls.Clear();
+
+            foreach (Wisata w in wisataList)
+            {
+                DWisata dWisata = new DWisata();
+                dWisata.SetData(w);
+                flowLayoutPanel1.Controls.Add(dWisata);
+            }
+        }
+
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

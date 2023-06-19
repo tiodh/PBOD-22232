@@ -14,12 +14,12 @@ namespace frontendpbo.Models
         public bool Read()
         {
             bool isSuccess = false;
-            string constr = " Host=localhost;Port=5432;Database=PETAJEMBER;Username=postgres;Password=1";
+            string constr = " Host=localhost;Port=5432;Database= dummyDatabase;Username=postgres;Password=123456";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(constr))
             {
                 string sql =
-                    @"SELECT * FROM ""data_keamanan""";
+                    @"SELECT * FROM ""keamanan""";
                 //JOIN wisata ON transaksi.id_wisata = wisata.id_wisata
                 //JOIN tiket ON trasaksi.id_tiket = tiket.id_tiket";
 
@@ -34,8 +34,8 @@ namespace frontendpbo.Models
                         readKeselamatan newRead = new readKeselamatan();
 
                         newRead.nama = (string)Reader["nama_keamanan"];
-                        //newRead.noTlp = (string)Reader["no_tlp"];
-                        //newRead.alamat = (string)Reader["alamat_keamanan"];
+                        newRead.noTlp = (string)Reader["no_tlp"];
+                        newRead.alamat = (string)Reader["alamat_keamanan"];
                         newRead.deskripsi = (string)Reader["deskripsi_keamanan"];
 
                         readKeselamatanList.Add(newRead);
