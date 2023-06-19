@@ -10,9 +10,9 @@ using System.Windows.Forms.VisualStyles;
 
 namespace frontendpbo
 {
-    public class Class_crud_umkm : Form
+    public class Class_crud_umkm
     {
-        public static void made(int idumkm, string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
+        public static void made(int idumkm,string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
         {
             conec conecsidb = new conec();
             string create = "insert into umkm_pbo_1.umkm (id_umkm,nama_umkm, deskripsi_umkm, pemilik_umkm, no_telepon_umkm)\r" +
@@ -53,7 +53,7 @@ namespace frontendpbo
         public DataTable Eksekusi(string sql)
         {
             NpgsqlConnection connection = new NpgsqlConnection();
-            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = aini123;Database=DataUmkm";
+            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = 140704;Database=umkm_pbo";
             DataTable dt = new DataTable();
             try
             {
