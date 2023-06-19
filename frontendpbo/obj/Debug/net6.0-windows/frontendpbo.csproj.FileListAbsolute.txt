@@ -629,3 +629,5 @@ C:\file baru\Project_Akhir_PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\r
 C:\file baru\Project_Akhir_PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 C:\file baru\Project_Akhir_PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\file baru\Project_Akhir_PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\file baru\Project_Akhir_PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.detail_umkm.resources
+C:\file baru\Project_Akhir_PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.LoginAdmin.resources
