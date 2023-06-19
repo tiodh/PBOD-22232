@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace frontendpbo
 {
@@ -53,7 +54,7 @@ namespace frontendpbo
 
         private void CRUDTempatMakandataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            loaddata();
+            loaddata(); 
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -65,7 +66,7 @@ namespace frontendpbo
         {
             try
             {
-                CreatePenginapan.Create(NamaTempatMakantextBox1.Text, LokasiTempatMakantextBox2.Text, DeskripsiTempatMakantextBox3.Text, NoTeleponTempatMakantextBox4.Text);
+                CreateTempatMakan.Create(NamaTempatMakantextBox1.Text, LokasiTempatMakantextBox2.Text, DeskripsiTempatMakantextBox3.Text, NoTeleponTempatMakantextBox4.Text);
                 loaddata();
 
                 NamaTempatMakantextBox1.Text = "";
@@ -90,50 +91,6 @@ namespace frontendpbo
 
         }
 
-        private void DeletedanUpdateDataTempatMakan_Load(object sender, EventArgs e)
-        {
-            loaddata();
-        }
-
-        private void CRUDTempatMakandataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            CRUDTempatMakandataGridView1.CurrentRow.Selected = true;
-            id_tempat_makan = Convert.ToInt32(CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[0].Value);
-            NamaTempatMakantextBox1.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            LokasiTempatMakantextBox2.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            DeskripsiTempatMakantextBox3.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-            NoTeleponTempatMakantextBox4.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-        }
-
-        public bool Read()
-        {
-            bool isSuccess = false;
-            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Tempat Makan;";
-
-            using (NpgsqlConnection conn = new NpgsqlConnection(constr))
-            {
-                string sql =
-                    @"SELECT id_tempat_makan, nama_tempat_makan, lokasi_tempat_makan, deskripsi_tempat_makan, no_telepon_tempat_makan
-                  FROM rembangan";
-                conn.Open();
-                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
-                {
-                    cmd.CommandText = sql;
-                    NpgsqlDataReader reader = cmd.ExecuteReader();
-                    DataTable dt = new DataTable();
-                    dt.Load(reader);
-                    CRUDTempatMakandataGridView1.DataSource = dt;
-
-                }
-            }
-            return isSuccess;
-        }
-
-        private void EditTempatMakanbutton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void HapusTempatMakanbutton4_Click(object sender, EventArgs e)
         {
             if (id_tempat_makan == 0)
@@ -142,7 +99,7 @@ namespace frontendpbo
             }
             else
             {
-                delete.contohDelete(id_tempat_makan);
+                delete.contohdelete(id_tempat_makan);
                 loaddata();
 
                 NamaTempatMakantextBox1.Text = "";
@@ -161,12 +118,70 @@ namespace frontendpbo
             DeskripsiTempatMakantextBox3.Text = "";
             NoTeleponTempatMakantextBox4.Text = "";
         }
+
+
+        private void DeletedanUpdateDataTempatMakan_Load(object sender, EventArgs e)
+        {
+            loaddata();
+        }
+
+        private void CRUDTempatMakandataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CRUDTempatMakandataGridView1.CurrentRow.Selected = true;
+            id_tempat_makan = Convert.ToInt32(CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[0].Value);
+            NamaTempatMakantextBox1.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            LokasiTempatMakantextBox2.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            DeskripsiTempatMakantextBox3.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            NoTeleponTempatMakantextBox4.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+        }
+
+        public bool Read()
+        {
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Tempat Makan;";
+
+            using (NpgsqlConnection conn = new NpgsqlConnection(constr))
+            {
+                string sql =
+                    @"SELECT id_tempat_makan, nama_tempat_makan, lokasi_tempat_makan, deskripsi_tempat_makan, no_telepon_tempat_makan
+              FROM rembangan";
+                conn.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                {
+                    cmd.CommandText = sql;
+                    NpgsqlDataReader reader = cmd.ExecuteReader();
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
+                    CRUDTempatMakandataGridView1.DataSource = dt;
+                }
+            }
+            return true;
+        }
+
+
+        private void EditTempatMakanbutton3_Click(object sender, EventArgs e)
+        {
+            if (id_tempat_makan == 0)
+            {
+                MessageBox.Show("Pilih baris dahulu", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                EditTempatMakan.Edit(NamaTempatMakantextBox1.Text, LokasiTempatMakantextBox2.Text, DeskripsiTempatMakantextBox3.Text, NoTeleponTempatMakantextBox4.Text, id_tempat_makan);
+                loaddata();
+
+                NamaTempatMakantextBox1.Text = "";
+                LokasiTempatMakantextBox2.Text = "";
+                DeskripsiTempatMakantextBox3.Text = "";
+                NoTeleponTempatMakantextBox4.Text = "";
+
+                CRUDTempatMakandataGridView1.CurrentRow.Selected = false;
+            }
+        }
     }
-    class CreatePenginapan
+    class CreateTempatMakan
     {
         static public void Create(string nama_tempat_makan, string lokasi_tempat_makan, string deskripsi_tempat_makan, string no_telepon_tempat_makan)
         {
-
             NpgsqlConnection connection = new NpgsqlConnection();
 
             string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Tempat Makan;";
@@ -191,10 +206,39 @@ namespace frontendpbo
             }
         }
     }
+    class EditTempatMakan
+    {
+        static public void Edit(string nama_tempat_makan, string lokasi_tempat_makan, string deskripsi_tempat_makan, string no_telepon_tempat_makan, int id_tempat_makan)
+        {
+            NpgsqlConnection connection = new NpgsqlConnection();
+
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Tempat Makan;";
+            connection.ConnectionString = constr;
+            DataTable dt = new DataTable();
+            try
+            {
+                connection.Open();
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = connection;
+                string StrSql = $"Update public.rembangan set nama_tempat_makan = '{nama_tempat_makan}', lokasi_tempat_makan = '{lokasi_tempat_makan}', deskripsi_tempat_makan = '{deskripsi_tempat_makan}', no_telepon_tempat_makan = '{no_telepon_tempat_makan}' where id_tempat_makan = '{id_tempat_makan}'";
+                cmd.CommandText = StrSql;
+                cmd.CommandType = CommandType.Text;
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                da.Fill(dt);
+                cmd.Dispose();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+        }
+    }
 
     class delete
     {
-        static public DataTable contohDelete(int id_tempat_makan)
+        static public DataTable contohdelete(int id_tempat_makan)
         {
 
             NpgsqlConnection connection = new NpgsqlConnection();
