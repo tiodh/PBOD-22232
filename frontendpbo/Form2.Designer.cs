@@ -122,7 +122,7 @@
             // 
             pictureBox1.BackColor = Color.FromArgb(111, 106, 248);
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(608, 18);
+            pictureBox1.Location = new Point(8, 18);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(313, 49);
             pictureBox1.TabIndex = 2;
@@ -134,12 +134,12 @@
             Login.Dock = DockStyle.Right;
             Login.Font = new Font("Perpetua", 17F, FontStyle.Bold, GraphicsUnit.Point);
             Login.ImageAlign = ContentAlignment.MiddleRight;
-            Login.Location = new Point(1412, 4);
+            Login.Location = new Point(1387, 4);
             Login.Name = "Login";
-            Login.Size = new Size(85, 66);
+            Login.Size = new Size(110, 66);
             Login.TabIndex = 1;
             Login.Text = "Login";
-            Login.TextAlign = ContentAlignment.MiddleCenter;
+            Login.TextAlign = ContentAlignment.MiddleLeft;
             Login.Click += Login_Click;
             // 
             // panel2
