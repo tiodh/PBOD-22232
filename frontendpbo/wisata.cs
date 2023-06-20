@@ -16,8 +16,8 @@ namespace frontendpbo
     public partial class wisata : Form
     {
         ContextWisata contextWisata;
-        private List<Wisata> listWisata; // Daftar semua data wisata
-        private List<Wisata> searchResults; // Daftar hasil pencarian
+        private List<Wisata> listWisata;
+        private List<Wisata> searchResults;
         public wisata()
         {
             InitializeComponent();
