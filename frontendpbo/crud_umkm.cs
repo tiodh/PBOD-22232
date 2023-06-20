@@ -131,6 +131,27 @@ namespace frontendpbo
 
         }
     }
+    public bool Read()
+    {
+        string constr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
+
+        using (NpgsqlConnection conn = new NpgsqlConnection(constr))
+        {
+            string sql = @"SELECT id_umkm, nama_umkm, deskripsi_umkm, pemilik_umkm, no_telepon_umkm, wisata_id
+              FROM umkm";
+
+            conn.Open();
+            using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+            {
+                cmd.CommandText = sql;
+                NpgsqlDataReader reader = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Load(reader);
+                crud_umkm.DataSource = dt;
+            }
+        }
+        return true;
+    }
     class EditUmkm
     {
         static public void Edit(string nama_umkm, string deskripsi_umkm, string pemilik_umkm, string no_telepon_umkm, int id_umkm)
