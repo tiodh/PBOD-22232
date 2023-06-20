@@ -33,6 +33,13 @@ namespace frontendpbo
             datagridcrudwisata1.DataSource = contextWisata.listWisata;
         }
 
+        private void Clear()
+        {
+            textBox1_Nama_Wisata.Text = "";
+            textBox2_Deskripsi_Wisata.Text = "";
+            textBox3_Lokasi_Wisata.Text = "";
+        }
+
         public Models.Wisata GetWisata()
         {
             Models.Wisata wst = new Models.Wisata();
@@ -74,6 +81,7 @@ namespace frontendpbo
             contextWisata.Insert(wisatas);
             datagridcrudwisata1.DataSource = null;
             ReadData();
+            Clear();
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
