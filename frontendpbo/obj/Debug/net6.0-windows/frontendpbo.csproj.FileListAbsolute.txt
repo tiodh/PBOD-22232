@@ -730,3 +730,4 @@ F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\front
 F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
 F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
 F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Class_crud_umkm.resources
