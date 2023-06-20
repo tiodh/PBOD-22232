@@ -132,7 +132,7 @@
             // 
             Login.BackColor = Color.Transparent;
             Login.Dock = DockStyle.Right;
-            Login.Font = new Font("Perpetua", 17F, FontStyle.Bold, GraphicsUnit.Point);
+            Login.Font = new Font("Microsoft Sans Serif", 17F, FontStyle.Bold, GraphicsUnit.Point);
             Login.ImageAlign = ContentAlignment.MiddleRight;
             Login.Location = new Point(1387, 4);
             Login.Name = "Login";
@@ -619,6 +619,7 @@
             edit1.Text = "Edit";
             edit1.TextAlign = ContentAlignment.MiddleLeft;
             edit1.UseVisualStyleBackColor = false;
+            edit1.Click += edit1_Click;
             // 
             // wisata
             // 
