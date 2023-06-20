@@ -10,10 +10,10 @@ namespace frontendpbo
 {
     public class CRU_DataPengguna
     {
-        public static void CreateData(string namaLengkap, string username, string email, string password)
+        public static void Create_Data_Pengguna(string nama_Lengkap, string username, string email, string password)
         {
             ConnectDB connectData = new ConnectDB();
-            string querycreate = $"insert into admin (nama_lengkap, username, email_admin, password) values ('{namaLengkap}', '{username}', '{email}', '{password}');";
+            string querycreate = $"INSERT INTO admin (nama_lengkap, username, email_admin, password) values ('{nama_Lengkap}', '{username}', '{email}', '{password}');";
             connectData.ExecuteSQL(querycreate);
         }
         public static DataTable ReadData()
