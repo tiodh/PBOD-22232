@@ -41,6 +41,7 @@
             tbSearchDataPengguna = new TextBox();
             btnCreate = new Button();
             btnUpdate = new Button();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)DGVdataPengguna).BeginInit();
             SuspendLayout();
             // 
@@ -180,7 +181,7 @@
             // tbSearchDataPengguna
             // 
             tbSearchDataPengguna.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            tbSearchDataPengguna.BackColor = SystemColors.ActiveBorder;
+            tbSearchDataPengguna.BackColor = SystemColors.Control;
             tbSearchDataPengguna.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             tbSearchDataPengguna.Location = new Point(866, 110);
             tbSearchDataPengguna.Margin = new Padding(4, 5, 4, 5);
@@ -209,7 +210,7 @@
             // btnUpdate
             // 
             btnUpdate.Anchor = AnchorStyles.Right;
-            btnUpdate.BackColor = Color.Orange;
+            btnUpdate.BackColor = Color.Gold;
             btnUpdate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnUpdate.Location = new Point(1611, 927);
             btnUpdate.Margin = new Padding(4, 5, 4, 5);
@@ -220,11 +221,23 @@
             btnUpdate.UseVisualStyleBackColor = false;
             btnUpdate.Click += btnUpdate_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.MediumPurple;
+            label6.Location = new Point(392, 88);
+            label6.Name = "label6";
+            label6.Size = new Size(71, 25);
+            label6.TabIndex = 13;
+            label6.Text = "update";
+            // 
             // DataPengguna
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1929, 1083);
+            Controls.Add(label6);
             Controls.Add(btnUpdate);
             Controls.Add(btnCreate);
             Controls.Add(tbSearchDataPengguna);
@@ -262,5 +275,6 @@
         private TextBox tbSearchDataPengguna;
         private Button btnCreate;
         private Button btnUpdate;
+        private Label label6;
     }
 }
