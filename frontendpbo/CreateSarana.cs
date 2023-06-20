@@ -20,7 +20,7 @@ namespace frontendpbo
 
         private void simpan_Click(object sender, EventArgs e)
         {
-            using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=sarana;user id=postgres;password=12345678"))
+            using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=peta_jember;user id=postgres;password=12345678"))
             {
                 connection.Open();
                 NpgsqlCommand command = connection.CreateCommand();

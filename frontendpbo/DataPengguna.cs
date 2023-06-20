@@ -30,7 +30,7 @@ namespace frontendpbo
 
         private void btnCreate_Click_1(object sender, EventArgs e)
         {
-            CRU_DataPengguna.CreateData(tbNama.Text, tbUsername.Text, tbEmail.Text, tbPassword.Text);
+            CRU_DataPengguna.Create_Data_Pengguna(tbNama.Text, tbUsername.Text, tbEmail.Text, tbPassword.Text);
             showDB();
             tbNama.Text = "";
             tbEmail.Text = "";
