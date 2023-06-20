@@ -298,7 +298,7 @@ namespace frontendpbo
         }
     }
 
-    class Read
+    class Readed
     {
         static public DataTable ContohSelect()
         {

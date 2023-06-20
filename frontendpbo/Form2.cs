@@ -104,5 +104,10 @@ namespace frontendpbo
             LoginAdmin form = new LoginAdmin();
             form.ShowDialog();
         }
+
+        private void edit1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new wisata());
+        }
     }
 }
