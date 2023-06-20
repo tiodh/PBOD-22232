@@ -147,7 +147,7 @@ namespace frontendpbo
                 NpgsqlDataReader reader = cmd.ExecuteReader();
                 DataTable dt = new DataTable();
                 dt.Load(reader);
-                dataGridView1_umkm.Datasource = dt;
+                dataGridView1_umkm.DataSource = dt;
             }
         }
         return true;
