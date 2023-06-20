@@ -14,12 +14,12 @@ namespace frontendpbo.Models
         public bool Read()
         {
             bool isSuccess = false;
-            string constr = " Host=localhost;Port=5432;Database= dummyDatabase;Username=postgres;Password=123456";
+            string constr = " Host=localhost;Port=5432;Database= peta_jember;Username=postgres;Password=123456";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(constr))
             {
                 string sql =
-                    @"SELECT * FROM ""keamanan""";
+                    @"SELECT * FROM data_keamanan";
                 //JOIN wisata ON transaksi.id_wisata = wisata.id_wisata
                 //JOIN tiket ON trasaksi.id_tiket = tiket.id_tiket";
 
