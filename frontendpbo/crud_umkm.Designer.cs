@@ -56,7 +56,7 @@
             button5_edit_umkm.AutoSize = true;
             button5_edit_umkm.BackColor = Color.Khaki;
             button5_edit_umkm.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button5_edit_umkm.Location = new Point(953, 658);
+            button5_edit_umkm.Location = new Point(953, 865);
             button5_edit_umkm.Margin = new Padding(3, 2, 3, 2);
             button5_edit_umkm.Name = "button5_edit_umkm";
             button5_edit_umkm.Size = new Size(121, 58);
@@ -71,7 +71,7 @@
             button4_read_umkm.AutoSize = true;
             button4_read_umkm.BackColor = Color.LightSeaGreen;
             button4_read_umkm.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button4_read_umkm.Location = new Point(797, 658);
+            button4_read_umkm.Location = new Point(797, 865);
             button4_read_umkm.Margin = new Padding(3, 2, 3, 2);
             button4_read_umkm.Name = "button4_read_umkm";
             button4_read_umkm.Size = new Size(121, 58);
@@ -86,7 +86,7 @@
             button3_clear_umkm.AutoSize = true;
             button3_clear_umkm.BackColor = Color.OrangeRed;
             button3_clear_umkm.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3_clear_umkm.Location = new Point(634, 658);
+            button3_clear_umkm.Location = new Point(634, 865);
             button3_clear_umkm.Margin = new Padding(3, 2, 3, 2);
             button3_clear_umkm.Name = "button3_clear_umkm";
             button3_clear_umkm.Size = new Size(121, 58);
@@ -112,7 +112,7 @@
             button2_add_umkm.AutoSize = true;
             button2_add_umkm.BackColor = Color.Lime;
             button2_add_umkm.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2_add_umkm.Location = new Point(1101, 658);
+            button2_add_umkm.Location = new Point(1101, 865);
             button2_add_umkm.Margin = new Padding(3, 2, 3, 2);
             button2_add_umkm.Name = "button2_add_umkm";
             button2_add_umkm.Size = new Size(121, 58);
@@ -220,7 +220,7 @@
             label1_umkm.ForeColor = SystemColors.ButtonHighlight;
             label1_umkm.Location = new Point(354, 17);
             label1_umkm.Name = "label1_umkm";
-            label1_umkm.Size = new Size(542, 52);
+            label1_umkm.Size = new Size(733, 52);
             label1_umkm.TabIndex = 17;
             label1_umkm.Text = "Masukan Data UMKM";
             label1_umkm.TextAlign = ContentAlignment.TopCenter;
@@ -246,7 +246,7 @@
             dataGridView1_umkm.Name = "dataGridView1_umkm";
             dataGridView1_umkm.RowHeadersWidth = 51;
             dataGridView1_umkm.RowTemplate.Height = 29;
-            dataGridView1_umkm.Size = new Size(646, 348);
+            dataGridView1_umkm.Size = new Size(817, 344);
             dataGridView1_umkm.TabIndex = 18;
             dataGridView1_umkm.CellClick += dataGridView1_umkm_CellClick;
             dataGridView1_umkm.CellContentClick += dataGridView1_umkm_CellContentClick;
@@ -280,7 +280,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkViolet;
-            ClientSize = new Size(1199, 562);
+            ClientSize = new Size(1370, 749);
             Controls.Add(label1);
             Controls.Add(textBox5_id_umkm);
             Controls.Add(button5_edit_umkm);

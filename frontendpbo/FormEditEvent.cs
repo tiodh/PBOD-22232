@@ -1,4 +1,5 @@
 ﻿using Npgsql;
+using OxyPlot;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,11 +18,18 @@ namespace frontendpbo
         {
             InitializeComponent();
             LoadData();
+
         }
+
+        private void FormEditEvent_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void LoadData()
         {
-            string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=Rio09rio:v;Database=DataEvent";
-            string query = "SELECT * FROM eventacara";
+            string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+            string query = "SELECT * FROM event_acara";
 
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
             {
@@ -39,17 +47,13 @@ namespace frontendpbo
                 }
             }
         }
-        private void FormEditEvent_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCreateEvent_Click(object sender, EventArgs e)
         {
             int id_event = int.Parse(tbIdEvent.Text);
             DateOnly tanggal = DateOnly.Parse(dateTimePicker1.Value.ToShortDateString());
-            int wisata = int.Parse(tbIdWisata.Text);
-            Crud.CreateData(id_event, tbNamaEvent.Text, tbdeskripsi.Text, tanggal, wisata);
+            int wisata = int.Parse(tvIdWisata.Text);
+            Crud.CreateData(id_event, tbNamaEvent.Text, textBox1.Text, tanggal, wisata);
             LoadData();
 
         }
@@ -58,16 +62,19 @@ namespace frontendpbo
         {
             int id_event = int.Parse(tbIdEvent.Text);
             DateOnly tanggal = DateOnly.Parse(dateTimePicker1.Value.ToShortDateString());
-            int wisata = int.Parse(tbIdWisata.Text);
-            Crud.UpdateData(id_event, tbNamaEvent.Text, tbdeskripsi.Text, tanggal, wisata);
+            int wisata = int.Parse(tvIdWisata.Text);
+            Crud.UpdateData(id_event, tbNamaEvent.Text, textBox1.Text, tanggal, wisata);
             LoadData();
+
         }
 
         private void btnDeleteEvent_Click(object sender, EventArgs e)
         {
+
             int id_event = int.Parse(tbIdEvent.Text);
             Crud.DeleteData(id_event);
             LoadData();
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -75,31 +82,33 @@ namespace frontendpbo
             this.Close();
         }
     }
+
     class Crud
     {
-        public static void CreateData(int kode, string nama, string desk, DateOnly tgl, int wisata)
+        public static void CreateData(int id_event, string nama_event, string deskripsi_event, DateOnly tanggal_event, int wisata_id)
         {
             Connec koneksidb = new Connec();
-            string querycreate = $"insert into eventacara (id_event, nama_event, deskripsi_Event, tanggal_pelaksana, wisata_id) values ('{kode}', '{nama}', '{desk}', '{tgl}', '{wisata}');";
+            string querycreate = $"insert into event_acara (id_event, nama_event, deskripsi_Event, tanggal_event, wisata_id) values ('{id_event}', '{nama_event}', '{deskripsi_event}', '{tanggal_event}', '{wisata_id}');";
             koneksidb.Run(querycreate);
         }
 
-        public static void UpdateData(int kode, string nama, string desk, DateOnly tgl, int wisata)
+        public static void UpdateData(int id_event, string nama_event, string deskripsi_event, DateOnly tanggal_event, int wisata_id)
         {
             Connec connectdb = new Connec();
-            string queryupdate = $"update eventacara set nama_event = '{nama}', deskripsi_Event = '{desk}', tanggal_pelaksana = '{tgl}' where id_event = {kode}";
+            string queryupdate = $"update event_acara set nama_event = '{nama_event}', deskripsi_event = '{deskripsi_event}', tanggal_event = '{tanggal_event}' where id_event = {id_event}";
             connectdb.Run(queryupdate);
         }
 
-        public static void DeleteData(int kode)
+        public static void DeleteData(int id_event)
         {
             Connec connectdb = new Connec();
-            string querydelete = $"delete from eventacara where id_event = {kode}::integer;;";
+            string querydelete = $"delete from event_acara where id_event = {id_event}::integer;;";
             connectdb.Run(querydelete);
         }
 
 
     }
+
     class Connec
     {
         public NpgsqlConnection connect;
@@ -107,13 +116,13 @@ namespace frontendpbo
         public Connec()
         {
             NpgsqlConnection connect = new NpgsqlConnection();
-            connect.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;Password=Rio09rio:v;Database=DataEvent";
+            connect.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
         }
 
         public DataTable Run(string sql)
         {
             NpgsqlConnection connect = new NpgsqlConnection();
-            connect.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;Password=Rio09rio:v;Database=DataEvent";
+            connect.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             DataTable dt = new DataTable();
             try
@@ -135,4 +144,6 @@ namespace frontendpbo
             return dt;
         }
     }
+
+
 }

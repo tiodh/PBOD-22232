@@ -39,8 +39,8 @@
             tbUsername = new TextBox();
             tbPassword = new TextBox();
             tbSearchDataPengguna = new TextBox();
-            btnCreateDataPengguna = new Button();
-            btnUpdateDataPengguna = new Button();
+            btnCreate = new Button();
+            btnUpdate = new Button();
             ((System.ComponentModel.ISupportInitialize)DGVdataPengguna).BeginInit();
             SuspendLayout();
             // 
@@ -59,8 +59,6 @@
             // DGVdataPengguna
             // 
             DGVdataPengguna.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            DGVdataPengguna.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            DGVdataPengguna.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             DGVdataPengguna.BackgroundColor = SystemColors.ActiveBorder;
             DGVdataPengguna.BorderStyle = BorderStyle.None;
             DGVdataPengguna.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -71,6 +69,7 @@
             DGVdataPengguna.Size = new Size(781, 494);
             DGVdataPengguna.TabIndex = 1;
             DGVdataPengguna.CellClick += DGVdataPengguna_CellClick;
+            DGVdataPengguna.CellContentClick += DGVDataPengguna_CellContentClick;
             // 
             // label2
             // 
@@ -182,39 +181,39 @@
             tbSearchDataPengguna.Click += tbSearchDataPengguna_Click;
             tbSearchDataPengguna.TextChanged += tbSearchDataPengguna_TextChanged;
             // 
-            // btnCreateDataPengguna
+            // btnCreate
             // 
-            btnCreateDataPengguna.Anchor = AnchorStyles.Right;
-            btnCreateDataPengguna.BackColor = Color.LimeGreen;
-            btnCreateDataPengguna.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCreateDataPengguna.Location = new Point(944, 556);
-            btnCreateDataPengguna.Name = "btnCreateDataPengguna";
-            btnCreateDataPengguna.Size = new Size(128, 45);
-            btnCreateDataPengguna.TabIndex = 11;
-            btnCreateDataPengguna.Text = "Create";
-            btnCreateDataPengguna.UseVisualStyleBackColor = false;
-            btnCreateDataPengguna.Click += btnCreateDataPengguna_Click;
+            btnCreate.Anchor = AnchorStyles.Right;
+            btnCreate.BackColor = Color.LimeGreen;
+            btnCreate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCreate.Location = new Point(944, 556);
+            btnCreate.Name = "btnCreate";
+            btnCreate.Size = new Size(128, 45);
+            btnCreate.TabIndex = 11;
+            btnCreate.Text = "Create";
+            btnCreate.UseVisualStyleBackColor = false;
+            btnCreate.Click += btnCreate_Click_1;
             // 
-            // btnUpdateDataPengguna
+            // btnUpdate
             // 
-            btnUpdateDataPengguna.Anchor = AnchorStyles.Right;
-            btnUpdateDataPengguna.BackColor = Color.Orange;
-            btnUpdateDataPengguna.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnUpdateDataPengguna.Location = new Point(1128, 556);
-            btnUpdateDataPengguna.Name = "btnUpdateDataPengguna";
-            btnUpdateDataPengguna.Size = new Size(128, 45);
-            btnUpdateDataPengguna.TabIndex = 12;
-            btnUpdateDataPengguna.Text = "Update";
-            btnUpdateDataPengguna.UseVisualStyleBackColor = false;
-            btnUpdateDataPengguna.Click += btnUpdateDataPengguna_Click;
+            btnUpdate.Anchor = AnchorStyles.Right;
+            btnUpdate.BackColor = Color.Orange;
+            btnUpdate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUpdate.Location = new Point(1128, 556);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(128, 45);
+            btnUpdate.TabIndex = 12;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // DataPengguna
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1350, 650);
-            Controls.Add(btnUpdateDataPengguna);
-            Controls.Add(btnCreateDataPengguna);
+            Controls.Add(btnUpdate);
+            Controls.Add(btnCreate);
             Controls.Add(tbSearchDataPengguna);
             Controls.Add(tbPassword);
             Controls.Add(tbUsername);
@@ -247,7 +246,7 @@
         private TextBox tbUsername;
         private TextBox tbPassword;
         private TextBox tbSearchDataPengguna;
-        private Button btnCreateDataPengguna;
-        private Button btnUpdateDataPengguna;
+        private Button btnCreate;
+        private Button btnUpdate;
     }
 }

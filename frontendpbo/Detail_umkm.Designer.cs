@@ -28,1613 +28,1763 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            label50 = new Label();
-            label49 = new Label();
-            label48 = new Label();
-            label47 = new Label();
-            label46 = new Label();
-            label45 = new Label();
-            label44 = new Label();
-            label43 = new Label();
-            label42 = new Label();
-            label41 = new Label();
-            label40 = new Label();
-            label39 = new Label();
-            label38 = new Label();
-            pictureBox3 = new PictureBox();
-            label37 = new Label();
-            label36 = new Label();
-            label35 = new Label();
-            label34 = new Label();
-            label33 = new Label();
-            label32 = new Label();
-            label31 = new Label();
-            label30 = new Label();
-            label29 = new Label();
-            label28 = new Label();
-            label27 = new Label();
-            label18 = new Label();
-            label17 = new Label();
-            pictureBox2 = new PictureBox();
-            label16 = new Label();
-            label15 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label26 = new Label();
-            label25 = new Label();
-            label24 = new Label();
-            label23 = new Label();
-            label22 = new Label();
-            label21 = new Label();
-            label20 = new Label();
-            label19 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label3_umkm = new Label();
-            label2_umkm = new Label();
-            label6_umkm = new Label();
-            label1 = new Label();
-            pictureBox4 = new PictureBox();
-            label51 = new Label();
-            label52 = new Label();
-            label53 = new Label();
-            label54 = new Label();
-            label55 = new Label();
-            label56 = new Label();
-            label57 = new Label();
-            label58 = new Label();
-            label59 = new Label();
-            label60 = new Label();
-            label61 = new Label();
-            label62 = new Label();
-            label63 = new Label();
-            pictureBox5 = new PictureBox();
-            label64 = new Label();
-            label65 = new Label();
-            label66 = new Label();
-            label67 = new Label();
-            label68 = new Label();
-            label69 = new Label();
-            label70 = new Label();
-            label71 = new Label();
-            label72 = new Label();
-            label73 = new Label();
-            label74 = new Label();
-            label75 = new Label();
-            label76 = new Label();
-            pictureBox6 = new PictureBox();
-            label77 = new Label();
-            label78 = new Label();
-            label79 = new Label();
-            label80 = new Label();
-            label81 = new Label();
-            label82 = new Label();
-            label83 = new Label();
-            label84 = new Label();
-            label85 = new Label();
-            label86 = new Label();
-            label87 = new Label();
-            label88 = new Label();
-            label89 = new Label();
-            pictureBox7 = new PictureBox();
-            label90 = new Label();
-            label91 = new Label();
-            label92 = new Label();
-            label93 = new Label();
-            label94 = new Label();
-            label95 = new Label();
-            label96 = new Label();
-            label97 = new Label();
-            label98 = new Label();
-            label99 = new Label();
-            label100 = new Label();
-            label101 = new Label();
-            label102 = new Label();
-            pictureBox8 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = SystemColors.ActiveBorder;
-            pictureBox1.Location = new Point(108, 108);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(207, 143);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
-            // label50
-            // 
-            label50.AutoSize = true;
-            label50.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label50.ForeColor = SystemColors.ButtonHighlight;
-            label50.Location = new Point(660, 83);
-            label50.Name = "label50";
-            label50.Size = new Size(102, 22);
-            label50.TabIndex = 76;
-            label50.Text = "Foto Kedai";
-            // 
-            // label49
-            // 
-            label49.AutoSize = true;
-            label49.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label49.ForeColor = SystemColors.ButtonHighlight;
-            label49.Location = new Point(892, 108);
-            label49.Name = "label49";
-            label49.Size = new Size(122, 22);
-            label49.TabIndex = 77;
-            label49.Text = "Nama UMKM";
-            // 
-            // label48
-            // 
-            label48.AutoSize = true;
-            label48.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label48.ForeColor = SystemColors.ButtonHighlight;
-            label48.Location = new Point(1020, 229);
-            label48.Name = "label48";
-            label48.Size = new Size(94, 22);
-            label48.TabIndex = 78;
-            label48.Text = "Deskripsi";
-            // 
-            // label47
-            // 
-            label47.AutoSize = true;
-            label47.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label47.ForeColor = SystemColors.ButtonHighlight;
-            label47.Location = new Point(906, 139);
-            label47.Name = "label47";
-            label47.Size = new Size(55, 16);
-            label47.TabIndex = 79;
-            label47.Text = "nama kedai";
-            // 
-            // label46
-            // 
-            label46.AutoSize = true;
-            label46.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label46.ForeColor = SystemColors.ButtonHighlight;
-            label46.Location = new Point(1034, 261);
-            label46.Name = "label46";
-            label46.Size = new Size(69, 16);
-            label46.TabIndex = 80;
-            label46.Text = "deskripsi kedai";
-            // 
-            // label45
-            // 
-            label45.AutoSize = true;
-            label45.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label45.ForeColor = SystemColors.ButtonHighlight;
-            label45.Location = new Point(1020, 108);
-            label45.Name = "label45";
-            label45.Size = new Size(140, 22);
-            label45.TabIndex = 81;
-            label45.Text = "Pemilik UMKM";
-            // 
-            // label44
-            // 
-            label44.AutoSize = true;
-            label44.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label44.ForeColor = SystemColors.ButtonHighlight;
-            label44.Location = new Point(1034, 139);
-            label44.Name = "label44";
-            label44.Size = new Size(62, 16);
-            label44.TabIndex = 82;
-            label44.Text = "nama pemilik";
-            // 
-            // label43
-            // 
-            label43.AutoSize = true;
-            label43.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label43.ForeColor = SystemColors.ButtonHighlight;
-            label43.Location = new Point(892, 165);
-            label43.Name = "label43";
-            label43.Size = new Size(114, 22);
-            label43.TabIndex = 83;
-            label43.Text = "Jenis UMKM";
-            // 
-            // label42
-            // 
-            label42.AutoSize = true;
-            label42.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label42.ForeColor = SystemColors.ButtonHighlight;
-            label42.Location = new Point(906, 196);
-            label42.Name = "label42";
-            label42.Size = new Size(26, 16);
-            label42.TabIndex = 84;
-            label42.Text = "jenis";
-            // 
-            // label41
-            // 
-            label41.AutoSize = true;
-            label41.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label41.ForeColor = SystemColors.ButtonHighlight;
-            label41.Location = new Point(1020, 165);
-            label41.Name = "label41";
-            label41.Size = new Size(129, 22);
-            label41.TabIndex = 85;
-            label41.Text = "Lokasi UMKM";
-            // 
-            // label40
-            // 
-            label40.AutoSize = true;
-            label40.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label40.ForeColor = SystemColors.ButtonHighlight;
-            label40.Location = new Point(1034, 196);
-            label40.Name = "label40";
-            label40.Size = new Size(31, 16);
-            label40.TabIndex = 86;
-            label40.Text = "lokasi";
-            // 
-            // label39
-            // 
-            label39.AutoSize = true;
-            label39.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label39.ForeColor = SystemColors.ButtonHighlight;
-            label39.Location = new Point(892, 229);
-            label39.Name = "label39";
-            label39.Size = new Size(94, 22);
-            label39.TabIndex = 87;
-            label39.Text = "No telpon";
-            // 
-            // label38
-            // 
-            label38.AutoSize = true;
-            label38.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label38.ForeColor = SystemColors.ButtonHighlight;
-            label38.Location = new Point(906, 260);
-            label38.Name = "label38";
-            label38.Size = new Size(44, 16);
-            label38.TabIndex = 88;
-            label38.Text = "no telpon";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = SystemColors.ActiveBorder;
-            pictureBox3.Location = new Point(660, 340);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(207, 143);
-            pictureBox3.TabIndex = 89;
-            pictureBox3.TabStop = false;
-            // 
-            // label37
-            // 
-            label37.AutoSize = true;
-            label37.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label37.ForeColor = SystemColors.ButtonHighlight;
-            label37.Location = new Point(660, 315);
-            label37.Name = "label37";
-            label37.Size = new Size(102, 22);
-            label37.TabIndex = 90;
-            label37.Text = "Foto Kedai";
-            // 
-            // label36
-            // 
-            label36.AutoSize = true;
-            label36.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label36.ForeColor = SystemColors.ButtonHighlight;
-            label36.Location = new Point(892, 340);
-            label36.Name = "label36";
-            label36.Size = new Size(122, 22);
-            label36.TabIndex = 91;
-            label36.Text = "Nama UMKM";
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label35.ForeColor = SystemColors.ButtonHighlight;
-            label35.Location = new Point(1020, 461);
-            label35.Name = "label35";
-            label35.Size = new Size(94, 22);
-            label35.TabIndex = 92;
-            label35.Text = "Deskripsi";
-            // 
-            // label34
-            // 
-            label34.AutoSize = true;
-            label34.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label34.ForeColor = SystemColors.ButtonHighlight;
-            label34.Location = new Point(906, 371);
-            label34.Name = "label34";
-            label34.Size = new Size(55, 16);
-            label34.TabIndex = 93;
-            label34.Text = "nama kedai";
-            // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label33.ForeColor = SystemColors.ButtonHighlight;
-            label33.Location = new Point(1034, 493);
-            label33.Name = "label33";
-            label33.Size = new Size(69, 16);
-            label33.TabIndex = 94;
-            label33.Text = "deskripsi kedai";
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label32.ForeColor = SystemColors.ButtonHighlight;
-            label32.Location = new Point(1020, 340);
-            label32.Name = "label32";
-            label32.Size = new Size(140, 22);
-            label32.TabIndex = 95;
-            label32.Text = "Pemilik UMKM";
-            // 
-            // label31
-            // 
-            label31.AutoSize = true;
-            label31.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label31.ForeColor = SystemColors.ButtonHighlight;
-            label31.Location = new Point(1034, 371);
-            label31.Name = "label31";
-            label31.Size = new Size(62, 16);
-            label31.TabIndex = 96;
-            label31.Text = "nama pemilik";
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label30.ForeColor = SystemColors.ButtonHighlight;
-            label30.Location = new Point(892, 397);
-            label30.Name = "label30";
-            label30.Size = new Size(114, 22);
-            label30.TabIndex = 97;
-            label30.Text = "Jenis UMKM";
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label29.ForeColor = SystemColors.ButtonHighlight;
-            label29.Location = new Point(906, 428);
-            label29.Name = "label29";
-            label29.Size = new Size(26, 16);
-            label29.TabIndex = 98;
-            label29.Text = "jenis";
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label28.ForeColor = SystemColors.ButtonHighlight;
-            label28.Location = new Point(1020, 397);
-            label28.Name = "label28";
-            label28.Size = new Size(129, 22);
-            label28.TabIndex = 99;
-            label28.Text = "Lokasi UMKM";
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label27.ForeColor = SystemColors.ButtonHighlight;
-            label27.Location = new Point(1034, 428);
-            label27.Name = "label27";
-            label27.Size = new Size(31, 16);
-            label27.TabIndex = 100;
-            label27.Text = "lokasi";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label18.ForeColor = SystemColors.ButtonHighlight;
-            label18.Location = new Point(892, 461);
-            label18.Name = "label18";
-            label18.Size = new Size(94, 22);
-            label18.TabIndex = 101;
-            label18.Text = "No telpon";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.ForeColor = SystemColors.ButtonHighlight;
-            label17.Location = new Point(906, 492);
-            label17.Name = "label17";
-            label17.Size = new Size(44, 16);
-            label17.TabIndex = 102;
-            label17.Text = "no telpon";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = SystemColors.ActiveBorder;
-            pictureBox2.Location = new Point(108, 340);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(207, 143);
-            pictureBox2.TabIndex = 61;
-            pictureBox2.TabStop = false;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label16.ForeColor = SystemColors.ButtonHighlight;
-            label16.Location = new Point(108, 315);
-            label16.Name = "label16";
-            label16.Size = new Size(102, 22);
-            label16.TabIndex = 62;
-            label16.Text = "Foto Kedai";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label15.ForeColor = SystemColors.ButtonHighlight;
-            label15.Location = new Point(340, 340);
-            label15.Name = "label15";
-            label15.Size = new Size(122, 22);
-            label15.TabIndex = 63;
-            label15.Text = "Nama UMKM";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label14.ForeColor = SystemColors.ButtonHighlight;
-            label14.Location = new Point(468, 461);
-            label14.Name = "label14";
-            label14.Size = new Size(94, 22);
-            label14.TabIndex = 64;
-            label14.Text = "Deskripsi";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.ForeColor = SystemColors.ButtonHighlight;
-            label13.Location = new Point(354, 371);
-            label13.Name = "label13";
-            label13.Size = new Size(55, 16);
-            label13.TabIndex = 65;
-            label13.Text = "nama kedai";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.ForeColor = SystemColors.ButtonHighlight;
-            label12.Location = new Point(482, 493);
-            label12.Name = "label12";
-            label12.Size = new Size(69, 16);
-            label12.TabIndex = 66;
-            label12.Text = "deskripsi kedai";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.ForeColor = SystemColors.ButtonHighlight;
-            label11.Location = new Point(468, 340);
-            label11.Name = "label11";
-            label11.Size = new Size(140, 22);
-            label11.TabIndex = 67;
-            label11.Text = "Pemilik UMKM";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = SystemColors.ButtonHighlight;
-            label10.Location = new Point(482, 371);
-            label10.Name = "label10";
-            label10.Size = new Size(62, 16);
-            label10.TabIndex = 68;
-            label10.Text = "nama pemilik";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.ForeColor = SystemColors.ButtonHighlight;
-            label9.Location = new Point(340, 397);
-            label9.Name = "label9";
-            label9.Size = new Size(114, 22);
-            label9.TabIndex = 69;
-            label9.Text = "Jenis UMKM";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = SystemColors.ButtonHighlight;
-            label8.Location = new Point(354, 428);
-            label8.Name = "label8";
-            label8.Size = new Size(26, 16);
-            label8.TabIndex = 70;
-            label8.Text = "jenis";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = SystemColors.ButtonHighlight;
-            label7.Location = new Point(468, 397);
-            label7.Name = "label7";
-            label7.Size = new Size(129, 22);
-            label7.TabIndex = 71;
-            label7.Text = "Lokasi UMKM";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = SystemColors.ButtonHighlight;
-            label6.Location = new Point(482, 428);
-            label6.Name = "label6";
-            label6.Size = new Size(31, 16);
-            label6.TabIndex = 72;
-            label6.Text = "lokasi";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.ButtonHighlight;
-            label5.Location = new Point(340, 461);
-            label5.Name = "label5";
-            label5.Size = new Size(94, 22);
-            label5.TabIndex = 73;
-            label5.Text = "No telpon";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(354, 492);
-            label4.Name = "label4";
-            label4.Size = new Size(44, 16);
-            label4.TabIndex = 74;
-            label4.Text = "no telpon";
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label26.ForeColor = SystemColors.ButtonHighlight;
-            label26.Location = new Point(340, 229);
-            label26.Name = "label26";
-            label26.Size = new Size(94, 22);
-            label26.TabIndex = 59;
-            label26.Text = "No telpon";
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label25.ForeColor = SystemColors.ButtonHighlight;
-            label25.Location = new Point(354, 260);
-            label25.Name = "label25";
-            label25.Size = new Size(44, 16);
-            label25.TabIndex = 60;
-            label25.Text = "no telpon";
-            label25.Click += label25_Click;
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label24.ForeColor = SystemColors.ButtonHighlight;
-            label24.Location = new Point(468, 165);
-            label24.Name = "label24";
-            label24.Size = new Size(129, 22);
-            label24.TabIndex = 57;
-            label24.Text = "Lokasi UMKM";
-            label24.Click += label24_Click;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label23.ForeColor = SystemColors.ButtonHighlight;
-            label23.Location = new Point(482, 196);
-            label23.Name = "label23";
-            label23.Size = new Size(31, 16);
-            label23.TabIndex = 58;
-            label23.Text = "lokasi";
-            label23.Click += label23_Click;
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label22.ForeColor = SystemColors.ButtonHighlight;
-            label22.Location = new Point(340, 165);
-            label22.Name = "label22";
-            label22.Size = new Size(114, 22);
-            label22.TabIndex = 55;
-            label22.Text = "Jenis UMKM";
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label21.ForeColor = SystemColors.ButtonHighlight;
-            label21.Location = new Point(354, 196);
-            label21.Name = "label21";
-            label21.Size = new Size(26, 16);
-            label21.TabIndex = 56;
-            label21.Text = "jenis";
-            label21.Click += label21_Click;
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label20.ForeColor = SystemColors.ButtonHighlight;
-            label20.Location = new Point(468, 108);
-            label20.Name = "label20";
-            label20.Size = new Size(140, 22);
-            label20.TabIndex = 53;
-            label20.Text = "Pemilik UMKM";
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label19.ForeColor = SystemColors.ButtonHighlight;
-            label19.Location = new Point(482, 139);
-            label19.Name = "label19";
-            label19.Size = new Size(62, 16);
-            label19.TabIndex = 54;
-            label19.Text = "nama pemilik";
-            label19.Click += label19_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(482, 261);
-            label3.Name = "label3";
-            label3.Size = new Size(69, 16);
-            label3.TabIndex = 34;
-            label3.Text = "deskripsi kedai";
-            label3.Click += label3_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(354, 139);
-            label2.Name = "label2";
-            label2.Size = new Size(55, 16);
-            label2.TabIndex = 33;
-            label2.Text = "nama kedai";
-            label2.Click += label2_Click;
-            // 
-            // label3_umkm
-            // 
-            label3_umkm.AutoSize = true;
-            label3_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label3_umkm.Location = new Point(468, 229);
-            label3_umkm.Name = "label3_umkm";
-            label3_umkm.Size = new Size(94, 22);
-            label3_umkm.TabIndex = 32;
-            label3_umkm.Text = "Deskripsi";
-            // 
-            // label2_umkm
-            // 
-            label2_umkm.AutoSize = true;
-            label2_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label2_umkm.Location = new Point(340, 108);
-            label2_umkm.Name = "label2_umkm";
-            label2_umkm.Size = new Size(122, 22);
-            label2_umkm.TabIndex = 31;
-            label2_umkm.Text = "Nama UMKM";
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox_searchumkm = new System.Windows.Forms.TextBox();
+            this.pu8 = new System.Windows.Forms.Panel();
+            this.t8 = new System.Windows.Forms.Label();
+            this.t8u = new System.Windows.Forms.Label();
+            this.lo8 = new System.Windows.Forms.Label();
+            this.lo8u = new System.Windows.Forms.Label();
+            this.j8 = new System.Windows.Forms.Label();
+            this.j8u = new System.Windows.Forms.Label();
+            this.p8 = new System.Windows.Forms.Label();
+            this.p8u = new System.Windows.Forms.Label();
+            this.d8 = new System.Windows.Forms.Label();
+            this.k8 = new System.Windows.Forms.Label();
+            this.d8u = new System.Windows.Forms.Label();
+            this.n8u = new System.Windows.Forms.Label();
+            this.l10_umkm = new System.Windows.Forms.Label();
+            this.g8umkm = new System.Windows.Forms.PictureBox();
+            this.pu7 = new System.Windows.Forms.Panel();
+            this.t7 = new System.Windows.Forms.Label();
+            this.t7u = new System.Windows.Forms.Label();
+            this.lo7 = new System.Windows.Forms.Label();
+            this.l7u = new System.Windows.Forms.Label();
+            this.j7 = new System.Windows.Forms.Label();
+            this.j7u = new System.Windows.Forms.Label();
+            this.p7 = new System.Windows.Forms.Label();
+            this.p7u = new System.Windows.Forms.Label();
+            this.d7 = new System.Windows.Forms.Label();
+            this.k7 = new System.Windows.Forms.Label();
+            this.d7u = new System.Windows.Forms.Label();
+            this.n7u = new System.Windows.Forms.Label();
+            this.l9_umkm = new System.Windows.Forms.Label();
+            this.g7umkm = new System.Windows.Forms.PictureBox();
+            this.pu6 = new System.Windows.Forms.Panel();
+            this.t6 = new System.Windows.Forms.Label();
+            this.t6u = new System.Windows.Forms.Label();
+            this.lo6 = new System.Windows.Forms.Label();
+            this.lo6u = new System.Windows.Forms.Label();
+            this.j6 = new System.Windows.Forms.Label();
+            this.j6u = new System.Windows.Forms.Label();
+            this.p6 = new System.Windows.Forms.Label();
+            this.p6u = new System.Windows.Forms.Label();
+            this.d6 = new System.Windows.Forms.Label();
+            this.k6 = new System.Windows.Forms.Label();
+            this.d6u = new System.Windows.Forms.Label();
+            this.n6u = new System.Windows.Forms.Label();
+            this.l8_umkm = new System.Windows.Forms.Label();
+            this.g6umkm = new System.Windows.Forms.PictureBox();
+            this.pu5 = new System.Windows.Forms.Panel();
+            this.t5 = new System.Windows.Forms.Label();
+            this.t5u = new System.Windows.Forms.Label();
+            this.lo5 = new System.Windows.Forms.Label();
+            this.lo5u = new System.Windows.Forms.Label();
+            this.j5 = new System.Windows.Forms.Label();
+            this.j5u = new System.Windows.Forms.Label();
+            this.p5 = new System.Windows.Forms.Label();
+            this.p5u = new System.Windows.Forms.Label();
+            this.d5 = new System.Windows.Forms.Label();
+            this.k5 = new System.Windows.Forms.Label();
+            this.d5u = new System.Windows.Forms.Label();
+            this.n5u = new System.Windows.Forms.Label();
+            this.label7_umkm = new System.Windows.Forms.Label();
+            this.g5umkm = new System.Windows.Forms.PictureBox();
+            this.pu4 = new System.Windows.Forms.Panel();
+            this.t4 = new System.Windows.Forms.Label();
+            this.t4umkm = new System.Windows.Forms.Label();
+            this.lo4 = new System.Windows.Forms.Label();
+            this.lo4umkm = new System.Windows.Forms.Label();
+            this.j4 = new System.Windows.Forms.Label();
+            this.j4umkm = new System.Windows.Forms.Label();
+            this.inp4 = new System.Windows.Forms.Label();
+            this.p4umkm = new System.Windows.Forms.Label();
+            this.d4 = new System.Windows.Forms.Label();
+            this.ink4 = new System.Windows.Forms.Label();
+            this.d4umkm = new System.Windows.Forms.Label();
+            this.n4umkm = new System.Windows.Forms.Label();
+            this.label6_umkm = new System.Windows.Forms.Label();
+            this.g4umkm = new System.Windows.Forms.PictureBox();
+            this.pu3 = new System.Windows.Forms.Panel();
+            this.t3 = new System.Windows.Forms.Label();
+            this.n3umkm = new System.Windows.Forms.Label();
+            this.lo3 = new System.Windows.Forms.Label();
+            this.lo3umkm = new System.Windows.Forms.Label();
+            this.j3 = new System.Windows.Forms.Label();
+            this.j3umkm = new System.Windows.Forms.Label();
+            this.inp3 = new System.Windows.Forms.Label();
+            this.p3umkm = new System.Windows.Forms.Label();
+            this.d3 = new System.Windows.Forms.Label();
+            this.ink3 = new System.Windows.Forms.Label();
+            this.d3umkm = new System.Windows.Forms.Label();
+            this.n2umkm = new System.Windows.Forms.Label();
+            this.label4_umkm = new System.Windows.Forms.Label();
+            this.g3umkm = new System.Windows.Forms.PictureBox();
+            this.pu2 = new System.Windows.Forms.Panel();
+            this.t2 = new System.Windows.Forms.Label();
+            this.t2umkm = new System.Windows.Forms.Label();
+            this.lo2 = new System.Windows.Forms.Label();
+            this.lo2umkm = new System.Windows.Forms.Label();
+            this.j2 = new System.Windows.Forms.Label();
+            this.j2umkm = new System.Windows.Forms.Label();
+            this.inp2 = new System.Windows.Forms.Label();
+            this.p2umkm = new System.Windows.Forms.Label();
+            this.d2 = new System.Windows.Forms.Label();
+            this.ink2 = new System.Windows.Forms.Label();
+            this.d2umkm = new System.Windows.Forms.Label();
+            this.numkm = new System.Windows.Forms.Label();
+            this.label5_umkm = new System.Windows.Forms.Label();
+            this.g2umkm = new System.Windows.Forms.PictureBox();
+            this.pu1 = new System.Windows.Forms.Panel();
+            this.t1 = new System.Windows.Forms.Label();
+            this.t1umkm = new System.Windows.Forms.Label();
+            this.lo1 = new System.Windows.Forms.Label();
+            this.lo1umkm = new System.Windows.Forms.Label();
+            this.j1 = new System.Windows.Forms.Label();
+            this.j1umkm = new System.Windows.Forms.Label();
+            this.inp1 = new System.Windows.Forms.Label();
+            this.p1umkm = new System.Windows.Forms.Label();
+            this.d1 = new System.Windows.Forms.Label();
+            this.ink1 = new System.Windows.Forms.Label();
+            this.d1umkm = new System.Windows.Forms.Label();
+            this.label2_umkm = new System.Windows.Forms.Label();
+            this.label1_umkm = new System.Windows.Forms.Label();
+            this.g1umkm = new System.Windows.Forms.PictureBox();
+            this.ldetailumkm = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.pu8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g8umkm)).BeginInit();
+            this.pu7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g7umkm)).BeginInit();
+            this.pu6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g6umkm)).BeginInit();
+            this.pu5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g5umkm)).BeginInit();
+            this.pu4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g4umkm)).BeginInit();
+            this.pu3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g3umkm)).BeginInit();
+            this.pu2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g2umkm)).BeginInit();
+            this.pu1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g1umkm)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.textBox_searchumkm);
+            this.panel1.Controls.Add(this.pu8);
+            this.panel1.Controls.Add(this.pu7);
+            this.panel1.Controls.Add(this.pu6);
+            this.panel1.Controls.Add(this.pu5);
+            this.panel1.Controls.Add(this.pu4);
+            this.panel1.Controls.Add(this.pu3);
+            this.panel1.Controls.Add(this.pu2);
+            this.panel1.Controls.Add(this.pu1);
+            this.panel1.Controls.Add(this.ldetailumkm);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1197, 584);
+            this.panel1.TabIndex = 0;
+            // 
+            // textBox_searchumkm
+            // 
+            this.textBox_searchumkm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox_searchumkm.Location = new System.Drawing.Point(797, 35);
+            this.textBox_searchumkm.Name = "textBox_searchumkm";
+            this.textBox_searchumkm.Size = new System.Drawing.Size(357, 21);
+            this.textBox_searchumkm.TabIndex = 282;
+            this.textBox_searchumkm.TextChanged += new System.EventHandler(this.textBox_searchumkm_TextChanged);
+            // 
+            // pu8
+            // 
+            this.pu8.AutoScroll = true;
+            this.pu8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pu8.Controls.Add(this.t8);
+            this.pu8.Controls.Add(this.t8u);
+            this.pu8.Controls.Add(this.lo8);
+            this.pu8.Controls.Add(this.lo8u);
+            this.pu8.Controls.Add(this.j8);
+            this.pu8.Controls.Add(this.j8u);
+            this.pu8.Controls.Add(this.p8);
+            this.pu8.Controls.Add(this.p8u);
+            this.pu8.Controls.Add(this.d8);
+            this.pu8.Controls.Add(this.k8);
+            this.pu8.Controls.Add(this.d8u);
+            this.pu8.Controls.Add(this.n8u);
+            this.pu8.Controls.Add(this.l10_umkm);
+            this.pu8.Controls.Add(this.g8umkm);
+            this.pu8.Location = new System.Drawing.Point(636, 766);
+            this.pu8.Name = "pu8";
+            this.pu8.Size = new System.Drawing.Size(520, 212);
+            this.pu8.TabIndex = 281;
+            this.pu8.Paint += new System.Windows.Forms.PaintEventHandler(this.pu8_Paint);
+            // 
+            // t8
+            // 
+            this.t8.AutoSize = true;
+            this.t8.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.t8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t8.Location = new System.Drawing.Point(260, 181);
+            this.t8.Name = "t8";
+            this.t8.Size = new System.Drawing.Size(44, 16);
+            this.t8.TabIndex = 271;
+            this.t8.Text = "no telpon";
+            // 
+            // t8u
+            // 
+            this.t8u.AutoSize = true;
+            this.t8u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t8u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t8u.Location = new System.Drawing.Point(246, 150);
+            this.t8u.Name = "t8u";
+            this.t8u.Size = new System.Drawing.Size(94, 22);
+            this.t8u.TabIndex = 270;
+            this.t8u.Text = "No telpon";
+            // 
+            // lo8
+            // 
+            this.lo8.AutoSize = true;
+            this.lo8.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lo8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo8.Location = new System.Drawing.Point(388, 117);
+            this.lo8.Name = "lo8";
+            this.lo8.Size = new System.Drawing.Size(31, 16);
+            this.lo8.TabIndex = 269;
+            this.lo8.Text = "lokasi";
+            // 
+            // lo8u
+            // 
+            this.lo8u.AutoSize = true;
+            this.lo8u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lo8u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo8u.Location = new System.Drawing.Point(374, 86);
+            this.lo8u.Name = "lo8u";
+            this.lo8u.Size = new System.Drawing.Size(129, 22);
+            this.lo8u.TabIndex = 268;
+            this.lo8u.Text = "Lokasi UMKM";
+            // 
+            // j8
+            // 
+            this.j8.AutoSize = true;
+            this.j8.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.j8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j8.Location = new System.Drawing.Point(260, 117);
+            this.j8.Name = "j8";
+            this.j8.Size = new System.Drawing.Size(26, 16);
+            this.j8.TabIndex = 267;
+            this.j8.Text = "jenis";
+            // 
+            // j8u
+            // 
+            this.j8u.AutoSize = true;
+            this.j8u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.j8u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j8u.Location = new System.Drawing.Point(246, 86);
+            this.j8u.Name = "j8u";
+            this.j8u.Size = new System.Drawing.Size(114, 22);
+            this.j8u.TabIndex = 266;
+            this.j8u.Text = "Jenis UMKM";
+            // 
+            // p8
+            // 
+            this.p8.AutoSize = true;
+            this.p8.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.p8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p8.Location = new System.Drawing.Point(388, 60);
+            this.p8.Name = "p8";
+            this.p8.Size = new System.Drawing.Size(62, 16);
+            this.p8.TabIndex = 265;
+            this.p8.Text = "nama pemilik";
+            // 
+            // p8u
+            // 
+            this.p8u.AutoSize = true;
+            this.p8u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p8u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p8u.Location = new System.Drawing.Point(374, 29);
+            this.p8u.Name = "p8u";
+            this.p8u.Size = new System.Drawing.Size(140, 22);
+            this.p8u.TabIndex = 264;
+            this.p8u.Text = "Pemilik UMKM";
+            // 
+            // d8
+            // 
+            this.d8.AutoSize = true;
+            this.d8.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.d8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d8.Location = new System.Drawing.Point(388, 182);
+            this.d8.Name = "d8";
+            this.d8.Size = new System.Drawing.Size(69, 16);
+            this.d8.TabIndex = 263;
+            this.d8.Text = "deskripsi kedai";
+            // 
+            // k8
+            // 
+            this.k8.AutoSize = true;
+            this.k8.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.k8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.k8.Location = new System.Drawing.Point(260, 60);
+            this.k8.Name = "k8";
+            this.k8.Size = new System.Drawing.Size(66, 16);
+            this.k8.TabIndex = 262;
+            this.k8.Text = "Warung Bajak";
+            // 
+            // d8u
+            // 
+            this.d8u.AutoSize = true;
+            this.d8u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.d8u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d8u.Location = new System.Drawing.Point(374, 150);
+            this.d8u.Name = "d8u";
+            this.d8u.Size = new System.Drawing.Size(94, 22);
+            this.d8u.TabIndex = 261;
+            this.d8u.Text = "Deskripsi";
+            // 
+            // n8u
+            // 
+            this.n8u.AutoSize = true;
+            this.n8u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.n8u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.n8u.Location = new System.Drawing.Point(246, 29);
+            this.n8u.Name = "n8u";
+            this.n8u.Size = new System.Drawing.Size(122, 22);
+            this.n8u.TabIndex = 260;
+            this.n8u.Text = "Nama UMKM";
+            // 
+            // l10_umkm
+            // 
+            this.l10_umkm.AutoSize = true;
+            this.l10_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.l10_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.l10_umkm.Location = new System.Drawing.Point(14, 4);
+            this.l10_umkm.Name = "l10_umkm";
+            this.l10_umkm.Size = new System.Drawing.Size(131, 22);
+            this.l10_umkm.TabIndex = 259;
+            this.l10_umkm.Text = "Warung Bajak";
+            // 
+            // g8umkm
+            // 
+            this.g8umkm.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.g8umkm.Location = new System.Drawing.Point(14, 29);
+            this.g8umkm.Name = "g8umkm";
+            this.g8umkm.Size = new System.Drawing.Size(207, 143);
+            this.g8umkm.TabIndex = 258;
+            this.g8umkm.TabStop = false;
+            // 
+            // pu7
+            // 
+            this.pu7.AutoScroll = true;
+            this.pu7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pu7.Controls.Add(this.t7);
+            this.pu7.Controls.Add(this.t7u);
+            this.pu7.Controls.Add(this.lo7);
+            this.pu7.Controls.Add(this.l7u);
+            this.pu7.Controls.Add(this.j7);
+            this.pu7.Controls.Add(this.j7u);
+            this.pu7.Controls.Add(this.p7);
+            this.pu7.Controls.Add(this.p7u);
+            this.pu7.Controls.Add(this.d7);
+            this.pu7.Controls.Add(this.k7);
+            this.pu7.Controls.Add(this.d7u);
+            this.pu7.Controls.Add(this.n7u);
+            this.pu7.Controls.Add(this.l9_umkm);
+            this.pu7.Controls.Add(this.g7umkm);
+            this.pu7.Location = new System.Drawing.Point(85, 766);
+            this.pu7.Name = "pu7";
+            this.pu7.Size = new System.Drawing.Size(520, 212);
+            this.pu7.TabIndex = 280;
+            this.pu7.Paint += new System.Windows.Forms.PaintEventHandler(this.pu7_Paint);
+            // 
+            // t7
+            // 
+            this.t7.AutoSize = true;
+            this.t7.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.t7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t7.Location = new System.Drawing.Point(259, 183);
+            this.t7.Name = "t7";
+            this.t7.Size = new System.Drawing.Size(44, 16);
+            this.t7.TabIndex = 243;
+            this.t7.Text = "no telpon";
+            // 
+            // t7u
+            // 
+            this.t7u.AutoSize = true;
+            this.t7u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t7u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t7u.Location = new System.Drawing.Point(245, 152);
+            this.t7u.Name = "t7u";
+            this.t7u.Size = new System.Drawing.Size(94, 22);
+            this.t7u.TabIndex = 242;
+            this.t7u.Text = "No telpon";
+            // 
+            // lo7
+            // 
+            this.lo7.AutoSize = true;
+            this.lo7.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lo7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo7.Location = new System.Drawing.Point(387, 119);
+            this.lo7.Name = "lo7";
+            this.lo7.Size = new System.Drawing.Size(31, 16);
+            this.lo7.TabIndex = 241;
+            this.lo7.Text = "lokasi";
+            // 
+            // l7u
+            // 
+            this.l7u.AutoSize = true;
+            this.l7u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.l7u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.l7u.Location = new System.Drawing.Point(373, 88);
+            this.l7u.Name = "l7u";
+            this.l7u.Size = new System.Drawing.Size(129, 22);
+            this.l7u.TabIndex = 240;
+            this.l7u.Text = "Lokasi UMKM";
+            // 
+            // j7
+            // 
+            this.j7.AutoSize = true;
+            this.j7.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.j7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j7.Location = new System.Drawing.Point(259, 119);
+            this.j7.Name = "j7";
+            this.j7.Size = new System.Drawing.Size(26, 16);
+            this.j7.TabIndex = 239;
+            this.j7.Text = "jenis";
+            // 
+            // j7u
+            // 
+            this.j7u.AutoSize = true;
+            this.j7u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.j7u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j7u.Location = new System.Drawing.Point(245, 88);
+            this.j7u.Name = "j7u";
+            this.j7u.Size = new System.Drawing.Size(114, 22);
+            this.j7u.TabIndex = 238;
+            this.j7u.Text = "Jenis UMKM";
+            // 
+            // p7
+            // 
+            this.p7.AutoSize = true;
+            this.p7.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.p7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p7.Location = new System.Drawing.Point(387, 62);
+            this.p7.Name = "p7";
+            this.p7.Size = new System.Drawing.Size(62, 16);
+            this.p7.TabIndex = 237;
+            this.p7.Text = "nama pemilik";
+            // 
+            // p7u
+            // 
+            this.p7u.AutoSize = true;
+            this.p7u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p7u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p7u.Location = new System.Drawing.Point(373, 31);
+            this.p7u.Name = "p7u";
+            this.p7u.Size = new System.Drawing.Size(140, 22);
+            this.p7u.TabIndex = 236;
+            this.p7u.Text = "Pemilik UMKM";
+            // 
+            // d7
+            // 
+            this.d7.AutoSize = true;
+            this.d7.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.d7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d7.Location = new System.Drawing.Point(387, 184);
+            this.d7.Name = "d7";
+            this.d7.Size = new System.Drawing.Size(69, 16);
+            this.d7.TabIndex = 235;
+            this.d7.Text = "deskripsi kedai";
+            // 
+            // k7
+            // 
+            this.k7.AutoSize = true;
+            this.k7.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.k7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.k7.Location = new System.Drawing.Point(259, 62);
+            this.k7.Name = "k7";
+            this.k7.Size = new System.Drawing.Size(74, 16);
+            this.k7.TabIndex = 234;
+            this.k7.Text = "Warung Bu Lani";
+            // 
+            // d7u
+            // 
+            this.d7u.AutoSize = true;
+            this.d7u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.d7u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d7u.Location = new System.Drawing.Point(373, 152);
+            this.d7u.Name = "d7u";
+            this.d7u.Size = new System.Drawing.Size(94, 22);
+            this.d7u.TabIndex = 233;
+            this.d7u.Text = "Deskripsi";
+            // 
+            // n7u
+            // 
+            this.n7u.AutoSize = true;
+            this.n7u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.n7u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.n7u.Location = new System.Drawing.Point(245, 31);
+            this.n7u.Name = "n7u";
+            this.n7u.Size = new System.Drawing.Size(122, 22);
+            this.n7u.TabIndex = 232;
+            this.n7u.Text = "Nama UMKM";
+            // 
+            // l9_umkm
+            // 
+            this.l9_umkm.AutoSize = true;
+            this.l9_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.l9_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.l9_umkm.Location = new System.Drawing.Point(13, 6);
+            this.l9_umkm.Name = "l9_umkm";
+            this.l9_umkm.Size = new System.Drawing.Size(146, 22);
+            this.l9_umkm.TabIndex = 231;
+            this.l9_umkm.Text = "Warung Bu Lani";
+            // 
+            // g7umkm
+            // 
+            this.g7umkm.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.g7umkm.Location = new System.Drawing.Point(13, 31);
+            this.g7umkm.Name = "g7umkm";
+            this.g7umkm.Size = new System.Drawing.Size(207, 143);
+            this.g7umkm.TabIndex = 230;
+            this.g7umkm.TabStop = false;
+            // 
+            // pu6
+            // 
+            this.pu6.AutoScroll = true;
+            this.pu6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pu6.Controls.Add(this.t6);
+            this.pu6.Controls.Add(this.t6u);
+            this.pu6.Controls.Add(this.lo6);
+            this.pu6.Controls.Add(this.lo6u);
+            this.pu6.Controls.Add(this.j6);
+            this.pu6.Controls.Add(this.j6u);
+            this.pu6.Controls.Add(this.p6);
+            this.pu6.Controls.Add(this.p6u);
+            this.pu6.Controls.Add(this.d6);
+            this.pu6.Controls.Add(this.k6);
+            this.pu6.Controls.Add(this.d6u);
+            this.pu6.Controls.Add(this.n6u);
+            this.pu6.Controls.Add(this.l8_umkm);
+            this.pu6.Controls.Add(this.g6umkm);
+            this.pu6.Location = new System.Drawing.Point(636, 533);
+            this.pu6.Name = "pu6";
+            this.pu6.Size = new System.Drawing.Size(520, 212);
+            this.pu6.TabIndex = 279;
+            this.pu6.Paint += new System.Windows.Forms.PaintEventHandler(this.pu6_Paint);
+            // 
+            // t6
+            // 
+            this.t6.AutoSize = true;
+            this.t6.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.t6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t6.Location = new System.Drawing.Point(251, 178);
+            this.t6.Name = "t6";
+            this.t6.Size = new System.Drawing.Size(44, 16);
+            this.t6.TabIndex = 257;
+            this.t6.Text = "no telpon";
+            // 
+            // t6u
+            // 
+            this.t6u.AutoSize = true;
+            this.t6u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t6u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t6u.Location = new System.Drawing.Point(237, 147);
+            this.t6u.Name = "t6u";
+            this.t6u.Size = new System.Drawing.Size(94, 22);
+            this.t6u.TabIndex = 256;
+            this.t6u.Text = "No telpon";
+            // 
+            // lo6
+            // 
+            this.lo6.AutoSize = true;
+            this.lo6.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lo6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo6.Location = new System.Drawing.Point(379, 114);
+            this.lo6.Name = "lo6";
+            this.lo6.Size = new System.Drawing.Size(31, 16);
+            this.lo6.TabIndex = 255;
+            this.lo6.Text = "lokasi";
+            // 
+            // lo6u
+            // 
+            this.lo6u.AutoSize = true;
+            this.lo6u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lo6u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo6u.Location = new System.Drawing.Point(365, 83);
+            this.lo6u.Name = "lo6u";
+            this.lo6u.Size = new System.Drawing.Size(129, 22);
+            this.lo6u.TabIndex = 254;
+            this.lo6u.Text = "Lokasi UMKM";
+            // 
+            // j6
+            // 
+            this.j6.AutoSize = true;
+            this.j6.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.j6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j6.Location = new System.Drawing.Point(251, 114);
+            this.j6.Name = "j6";
+            this.j6.Size = new System.Drawing.Size(26, 16);
+            this.j6.TabIndex = 253;
+            this.j6.Text = "jenis";
+            // 
+            // j6u
+            // 
+            this.j6u.AutoSize = true;
+            this.j6u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.j6u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j6u.Location = new System.Drawing.Point(237, 83);
+            this.j6u.Name = "j6u";
+            this.j6u.Size = new System.Drawing.Size(114, 22);
+            this.j6u.TabIndex = 252;
+            this.j6u.Text = "Jenis UMKM";
+            // 
+            // p6
+            // 
+            this.p6.AutoSize = true;
+            this.p6.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.p6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p6.Location = new System.Drawing.Point(379, 57);
+            this.p6.Name = "p6";
+            this.p6.Size = new System.Drawing.Size(62, 16);
+            this.p6.TabIndex = 251;
+            this.p6.Text = "nama pemilik";
+            // 
+            // p6u
+            // 
+            this.p6u.AutoSize = true;
+            this.p6u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p6u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p6u.Location = new System.Drawing.Point(365, 26);
+            this.p6u.Name = "p6u";
+            this.p6u.Size = new System.Drawing.Size(140, 22);
+            this.p6u.TabIndex = 250;
+            this.p6u.Text = "Pemilik UMKM";
+            // 
+            // d6
+            // 
+            this.d6.AutoSize = true;
+            this.d6.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.d6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d6.Location = new System.Drawing.Point(379, 179);
+            this.d6.Name = "d6";
+            this.d6.Size = new System.Drawing.Size(69, 16);
+            this.d6.TabIndex = 249;
+            this.d6.Text = "deskripsi kedai";
+            // 
+            // k6
+            // 
+            this.k6.AutoSize = true;
+            this.k6.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.k6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.k6.Location = new System.Drawing.Point(251, 57);
+            this.k6.Name = "k6";
+            this.k6.Size = new System.Drawing.Size(79, 16);
+            this.k6.TabIndex = 248;
+            this.k6.Text = "Warung Sedekah";
+            // 
+            // d6u
+            // 
+            this.d6u.AutoSize = true;
+            this.d6u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.d6u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d6u.Location = new System.Drawing.Point(365, 147);
+            this.d6u.Name = "d6u";
+            this.d6u.Size = new System.Drawing.Size(94, 22);
+            this.d6u.TabIndex = 247;
+            this.d6u.Text = "Deskripsi";
+            // 
+            // n6u
+            // 
+            this.n6u.AutoSize = true;
+            this.n6u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.n6u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.n6u.Location = new System.Drawing.Point(237, 26);
+            this.n6u.Name = "n6u";
+            this.n6u.Size = new System.Drawing.Size(122, 22);
+            this.n6u.TabIndex = 246;
+            this.n6u.Text = "Nama UMKM";
+            // 
+            // l8_umkm
+            // 
+            this.l8_umkm.AutoSize = true;
+            this.l8_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.l8_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.l8_umkm.Location = new System.Drawing.Point(5, 1);
+            this.l8_umkm.Name = "l8_umkm";
+            this.l8_umkm.Size = new System.Drawing.Size(155, 22);
+            this.l8_umkm.TabIndex = 245;
+            this.l8_umkm.Text = "Warung Sedekah";
+            // 
+            // g6umkm
+            // 
+            this.g6umkm.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.g6umkm.Location = new System.Drawing.Point(5, 26);
+            this.g6umkm.Name = "g6umkm";
+            this.g6umkm.Size = new System.Drawing.Size(207, 143);
+            this.g6umkm.TabIndex = 244;
+            this.g6umkm.TabStop = false;
+            // 
+            // pu5
+            // 
+            this.pu5.AutoScroll = true;
+            this.pu5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pu5.Controls.Add(this.t5);
+            this.pu5.Controls.Add(this.t5u);
+            this.pu5.Controls.Add(this.lo5);
+            this.pu5.Controls.Add(this.lo5u);
+            this.pu5.Controls.Add(this.j5);
+            this.pu5.Controls.Add(this.j5u);
+            this.pu5.Controls.Add(this.p5);
+            this.pu5.Controls.Add(this.p5u);
+            this.pu5.Controls.Add(this.d5);
+            this.pu5.Controls.Add(this.k5);
+            this.pu5.Controls.Add(this.d5u);
+            this.pu5.Controls.Add(this.n5u);
+            this.pu5.Controls.Add(this.label7_umkm);
+            this.pu5.Controls.Add(this.g5umkm);
+            this.pu5.Location = new System.Drawing.Point(85, 531);
+            this.pu5.Name = "pu5";
+            this.pu5.Size = new System.Drawing.Size(520, 212);
+            this.pu5.TabIndex = 278;
+            this.pu5.Paint += new System.Windows.Forms.PaintEventHandler(this.pu5_Paint);
+            // 
+            // t5
+            // 
+            this.t5.AutoSize = true;
+            this.t5.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.t5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t5.Location = new System.Drawing.Point(250, 180);
+            this.t5.Name = "t5";
+            this.t5.Size = new System.Drawing.Size(44, 16);
+            this.t5.TabIndex = 229;
+            this.t5.Text = "no telpon";
+            // 
+            // t5u
+            // 
+            this.t5u.AutoSize = true;
+            this.t5u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t5u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t5u.Location = new System.Drawing.Point(236, 149);
+            this.t5u.Name = "t5u";
+            this.t5u.Size = new System.Drawing.Size(94, 22);
+            this.t5u.TabIndex = 228;
+            this.t5u.Text = "No telpon";
+            // 
+            // lo5
+            // 
+            this.lo5.AutoSize = true;
+            this.lo5.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lo5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo5.Location = new System.Drawing.Point(378, 116);
+            this.lo5.Name = "lo5";
+            this.lo5.Size = new System.Drawing.Size(31, 16);
+            this.lo5.TabIndex = 227;
+            this.lo5.Text = "lokasi";
+            // 
+            // lo5u
+            // 
+            this.lo5u.AutoSize = true;
+            this.lo5u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lo5u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo5u.Location = new System.Drawing.Point(364, 85);
+            this.lo5u.Name = "lo5u";
+            this.lo5u.Size = new System.Drawing.Size(129, 22);
+            this.lo5u.TabIndex = 226;
+            this.lo5u.Text = "Lokasi UMKM";
+            // 
+            // j5
+            // 
+            this.j5.AutoSize = true;
+            this.j5.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.j5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j5.Location = new System.Drawing.Point(250, 116);
+            this.j5.Name = "j5";
+            this.j5.Size = new System.Drawing.Size(26, 16);
+            this.j5.TabIndex = 225;
+            this.j5.Text = "jenis";
+            // 
+            // j5u
+            // 
+            this.j5u.AutoSize = true;
+            this.j5u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.j5u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j5u.Location = new System.Drawing.Point(236, 85);
+            this.j5u.Name = "j5u";
+            this.j5u.Size = new System.Drawing.Size(114, 22);
+            this.j5u.TabIndex = 224;
+            this.j5u.Text = "Jenis UMKM";
+            // 
+            // p5
+            // 
+            this.p5.AutoSize = true;
+            this.p5.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.p5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p5.Location = new System.Drawing.Point(378, 59);
+            this.p5.Name = "p5";
+            this.p5.Size = new System.Drawing.Size(62, 16);
+            this.p5.TabIndex = 223;
+            this.p5.Text = "nama pemilik";
+            // 
+            // p5u
+            // 
+            this.p5u.AutoSize = true;
+            this.p5u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p5u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p5u.Location = new System.Drawing.Point(364, 28);
+            this.p5u.Name = "p5u";
+            this.p5u.Size = new System.Drawing.Size(140, 22);
+            this.p5u.TabIndex = 222;
+            this.p5u.Text = "Pemilik UMKM";
+            // 
+            // d5
+            // 
+            this.d5.AutoSize = true;
+            this.d5.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.d5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d5.Location = new System.Drawing.Point(378, 181);
+            this.d5.Name = "d5";
+            this.d5.Size = new System.Drawing.Size(69, 16);
+            this.d5.TabIndex = 221;
+            this.d5.Text = "deskripsi kedai";
+            // 
+            // k5
+            // 
+            this.k5.AutoSize = true;
+            this.k5.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.k5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.k5.Location = new System.Drawing.Point(250, 59);
+            this.k5.Name = "k5";
+            this.k5.Size = new System.Drawing.Size(77, 16);
+            this.k5.TabIndex = 220;
+            this.k5.Text = "Warung Barokah";
+            // 
+            // d5u
+            // 
+            this.d5u.AutoSize = true;
+            this.d5u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.d5u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d5u.Location = new System.Drawing.Point(364, 149);
+            this.d5u.Name = "d5u";
+            this.d5u.Size = new System.Drawing.Size(94, 22);
+            this.d5u.TabIndex = 219;
+            this.d5u.Text = "Deskripsi";
+            // 
+            // n5u
+            // 
+            this.n5u.AutoSize = true;
+            this.n5u.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.n5u.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.n5u.Location = new System.Drawing.Point(236, 28);
+            this.n5u.Name = "n5u";
+            this.n5u.Size = new System.Drawing.Size(122, 22);
+            this.n5u.TabIndex = 218;
+            this.n5u.Text = "Nama UMKM";
+            // 
+            // label7_umkm
+            // 
+            this.label7_umkm.AutoSize = true;
+            this.label7_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7_umkm.Location = new System.Drawing.Point(4, 3);
+            this.label7_umkm.Name = "label7_umkm";
+            this.label7_umkm.Size = new System.Drawing.Size(156, 22);
+            this.label7_umkm.TabIndex = 217;
+            this.label7_umkm.Text = "Warung Barokah";
+            // 
+            // g5umkm
+            // 
+            this.g5umkm.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.g5umkm.Location = new System.Drawing.Point(4, 28);
+            this.g5umkm.Name = "g5umkm";
+            this.g5umkm.Size = new System.Drawing.Size(207, 143);
+            this.g5umkm.TabIndex = 216;
+            this.g5umkm.TabStop = false;
+            // 
+            // pu4
+            // 
+            this.pu4.AutoScroll = true;
+            this.pu4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pu4.Controls.Add(this.t4);
+            this.pu4.Controls.Add(this.t4umkm);
+            this.pu4.Controls.Add(this.lo4);
+            this.pu4.Controls.Add(this.lo4umkm);
+            this.pu4.Controls.Add(this.j4);
+            this.pu4.Controls.Add(this.j4umkm);
+            this.pu4.Controls.Add(this.inp4);
+            this.pu4.Controls.Add(this.p4umkm);
+            this.pu4.Controls.Add(this.d4);
+            this.pu4.Controls.Add(this.ink4);
+            this.pu4.Controls.Add(this.d4umkm);
+            this.pu4.Controls.Add(this.n4umkm);
+            this.pu4.Controls.Add(this.label6_umkm);
+            this.pu4.Controls.Add(this.g4umkm);
+            this.pu4.Location = new System.Drawing.Point(636, 298);
+            this.pu4.Name = "pu4";
+            this.pu4.Size = new System.Drawing.Size(520, 212);
+            this.pu4.TabIndex = 277;
+            this.pu4.Paint += new System.Windows.Forms.PaintEventHandler(this.pu4_Paint);
+            // 
+            // t4
+            // 
+            this.t4.AutoSize = true;
+            this.t4.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.t4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t4.Location = new System.Drawing.Point(258, 181);
+            this.t4.Name = "t4";
+            this.t4.Size = new System.Drawing.Size(44, 16);
+            this.t4.TabIndex = 215;
+            this.t4.Text = "no telpon";
+            // 
+            // t4umkm
+            // 
+            this.t4umkm.AutoSize = true;
+            this.t4umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t4umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t4umkm.Location = new System.Drawing.Point(244, 150);
+            this.t4umkm.Name = "t4umkm";
+            this.t4umkm.Size = new System.Drawing.Size(94, 22);
+            this.t4umkm.TabIndex = 214;
+            this.t4umkm.Text = "No telpon";
+            // 
+            // lo4
+            // 
+            this.lo4.AutoSize = true;
+            this.lo4.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lo4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo4.Location = new System.Drawing.Point(386, 117);
+            this.lo4.Name = "lo4";
+            this.lo4.Size = new System.Drawing.Size(31, 16);
+            this.lo4.TabIndex = 213;
+            this.lo4.Text = "lokasi";
+            // 
+            // lo4umkm
+            // 
+            this.lo4umkm.AutoSize = true;
+            this.lo4umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lo4umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo4umkm.Location = new System.Drawing.Point(372, 86);
+            this.lo4umkm.Name = "lo4umkm";
+            this.lo4umkm.Size = new System.Drawing.Size(129, 22);
+            this.lo4umkm.TabIndex = 212;
+            this.lo4umkm.Text = "Lokasi UMKM";
+            // 
+            // j4
+            // 
+            this.j4.AutoSize = true;
+            this.j4.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.j4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j4.Location = new System.Drawing.Point(258, 117);
+            this.j4.Name = "j4";
+            this.j4.Size = new System.Drawing.Size(26, 16);
+            this.j4.TabIndex = 211;
+            this.j4.Text = "jenis";
+            // 
+            // j4umkm
+            // 
+            this.j4umkm.AutoSize = true;
+            this.j4umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.j4umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j4umkm.Location = new System.Drawing.Point(244, 86);
+            this.j4umkm.Name = "j4umkm";
+            this.j4umkm.Size = new System.Drawing.Size(114, 22);
+            this.j4umkm.TabIndex = 210;
+            this.j4umkm.Text = "Jenis UMKM";
+            // 
+            // inp4
+            // 
+            this.inp4.AutoSize = true;
+            this.inp4.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inp4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.inp4.Location = new System.Drawing.Point(386, 60);
+            this.inp4.Name = "inp4";
+            this.inp4.Size = new System.Drawing.Size(62, 16);
+            this.inp4.TabIndex = 209;
+            this.inp4.Text = "nama pemilik";
+            // 
+            // p4umkm
+            // 
+            this.p4umkm.AutoSize = true;
+            this.p4umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p4umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p4umkm.Location = new System.Drawing.Point(372, 29);
+            this.p4umkm.Name = "p4umkm";
+            this.p4umkm.Size = new System.Drawing.Size(140, 22);
+            this.p4umkm.TabIndex = 208;
+            this.p4umkm.Text = "Pemilik UMKM";
+            // 
+            // d4
+            // 
+            this.d4.AutoSize = true;
+            this.d4.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.d4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d4.Location = new System.Drawing.Point(386, 182);
+            this.d4.Name = "d4";
+            this.d4.Size = new System.Drawing.Size(69, 16);
+            this.d4.TabIndex = 207;
+            this.d4.Text = "deskripsi kedai";
+            // 
+            // ink4
+            // 
+            this.ink4.AutoSize = true;
+            this.ink4.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ink4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ink4.Location = new System.Drawing.Point(258, 60);
+            this.ink4.Name = "ink4";
+            this.ink4.Size = new System.Drawing.Size(59, 16);
+            this.ink4.TabIndex = 206;
+            this.ink4.Text = "Warung Biru";
+            // 
+            // d4umkm
+            // 
+            this.d4umkm.AutoSize = true;
+            this.d4umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.d4umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d4umkm.Location = new System.Drawing.Point(372, 150);
+            this.d4umkm.Name = "d4umkm";
+            this.d4umkm.Size = new System.Drawing.Size(94, 22);
+            this.d4umkm.TabIndex = 205;
+            this.d4umkm.Text = "Deskripsi";
+            // 
+            // n4umkm
+            // 
+            this.n4umkm.AutoSize = true;
+            this.n4umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.n4umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.n4umkm.Location = new System.Drawing.Point(244, 29);
+            this.n4umkm.Name = "n4umkm";
+            this.n4umkm.Size = new System.Drawing.Size(122, 22);
+            this.n4umkm.TabIndex = 204;
+            this.n4umkm.Text = "Nama UMKM";
             // 
             // label6_umkm
             // 
-            label6_umkm.AutoSize = true;
-            label6_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label6_umkm.Location = new Point(108, 83);
-            label6_umkm.Name = "label6_umkm";
-            label6_umkm.Size = new Size(102, 22);
-            label6_umkm.TabIndex = 30;
-            label6_umkm.Text = "Foto Kedai";
-            // 
-            // label1
-            // 
-            label1.Font = new Font("Cambria", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(354, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(542, 52);
-            label1.TabIndex = 1;
-            label1.Text = "Detail UMKM";
-            label1.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackColor = SystemColors.ActiveBorder;
-            pictureBox4.Location = new Point(660, 108);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(207, 143);
-            pictureBox4.TabIndex = 75;
-            pictureBox4.TabStop = false;
-            // 
-            // label51
-            // 
-            label51.AutoSize = true;
-            label51.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label51.ForeColor = SystemColors.ButtonHighlight;
-            label51.Location = new Point(906, 956);
-            label51.Name = "label51";
-            label51.Size = new Size(44, 16);
-            label51.TabIndex = 158;
-            label51.Text = "no telpon";
-            // 
-            // label52
-            // 
-            label52.AutoSize = true;
-            label52.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label52.ForeColor = SystemColors.ButtonHighlight;
-            label52.Location = new Point(892, 925);
-            label52.Name = "label52";
-            label52.Size = new Size(94, 22);
-            label52.TabIndex = 157;
-            label52.Text = "No telpon";
-            // 
-            // label53
-            // 
-            label53.AutoSize = true;
-            label53.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label53.ForeColor = SystemColors.ButtonHighlight;
-            label53.Location = new Point(1034, 892);
-            label53.Name = "label53";
-            label53.Size = new Size(31, 16);
-            label53.TabIndex = 156;
-            label53.Text = "lokasi";
-            // 
-            // label54
-            // 
-            label54.AutoSize = true;
-            label54.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label54.ForeColor = SystemColors.ButtonHighlight;
-            label54.Location = new Point(1020, 861);
-            label54.Name = "label54";
-            label54.Size = new Size(129, 22);
-            label54.TabIndex = 155;
-            label54.Text = "Lokasi UMKM";
-            // 
-            // label55
-            // 
-            label55.AutoSize = true;
-            label55.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label55.ForeColor = SystemColors.ButtonHighlight;
-            label55.Location = new Point(906, 892);
-            label55.Name = "label55";
-            label55.Size = new Size(26, 16);
-            label55.TabIndex = 154;
-            label55.Text = "jenis";
-            // 
-            // label56
-            // 
-            label56.AutoSize = true;
-            label56.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label56.ForeColor = SystemColors.ButtonHighlight;
-            label56.Location = new Point(892, 861);
-            label56.Name = "label56";
-            label56.Size = new Size(114, 22);
-            label56.TabIndex = 153;
-            label56.Text = "Jenis UMKM";
-            // 
-            // label57
-            // 
-            label57.AutoSize = true;
-            label57.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label57.ForeColor = SystemColors.ButtonHighlight;
-            label57.Location = new Point(1034, 835);
-            label57.Name = "label57";
-            label57.Size = new Size(62, 16);
-            label57.TabIndex = 152;
-            label57.Text = "nama pemilik";
-            // 
-            // label58
-            // 
-            label58.AutoSize = true;
-            label58.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label58.ForeColor = SystemColors.ButtonHighlight;
-            label58.Location = new Point(1020, 804);
-            label58.Name = "label58";
-            label58.Size = new Size(140, 22);
-            label58.TabIndex = 151;
-            label58.Text = "Pemilik UMKM";
-            // 
-            // label59
-            // 
-            label59.AutoSize = true;
-            label59.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label59.ForeColor = SystemColors.ButtonHighlight;
-            label59.Location = new Point(1034, 957);
-            label59.Name = "label59";
-            label59.Size = new Size(69, 16);
-            label59.TabIndex = 150;
-            label59.Text = "deskripsi kedai";
-            // 
-            // label60
-            // 
-            label60.AutoSize = true;
-            label60.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label60.ForeColor = SystemColors.ButtonHighlight;
-            label60.Location = new Point(906, 835);
-            label60.Name = "label60";
-            label60.Size = new Size(55, 16);
-            label60.TabIndex = 149;
-            label60.Text = "nama kedai";
-            // 
-            // label61
-            // 
-            label61.AutoSize = true;
-            label61.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label61.ForeColor = SystemColors.ButtonHighlight;
-            label61.Location = new Point(1020, 925);
-            label61.Name = "label61";
-            label61.Size = new Size(94, 22);
-            label61.TabIndex = 148;
-            label61.Text = "Deskripsi";
-            // 
-            // label62
-            // 
-            label62.AutoSize = true;
-            label62.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label62.ForeColor = SystemColors.ButtonHighlight;
-            label62.Location = new Point(892, 804);
-            label62.Name = "label62";
-            label62.Size = new Size(122, 22);
-            label62.TabIndex = 147;
-            label62.Text = "Nama UMKM";
-            // 
-            // label63
-            // 
-            label63.AutoSize = true;
-            label63.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label63.ForeColor = SystemColors.ButtonHighlight;
-            label63.Location = new Point(660, 779);
-            label63.Name = "label63";
-            label63.Size = new Size(102, 22);
-            label63.TabIndex = 146;
-            label63.Text = "Foto Kedai";
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BackColor = SystemColors.ActiveBorder;
-            pictureBox5.Location = new Point(660, 804);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(207, 143);
-            pictureBox5.TabIndex = 145;
-            pictureBox5.TabStop = false;
-            // 
-            // label64
-            // 
-            label64.AutoSize = true;
-            label64.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label64.ForeColor = SystemColors.ButtonHighlight;
-            label64.Location = new Point(906, 724);
-            label64.Name = "label64";
-            label64.Size = new Size(44, 16);
-            label64.TabIndex = 144;
-            label64.Text = "no telpon";
-            // 
-            // label65
-            // 
-            label65.AutoSize = true;
-            label65.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label65.ForeColor = SystemColors.ButtonHighlight;
-            label65.Location = new Point(892, 693);
-            label65.Name = "label65";
-            label65.Size = new Size(94, 22);
-            label65.TabIndex = 143;
-            label65.Text = "No telpon";
-            // 
-            // label66
-            // 
-            label66.AutoSize = true;
-            label66.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label66.ForeColor = SystemColors.ButtonHighlight;
-            label66.Location = new Point(1034, 660);
-            label66.Name = "label66";
-            label66.Size = new Size(31, 16);
-            label66.TabIndex = 142;
-            label66.Text = "lokasi";
-            // 
-            // label67
-            // 
-            label67.AutoSize = true;
-            label67.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label67.ForeColor = SystemColors.ButtonHighlight;
-            label67.Location = new Point(1020, 629);
-            label67.Name = "label67";
-            label67.Size = new Size(129, 22);
-            label67.TabIndex = 141;
-            label67.Text = "Lokasi UMKM";
-            // 
-            // label68
-            // 
-            label68.AutoSize = true;
-            label68.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label68.ForeColor = SystemColors.ButtonHighlight;
-            label68.Location = new Point(906, 660);
-            label68.Name = "label68";
-            label68.Size = new Size(26, 16);
-            label68.TabIndex = 140;
-            label68.Text = "jenis";
-            // 
-            // label69
-            // 
-            label69.AutoSize = true;
-            label69.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label69.ForeColor = SystemColors.ButtonHighlight;
-            label69.Location = new Point(892, 629);
-            label69.Name = "label69";
-            label69.Size = new Size(114, 22);
-            label69.TabIndex = 139;
-            label69.Text = "Jenis UMKM";
-            // 
-            // label70
-            // 
-            label70.AutoSize = true;
-            label70.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label70.ForeColor = SystemColors.ButtonHighlight;
-            label70.Location = new Point(1034, 603);
-            label70.Name = "label70";
-            label70.Size = new Size(62, 16);
-            label70.TabIndex = 138;
-            label70.Text = "nama pemilik";
-            // 
-            // label71
-            // 
-            label71.AutoSize = true;
-            label71.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label71.ForeColor = SystemColors.ButtonHighlight;
-            label71.Location = new Point(1020, 572);
-            label71.Name = "label71";
-            label71.Size = new Size(140, 22);
-            label71.TabIndex = 137;
-            label71.Text = "Pemilik UMKM";
-            // 
-            // label72
-            // 
-            label72.AutoSize = true;
-            label72.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label72.ForeColor = SystemColors.ButtonHighlight;
-            label72.Location = new Point(1034, 725);
-            label72.Name = "label72";
-            label72.Size = new Size(69, 16);
-            label72.TabIndex = 136;
-            label72.Text = "deskripsi kedai";
-            // 
-            // label73
-            // 
-            label73.AutoSize = true;
-            label73.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label73.ForeColor = SystemColors.ButtonHighlight;
-            label73.Location = new Point(906, 603);
-            label73.Name = "label73";
-            label73.Size = new Size(55, 16);
-            label73.TabIndex = 135;
-            label73.Text = "nama kedai";
-            // 
-            // label74
-            // 
-            label74.AutoSize = true;
-            label74.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label74.ForeColor = SystemColors.ButtonHighlight;
-            label74.Location = new Point(1020, 693);
-            label74.Name = "label74";
-            label74.Size = new Size(94, 22);
-            label74.TabIndex = 134;
-            label74.Text = "Deskripsi";
-            // 
-            // label75
-            // 
-            label75.AutoSize = true;
-            label75.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label75.ForeColor = SystemColors.ButtonHighlight;
-            label75.Location = new Point(892, 572);
-            label75.Name = "label75";
-            label75.Size = new Size(122, 22);
-            label75.TabIndex = 133;
-            label75.Text = "Nama UMKM";
-            // 
-            // label76
-            // 
-            label76.AutoSize = true;
-            label76.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label76.ForeColor = SystemColors.ButtonHighlight;
-            label76.Location = new Point(660, 547);
-            label76.Name = "label76";
-            label76.Size = new Size(102, 22);
-            label76.TabIndex = 132;
-            label76.Text = "Foto Kedai";
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.BackColor = SystemColors.ActiveBorder;
-            pictureBox6.Location = new Point(660, 572);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(207, 143);
-            pictureBox6.TabIndex = 131;
-            pictureBox6.TabStop = false;
-            // 
-            // label77
-            // 
-            label77.AutoSize = true;
-            label77.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label77.ForeColor = SystemColors.ButtonHighlight;
-            label77.Location = new Point(354, 956);
-            label77.Name = "label77";
-            label77.Size = new Size(44, 16);
-            label77.TabIndex = 130;
-            label77.Text = "no telpon";
-            // 
-            // label78
-            // 
-            label78.AutoSize = true;
-            label78.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label78.ForeColor = SystemColors.ButtonHighlight;
-            label78.Location = new Point(340, 925);
-            label78.Name = "label78";
-            label78.Size = new Size(94, 22);
-            label78.TabIndex = 129;
-            label78.Text = "No telpon";
-            // 
-            // label79
-            // 
-            label79.AutoSize = true;
-            label79.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label79.ForeColor = SystemColors.ButtonHighlight;
-            label79.Location = new Point(482, 892);
-            label79.Name = "label79";
-            label79.Size = new Size(31, 16);
-            label79.TabIndex = 128;
-            label79.Text = "lokasi";
-            // 
-            // label80
-            // 
-            label80.AutoSize = true;
-            label80.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label80.ForeColor = SystemColors.ButtonHighlight;
-            label80.Location = new Point(468, 861);
-            label80.Name = "label80";
-            label80.Size = new Size(129, 22);
-            label80.TabIndex = 127;
-            label80.Text = "Lokasi UMKM";
-            // 
-            // label81
-            // 
-            label81.AutoSize = true;
-            label81.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label81.ForeColor = SystemColors.ButtonHighlight;
-            label81.Location = new Point(354, 892);
-            label81.Name = "label81";
-            label81.Size = new Size(26, 16);
-            label81.TabIndex = 126;
-            label81.Text = "jenis";
-            // 
-            // label82
-            // 
-            label82.AutoSize = true;
-            label82.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label82.ForeColor = SystemColors.ButtonHighlight;
-            label82.Location = new Point(340, 861);
-            label82.Name = "label82";
-            label82.Size = new Size(114, 22);
-            label82.TabIndex = 125;
-            label82.Text = "Jenis UMKM";
-            // 
-            // label83
-            // 
-            label83.AutoSize = true;
-            label83.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label83.ForeColor = SystemColors.ButtonHighlight;
-            label83.Location = new Point(482, 835);
-            label83.Name = "label83";
-            label83.Size = new Size(62, 16);
-            label83.TabIndex = 124;
-            label83.Text = "nama pemilik";
-            // 
-            // label84
-            // 
-            label84.AutoSize = true;
-            label84.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label84.ForeColor = SystemColors.ButtonHighlight;
-            label84.Location = new Point(468, 804);
-            label84.Name = "label84";
-            label84.Size = new Size(140, 22);
-            label84.TabIndex = 123;
-            label84.Text = "Pemilik UMKM";
-            // 
-            // label85
-            // 
-            label85.AutoSize = true;
-            label85.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label85.ForeColor = SystemColors.ButtonHighlight;
-            label85.Location = new Point(482, 957);
-            label85.Name = "label85";
-            label85.Size = new Size(69, 16);
-            label85.TabIndex = 122;
-            label85.Text = "deskripsi kedai";
-            // 
-            // label86
-            // 
-            label86.AutoSize = true;
-            label86.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label86.ForeColor = SystemColors.ButtonHighlight;
-            label86.Location = new Point(354, 835);
-            label86.Name = "label86";
-            label86.Size = new Size(55, 16);
-            label86.TabIndex = 121;
-            label86.Text = "nama kedai";
-            // 
-            // label87
-            // 
-            label87.AutoSize = true;
-            label87.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label87.ForeColor = SystemColors.ButtonHighlight;
-            label87.Location = new Point(468, 925);
-            label87.Name = "label87";
-            label87.Size = new Size(94, 22);
-            label87.TabIndex = 120;
-            label87.Text = "Deskripsi";
-            // 
-            // label88
-            // 
-            label88.AutoSize = true;
-            label88.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label88.ForeColor = SystemColors.ButtonHighlight;
-            label88.Location = new Point(340, 804);
-            label88.Name = "label88";
-            label88.Size = new Size(122, 22);
-            label88.TabIndex = 119;
-            label88.Text = "Nama UMKM";
-            // 
-            // label89
-            // 
-            label89.AutoSize = true;
-            label89.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label89.ForeColor = SystemColors.ButtonHighlight;
-            label89.Location = new Point(108, 779);
-            label89.Name = "label89";
-            label89.Size = new Size(102, 22);
-            label89.TabIndex = 118;
-            label89.Text = "Foto Kedai";
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BackColor = SystemColors.ActiveBorder;
-            pictureBox7.Location = new Point(108, 804);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(207, 143);
-            pictureBox7.TabIndex = 117;
-            pictureBox7.TabStop = false;
-            // 
-            // label90
-            // 
-            label90.AutoSize = true;
-            label90.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label90.ForeColor = SystemColors.ButtonHighlight;
-            label90.Location = new Point(354, 724);
-            label90.Name = "label90";
-            label90.Size = new Size(44, 16);
-            label90.TabIndex = 116;
-            label90.Text = "no telpon";
-            // 
-            // label91
-            // 
-            label91.AutoSize = true;
-            label91.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label91.ForeColor = SystemColors.ButtonHighlight;
-            label91.Location = new Point(340, 693);
-            label91.Name = "label91";
-            label91.Size = new Size(94, 22);
-            label91.TabIndex = 115;
-            label91.Text = "No telpon";
-            // 
-            // label92
-            // 
-            label92.AutoSize = true;
-            label92.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label92.ForeColor = SystemColors.ButtonHighlight;
-            label92.Location = new Point(482, 660);
-            label92.Name = "label92";
-            label92.Size = new Size(31, 16);
-            label92.TabIndex = 114;
-            label92.Text = "lokasi";
-            // 
-            // label93
-            // 
-            label93.AutoSize = true;
-            label93.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label93.ForeColor = SystemColors.ButtonHighlight;
-            label93.Location = new Point(468, 629);
-            label93.Name = "label93";
-            label93.Size = new Size(129, 22);
-            label93.TabIndex = 113;
-            label93.Text = "Lokasi UMKM";
-            // 
-            // label94
-            // 
-            label94.AutoSize = true;
-            label94.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label94.ForeColor = SystemColors.ButtonHighlight;
-            label94.Location = new Point(354, 660);
-            label94.Name = "label94";
-            label94.Size = new Size(26, 16);
-            label94.TabIndex = 112;
-            label94.Text = "jenis";
-            // 
-            // label95
-            // 
-            label95.AutoSize = true;
-            label95.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label95.ForeColor = SystemColors.ButtonHighlight;
-            label95.Location = new Point(340, 629);
-            label95.Name = "label95";
-            label95.Size = new Size(114, 22);
-            label95.TabIndex = 111;
-            label95.Text = "Jenis UMKM";
-            // 
-            // label96
-            // 
-            label96.AutoSize = true;
-            label96.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label96.ForeColor = SystemColors.ButtonHighlight;
-            label96.Location = new Point(482, 603);
-            label96.Name = "label96";
-            label96.Size = new Size(62, 16);
-            label96.TabIndex = 110;
-            label96.Text = "nama pemilik";
-            // 
-            // label97
-            // 
-            label97.AutoSize = true;
-            label97.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label97.ForeColor = SystemColors.ButtonHighlight;
-            label97.Location = new Point(468, 572);
-            label97.Name = "label97";
-            label97.Size = new Size(140, 22);
-            label97.TabIndex = 109;
-            label97.Text = "Pemilik UMKM";
-            // 
-            // label98
-            // 
-            label98.AutoSize = true;
-            label98.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label98.ForeColor = SystemColors.ButtonHighlight;
-            label98.Location = new Point(482, 725);
-            label98.Name = "label98";
-            label98.Size = new Size(69, 16);
-            label98.TabIndex = 108;
-            label98.Text = "deskripsi kedai";
-            // 
-            // label99
-            // 
-            label99.AutoSize = true;
-            label99.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label99.ForeColor = SystemColors.ButtonHighlight;
-            label99.Location = new Point(354, 603);
-            label99.Name = "label99";
-            label99.Size = new Size(55, 16);
-            label99.TabIndex = 107;
-            label99.Text = "nama kedai";
-            // 
-            // label100
-            // 
-            label100.AutoSize = true;
-            label100.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label100.ForeColor = SystemColors.ButtonHighlight;
-            label100.Location = new Point(468, 693);
-            label100.Name = "label100";
-            label100.Size = new Size(94, 22);
-            label100.TabIndex = 106;
-            label100.Text = "Deskripsi";
-            // 
-            // label101
-            // 
-            label101.AutoSize = true;
-            label101.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label101.ForeColor = SystemColors.ButtonHighlight;
-            label101.Location = new Point(340, 572);
-            label101.Name = "label101";
-            label101.Size = new Size(122, 22);
-            label101.TabIndex = 105;
-            label101.Text = "Nama UMKM";
-            // 
-            // label102
-            // 
-            label102.AutoSize = true;
-            label102.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label102.ForeColor = SystemColors.ButtonHighlight;
-            label102.Location = new Point(108, 547);
-            label102.Name = "label102";
-            label102.Size = new Size(102, 22);
-            label102.TabIndex = 104;
-            label102.Text = "Foto Kedai";
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BackColor = SystemColors.ActiveBorder;
-            pictureBox8.Location = new Point(108, 572);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(207, 143);
-            pictureBox8.TabIndex = 103;
-            pictureBox8.TabStop = false;
+            this.label6_umkm.AutoSize = true;
+            this.label6_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6_umkm.Location = new System.Drawing.Point(12, 4);
+            this.label6_umkm.Name = "label6_umkm";
+            this.label6_umkm.Size = new System.Drawing.Size(120, 22);
+            this.label6_umkm.TabIndex = 203;
+            this.label6_umkm.Text = "Warung Biru";
+            // 
+            // g4umkm
+            // 
+            this.g4umkm.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.g4umkm.Location = new System.Drawing.Point(12, 29);
+            this.g4umkm.Name = "g4umkm";
+            this.g4umkm.Size = new System.Drawing.Size(207, 143);
+            this.g4umkm.TabIndex = 202;
+            this.g4umkm.TabStop = false;
+            // 
+            // pu3
+            // 
+            this.pu3.AutoScroll = true;
+            this.pu3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pu3.Controls.Add(this.t3);
+            this.pu3.Controls.Add(this.n3umkm);
+            this.pu3.Controls.Add(this.lo3);
+            this.pu3.Controls.Add(this.lo3umkm);
+            this.pu3.Controls.Add(this.j3);
+            this.pu3.Controls.Add(this.j3umkm);
+            this.pu3.Controls.Add(this.inp3);
+            this.pu3.Controls.Add(this.p3umkm);
+            this.pu3.Controls.Add(this.d3);
+            this.pu3.Controls.Add(this.ink3);
+            this.pu3.Controls.Add(this.d3umkm);
+            this.pu3.Controls.Add(this.n2umkm);
+            this.pu3.Controls.Add(this.label4_umkm);
+            this.pu3.Controls.Add(this.g3umkm);
+            this.pu3.Location = new System.Drawing.Point(86, 298);
+            this.pu3.Name = "pu3";
+            this.pu3.Size = new System.Drawing.Size(520, 212);
+            this.pu3.TabIndex = 276;
+            this.pu3.Paint += new System.Windows.Forms.PaintEventHandler(this.pu3_Paint);
+            // 
+            // t3
+            // 
+            this.t3.AutoSize = true;
+            this.t3.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.t3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t3.Location = new System.Drawing.Point(249, 181);
+            this.t3.Name = "t3";
+            this.t3.Size = new System.Drawing.Size(44, 16);
+            this.t3.TabIndex = 187;
+            this.t3.Text = "no telpon";
+            // 
+            // n3umkm
+            // 
+            this.n3umkm.AutoSize = true;
+            this.n3umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.n3umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.n3umkm.Location = new System.Drawing.Point(235, 150);
+            this.n3umkm.Name = "n3umkm";
+            this.n3umkm.Size = new System.Drawing.Size(94, 22);
+            this.n3umkm.TabIndex = 186;
+            this.n3umkm.Text = "No telpon";
+            // 
+            // lo3
+            // 
+            this.lo3.AutoSize = true;
+            this.lo3.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lo3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo3.Location = new System.Drawing.Point(377, 117);
+            this.lo3.Name = "lo3";
+            this.lo3.Size = new System.Drawing.Size(31, 16);
+            this.lo3.TabIndex = 185;
+            this.lo3.Text = "lokasi";
+            // 
+            // lo3umkm
+            // 
+            this.lo3umkm.AutoSize = true;
+            this.lo3umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lo3umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo3umkm.Location = new System.Drawing.Point(363, 86);
+            this.lo3umkm.Name = "lo3umkm";
+            this.lo3umkm.Size = new System.Drawing.Size(129, 22);
+            this.lo3umkm.TabIndex = 184;
+            this.lo3umkm.Text = "Lokasi UMKM";
+            // 
+            // j3
+            // 
+            this.j3.AutoSize = true;
+            this.j3.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.j3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j3.Location = new System.Drawing.Point(249, 117);
+            this.j3.Name = "j3";
+            this.j3.Size = new System.Drawing.Size(26, 16);
+            this.j3.TabIndex = 183;
+            this.j3.Text = "jenis";
+            // 
+            // j3umkm
+            // 
+            this.j3umkm.AutoSize = true;
+            this.j3umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.j3umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j3umkm.Location = new System.Drawing.Point(235, 86);
+            this.j3umkm.Name = "j3umkm";
+            this.j3umkm.Size = new System.Drawing.Size(114, 22);
+            this.j3umkm.TabIndex = 182;
+            this.j3umkm.Text = "Jenis UMKM";
+            // 
+            // inp3
+            // 
+            this.inp3.AutoSize = true;
+            this.inp3.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inp3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.inp3.Location = new System.Drawing.Point(377, 60);
+            this.inp3.Name = "inp3";
+            this.inp3.Size = new System.Drawing.Size(62, 16);
+            this.inp3.TabIndex = 181;
+            this.inp3.Text = "nama pemilik";
+            // 
+            // p3umkm
+            // 
+            this.p3umkm.AutoSize = true;
+            this.p3umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p3umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p3umkm.Location = new System.Drawing.Point(363, 29);
+            this.p3umkm.Name = "p3umkm";
+            this.p3umkm.Size = new System.Drawing.Size(140, 22);
+            this.p3umkm.TabIndex = 180;
+            this.p3umkm.Text = "Pemilik UMKM";
+            // 
+            // d3
+            // 
+            this.d3.AutoSize = true;
+            this.d3.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.d3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d3.Location = new System.Drawing.Point(377, 182);
+            this.d3.Name = "d3";
+            this.d3.Size = new System.Drawing.Size(69, 16);
+            this.d3.TabIndex = 179;
+            this.d3.Text = "deskripsi kedai";
+            // 
+            // ink3
+            // 
+            this.ink3.AutoSize = true;
+            this.ink3.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ink3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ink3.Location = new System.Drawing.Point(249, 60);
+            this.ink3.Name = "ink3";
+            this.ink3.Size = new System.Drawing.Size(69, 16);
+            this.ink3.TabIndex = 178;
+            this.ink3.Text = "Warung Merah";
+            // 
+            // d3umkm
+            // 
+            this.d3umkm.AutoSize = true;
+            this.d3umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.d3umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d3umkm.Location = new System.Drawing.Point(363, 150);
+            this.d3umkm.Name = "d3umkm";
+            this.d3umkm.Size = new System.Drawing.Size(94, 22);
+            this.d3umkm.TabIndex = 177;
+            this.d3umkm.Text = "Deskripsi";
+            // 
+            // n2umkm
+            // 
+            this.n2umkm.AutoSize = true;
+            this.n2umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.n2umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.n2umkm.Location = new System.Drawing.Point(235, 29);
+            this.n2umkm.Name = "n2umkm";
+            this.n2umkm.Size = new System.Drawing.Size(122, 22);
+            this.n2umkm.TabIndex = 176;
+            this.n2umkm.Text = "Nama UMKM";
+            // 
+            // label4_umkm
+            // 
+            this.label4_umkm.AutoSize = true;
+            this.label4_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4_umkm.Location = new System.Drawing.Point(3, 4);
+            this.label4_umkm.Name = "label4_umkm";
+            this.label4_umkm.Size = new System.Drawing.Size(138, 22);
+            this.label4_umkm.TabIndex = 175;
+            this.label4_umkm.Text = "Warung Merah";
+            // 
+            // g3umkm
+            // 
+            this.g3umkm.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.g3umkm.Location = new System.Drawing.Point(3, 29);
+            this.g3umkm.Name = "g3umkm";
+            this.g3umkm.Size = new System.Drawing.Size(207, 143);
+            this.g3umkm.TabIndex = 174;
+            this.g3umkm.TabStop = false;
+            // 
+            // pu2
+            // 
+            this.pu2.AutoScroll = true;
+            this.pu2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pu2.Controls.Add(this.t2);
+            this.pu2.Controls.Add(this.t2umkm);
+            this.pu2.Controls.Add(this.lo2);
+            this.pu2.Controls.Add(this.lo2umkm);
+            this.pu2.Controls.Add(this.j2);
+            this.pu2.Controls.Add(this.j2umkm);
+            this.pu2.Controls.Add(this.inp2);
+            this.pu2.Controls.Add(this.p2umkm);
+            this.pu2.Controls.Add(this.d2);
+            this.pu2.Controls.Add(this.ink2);
+            this.pu2.Controls.Add(this.d2umkm);
+            this.pu2.Controls.Add(this.numkm);
+            this.pu2.Controls.Add(this.label5_umkm);
+            this.pu2.Controls.Add(this.g2umkm);
+            this.pu2.Location = new System.Drawing.Point(641, 67);
+            this.pu2.Name = "pu2";
+            this.pu2.Size = new System.Drawing.Size(520, 212);
+            this.pu2.TabIndex = 275;
+            this.pu2.Paint += new System.Windows.Forms.PaintEventHandler(this.pu2_Paint);
+            // 
+            // t2
+            // 
+            this.t2.AutoSize = true;
+            this.t2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.t2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t2.Location = new System.Drawing.Point(252, 180);
+            this.t2.Name = "t2";
+            this.t2.Size = new System.Drawing.Size(44, 16);
+            this.t2.TabIndex = 201;
+            this.t2.Text = "no telpon";
+            // 
+            // t2umkm
+            // 
+            this.t2umkm.AutoSize = true;
+            this.t2umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t2umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t2umkm.Location = new System.Drawing.Point(238, 149);
+            this.t2umkm.Name = "t2umkm";
+            this.t2umkm.Size = new System.Drawing.Size(94, 22);
+            this.t2umkm.TabIndex = 200;
+            this.t2umkm.Text = "No telpon";
+            // 
+            // lo2
+            // 
+            this.lo2.AutoSize = true;
+            this.lo2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lo2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo2.Location = new System.Drawing.Point(380, 116);
+            this.lo2.Name = "lo2";
+            this.lo2.Size = new System.Drawing.Size(31, 16);
+            this.lo2.TabIndex = 199;
+            this.lo2.Text = "lokasi";
+            // 
+            // lo2umkm
+            // 
+            this.lo2umkm.AutoSize = true;
+            this.lo2umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lo2umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo2umkm.Location = new System.Drawing.Point(366, 85);
+            this.lo2umkm.Name = "lo2umkm";
+            this.lo2umkm.Size = new System.Drawing.Size(129, 22);
+            this.lo2umkm.TabIndex = 198;
+            this.lo2umkm.Text = "Lokasi UMKM";
+            // 
+            // j2
+            // 
+            this.j2.AutoSize = true;
+            this.j2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.j2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j2.Location = new System.Drawing.Point(252, 116);
+            this.j2.Name = "j2";
+            this.j2.Size = new System.Drawing.Size(26, 16);
+            this.j2.TabIndex = 197;
+            this.j2.Text = "jenis";
+            // 
+            // j2umkm
+            // 
+            this.j2umkm.AutoSize = true;
+            this.j2umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.j2umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j2umkm.Location = new System.Drawing.Point(238, 85);
+            this.j2umkm.Name = "j2umkm";
+            this.j2umkm.Size = new System.Drawing.Size(114, 22);
+            this.j2umkm.TabIndex = 196;
+            this.j2umkm.Text = "Jenis UMKM";
+            // 
+            // inp2
+            // 
+            this.inp2.AutoSize = true;
+            this.inp2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inp2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.inp2.Location = new System.Drawing.Point(380, 59);
+            this.inp2.Name = "inp2";
+            this.inp2.Size = new System.Drawing.Size(62, 16);
+            this.inp2.TabIndex = 195;
+            this.inp2.Text = "nama pemilik";
+            // 
+            // p2umkm
+            // 
+            this.p2umkm.AutoSize = true;
+            this.p2umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p2umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p2umkm.Location = new System.Drawing.Point(366, 28);
+            this.p2umkm.Name = "p2umkm";
+            this.p2umkm.Size = new System.Drawing.Size(140, 22);
+            this.p2umkm.TabIndex = 194;
+            this.p2umkm.Text = "Pemilik UMKM";
+            // 
+            // d2
+            // 
+            this.d2.AutoSize = true;
+            this.d2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.d2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d2.Location = new System.Drawing.Point(380, 181);
+            this.d2.Name = "d2";
+            this.d2.Size = new System.Drawing.Size(69, 16);
+            this.d2.TabIndex = 193;
+            this.d2.Text = "deskripsi kedai";
+            // 
+            // ink2
+            // 
+            this.ink2.AutoSize = true;
+            this.ink2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ink2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ink2.Location = new System.Drawing.Point(252, 59);
+            this.ink2.Name = "ink2";
+            this.ink2.Size = new System.Drawing.Size(61, 16);
+            this.ink2.TabIndex = 192;
+            this.ink2.Text = "Warung hijau";
+            this.ink2.Click += new System.EventHandler(this.ink2_Click_1);
+            // 
+            // d2umkm
+            // 
+            this.d2umkm.AutoSize = true;
+            this.d2umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.d2umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d2umkm.Location = new System.Drawing.Point(366, 149);
+            this.d2umkm.Name = "d2umkm";
+            this.d2umkm.Size = new System.Drawing.Size(94, 22);
+            this.d2umkm.TabIndex = 191;
+            this.d2umkm.Text = "Deskripsi";
+            // 
+            // numkm
+            // 
+            this.numkm.AutoSize = true;
+            this.numkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.numkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.numkm.Location = new System.Drawing.Point(238, 28);
+            this.numkm.Name = "numkm";
+            this.numkm.Size = new System.Drawing.Size(122, 22);
+            this.numkm.TabIndex = 190;
+            this.numkm.Text = "Nama UMKM";
+            // 
+            // label5_umkm
+            // 
+            this.label5_umkm.AutoSize = true;
+            this.label5_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5_umkm.Location = new System.Drawing.Point(6, 3);
+            this.label5_umkm.Name = "label5_umkm";
+            this.label5_umkm.Size = new System.Drawing.Size(129, 22);
+            this.label5_umkm.TabIndex = 189;
+            this.label5_umkm.Text = "Warung Hijau";
+            // 
+            // g2umkm
+            // 
+            this.g2umkm.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.g2umkm.Location = new System.Drawing.Point(6, 28);
+            this.g2umkm.Name = "g2umkm";
+            this.g2umkm.Size = new System.Drawing.Size(207, 143);
+            this.g2umkm.TabIndex = 188;
+            this.g2umkm.TabStop = false;
+            // 
+            // pu1
+            // 
+            this.pu1.AutoScroll = true;
+            this.pu1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pu1.Controls.Add(this.t1);
+            this.pu1.Controls.Add(this.t1umkm);
+            this.pu1.Controls.Add(this.lo1);
+            this.pu1.Controls.Add(this.lo1umkm);
+            this.pu1.Controls.Add(this.j1);
+            this.pu1.Controls.Add(this.j1umkm);
+            this.pu1.Controls.Add(this.inp1);
+            this.pu1.Controls.Add(this.p1umkm);
+            this.pu1.Controls.Add(this.d1);
+            this.pu1.Controls.Add(this.ink1);
+            this.pu1.Controls.Add(this.d1umkm);
+            this.pu1.Controls.Add(this.label2_umkm);
+            this.pu1.Controls.Add(this.label1_umkm);
+            this.pu1.Controls.Add(this.g1umkm);
+            this.pu1.Location = new System.Drawing.Point(86, 67);
+            this.pu1.Name = "pu1";
+            this.pu1.Size = new System.Drawing.Size(520, 212);
+            this.pu1.TabIndex = 274;
+            this.pu1.Paint += new System.Windows.Forms.PaintEventHandler(this.pu1_Paint);
+            // 
+            // t1
+            // 
+            this.t1.AutoSize = true;
+            this.t1.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.t1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t1.Location = new System.Drawing.Point(250, 181);
+            this.t1.Name = "t1";
+            this.t1.Size = new System.Drawing.Size(44, 16);
+            this.t1.TabIndex = 173;
+            this.t1.Text = "no telpon";
+            // 
+            // t1umkm
+            // 
+            this.t1umkm.AutoSize = true;
+            this.t1umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.t1umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.t1umkm.Location = new System.Drawing.Point(236, 150);
+            this.t1umkm.Name = "t1umkm";
+            this.t1umkm.Size = new System.Drawing.Size(94, 22);
+            this.t1umkm.TabIndex = 172;
+            this.t1umkm.Text = "No telpon";
+            // 
+            // lo1
+            // 
+            this.lo1.AutoSize = true;
+            this.lo1.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lo1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo1.Location = new System.Drawing.Point(378, 117);
+            this.lo1.Name = "lo1";
+            this.lo1.Size = new System.Drawing.Size(31, 16);
+            this.lo1.TabIndex = 171;
+            this.lo1.Text = "lokasi";
+            // 
+            // lo1umkm
+            // 
+            this.lo1umkm.AutoSize = true;
+            this.lo1umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lo1umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lo1umkm.Location = new System.Drawing.Point(364, 86);
+            this.lo1umkm.Name = "lo1umkm";
+            this.lo1umkm.Size = new System.Drawing.Size(129, 22);
+            this.lo1umkm.TabIndex = 170;
+            this.lo1umkm.Text = "Lokasi UMKM";
+            // 
+            // j1
+            // 
+            this.j1.AutoSize = true;
+            this.j1.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.j1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j1.Location = new System.Drawing.Point(250, 117);
+            this.j1.Name = "j1";
+            this.j1.Size = new System.Drawing.Size(26, 16);
+            this.j1.TabIndex = 169;
+            this.j1.Text = "jenis";
+            // 
+            // j1umkm
+            // 
+            this.j1umkm.AutoSize = true;
+            this.j1umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.j1umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.j1umkm.Location = new System.Drawing.Point(236, 86);
+            this.j1umkm.Name = "j1umkm";
+            this.j1umkm.Size = new System.Drawing.Size(114, 22);
+            this.j1umkm.TabIndex = 168;
+            this.j1umkm.Text = "Jenis UMKM";
+            // 
+            // inp1
+            // 
+            this.inp1.AutoSize = true;
+            this.inp1.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inp1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.inp1.Location = new System.Drawing.Point(378, 60);
+            this.inp1.Name = "inp1";
+            this.inp1.Size = new System.Drawing.Size(62, 16);
+            this.inp1.TabIndex = 167;
+            this.inp1.Text = "nama pemilik";
+            // 
+            // p1umkm
+            // 
+            this.p1umkm.AutoSize = true;
+            this.p1umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.p1umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.p1umkm.Location = new System.Drawing.Point(364, 29);
+            this.p1umkm.Name = "p1umkm";
+            this.p1umkm.Size = new System.Drawing.Size(140, 22);
+            this.p1umkm.TabIndex = 166;
+            this.p1umkm.Text = "Pemilik UMKM";
+            // 
+            // d1
+            // 
+            this.d1.AutoSize = true;
+            this.d1.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.d1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d1.Location = new System.Drawing.Point(378, 182);
+            this.d1.Name = "d1";
+            this.d1.Size = new System.Drawing.Size(69, 16);
+            this.d1.TabIndex = 165;
+            this.d1.Text = "deskripsi kedai";
+            // 
+            // ink1
+            // 
+            this.ink1.AutoSize = true;
+            this.ink1.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ink1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ink1.Location = new System.Drawing.Point(250, 60);
+            this.ink1.Name = "ink1";
+            this.ink1.Size = new System.Drawing.Size(71, 16);
+            this.ink1.TabIndex = 164;
+            this.ink1.Text = "Warung Kuning";
+            this.ink1.Click += new System.EventHandler(this.ink1_Click_1);
+            // 
+            // d1umkm
+            // 
+            this.d1umkm.AutoSize = true;
+            this.d1umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.d1umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.d1umkm.Location = new System.Drawing.Point(364, 150);
+            this.d1umkm.Name = "d1umkm";
+            this.d1umkm.Size = new System.Drawing.Size(94, 22);
+            this.d1umkm.TabIndex = 163;
+            this.d1umkm.Text = "Deskripsi";
+            // 
+            // label2_umkm
+            // 
+            this.label2_umkm.AutoSize = true;
+            this.label2_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2_umkm.Location = new System.Drawing.Point(236, 29);
+            this.label2_umkm.Name = "label2_umkm";
+            this.label2_umkm.Size = new System.Drawing.Size(122, 22);
+            this.label2_umkm.TabIndex = 162;
+            this.label2_umkm.Text = "Nama UMKM";
+            // 
+            // label1_umkm
+            // 
+            this.label1_umkm.AutoSize = true;
+            this.label1_umkm.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1_umkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1_umkm.Location = new System.Drawing.Point(4, 4);
+            this.label1_umkm.Name = "label1_umkm";
+            this.label1_umkm.Size = new System.Drawing.Size(142, 22);
+            this.label1_umkm.TabIndex = 161;
+            this.label1_umkm.Text = "Warung kuning";
+            this.label1_umkm.Click += new System.EventHandler(this.label1_umkm_Click_1);
+            // 
+            // g1umkm
+            // 
+            this.g1umkm.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.g1umkm.Location = new System.Drawing.Point(4, 29);
+            this.g1umkm.Name = "g1umkm";
+            this.g1umkm.Size = new System.Drawing.Size(207, 143);
+            this.g1umkm.TabIndex = 159;
+            this.g1umkm.TabStop = false;
+            // 
+            // ldetailumkm
+            // 
+            this.ldetailumkm.Font = new System.Drawing.Font("Cambria", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ldetailumkm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ldetailumkm.Location = new System.Drawing.Point(335, 4);
+            this.ldetailumkm.Name = "ldetailumkm";
+            this.ldetailumkm.Size = new System.Drawing.Size(542, 52);
+            this.ldetailumkm.TabIndex = 160;
+            this.ldetailumkm.Text = "Detail UMKM";
+            this.ldetailumkm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // detail_umkm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoScroll = true;
-            BackColor = Color.DarkViolet;
-            ClientSize = new Size(1197, 552);
-            Controls.Add(label51);
-            Controls.Add(label52);
-            Controls.Add(label53);
-            Controls.Add(label54);
-            Controls.Add(label55);
-            Controls.Add(label56);
-            Controls.Add(label57);
-            Controls.Add(label58);
-            Controls.Add(label59);
-            Controls.Add(label60);
-            Controls.Add(label61);
-            Controls.Add(label62);
-            Controls.Add(label63);
-            Controls.Add(pictureBox5);
-            Controls.Add(label64);
-            Controls.Add(label65);
-            Controls.Add(label66);
-            Controls.Add(label67);
-            Controls.Add(label68);
-            Controls.Add(label69);
-            Controls.Add(label70);
-            Controls.Add(label71);
-            Controls.Add(label72);
-            Controls.Add(label73);
-            Controls.Add(label74);
-            Controls.Add(label75);
-            Controls.Add(label76);
-            Controls.Add(pictureBox6);
-            Controls.Add(label77);
-            Controls.Add(label78);
-            Controls.Add(label79);
-            Controls.Add(label80);
-            Controls.Add(label81);
-            Controls.Add(label82);
-            Controls.Add(label83);
-            Controls.Add(label84);
-            Controls.Add(label85);
-            Controls.Add(label86);
-            Controls.Add(label87);
-            Controls.Add(label88);
-            Controls.Add(label89);
-            Controls.Add(pictureBox7);
-            Controls.Add(label90);
-            Controls.Add(label91);
-            Controls.Add(label92);
-            Controls.Add(label93);
-            Controls.Add(label94);
-            Controls.Add(label95);
-            Controls.Add(label96);
-            Controls.Add(label97);
-            Controls.Add(label98);
-            Controls.Add(label99);
-            Controls.Add(label100);
-            Controls.Add(label101);
-            Controls.Add(label102);
-            Controls.Add(pictureBox8);
-            Controls.Add(label17);
-            Controls.Add(label18);
-            Controls.Add(label27);
-            Controls.Add(label28);
-            Controls.Add(label29);
-            Controls.Add(label30);
-            Controls.Add(label31);
-            Controls.Add(label32);
-            Controls.Add(label33);
-            Controls.Add(label34);
-            Controls.Add(label35);
-            Controls.Add(label36);
-            Controls.Add(label37);
-            Controls.Add(pictureBox3);
-            Controls.Add(label38);
-            Controls.Add(label39);
-            Controls.Add(label40);
-            Controls.Add(label41);
-            Controls.Add(label42);
-            Controls.Add(label43);
-            Controls.Add(label44);
-            Controls.Add(label45);
-            Controls.Add(label46);
-            Controls.Add(label47);
-            Controls.Add(label48);
-            Controls.Add(label49);
-            Controls.Add(label50);
-            Controls.Add(pictureBox4);
-            Controls.Add(label4);
-            Controls.Add(label5);
-            Controls.Add(label6);
-            Controls.Add(label7);
-            Controls.Add(label8);
-            Controls.Add(label9);
-            Controls.Add(label10);
-            Controls.Add(label11);
-            Controls.Add(label12);
-            Controls.Add(label13);
-            Controls.Add(label14);
-            Controls.Add(label15);
-            Controls.Add(label16);
-            Controls.Add(pictureBox2);
-            Controls.Add(label25);
-            Controls.Add(label26);
-            Controls.Add(label23);
-            Controls.Add(label24);
-            Controls.Add(label21);
-            Controls.Add(label22);
-            Controls.Add(label19);
-            Controls.Add(label20);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label3_umkm);
-            Controls.Add(label2_umkm);
-            Controls.Add(label6_umkm);
-            Controls.Add(label1);
-            Controls.Add(pictureBox1);
-            Name = "detail_umkm";
-            Text = "Form1";
-            Load += Second_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.DarkViolet;
+            this.ClientSize = new System.Drawing.Size(1197, 584);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "detail_umkm";
+            this.Text = "Form1";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.pu8.ResumeLayout(false);
+            this.pu8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g8umkm)).EndInit();
+            this.pu7.ResumeLayout(false);
+            this.pu7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g7umkm)).EndInit();
+            this.pu6.ResumeLayout(false);
+            this.pu6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g6umkm)).EndInit();
+            this.pu5.ResumeLayout(false);
+            this.pu5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g5umkm)).EndInit();
+            this.pu4.ResumeLayout(false);
+            this.pu4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g4umkm)).EndInit();
+            this.pu3.ResumeLayout(false);
+            this.pu3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g3umkm)).EndInit();
+            this.pu2.ResumeLayout(false);
+            this.pu2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g2umkm)).EndInit();
+            this.pu1.ResumeLayout(false);
+            this.pu1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.g1umkm)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private Label label50;
-        private Label label49;
-        private Label label48;
-        private Label label47;
-        private Label label46;
-        private Label label45;
-        private Label label44;
-        private Label label43;
-        private Label label42;
-        private Label label41;
-        private Label label40;
-        private Label label39;
-        private Label label38;
-        private PictureBox pictureBox3;
-        private Label label37;
-        private Label label36;
-        private Label label35;
-        private Label label34;
-        private Label label33;
-        private Label label32;
-        private Label label31;
-        private Label label30;
-        private Label label29;
-        private Label label28;
-        private Label label27;
-        private Label label18;
-        private Label label17;
-        private PictureBox pictureBox2;
-        private Label label16;
-        private Label label15;
-        private Label label14;
-        private Label label13;
-        private Label label12;
-        private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label26;
-        private Label label25;
-        private Label label24;
-        private Label label23;
-        private Label label22;
-        private Label label21;
-        private Label label20;
-        private Label label19;
-        private Label label3;
-        private Label label2;
-        private Label label3_umkm;
-        private Label label2_umkm;
+        private Panel panel1;
+        private Label t8;
+        private Label t8u;
+        private Label lo8;
+        private Label lo8u;
+        private Label j8;
+        private Label j8u;
+        private Label p8;
+        private Label p8u;
+        private Label d8;
+        private Label k8;
+        private Label d8u;
+        private Label n8u;
+        private Label l10_umkm;
+        private PictureBox g8umkm;
+        private Label t6;
+        private Label t6u;
+        private Label lo6;
+        private Label lo6u;
+        private Label j6;
+        private Label j6u;
+        private Label p6;
+        private Label p6u;
+        private Label d6;
+        private Label k6;
+        private Label d6u;
+        private Label n6u;
+        private Label l8_umkm;
+        private PictureBox g6umkm;
+        private Label t7;
+        private Label t7u;
+        private Label lo7;
+        private Label l7u;
+        private Label j7;
+        private Label j7u;
+        private Label p7;
+        private Label p7u;
+        private Label d7;
+        private Label k7;
+        private Label d7u;
+        private Label n7u;
+        private Label l9_umkm;
+        private PictureBox g7umkm;
+        private Label t5;
+        private Label t5u;
+        private Label lo5;
+        private Label lo5u;
+        private Label j5;
+        private Label j5u;
+        private Label p5;
+        private Label p5u;
+        private Label d5;
+        private Label k5;
+        private Label d5u;
+        private Label n5u;
+        private Label label7_umkm;
+        private PictureBox g5umkm;
+        private Label t4;
+        private Label t4umkm;
+        private Label lo4;
+        private Label lo4umkm;
+        private Label j4;
+        private Label j4umkm;
+        private Label inp4;
+        private Label p4umkm;
+        private Label d4;
+        private Label ink4;
+        private Label d4umkm;
+        private Label n4umkm;
         private Label label6_umkm;
-        private Label label1;
-        private PictureBox pictureBox4;
-        private Label label51;
-        private Label label52;
-        private Label label53;
-        private Label label54;
-        private Label label55;
-        private Label label56;
-        private Label label57;
-        private Label label58;
-        private Label label59;
-        private Label label60;
-        private Label label61;
-        private Label label62;
-        private Label label63;
-        private PictureBox pictureBox5;
-        private Label label64;
-        private Label label65;
-        private Label label66;
-        private Label label67;
-        private Label label68;
-        private Label label69;
-        private Label label70;
-        private Label label71;
-        private Label label72;
-        private Label label73;
-        private Label label74;
-        private Label label75;
-        private Label label76;
-        private PictureBox pictureBox6;
-        private Label label77;
-        private Label label78;
-        private Label label79;
-        private Label label80;
-        private Label label81;
-        private Label label82;
-        private Label label83;
-        private Label label84;
-        private Label label85;
-        private Label label86;
-        private Label label87;
-        private Label label88;
-        private Label label89;
-        private PictureBox pictureBox7;
-        private Label label90;
-        private Label label91;
-        private Label label92;
-        private Label label93;
-        private Label label94;
-        private Label label95;
-        private Label label96;
-        private Label label97;
-        private Label label98;
-        private Label label99;
-        private Label label100;
-        private Label label101;
-        private Label label102;
-        private PictureBox pictureBox8;
+        private PictureBox g4umkm;
+        private Label t2;
+        private Label t2umkm;
+        private Label lo2;
+        private Label lo2umkm;
+        private Label j2;
+        private Label j2umkm;
+        private Label inp2;
+        private Label p2umkm;
+        private Label d2;
+        private Label ink2;
+        private Label d2umkm;
+        private Label numkm;
+        private Label label5_umkm;
+        private PictureBox g2umkm;
+        private Label t3;
+        private Label n3umkm;
+        private Label lo3;
+        private Label lo3umkm;
+        private Label j3;
+        private Label j3umkm;
+        private Label inp3;
+        private Label p3umkm;
+        private Label d3;
+        private Label ink3;
+        private Label d3umkm;
+        private Label n2umkm;
+        private Label label4_umkm;
+        private PictureBox g3umkm;
+        private Label p1umkm;
+        private Label ldetailumkm;
+        private Panel pu7;
+        private Panel pu6;
+        private Panel pu5;
+        private Panel pu4;
+        private Panel pu3;
+        private Panel pu2;
+        private Panel pu1;
+        private Label t1;
+        private Label t1umkm;
+        private Label lo1;
+        private Label lo1umkm;
+        private Label j1;
+        private Label j1umkm;
+        private Label inp1;
+        private Label d1;
+        private Label ink1;
+        private Label d1umkm;
+        private Label label2_umkm;
+        private Label label1_umkm;
+        private PictureBox g1umkm;
+        private Panel pu8;
+        private TextBox textBox_searchumkm;
     }
 }

@@ -25,24 +25,30 @@ namespace CUD_DataTiket
         public static DataTable BacaTiket()
         {
             konek koneksidb = new konek();
-            DataTable dt = koneksidb.Eksekusi("select * from public.tiket");
+            DataTable dt = koneksidb.Eksekusi("select * from public.tiket \n Order By id_tiket");
 
             return dt;
         }
 
-        public static void UpdateTiket(string nama, int harga, string desc, int idtiket, int idtiketq )
+        public static void UpdateTiket(string nama, string desc, int harga, int idtiket)
         {
             konek koneksidb = new konek();
-            string update = $"update public.tiket set nama = '{nama}', harga = '{harga}', deskripsi = '{desc}', id_tiket = {idtiket} \nwhere idtiket={idtiketq};";
+            string update = $"UPDATE public.tiket SET nama_tiket = '{nama}', deskripsi_tiket = '{desc}', harga_tiket = '{harga}' WHERE id_tiket = {idtiket}";
             koneksidb.Eksekusi(update);
         }
+
         public class konek
         {
-
+            public NpgsqlConnection connection;
+            public konek()
+            {
+                NpgsqlConnection connection = new NpgsqlConnection();
+                connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = 09102022;Database=Tugas PBO";
+            }
             public DataTable Eksekusi(string sql)
             {
                 NpgsqlConnection connection = new NpgsqlConnection();
-                connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = 09102022;Database=Projek Tiketing";
+                connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = 09102022;Database=Tugas PBO";
                 DataTable dt = new DataTable();
                 try
                 {

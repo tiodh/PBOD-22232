@@ -28,162 +28,228 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            components = new System.ComponentModel.Container();
+            headerumkm1 = new Label();
+            umkm1 = new PictureBox();
+            umkm2 = new PictureBox();
+            umkm3 = new PictureBox();
+            umkm4 = new PictureBox();
+            umkm8 = new PictureBox();
+            umkm7 = new PictureBox();
+            umkm6 = new PictureBox();
+            umkm5 = new PictureBox();
+            bdetailumkm = new Button();
+            sidebar = new Panel();
+            Carib = new Button();
+            opsiumkmk = new ComboBox();
+            menub = new RadioButton();
+            sidebartimer = new System.Windows.Forms.Timer(components);
+            ((System.ComponentModel.ISupportInitialize)umkm1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)umkm2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)umkm3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)umkm4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)umkm8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)umkm7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)umkm6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)umkm5).BeginInit();
+            sidebar.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // headerumkm1
             // 
-            label1.Font = new Font("Cambria", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(301, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(542, 52);
-            label1.TabIndex = 2;
-            label1.Text = "Jenis-Jenis UMKM";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            headerumkm1.Font = new Font("Cambria", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            headerumkm1.ForeColor = SystemColors.ButtonHighlight;
+            headerumkm1.Location = new Point(301, 9);
+            headerumkm1.Name = "headerumkm1";
+            headerumkm1.Size = new Size(542, 52);
+            headerumkm1.TabIndex = 2;
+            headerumkm1.Text = "Jenis-Jenis UMKM";
+            headerumkm1.TextAlign = ContentAlignment.TopCenter;
             // 
-            // pictureBox1
+            // umkm1
             // 
-            pictureBox1.BackColor = SystemColors.ActiveBorder;
-            pictureBox1.Location = new Point(72, 106);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(207, 143);
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
+            umkm1.BackColor = SystemColors.ActiveBorder;
+            umkm1.Location = new Point(252, 106);
+            umkm1.Name = "umkm1";
+            umkm1.Size = new Size(207, 143);
+            umkm1.TabIndex = 3;
+            umkm1.TabStop = false;
+            umkm1.Click += umkm1_Click;
             // 
-            // pictureBox2
+            // umkm2
             // 
-            pictureBox2.BackColor = SystemColors.ActiveBorder;
-            pictureBox2.Location = new Point(347, 106);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(207, 143);
-            pictureBox2.TabIndex = 4;
-            pictureBox2.TabStop = false;
+            umkm2.BackColor = SystemColors.ActiveBorder;
+            umkm2.Location = new Point(536, 106);
+            umkm2.Name = "umkm2";
+            umkm2.Size = new Size(207, 143);
+            umkm2.TabIndex = 4;
+            umkm2.TabStop = false;
+            umkm2.Click += umkm2_Click;
             // 
-            // pictureBox3
+            // umkm3
             // 
-            pictureBox3.BackColor = SystemColors.ActiveBorder;
-            pictureBox3.Location = new Point(624, 106);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(207, 143);
-            pictureBox3.TabIndex = 5;
-            pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
+            umkm3.BackColor = SystemColors.ActiveBorder;
+            umkm3.Location = new Point(813, 106);
+            umkm3.Name = "umkm3";
+            umkm3.Size = new Size(207, 143);
+            umkm3.TabIndex = 5;
+            umkm3.TabStop = false;
+            umkm3.Click += pictureBox3_Click;
             // 
-            // pictureBox4
+            // umkm4
             // 
-            pictureBox4.BackColor = SystemColors.ActiveBorder;
-            pictureBox4.Location = new Point(911, 106);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(207, 143);
-            pictureBox4.TabIndex = 6;
-            pictureBox4.TabStop = false;
+            umkm4.BackColor = SystemColors.ActiveBorder;
+            umkm4.Location = new Point(1100, 106);
+            umkm4.Name = "umkm4";
+            umkm4.Size = new Size(207, 143);
+            umkm4.TabIndex = 6;
+            umkm4.TabStop = false;
+            umkm4.Click += pictureBox4_Click;
             // 
-            // pictureBox5
+            // umkm8
             // 
-            pictureBox5.BackColor = SystemColors.ActiveBorder;
-            pictureBox5.Location = new Point(911, 333);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(207, 143);
-            pictureBox5.TabIndex = 10;
-            pictureBox5.TabStop = false;
+            umkm8.BackColor = SystemColors.ActiveBorder;
+            umkm8.Location = new Point(1100, 333);
+            umkm8.Name = "umkm8";
+            umkm8.Size = new Size(207, 143);
+            umkm8.TabIndex = 10;
+            umkm8.TabStop = false;
             // 
-            // pictureBox6
+            // umkm7
             // 
-            pictureBox6.BackColor = SystemColors.ActiveBorder;
-            pictureBox6.Location = new Point(624, 333);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(207, 143);
-            pictureBox6.TabIndex = 9;
-            pictureBox6.TabStop = false;
+            umkm7.BackColor = SystemColors.ActiveBorder;
+            umkm7.Location = new Point(813, 333);
+            umkm7.Name = "umkm7";
+            umkm7.Size = new Size(207, 143);
+            umkm7.TabIndex = 9;
+            umkm7.TabStop = false;
             // 
-            // pictureBox7
+            // umkm6
             // 
-            pictureBox7.BackColor = SystemColors.ActiveBorder;
-            pictureBox7.Location = new Point(347, 333);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(207, 143);
-            pictureBox7.TabIndex = 8;
-            pictureBox7.TabStop = false;
+            umkm6.BackColor = SystemColors.ActiveBorder;
+            umkm6.Location = new Point(536, 333);
+            umkm6.Name = "umkm6";
+            umkm6.Size = new Size(207, 143);
+            umkm6.TabIndex = 8;
+            umkm6.TabStop = false;
             // 
-            // pictureBox8
+            // umkm5
             // 
-            pictureBox8.BackColor = SystemColors.ActiveBorder;
-            pictureBox8.Location = new Point(72, 333);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(207, 143);
-            pictureBox8.TabIndex = 7;
-            pictureBox8.TabStop = false;
+            umkm5.BackColor = SystemColors.ActiveBorder;
+            umkm5.Location = new Point(252, 333);
+            umkm5.Name = "umkm5";
+            umkm5.Size = new Size(207, 143);
+            umkm5.TabIndex = 7;
+            umkm5.TabStop = false;
             // 
-            // button1
+            // bdetailumkm
             // 
-            button1.Location = new Point(1088, 505);
-            button1.Name = "button1";
-            button1.Size = new Size(97, 35);
-            button1.TabIndex = 11;
-            button1.Text = "Detail Umkm";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            bdetailumkm.BackColor = SystemColors.ButtonHighlight;
+            bdetailumkm.Location = new Point(12, 208);
+            bdetailumkm.Name = "bdetailumkm";
+            bdetailumkm.Size = new Size(97, 29);
+            bdetailumkm.TabIndex = 11;
+            bdetailumkm.Text = "Detail Umkm";
+            bdetailumkm.UseVisualStyleBackColor = false;
+            bdetailumkm.Click += button1_Click;
+            // 
+            // sidebar
+            // 
+            sidebar.BackColor = SystemColors.ActiveCaptionText;
+            sidebar.Controls.Add(Carib);
+            sidebar.Controls.Add(opsiumkmk);
+            sidebar.Controls.Add(menub);
+            sidebar.Controls.Add(bdetailumkm);
+            sidebar.Dock = DockStyle.Left;
+            sidebar.Location = new Point(0, 0);
+            sidebar.Name = "sidebar";
+            sidebar.Size = new Size(190, 552);
+            sidebar.TabIndex = 12;
+            sidebar.Paint += sidebar_Paint;
+            // 
+            // Carib
+            // 
+            Carib.Location = new Point(12, 136);
+            Carib.Name = "Carib";
+            Carib.Size = new Size(75, 23);
+            Carib.TabIndex = 14;
+            Carib.Text = "Cari UMKM";
+            Carib.UseVisualStyleBackColor = true;
+            // 
+            // opsiumkmk
+            // 
+            opsiumkmk.FormattingEnabled = true;
+            opsiumkmk.Location = new Point(12, 106);
+            opsiumkmk.Name = "opsiumkmk";
+            opsiumkmk.Size = new Size(175, 24);
+            opsiumkmk.TabIndex = 13;
+            // 
+            // menub
+            // 
+            menub.AutoSize = true;
+            menub.ForeColor = SystemColors.ButtonHighlight;
+            menub.Location = new Point(12, 25);
+            menub.Name = "menub";
+            menub.Size = new Size(49, 20);
+            menub.TabIndex = 12;
+            menub.TabStop = true;
+            menub.Text = "Menu";
+            menub.UseVisualStyleBackColor = true;
+            // 
+            // sidebartimer
+            // 
+            sidebartimer.Tick += sidebartick;
             // 
             // jenis_umkm
             // 
             AutoScaleDimensions = new SizeF(6F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.DarkViolet;
             ClientSize = new Size(1197, 552);
-            Controls.Add(button1);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox7);
-            Controls.Add(pictureBox8);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Controls.Add(label1);
+            Controls.Add(sidebar);
+            Controls.Add(umkm8);
+            Controls.Add(umkm7);
+            Controls.Add(umkm6);
+            Controls.Add(umkm5);
+            Controls.Add(umkm4);
+            Controls.Add(umkm3);
+            Controls.Add(umkm2);
+            Controls.Add(umkm1);
+            Controls.Add(headerumkm1);
             Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "jenis_umkm";
             Text = "Form2";
             Load += first_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)umkm1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)umkm2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)umkm3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)umkm4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)umkm8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)umkm7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)umkm6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)umkm5).EndInit();
+            sidebar.ResumeLayout(false);
+            sidebar.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Label label1;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
-        private Button button1;
+        private Label headerumkm1;
+        private PictureBox umkm1;
+        private PictureBox umkm2;
+        private PictureBox umkm3;
+        private PictureBox umkm4;
+        private PictureBox umkm8;
+        private PictureBox umkm7;
+        private PictureBox umkm6;
+        private PictureBox umkm5;
+        private Button bdetailumkm;
+        private Button Carib;
+        private ComboBox opsiumkmk;
+        private RadioButton menub;
+        private System.Windows.Forms.Timer sidebartimer;
+        private Panel sidebar;
     }
 }

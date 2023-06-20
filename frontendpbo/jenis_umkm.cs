@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace tampil_data_umkm
 {
+
     public partial class jenis_umkm : Form
     {
+        bool sidebarExpand;
         public jenis_umkm()
         {
             InitializeComponent();
@@ -33,6 +35,41 @@ namespace tampil_data_umkm
             detail_umkm secondForm = new detail_umkm();
             secondForm.Show();
 
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void umkm1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void umkm2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sidebartick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sidebar_Paint(object sender, PaintEventArgs e)
+        {
+           
         }
     }
 }
