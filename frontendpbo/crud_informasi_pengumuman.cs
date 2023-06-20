@@ -298,9 +298,9 @@ namespace frontendpbo
         }
     }
 
-    class read
+    class Readed
     {
-        static public DataTable contohSelect()
+        static public DataTable ContohSelect()
         {
             NpgsqlConnection connection = new NpgsqlConnection();
             string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Informasi Pengumuman;";

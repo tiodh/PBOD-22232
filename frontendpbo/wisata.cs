@@ -16,8 +16,8 @@ namespace frontendpbo
     public partial class wisata : Form
     {
         ContextWisata contextWisata;
-        private List<Wisata> listWisata; // Daftar semua data wisata
-        private List<Wisata> searchResults; // Daftar hasil pencarian
+        private List<Wisata> listWisata;
+        private List<Wisata> searchResults;
         public wisata()
         {
             InitializeComponent();
@@ -31,6 +31,13 @@ namespace frontendpbo
         {
             contextWisata.Read();
             datagridcrudwisata1.DataSource = contextWisata.listWisata;
+        }
+
+        private void Clear()
+        {
+            textBox1_Nama_Wisata.Text = "";
+            textBox2_Deskripsi_Wisata.Text = "";
+            textBox3_Lokasi_Wisata.Text = "";
         }
 
         public Models.Wisata GetWisata()
@@ -74,6 +81,7 @@ namespace frontendpbo
             contextWisata.Insert(wisatas);
             datagridcrudwisata1.DataSource = null;
             ReadData();
+            Clear();
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
