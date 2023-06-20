@@ -73,7 +73,9 @@ namespace frontendpbo
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            pictureBox1.Location = new System.Drawing.Point(
+                30,
+                (panel3.Height - pictureBox1.Height) / 2);
             int taskbarHeight = Screen.PrimaryScreen.Bounds.Height - Screen.PrimaryScreen.WorkingArea.Height;
             this.Height -= taskbarHeight;
         }
@@ -116,7 +118,8 @@ namespace frontendpbo
 
         private void button6_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3());
+            Form2 form = new Form2();
+            form.ShowDialog();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -145,6 +148,12 @@ namespace frontendpbo
         {
             Form2 form = new Form2();
             form.Show();
+        }
+
+        private void Login_Click(object sender, EventArgs e)
+        {
+            LoginAdmin form = new LoginAdmin();
+            form.ShowDialog();
         }
     }
 }

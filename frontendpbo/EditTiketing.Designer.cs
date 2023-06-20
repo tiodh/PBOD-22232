@@ -166,7 +166,7 @@
             button4UpdateTIket.TabIndex = 27;
             button4UpdateTIket.Text = "Perbarui Data";
             button4UpdateTIket.UseVisualStyleBackColor = false;
-            button4UpdateTIket.Click += button4_Click;
+            button4UpdateTIket.Click += button4UpdateTIket_Click_1;
             // 
             // button2
             // 
