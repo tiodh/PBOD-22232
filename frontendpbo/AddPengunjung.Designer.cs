@@ -126,7 +126,6 @@
             panel9.Name = "panel9";
             panel9.Size = new Size(330, 78);
             panel9.TabIndex = 5;
-            panel9.Paint += panel9_Paint;
             // 
             // wisata_id
             // 
@@ -176,7 +175,6 @@
             button1.TabIndex = 6;
             button1.Text = "Simpan";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // panel3
             // 
@@ -196,7 +194,6 @@
             Daerah.Name = "Daerah";
             Daerah.Size = new Size(1022, 42);
             Daerah.TabIndex = 1;
-            Daerah.TextChanged += Daerah_TextChanged;
             // 
             // panel2
             // 
@@ -345,7 +342,6 @@
             radioButton_Cread.TabStop = true;
             radioButton_Cread.Text = "Cread Data";
             radioButton_Cread.UseVisualStyleBackColor = true;
-            radioButton_Cread.CheckedChanged += radioButton_Cread_CheckedChanged;
             // 
             // Pengunjung
             // 
