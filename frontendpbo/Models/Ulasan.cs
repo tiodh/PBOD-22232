@@ -11,6 +11,6 @@ namespace frontendpbo.Models
         public int id_ulasan { get; set; }
         public string nama_user { get; set; }
         public string deskripsi_ulasan { get; set; }
-        public string wisata_id { get; set; }
+        public int wisata_id { get; set; }
     }
 }

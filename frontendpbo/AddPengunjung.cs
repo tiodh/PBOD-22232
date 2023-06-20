@@ -5,7 +5,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +13,7 @@ namespace frontendpbo
 {
     public partial class Pengunjung : Form
     {
+        private DataTable? dataTable;
         public Pengunjung()
         {
             InitializeComponent();
@@ -21,7 +21,40 @@ namespace frontendpbo
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            loaddata();
+        }
 
+        private void loaddata()
+        {
+            string searchText = textBox3.Text.Trim();
+
+            if (!string.IsNullOrEmpty(searchText))
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=garudart10rw02;Database=data_pengunjung;"))
+                {
+
+                    string sql = "SELECT * FROM pengunjung WHERE nama_pengunjung ILIKE '%' || @searchText || '%' " +
+                    "OR asal_pengunjung ILIKE '%' || @searchText || '%' ";
+                    using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
+                    {
+
+                        command.Parameters.AddWithValue("@searchText", searchText);
+
+                        using (NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(command))
+                        {
+                            dataTable = new DataTable();
+
+                            adapter.Fill(dataTable);
+
+                            dataGridView1.DataSource = dataTable;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                dataGridView1.DataSource = read.contohSelect();
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -49,137 +82,46 @@ namespace frontendpbo
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void SearchingtextBox3_TextChanged(object sender, EventArgs e)
+        {
+            loaddata();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=132435;Database=peta_jember";
-
-            using (DatabaseContext context = new DatabaseContext(connectionString))
-            {
-                try
-                {
-                    if (radioButton_Cread.Checked)
-                    {
-                        // Lakukan tugas yang sesuai dengan opsi Cread
-                        // Contoh: Menjalankan perintah INSERT
-                        string sql = "INSERT INTO pengunjung (nama_pengunjung, asal_pengunjung, wisata_id) VALUES (@nama_pengunjung, @asal_pengunjung, @wisata_id)";
-                        NpgsqlParameter parameterNama = new NpgsqlParameter("@nama_pengunjung", Nama.Text);
-                        NpgsqlParameter parameterDaerah = new NpgsqlParameter("@asal_pengunjung", Daerah.Text);
-
-                        int wisataId;
-                        if (int.TryParse(ID_wisata.Text, out wisataId))
-                        {
-                            NpgsqlParameter parameterIdWisata = new NpgsqlParameter("@wisata_id", NpgsqlTypes.NpgsqlDbType.Integer);
-                            parameterIdWisata.Value = wisataId;
-                            context.ExecuteCommand(sql, parameterNama, parameterDaerah, parameterIdWisata);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Wisata ID harus berupa angka!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-                    }
-                    else if (radioButton_Update.Checked)
-                    {
-                        // Lakukan tugas yang sesuai dengan opsi Update
-                        // Contoh: Menjalankan perintah UPDATE
-                        string sql = "UPDATE pengunjung SET nama_pengunjung = @nama_pengunjung, asal_pengunjung = @asal_pengunjung WHERE wisata_id = @wisata_id";
-                        NpgsqlParameter parameterNama = new NpgsqlParameter("@nama_pengunjung", Nama.Text);
-                        NpgsqlParameter parameterDaerah = new NpgsqlParameter("@asal_pengunjung", Daerah.Text);
-
-                        int wisataId;
-                        if (int.TryParse(ID_wisata.Text, out wisataId))
-                        {
-                            NpgsqlParameter parameterIdWisata = new NpgsqlParameter("@wisata_id", NpgsqlTypes.NpgsqlDbType.Integer);
-                            parameterIdWisata.Value = wisataId;
-                            context.ExecuteCommand(sql, parameterNama, parameterDaerah, parameterIdWisata);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Wisata ID harus berupa angka!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-                    }
-                    else
-                    {
-                        // Lakukan tugas untuk opsi lainnya
-                    }
-
-                    context.Commit();
-                }
-                catch (Exception ex)
-                {
-                    context.Rollback();
-                    MessageBox.Show("Terjadi kesalahan: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-            }
-        }
-
-        private void radioButton_Cread_CheckedChanged(object sender, EventArgs e)
-        {
-            panel9.Enabled = !radioButton_Cread.Checked;
-        }
-
-        private void Daerah_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        /*        private void radioButton_Cread_CheckedChanged(object sender, EventArgs e)
-                {
-                    panel9.Enabled = !radioButton_Cread.Checked;
-                }*/
-
     }
-
-    public class DatabaseContext : IDisposable
+    class read
     {
-        private NpgsqlConnection _connection;
-        private NpgsqlTransaction _transaction;
-
-        public DatabaseContext(string connectionString)
+        static public DataTable contohSelect()
         {
-            _connection = new NpgsqlConnection(connectionString);
-            _connection.Open();
-            _transaction = _connection.BeginTransaction();
-        }
 
-        // Method untuk menjalankan perintah SQL
-        public void ExecuteCommand(string sql, params NpgsqlParameter[] parameters)
-        {
-            using (NpgsqlCommand command = new NpgsqlCommand(sql, _connection, _transaction))
+            NpgsqlConnection connection = new NpgsqlConnection();
+
+
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=garudart10rw02;Database=data_pengunjung;";
+            connection.ConnectionString = constr;
+            DataTable dt = new DataTable();
+            try
             {
-                command.Parameters.AddRange(parameters);
-                command.ExecuteNonQuery();
+                connection.Open();
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = connection;
+                string StrSql = "select * from Pengunjung";
+                cmd.CommandText = StrSql;
+                cmd.CommandType = CommandType.Text;
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                da.Fill(dt);
+                cmd.Dispose();
+                connection.Close();
             }
-        }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
 
-        // Method untuk melakukan commit transaksi
-        public void Commit()
-        {
-            _transaction.Commit();
-        }
-
-        // Method untuk melakukan rollback transaksi
-        public void Rollback()
-        {
-            _transaction.Rollback();
-        }
-
-        public void Dispose()
-        {
-            _transaction.Dispose();
-            _connection.Close();
-            _connection.Dispose();
+            return dt;
         }
     }
 }
