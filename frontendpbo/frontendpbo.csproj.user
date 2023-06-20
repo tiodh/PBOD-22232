@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Class_crud_umkm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="CreateSarana.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -28,16 +31,13 @@
     <Compile Update="DeletedanUpdateDataTempatMakan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetailAcara.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DetailAcara2.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="DetaildanReadDataTempatMakan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetailHotel.cs">
+    <Compile Update="DetailEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailSarpras.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DetailWisata.cs">
@@ -46,8 +46,11 @@
     <Compile Update="detail_dataKeselamatan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Detail_sarpras.cs">
+    <Compile Update="detail_umkm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DWisata.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="EditTiketing.cs">
       <SubType>Form</SubType>
@@ -83,6 +86,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormShowUlasan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="jenis_umkm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="RiwayatKunjungan.cs">

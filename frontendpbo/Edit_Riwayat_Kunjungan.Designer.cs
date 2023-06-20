@@ -32,8 +32,8 @@
             dataGridView1 = new DataGridView();
             panel2 = new Panel();
             panel3 = new Panel();
+            comboBox1 = new ComboBox();
             label1 = new Label();
-            textBox1 = new TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
@@ -61,6 +61,7 @@
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(1585, 577);
             dataGridView1.TabIndex = 2;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // panel2
             // 
@@ -75,13 +76,25 @@
             // 
             panel3.BackgroundImage = Properties.Resources.searchbg1;
             panel3.BackgroundImageLayout = ImageLayout.Stretch;
+            panel3.Controls.Add(comboBox1);
             panel3.Controls.Add(label1);
-            panel3.Controls.Add(textBox1);
             panel3.Location = new Point(441, 10);
             panel3.Name = "panel3";
             panel3.Padding = new Padding(2, 2, 10, 2);
             panel3.Size = new Size(705, 48);
             panel3.TabIndex = 0;
+            // 
+            // comboBox1
+            // 
+            comboBox1.BackColor = Color.Gainsboro;
+            comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Nama Wisata", "Tanggal Kunjungan", "Jumlah Tiket" });
+            comboBox1.Location = new Point(16, 5);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(578, 36);
+            comboBox1.TabIndex = 1;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -95,16 +108,7 @@
             label1.TabIndex = 1;
             label1.Text = "Search";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.Gainsboro;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(13, 10);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(580, 29);
-            textBox1.TabIndex = 0;
+            label1.Click += label1_Click;
             // 
             // Edit_Riwayat_Kunjungan
             // 
@@ -119,7 +123,6 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -130,6 +133,6 @@
         private Panel panel2;
         private Panel panel3;
         private Label label1;
-        private TextBox textBox1;
+        private ComboBox comboBox1;
     }
 }

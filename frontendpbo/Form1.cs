@@ -1,12 +1,12 @@
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 using static System.TimeZoneInfo;
 
 namespace frontendpbo
 {
     public partial class Form1 : Form
     {
-        //private Timer transitionTimer;
-        //private int transitionStep;
-        //private Color panelColor;
+        private Form activeForm = null;
 
 
         public Form1()
@@ -14,6 +14,7 @@ namespace frontendpbo
             InitializeComponent();
             mainside.Visible = true;
         }
+
 
         private void hidemainside()
         {
@@ -27,14 +28,16 @@ namespace frontendpbo
             if (mainside.Visible == false)
             {
                 hidemainside();
+                //pictureBox3.Size = new System.Drawing.Size(1871 - mainside.Width, 478);
+                //pictureBox3.Location = new System.Drawing.Point(53 + mainside.Width, 94);
                 mainside.Visible = true;
             }
             else
+            {
+                //pictureBox3.Size = new System.Drawing.Size(1871, 478);
+                //pictureBox3.Location = new System.Drawing.Point(53, 94);
                 mainside.Visible = false;
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
+            }
 
         }
 
@@ -49,11 +52,6 @@ namespace frontendpbo
         }
 
         private void pictureBox1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -75,7 +73,9 @@ namespace frontendpbo
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            pictureBox1.Location = new System.Drawing.Point(
+                30,
+                (panel3.Height - pictureBox1.Height) / 2);
             int taskbarHeight = Screen.PrimaryScreen.Bounds.Height - Screen.PrimaryScreen.WorkingArea.Height;
             this.Height -= taskbarHeight;
         }
@@ -97,22 +97,6 @@ namespace frontendpbo
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rembangan_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private Form activeForm = null;
 
         private void openChildForm(Form childForm)
         {
@@ -134,7 +118,42 @@ namespace frontendpbo
 
         private void button6_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3());
+            Form2 form = new Form2();
+            form.ShowDialog();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
+        {
+            GraphicsPath path = new GraphicsPath();
+            int cornerRadius = 60;
+            int width = panel3.Width;
+            int height = panel3.Height;
+
+            path.AddArc(0, 0, cornerRadius, cornerRadius, 180, 90);
+            path.AddArc(width - cornerRadius, 0, cornerRadius, cornerRadius, 270, 90);
+            path.AddArc(width - cornerRadius, height - cornerRadius, cornerRadius, cornerRadius, 0, 90);
+            path.AddArc(0, height - cornerRadius, cornerRadius, cornerRadius, 90, 90);
+
+            path.CloseFigure();
+
+            panel3.Region = new Region(path);
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Show();
+        }
+
+        private void Login_Click(object sender, EventArgs e)
+        {
+            LoginAdmin form = new LoginAdmin();
+            form.ShowDialog();
         }
     }
 }

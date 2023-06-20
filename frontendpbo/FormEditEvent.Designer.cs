@@ -61,6 +61,7 @@
             btnClose.TabIndex = 31;
             btnClose.Text = "X";
             btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
             // 
             // labelEditEvent
             // 
@@ -87,6 +88,7 @@
             btnDeleteEvent.TabIndex = 29;
             btnDeleteEvent.Text = "Delete";
             btnDeleteEvent.UseVisualStyleBackColor = false;
+            btnDeleteEvent.Click += btnDeleteEvent_Click;
             // 
             // btnUpdateEvent
             // 
@@ -102,6 +104,7 @@
             btnUpdateEvent.TabIndex = 28;
             btnUpdateEvent.Text = "Update";
             btnUpdateEvent.UseVisualStyleBackColor = false;
+            btnUpdateEvent.Click += btnUpdateEvent_Click;
             // 
             // btnCreateEvent
             // 
@@ -117,6 +120,7 @@
             btnCreateEvent.TabIndex = 27;
             btnCreateEvent.Text = "Create";
             btnCreateEvent.UseVisualStyleBackColor = false;
+            btnCreateEvent.Click += btnCreateEvent_Click;
             // 
             // tvIdWisata
             // 
