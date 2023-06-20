@@ -80,6 +80,7 @@
             Tambah_Keselamatan.TabIndex = 1;
             Tambah_Keselamatan.Text = "Tambah";
             Tambah_Keselamatan.UseVisualStyleBackColor = false;
+            Tambah_Keselamatan.Click += Tambah_Keselamatan_Click;
             // 
             // Edit_Keamanan
             // 
