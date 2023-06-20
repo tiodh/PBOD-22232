@@ -9,7 +9,7 @@ namespace frontendpbo
 {
     internal class DatabaseHelper
     {
-        string ConnectionString = $"Host=localhost;Port=5432;Username=postgres;Password=1234;Database=Tiketing;";
+        string ConnectionString = $"Host=localhost;Port=5432;Username=postgres;Password=123;Database=peta_jember;";
         NpgsqlConnection conn = null;
 
         public DatabaseHelper()
