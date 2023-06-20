@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\JHIK RANA INALA\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\JHIK RANA INALA\\.nuget\\packages"
+      "C:\\Users\\saya\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\saya\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
