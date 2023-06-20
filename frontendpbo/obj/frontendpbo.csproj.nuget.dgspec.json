@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PROJEKKELASPBOD\\LASTCLONEEEEEE\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+    "D:\\Clone PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "D:\\PROJEKKELASPBOD\\LASTCLONEEEEEE\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+    "D:\\Clone PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PROJEKKELASPBOD\\LASTCLONEEEEEE\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "D:\\Clone PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "D:\\PROJEKKELASPBOD\\LASTCLONEEEEEE\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-        "packagesPath": "C:\\Users\\TUF\\.nuget\\packages\\",
-        "outputPath": "D:\\PROJEKKELASPBOD\\LASTCLONEEEEEE\\PBOD-22232\\frontendpbo\\obj\\",
+        "projectPath": "D:\\Clone PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "D:\\Clone PBO\\PBOD-22232\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\TUF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -77,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

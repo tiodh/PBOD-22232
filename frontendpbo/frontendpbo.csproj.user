@@ -22,7 +22,7 @@
     <Compile Update="DataPengguna.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Data_Penngunjungcs.cs">
+    <Compile Update="Data_Pengunjung.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DeletedanUpdateDataTempatMakan.cs">
@@ -53,6 +53,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="EditTiketing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Edit_Riwayat_Kunjungan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="form.cs">
@@ -86,6 +89,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="jenis_umkm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="RiwayatKunjungan.cs">
