@@ -42,7 +42,7 @@ namespace frontendpbo
         }
         private void LoadData()
         {
-            using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 123456"))
+            using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 220305"))
             {
                 try
                 {
@@ -76,7 +76,7 @@ namespace frontendpbo
             }
             else
             {
-                using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 010504"))
+                using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 220305"))
                 {
                     try
                     {
@@ -109,6 +109,30 @@ namespace frontendpbo
             }
         }
 
+        private void Tambah_Keselamatan_Click(object sender, EventArgs e)
+        {
+            using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=peta_jember;user id=postgres;password=220305"))
+            {
+                connection.Open();
+                NpgsqlCommand command = connection.CreateCommand();
+                command.Connection = connection;
+                command.CommandText = "insert into data_keamanan(nama_keamanan, deskripsi_keamanan, alamat_keamanan, no_tlp) values(@nama_keamanan, @deskripsi_keamanan, @alamat_keamanan, @no_tlp)";
+                command.Parameters.Add(new NpgsqlParameter("@nama_keamanan", textBox_nama_lembaga_dataKeamanan.Text));
+                command.Parameters.Add(new NpgsqlParameter("@no_tlp", textBoxnoHp_dataKeamanan.Text));
+                command.Parameters.Add(new NpgsqlParameter("@alamat_keamanan", textBoxalamat_dataKeamanan.Text));
+                command.Parameters.Add(new NpgsqlParameter("@deskripsi_keamanan", textBoxdeskripsi_dataKeamanan.Text));
+
+                textBox_nama_lembaga_dataKeamanan.Text = "";
+                textBoxnoHp_dataKeamanan.Text = "";
+                textBoxalamat_dataKeamanan.Text = "";
+                textBoxdeskripsi_dataKeamanan.Text = "";
+                command.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("Data berhasil diinput");
+                //RefreshUlasanTerakhir();
+                //RefreshRatingTerakhir();
+            }
+        }
     }
 }
 
