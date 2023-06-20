@@ -60,7 +60,7 @@
             // 
             btnclearwisata.BackColor = Color.Lime;
             btnclearwisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnclearwisata.Location = new Point(17, 813);
+            btnclearwisata.Location = new Point(38, 783);
             btnclearwisata.Name = "btnclearwisata";
             btnclearwisata.Size = new Size(129, 63);
             btnclearwisata.TabIndex = 1;
@@ -72,7 +72,7 @@
             // 
             btntambahwisata.BackColor = Color.FromArgb(128, 128, 255);
             btntambahwisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btntambahwisata.Location = new Point(180, 813);
+            btntambahwisata.Location = new Point(178, 783);
             btntambahwisata.Name = "btntambahwisata";
             btntambahwisata.Size = new Size(129, 63);
             btntambahwisata.TabIndex = 2;
@@ -84,7 +84,7 @@
             // 
             btneditwisata.BackColor = Color.Yellow;
             btneditwisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btneditwisata.Location = new Point(341, 813);
+            btneditwisata.Location = new Point(320, 783);
             btneditwisata.Name = "btneditwisata";
             btneditwisata.Size = new Size(129, 63);
             btneditwisata.TabIndex = 3;
@@ -95,7 +95,7 @@
             // 
             btnhapuswisata.BackColor = Color.Red;
             btnhapuswisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnhapuswisata.Location = new Point(507, 813);
+            btnhapuswisata.Location = new Point(464, 783);
             btnhapuswisata.Name = "btnhapuswisata";
             btnhapuswisata.Size = new Size(129, 63);
             btnhapuswisata.TabIndex = 4;
