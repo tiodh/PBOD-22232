@@ -37,8 +37,6 @@ namespace frontendpbo
                 //RefreshUlasanTerakhir();
                 //RefreshRatingTerakhir();
             }
-            string nama_sektor = tbxNama.Text;
-            string deskripsi = tbxDeskripsi.Text;
 
             dataGridView1.Rows.Add(nama_sektor, deskripsi);
             this.DialogResult = DialogResult.OK;
