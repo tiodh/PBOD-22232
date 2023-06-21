@@ -257,24 +257,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rangga\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\pbo_umkm1\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "projectUniqueName": "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\KUMPULAN PROJEK\\new2\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "projectName": "frontendpbo",
-      "projectPath": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\pbo_umkm1\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-      "packagesPath": "C:\\Users\\rangga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\pbo_umkm1\\PBOD-22232\\frontendpbo\\obj\\",
+      "projectPath": "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\KUMPULAN PROJEK\\new2\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\KUMPULAN PROJEK\\new2\\PBOD-22232\\frontendpbo\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\rangga\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
