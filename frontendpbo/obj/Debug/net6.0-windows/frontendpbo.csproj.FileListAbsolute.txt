@@ -899,3 +899,4 @@ C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.
 C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
 C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
 C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailTiket.resources

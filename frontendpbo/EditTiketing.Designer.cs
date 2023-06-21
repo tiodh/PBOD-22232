@@ -406,6 +406,7 @@
             Controls.Add(PanelReadDataTiket);
             FormBorderStyle = FormBorderStyle.None;
             Name = "EditTiketing";
+            Load += EditTiketing_Load;
             PanelReadDataTiket.ResumeLayout(false);
             panelDetailTiket.ResumeLayout(false);
             panelDetailTiket.PerformLayout();

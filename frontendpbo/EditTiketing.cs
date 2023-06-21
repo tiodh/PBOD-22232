@@ -1,3 +1,5 @@
+using frontendpbo.Contexts;
+using frontendpbo.Models;
 using System.Security.Policy;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -6,22 +8,25 @@ namespace CUD_DataTiket
 {
     public partial class EditTiketing : Form
     {
-        private int idtiket;
+        ContextTiket contextTiket;
+        private List<Tiket> listTiket;
+        private List<Tiket> searchResults;
         public EditTiketing()
         {
             InitializeComponent();
+            ContextTiket contextTiket = new ContextTiket();
         }
         void loadgrid()
         {
             DataGridViewEditTiket.DataSource = CUDEditTiket.BacaTiket();
+            DataGridViewEditTiket.DataSource = contextTiket.listTiket;
             //DataGridViewEditTiket.Column(0).Visible = false;
         }
 
         private void btnTambahTiket_Click(object sender, EventArgs e)
         {
-            CUDEditTiket.BuatTIket(txtNamaTiket.Text, txtDeskTiket.Text, Convert.ToInt32(txtHargaTiket.Text), Convert.ToInt32(txtIDTIket.Text));
+            Models.Tiket = new Tiket();
             loadgrid();
-
             txtIDTIket.Text = "";
             txtNamaTiket.Text = "";
             txtDeskTiket.Text = "";
@@ -30,7 +35,7 @@ namespace CUD_DataTiket
 
         private void PanelReadDataTiket_Paint(object sender, PaintEventArgs e)
         {
-            loadgrid();
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -81,7 +86,6 @@ namespace CUD_DataTiket
             DataGridViewEditTiket.CurrentRow.Selected = true;
             IDTiketlabel6.Visible = false;
             txtIDTIket.Visible = false;
-            idtiket = Convert.ToInt32(DataGridViewEditTiket.Rows[e.RowIndex].Cells[0].Value);
             txtNamaTiket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtDeskTiket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtHargaTiket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[3].Value.ToString();
@@ -212,19 +216,22 @@ namespace CUD_DataTiket
         private void button4UpdateTIket_Click_1(object sender, EventArgs e)
         {
 
-            if (idtiket == 0)
-            {
-                MessageBox.Show("Pilih data yang mau di update", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                CUDEditTiket.UpdateTiket(txtNamaTiket.Text, txtDeskTiket.Text, Convert.ToInt32(txtHargaTiket.Text), idtiket);
+              
+           
                 loadgrid();
                 txtIDTIket.Text = "";
                 txtNamaTiket.Text = "";
                 txtDeskTiket.Text = "";
                 txtHargaTiket.Text = "";
-            }
+            
+        }
+
+        private void EditTiketing_Load(object sender, EventArgs e)
+        {
+
+            PanelReadDataTiket.Dock = DockStyle.Fill;
+            loadgrid();
+            DataGridViewEditTiket.DataSource = contextTiket.GetListTiket();
         }
     }
 }
