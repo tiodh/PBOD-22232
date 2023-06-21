@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "oWq/LWlFCx0Oye9QAuxSYDTsNWwDram6SoMuRh2+3Qqzc1C0NS0gqzWoVQzu5SuIycZJswlUWBKDuZkdpMpUDg==",
   "success": true,
   "projectFilePath": "C:\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+=======
+  "dgSpecHash": "0NI9SxEuxVAyKh8wk+/oaLGulVaIpGBEQy5nulltQ3WUG8Zymur8rkW7TGrG7x7CBw9b7+rvzAg1Sb+PsXM9PA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\pbo_umkm1\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+>>>>>>> d7fb444405b6d8cf0b0bcfa244f09bdb62aa7d88
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\livecharts.netcore\\0.9.7\\livecharts.netcore.0.9.7.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",

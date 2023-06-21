@@ -1,4 +1,6 @@
 ﻿using CUD_DataTiket;
+using frontendpbo.Contexts;
+using frontendpbo.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,13 +16,100 @@ namespace frontendpbo
 {
     public partial class Form2 : Form
     {
+        ContextInformasiPengumuman contextIP;
+        private Form activeForm = null;
         public Form2()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
         }
 
-        private Form activeForm = null;
+        private void TampilInformasiPengumuman()
+        {
+            if (activeForm != null) activeForm.Close();
+            contextIP = new ContextInformasiPengumuman();
+
+            // Mengakses properti ListInformasiPengumuman
+            List<Pengumuman> informasiPengumuman = contextIP.ListInformasiPengumuman;
+            contextIP.Read();
+            //List<string> data = contextIP.Pengumuman;
+            int i = 1;
+            int posisiy = 0;
+            int posisix = 0;
+            foreach (Pengumuman pengumuman in informasiPengumuman)
+            {
+                if (i % 2 == 0)
+                {
+                    posisix = 1;
+                }
+
+                else
+                {
+                    posisix = 0;
+                }
+
+                Panel panel1 = new Panel();
+                TextBox textBox1 = new TextBox();
+                TextBox textBox2 = new TextBox();
+                TextBox textBox3 = new TextBox();
+
+
+                panel1.Location = new Point(500 + (550 * posisix), 100 + (360 * posisiy));
+                panel1.Size = new Size(490, 300);
+                panel1.BackColor = Color.AntiqueWhite;
+                panel1.BackColor = Color.FromArgb(217, 217, 217);
+
+
+
+                textBox1.Location = new Point(10, 10);
+                textBox1.Size = new Size(250, 20);
+                textBox1.ReadOnly = true;
+                textBox1.Enabled = false;
+                textBox1.Text = pengumuman.Name;
+                textBox1.Font = new Font("Arial", 13);
+                textBox1.BorderStyle = BorderStyle.None;
+                textBox1.BackColor = Color.FromArgb(217, 217, 220);
+
+
+
+                textBox2.Location = new Point(10, 55);
+                textBox2.Size = new Size(470, 180);
+                textBox2.ReadOnly = true;
+                textBox2.Multiline = true;
+                textBox2.Enabled = false;
+                textBox2.Text = pengumuman.Description;
+                textBox2.Font = new Font("Arial", 13);
+                textBox2.BorderStyle = BorderStyle.None;
+                textBox2.BackColor = Color.FromArgb(217, 217, 220);
+
+
+
+                textBox3.Location = new Point(370, 260);
+                textBox3.Size = new Size(110, 20);
+                textBox3.ReadOnly = true;
+                textBox3.Enabled = false;
+                textBox3.Text = pengumuman.Tanggal_Informasi.ToString();
+                textBox3.Font = new Font("Arial", 13);
+                textBox3.BorderStyle = BorderStyle.None;
+                textBox3.BackColor = Color.FromArgb(217, 217, 220);
+
+
+                panel1.Controls.Add(textBox1);
+                panel1.Controls.Add(textBox2);
+                panel1.Controls.Add(textBox3);
+                panelContent.Controls.Add(panel1);
+                this.Controls.Add(panelContent);
+
+
+
+
+                if (i % 2 == 0)
+                    posisiy += 1;
+                i++;
+
+
+            }
+        }
 
         private void openChildForm(Form childForm)
         {
@@ -108,6 +197,21 @@ namespace frontendpbo
         private void edit1_Click(object sender, EventArgs e)
         {
             openChildForm(new wisata());
+        }
+
+        private void informasi_Click(object sender, EventArgs e)
+        {
+            TampilInformasiPengumuman();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Edit_Riwayat_Kunjungan());
+        }
+
+        private void edit5_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CreateSarana());
         }
     }
 }

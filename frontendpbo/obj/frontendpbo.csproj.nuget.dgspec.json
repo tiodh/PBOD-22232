@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
         "outputPath": "C:\\PBOD-22232\\frontendpbo\\obj\\",
+=======
+    "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\pbo_umkm1\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\pbo_umkm1\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\pbo_umkm1\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectName": "frontendpbo",
+        "projectPath": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\pbo_umkm1\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "packagesPath": "C:\\Users\\rangga\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rangga\\OneDrive\\Dokumen\\tugas\\pbo_umkm1\\PBOD-22232\\frontendpbo\\obj\\",
+>>>>>>> d7fb444405b6d8cf0b0bcfa244f09bdb62aa7d88
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
