@@ -1,6 +1,6 @@
 ﻿namespace frontendpbo
 {
-    partial class FormEditUlasan
+    partial class CRUDUlasan
     {
         /// <summary>
         /// Required designer variable.

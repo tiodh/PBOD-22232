@@ -17,12 +17,12 @@ using Npgsql;
 namespace frontendpbo
 {
 
-    public partial class FormEditUlasan : Form
+    public partial class CRUDUlasan : Form
     {
 
         Contexts.ContextUlasan ulasanContext;
         List<Ulasan> ulasanList;
-        public FormEditUlasan()
+        public CRUDUlasan()
         {
             InitializeComponent();
             ulasanContext = new Contexts.ContextUlasan();

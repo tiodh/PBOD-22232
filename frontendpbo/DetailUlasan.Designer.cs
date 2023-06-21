@@ -1,6 +1,6 @@
 ﻿namespace frontendpbo
 {
-    partial class FormShowUlasan
+    partial class DetailUlasan
     {
         /// <summary>
         /// Required designer variable.
