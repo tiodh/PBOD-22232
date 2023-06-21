@@ -1,105 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Class_crud_umkm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="CreateSarana.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="CRUDDataPenginapan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="CRUDTransportasi.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="CRUDKeselamatan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="crud_informasi_pengumuman.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="crud_umkm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DataPengguna.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Data_Pengunjung.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DeletedanUpdateDataTempatMakan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DetaildanReadDataTempatMakan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DetailEvent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DetailSarpras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DetailWisata.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="detail_dataKeselamatan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="detail_umkm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DWisata.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="EditTiketing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Edit_Riwayat_Kunjungan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="AddPengunjung.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="DetailTiket.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormDetailTransportasi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormEditEvent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="CRUDUlasan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DetailUlasan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="jenis_umkm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="LoginAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="RiwayatKunjungan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="wisata.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
