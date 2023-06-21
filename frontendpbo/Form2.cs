@@ -27,7 +27,6 @@ namespace frontendpbo
         private void TampilInformasiPengumuman()
         {
             if (activeForm != null) activeForm.Close();
-
             contextIP = new ContextInformasiPengumuman();
 
             // Mengakses properti ListInformasiPengumuman
@@ -203,6 +202,16 @@ namespace frontendpbo
         private void informasi_Click(object sender, EventArgs e)
         {
             TampilInformasiPengumuman();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Edit_Riwayat_Kunjungan());
+        }
+
+        private void edit5_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CreateSarana());
         }
     }
 }

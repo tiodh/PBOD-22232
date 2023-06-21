@@ -30,24 +30,16 @@
         {
             flowLayoutPanel1 = new FlowLayoutPanel();
             panelDetail = new Panel();
-            panelDeskripsi = new Panel();
-            lbDeskripsi = new Label();
-            panelAlamat = new Panel();
-            lbAlamat = new Label();
-            panelNomor = new Panel();
-            lbNomor = new Label();
-            panelNama = new Panel();
-            lbNama = new Label();
             pbIcon = new PictureBox();
             textBox_searchingdataKeselamatan = new TextBox();
             button_searchDetailkeselamatan = new Button();
             panel1 = new Panel();
+            lbNama = new Label();
+            lbNomor = new Label();
+            lbAlamat = new Label();
+            lbDeskripsi = new Label();
             flowLayoutPanel1.SuspendLayout();
             panelDetail.SuspendLayout();
-            panelDeskripsi.SuspendLayout();
-            panelAlamat.SuspendLayout();
-            panelNomor.SuspendLayout();
-            panelNama.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbIcon).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -66,87 +58,15 @@
             // panelDetail
             // 
             panelDetail.BackColor = SystemColors.ButtonFace;
-            panelDetail.Controls.Add(panelDeskripsi);
-            panelDetail.Controls.Add(panelAlamat);
-            panelDetail.Controls.Add(panelNomor);
-            panelDetail.Controls.Add(panelNama);
+            panelDetail.Controls.Add(lbDeskripsi);
+            panelDetail.Controls.Add(lbAlamat);
+            panelDetail.Controls.Add(lbNomor);
+            panelDetail.Controls.Add(lbNama);
             panelDetail.Controls.Add(pbIcon);
             panelDetail.Location = new Point(3, 3);
             panelDetail.Name = "panelDetail";
             panelDetail.Size = new Size(1264, 240);
             panelDetail.TabIndex = 6;
-            // 
-            // panelDeskripsi
-            // 
-            panelDeskripsi.BackColor = SystemColors.Window;
-            panelDeskripsi.Controls.Add(lbDeskripsi);
-            panelDeskripsi.Location = new Point(374, 170);
-            panelDeskripsi.Name = "panelDeskripsi";
-            panelDeskripsi.Size = new Size(850, 27);
-            panelDeskripsi.TabIndex = 5;
-            // 
-            // lbDeskripsi
-            // 
-            lbDeskripsi.AutoSize = true;
-            lbDeskripsi.Location = new Point(15, 3);
-            lbDeskripsi.Name = "lbDeskripsi";
-            lbDeskripsi.Size = new Size(69, 20);
-            lbDeskripsi.TabIndex = 0;
-            lbDeskripsi.Text = "Deskripsi";
-            // 
-            // panelAlamat
-            // 
-            panelAlamat.BackColor = SystemColors.Window;
-            panelAlamat.Controls.Add(lbAlamat);
-            panelAlamat.Location = new Point(374, 125);
-            panelAlamat.Name = "panelAlamat";
-            panelAlamat.Size = new Size(850, 27);
-            panelAlamat.TabIndex = 4;
-            // 
-            // lbAlamat
-            // 
-            lbAlamat.AutoSize = true;
-            lbAlamat.Location = new Point(15, 3);
-            lbAlamat.Name = "lbAlamat";
-            lbAlamat.Size = new Size(57, 20);
-            lbAlamat.TabIndex = 0;
-            lbAlamat.Text = "Alamat";
-            // 
-            // panelNomor
-            // 
-            panelNomor.BackColor = SystemColors.Window;
-            panelNomor.Controls.Add(lbNomor);
-            panelNomor.Location = new Point(374, 80);
-            panelNomor.Name = "panelNomor";
-            panelNomor.Size = new Size(850, 27);
-            panelNomor.TabIndex = 3;
-            // 
-            // lbNomor
-            // 
-            lbNomor.AutoSize = true;
-            lbNomor.Location = new Point(15, 3);
-            lbNomor.Name = "lbNomor";
-            lbNomor.Size = new Size(86, 20);
-            lbNomor.TabIndex = 0;
-            lbNomor.Text = "No Telepon";
-            // 
-            // panelNama
-            // 
-            panelNama.BackColor = SystemColors.Window;
-            panelNama.Controls.Add(lbNama);
-            panelNama.Location = new Point(374, 35);
-            panelNama.Name = "panelNama";
-            panelNama.Size = new Size(850, 27);
-            panelNama.TabIndex = 2;
-            // 
-            // lbNama
-            // 
-            lbNama.AutoSize = true;
-            lbNama.Location = new Point(15, 3);
-            lbNama.Name = "lbNama";
-            lbNama.Size = new Size(115, 20);
-            lbNama.TabIndex = 0;
-            lbNama.Text = "Nama Lembaga";
             // 
             // pbIcon
             // 
@@ -186,6 +106,42 @@
             panel1.TabIndex = 3;
             panel1.Paint += panel1_Paint;
             // 
+            // lbNama
+            // 
+            lbNama.AutoSize = true;
+            lbNama.Location = new Point(387, 52);
+            lbNama.Name = "lbNama";
+            lbNama.Size = new Size(115, 20);
+            lbNama.TabIndex = 6;
+            lbNama.Text = "Nama Lembaga";
+            // 
+            // lbNomor
+            // 
+            lbNomor.AutoSize = true;
+            lbNomor.Location = new Point(387, 90);
+            lbNomor.Name = "lbNomor";
+            lbNomor.Size = new Size(86, 20);
+            lbNomor.TabIndex = 7;
+            lbNomor.Text = "No Telepon";
+            // 
+            // lbAlamat
+            // 
+            lbAlamat.AutoSize = true;
+            lbAlamat.Location = new Point(387, 128);
+            lbAlamat.Name = "lbAlamat";
+            lbAlamat.Size = new Size(57, 20);
+            lbAlamat.TabIndex = 8;
+            lbAlamat.Text = "Alamat";
+            // 
+            // lbDeskripsi
+            // 
+            lbDeskripsi.AutoSize = true;
+            lbDeskripsi.Location = new Point(387, 169);
+            lbDeskripsi.Name = "lbDeskripsi";
+            lbDeskripsi.Size = new Size(69, 20);
+            lbDeskripsi.TabIndex = 9;
+            lbDeskripsi.Text = "Deskripsi";
+            // 
             // detail_dataKeselamatan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -200,14 +156,7 @@
             Load += detail_dataKeselamatan_Load;
             flowLayoutPanel1.ResumeLayout(false);
             panelDetail.ResumeLayout(false);
-            panelDeskripsi.ResumeLayout(false);
-            panelDeskripsi.PerformLayout();
-            panelAlamat.ResumeLayout(false);
-            panelAlamat.PerformLayout();
-            panelNomor.ResumeLayout(false);
-            panelNomor.PerformLayout();
-            panelNama.ResumeLayout(false);
-            panelNama.PerformLayout();
+            panelDetail.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pbIcon).EndInit();
             panel1.ResumeLayout(false);
             ResumeLayout(false);
@@ -220,14 +169,10 @@
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
         private Panel panelDetail;
-        private Panel panelDeskripsi;
-        private Label lbDeskripsi;
-        private Panel panelAlamat;
-        private Label lbAlamat;
-        private Panel panelNomor;
-        private Label lbNomor;
-        private Panel panelNama;
-        private Label lbNama;
         private PictureBox pbIcon;
+        private Label lbDeskripsi;
+        private Label lbAlamat;
+        private Label lbNomor;
+        private Label lbNama;
     }
 }
