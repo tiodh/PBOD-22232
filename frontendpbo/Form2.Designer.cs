@@ -205,6 +205,7 @@
             button4.Text = "Data Riwayat Kunjungan";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -705,6 +706,7 @@
             // 
             // panelContent
             // 
+            panelContent.AutoScroll = true;
             panelContent.Dock = DockStyle.Fill;
             panelContent.Location = new Point(382, 104);
             panelContent.Margin = new Padding(3, 4, 3, 4);

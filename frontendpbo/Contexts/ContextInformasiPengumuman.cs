@@ -12,11 +12,9 @@ namespace frontendpbo.Contexts
     {
         public List<Pengumuman> ListInformasiPengumuman = new List<Pengumuman>() { };
 
-        public bool Read()
+        public void Read()
         {
-            bool isSuccess = false;
-
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=010504;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
@@ -42,7 +40,6 @@ namespace frontendpbo.Contexts
                 }
 
             }
-            return isSuccess;
         }
     }
 }

@@ -203,5 +203,10 @@ namespace frontendpbo
         {
             TampilInformasiPengumuman();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Edit_Riwayat_Kunjungan());
+        }
     }
 }
