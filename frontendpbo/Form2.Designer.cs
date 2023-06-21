@@ -404,6 +404,7 @@
             informasi.Text = "Informasi";
             informasi.TextAlign = ContentAlignment.MiddleLeft;
             informasi.UseVisualStyleBackColor = false;
+            informasi.Click += informasi_Click;
             // 
             // edit7
             // 
