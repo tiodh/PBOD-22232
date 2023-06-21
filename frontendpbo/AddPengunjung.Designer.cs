@@ -31,11 +31,17 @@
             panel1 = new Panel();
             label1 = new Label();
             panel_Main = new Panel();
+            label6 = new Label();
+            panel9 = new Panel();
+            wisata_id = new TextBox();
+            label5 = new Label();
+            panel7 = new Panel();
+            ID_wisata = new TextBox();
             button1 = new Button();
             panel3 = new Panel();
-            textBox2 = new TextBox();
+            Daerah = new TextBox();
             panel2 = new Panel();
-            textBox1 = new TextBox();
+            Nama = new TextBox();
             label3 = new Label();
             label2 = new Label();
             panel4 = new Panel();
@@ -45,14 +51,20 @@
             textBox3 = new TextBox();
             panel5 = new Panel();
             label4 = new Label();
+            panel8 = new Panel();
+            radioButton_Update = new RadioButton();
+            radioButton_Cread = new RadioButton();
             panel1.SuspendLayout();
             panel_Main.SuspendLayout();
+            panel9.SuspendLayout();
+            panel7.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel6.SuspendLayout();
             panel5.SuspendLayout();
+            panel8.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -80,6 +92,11 @@
             // panel_Main
             // 
             panel_Main.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel_Main.AutoSize = true;
+            panel_Main.Controls.Add(label6);
+            panel_Main.Controls.Add(panel9);
+            panel_Main.Controls.Add(label5);
+            panel_Main.Controls.Add(panel7);
             panel_Main.Controls.Add(button1);
             panel_Main.Controls.Add(panel3);
             panel_Main.Controls.Add(panel2);
@@ -90,11 +107,69 @@
             panel_Main.Size = new Size(1384, 443);
             panel_Main.TabIndex = 1;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(783, 27);
+            label6.Name = "label6";
+            label6.Size = new Size(138, 28);
+            label6.TabIndex = 8;
+            label6.Text = "Id Pengunjung";
+            // 
+            // panel9
+            // 
+            panel9.BackColor = SystemColors.ActiveBorder;
+            panel9.BorderStyle = BorderStyle.FixedSingle;
+            panel9.Controls.Add(wisata_id);
+            panel9.Location = new Point(783, 58);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(330, 78);
+            panel9.TabIndex = 5;
+            // 
+            // wisata_id
+            // 
+            wisata_id.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            wisata_id.Location = new Point(12, 17);
+            wisata_id.Multiline = true;
+            wisata_id.Name = "wisata_id";
+            wisata_id.Size = new Size(265, 42);
+            wisata_id.TabIndex = 0;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(32, 301);
+            label5.Name = "label5";
+            label5.Size = new Size(95, 28);
+            label5.TabIndex = 7;
+            label5.Text = "ID Wisata";
+            // 
+            // panel7
+            // 
+            panel7.BackColor = SystemColors.ActiveBorder;
+            panel7.BorderStyle = BorderStyle.FixedSingle;
+            panel7.Controls.Add(ID_wisata);
+            panel7.Location = new Point(29, 332);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(1081, 78);
+            panel7.TabIndex = 6;
+            // 
+            // ID_wisata
+            // 
+            ID_wisata.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            ID_wisata.Location = new Point(12, 20);
+            ID_wisata.Multiline = true;
+            ID_wisata.Name = "ID_wisata";
+            ID_wisata.Size = new Size(1025, 42);
+            ID_wisata.TabIndex = 1;
+            // 
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaption;
             button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(1116, 332);
+            button1.Location = new Point(1153, 342);
             button1.Name = "button1";
             button1.Size = new Size(186, 68);
             button1.TabIndex = 6;
@@ -105,46 +180,46 @@
             // 
             panel3.BackColor = SystemColors.ActiveBorder;
             panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(textBox2);
-            panel3.Location = new Point(32, 199);
+            panel3.Controls.Add(Daerah);
+            panel3.Location = new Point(32, 189);
             panel3.Name = "panel3";
             panel3.Size = new Size(1081, 78);
             panel3.TabIndex = 5;
             // 
-            // textBox2
+            // Daerah
             // 
-            textBox2.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(12, 20);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(1025, 42);
-            textBox2.TabIndex = 1;
+            Daerah.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            Daerah.Location = new Point(12, 20);
+            Daerah.Multiline = true;
+            Daerah.Name = "Daerah";
+            Daerah.Size = new Size(1022, 42);
+            Daerah.TabIndex = 1;
             // 
             // panel2
             // 
             panel2.BackColor = SystemColors.ActiveBorder;
             panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(Nama);
             panel2.Location = new Point(32, 58);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1081, 78);
+            panel2.Size = new Size(721, 78);
             panel2.TabIndex = 4;
             // 
-            // textBox1
+            // Nama
             // 
-            textBox1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(12, 17);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(1025, 42);
-            textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
+            Nama.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            Nama.Location = new Point(12, 17);
+            Nama.Multiline = true;
+            Nama.Name = "Nama";
+            Nama.Size = new Size(679, 42);
+            Nama.TabIndex = 0;
+            Nama.TextChanged += textBox1_TextChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(32, 168);
+            label3.Location = new Point(32, 158);
             label3.Name = "label3";
             label3.Size = new Size(224, 28);
             label3.TabIndex = 3;
@@ -156,17 +231,19 @@
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(32, 27);
             label2.Name = "label2";
-            label2.Size = new Size(162, 28);
+            label2.Size = new Size(173, 28);
             label2.TabIndex = 2;
-            label2.Text = "Data Pengunjung";
+            label2.Text = "Nama Pengunjung";
             label2.Click += label2_Click;
             // 
             // panel4
             // 
             panel4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel4.AutoSize = true;
             panel4.Controls.Add(dataGridView1);
             panel4.Controls.Add(panel6);
             panel4.Controls.Add(panel5);
+            panel4.Controls.Add(panel8);
             panel4.Location = new Point(32, 554);
             panel4.Name = "panel4";
             panel4.Size = new Size(1384, 458);
@@ -181,6 +258,7 @@
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(920, 373);
             dataGridView1.TabIndex = 3;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // panel6
             // 
@@ -209,6 +287,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(419, 27);
             textBox3.TabIndex = 0;
+            textBox3.TextChanged += SearchingtextBox3_TextChanged;
             // 
             // panel5
             // 
@@ -230,6 +309,40 @@
             label4.Text = "Pengunjung [Tanggal Sekarang]";
             label4.Click += label4_Click;
             // 
+            // panel8
+            // 
+            panel8.BorderStyle = BorderStyle.FixedSingle;
+            panel8.Controls.Add(radioButton_Update);
+            panel8.Controls.Add(radioButton_Cread);
+            panel8.Location = new Point(1012, 82);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(203, 125);
+            panel8.TabIndex = 5;
+            // 
+            // radioButton_Update
+            // 
+            radioButton_Update.AutoSize = true;
+            radioButton_Update.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            radioButton_Update.Location = new Point(17, 57);
+            radioButton_Update.Name = "radioButton_Update";
+            radioButton_Update.Size = new Size(142, 29);
+            radioButton_Update.TabIndex = 9;
+            radioButton_Update.TabStop = true;
+            radioButton_Update.Text = "Update Date";
+            radioButton_Update.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_Cread
+            // 
+            radioButton_Cread.AutoSize = true;
+            radioButton_Cread.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            radioButton_Cread.Location = new Point(17, 22);
+            radioButton_Cread.Name = "radioButton_Cread";
+            radioButton_Cread.Size = new Size(133, 29);
+            radioButton_Cread.TabIndex = 8;
+            radioButton_Cread.TabStop = true;
+            radioButton_Cread.Text = "Cread Data";
+            radioButton_Cread.UseVisualStyleBackColor = true;
+            // 
             // Pengunjung
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -247,6 +360,10 @@
             panel1.PerformLayout();
             panel_Main.ResumeLayout(false);
             panel_Main.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel2.ResumeLayout(false);
@@ -257,7 +374,10 @@
             panel6.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -270,8 +390,8 @@
         private Panel panel2;
         private Button button1;
         private Panel panel3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox Daerah;
+        private TextBox Nama;
         private Panel panel4;
         private Panel panel5;
         private Label label4;
@@ -279,5 +399,14 @@
         private DataGridView dataGridView1;
         private Button Cari_pengunjung;
         private TextBox textBox3;
+        private Label label5;
+        private Panel panel7;
+        private TextBox ID_wisata;
+        private Panel panel8;
+        private RadioButton radioButton_Update;
+        private RadioButton radioButton_Cread;
+        private Label label6;
+        private Panel panel9;
+        private TextBox wisata_id;
     }
 }

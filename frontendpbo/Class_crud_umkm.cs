@@ -33,13 +33,13 @@ namespace frontendpbo
         public conec()
         {
             NpgsqlConnection connection = new NpgsqlConnection();
-            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = 140704;Database=umkm_pbo";
+            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = 123;Database=peta_jember";
         }
 
         public DataTable Eksekusi(string sql)
         {
             NpgsqlConnection connection = new NpgsqlConnection();
-            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = 140704;Database=umkm_pbo";
+            connection.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;password = 123;Database=peta_jember";
             DataTable dt = new DataTable();
             try
             {

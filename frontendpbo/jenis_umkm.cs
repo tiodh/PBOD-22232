@@ -69,7 +69,7 @@ namespace tampil_data_umkm
 
         private void sidebar_Paint(object sender, PaintEventArgs e)
         {
-           
+
         }
     }
 }

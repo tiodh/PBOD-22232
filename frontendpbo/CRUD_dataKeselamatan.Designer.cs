@@ -57,6 +57,7 @@
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(1119, 869);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // Clear_Keamanan
             // 
@@ -79,6 +80,7 @@
             Tambah_Keselamatan.TabIndex = 1;
             Tambah_Keselamatan.Text = "Tambah";
             Tambah_Keselamatan.UseVisualStyleBackColor = false;
+            Tambah_Keselamatan.Click += Tambah_Keselamatan_Click;
             // 
             // Edit_Keamanan
             // 
@@ -90,6 +92,7 @@
             Edit_Keamanan.TabIndex = 1;
             Edit_Keamanan.Text = "Edit";
             Edit_Keamanan.UseVisualStyleBackColor = false;
+            Edit_Keamanan.Click += Edit_Keamanan_Click;
             // 
             // Hapus_Keamanan
             // 
@@ -99,7 +102,7 @@
             Hapus_Keamanan.Name = "Hapus_Keamanan";
             Hapus_Keamanan.Size = new Size(129, 63);
             Hapus_Keamanan.TabIndex = 1;
-            Hapus_Keamanan.Text = "Edit";
+            Hapus_Keamanan.Text = "Hapus";
             Hapus_Keamanan.UseVisualStyleBackColor = false;
             // 
             // nama_lembaga_dataKeamanan

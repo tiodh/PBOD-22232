@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            dataGridView1 = new DataGridView();
+            DGVdataPengguna = new DataGridView();
             label2 = new Label();
             tbNama = new TextBox();
             label3 = new Label();
@@ -38,10 +38,11 @@
             tbEmail = new TextBox();
             tbUsername = new TextBox();
             tbPassword = new TextBox();
-            textBox5 = new TextBox();
+            tbSearchDataPengguna = new TextBox();
             btnCreate = new Button();
             btnUpdate = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            label6 = new Label();
+            ((System.ComponentModel.ISupportInitialize)DGVdataPengguna).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -50,34 +51,39 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(111, 106, 248);
-            label1.Location = new Point(63, 26);
+            label1.Location = new Point(90, 43);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(253, 37);
+            label1.Size = new Size(373, 55);
             label1.TabIndex = 0;
             label1.Text = "Data Pengguna";
             // 
-            // dataGridView1
+            // DGVdataPengguna
             // 
-            dataGridView1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.BackgroundColor = SystemColors.ActiveBorder;
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(63, 107);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(781, 494);
-            dataGridView1.TabIndex = 1;
+            DGVdataPengguna.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            DGVdataPengguna.BackgroundColor = SystemColors.ActiveBorder;
+            DGVdataPengguna.BorderStyle = BorderStyle.None;
+            DGVdataPengguna.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVdataPengguna.Location = new Point(90, 178);
+            DGVdataPengguna.Margin = new Padding(4, 5, 4, 5);
+            DGVdataPengguna.Name = "DGVdataPengguna";
+            DGVdataPengguna.RowHeadersWidth = 51;
+            DGVdataPengguna.RowTemplate.Height = 25;
+            DGVdataPengguna.Size = new Size(1116, 823);
+            DGVdataPengguna.TabIndex = 1;
+            DGVdataPengguna.CellClick += DGVdataPengguna_CellClick;
+            DGVdataPengguna.CellContentClick += DGVDataPengguna_CellContentClick;
             // 
             // label2
             // 
             label2.Anchor = AnchorStyles.Right;
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ActiveCaptionText;
-            label2.Location = new Point(879, 107);
+            label2.Location = new Point(1256, 178);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(231, 24);
+            label2.Size = new Size(381, 36);
             label2.TabIndex = 2;
             label2.Text = "Nama Lengkap Pengguna";
             // 
@@ -87,21 +93,23 @@
             tbNama.BackColor = Color.FromArgb(111, 106, 248);
             tbNama.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tbNama.ForeColor = SystemColors.Window;
-            tbNama.Location = new Point(879, 147);
+            tbNama.Location = new Point(1256, 245);
+            tbNama.Margin = new Padding(4, 5, 4, 5);
             tbNama.Multiline = true;
             tbNama.Name = "tbNama";
-            tbNama.Size = new Size(426, 34);
+            tbNama.Size = new Size(607, 54);
             tbNama.TabIndex = 3;
             // 
             // label3
             // 
             label3.Anchor = AnchorStyles.Right;
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point(879, 224);
+            label3.Location = new Point(1256, 373);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(150, 24);
+            label3.Size = new Size(247, 36);
             label3.TabIndex = 4;
             label3.Text = "Email Pengguna";
             // 
@@ -109,11 +117,12 @@
             // 
             label4.Anchor = AnchorStyles.Right;
             label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(879, 337);
+            label4.Location = new Point(1256, 562);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(97, 24);
+            label4.Size = new Size(158, 36);
             label4.TabIndex = 5;
             label4.Text = "Username";
             // 
@@ -121,11 +130,12 @@
             // 
             label5.Anchor = AnchorStyles.Right;
             label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(884, 449);
+            label5.Location = new Point(1263, 748);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(92, 24);
+            label5.Size = new Size(155, 36);
             label5.TabIndex = 6;
             label5.Text = "Password";
             // 
@@ -135,10 +145,11 @@
             tbEmail.BackColor = Color.FromArgb(111, 106, 248);
             tbEmail.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tbEmail.ForeColor = SystemColors.Window;
-            tbEmail.Location = new Point(879, 262);
+            tbEmail.Location = new Point(1256, 437);
+            tbEmail.Margin = new Padding(4, 5, 4, 5);
             tbEmail.Multiline = true;
             tbEmail.Name = "tbEmail";
-            tbEmail.Size = new Size(426, 33);
+            tbEmail.Size = new Size(607, 52);
             tbEmail.TabIndex = 7;
             // 
             // tbUsername
@@ -147,10 +158,11 @@
             tbUsername.BackColor = Color.FromArgb(111, 106, 248);
             tbUsername.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tbUsername.ForeColor = SystemColors.Window;
-            tbUsername.Location = new Point(879, 374);
+            tbUsername.Location = new Point(1256, 623);
+            tbUsername.Margin = new Padding(4, 5, 4, 5);
             tbUsername.Multiline = true;
             tbUsername.Name = "tbUsername";
-            tbUsername.Size = new Size(426, 31);
+            tbUsername.Size = new Size(607, 49);
             tbUsername.TabIndex = 8;
             // 
             // tbPassword
@@ -159,32 +171,37 @@
             tbPassword.BackColor = Color.FromArgb(111, 106, 248);
             tbPassword.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tbPassword.ForeColor = SystemColors.Window;
-            tbPassword.Location = new Point(879, 485);
+            tbPassword.Location = new Point(1256, 808);
+            tbPassword.Margin = new Padding(4, 5, 4, 5);
             tbPassword.Multiline = true;
             tbPassword.Name = "tbPassword";
-            tbPassword.Size = new Size(426, 30);
+            tbPassword.Size = new Size(607, 47);
             tbPassword.TabIndex = 9;
             // 
-            // textBox5
+            // tbSearchDataPengguna
             // 
-            textBox5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            textBox5.BackColor = SystemColors.ActiveBorder;
-            textBox5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(606, 66);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(238, 24);
-            textBox5.TabIndex = 10;
-            textBox5.Text = "Search Pengguna";
+            tbSearchDataPengguna.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            tbSearchDataPengguna.BackColor = SystemColors.Control;
+            tbSearchDataPengguna.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            tbSearchDataPengguna.Location = new Point(866, 110);
+            tbSearchDataPengguna.Margin = new Padding(4, 5, 4, 5);
+            tbSearchDataPengguna.Multiline = true;
+            tbSearchDataPengguna.Name = "tbSearchDataPengguna";
+            tbSearchDataPengguna.Size = new Size(338, 37);
+            tbSearchDataPengguna.TabIndex = 10;
+            tbSearchDataPengguna.Text = "Search Pengguna";
+            tbSearchDataPengguna.Click += tbSearchDataPengguna_Click;
+            tbSearchDataPengguna.TextChanged += tbSearchDataPengguna_TextChanged;
             // 
             // btnCreate
             // 
             btnCreate.Anchor = AnchorStyles.Right;
             btnCreate.BackColor = Color.LimeGreen;
             btnCreate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCreate.Location = new Point(944, 556);
+            btnCreate.Location = new Point(1349, 927);
+            btnCreate.Margin = new Padding(4, 5, 4, 5);
             btnCreate.Name = "btnCreate";
-            btnCreate.Size = new Size(128, 45);
+            btnCreate.Size = new Size(183, 75);
             btnCreate.TabIndex = 11;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = false;
@@ -193,23 +210,37 @@
             // btnUpdate
             // 
             btnUpdate.Anchor = AnchorStyles.Right;
-            btnUpdate.BackColor = Color.Orange;
+            btnUpdate.BackColor = Color.Gold;
             btnUpdate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnUpdate.Location = new Point(1128, 556);
+            btnUpdate.Location = new Point(1611, 927);
+            btnUpdate.Margin = new Padding(4, 5, 4, 5);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(128, 45);
+            btnUpdate.Size = new Size(183, 75);
             btnUpdate.TabIndex = 12;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.MediumPurple;
+            label6.Location = new Point(392, 88);
+            label6.Name = "label6";
+            label6.Size = new Size(71, 25);
+            label6.TabIndex = 13;
+            label6.Text = "update";
             // 
             // DataPengguna
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1350, 650);
+            ClientSize = new Size(1929, 1083);
+            Controls.Add(label6);
             Controls.Add(btnUpdate);
             Controls.Add(btnCreate);
-            Controls.Add(textBox5);
+            Controls.Add(tbSearchDataPengguna);
             Controls.Add(tbPassword);
             Controls.Add(tbUsername);
             Controls.Add(tbEmail);
@@ -218,12 +249,13 @@
             Controls.Add(label3);
             Controls.Add(tbNama);
             Controls.Add(label2);
-            Controls.Add(dataGridView1);
+            Controls.Add(DGVdataPengguna);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "DataPengguna";
             Text = "Form4";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DGVdataPengguna).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -231,7 +263,7 @@
         #endregion
 
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView DGVdataPengguna;
         private Label label2;
         private TextBox tbNama;
         private Label label3;
@@ -240,8 +272,9 @@
         private TextBox tbEmail;
         private TextBox tbUsername;
         private TextBox tbPassword;
-        private TextBox textBox5;
+        private TextBox tbSearchDataPengguna;
         private Button btnCreate;
         private Button btnUpdate;
+        private Label label6;
     }
 }
