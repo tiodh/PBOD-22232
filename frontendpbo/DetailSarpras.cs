@@ -19,12 +19,13 @@ namespace frontendpbo
             showDataKolam();
             showDataCamp();
             showDataHotel();
+            showDataWisata();
         }
 
         private void showDataHotel()
         {
             db = new DatabaseHelper();
-            var reader = db.Select("SELECT deskripsi_sarana FROM sarana_prasarana WHERE nama_sarana LIKE 'Hotel dan Restoran'");
+            var reader = db.Select("SELECT deskripsi_sarana FROM sarana_prasarana limit 1 ");
             dGV_Hotel.Columns.Clear();
             dGV_Hotel.Rows.Clear();
 
@@ -60,7 +61,7 @@ namespace frontendpbo
         private void showDataKolam()
         {
             db = new DatabaseHelper();
-            var reader = db.Select("SELECT deskripsi_sarana FROM sarana_prasarana WHERE nama_sarana LIKE 'Kolam Renang'");
+            var reader = db.Select("SELECT deskripsi_sarana FROM sarana_prasarana limit 1 offset 1");
             dGV_kolam.Columns.Clear();
             dGV_kolam.Rows.Clear();
 
@@ -96,9 +97,9 @@ namespace frontendpbo
         private void showDataCamp()
         {
             db = new DatabaseHelper();
-            var reader = db.Select("SELECT deskripsi_sarana FROM sarana_prasarana WHERE nama_sarana LIKE 'Camping Ground'");
-            dGV_Hotel.Columns.Clear();
-            dGV_Hotel.Rows.Clear();
+            var reader = db.Select("SELECT deskripsi_sarana FROM sarana_prasarana limit 1 offset 2");
+            dGV_camp.Columns.Clear();
+            dGV_camp.Rows.Clear();
 
             // Menambahkan kolom deskripsi sarana
             dGV_camp.Columns.Add("Deskripsi Sarana", "Deskripsi Sarana");
@@ -123,6 +124,43 @@ namespace frontendpbo
             {
                 var deskripsiSarana = reader["deskripsi_sarana"];
                 dGV_camp.Rows.Add(deskripsiSarana);
+            }
+
+            reader.Close();
+
+        }
+
+
+        private void showDataWisata()
+        {
+            db = new DatabaseHelper();
+            var reader = db.Select("SELECT deskripsi_sarana FROM sarana_prasarana limit 1 offset 3");
+            dGV_wisata.Columns.Clear();
+            dGV_wisata.Rows.Clear();
+
+            // Menambahkan kolom deskripsi sarana
+            dGV_wisata.Columns.Add("Deskripsi Sarana", "Deskripsi Sarana");
+
+            // Mengatur properti ColumnHeadersVisible menjadi false
+            dGV_wisata.ColumnHeadersVisible = false;
+            dGV_wisata.RowHeadersVisible = false;
+
+            // Mengatur properti WrapMode menjadi True
+            dGV_wisata.Columns["Deskripsi Sarana"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+
+            // Mengatur posisi teks pada sel "Deskripsi Sarana"
+            dGV_wisata.Columns["Deskripsi Sarana"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.TopLeft;
+
+            // Mengatur AutoSizeRowsMode menjadi AllCells
+            dGV_wisata.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            // Mengatur AutoSizeMode menjadi Fill
+            dGV_wisata.Columns["Deskripsi Sarana"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            while (reader.Read())
+            {
+                var deskripsiSarana = reader["deskripsi_sarana"];
+                dGV_wisata.Rows.Add(deskripsiSarana);
             }
 
             reader.Close();
