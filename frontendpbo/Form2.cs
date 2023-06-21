@@ -27,7 +27,6 @@ namespace frontendpbo
         private void TampilInformasiPengumuman()
         {
             if (activeForm != null) activeForm.Close();
-
             contextIP = new ContextInformasiPengumuman();
 
             // Mengakses properti ListInformasiPengumuman

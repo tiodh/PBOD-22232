@@ -42,23 +42,6 @@ namespace frontendpbo
                 comboBox1.Items.Add("Kebon Agung");
                 comboBox1.Items.Add("back");
             }
-            else if (comboBox1.SelectedItem.ToString() == "Jumlah Tiket")
-            {
-                pilihan = comboBox1.SelectedItem.ToString();
-                comboBox1.Items.Clear();
-                comboBox1.Items.Add("Terkecil");
-                comboBox1.Items.Add("Terbanyak");
-                comboBox1.Items.Add("back");
-            }
-            else if (comboBox1.SelectedItem.ToString() == "back")
-            {
-                dataGridView1.DataSource = null;
-                comboBox1.Items.Clear();
-                comboBox1.Items.Add("ID Wisata");
-                comboBox1.Items.Add("Tanggal Kunjungan");
-                comboBox1.Items.Add("Jumlah Tiket");
-            }
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {
