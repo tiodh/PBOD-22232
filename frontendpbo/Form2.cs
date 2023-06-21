@@ -208,5 +208,10 @@ namespace frontendpbo
         {
             openChildForm(new Edit_Riwayat_Kunjungan());
         }
+
+        private void edit5_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CreateSarana());
+        }
     }
 }
