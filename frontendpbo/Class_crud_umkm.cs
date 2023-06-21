@@ -12,17 +12,17 @@ namespace frontendpbo
 {
     public class Class_crud_umkm
     {
-        public static void made(int idumkm,string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm)
+        public static void made(int idumkm,string namumkm, string deskripsiumkm, string pemilikumkm, string noteleponumkm, int wisataid)
         {
             conec conecsidb = new conec();
-            string create = "insert into umkm_pbo_1.umkm (id_umkm,nama_umkm, deskripsi_umkm, pemilik_umkm, no_telepon_umkm)\r" +
-                $"\nvalues ('{idumkm}','{namumkm}','{deskripsiumkm}','{pemilikumkm}','{noteleponumkm}');";
+            string create = "insert into umkm (id_umkm,nama_umkm, deskripsi_umkm, pemilik_umkm, no_telepon_umkm, wisata_id)\r" +
+                $"\nvalues ('{idumkm}','{namumkm}','{deskripsiumkm}','{pemilikumkm}','{noteleponumkm}','{wisataid}');";
             conecsidb.Eksekusi(create);
         }
         public static DataTable read()
         {
             conec conecsidb = new conec();
-            DataTable dt = conecsidb.Eksekusi("SELECT * FROM umkm_pbo_1.umkm;");
+            DataTable dt = conecsidb.Eksekusi("SELECT * FROM umkm;");
 
             return dt;
         }
@@ -62,7 +62,6 @@ namespace frontendpbo
 
             return dt;
         }
-
-
     }
 }
+

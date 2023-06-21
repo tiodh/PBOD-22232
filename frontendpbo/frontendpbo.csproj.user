@@ -13,7 +13,7 @@
     <Compile Update="CRUDTransportasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CRUD_dataKeselamatan.cs">
+    <Compile Update="CRUDKeselamatan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="crud_informasi_pengumuman.cs">
@@ -52,6 +52,8 @@
     <Compile Update="DWisata.cs">
       <SubType>UserControl</SubType>
     </Compile>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="EditTiketing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,7 +75,7 @@
     <Compile Update="AddPengunjung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormDetailDataTiket.cs">
+    <Compile Update="DetailTiket.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormDetailTransportasi.cs">
