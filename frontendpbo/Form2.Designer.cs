@@ -204,6 +204,7 @@
             button4.Text = "Data Riwayat Kunjungan";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -317,6 +318,7 @@
             edit10.Text = "Edit";
             edit10.TextAlign = ContentAlignment.MiddleLeft;
             edit10.UseVisualStyleBackColor = false;
+            edit10.Click += edit10_Click;
             // 
             // keamanan
             // 
@@ -333,6 +335,7 @@
             keamanan.Text = "Keamanan dan Keselamatan";
             keamanan.TextAlign = ContentAlignment.MiddleLeft;
             keamanan.UseVisualStyleBackColor = false;
+            keamanan.Click += keamanan_Click;
             // 
             // edit9
             // 
@@ -401,6 +404,7 @@
             informasi.Text = "Informasi";
             informasi.TextAlign = ContentAlignment.MiddleLeft;
             informasi.UseVisualStyleBackColor = false;
+            informasi.Click += informasi_Click;
             // 
             // edit7
             // 
@@ -484,6 +488,7 @@
             edit5.Text = "Edit";
             edit5.TextAlign = ContentAlignment.MiddleLeft;
             edit5.UseVisualStyleBackColor = false;
+            edit5.Click += edit5_Click;
             // 
             // saranaPrasarana
             // 
@@ -697,6 +702,7 @@
             // 
             // panelContent
             // 
+            panelContent.AutoScroll = true;
             panelContent.Dock = DockStyle.Fill;
             panelContent.Location = new Point(334, 78);
             panelContent.Name = "panelContent";

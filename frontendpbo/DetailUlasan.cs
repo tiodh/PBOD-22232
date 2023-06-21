@@ -11,10 +11,10 @@ using frontendpbo.Helpers;
 
 namespace frontendpbo
 {
-    public partial class FormShowUlasan : Form
+    public partial class DetailUlasan : Form
     {
         Contexts.ContextUlasan ulasanContext;
-        public FormShowUlasan()
+        public DetailUlasan()
         {
             InitializeComponent();
             ulasanContext = new Contexts.ContextUlasan();
