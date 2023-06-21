@@ -63,6 +63,7 @@ namespace frontendpbo
 
         }
 
+
         private void buttonCreate_Click(object sender, EventArgs e)
         {
             Ulasan ulasan = this.GetUlasan();
@@ -72,6 +73,50 @@ namespace frontendpbo
 
             ulasanContext.Read();
             dataGridViewEditUlasan.DataSource = ulasanContext.listUlasan;
+        }
+
+        private void dataGridViewEditUlasan_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow selectedRow = dataGridViewEditUlasan.Rows[e.RowIndex];
+
+                // Mengisi data ke TextBox
+                textBoxNamaPenggunaE.Text = selectedRow.Cells["nama_user"].Value.ToString();
+                textBoxDeskripsiUlasanE.Text = selectedRow.Cells["deskripsi_ulasan"].Value.ToString();
+
+                // Menampilkan data terkait di ComboBox
+                int wisataId = Convert.ToInt32(selectedRow.Cells["wisata_id"].Value);
+                comboBox1.SelectedValue = wisataId;
+            }
+        }
+
+        private void RefreshDataGridView()
+        {
+            dataGridViewEditUlasan.DataSource = null;
+            dataGridViewEditUlasan.DataSource = ulasanList;
+
+            ulasanContext.Read();
+            dataGridViewEditUlasan.DataSource = ulasanContext.listUlasan;
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewEditUlasan.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dataGridViewEditUlasan.SelectedRows[0];
+
+                // Dapatkan objek Ulasan dari baris yang dipilih
+                Ulasan selectedUlasan = selectedRow.DataBoundItem as Ulasan;
+
+                // Hapus data dari database menggunakan ContextUlasan
+                ulasanContext.Delete(selectedUlasan.id_ulasan);
+
+                // Hapus objek Ulasan dari sumber data (BindingList)
+                ulasanList.Remove(selectedUlasan);
+
+                RefreshDataGridView();
+            }
         }
     }
 }

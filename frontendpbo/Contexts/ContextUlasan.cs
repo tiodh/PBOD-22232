@@ -104,5 +104,25 @@ namespace frontendpbo.Contexts
             return namaWisataList;
         }
 
+        public void Delete(int ulasanId)
+        {
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+            using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
+            {
+                string sql = "SELECT ulasan.id_ulasan, ulasan.nama_user, ulasan.deskripsi_ulasan, objek_wisata.id_wisata " +
+             "FROM ulasan " +
+             "JOIN objek_wisata ON ulasan.wisata_id = objek_wisata.id_wisata";
+                connection.Open();
+
+                using (NpgsqlCommand command = new NpgsqlCommand("DELETE FROM ulasan WHERE id_ulasan = @id_ulasan", connection))
+                {
+                    command.Parameters.AddWithValue("@id_ulasan", ulasanId);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+
     }
 }
