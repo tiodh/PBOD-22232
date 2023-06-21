@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "/Y40qLTc7nMkVVI0q2hOuhcevxW3hlQIXlAvRIkaz8+5RAzLd+yS/SRxxB5Pd76H+qhgiVkHR41aukxMDJoZ+g==",
+  "dgSpecHash": "i5QtwyBay1EFCVLHkzgeS24A27bOdJkp5qy9rNlKpq0MkELEqAHUpyCeW15E56tnkQnrh5VQrEgcWwXVmBt/1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows 10\\Documents\\pbo\\Tugas Akhir\\New folder\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+  "projectFilePath": "C:\\Users\\alya\\Documents\\a.semester 2\\Semester 2 CODING\\fiks\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Windows 10\\.nuget\\packages\\livecharts.netcore\\0.9.7\\livecharts.netcore.0.9.7.nupkg.sha512",
-    "C:\\Users\\Windows 10\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Windows 10\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
-    "C:\\Users\\Windows 10\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
-    "C:\\Users\\Windows 10\\.nuget\\packages\\oxyplot.windowsforms\\2.1.2\\oxyplot.windowsforms.2.1.2.nupkg.sha512",
-    "C:\\Users\\Windows 10\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\alya\\.nuget\\packages\\livecharts.netcore\\0.9.7\\livecharts.netcore.0.9.7.nupkg.sha512",
+    "C:\\Users\\alya\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\alya\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\alya\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\alya\\.nuget\\packages\\oxyplot.windowsforms\\2.1.2\\oxyplot.windowsforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\alya\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -208,5 +208,15 @@ namespace frontendpbo
         {
             openChildForm(new Edit_Riwayat_Kunjungan());
         }
+
+        private void keamanan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void edit10_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CRUD_Data_Keselamatan());
+        }
     }
 }
