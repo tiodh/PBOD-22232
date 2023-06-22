@@ -70,16 +70,16 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
             {
-                string sql = "UPDATE public.tiket SET nama_tiket = :NamaTiket, deskripsi_tiket = :DeskripsiTiket, harga_tiket = :HargaTiket \nWHERE id_tiket = :IDTIKET;";
+                string sql = "UPDATE public.tiket SET id_sarana = :IdWisata, nama_sarana = :NamaSarana, deskripsi_sarana = :DeskripsiSarana \nWHERE Wisata_ID = :IDWisata;";
 
                 connection.Open();
 
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, connection))
                 {
-                    cmd.Parameters.Add(new NpgsqlParameter(":NamaTiket", sarana.id_sarana));
-                    cmd.Parameters.Add(new NpgsqlParameter(":DeskripsiTiket", sarana.nama_sarana));
-                    cmd.Parameters.Add(new NpgsqlParameter(":HargaTiket", sarana.deskripsi_sarana));
-                    cmd.Parameters.Add(new NpgsqlParameter(":IDTIKET", sarana.Wisata_ID));
+                    cmd.Parameters.Add(new NpgsqlParameter(":IdSarana", sarana.id_sarana));
+                    cmd.Parameters.Add(new NpgsqlParameter(":NamaSarana", sarana.nama_sarana));
+                    cmd.Parameters.Add(new NpgsqlParameter(":DeskripsiSarana", sarana.deskripsi_sarana));
+                    cmd.Parameters.Add(new NpgsqlParameter(":IDWisata", sarana.Wisata_ID));
                     cmd.CommandType = System.Data.CommandType.Text;
                     int JumlahData = cmd.ExecuteNonQuery();
                     if (JumlahData > 0)
