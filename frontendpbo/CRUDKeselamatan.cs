@@ -97,7 +97,6 @@ namespace frontendpbo
                             command.ExecuteNonQuery();
                         }
                         LoadData();
-
                         textBox_nama_lembaga_dataKeamanan.Text = "";
                         textBoxnoHp_dataKeamanan.Text = "";
                         textBoxalamat_dataKeamanan.Text = "";
