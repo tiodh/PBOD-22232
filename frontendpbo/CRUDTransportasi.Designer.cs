@@ -99,7 +99,7 @@
             SearchTransportasi.TabIndex = 15;
             SearchTransportasi.Text = "SEARCH";
             SearchTransportasi.UseVisualStyleBackColor = true;
-            SearchTransportasi.Click += SearchTransportasi_Click;
+            //SearchTransportasi.Click += SearchTransportasi_Click;
             // 
             // TampilanData
             // 
@@ -108,7 +108,7 @@
             TampilanData.Name = "TampilanData";
             TampilanData.Size = new Size(233, 27);
             TampilanData.TabIndex = 14;
-            TampilanData.TextChanged += TampilanData_TextChanged;
+
             // 
             // label6
             // 
@@ -197,7 +197,6 @@
             DeleteTransportasi.TabIndex = 12;
             DeleteTransportasi.Text = "DELETE DATA";
             DeleteTransportasi.UseVisualStyleBackColor = false;
-            DeleteTransportasi.Click += DeleteTransportasi_Click;
             // 
             // label3
             // 
@@ -287,7 +286,7 @@
             TampilData.RowTemplate.Height = 25;
             TampilData.Size = new Size(1287, 269);
             TampilData.TabIndex = 5;
-            TampilData.CellContentClick += TampilData_CellContentClick;
+
             // 
             // CRUDTransportasi
             // 
@@ -298,7 +297,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "CRUDTransportasi";
             Text = "Form4";
-            Load += CRUDTrasnportasi_Load;
+
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();

@@ -1,4 +1,6 @@
-﻿using Npgsql;
+﻿using frontendpbo.Contexts;
+using frontendpbo.Models;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,15 +16,36 @@ namespace frontendpbo
 {
     public partial class CRUDDataPenginapan : Form
     {
+        ContextPenginapan contextPenginapan;
+        private List<Penginapan> listPenginapan;
         private int id_penginapan;
         public CRUDDataPenginapan()
         {
             InitializeComponent();
+            contextPenginapan = new ContextPenginapan();
+
+            //  loaddata();
+            //  DataPenginapandataGridView1.DataSource = ContextPenginapan.GetListPenginapan();
         }
 
         void loaddata()
         {
-            DataPenginapandataGridView1.DataSource = Read.contohSelect();
+            DataPenginapandataGridView1.DataSource = contextPenginapan.listPenginapan;
+        }
+
+        private void Clear()
+        {
+            NamaPenginapantextBox1.Text = "";
+            DeskripsiPenginapantextBox2.Text = "";
+        }
+
+        private Models.Penginapan GetPenginapan()
+        {
+            Models.Penginapan mPenginapan = new Models.Penginapan();
+            mPenginapan.Name = NamaPenginapantextBox1.Text;
+            mPenginapan.Description = DeskripsiPenginapantextBox2.Text;
+
+            return mPenginapan;
         }
 
         private void CRUDDataPenginapan_Load(object sender, EventArgs e)
@@ -91,16 +114,17 @@ namespace frontendpbo
 
         private void Tambahbutton2_Click(object sender, EventArgs e)
         {
-            if (NamaPenginapantextBox1.Text == "" || DeskripsiPenginapantextBox2.Text == "")
-            {
-                MessageBox.Show("Nama atau deskripsi penginapan tidak boleh kosong", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } else
-            {
-            Create.contohCreate(NamaPenginapantextBox1.Text, DeskripsiPenginapantextBox2.Text);
-            loaddata();
-            NamaPenginapantextBox1.Text = "";
-            DeskripsiPenginapantextBox2.Text = "";
-            }
+
+            Models.Penginapan penginapan = this.GetPenginapan();
+            contextPenginapan.Insert(penginapan);
+            DataPenginapandataGridView1.DataSource = null;
+            // loaddata();
+            Clear();
+        }
+
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
@@ -168,37 +192,6 @@ namespace frontendpbo
 
     }
 
-    class Create
-    {
-        static public void contohCreate(string nama_penginapan, string deskripsi_penginapan)
-        {
-
-            NpgsqlConnection connection = new NpgsqlConnection();
-
-
-            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Penginapan;";
-            connection.ConnectionString = constr;
-            DataTable dt = new DataTable();
-            try
-            {
-                connection.Open();
-                NpgsqlCommand cmd = new NpgsqlCommand();
-                cmd.Connection = connection;
-                string StrSql = $"INSERT INTO penginapan(nama_penginapan, deskripsi_penginapan) VALUES ('{nama_penginapan}','{deskripsi_penginapan}')"; ;
-                cmd.CommandText = StrSql;
-                cmd.CommandType = CommandType.Text;
-                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
-                da.Fill(dt);
-                cmd.Dispose();
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-            }
-        }
-
-    }
 
     class Read
     {

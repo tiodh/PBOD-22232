@@ -37,6 +37,7 @@
             Tambahbutton2 = new Button();
             Editbutton3 = new Button();
             Deletebutton4 = new Button();
+            txt_search = new TextBox();
             ((System.ComponentModel.ISupportInitialize)DataPenginapandataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -79,6 +80,7 @@
             // 
             // DataPenginapandataGridView1
             // 
+            DataPenginapandataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DataPenginapandataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DataPenginapandataGridView1.Location = new Point(548, 57);
             DataPenginapandataGridView1.Name = "DataPenginapandataGridView1";
@@ -132,11 +134,20 @@
             Deletebutton4.UseVisualStyleBackColor = false;
             Deletebutton4.Click += Deletebutton4_Click;
             // 
+            // txt_search
+            // 
+            txt_search.Location = new Point(548, 24);
+            txt_search.Name = "txt_search";
+            txt_search.Size = new Size(468, 27);
+            txt_search.TabIndex = 10;
+            txt_search.TextChanged += txt_search_TextChanged;
+            // 
             // CRUDDataPenginapan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1422, 977);
+            Controls.Add(txt_search);
             Controls.Add(Deletebutton4);
             Controls.Add(Editbutton3);
             Controls.Add(Tambahbutton2);
@@ -166,5 +177,6 @@
         private Button Tambahbutton2;
         private Button Editbutton3;
         private Button Deletebutton4;
+        private TextBox txt_search;
     }
 }

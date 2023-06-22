@@ -1,6 +1,6 @@
 ﻿namespace frontendpbo
 {
-    partial class crud_umkm
+    partial class CRUDUmkm
     {
         /// <summary>
         /// Required designer variable.
@@ -230,12 +230,16 @@
             // 
             // dataGridView1_umkm
             // 
+            dataGridView1_umkm.AllowUserToAddRows = false;
+            dataGridView1_umkm.AllowUserToDeleteRows = false;
             dataGridView1_umkm.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1_umkm.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1_umkm.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridView1_umkm.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1_umkm.Location = new Point(606, 199);
             dataGridView1_umkm.Name = "dataGridView1_umkm";
+            dataGridView1_umkm.ReadOnly = true;
+            dataGridView1_umkm.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1_umkm.RowHeadersWidth = 51;
             dataGridView1_umkm.RowTemplate.Height = 29;
             dataGridView1_umkm.Size = new Size(934, 459);

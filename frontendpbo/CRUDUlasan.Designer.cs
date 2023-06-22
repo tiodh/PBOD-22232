@@ -28,148 +28,149 @@
         /// </summary>
         private void InitializeComponent()
         {
-            labelNamaPenggunaE=new Label();
-            textBoxNamaPenggunaE=new TextBox();
-            labelDeskripsiUlasanE=new Label();
-            textBoxDeskripsiUlasanE=new TextBox();
-            dataGridViewEditUlasan=new DataGridView();
-            buttonCreate=new Button();
-            buttonDelete=new Button();
-            labelCariBerdasarkanE=new Label();
-            textBoxCariBerdasarkanE=new TextBox();
-            buttonSearchE=new Button();
-            comboBox1=new ComboBox();
-            label1=new Label();
+            labelNamaPenggunaE = new Label();
+            textBoxNamaPenggunaE = new TextBox();
+            labelDeskripsiUlasanE = new Label();
+            textBoxDeskripsiUlasanE = new TextBox();
+            dataGridViewEditUlasan = new DataGridView();
+            buttonCreate = new Button();
+            buttonDelete = new Button();
+            labelCariBerdasarkanE = new Label();
+            textBoxCariBerdasarkanE = new TextBox();
+            buttonSearchE = new Button();
+            comboBox1 = new ComboBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridViewEditUlasan).BeginInit();
             SuspendLayout();
             // 
             // labelNamaPenggunaE
             // 
-            labelNamaPenggunaE.AutoSize=true;
-            labelNamaPenggunaE.Location=new Point(55, 92);
-            labelNamaPenggunaE.Margin=new Padding(2, 0, 2, 0);
-            labelNamaPenggunaE.Name="labelNamaPenggunaE";
-            labelNamaPenggunaE.Size=new Size(96, 15);
-            labelNamaPenggunaE.TabIndex=1;
-            labelNamaPenggunaE.Text="Nama Pengguna";
+            labelNamaPenggunaE.AutoSize = true;
+            labelNamaPenggunaE.Location = new Point(63, 123);
+            labelNamaPenggunaE.Margin = new Padding(2, 0, 2, 0);
+            labelNamaPenggunaE.Name = "labelNamaPenggunaE";
+            labelNamaPenggunaE.Size = new Size(118, 20);
+            labelNamaPenggunaE.TabIndex = 1;
+            labelNamaPenggunaE.Text = "Nama Pengguna";
             // 
             // textBoxNamaPenggunaE
             // 
-            textBoxNamaPenggunaE.Location=new Point(55, 112);
-            textBoxNamaPenggunaE.Margin=new Padding(2);
-            textBoxNamaPenggunaE.Name="textBoxNamaPenggunaE";
-            textBoxNamaPenggunaE.Size=new Size(311, 23);
-            textBoxNamaPenggunaE.TabIndex=2;
+            textBoxNamaPenggunaE.Location = new Point(63, 149);
+            textBoxNamaPenggunaE.Margin = new Padding(2, 3, 2, 3);
+            textBoxNamaPenggunaE.Name = "textBoxNamaPenggunaE";
+            textBoxNamaPenggunaE.Size = new Size(355, 27);
+            textBoxNamaPenggunaE.TabIndex = 2;
             // 
             // labelDeskripsiUlasanE
             // 
-            labelDeskripsiUlasanE.AutoSize=true;
-            labelDeskripsiUlasanE.Location=new Point(53, 203);
-            labelDeskripsiUlasanE.Margin=new Padding(2, 0, 2, 0);
-            labelDeskripsiUlasanE.Name="labelDeskripsiUlasanE";
-            labelDeskripsiUlasanE.Size=new Size(92, 15);
-            labelDeskripsiUlasanE.TabIndex=3;
-            labelDeskripsiUlasanE.Text="Deskripsi Ulasan";
+            labelDeskripsiUlasanE.AutoSize = true;
+            labelDeskripsiUlasanE.Location = new Point(61, 271);
+            labelDeskripsiUlasanE.Margin = new Padding(2, 0, 2, 0);
+            labelDeskripsiUlasanE.Name = "labelDeskripsiUlasanE";
+            labelDeskripsiUlasanE.Size = new Size(117, 20);
+            labelDeskripsiUlasanE.TabIndex = 3;
+            labelDeskripsiUlasanE.Text = "Deskripsi Ulasan";
             // 
             // textBoxDeskripsiUlasanE
             // 
-            textBoxDeskripsiUlasanE.Location=new Point(55, 223);
-            textBoxDeskripsiUlasanE.Margin=new Padding(2);
-            textBoxDeskripsiUlasanE.Multiline=true;
-            textBoxDeskripsiUlasanE.Name="textBoxDeskripsiUlasanE";
-            textBoxDeskripsiUlasanE.Size=new Size(311, 172);
-            textBoxDeskripsiUlasanE.TabIndex=4;
+            textBoxDeskripsiUlasanE.Location = new Point(63, 297);
+            textBoxDeskripsiUlasanE.Margin = new Padding(2, 3, 2, 3);
+            textBoxDeskripsiUlasanE.Multiline = true;
+            textBoxDeskripsiUlasanE.Name = "textBoxDeskripsiUlasanE";
+            textBoxDeskripsiUlasanE.Size = new Size(355, 228);
+            textBoxDeskripsiUlasanE.TabIndex = 4;
             // 
             // dataGridViewEditUlasan
             // 
-            dataGridViewEditUlasan.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewEditUlasan.ColumnHeadersHeightSizeMode=DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewEditUlasan.Location=new Point(410, 98);
-            dataGridViewEditUlasan.Margin=new Padding(2);
-            dataGridViewEditUlasan.Name="dataGridViewEditUlasan";
-            dataGridViewEditUlasan.RowHeadersWidth=62;
-            dataGridViewEditUlasan.RowTemplate.Height=33;
-            dataGridViewEditUlasan.Size=new Size(572, 368);
-            dataGridViewEditUlasan.TabIndex=5;
-            dataGridViewEditUlasan.CellClick += new DataGridViewCellEventHandler(dataGridViewEditUlasan_CellClick);
+            dataGridViewEditUlasan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewEditUlasan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewEditUlasan.Location = new Point(469, 131);
+            dataGridViewEditUlasan.Margin = new Padding(2, 3, 2, 3);
+            dataGridViewEditUlasan.Name = "dataGridViewEditUlasan";
+            dataGridViewEditUlasan.RowHeadersWidth = 62;
+            dataGridViewEditUlasan.RowTemplate.Height = 33;
+            dataGridViewEditUlasan.Size = new Size(654, 491);
+            dataGridViewEditUlasan.TabIndex = 5;
+            dataGridViewEditUlasan.CellClick += dataGridViewEditUlasan_CellClick;
             // 
             // buttonCreate
             // 
-            buttonCreate.BackColor=Color.Green;
-            buttonCreate.Location=new Point(77, 417);
-            buttonCreate.Margin=new Padding(2);
-            buttonCreate.Name="buttonCreate";
-            buttonCreate.Size=new Size(121, 42);
-            buttonCreate.TabIndex=6;
-            buttonCreate.Text="CREATE";
-            buttonCreate.UseVisualStyleBackColor=false;
-            buttonCreate.Click+=buttonCreate_Click;
+            buttonCreate.BackColor = Color.Green;
+            buttonCreate.Location = new Point(88, 556);
+            buttonCreate.Margin = new Padding(2, 3, 2, 3);
+            buttonCreate.Name = "buttonCreate";
+            buttonCreate.Size = new Size(138, 56);
+            buttonCreate.TabIndex = 6;
+            buttonCreate.Text = "CREATE";
+            buttonCreate.UseVisualStyleBackColor = false;
+            buttonCreate.Click += buttonCreate_Click;
             // 
             // buttonDelete
             // 
-            buttonDelete.BackColor=Color.Red;
-            buttonDelete.Location=new Point(231, 417);
-            buttonDelete.Margin=new Padding(2);
-            buttonDelete.Name="buttonDelete";
-            buttonDelete.Size=new Size(113, 42);
-            buttonDelete.TabIndex=7;
-            buttonDelete.Text="DELETE";
-            buttonDelete.UseVisualStyleBackColor=false;
-            buttonDelete.Click+=buttonDelete_Click;
+            buttonDelete.BackColor = Color.Red;
+            buttonDelete.Location = new Point(264, 556);
+            buttonDelete.Margin = new Padding(2, 3, 2, 3);
+            buttonDelete.Name = "buttonDelete";
+            buttonDelete.Size = new Size(129, 56);
+            buttonDelete.TabIndex = 7;
+            buttonDelete.Text = "DELETE";
+            buttonDelete.UseVisualStyleBackColor = false;
+            buttonDelete.Click += buttonDelete_Click;
             // 
             // labelCariBerdasarkanE
             // 
-            labelCariBerdasarkanE.AutoSize=true;
-            labelCariBerdasarkanE.Location=new Point(61, 472);
-            labelCariBerdasarkanE.Margin=new Padding(2, 0, 2, 0);
-            labelCariBerdasarkanE.Name="labelCariBerdasarkanE";
-            labelCariBerdasarkanE.Size=new Size(95, 15);
-            labelCariBerdasarkanE.TabIndex=8;
-            labelCariBerdasarkanE.Text="Cari Berdasarkan";
+            labelCariBerdasarkanE.AutoSize = true;
+            labelCariBerdasarkanE.Location = new Point(70, 629);
+            labelCariBerdasarkanE.Margin = new Padding(2, 0, 2, 0);
+            labelCariBerdasarkanE.Name = "labelCariBerdasarkanE";
+            labelCariBerdasarkanE.Size = new Size(120, 20);
+            labelCariBerdasarkanE.TabIndex = 8;
+            labelCariBerdasarkanE.Text = "Cari Berdasarkan";
             // 
             // textBoxCariBerdasarkanE
             // 
-            textBoxCariBerdasarkanE.Location=new Point(55, 504);
-            textBoxCariBerdasarkanE.Margin=new Padding(2);
-            textBoxCariBerdasarkanE.Name="textBoxCariBerdasarkanE";
-            textBoxCariBerdasarkanE.Size=new Size(293, 23);
-            textBoxCariBerdasarkanE.TabIndex=9;
+            textBoxCariBerdasarkanE.Location = new Point(63, 672);
+            textBoxCariBerdasarkanE.Margin = new Padding(2, 3, 2, 3);
+            textBoxCariBerdasarkanE.Name = "textBoxCariBerdasarkanE";
+            textBoxCariBerdasarkanE.Size = new Size(334, 27);
+            textBoxCariBerdasarkanE.TabIndex = 9;
+            textBoxCariBerdasarkanE.TextChanged += textBoxCariBerdasarkanE_TextChanged;
             // 
             // buttonSearchE
             // 
-            buttonSearchE.BackColor=Color.DeepSkyBlue;
-            buttonSearchE.Location=new Point(145, 545);
-            buttonSearchE.Margin=new Padding(2);
-            buttonSearchE.Name="buttonSearchE";
-            buttonSearchE.Size=new Size(121, 42);
-            buttonSearchE.TabIndex=10;
-            buttonSearchE.Text="SEARCH";
-            buttonSearchE.UseVisualStyleBackColor=false;
+            buttonSearchE.BackColor = Color.DeepSkyBlue;
+            buttonSearchE.Location = new Point(166, 727);
+            buttonSearchE.Margin = new Padding(2, 3, 2, 3);
+            buttonSearchE.Name = "buttonSearchE";
+            buttonSearchE.Size = new Size(138, 56);
+            buttonSearchE.TabIndex = 10;
+            buttonSearchE.Text = "SEARCH";
+            buttonSearchE.UseVisualStyleBackColor = false;
+            buttonSearchE.Click += buttonSearchE_Click;
             // 
             // comboBox1
             // 
-            comboBox1.FormattingEnabled=true;
-            comboBox1.Location=new Point(55, 166);
-            comboBox1.Margin=new Padding(3, 2, 3, 2);
-            comboBox1.Name="comboBox1";
-            comboBox1.Size=new Size(311, 23);
-            comboBox1.TabIndex=11;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(63, 221);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(355, 28);
+            comboBox1.TabIndex = 11;
             // 
             // label1
             // 
-            label1.AutoSize=true;
-            label1.Location=new Point(56, 146);
-            label1.Margin=new Padding(2, 0, 2, 0);
-            label1.Name="label1";
-            label1.Size=new Size(42, 15);
-            label1.TabIndex=12;
-            label1.Text="Wisata";
+            label1.AutoSize = true;
+            label1.Location = new Point(64, 195);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(54, 20);
+            label1.TabIndex = 12;
+            label1.Text = "Wisata";
             // 
             // CRUDUlasan
             // 
-            AutoScaleDimensions=new SizeF(7F, 15F);
-            AutoScaleMode=AutoScaleMode.Font;
-            ClientSize=new Size(1008, 591);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1152, 788);
             Controls.Add(label1);
             Controls.Add(comboBox1);
             Controls.Add(buttonSearchE);
@@ -182,12 +183,12 @@
             Controls.Add(labelDeskripsiUlasanE);
             Controls.Add(textBoxNamaPenggunaE);
             Controls.Add(labelNamaPenggunaE);
-            FormBorderStyle=FormBorderStyle.None;
-            Margin=new Padding(2);
-            Name="CRUDUlasan";
-            Text="FormEditUlasan";
-            Load+=FormEditUlasan_Load;
-            Click+=FormEditUlasan_Click;
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2, 3, 2, 3);
+            Name = "CRUDUlasan";
+            Text = "FormEditUlasan";
+            Load += FormEditUlasan_Load;
+            Click += FormEditUlasan_Click;
             ((System.ComponentModel.ISupportInitialize)dataGridViewEditUlasan).EndInit();
             ResumeLayout(false);
             PerformLayout();
