@@ -1,4 +1,5 @@
-﻿using System;
+﻿using frontendpbo.Contexts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,124 +9,112 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace frontendpbo
 {
     public partial class DetailSarpras : Form
     {
-        DatabaseHelper db;
+        private ContextSarana contextSarana;
         public DetailSarpras()
         {
             InitializeComponent();
+            contextSarana = new ContextSarana();
             showDataKolam();
             showDataCamp();
             showDataHotel();
+            showDataWisata();
         }
 
         private void showDataHotel()
         {
-            db = new DatabaseHelper();
-            var reader = db.Select("SELECT deskripsi_sarana FROM sarana_prasarana WHERE nama_sarana LIKE 'Hotel dan Restoran'");
-            dGV_Hotel.Columns.Clear();
+            DataTable dataTable = contextSarana.ReadAll();
+
+            // Menghapus semua kolom dan baris yang ada pada DataGridView
             dGV_Hotel.Rows.Clear();
+            dGV_Hotel.Columns.Clear();
 
-            // Menambahkan kolom deskripsi sarana
-            dGV_Hotel.Columns.Add("Deskripsi Sarana", "Deskripsi Sarana");
+            // Menambahkan kolom-kolom yang ingin ditampilkan
+            dGV_Hotel.Columns.Add("deskripsi_sarana", "Deskripsi Sarana");
 
-            // Mengatur properti ColumnHeadersVisible menjadi false
-            dGV_Hotel.ColumnHeadersVisible = false;
-            dGV_Hotel.RowHeadersVisible = false;
-
-            // Mengatur properti WrapMode menjadi True
-            dGV_Hotel.Columns["Deskripsi Sarana"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-
-            // Mengatur posisi teks pada sel "Deskripsi Sarana"
-            dGV_Hotel.Columns["Deskripsi Sarana"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.TopLeft;
-
-            // Mengatur AutoSizeRowsMode menjadi AllCells
-            dGV_Hotel.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-
-            // Mengatur AutoSizeMode menjadi Fill
-            dGV_Hotel.Columns["Deskripsi Sarana"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-            while (reader.Read())
+            // Memeriksa apakah ada baris dalam DataTable
+            if (dataTable.Rows.Count > 0)
             {
-                var deskripsiSarana = reader["deskripsi_sarana"];
+                DataRow firstRow = dataTable.Rows[0];
+                string deskripsiSarana = firstRow["deskripsi_sarana"].ToString();
+
+                // Menambahkan baris pertama ke dalam DataGridView
                 dGV_Hotel.Rows.Add(deskripsiSarana);
             }
-
-            reader.Close();
 
         }
 
         private void showDataKolam()
         {
-            db = new DatabaseHelper();
-            var reader = db.Select("SELECT deskripsi_sarana FROM sarana_prasarana WHERE nama_sarana LIKE 'Kolam Renang'");
-            dGV_kolam.Columns.Clear();
+            DataTable dataTable = contextSarana.ReadAll();
+
+            // Menghapus semua kolom dan baris yang ada pada DataGridView
             dGV_kolam.Rows.Clear();
+            dGV_kolam.Columns.Clear();
 
-            // Menambahkan kolom deskripsi sarana
-            dGV_kolam.Columns.Add("Deskripsi Sarana", "Deskripsi Sarana");
+            // Menambahkan kolom-kolom yang ingin ditampilkan
+            dGV_kolam.Columns.Add("deskripsi_sarana", "Deskripsi Sarana");
 
-            // Mengatur properti ColumnHeadersVisible menjadi false
-            dGV_kolam.ColumnHeadersVisible = false;
-            dGV_kolam.RowHeadersVisible = false;
-
-            // Mengatur properti WrapMode menjadi True
-            dGV_kolam.Columns["Deskripsi Sarana"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-
-            // Mengatur posisi teks pada sel "Deskripsi Sarana"
-            dGV_kolam.Columns["Deskripsi Sarana"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.TopLeft;
-
-            // Mengatur AutoSizeRowsMode menjadi AllCells
-            dGV_kolam.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-
-            // Mengatur AutoSizeMode menjadi Fill
-            dGV_kolam.Columns["Deskripsi Sarana"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-            while (reader.Read())
+            // Memeriksa apakah ada baris dalam DataTable
+            if (dataTable.Rows.Count >= 2)
             {
-                var deskripsiSarana = reader["deskripsi_sarana"];
+                DataRow firstRow = dataTable.Rows[1];
+                string deskripsiSarana = firstRow["deskripsi_sarana"].ToString();
+
+                // Menambahkan baris pertama ke dalam DataGridView
                 dGV_kolam.Rows.Add(deskripsiSarana);
             }
-
-            reader.Close();
 
         }
 
         private void showDataCamp()
         {
-            db = new DatabaseHelper();
-            var reader = db.Select("SELECT deskripsi_sarana FROM sarana_prasarana WHERE nama_sarana LIKE 'Camping Ground'");
-            dGV_Hotel.Columns.Clear();
-            dGV_Hotel.Rows.Clear();
+            DataTable dataTable = contextSarana.ReadAll();
 
-            // Menambahkan kolom deskripsi sarana
-            dGV_camp.Columns.Add("Deskripsi Sarana", "Deskripsi Sarana");
+            // Menghapus semua kolom dan baris yang ada pada DataGridView
+            dGV_kolam.Rows.Clear();
+            dGV_kolam.Columns.Clear();
 
-            // Mengatur properti ColumnHeadersVisible menjadi false
-            dGV_camp.ColumnHeadersVisible = false;
-            dGV_camp.RowHeadersVisible = false;
+            // Menambahkan kolom-kolom yang ingin ditampilkan
+            dGV_kolam.Columns.Add("deskripsi_sarana", "Deskripsi Sarana");
 
-            // Mengatur properti WrapMode menjadi True
-            dGV_camp.Columns["Deskripsi Sarana"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-
-            // Mengatur posisi teks pada sel "Deskripsi Sarana"
-            dGV_camp.Columns["Deskripsi Sarana"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.TopLeft;
-
-            // Mengatur AutoSizeRowsMode menjadi AllCells
-            dGV_camp.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-
-            // Mengatur AutoSizeMode menjadi Fill
-            dGV_camp.Columns["Deskripsi Sarana"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-            while (reader.Read())
+            // Memeriksa apakah ada baris dalam DataTable
+            if (dataTable.Rows.Count >= 3)
             {
-                var deskripsiSarana = reader["deskripsi_sarana"];
-                dGV_camp.Rows.Add(deskripsiSarana);
+                DataRow firstRow = dataTable.Rows[2];
+                string deskripsiSarana = firstRow["deskripsi_sarana"].ToString();
+
+                // Menambahkan baris pertama ke dalam DataGridView
+                dGV_kolam.Rows.Add(deskripsiSarana);
             }
 
-            reader.Close();
+        }
+
+
+        private void showDataWisata()
+        {
+            DataTable dataTable = contextSarana.ReadAll();
+
+            // Menghapus semua kolom dan baris yang ada pada DataGridView
+            dGV_kolam.Rows.Clear();
+            dGV_kolam.Columns.Clear();
+
+            // Menambahkan kolom-kolom yang ingin ditampilkan
+            dGV_kolam.Columns.Add("deskripsi_sarana", "Deskripsi Sarana");
+
+            // Memeriksa apakah ada baris dalam DataTable
+            if (dataTable.Rows.Count >= 3)
+            {
+                DataRow firstRow = dataTable.Rows[2];
+                string deskripsiSarana = firstRow["deskripsi_sarana"].ToString();
+
+                // Menambahkan baris pertama ke dalam DataGridView
+                dGV_kolam.Rows.Add(deskripsiSarana);
+            }
 
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace frontendpbo.Models
 {
-    internal class UMKM
+    public class UMKM
     {
         public int Id { get; set; }
         public string Name { get; set; }

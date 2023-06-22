@@ -13,12 +13,13 @@ namespace frontendpbo.Contexts
     {
 
         public List<Wisata> listWisata = new List<Wisata>() { };
+        Wisata wisata = new Wisata();
 
         public bool Read()
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember";
 
             using(NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
@@ -50,7 +51,7 @@ namespace frontendpbo.Contexts
         {
             List<Wisata> searchResults = new List<Wisata>();
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
@@ -86,7 +87,7 @@ namespace frontendpbo.Contexts
         public bool Insert(Wisata wisata)
         {
             bool isSuccess = false;
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql =
@@ -106,7 +107,6 @@ namespace frontendpbo.Contexts
                         this.listWisata.Add(wisata);
                     }
                 }
-
             }
             return isSuccess;
         }
@@ -115,10 +115,10 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember;";
             using(NpgsqlConnection conn = new NpgsqlConnection( conStr ))
             {
-                string sql = @"UPDATE SET nama_wisata = :nama_wisata, deskripsi_wisata = :deskripsi,lokasi_wisata = :lokasi where id_wisata = :id_wisata";
+                string sql = @"UPDATE SET nama_wisata = :nama_wisat a, deskripsi_wisata = :deskripsi,lokasi_wisata = :lokasi where id_wisata = :id_wisata";
                 conn.Open();
                 using(NpgsqlCommand cmd = new NpgsqlCommand( sql, conn))
                 {
@@ -146,17 +146,15 @@ namespace frontendpbo.Contexts
                     }
                 }
             }
-
-
-
             return isSuccess;
         }
 
         public List<Wisata> ReadtoCard()
         {
+
             List<Wisata> listWisata = new List<Wisata>();
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
@@ -181,6 +179,12 @@ namespace frontendpbo.Contexts
             }
 
             return listWisata;
+        }
+
+        public bool Delete(string id)
+        {
+            bool isSuccess = false;
+            return isSuccess;
         }
     }
 }

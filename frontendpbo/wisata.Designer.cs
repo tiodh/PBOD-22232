@@ -48,11 +48,11 @@
             // 
             datagridcrudwisata1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             datagridcrudwisata1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            datagridcrudwisata1.Location = new Point(662, 122);
+            datagridcrudwisata1.Location = new Point(662, 123);
             datagridcrudwisata1.Name = "datagridcrudwisata1";
             datagridcrudwisata1.RowHeadersWidth = 51;
             datagridcrudwisata1.RowTemplate.Height = 29;
-            datagridcrudwisata1.Size = new Size(743, 754);
+            datagridcrudwisata1.Size = new Size(743, 755);
             datagridcrudwisata1.TabIndex = 0;
             datagridcrudwisata1.CellContentClick += datagridwisata1_CellContentClick;
             // 
@@ -60,7 +60,7 @@
             // 
             btnclearwisata.BackColor = Color.Lime;
             btnclearwisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnclearwisata.Location = new Point(17, 813);
+            btnclearwisata.Location = new Point(38, 783);
             btnclearwisata.Name = "btnclearwisata";
             btnclearwisata.Size = new Size(129, 63);
             btnclearwisata.TabIndex = 1;
@@ -72,7 +72,7 @@
             // 
             btntambahwisata.BackColor = Color.FromArgb(128, 128, 255);
             btntambahwisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btntambahwisata.Location = new Point(180, 813);
+            btntambahwisata.Location = new Point(178, 783);
             btntambahwisata.Name = "btntambahwisata";
             btntambahwisata.Size = new Size(129, 63);
             btntambahwisata.TabIndex = 2;
@@ -84,7 +84,7 @@
             // 
             btneditwisata.BackColor = Color.Yellow;
             btneditwisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btneditwisata.Location = new Point(341, 813);
+            btneditwisata.Location = new Point(320, 783);
             btneditwisata.Name = "btneditwisata";
             btneditwisata.Size = new Size(129, 63);
             btneditwisata.TabIndex = 3;
@@ -95,12 +95,13 @@
             // 
             btnhapuswisata.BackColor = Color.Red;
             btnhapuswisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnhapuswisata.Location = new Point(507, 813);
+            btnhapuswisata.Location = new Point(464, 783);
             btnhapuswisata.Name = "btnhapuswisata";
             btnhapuswisata.Size = new Size(129, 63);
             btnhapuswisata.TabIndex = 4;
             btnhapuswisata.Text = "Hapus";
             btnhapuswisata.UseVisualStyleBackColor = false;
+            btnhapuswisata.Click += btnhapuswisata_Click;
             // 
             // label1_Nama_Wisata
             // 
@@ -128,7 +129,7 @@
             textBox2_Deskripsi_Wisata.BackColor = SystemColors.Control;
             textBox2_Deskripsi_Wisata.BorderStyle = BorderStyle.FixedSingle;
             textBox2_Deskripsi_Wisata.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2_Deskripsi_Wisata.Location = new Point(38, 150);
+            textBox2_Deskripsi_Wisata.Location = new Point(38, 149);
             textBox2_Deskripsi_Wisata.Multiline = true;
             textBox2_Deskripsi_Wisata.Name = "textBox2_Deskripsi_Wisata";
             textBox2_Deskripsi_Wisata.Size = new Size(555, 482);
@@ -138,7 +139,7 @@
             // 
             label2_Deskripsi_Wisata.AutoSize = true;
             label2_Deskripsi_Wisata.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2_Deskripsi_Wisata.Location = new Point(38, 122);
+            label2_Deskripsi_Wisata.Location = new Point(38, 123);
             label2_Deskripsi_Wisata.Name = "label2_Deskripsi_Wisata";
             label2_Deskripsi_Wisata.Size = new Size(103, 25);
             label2_Deskripsi_Wisata.TabIndex = 9;
@@ -192,7 +193,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1440, 1024);
+            ClientSize = new Size(1584, 1051);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(label3_Lokasi_Wisata);

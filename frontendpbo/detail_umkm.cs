@@ -1,3 +1,7 @@
+using frontendpbo;
+using Npgsql;
+using System.Data;
+
 namespace tampil_data_umkm
 {
     public partial class detail_umkm : Form
@@ -8,6 +12,7 @@ namespace tampil_data_umkm
             textBox_searchumkm.TextChanged += textBox_searchumkm_TextChanged;
         }
 
+        
         private void label2_Click(object sender, EventArgs e)
         {
 

@@ -64,8 +64,8 @@ namespace frontendpbo
 
         private void semuapanel()
         {
-         RestoRembanganpanel1.Visible = true;
-         CafeRembanganpanel2.Visible = true;
+            RestoRembanganpanel1.Visible = true;
+            CafeRembanganpanel2.Visible = true;
         }
 
         private void SearchLabelsInPanel(Panel panel, string searchText)

@@ -10,7 +10,7 @@ namespace frontendpbo.Helpers
 {
     internal class DatabaseHelpers
     {
-        string connString = "Host=localhost;Username=postgres;Password=fukakouryokuRoman;Database=peta_jember";
+        string connString = "Host=localhost;Username=postgres;Password=1234;Database=peta_jember";
         NpgsqlConnection conn;
 
         public void connect()
