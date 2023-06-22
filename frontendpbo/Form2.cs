@@ -109,5 +109,10 @@ namespace frontendpbo
         {
             openChildForm(new wisata());
         }
+
+        private void transportasi_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetailTransportasi());
+        }
     }
 }
