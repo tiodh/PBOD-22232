@@ -57,8 +57,15 @@ namespace frontendpbo
             }
             else
             {
+                Keamanan data = new Keamanan();
+                data.Name = textBox_nama_lembaga_dataKeamanan.Text;
+                data.Description = textBoxdeskripsi_dataKeamanan.Text;
+                data.Alamat = textBoxalamat_dataKeamanan.Text;
+                data.No_Tlp = textBoxnoHp_dataKeamanan.Text;
+                data.Id = id_;
+
                 Keamanan = new ContextKeamanan();
-                Keamanan.edit(textBox_nama_lembaga_dataKeamanan.Text, textBoxdeskripsi_dataKeamanan.Text, textBoxalamat_dataKeamanan.Text, textBoxnoHp_dataKeamanan.Text, id_);
+                Keamanan.edit(data.Name, data.Description, data.Alamat, data.No_Tlp , data.Id);
                 textBox_nama_lembaga_dataKeamanan.Text = "";
                 textBoxnoHp_dataKeamanan.Text = "";
                 textBoxalamat_dataKeamanan.Text = "";

@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using frontendpbo.Models;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +19,13 @@ namespace frontendpbo.Contexts
                 connection.Open();
                 NpgsqlCommand command = connection.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = "insert into data_keamanan(nama_keamanan, alamat_keamanan, no_tlp, deskripsi_keamanan) values(@nama_keamanan, @alamat_keamanan, @no_tlp, @deskripsi_keamanan)";
+                command.CommandText = "insert into data_keamanan(id_keamanan, nama_lembaga, alamat_keamanan, no_tlp, deskripsi_keamanan,wisata_id) values(@id_keamanan, @nama_keamanan, @alamat_keamanan, @no_tlp, @deskripsi_keamanan, @ID_W)";
+                command.Parameters.Add(new NpgsqlParameter("@id_keamanan", 8));
                 command.Parameters.Add(new NpgsqlParameter("@nama_keamanan", nama));
                 command.Parameters.Add(new NpgsqlParameter("@deskripsi_keamanan", deskripsi));
                 command.Parameters.Add(new NpgsqlParameter("@alamat_keamanan", alamat));
                 command.Parameters.Add(new NpgsqlParameter("@no_tlp", no_tlp));
+                command.Parameters.Add(new NpgsqlParameter("@ID_W", 1));
 
                 command.ExecuteNonQuery();
                 connection.Close();
@@ -32,6 +35,7 @@ namespace frontendpbo.Contexts
 
         public void edit(string nama, string deskripsi, string alamat, string nomtelp, int ID)
         {
+            
             using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 123"))
             {
                 try
