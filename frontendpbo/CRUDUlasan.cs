@@ -118,5 +118,28 @@ namespace frontendpbo
                 RefreshDataGridView();
             }
         }
+
+        private void buttonSearchE_Click(object sender, EventArgs e)
+        {
+            List<Ulasan> cari = ulasanContext.Search(buttonSearchE.Text);
+            dataGridViewEditUlasan.DataSource = cari;
+        }
+
+        private void textBoxCariBerdasarkanE_TextChanged(object sender, EventArgs e)
+        {
+           
+                string searchText = textBoxCariBerdasarkanE.Text;
+
+                if (string.IsNullOrEmpty(searchText))
+                {
+                    dataGridViewEditUlasan.DataSource = ulasanContext.listUlasan;
+                }
+                else
+                {
+                    List<Ulasan> searchResults = ulasanContext.Search(searchText);
+                    dataGridViewEditUlasan.DataSource = searchResults;
+                }
+            
+        }
     }
 }

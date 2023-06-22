@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\alya\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\alya\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\nopal\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\nopal\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
