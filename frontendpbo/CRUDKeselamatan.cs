@@ -57,8 +57,15 @@ namespace frontendpbo
             }
             else
             {
+                Keamanan data = new Keamanan();
+                data.Name = textBox_nama_lembaga_dataKeamanan.Text;
+                data.Description = textBoxdeskripsi_dataKeamanan.Text;
+                data.Alamat = textBoxalamat_dataKeamanan.Text;
+                data.No_Tlp = textBoxnoHp_dataKeamanan.Text;
+                data.Id = id_;
+
                 Keamanan = new ContextKeamanan();
-                Keamanan.edit(textBox_nama_lembaga_dataKeamanan.Text, textBoxdeskripsi_dataKeamanan.Text, textBoxalamat_dataKeamanan.Text, textBoxnoHp_dataKeamanan.Text, id_);
+                Keamanan.edit(data.Name, data.Description, data.Alamat, data.No_Tlp , data.Id);
                 textBox_nama_lembaga_dataKeamanan.Text = "";
                 textBoxnoHp_dataKeamanan.Text = "";
                 textBoxalamat_dataKeamanan.Text = "";
@@ -76,27 +83,7 @@ namespace frontendpbo
             textBoxalamat_dataKeamanan.Text = "";
             textBoxdeskripsi_dataKeamanan.Text = "";
             LoadData();
-            //using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=peta_jember;user id=postgres;password=123"))
-            //{
-            //    connection.Open();
-            //    NpgsqlCommand command = connection.CreateCommand();
-            //    command.Connection = connection;
-            //    command.CommandText = "insert into data_keamanan(nama_keamanan, deskripsi_keamanan, alamat_keamanan, no_tlp) values(@nama_keamanan, @deskripsi_keamanan, @alamat_keamanan, @no_tlp)";
-            //    command.Parameters.Add(new NpgsqlParameter("@nama_keamanan", textBox_nama_lembaga_dataKeamanan.Text));
-            //    command.Parameters.Add(new NpgsqlParameter("@no_tlp", textBoxnoHp_dataKeamanan.Text));
-            //    command.Parameters.Add(new NpgsqlParameter("@alamat_keamanan", textBoxalamat_dataKeamanan.Text));
-            //    command.Parameters.Add(new NpgsqlParameter("@deskripsi_keamanan", textBoxdeskripsi_dataKeamanan.Text));
 
-            //textBox_nama_lembaga_dataKeamanan.Text = "";
-            //textBoxnoHp_dataKeamanan.Text = "";
-            //textBoxalamat_dataKeamanan.Text = "";
-            //textBoxdeskripsi_dataKeamanan.Text = "";
-            //    command.ExecuteNonQuery();
-            //    connection.Close();
-            //    MessageBox.Show("Data berhasil diinput");
-            //    //RefreshUlasanTerakhir();
-            //    //RefreshRatingTerakhir();
-            //}
         }
     }
 }
