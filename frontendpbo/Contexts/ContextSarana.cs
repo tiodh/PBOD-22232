@@ -19,7 +19,7 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
-                string sql = $"SELECT nama_sarana, deskripsi_sarana FROM sarana_prasarana where nama_sarana = '{cari}' or deskripsi_sarana '{cari}' ";
+                string sql = $"SELECT nama_sarana, deskripsi_sarana FROM sarana_prasarana where nama_sarana = '{cari}' ";
 
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
@@ -31,8 +31,8 @@ namespace frontendpbo.Contexts
                     while (reader.Read())
                     {
                         SaranaPrasarana Sarana = new SaranaPrasarana();
-                        Sarana.Name = (string)reader["nama_sarana"];
-                        Sarana.Description = (string)reader["deskripsi_sarana"];
+                        Sarana.nama_sarana = (string)reader["nama_sarana"];
+                        Sarana.deskripsi_sarana = (string)reader["deskripsi_sarana"];
                         ListSarana.Add(Sarana);
                     }
                 }
@@ -40,7 +40,7 @@ namespace frontendpbo.Contexts
         }
         public void create(string nama, string deskrip)
         {
-            using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=peta_jember;user id=postgres;password=123"))
+            using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember"))
             {
                 connection.Open();
                 NpgsqlCommand command = connection.CreateCommand();

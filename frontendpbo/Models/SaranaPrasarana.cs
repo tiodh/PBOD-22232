@@ -8,9 +8,9 @@ namespace frontendpbo.Models
 {
     internal class SaranaPrasarana
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public int id_sarana { get; set; }
+        public string nama_sarana { get; set; }
+        public string deskripsi_sarana { get; set; }
         public int Wisata_ID { get; set; }
     }
 }
