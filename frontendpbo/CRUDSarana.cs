@@ -13,12 +13,12 @@ using System.Windows.Forms;
 
 namespace frontendpbo
 {
-    public partial class CreateSarana : Form
+    public partial class CRUDSarana : Form
     {
         ContextSarana Sarana;
         private int id_;
         private int id_w;
-        public CreateSarana()
+        public CRUDSarana()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace frontendpbo
 {
-    partial class CreateSarana
+    partial class CRUDSarana
     {
         /// <summary>
         ///  Required designer variable.
