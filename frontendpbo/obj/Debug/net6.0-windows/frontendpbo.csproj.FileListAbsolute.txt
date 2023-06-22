@@ -1067,3 +1067,16 @@ D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.
 D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
 D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
 D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
