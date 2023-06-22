@@ -15,7 +15,7 @@ namespace frontendpbo.Contexts
         public bool Create(Pengguna pengguna)
         {
             bool isSuccess = false;
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
+            string conStr = "Server=localhost;Port=5432;User Id=hamzah;Password=adminpbo;Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql =
@@ -44,7 +44,7 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost ;Port=5432; User Id=postgres; Password=123; Database=peta_jember;";
+            string conStr = "Server=localhost ;Port=5432; User Id=hamzah; Password=adminpbo; Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql = "SELECT id_admin, email_admin, nama_lengkap, username, password FROM admin ORDER BY id_admin;";
@@ -74,7 +74,7 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost; Port=5432; User Id=postgres; Password=123; Database=peta_jember;";
+            string conStr = "Server=localhost; Port=5432; User Id=hamzah; Password=adminpbo; Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql = 
