@@ -116,6 +116,8 @@
             textBox6Search.Name = "textBox6Search";
             textBox6Search.Size = new Size(195, 27);
             textBox6Search.TabIndex = 0;
+            textBox6Search.Text = "masukkan kata kunci";
+            textBox6Search.Click += textBox6Search_Click;
             textBox6Search.TextChanged += textBox6Search_TextChanged;
             // 
             // labelid
