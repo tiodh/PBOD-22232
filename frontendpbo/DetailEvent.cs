@@ -15,14 +15,14 @@ namespace frontendpbo
 {
     public partial class DetailEvent : Form
     {
-        Contexts.ContextEvent eventContext;
+        Contexts.ContextDataEvent eventContext;
         List<Event> eventList;
         DataTable? dataTable;
         public DetailEvent()
         {
             {
                 InitializeComponent();
-                eventContext = new Contexts.ContextEvent();
+                eventContext = new Contexts.ContextDataEvent();
                 eventList = new List<Event>();
 
                 eventContext.Readdata();
