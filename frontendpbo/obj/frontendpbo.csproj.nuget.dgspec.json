@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Documents\\PBO\\PBOBarulagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+    "C:\\Users\\LENOVO NHUK 512\\OneDrive\\Documents\\LATIHAN\\tol\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Documents\\PBO\\PBOBarulagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+    "C:\\Users\\LENOVO NHUK 512\\OneDrive\\Documents\\LATIHAN\\tol\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\PBO\\PBOBarulagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO NHUK 512\\OneDrive\\Documents\\LATIHAN\\tol\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "C:\\Users\\Lenovo\\Documents\\PBO\\PBOBarulagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Documents\\PBO\\PBOBarulagi\\PBOD-22232\\frontendpbo\\obj\\",
+        "projectPath": "C:\\Users\\LENOVO NHUK 512\\OneDrive\\Documents\\LATIHAN\\tol\\frontendpbo\\frontendpbo.csproj",
+        "packagesPath": "C:\\Users\\LENOVO NHUK 512\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO NHUK 512\\OneDrive\\Documents\\LATIHAN\\tol\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO NHUK 512\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,10 @@
               "version": "[0.9.7, )"
             },
             "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.4, )"
             },
