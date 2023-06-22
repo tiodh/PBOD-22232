@@ -39,11 +39,35 @@ namespace frontendpbo.Contexts
             return isSuccess;
         }
 
-        public List<Penginapan> GetListPenginapan()
+        public bool Read()
         {
-            return listPenginapan;
+            bool isSuccess = false;
+
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+
+            using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
+            {
+                string sql = "SELECT * FROM penginapan";
+
+                conn.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                {
+                    cmd.CommandText = sql;
+                    NpgsqlDataReader reader = cmd.ExecuteReader();
+
+                    listPenginapan.Clear();
+                    while (reader.Read())
+                    {
+                        Penginapan penginapan = new Penginapan();
+                        penginapan.ID = (int)reader["id_penginapan"];
+                        penginapan.Name = (string)reader["nama_penginapan"];
+                        penginapan.Description = (string)reader["deskripsi_penginapan"];
+                        penginapan.Wisata_ID = (int)reader["wisata_id"];
+                        listPenginapan.Add(penginapan);
+                    }
+                }
+            }
+            return isSuccess;
         }
-
-
     }
 }
