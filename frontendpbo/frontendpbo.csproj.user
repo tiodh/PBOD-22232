@@ -23,6 +23,9 @@
     <Compile Update="crud_umkm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CURDPengunjung.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DataPengguna.cs">
       <SubType>Form</SubType>
     </Compile>
