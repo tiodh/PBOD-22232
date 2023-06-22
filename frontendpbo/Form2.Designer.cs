@@ -488,7 +488,7 @@
             edit5.Text = "Edit";
             edit5.TextAlign = ContentAlignment.MiddleLeft;
             edit5.UseVisualStyleBackColor = false;
-            //edit5.Click += edit5_Click;
+          //  edit5.Click += edit5_Click;
             // 
             // saranaPrasarana
             // 

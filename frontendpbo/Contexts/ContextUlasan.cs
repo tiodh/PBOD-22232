@@ -16,7 +16,7 @@ namespace frontendpbo.Contexts
         public bool Insert(Ulasan ulasan)
         {
             bool isSuccess = false;
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1233;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1234;Database=peta_jember";
 
             using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
             {
@@ -47,7 +47,7 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1234;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
@@ -80,7 +80,7 @@ namespace frontendpbo.Contexts
         public List<Wisata> GetNamaWisataList()
         {
             List<Wisata> namaWisataList = new List<Wisata>();
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1234;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
@@ -106,7 +106,7 @@ namespace frontendpbo.Contexts
 
         public void Delete(int ulasanId)
         {
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1234;Database=peta_jember";
             using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
             {
                 string sql = "SELECT ulasan.id_ulasan, ulasan.nama_user, ulasan.deskripsi_ulasan, objek_wisata.id_wisata " +
