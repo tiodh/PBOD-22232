@@ -47,19 +47,20 @@ namespace frontendpbo.Contexts
                         command.Parameters.AddWithValue("@ID", ID);
                         command.ExecuteNonQuery();
                     }
-                    LoadData();
+                    //LoadData();
 
-                    textBox_nama_lembaga_dataKeamanan.Text = "";
-                    textBoxnoHp_dataKeamanan.Text = "";
-                    textBoxalamat_dataKeamanan.Text = "";
-                    textBoxdeskripsi_dataKeamanan.Text = "";
+                    //textBox_nama_lembaga_dataKeamanan.Text = "";
+                    //textBoxnoHp_dataKeamanan.Text = "";
+                    //textBoxalamat_dataKeamanan.Text = "";
+                    //textBoxdeskripsi_dataKeamanan.Text = "";
 
-                    dataGridView1.CurrentRow.Selected = false;
+                    //dataGridView1.CurrentRow.Selected = false;
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Terjadi kesalahan: " + ex.Message);
                 }
             }
+        }
     }
 }

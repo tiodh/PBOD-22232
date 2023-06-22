@@ -44,7 +44,7 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost ;Port=5432; User Id=hamzah; Password=adminpbo; Database=peta_jember;";
+            string conStr = "Server=localhost ;Port=5432; User Id=postgres; Password=123; Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql = "SELECT id_admin, email_admin, nama_lengkap, username, password FROM admin ORDER BY id_admin;";
@@ -74,7 +74,7 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost; Port=5432; User Id=hamzah; Password=adminpbo; Database=peta_jember;";
+            string conStr = "Server=localhost; Port=5432; User Id=postgres; Password=123; Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql = 
@@ -100,6 +100,37 @@ namespace frontendpbo.Contexts
             }
 
             return isSuccess;
+        }
+        public List<Pengguna> Search(string query)
+        {
+            List<Pengguna> searchResults = new List<Pengguna>();
+
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+
+            using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
+            {
+                string sql = "SELECT * FROM admin WHERE email_admin ILIKE '%' || @query || '%' OR nama_lengkap ILIKE '%' || @query || '%' OR username ILIKE '%' || @query || '%'";
+
+                conn.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@query", query);
+                    
+                    NpgsqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        Pengguna pengguna = new Pengguna();
+                        pengguna.Id_Admin = (int)reader["id_admin"];
+                        pengguna.Email = (string)reader["email_admin"];
+                        pengguna.Nama_Lengkap = (string)reader["nama_lengkap"];
+                        pengguna.Username = (string)reader["username"];
+                        pengguna.Password = (string)reader["password"];
+                        searchResults.Add(pengguna);
+                    }
+                }
+            }
+            return searchResults;
         }
     }
 }

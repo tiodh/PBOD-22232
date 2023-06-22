@@ -143,7 +143,7 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
             {
-                string sql = "UPDATE public.tiket SET nama_tiket = :NamaTiket, deskripsi_tiket = :DeskripsiTiket, harga_tiket = :HargaTiket, id_wisata = :IDWisata \nWHERE id_tiket = :IDTIKET;";
+                string sql = "UPDATE public.tiket SET nama_tiket = :NamaTiket, deskripsi_tiket = :DeskripsiTiket, harga_tiket = :HargaTiket \nWHERE id_tiket = :IDTIKET;";
 
                 connection.Open();
 
@@ -152,7 +152,6 @@ namespace frontendpbo.Contexts
                     cmd.Parameters.Add(new NpgsqlParameter(":NamaTiket", tiket.nama_tiket));
                     cmd.Parameters.Add(new NpgsqlParameter(":DeskripsiTiket", tiket.deskripsi_tiket));
                     cmd.Parameters.Add(new NpgsqlParameter(":HargaTiket", tiket.harga_tiket));
-                    cmd.Parameters.Add(new NpgsqlParameter(":IDWisata", tiket.wisata_id));
                     cmd.Parameters.Add(new NpgsqlParameter(":IDTIKET", tiket.id_tiket));
                     cmd.CommandType = System.Data.CommandType.Text;
                     int JumlahData = cmd.ExecuteNonQuery();

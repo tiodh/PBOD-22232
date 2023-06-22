@@ -126,6 +126,7 @@ namespace CUD_DataTiket
         {
             frontendpbo.Models.Tiket ubah = this.GetTiket();
             contextTiket.Update(ubah);
+            DataGridViewEditTiket.DataSource = null;
             loadgrid();
             txtNamaTiket.Text = "";
             txtDeskTiket.Text = "";
