@@ -15,10 +15,13 @@ namespace frontendpbo
 {
     public partial class crud_umkm : Form
     {
+        ContextUMKM contextUMKM;
+        private List<UMKM> listUMKM;
         private int id_umkm;
         public crud_umkm()
         {
             InitializeComponent();
+            contextUMKM = new ContextUMKM();
         }
 
         void loadgrid()
