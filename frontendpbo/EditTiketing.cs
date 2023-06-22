@@ -18,9 +18,11 @@ namespace CUD_DataTiket
         public frontendpbo.Models.Tiket GetTiket()
         {
             frontendpbo.Models.Tiket tkt = new frontendpbo.Models.Tiket();
+            tkt.id_tiket = IdTiket;
             tkt.nama_tiket = txtNamaTiket.Text;
             tkt.deskripsi_tiket = txtDeskTiket.Text;
             tkt.harga_tiket = Convert.ToInt32(txtHargaTiket.Text);
+            tkt.wisata_id = Convert.ToInt32(txtIDWisataEditTiket.Text);
             return tkt;
         }
         public EditTiketing()
@@ -39,12 +41,14 @@ namespace CUD_DataTiket
 
         private void btnTambahTiket_Click(object sender, EventArgs e)
         {
-            frontendpbo.Models.Tiket nambah = new Tiket();
+            frontendpbo.Models.Tiket nambah = this.GetTiket();
             contextTiket.Insert(nambah);
+            DataGridViewEditTiket.DataSource = null;
             loadgrid();
             txtNamaTiket.Text = "";
             txtDeskTiket.Text = "";
             txtHargaTiket.Text = "";
+            txtIDWisataEditTiket.Text = "";
         }
 
         private void btnClearIsi_Click(object sender, EventArgs e)
@@ -71,12 +75,15 @@ namespace CUD_DataTiket
 
         private void btnClearDataTket_Click(object sender, EventArgs e)
         {
-
-
+            txtNamaTiket.Text = "";
+            txtDeskTiket.Text = "";
+            txtHargaTiket.Text = "";
+            txtIDWisataEditTiket.Text = "";
         }
 
         public void CariTiket_TextChanged(object sender, EventArgs e)
         {
+
 
             if ((string)NamaKolom.SelectedItem == "Nama")
             {
@@ -98,6 +105,11 @@ namespace CUD_DataTiket
                 List<Tiket> cari = contextTiket.Search(CariTiket.Text, "harga_tiket");
                 DataGridViewEditTiket.DataSource = cari;
             }
+            if ((string)NamaKolom.SelectedItem == "ID Wisata")
+            {
+                List<Tiket> cari = contextTiket.Search(CariTiket.Text, "id_wisata");
+                DataGridViewEditTiket.DataSource = cari;
+            }
             if (CariTiket.Text == "")
             {
                 loadgrid();
@@ -112,7 +124,7 @@ namespace CUD_DataTiket
 
         private void button4UpdateTIket_Click_1(object sender, EventArgs e)
         {
-            frontendpbo.Models.Tiket ubah = new Tiket();
+            frontendpbo.Models.Tiket ubah = this.GetTiket();
             contextTiket.Update(ubah);
             loadgrid();
             txtNamaTiket.Text = "";
@@ -128,6 +140,11 @@ namespace CUD_DataTiket
             PanelReadDataTiket.Dock = DockStyle.Fill;
             loadgrid();
             DataGridViewEditTiket.DataSource = contextTiket.GetListTiket();
+        }
+
+        private void CariTiket_Click(object sender, EventArgs e)
+        {
+            CariTiket.Text = " ";
         }
     }
 }

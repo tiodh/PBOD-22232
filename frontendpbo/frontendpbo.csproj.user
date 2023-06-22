@@ -22,6 +22,9 @@
     <Compile Update="crud_umkm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CURDPengunjung.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DataPengguna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,9 +74,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="AddPengunjung.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormDetailTransportasi.cs">

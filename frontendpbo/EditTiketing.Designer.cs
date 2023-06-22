@@ -32,7 +32,6 @@
             panelDetailTiket = new Panel();
             txtIDWisataEditTiket = new TextBox();
             labelId_WisataEditTiket = new Label();
-            JudulDataTiketRead = new Label();
             btnPopUpInfo = new Button();
             button4UpdateTIket = new Button();
             btnClearIsi = new Button();
@@ -53,6 +52,7 @@
             label4 = new Label();
             DataGridViewEditTiket = new DataGridView();
             pictureBox1 = new PictureBox();
+            JudulDataTiketRead = new Label();
             PanelReadDataTiket.SuspendLayout();
             panelDetailTiket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridViewEditTiket).BeginInit();
@@ -124,19 +124,6 @@
             labelId_WisataEditTiket.Size = new Size(94, 15);
             labelId_WisataEditTiket.TabIndex = 31;
             labelId_WisataEditTiket.Text = "Id Wisata            :";
-            // 
-            // JudulDataTiketRead
-            // 
-            JudulDataTiketRead.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            JudulDataTiketRead.AutoSize = true;
-            JudulDataTiketRead.BackColor = Color.FromArgb(111, 106, 248);
-            JudulDataTiketRead.Font = new Font("Trebuchet MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            JudulDataTiketRead.ForeColor = Color.White;
-            JudulDataTiketRead.Location = new Point(455, 32);
-            JudulDataTiketRead.Name = "JudulDataTiketRead";
-            JudulDataTiketRead.Size = new Size(429, 24);
-            JudulDataTiketRead.TabIndex = 12;
-            JudulDataTiketRead.Text = "TAMPILAN ADMIN EDIT DATA TIKET REMBANGAN";
             // 
             // btnPopUpInfo
             // 
@@ -238,6 +225,8 @@
             CariTiket.Name = "CariTiket";
             CariTiket.Size = new Size(649, 23);
             CariTiket.TabIndex = 16;
+            CariTiket.Text = "Silahkan Cari Disini";
+            CariTiket.Click += CariTiket_Click;
             CariTiket.TextChanged += CariTiket_TextChanged;
             // 
             // label2
@@ -362,6 +351,19 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
+            // 
+            // JudulDataTiketRead
+            // 
+            JudulDataTiketRead.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            JudulDataTiketRead.AutoSize = true;
+            JudulDataTiketRead.BackColor = Color.FromArgb(111, 106, 248);
+            JudulDataTiketRead.Font = new Font("Trebuchet MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            JudulDataTiketRead.ForeColor = Color.White;
+            JudulDataTiketRead.Location = new Point(455, 32);
+            JudulDataTiketRead.Name = "JudulDataTiketRead";
+            JudulDataTiketRead.Size = new Size(429, 24);
+            JudulDataTiketRead.TabIndex = 12;
+            JudulDataTiketRead.Text = "TAMPILAN ADMIN EDIT DATA TIKET REMBANGAN";
             // 
             // EditTiketing
             // 

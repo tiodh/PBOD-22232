@@ -132,7 +132,7 @@ namespace frontendpbo.Contexts
                         this.listTiket.Add(tiket);
                     }
                 }
-                MessageBox.Show(sql);
+                MessageBox.Show("Telah Berhasil Menambah Data");
             }
             return isSuccess;
         }
@@ -143,7 +143,8 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
             {
-                string sql = "UPDATE public.tiket SET nama_tiket = :NamaTiket, :DeskripsiTiket, :HargaTiket, :IDWisata  WHERE id_tiket = :IDTIKET";
+                string sql = "UPDATE public.tiket SET nama_tiket = :NamaTiket, deskripsi_tiket = :DeskripsiTiket, harga_tiket = :HargaTiket, id_wisata = :IDWisata \nWHERE id_tiket = :IDTIKET;";
+
                 connection.Open();
 
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, connection))
@@ -153,18 +154,28 @@ namespace frontendpbo.Contexts
                     cmd.Parameters.Add(new NpgsqlParameter(":HargaTiket", tiket.harga_tiket));
                     cmd.Parameters.Add(new NpgsqlParameter(":IDWisata", tiket.wisata_id));
                     cmd.Parameters.Add(new NpgsqlParameter(":IDTIKET", tiket.id_tiket));
-
                     cmd.CommandType = System.Data.CommandType.Text;
-                    int jmlDataBaru = cmd.ExecuteNonQuery();
-                    if (jmlDataBaru > 0)
+                    int JumlahData = cmd.ExecuteNonQuery();
+                    if (JumlahData > 0)
                     {
                         isSuccess = true;
-                        this.listTiket.Add(tiket);
+                        foreach (var temp in this.listTiket)
+                        {
+                            var t = temp as Tiket;
+                            if (t != null && t.id_tiket.Equals(tiket.nama_tiket))
+                            {
+                                t.nama_tiket = tiket.nama_tiket;
+                                t.deskripsi_tiket = tiket.deskripsi_tiket;
+                                t.harga_tiket = tiket.harga_tiket;
+                                t.id_tiket = tiket.id_tiket;
+                                t.wisata_id = tiket.wisata_id;
+                            }
+                        }
                     }
+                    MessageBox.Show("Sukses Mengupdate Data");
                 }
-                MessageBox.Show(sql);
+                return isSuccess;
             }
-            return isSuccess;
         }
 
         public List<Tiket> ReadtoCard()
