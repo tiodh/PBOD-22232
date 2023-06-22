@@ -200,6 +200,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             ClientSize = new Size(1924, 1024);
             Controls.Add(pictureBox1);
             Controls.Add(textBoxdeskripsi_dataKeamanan);
