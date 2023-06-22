@@ -39,20 +39,29 @@ namespace frontendpbo.Contexts
                 }
             }
         }
-        public void create(string nama, string deskrip)
+        public bool create(SaranaPrasarana newSarana)
         {
+            bool isSuccess = false;
             using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember"))
             {
                 connection.Open();
                 NpgsqlCommand command = connection.CreateCommand();
                 command.Connection = connection;
                 command.CommandText = "insert into sarana_prasarana(nama_sarana,deskripsi_sarana) values(@nama_sarana,@deskripsi_sarana)";
-                command.Parameters.Add(new NpgsqlParameter("@nama_sarana", nama));
-                command.Parameters.Add(new NpgsqlParameter("@deskripsi_sarana", deskrip));
-                command.ExecuteNonQuery();
-                connection.Close();
+                command.Parameters.Add(new NpgsqlParameter("@nama_sarana", newSarana.nama_sarana));
+                command.Parameters.Add(new NpgsqlParameter("@deskripsi_sarana", newSarana.deskripsi_sarana));
+
+                command.CommandType = System.Data.CommandType.Text;
+                int jmlDataBaru = command.ExecuteNonQuery();
+                if (jmlDataBaru > 0)
+                {
+                    isSuccess = true;
+                    ListSarana.Add(newSarana);
+                }
+                //connection.Close();
                 MessageBox.Show("Data berhasil diinput");
             }
+            return isSuccess;
         }
 
         public DataTable ReadAll()
