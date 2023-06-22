@@ -1,4 +1,6 @@
-﻿using Npgsql;
+﻿using frontendpbo.Contexts;
+using frontendpbo.Models;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +15,13 @@ namespace frontendpbo
 {
     public partial class crud_umkm : Form
     {
+        ContextUMKM contextUMKM;
+        private List<UMKM> listUMKM;
         private int id_umkm;
         public crud_umkm()
         {
             InitializeComponent();
+            contextUMKM = new ContextUMKM();
         }
 
         void loadgrid()
