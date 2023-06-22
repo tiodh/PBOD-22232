@@ -1,4 +1,5 @@
 ﻿using frontendpbo.Contexts;
+using frontendpbo.Models;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -19,10 +20,13 @@ namespace frontendpbo
         private int id_w;
 
         ContextKeamanan Keamanan;
+        ReadKeselamatanContext readKeselamatanContext;
         public CRUD_Data_Keselamatan()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            //ContextKeamanan keamanan = new ContextKeamanan();
+            ReadKeselamatanContext readKeselamatanContext = new ReadKeselamatanContext();
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -40,36 +44,11 @@ namespace frontendpbo
             LoadData();
         }
 
-        private void ReadData()
-        {
-
-        }
         private void LoadData()
         {
-            using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 123"))
-            {
-                try
-                {
-                    connection.Open();
-                    string query = "SELECT * FROM data_keamanan ORDER BY id_keamanan ASC";
-
-                    // Membuat objek perintah dan menentukan koneksi
-                    using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
-                    {
-                        // Membaca data dari database ke dalam DataSet
-                        NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(command);
-                        DataSet dataSet = new DataSet();
-                        adapter.Fill(dataSet, "TabelData");
-
-                        // Menampilkan data dalam DataGridView
-                        dataGridView1.DataSource = dataSet.Tables["TabelData"];
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Terjadi kesalahan: " + ex.Message);
-                }
-            }
+            readKeselamatanContext = new ReadKeselamatanContext();
+            readKeselamatanContext.Read();
+            dataGridView1.DataSource = readKeselamatanContext.readKeselamatanList;
         }
 
         private void Edit_Keamanan_Click(object sender, EventArgs e)
@@ -80,7 +59,7 @@ namespace frontendpbo
             }
             else
             {
-                using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 123"))
+                using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 123456"))
                 {
                     try
                     {
