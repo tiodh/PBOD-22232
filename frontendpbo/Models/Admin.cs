@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace frontendpbo.Models
 {
-    internal class Admin
+    public class Admin
     {
         public int Id_Admin { get; set; }
         public string Email { get; set; }

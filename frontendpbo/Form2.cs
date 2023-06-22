@@ -213,5 +213,10 @@ namespace frontendpbo
         {
             openChildForm(new CreateSarana());
         }
+
+        private void keamanan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

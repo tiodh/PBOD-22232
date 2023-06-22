@@ -16,19 +16,22 @@ namespace frontendpbo
     public partial class wisata : Form
     {
         ContextWisata contextWisata;
-        private List<Wisata> listWisata;
-        private List<Wisata> searchResults;
+        public List<Wisata> listWisatas = new List<Wisata>();
+
+        public int CurrentID;
+
         public wisata()
         {
             InitializeComponent();
+            datagridcrudwisata1.AutoGenerateColumns = false;
             contextWisata = new ContextWisata();
 
             ReadData();
-            datagridcrudwisata1.DataSource = contextWisata.GetListWisata();
         }
 
         private void ReadData()
         {
+            contextWisata.listWisata = listWisatas;
             contextWisata.Read();
             datagridcrudwisata1.DataSource = contextWisata.listWisata;
         }
@@ -43,6 +46,7 @@ namespace frontendpbo
         public Models.Wisata GetWisata()
         {
             Models.Wisata wst = new Models.Wisata();
+            wst.Id_Wisata = CurrentID;
             wst.Nama_Wisata = textBox1_Nama_Wisata.Text;
             wst.Deskripsi = textBox2_Deskripsi_Wisata.Text;
             wst.Lokasi = textBox3_Lokasi_Wisata.Text;
@@ -62,7 +66,14 @@ namespace frontendpbo
 
         private void datagridwisata1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (datagridcrudwisata1.Columns[e.ColumnIndex].Name == "Edit")
+            {
+                Wisata wisata = listWisatas[e.RowIndex];
+                CurrentID = wisata.Id_Wisata;
+                textBox1_Nama_Wisata.Text = wisata.Nama_Wisata;
+                textBox2_Deskripsi_Wisata.Text = wisata.Deskripsi;
+                textBox3_Lokasi_Wisata.Text = wisata.Lokasi;
+            }
         }
 
         private void btnclearwisata_Click(object sender, EventArgs e)
@@ -77,11 +88,24 @@ namespace frontendpbo
 
         private void btntambahwisata_Click(object sender, EventArgs e)
         {
-            Models.Wisata wisatas = this.GetWisata();
-            contextWisata.Insert(wisatas);
-            datagridcrudwisata1.DataSource = null;
-            ReadData();
-            Clear();
+            if (CurrentID > 0)
+            {
+                Models.Wisata wisatas = this.GetWisata();
+                contextWisata.Update(wisatas);
+                datagridcrudwisata1.DataSource = null;
+                ReadData();
+                Clear();
+            }
+            else
+            {
+                Models.Wisata wisatas = this.GetWisata();
+                contextWisata.Insert(wisatas);
+                datagridcrudwisata1.DataSource = null;
+                ReadData();
+                Clear();
+
+            }
+
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)

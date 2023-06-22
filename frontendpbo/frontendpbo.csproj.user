@@ -10,10 +10,13 @@
     <Compile Update="CRUDDataPenginapan.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CRUDKeselamatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="CRUDTransportasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CRUDKeselamatan.cs">
+    <Compile Update="CRUDUlasan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="crud_informasi_pengumuman.cs">
@@ -38,6 +41,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DetailSarpras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailUlasan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DetailWisata.cs">
@@ -80,12 +86,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormEditEvent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="CRUDUlasan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DetailUlasan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="jenis_umkm.cs">
