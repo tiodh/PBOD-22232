@@ -70,7 +70,7 @@
     <Compile Update="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AddPengunjung.cs">
+    <Compile Update="CURDPengunjung.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormDetailDataTiket.cs">
