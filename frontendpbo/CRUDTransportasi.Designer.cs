@@ -99,7 +99,7 @@
             SearchTransportasi.TabIndex = 15;
             SearchTransportasi.Text = "SEARCH";
             SearchTransportasi.UseVisualStyleBackColor = true;
-            SearchTransportasi.Click += SearchTransportasi_Click;
+            //SearchTransportasi.Click += SearchTransportasi_Click;
             // 
             // TampilanData
             // 

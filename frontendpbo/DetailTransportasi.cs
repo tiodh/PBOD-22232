@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using Npgsql;
 
 
 namespace frontendpbo
@@ -45,7 +46,7 @@ namespace frontendpbo
 
                 if (searchResults.Count > 0)
                 {
-                    Transportasi transportasi = searchResults[0]; 
+                    Transportasi transportasi = searchResults[0];
 
                     IDTransportasi.Text = transportasi.Id_transportasi.ToString();
                     NamaTransportasi.Text = transportasi.Nama_transportasi;
