@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace frontendpbo.Models
 {
-    internal class Riwayat
+    public class Riwayat
     {
         public int Id { get; set; }
         public string nama { get; set; }
