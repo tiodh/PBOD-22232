@@ -90,5 +90,9 @@ namespace frontendpbo
             datagridcrudwisata1.DataSource = searchResults;
         }
 
+        private void btnhapuswisata_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

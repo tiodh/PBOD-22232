@@ -41,6 +41,7 @@ namespace frontendpbo
         {
             contextTiket.Read();
             DataGridViewTiket.DataSource = contextTiket.listTiket;
+            DataGridViewTiket.Columns[4].Visible = false;
         }
 
         private void radioButtonRoda2_CheckedChanged(object sender, EventArgs e)

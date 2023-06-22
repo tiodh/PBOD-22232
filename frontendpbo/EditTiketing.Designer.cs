@@ -30,8 +30,6 @@
         {
             PanelReadDataTiket = new Panel();
             panelDetailTiket = new Panel();
-            txtIDWisataEditTiket = new TextBox();
-            labelId_WisataEditTiket = new Label();
             btnPopUpInfo = new Button();
             button4UpdateTIket = new Button();
             btnClearIsi = new Button();
@@ -78,8 +76,6 @@
             panelDetailTiket.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panelDetailTiket.AutoScroll = true;
             panelDetailTiket.BackColor = Color.White;
-            panelDetailTiket.Controls.Add(txtIDWisataEditTiket);
-            panelDetailTiket.Controls.Add(labelId_WisataEditTiket);
             panelDetailTiket.Controls.Add(btnPopUpInfo);
             panelDetailTiket.Controls.Add(button4UpdateTIket);
             panelDetailTiket.Controls.Add(btnClearIsi);
@@ -105,26 +101,6 @@
             panelDetailTiket.Size = new Size(1416, 805);
             panelDetailTiket.TabIndex = 11;
             // 
-            // txtIDWisataEditTiket
-            // 
-            txtIDWisataEditTiket.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            txtIDWisataEditTiket.BackColor = SystemColors.Window;
-            txtIDWisataEditTiket.BorderStyle = BorderStyle.FixedSingle;
-            txtIDWisataEditTiket.Location = new Point(149, 738);
-            txtIDWisataEditTiket.Name = "txtIDWisataEditTiket";
-            txtIDWisataEditTiket.Size = new Size(432, 23);
-            txtIDWisataEditTiket.TabIndex = 32;
-            // 
-            // labelId_WisataEditTiket
-            // 
-            labelId_WisataEditTiket.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            labelId_WisataEditTiket.AutoSize = true;
-            labelId_WisataEditTiket.Location = new Point(35, 742);
-            labelId_WisataEditTiket.Name = "labelId_WisataEditTiket";
-            labelId_WisataEditTiket.Size = new Size(94, 15);
-            labelId_WisataEditTiket.TabIndex = 31;
-            labelId_WisataEditTiket.Text = "Id Wisata            :";
-            // 
             // btnPopUpInfo
             // 
             btnPopUpInfo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -134,13 +110,14 @@
             btnPopUpInfo.TabIndex = 28;
             btnPopUpInfo.Text = "Help";
             btnPopUpInfo.UseVisualStyleBackColor = true;
+            btnPopUpInfo.Click += btnPopUpInfo_Click;
             // 
             // button4UpdateTIket
             // 
             button4UpdateTIket.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button4UpdateTIket.BackColor = Color.DeepSkyBlue;
             button4UpdateTIket.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button4UpdateTIket.Location = new Point(1000, 680);
+            button4UpdateTIket.Location = new Point(1000, 569);
             button4UpdateTIket.Name = "button4UpdateTIket";
             button4UpdateTIket.Size = new Size(344, 58);
             button4UpdateTIket.TabIndex = 27;
@@ -152,7 +129,7 @@
             // 
             btnClearIsi.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnClearIsi.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnClearIsi.Location = new Point(628, 738);
+            btnClearIsi.Location = new Point(621, 503);
             btnClearIsi.Name = "btnClearIsi";
             btnClearIsi.Size = new Size(137, 29);
             btnClearIsi.TabIndex = 24;
@@ -165,7 +142,7 @@
             btnTambahTiket.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             btnTambahTiket.BackColor = Color.FromArgb(128, 255, 128);
             btnTambahTiket.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnTambahTiket.Location = new Point(1000, 613);
+            btnTambahTiket.Location = new Point(1000, 502);
             btnTambahTiket.Name = "btnTambahTiket";
             btnTambahTiket.Size = new Size(344, 50);
             btnTambahTiket.TabIndex = 23;
@@ -187,7 +164,7 @@
             // btnClearDataTket
             // 
             btnClearDataTket.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnClearDataTket.Location = new Point(1247, 48);
+            btnClearDataTket.Location = new Point(1317, 85);
             btnClearDataTket.Name = "btnClearDataTket";
             btnClearDataTket.Size = new Size(75, 23);
             btnClearDataTket.TabIndex = 19;
@@ -200,7 +177,7 @@
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Location = new Point(28, 65);
+            label3.Location = new Point(25, 87);
             label3.Name = "label3";
             label3.Size = new Size(77, 15);
             label3.TabIndex = 18;
@@ -221,9 +198,9 @@
             CariTiket.BackColor = SystemColors.ControlLightLight;
             CariTiket.BorderStyle = BorderStyle.FixedSingle;
             CariTiket.ForeColor = SystemColors.WindowText;
-            CariTiket.Location = new Point(569, 46);
+            CariTiket.Location = new Point(590, 87);
             CariTiket.Name = "CariTiket";
-            CariTiket.Size = new Size(649, 23);
+            CariTiket.Size = new Size(721, 23);
             CariTiket.TabIndex = 16;
             CariTiket.Text = "Silahkan Cari Disini";
             CariTiket.Click += CariTiket_Click;
@@ -233,7 +210,7 @@
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
-            label2.Location = new Point(500, 60);
+            label2.Location = new Point(547, 89);
             label2.Name = "label2";
             label2.Size = new Size(34, 15);
             label2.TabIndex = 15;
@@ -244,9 +221,9 @@
             NamaKolom.Anchor = AnchorStyles.Left;
             NamaKolom.FormattingEnabled = true;
             NamaKolom.Items.AddRange(new object[] { "ID Tiket", "Nama", "Deskripsi", "Harga" });
-            NamaKolom.Location = new Point(133, 48);
+            NamaKolom.Location = new Point(110, 84);
             NamaKolom.Name = "NamaKolom";
-            NamaKolom.Size = new Size(314, 23);
+            NamaKolom.Size = new Size(369, 23);
             NamaKolom.TabIndex = 4;
             // 
             // txtHargaTiket
@@ -316,7 +293,7 @@
             label4.Anchor = AnchorStyles.Left;
             label4.AutoSize = true;
             label4.Font = new Font("Trebuchet MS", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            label4.Location = new Point(27, 16);
+            label4.Location = new Point(23, 16);
             label4.Name = "label4";
             label4.Size = new Size(121, 22);
             label4.TabIndex = 4;
@@ -330,14 +307,16 @@
             DataGridViewEditTiket.AllowUserToResizeRows = false;
             DataGridViewEditTiket.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DataGridViewEditTiket.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            DataGridViewEditTiket.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             DataGridViewEditTiket.BackgroundColor = SystemColors.ButtonHighlight;
             DataGridViewEditTiket.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DataGridViewEditTiket.Location = new Point(25, 123);
             DataGridViewEditTiket.Name = "DataGridViewEditTiket";
             DataGridViewEditTiket.ReadOnly = true;
             DataGridViewEditTiket.RowTemplate.Height = 25;
+            DataGridViewEditTiket.ScrollBars = ScrollBars.Vertical;
             DataGridViewEditTiket.Size = new Size(1367, 259);
-            DataGridViewEditTiket.TabIndex = 5;
+            DataGridViewEditTiket.TabIndex = 15;
             DataGridViewEditTiket.CellClick += DataGridViewEditTiket_CellClick;
             // 
             // pictureBox1
@@ -409,7 +388,5 @@
         private Label label4;
         private DataGridView DataGridViewEditTiket;
         private Button btnPopUpInfo;
-        private TextBox txtIDWisataEditTiket;
-        private Label labelId_WisataEditTiket;
     }
 }

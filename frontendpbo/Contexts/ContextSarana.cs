@@ -2,6 +2,7 @@
 using Npgsql;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,6 +53,24 @@ namespace frontendpbo.Contexts
                 connection.Close();
                 MessageBox.Show("Data berhasil diinput");
             }
+        }
+
+        public DataTable ReadAll()
+        {
+            DataTable dataTable = new DataTable();
+
+            using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=Julpangmumet;user id=postgres;password=123"))
+            {
+                connection.Open();
+                NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM sarana_prasarana", connection);
+
+                NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(command);
+                adapter.Fill(dataTable);
+
+                connection.Close();
+            }
+
+            return dataTable;
         }
     }
 }
