@@ -23,6 +23,11 @@ namespace frontendpbo
             InitializeComponent();
         }
 
+        private void setDataGridview()
+        {
+            
+        }
+
         private void ReadDataRiwayatKunjungan()
         {
 
@@ -33,10 +38,7 @@ namespace frontendpbo
 
         }
 
-        private void setDataGridview()
-        {
-
-        }
+        
 
         private void Edit_Riwayat_Kunjungan_Load(object sender, EventArgs e)
         {

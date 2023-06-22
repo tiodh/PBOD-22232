@@ -48,7 +48,7 @@ namespace frontendpbo.Contexts
             string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             { 
-                string sql = $"SELECT rk.id_riwayat_kunjungan, rk.tanggal_kunjungan, rk.jumlah_tiket, t.nama_tiket, p.nama_pengunjung FROM riwayat_kunjungan rk JOIN tiket t ON rk.tiket_id = t.id_tiket JOIN pengunjung p ON rk.pengunjung_id = p.id_pengunjung where p.nama_pengunjung = '{Read}'";
+                string sql = $"SELECT rk.id_riwayat_kunjungan, rk.tanggal_kunjungan, rk.jumlah_tiket, t.nama_tiket, p.nama_pengunjung FROM riwayat_kunjungan rk JOIN tiket t ON rk.tiket_id = t.id_tiket JOIN pengunjung p ON rk.pengunjung_id = p.id_pengunjung";
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
                 {
