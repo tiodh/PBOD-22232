@@ -108,3 +108,15 @@ D:\projek-akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendp
 D:\projek-akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 D:\projek-akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 D:\projek-akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.EntityFrameworkCore.PostgreSQL.dll
