@@ -8,104 +8,124 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System;
+using frontendpbo.Contexts;
 using frontendpbo.Models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace frontendpbo
 {
     public partial class CRUDTransportasi : Form
     {
-        private Contexts.ContextTransportasi transportasiContext;
+        Contexts.ContextTransportasi contextTransportasi = new Contexts.ContextTransportasi();
+        Contexts.ContextWisata contexTransportasi = new Contexts.ContextWisata();
+
+        public string CurrentIdTransportasi;
+        private List<Transportasi> listTransportasis = new List<Transportasi>();
 
         public CRUDTransportasi()
         {
+
             InitializeComponent();
-            transportasiContext = new Contexts.ContextTransportasi();
-            LoadTransportasiData();
+
+            TampilData.AutoGenerateColumns = false;
+            ReadDataTransportasi();
         }
 
-        private void LoadTransportasiData()
-        {
-            List<Transportasi> transportasiList = transportasiContext.GetTransportasiList();
-            TampilData.DataSource = transportasiList;
 
-            TampilData.Columns["Id_transportasi"].Width = 100;
-            TampilData.Columns["Nama_transportasi"].Width = 200;
-            TampilData.Columns["Jenis_transportasi"].Width = 150;
-            TampilData.Columns["Deskripsi_transportasi"].Width = 300;
+        private void SetDataGrid()
+        {
+            TampilData.Columns["ID"].HeaderText = "Id_Transportasi";
+            TampilData.Columns["Nama Transportasi"].HeaderText = "Nama Transportasi";
+            TampilData.Columns["jenis_transportasi"].HeaderText = "jenis_transportasi";
+            TampilData.Columns["deskripsi_transportasi"].HeaderText = "deskripsi_transportasi";
+
+            TampilData.Columns["ID"].DataPropertyName = "Id_transportasi";
+            TampilData.Columns["Nama Transportasi"].DataPropertyName = "Nama_transportasi";
+            TampilData.Columns["Jenis Transportasi"].DataPropertyName = "Jenis_transportasi";
+            TampilData.Columns["Deskripsi Transportasi"].DataPropertyName = "Deskripsi_transportasi";
         }
 
-        private void SearchTransportasi_Click(object sender, EventArgs e)
+        private void ReadDataTransportasi()
         {
-            string namaTransportasi = TampilanData.Text.Trim();
-            string jenisTransportasi = TampilanData.Text.Trim();
 
-           /* List<Transportasi> searchResults = transportasiContext.SearchTransportasi(namaTransportasi, jenisTransportasi);
-            TampilData.DataSource = searchResults;*/
+            contextTransportasi.TransportasiList = listTransportasis;
+            contextTransportasi.Read();
+            TampilData.DataSource = contextTransportasi.TransportasiList;
+
+            SetDataGrid();
+        }
+
+        private Models.Transportasi GetData()
+        {
+            Transportasi transportasi = new Models.Transportasi();
+
+            transportasi.Id_transportasi = int.Parse(IDTransportasi.Text);
+            transportasi.Nama_transportasi = NamaTransportasi.Text;
+            transportasi.Jenis_transportasi = JenisTransportasi.Text;
+            transportasi.Deskripsi_transportasi = DeskripsiTransportasi.Text;
+
+            return transportasi;
+        }
+
+
+        private void TampilData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (TampilData.Columns[e.ColumnIndex].Name == "Edit")
+            {
+                IDTransportasi.Enabled = false;
+                CreateTransportasi.Enabled = false;
+                UpdateTransportasi.Enabled = true;
+                Transportasi transportasi = listTransportasis[e.RowIndex];
+                IDTransportasi.Text = transportasi.Id_transportasi.ToString();
+                NamaTransportasi.Text = transportasi.Nama_transportasi;
+                JenisTransportasi.Text = transportasi.Jenis_transportasi;
+                DeskripsiTransportasi.Text = transportasi.Deskripsi_transportasi;
+
+
+            }
+            else if (TampilData.Columns[e.ColumnIndex].Name == "Delete")
+            {
+                Transportasi transportasi = listTransportasis[e.RowIndex];
+                CurrentIdTransportasi = transportasi.Id_transportasi.ToString();
+                contextTransportasi.Delete(transportasi);
+                TampilData.DataSource = null;
+                ReadDataTransportasi();
+            }
+        }
+
+        private void CRUDTransportasi_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void CreateTransportasi_Click(object sender, EventArgs e)
         {
-            int idTransportasi = Convert.ToInt32(IDTransportasi.Text.Trim());
-            string namaTransportasi = NamaTransportasi.Text.Trim();
-            string jenisTransportasi = JenisTransportasi.Text.Trim();
-            string deskripsiTransportasi = DeskripsiTransportasi.Text.Trim();
-
-            Transportasi transportasi = new Transportasi()
-            {
-                Id_transportasi = idTransportasi,
-                Nama_transportasi = namaTransportasi,
-                Jenis_transportasi = jenisTransportasi,
-                Deskripsi_transportasi = deskripsiTransportasi
-            };
-
-            bool success = transportasiContext.InsertTransportasi(transportasi);
-
-            if (success)
-            {
-                MessageBox.Show("Data has been inserted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadTransportasiData();
-                ResetForm();
-            }
-            else
-            {
-                MessageBox.Show("Failed to insert data.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            Models.Transportasi transportasi = this.GetData();
+            contextTransportasi.Insert(transportasi);
+            TampilData.DataSource = null;
+            ReadDataTransportasi();
         }
 
         private void UpdateTransportasi_Click(object sender, EventArgs e)
         {
-            int idTransportasi = Convert.ToInt32(IDTransportasi.Text.Trim());
-            string namaTransportasi = NamaTransportasi.Text.Trim();
-            string jenisTransportasi = JenisTransportasi.Text.Trim();
-            string deskripsiTransportasi = DeskripsiTransportasi.Text.Trim();
-
-            Transportasi transportasi = new Transportasi()
-            {
-                Id_transportasi = idTransportasi,
-                Nama_transportasi = namaTransportasi,
-                Jenis_transportasi = jenisTransportasi,
-                Deskripsi_transportasi = deskripsiTransportasi
-            };
-
-            bool success = transportasiContext.UpdateTransportasi(transportasi);
-
-            if (success)
-            {
-                MessageBox.Show("Data has been updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LoadTransportasiData();
-                ResetForm();
-            }
-            else
-            {
-                MessageBox.Show("Failed to update data.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            Models.Transportasi transportasi = this.GetData();
+            contextTransportasi.Update(transportasi);
+            TampilData.DataSource = null;
+            ReadDataTransportasi();
         }
-        private void ResetForm()
+
+        private void DeleteTransportasi_Click(object sender, EventArgs e)
         {
+            IDTransportasi.Enabled = true;
+            UpdateTransportasi.Enabled = false;
+            CreateTransportasi.Enabled = true;
             IDTransportasi.Text = "";
             NamaTransportasi.Text = "";
-            JenisTransportasi.Text = "";
             DeskripsiTransportasi.Text = "";
         }
     }
 }
+

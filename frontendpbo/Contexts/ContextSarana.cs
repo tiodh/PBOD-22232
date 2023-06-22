@@ -63,6 +63,45 @@ namespace frontendpbo.Contexts
             }
             return isSuccess;
         }
+        public bool Update(SaranaPrasarana sarana)
+        {
+            bool isSuccess = false;
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+
+            using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
+            {
+                string sql = "UPDATE public.tiket SET id_sarana = :IdWisata, nama_sarana = :NamaSarana, deskripsi_sarana = :DeskripsiSarana \nWHERE Wisata_ID = :IDWisata;";
+
+                connection.Open();
+
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, connection))
+                {
+                    cmd.Parameters.Add(new NpgsqlParameter(":IdSarana", sarana.id_sarana));
+                    cmd.Parameters.Add(new NpgsqlParameter(":NamaSarana", sarana.nama_sarana));
+                    cmd.Parameters.Add(new NpgsqlParameter(":DeskripsiSarana", sarana.deskripsi_sarana));
+                    cmd.Parameters.Add(new NpgsqlParameter(":IDWisata", sarana.Wisata_ID));
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    int JumlahData = cmd.ExecuteNonQuery();
+                    if (JumlahData > 0)
+                    {
+                        isSuccess = true;
+                        foreach (var temp in this.ListSarana)
+                        {
+                            var t = temp as SaranaPrasarana;
+                            if (t != null && t.id_sarana.Equals(sarana.id_sarana))
+                            {
+                                t.id_sarana = sarana.id_sarana;
+                                t.nama_sarana = sarana.nama_sarana;
+                                t.deskripsi_sarana = sarana.deskripsi_sarana;
+                                t.Wisata_ID = sarana.Wisata_ID;
+                            }
+                        }
+                    }
+                    MessageBox.Show("Sukses Mengupdate Data");
+                }
+                return isSuccess;
+            }
+        }
 
         public DataTable ReadAll()
         {

@@ -49,6 +49,9 @@
     <Compile Update="DetailTiket.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DetailTransportasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DetailUlasan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,9 +80,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DetailTransportasi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginAdmin.cs">
