@@ -34,10 +34,12 @@
             tbxDeskripsi = new TextBox();
             simpan = new Button();
             dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
             btnJudul = new Button();
+            textBox1 = new TextBox();
+            panel1 = new Panel();
+            Cari = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // labelNama
@@ -89,29 +91,18 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.Anchor = AnchorStyles.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2 });
-            dataGridView1.Location = new Point(521, 193);
+            dataGridView1.Location = new Point(29, 79);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(644, 457);
             dataGridView1.TabIndex = 5;
-            // 
-            // Column1
-            // 
-            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column1.HeaderText = "Nama Sektor";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            Column2.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Column2.HeaderText = "Deskripsi";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // btnJudul
             // 
@@ -124,13 +115,41 @@
             btnJudul.Text = "DATA SARANA DAN PRASARANA";
             btnJudul.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(29, 35);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(434, 34);
+            textBox1.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(Cari);
+            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(textBox1);
+            panel1.Location = new Point(492, 112);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(703, 556);
+            panel1.TabIndex = 8;
+            // 
+            // Cari
+            // 
+            Cari.Location = new Point(469, 33);
+            Cari.Name = "Cari";
+            Cari.Size = new Size(128, 38);
+            Cari.TabIndex = 8;
+            Cari.Text = "Cari";
+            Cari.UseVisualStyleBackColor = true;
+            Cari.Click += Cari_Click;
+            // 
             // CreateSarana
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1195, 718);
+            Controls.Add(panel1);
             Controls.Add(btnJudul);
-            Controls.Add(dataGridView1);
             Controls.Add(simpan);
             Controls.Add(tbxDeskripsi);
             Controls.Add(tbxNama);
@@ -138,7 +157,10 @@
             Controls.Add(labelNama);
             Name = "CreateSarana";
             Text = "Form1";
+            Load += CreateSarana_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -151,8 +173,9 @@
         private TextBox tbxDeskripsi;
         private Button simpan;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
         private Button btnJudul;
+        private TextBox textBox1;
+        private Panel panel1;
+        private Button Cari;
     }
 }

@@ -106,6 +106,7 @@
             panel_Main.Name = "panel_Main";
             panel_Main.Size = new Size(1384, 443);
             panel_Main.TabIndex = 1;
+            panel_Main.Paint += panel_Main_Paint;
             // 
             // label6
             // 
