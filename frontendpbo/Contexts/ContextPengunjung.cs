@@ -15,7 +15,7 @@ namespace frontendpbo.Contexts
         {
             NpgsqlConnection connection = new NpgsqlConnection();
 
-            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=peta_jember;";
+            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
             connection.ConnectionString = constr;
             DataTable dt = new DataTable();
             try
