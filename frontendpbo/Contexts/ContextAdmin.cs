@@ -11,7 +11,7 @@ namespace frontendpbo.Contexts
     internal class ContextAdmin
     {
 
-        public bool Login(Admin admin)
+        public bool Login(Pengguna pengguna)
         {
             bool isSuccess = false;
             string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
@@ -24,8 +24,8 @@ namespace frontendpbo.Contexts
 
                 using (var cmd = new NpgsqlCommand(sql, conn))
                 {
-                    cmd.Parameters.Add(new NpgsqlParameter("@username", admin.Username));
-                    cmd.Parameters.Add(new NpgsqlParameter("@password", admin.Password));
+                    cmd.Parameters.Add(new NpgsqlParameter("@username", pengguna.Username));
+                    cmd.Parameters.Add(new NpgsqlParameter("@password", pengguna.Password));
 
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
 

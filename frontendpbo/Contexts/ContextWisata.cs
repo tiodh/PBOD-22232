@@ -175,11 +175,5 @@ namespace frontendpbo.Contexts
 
             return listWisata;
         }
-
-        public bool Delete(string id)
-        {
-            bool isSuccess = false;
-            return isSuccess;
-        }
     }
 }

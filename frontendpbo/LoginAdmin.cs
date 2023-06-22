@@ -16,7 +16,7 @@ namespace frontendpbo
     public partial class LoginAdmin : Form
     {
         ContextAdmin contextAdmin;
-        Admin admin = new Admin();
+        Pengguna admin = new Pengguna();
         public LoginAdmin()
         {
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace frontendpbo
             //this.WindowState = FormWindowState.Maximized;
         }
 
-        private Models.Admin GetData()
+        private Models.Pengguna GetData()
         {
 
             admin.Username = tbx_user.Text;
@@ -87,8 +87,8 @@ namespace frontendpbo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Models.Admin admin = this.GetData();
-            bool loginSuccess = contextAdmin.Login(admin);
+            Models.Pengguna pengguna = this.GetData();
+            bool loginSuccess = contextAdmin.Login(pengguna);
 
             if (loginSuccess)
             {

@@ -15,7 +15,7 @@ namespace frontendpbo
     public partial class Form3 : Form
     {
         ContextAdmin contextAdmin;
-        Admin admin = new Admin();
+        Pengguna pengguna = new Pengguna();
 
         public Form3()
         {

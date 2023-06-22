@@ -41,6 +41,7 @@ namespace frontendpbo
             textBox1_Nama_Wisata.Text = "";
             textBox2_Deskripsi_Wisata.Text = "";
             textBox3_Lokasi_Wisata.Text = "";
+            CurrentID = 0;
         }
 
         public Models.Wisata GetWisata()

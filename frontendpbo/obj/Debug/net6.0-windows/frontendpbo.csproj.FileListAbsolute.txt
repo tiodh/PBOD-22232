@@ -1379,3 +1379,9 @@ C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.
 C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
 >>>>>>> fbfd48d6fa6b72e8250189f8bd1ea2b9998e2f55
+C:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDSarana.resources
+C:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDUmkm.resources
+C:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CUR_Pengunjung.resources
+C:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailRiwayatKunjungan.resources
+C:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailTiket.resources
+C:\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailTransportasi.resources

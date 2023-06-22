@@ -53,6 +53,10 @@
               "target": "Package",
               "version": "[7.0.4, )"
             },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
             "OxyPlot.WindowsForms": {
               "target": "Package",
               "version": "[2.1.2, )"
