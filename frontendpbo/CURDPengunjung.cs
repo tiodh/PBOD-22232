@@ -31,7 +31,7 @@ namespace frontendpbo
 
             if (!string.IsNullOrEmpty(searchText))
             {
-                using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=132435;Database=peta_jember;"))
+                using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;"))
                 {
 
                     string sql = "SELECT * FROM pengunjung WHERE nama_pengunjung ILIKE '%' || @searchText || '%' " +
@@ -73,10 +73,6 @@ namespace frontendpbo
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
