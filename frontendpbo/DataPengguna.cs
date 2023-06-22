@@ -58,6 +58,10 @@ namespace frontendpbo
             contextPengguna.Create(pengguna);
             DGVdataPengguna.DataSource = null;
             ReadDataPengguna();
+            tbEmail.Text = "";
+            tbNama.Text = "";
+            tbUsername.Text = "";
+            tbPassword.Text = "";
 
         }
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -66,6 +70,10 @@ namespace frontendpbo
             contextPengguna.Update(pengguna);
             DGVdataPengguna.DataSource = null;
             ReadDataPengguna();
+            tbEmail.Text = "";
+            tbNama.Text = "";
+            tbUsername.Text = "";
+            tbPassword.Text = "";
 
         }
         private void DGVDataPengguna_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -76,6 +84,14 @@ namespace frontendpbo
             tbNama.Text = pengguna.Nama_Lengkap;
             tbUsername.Text = pengguna.Username;
             tbPassword.Text = pengguna.Password;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            tbEmail.Text = "";
+            tbNama.Text = "";
+            tbUsername.Text = "";
+            tbPassword.Text = "";
         }
     }
 
