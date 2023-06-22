@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asus\\Downloads\\PROJECT_AKHIR PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+    "C:\\Users\\USER\\OneDrive\\Documents\\SEM2\\PBO\\UAS PBO 23\\YANG BENER\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asus\\Downloads\\PROJECT_AKHIR PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+    "C:\\Users\\USER\\OneDrive\\Documents\\SEM2\\PBO\\UAS PBO 23\\YANG BENER\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\Downloads\\PROJECT_AKHIR PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\OneDrive\\Documents\\SEM2\\PBO\\UAS PBO 23\\YANG BENER\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "C:\\Users\\asus\\Downloads\\PROJECT_AKHIR PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\Downloads\\PROJECT_AKHIR PBO\\PBOD-22232\\frontendpbo\\obj\\",
+        "projectPath": "C:\\Users\\USER\\OneDrive\\Documents\\SEM2\\PBO\\UAS PBO 23\\YANG BENER\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\OneDrive\\Documents\\SEM2\\PBO\\UAS PBO 23\\YANG BENER\\PBOD-22232\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,6 +25,7 @@
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
