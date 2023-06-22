@@ -120,19 +120,6 @@ namespace frontendpbo.Contexts
 
         }
 
-        public void DeleteTempatMakan(int id_tempat_makan)
-        {
-            using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
-            {
-                string sql = "DELETE FROM tempat_makan WHERE id_tempat_makan = @id_Tempat_Makan";
-                using (NpgsqlCommand command = new NpgsqlCommand(sql, connection))
-                {
-                    command.Parameters.AddWithValue("@id_Tempat_Makan", id_tempat_makan);
-
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
+       
     }
 }
