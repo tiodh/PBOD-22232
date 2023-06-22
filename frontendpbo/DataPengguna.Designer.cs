@@ -41,6 +41,7 @@
             tbSearchDataPengguna = new TextBox();
             btnCreate = new Button();
             btnUpdate = new Button();
+            btnClear = new Button();
             ((System.ComponentModel.ISupportInitialize)DGVdataPengguna).BeginInit();
             SuspendLayout();
             // 
@@ -177,15 +178,13 @@
             tbSearchDataPengguna.Size = new Size(238, 24);
             tbSearchDataPengguna.TabIndex = 10;
             tbSearchDataPengguna.Text = "Search Pengguna";
-//            tbSearchDataPengguna.Click += tbSearchDataPengguna_Click;
-  //          tbSearchDataPengguna.TextChanged += tbSearchDataPengguna_TextChanged;
             // 
             // btnCreate
             // 
             btnCreate.Anchor = AnchorStyles.Right;
             btnCreate.BackColor = Color.LimeGreen;
             btnCreate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCreate.Location = new Point(944, 556);
+            btnCreate.Location = new Point(879, 556);
             btnCreate.Name = "btnCreate";
             btnCreate.Size = new Size(128, 45);
             btnCreate.TabIndex = 11;
@@ -198,7 +197,7 @@
             btnUpdate.Anchor = AnchorStyles.Right;
             btnUpdate.BackColor = Color.Gold;
             btnUpdate.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnUpdate.Location = new Point(1128, 556);
+            btnUpdate.Location = new Point(1029, 556);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(128, 45);
             btnUpdate.TabIndex = 12;
@@ -206,11 +205,25 @@
             btnUpdate.UseVisualStyleBackColor = false;
             btnUpdate.Click += btnUpdate_Click;
             // 
+            // btnClear
+            // 
+            btnClear.Anchor = AnchorStyles.Right;
+            btnClear.BackColor = Color.GhostWhite;
+            btnClear.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnClear.Location = new Point(1177, 556);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(128, 45);
+            btnClear.TabIndex = 13;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
+            // 
             // DataPengguna
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1350, 650);
+            Controls.Add(btnClear);
             Controls.Add(btnUpdate);
             Controls.Add(btnCreate);
             Controls.Add(tbSearchDataPengguna);
@@ -247,5 +260,6 @@
         private TextBox tbSearchDataPengguna;
         private Button btnCreate;
         private Button btnUpdate;
+        private Button btnClear;
     }
 }
