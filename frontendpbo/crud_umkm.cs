@@ -21,7 +21,7 @@ namespace frontendpbo
 
         void loadgrid()
         {
-            dataGridView1_umkm.DataSource = Class_crud_umkm.read();
+            dataGridView1_umkm.DataSource = crud_umkm.Read();
         }
         private void textBox1_nama_umkm_TextChanged(object sender, EventArgs e)
         {
@@ -114,7 +114,7 @@ namespace frontendpbo
 
         private void button4_add_umkm_Click(object sender, EventArgs e)
         {
-            Class_crud_umkm.made(Convert.ToInt32(textBox5_id_umkm.Text), textBox1_nama_umkm.Text, textBox2_desk_umkm.Text, textBox3_pemilik_umkm.Text, textBox4_telepon_umkm.Text, Convert.ToInt32(textBox6_wisata_id.Text));
+            crud_umkm.Create(Convert.ToInt32(textBox5_id_umkm.Text), textBox1_nama_umkm.Text, textBox2_desk_umkm.Text, textBox3_pemilik_umkm.Text, textBox4_telepon_umkm.Text, Convert.ToInt32(textBox6_wisata_id.Text));
             loadgrid();
             textBox5_id_umkm.Text = "";
             textBox1_nama_umkm.Text = "";
