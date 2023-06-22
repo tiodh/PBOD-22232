@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Source\\Repos\\new\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+    "C:\\Users\\user\\Source\\Repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Source\\Repos\\new\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\new\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\new\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\new\\PBOD-22232\\frontendpbo\\obj\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\PBOD-22232\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

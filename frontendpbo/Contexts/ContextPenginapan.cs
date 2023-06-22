@@ -71,7 +71,7 @@ namespace frontendpbo.Contexts
                 }
                 return isSuccess;
             }
-            
+
         }
         public bool Update(Penginapan penginapan)
         {
@@ -110,7 +110,7 @@ namespace frontendpbo.Contexts
                 }
                 return isSuccess;
             }
-            
+
         }
         public List<Penginapan> Search(string query)
         {
@@ -141,7 +141,7 @@ namespace frontendpbo.Contexts
             }
             return searchResults;
         }
-   
-
 
     }
+
+}

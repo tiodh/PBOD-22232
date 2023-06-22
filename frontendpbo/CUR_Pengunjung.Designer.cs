@@ -82,7 +82,6 @@
             textbox_Nama.Name = "textbox_Nama";
             textbox_Nama.Size = new Size(471, 27);
             textbox_Nama.TabIndex = 1;
-            textbox_Nama.TextChanged += textbox_Nama_TextChanged;
             // 
             // label_namaPengunjung
             // 
@@ -110,7 +109,6 @@
             textbox_asal.Name = "textbox_asal";
             textbox_asal.Size = new Size(471, 27);
             textbox_asal.TabIndex = 3;
-            textbox_asal.TextChanged += textbox_asal_TextChanged;
             // 
             // label_idWisata
             // 
@@ -128,7 +126,6 @@
             textbox_idWisata.Name = "textbox_idWisata";
             textbox_idWisata.Size = new Size(471, 27);
             textbox_idWisata.TabIndex = 5;
-            textbox_idWisata.TextChanged += textbox_idWisata_TextChanged;
             // 
             // id_pengunjung
             // 
@@ -139,7 +136,6 @@
             id_pengunjung.Size = new Size(118, 20);
             id_pengunjung.TabIndex = 8;
             id_pengunjung.Text = "ID Pengunjung";
-            id_pengunjung.Click += id_pengunjung_Click;
             // 
             // textbox_idPengunjung
             // 
@@ -147,7 +143,6 @@
             textbox_idPengunjung.Name = "textbox_idPengunjung";
             textbox_idPengunjung.Size = new Size(471, 27);
             textbox_idPengunjung.TabIndex = 7;
-            textbox_idPengunjung.TextChanged += textbox_idPengunjung_TextChanged;
             // 
             // gridView_Data
             // 
@@ -160,7 +155,6 @@
             gridView_Data.RowTemplate.Height = 29;
             gridView_Data.Size = new Size(697, 557);
             gridView_Data.TabIndex = 9;
-            gridView_Data.CellContentClick += gridView_Data_CellContentClick;
             // 
             // button_Search
             // 
