@@ -932,3 +932,4 @@ C:\Users\USER\OneDrive\Documents\SEM2\PBO\UAS PBO 23\YANG BENER\PBOD-22232\front
 C:\Users\USER\OneDrive\Documents\SEM2\PBO\UAS PBO 23\YANG BENER\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 C:\Users\USER\OneDrive\Documents\SEM2\PBO\UAS PBO 23\YANG BENER\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\USER\OneDrive\Documents\SEM2\PBO\UAS PBO 23\YANG BENER\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\USER\OneDrive\Documents\SEM2\PBO\UAS PBO 23\YANG BENER\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailTiket.resources
