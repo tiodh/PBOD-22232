@@ -1,0 +1,20 @@
+C:\Project Pbo\Delete and Create\bin\Debug\net6.0-windows\Delete and Create.exe
+C:\Project Pbo\Delete and Create\bin\Debug\net6.0-windows\Delete and Create.deps.json
+C:\Project Pbo\Delete and Create\bin\Debug\net6.0-windows\Delete and Create.runtimeconfig.json
+C:\Project Pbo\Delete and Create\bin\Debug\net6.0-windows\Delete and Create.dll
+C:\Project Pbo\Delete and Create\bin\Debug\net6.0-windows\Delete and Create.pdb
+C:\Project Pbo\Delete and Create\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Project Pbo\Delete and Create\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\Delete and Create.csproj.AssemblyReference.cache
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\Delete_and_Create.Form1.resources
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\Delete and Create.csproj.GenerateResource.cache
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\Delete and Create.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\Delete and Create.AssemblyInfoInputs.cache
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\Delete and Create.AssemblyInfo.cs
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\Delete and Create.csproj.CoreCompileInputs.cache
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\Delete and Create.csproj.CopyComplete
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\Delete and Create.dll
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\refint\Delete and Create.dll
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\Delete and Create.pdb
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\Delete and Create.genruntimeconfig.cache
+C:\Project Pbo\Delete and Create\obj\Debug\net6.0-windows\ref\Delete and Create.dll
