@@ -16,7 +16,7 @@ namespace frontendpbo.Contexts
         public bool Insert(Ulasan ulasan)
         {
             bool isSuccess = false;
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=1233;Database=peta_jember";
 
             using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
             {
