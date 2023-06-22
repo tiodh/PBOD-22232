@@ -39,19 +39,67 @@ namespace frontendpbo.Contexts
                 }
             }
         }
-        public void create(string nama, string deskrip)
+        public bool create(SaranaPrasarana newSarana)
         {
+            bool isSuccess = false;
             using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember"))
             {
                 connection.Open();
                 NpgsqlCommand command = connection.CreateCommand();
                 command.Connection = connection;
                 command.CommandText = "insert into sarana_prasarana(nama_sarana,deskripsi_sarana) values(@nama_sarana,@deskripsi_sarana)";
-                command.Parameters.Add(new NpgsqlParameter("@nama_sarana", nama));
-                command.Parameters.Add(new NpgsqlParameter("@deskripsi_sarana", deskrip));
-                command.ExecuteNonQuery();
-                connection.Close();
+                command.Parameters.Add(new NpgsqlParameter("@nama_sarana", newSarana.nama_sarana));
+                command.Parameters.Add(new NpgsqlParameter("@deskripsi_sarana", newSarana.deskripsi_sarana));
+
+                command.CommandType = System.Data.CommandType.Text;
+                int jmlDataBaru = command.ExecuteNonQuery();
+                if (jmlDataBaru > 0)
+                {
+                    isSuccess = true;
+                    ListSarana.Add(newSarana);
+                }
+                //connection.Close();
                 MessageBox.Show("Data berhasil diinput");
+            }
+            return isSuccess;
+        }
+        public bool Update(SaranaPrasarana sarana)
+        {
+            bool isSuccess = false;
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+
+            using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
+            {
+                string sql = "UPDATE public.tiket SET id_sarana = :IdWisata, nama_sarana = :NamaSarana, deskripsi_sarana = :DeskripsiSarana \nWHERE Wisata_ID = :IDWisata;";
+
+                connection.Open();
+
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, connection))
+                {
+                    cmd.Parameters.Add(new NpgsqlParameter(":IdSarana", sarana.id_sarana));
+                    cmd.Parameters.Add(new NpgsqlParameter(":NamaSarana", sarana.nama_sarana));
+                    cmd.Parameters.Add(new NpgsqlParameter(":DeskripsiSarana", sarana.deskripsi_sarana));
+                    cmd.Parameters.Add(new NpgsqlParameter(":IDWisata", sarana.Wisata_ID));
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    int JumlahData = cmd.ExecuteNonQuery();
+                    if (JumlahData > 0)
+                    {
+                        isSuccess = true;
+                        foreach (var temp in this.ListSarana)
+                        {
+                            var t = temp as SaranaPrasarana;
+                            if (t != null && t.id_sarana.Equals(sarana.id_sarana))
+                            {
+                                t.id_sarana = sarana.id_sarana;
+                                t.nama_sarana = sarana.nama_sarana;
+                                t.deskripsi_sarana = sarana.deskripsi_sarana;
+                                t.Wisata_ID = sarana.Wisata_ID;
+                            }
+                        }
+                    }
+                    MessageBox.Show("Sukses Mengupdate Data");
+                }
+                return isSuccess;
             }
         }
 

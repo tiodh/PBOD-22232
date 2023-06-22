@@ -40,9 +40,11 @@
             panel2 = new Panel();
             label1 = new Label();
             panelSARANA = new Panel();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            panelSARANA.SuspendLayout();
             SuspendLayout();
             // 
             // labelNama
@@ -159,13 +161,24 @@
             // 
             // panelSARANA
             // 
+            panelSARANA.Controls.Add(button1);
             panelSARANA.Dock = DockStyle.Bottom;
             panelSARANA.Location = new Point(0, 78);
             panelSARANA.Name = "panelSARANA";
             panelSARANA.Size = new Size(1195, 640);
             panelSARANA.TabIndex = 10;
             // 
-            // CreateSarana
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.None;
+            button1.Location = new Point(258, 329);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 4;
+            button1.Text = "EDIT";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // CRUDSarana
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -179,7 +192,7 @@
             Controls.Add(labelNama);
             Controls.Add(panelSARANA);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "CreateSarana";
+            Name = "CRUDSarana";
             Text = "Form1";
             Load += CreateSarana_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -187,6 +200,7 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            panelSARANA.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -205,5 +219,6 @@
         private Panel panel2;
         private Label label1;
         private Panel panelSARANA;
+        private Button button1;
     }
 }
