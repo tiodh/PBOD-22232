@@ -19,6 +19,7 @@ namespace frontendpbo
         Contexts.ContextPengguna contextPengguna = new Contexts.ContextPengguna();
         public int CurrentIdAdmin;
         private List<Pengguna> listPengguna = new List<Pengguna>() { };
+        private List<Pengguna> searchresult = new List<Pengguna>() { };
 
         public DataPengguna()
         {
@@ -92,6 +93,27 @@ namespace frontendpbo
             tbNama.Text = "";
             tbUsername.Text = "";
             tbPassword.Text = "";
+        }
+
+        private void tbSearchDataPengguna_TextChanged(object sender, EventArgs e)
+        {
+            if (tbSearchDataPengguna.Text == "")
+            {
+                ReadDataPengguna();
+            }
+
+            else;
+            {
+                List<Pengguna> cari = contextPengguna.Search(tbSearchDataPengguna.Text);
+                DGVdataPengguna.DataSource = cari;
+                SetDataGrid();
+            }
+            
+        }
+
+        private void tbSearchDataPengguna_Click(object sender, EventArgs e)
+        {
+            tbSearchDataPengguna.Text = "";
         }
     }
 

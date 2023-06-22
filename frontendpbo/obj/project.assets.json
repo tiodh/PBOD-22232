@@ -257,23 +257,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\asus\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
+>>>>>>> 56ac4cae13f1de3e846202d66c748f0762583e63
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\asus\\Downloads\\PROJECT_AKHIR PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "projectName": "frontendpbo",
       "projectPath": "C:\\Users\\asus\\Downloads\\PROJECT_AKHIR PBO\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
       "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\asus\\Downloads\\PROJECT_AKHIR PBO\\PBOD-22232\\frontendpbo\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\PBO\\PBOBarulagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "projectName": "frontendpbo",
+      "projectPath": "C:\\Users\\Lenovo\\Documents\\PBO\\PBOBarulagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lenovo\\Documents\\PBO\\PBOBarulagi\\PBOD-22232\\frontendpbo\\obj\\",
+>>>>>>> 56ac4cae13f1de3e846202d66c748f0762583e63
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 56ac4cae13f1de3e846202d66c748f0762583e63
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -281,6 +297,11 @@
         "net6.0-windows"
       ],
       "sources": {
+<<<<<<< HEAD
+=======
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+>>>>>>> 56ac4cae13f1de3e846202d66c748f0762583e63
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
