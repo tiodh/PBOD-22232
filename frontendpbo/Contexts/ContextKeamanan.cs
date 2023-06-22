@@ -10,6 +10,7 @@ namespace frontendpbo.Contexts
 {
     internal class ContextKeamanan
     {
+
         public void create(string nama, string no_tlp, string alamat, string deskripsi)
         {
             using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=peta_jember;user id=postgres;password=123"))
