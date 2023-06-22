@@ -70,4 +70,43 @@ namespace frontendpbo.Contexts
             return isSuccess;
         }
     }
+    public bool Update(Penginapan penginapan)
+    {
+        bool isSuccess = false;
+
+        string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember;";
+        using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
+        {
+            string sql = @"UPDATE SET id_penginapan = :id_penginapan, nama_penginapan = :nama_penginapan,deskripsi_penginapan = :deskripsi_penginapan where id_wisata = :id_wisata";
+            conn.Open();
+            using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+            {
+                cmd.Parameters.Add(new NpgsqlParameter(":id_penginapan", Penginapan.ID));
+                cmd.Parameters.Add(new NpgsqlParameter(":nama_penginapan", Penginapan.Name));
+                cmd.Parameters.Add(new NpgsqlParameter(":deskripsi_penginapan", Penginapan.Description));
+                cmd.Parameters.Add(new NpgsqlParameter(":wisata_id", Penginapan.Wisata_ID));
+
+                cmd.CommandType = System.Data.CommandType.Text;
+                int JumlahData = cmd.ExecuteNonQuery();
+                if (JumlahData > 0)
+                {
+                    isSuccess = true;
+                    foreach (var temp in this.listWisata)
+                    {
+                        var t = temp as Penginapan;
+                        if (t != null && t.Id_Penginapan.Equals(penginapan.Id_penginapan))
+                        {
+                            t.ID = penginapan.ID;
+                            t.Name = penginapan.Nama_Penginapan;
+                            t.Description = penginapan.Description;
+                            t.Wisata_ID = penginapan.Wisata_ID;
+                        }
+                    }
+                }
+                MessageBox.Show("Sukses Mengupdate Data");
+            }
+
+        }
+        return isSuccess;
+    }
 }
