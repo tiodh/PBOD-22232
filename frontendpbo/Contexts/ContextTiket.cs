@@ -1,14 +1,5 @@
 ﻿using frontendpbo.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Npgsql;
-using NpgsqlTypes;
-using static Npgsql.Replication.PgOutput.Messages.RelationMessage;
-using System.Collections;
-using System.DirectoryServices;
 
 
 namespace frontendpbo.Contexts
@@ -114,8 +105,7 @@ namespace frontendpbo.Contexts
 
             return hargaTiket;
         }
-
-
+        
         public bool Insert(Tiket tiket)
         {
             bool isSuccess = false;
@@ -133,6 +123,36 @@ namespace frontendpbo.Contexts
                     cmd.Parameters.Add(new NpgsqlParameter(":DeskripsiTiket", tiket.deskripsi_tiket));
                     cmd.Parameters.Add(new NpgsqlParameter(":HargaTiket", tiket.harga_tiket));
                     cmd.Parameters.Add(new NpgsqlParameter(":IDWisata", tiket.wisata_id));
+
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    int jmlDataBaru = cmd.ExecuteNonQuery();
+                    if (jmlDataBaru > 0)
+                    {
+                        isSuccess = true;
+                        this.listTiket.Add(tiket);
+                    }
+                }
+                MessageBox.Show(sql);
+            }
+            return isSuccess;
+        }
+        public bool Update(Tiket tiket)
+        {
+            bool isSuccess = false;
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+
+            using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
+            {
+                string sql = "UPDATE public.tiket SET nama_tiket = :NamaTiket, :DeskripsiTiket, :HargaTiket, :IDWisata  WHERE id_tiket = :IDTIKET";
+                connection.Open();
+
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, connection))
+                {
+                    cmd.Parameters.Add(new NpgsqlParameter(":NamaTiket", tiket.nama_tiket));
+                    cmd.Parameters.Add(new NpgsqlParameter(":DeskripsiTiket", tiket.deskripsi_tiket));
+                    cmd.Parameters.Add(new NpgsqlParameter(":HargaTiket", tiket.harga_tiket));
+                    cmd.Parameters.Add(new NpgsqlParameter(":IDWisata", tiket.wisata_id));
+                    cmd.Parameters.Add(new NpgsqlParameter(":IDTIKET", tiket.id_tiket));
 
                     cmd.CommandType = System.Data.CommandType.Text;
                     int jmlDataBaru = cmd.ExecuteNonQuery();
