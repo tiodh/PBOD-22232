@@ -1,4 +1,6 @@
-﻿using System;
+﻿using frontendpbo.Contexts;
+using frontendpbo.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,12 +15,24 @@ namespace frontendpbo
     public partial class DataPengguna : Form
     {
         private int idadmin;
+        ContextPengguna contextPengguna;
+        private List<Pengguna> listPengguna;
         public DataPengguna()
         {
             InitializeComponent();
+            contextPengguna = new ContextPengguna();
             showDB();
         }
+        private Models.Pengguna GetPengguna()
+        {
+            Models.Pengguna pgn = new Models.Pengguna();
+            pgn.Nama_Lengkap = tbNama.Text;
+            pgn.Email = tbEmail.Text;
+            pgn.Username = tbUsername.Text;
+            pgn.Password = tbPassword.Text;
 
+            return pgn;
+        }
         void showDB()
         {
             tbPassword.Visible = false;
@@ -30,12 +44,11 @@ namespace frontendpbo
 
         private void btnCreate_Click_1(object sender, EventArgs e)
         {
-            CRU_DataPengguna.Create_Data_Pengguna(tbNama.Text, tbUsername.Text, tbEmail.Text, tbPassword.Text);
-            showDB();
-            tbNama.Text = "";
-            tbEmail.Text = "";
-            tbUsername.Text = "";
-            tbPassword.Text = "";
+            Models.Pengguna pengguna = this.GetPengguna();
+            contextPengguna.Create(pengguna);
+            DGVdataPengguna.DataSource = null;
+            Show();
+            
         }
 
         private void tbSearchDataPengguna_TextChanged(object sender, EventArgs e)
@@ -82,4 +95,5 @@ namespace frontendpbo
             tbPassword.Text = DGVdataPengguna.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
     }
+  
 }

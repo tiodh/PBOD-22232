@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace frontendpbo.Models
 {
-    internal class Tiket
+    public class Tiket
     {
-        public int Id_Tiket { get; set; }
-        public string Nama_Tiket { get; set; }
-        public string Deskripsi { get; set; }
-        public int Harga { get; set; }
-        public int Wisata_ID { get; set; }
+        public int id_tiket { get; set; }
+        public string nama_tiket { get; set; }
+        public string deskripsi_tiket { get; set; }
+        public int harga_tiket { get; set; }
+        public int wisata_id { get; set; }
     }
 }
