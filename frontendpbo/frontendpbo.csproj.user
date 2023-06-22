@@ -83,7 +83,7 @@
     <Compile Update="FormDetailTransportasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormEditEvent.cs">
+    <Compile Update="CRUDEvent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="jenis_umkm.cs">
