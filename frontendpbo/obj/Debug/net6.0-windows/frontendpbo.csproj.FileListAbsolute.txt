@@ -416,3 +416,4 @@ C:\Users\nafia\OneDrive\Documents\PBO\Akhir\PBOD-22232\frontendpbo\obj\Debug\net
 C:\Users\nafia\OneDrive\Documents\PBO\Akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
 C:\Users\nafia\OneDrive\Documents\PBO\Akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
 C:\Users\nafia\OneDrive\Documents\PBO\Akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\nafia\OneDrive\Documents\PBO\Akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailTransportasi.resources
