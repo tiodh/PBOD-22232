@@ -11,7 +11,7 @@ namespace frontendpbo.Models
         public int Id { get; set; }
         public string Nama { get; set; }
         public string Deskripsi { get; set; }
-        public DateTime Tanggal_Event { get; set; }
+        public DateOnly Tanggal_Event { get; set; }
         public int Wisata_ID { get; set; }
     }
 }

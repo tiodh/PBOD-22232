@@ -13,12 +13,12 @@ using System.Windows.Forms;
 
 namespace frontendpbo
 {
-    public partial class Edit_Riwayat_Kunjungan : Form
+    public partial class DetailRiwayatKunjungan : Form
     {
         ContextRiwayatKunjungan contextRiwayat;
         string pilihan;
         string perintah;
-        public Edit_Riwayat_Kunjungan()
+        public DetailRiwayatKunjungan()
         {
             InitializeComponent();
         }

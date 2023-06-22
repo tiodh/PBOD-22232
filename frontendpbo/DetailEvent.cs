@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using frontendpbo.Models;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,16 +9,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace frontendpbo
 {
     public partial class DetailEvent : Form
     {
+        Contexts.ContextDataEvent eventContext;
+        List<Event> eventList;
         DataTable? dataTable;
         public DetailEvent()
         {
-            InitializeComponent();
-            LoadData();
+            {
+                InitializeComponent();
+                eventContext = new Contexts.ContextDataEvent();
+                eventList = new List<Event>();
+
+                eventContext.Readdata();
+                dataGridView1Search.DataSource = eventContext.listDataEvent;
+                //LoadData();
+
+            }
         }
         private void SearchData()
         {
@@ -76,51 +88,62 @@ namespace frontendpbo
         }
         class Connec
         {
-            public NpgsqlConnection connect;
+            //public NpgsqlConnection connect;
 
-            public Connec()
-            {
-                NpgsqlConnection connect = new NpgsqlConnection();
-                connect.ConnectionString = "Server=localhost;Port=5433;User Id=postgres;Password=123;Database=peta_jember";
-            }
+            //public Connec()
+            //{
+            //    NpgsqlConnection connect = new NpgsqlConnection();
+            //    connect.ConnectionString = "Server=localhost;Port=5433;User Id=postgres;Password=123;Database=peta_jember";
+            //}
 
-            public DataTable Run(string sql)
-            {
-                NpgsqlConnection connect = new NpgsqlConnection();
-                connect.ConnectionString = "Server=localhost;Port=5433;User Id=postgres;Password=123;Database=peta_jember";
+            //public DataTable Run(string sql)
+            //{
+            //    NpgsqlConnection connect = new NpgsqlConnection();
+            //    connect.ConnectionString = "Server=localhost;Port=5433;User Id=postgres;Password=123;Database=peta_jember";
 
-                DataTable dt = new DataTable();
-                try
-                {
-                    connect.Open();
-                    NpgsqlCommand cmd = new NpgsqlCommand();
-                    cmd.Connection = connect;
-                    cmd.CommandText = sql;
-                    cmd.CommandType = CommandType.Text;
-                    NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
-                    da.Fill(dt);
-                    cmd.Dispose();
-                    connect.Close();
-                }
-                catch (Exception ex)
-                {
-                    Console.Write(ex);
-                }
-                return dt;
-            }
+            //    DataTable dt = new DataTable();
+            //    try
+            //    {
+            //        connect.Open();
+            //        NpgsqlCommand cmd = new NpgsqlCommand();
+            //        cmd.Connection = connect;
+            //        cmd.CommandText = sql;
+            //        cmd.CommandType = CommandType.Text;
+            //        NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+            //        da.Fill(dt);
+            //        cmd.Dispose();
+            //        connect.Close();
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Console.Write(ex);
+            //    }
+            //    return dt;
+            //}
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView1Search.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            if (e.RowIndex >= 0)
             {
-                dataGridView1Search.CurrentRow.Selected = true;
-                textBox1IDEvent.Text = dataGridView1Search.Rows[e.RowIndex].Cells["id_Event"].FormattedValue.ToString();
-                textBox2NamaEvent.Text = dataGridView1Search.Rows[e.RowIndex].Cells["nama_Event"].FormattedValue.ToString();
-                textBox3TanggalPelaksana.Text = dataGridView1Search.Rows[e.RowIndex].Cells["tanggal_event"].FormattedValue.ToString();
-                textBox4Deskripsi.Text = dataGridView1Search.Rows[e.RowIndex].Cells["deskripsi_Event"].FormattedValue.ToString();
-                textBox5ObjekWisata.Text = dataGridView1Search.Rows[e.RowIndex].Cells["wisata_id"].FormattedValue.ToString();
+                DataGridViewRow selectedRow = dataGridView1Search.Rows[e.RowIndex];
+
+                // Mengisi data ke TextBox
+                textBox2NamaEvent.Text = selectedRow.Cells["Nama"].Value.ToString();
+                textBox1IDEvent.Text = selectedRow.Cells["ID"].Value.ToString();
+                textBox3TanggalPelaksana.Text = selectedRow.Cells["Tanggal_Event"].Value.ToString();
+                textBox4Deskripsi.Text = selectedRow.Cells["Deskripsi"].Value.ToString();
+                textBox5ObjekWisata.Text = selectedRow.Cells["Wisata_ID"].Value.ToString();
             }
+            //if (dataGridView1Search.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            //{
+            //    dataGridView1Search.CurrentRow.Selected = true;
+            //    textBox1IDEvent.Text = dataGridView1Search.Rows[e.RowIndex].Cells["id_Event"].FormattedValue.ToString();
+            //    textBox2NamaEvent.Text = dataGridView1Search.Rows[e.RowIndex].Cells["nama_Event"].FormattedValue.ToString();
+            //    textBox3TanggalPelaksana.Text = dataGridView1Search.Rows[e.RowIndex].Cells["tanggal_event"].FormattedValue.ToString();
+            //    textBox4Deskripsi.Text = dataGridView1Search.Rows[e.RowIndex].Cells["deskripsi_Event"].FormattedValue.ToString();
+            //    textBox5ObjekWisata.Text = dataGridView1Search.Rows[e.RowIndex].Cells["wisata_id"].FormattedValue.ToString();
+            //}
         }
 
         private void dataGridView1Search_CellContentClick(object sender, DataGridViewCellEventArgs e)

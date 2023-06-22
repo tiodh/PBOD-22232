@@ -10,6 +10,7 @@ namespace frontendpbo.Contexts
 {
     internal class ContextKeamanan
     {
+
         public void create(string nama, string no_tlp, string alamat, string deskripsi)
         {
             using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=peta_jember;user id=postgres;password=123"))
@@ -47,14 +48,14 @@ namespace frontendpbo.Contexts
                         command.Parameters.AddWithValue("@ID", ID);
                         command.ExecuteNonQuery();
                     }
-                    LoadData();
+                    /*LoadData();
 
                     textBox_nama_lembaga_dataKeamanan.Text = "";
                     textBoxnoHp_dataKeamanan.Text = "";
                     textBoxalamat_dataKeamanan.Text = "";
                     textBoxdeskripsi_dataKeamanan.Text = "";
 
-                    dataGridView1.CurrentRow.Selected = false;
+                    dataGridView1.CurrentRow.Selected = false;*/
                 }
                 catch (Exception ex)
                 {

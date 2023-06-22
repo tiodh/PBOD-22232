@@ -42,6 +42,7 @@
             btnCreate = new Button();
             btnUpdate = new Button();
             btnClear = new Button();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)DGVdataPengguna).BeginInit();
             SuspendLayout();
             // 
@@ -177,7 +178,8 @@
             tbSearchDataPengguna.Name = "tbSearchDataPengguna";
             tbSearchDataPengguna.Size = new Size(238, 24);
             tbSearchDataPengguna.TabIndex = 10;
-            tbSearchDataPengguna.Text = "Search Pengguna";
+            tbSearchDataPengguna.Click += tbSearchDataPengguna_Click;
+            tbSearchDataPengguna.TextChanged += tbSearchDataPengguna_TextChanged;
             // 
             // btnCreate
             // 
@@ -218,11 +220,21 @@
             btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += btnClear_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(487, 75);
+            label6.Name = "label6";
+            label6.Size = new Size(105, 15);
+            label6.TabIndex = 14;
+            label6.Text = "Search Pengguna :";
+            // 
             // DataPengguna
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1350, 650);
+            Controls.Add(label6);
             Controls.Add(btnClear);
             Controls.Add(btnUpdate);
             Controls.Add(btnCreate);
@@ -261,5 +273,6 @@
         private Button btnCreate;
         private Button btnUpdate;
         private Button btnClear;
+        private Label label6;
     }
 }
