@@ -14,7 +14,7 @@ namespace frontendpbo.Contexts
         public bool Readdata()
         {
             bool isSucces = false; //mengapa false? jika salah akan membaca file selanjutnya
-            string connec = "Server=localhost;Port=5432;User Id=postgres;Password=Rio09rio:v;Database=peta_jember";
+            string connec = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(connec))
             {
@@ -59,7 +59,7 @@ namespace frontendpbo.Contexts
         public bool insert(Event dataEvent)
         {
             bool isSucces = false;
-            string connec = "Server=localhost;Port=5432;User Id=postgres;Password=Rio09rio:v;Database=peta_jember";
+            string connec = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
             using (NpgsqlConnection conn = new NpgsqlConnection(connec))
             {
                 string sql = @"INSERT INTO public.event_acara(id_event, nama_event, deskripsi_event, tanggal_event, wisata_id)
@@ -98,7 +98,7 @@ namespace frontendpbo.Contexts
         public bool Update(Event dataEvent)
         {
             bool isSucces = false;
-            string connec = "Server=localhost;Port=5432;User Id=postgres;Password=Rio09rio:v;Database=peta_jember";
+            string connec = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(connec))
             {
@@ -150,7 +150,7 @@ namespace frontendpbo.Contexts
         public bool deleted(Event dataEvent)
         {
             bool isSucces = false;
-            string connec = "Server=localhost;Port=5432;User Id=postgres;Password=Rio09rio:v;Database=peta_jember";
+            string connec = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
             using (NpgsqlConnection conn = new NpgsqlConnection(connec))
             {
                 string sql = @"DELETE FROM event_acara WHERE id_event = :id_event;";
@@ -182,7 +182,7 @@ namespace frontendpbo.Contexts
         {
             List<Event> searchResults = new List<Event>();
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=Rio09rio:v;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
