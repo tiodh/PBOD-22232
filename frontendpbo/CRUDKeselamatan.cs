@@ -1,4 +1,5 @@
 ﻿using frontendpbo.Contexts;
+using frontendpbo.Models;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -80,36 +81,55 @@ namespace frontendpbo
             }
             else
             {
-                using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 123"))
-                {
-                    try
-                    {
-                        connection.Open();
-                        string queryupdate = $"update data_keamanan set nama_lembaga = @DataA, deskripsi_keamanan = @DataB, alamat_keamanan = @DataC, no_tlp = @DataD where id_keamanan = @ID";
-                        using (NpgsqlCommand command = new NpgsqlCommand(queryupdate, connection))
-                        {
-                            // Defina os valores dos parâmetros
-                            command.Parameters.AddWithValue("@DataA", textBox_nama_lembaga_dataKeamanan.Text);
-                            command.Parameters.AddWithValue("@DataB", textBoxnoHp_dataKeamanan.Text);
-                            command.Parameters.AddWithValue("@DataC", textBoxalamat_dataKeamanan.Text);
-                            command.Parameters.AddWithValue("@DataD", textBoxdeskripsi_dataKeamanan.Text);
-                            command.Parameters.AddWithValue("@ID", id_);
-                            command.ExecuteNonQuery();
-                        }
-                        LoadData();
+                readKeselamatan data = new readKeselamatan();
+                data.id = id_;
+                data.nama = textBox_nama_lembaga_dataKeamanan.Text;
+                data.deskripsi = textBoxdeskripsi_dataKeamanan.Text;
+                data.alamat = textBoxalamat_dataKeamanan.Text;
+                data.noTlp = textBoxnoHp_dataKeamanan.Text;
 
-                        textBox_nama_lembaga_dataKeamanan.Text = "";
-                        textBoxnoHp_dataKeamanan.Text = "";
-                        textBoxalamat_dataKeamanan.Text = "";
-                        textBoxdeskripsi_dataKeamanan.Text = "";
+                Keamanan = new ContextKeamanan();
+                Keamanan.edit(data.nama, data.deskripsi, data.alamat, data.noTlp, data.id);
+                LoadData();
+                textBox_nama_lembaga_dataKeamanan.Text = "";
+                textBoxnoHp_dataKeamanan.Text = "";
+                textBoxalamat_dataKeamanan.Text = "";
+                textBoxdeskripsi_dataKeamanan.Text = "";
+                dataGridView1.CurrentRow.Selected = false;
 
-                        dataGridView1.CurrentRow.Selected = false;
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Terjadi kesalahan: " + ex.Message);
-                    }
-                }
+
+
+
+                //using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 123"))
+                //{
+                //    try
+                //    {
+                //        connection.Open();
+                //        string queryupdate = $"update data_keamanan set nama_lembaga = @DataA, deskripsi_keamanan = @DataB, alamat_keamanan = @DataC, no_tlp = @DataD where id_keamanan = @ID";
+                //        using (NpgsqlCommand command = new NpgsqlCommand(queryupdate, connection))
+                //        {
+                //            // Defina os valores dos parâmetros
+                //            command.Parameters.AddWithValue("@DataA", textBox_nama_lembaga_dataKeamanan.Text);
+                //            command.Parameters.AddWithValue("@DataB", textBoxnoHp_dataKeamanan.Text);
+                //            command.Parameters.AddWithValue("@DataC", textBoxalamat_dataKeamanan.Text);
+                //            command.Parameters.AddWithValue("@DataD", textBoxdeskripsi_dataKeamanan.Text);
+                //            command.Parameters.AddWithValue("@ID", id_);
+                //            command.ExecuteNonQuery();
+                //        }
+                //        LoadData();
+
+                //        textBox_nama_lembaga_dataKeamanan.Text = "";
+                //        textBoxnoHp_dataKeamanan.Text = "";
+                //        textBoxalamat_dataKeamanan.Text = "";
+                //        textBoxdeskripsi_dataKeamanan.Text = "";
+
+                //        dataGridView1.CurrentRow.Selected = false;
+                //    }
+                //    catch (Exception ex)
+                //    {
+                //        MessageBox.Show("Terjadi kesalahan: " + ex.Message);
+                //    }
+                //}
             }
         }
 
