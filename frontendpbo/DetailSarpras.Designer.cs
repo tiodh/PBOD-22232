@@ -36,11 +36,11 @@
             panel1 = new Panel();
             label1 = new Label();
             panel2 = new Panel();
+            label5 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
             dGV_Hotel = new DataGridView();
             pictureBox1 = new PictureBox();
-            label5 = new Label();
             panel3 = new Panel();
             label3 = new Label();
             label6 = new Label();
@@ -111,6 +111,17 @@
             panel2.Size = new Size(857, 329);
             panel2.TabIndex = 1;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(360, 91);
+            label5.Name = "label5";
+            label5.Size = new Size(108, 23);
+            label5.TabIndex = 5;
+            label5.Text = "Deskripsi :";
+            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -161,17 +172,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.Black;
-            label5.Location = new Point(360, 91);
-            label5.Name = "label5";
-            label5.Size = new Size(108, 23);
-            label5.TabIndex = 5;
-            label5.Text = "Deskripsi :";
             // 
             // panel3
             // 
@@ -403,7 +403,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(1489, 844);
+            ClientSize = new Size(1489, 921);
             Controls.Add(panel4);
             Controls.Add(panel5);
             Controls.Add(panel3);
