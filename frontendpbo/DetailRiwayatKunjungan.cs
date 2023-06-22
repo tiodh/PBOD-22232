@@ -43,7 +43,7 @@ namespace frontendpbo
             panel3.Location = new System.Drawing.Point((panel1.Width - panel3.Width) / 2);
         }
 
-        
+
 
         private void laodComboBoxPengunjung()
         {
@@ -61,7 +61,7 @@ namespace frontendpbo
             List<Riwayat> ListRiwayat = contextRiwayat.ListRiwayat;
             contextRiwayat.search(textBox1.Text);
             dataGridView1.DataSource = ListRiwayat;
-            
+
 
         }
 
@@ -91,6 +91,11 @@ namespace frontendpbo
             List<Riwayat> ListRiwayat = contextRiwayat.ListRiwayat;
             contextRiwayat.search(textBox1.Text);
             dataGridView1.DataSource = ListRiwayat;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
