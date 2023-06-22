@@ -163,12 +163,19 @@ namespace frontendpbo
 
         private void textBox6Search_TextChanged(object sender, EventArgs e)
         {
-            SearchData();
+            List<Event> cari = eventContext.Search(textBox6Search.Text);
+            dataGridView1Search.DataSource = cari;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox6Search_Click(object sender, EventArgs e)
+        {
+            textBox6Search.Text = null;
         }
     }
 

@@ -63,7 +63,7 @@ namespace frontendpbo
 
         private void edit9_Click(object sender, EventArgs e)
         {
-       //     openChildForm(new CRUDTiket());
+            openChildForm(new EditTiketing());
         }
 
         private void panelContent_Paint(object sender, PaintEventArgs e)
@@ -110,9 +110,9 @@ namespace frontendpbo
             openChildForm(new wisata());
         }
 
-        private void transaksi_Click(object sender, EventArgs e)
+        private void transportasi_Click(object sender, EventArgs e)
         {
-            openChildForm(new DetailTiket());
+            openChildForm(new DetailTransportasi());
         }
     }
 }

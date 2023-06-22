@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace frontendpbo.Models
 {
-    internal class TempatMakan
+    public class TempatMakan
     {
-        public int ID_Tempat_Makan { get; set; }
-        public string Nama { get; set; }
-        public string Lokasi_Tempat { get; set; }
-        public string Deskripsi { get; set; }
-        public string No_Telepon { get; set; }
+        public int id_tempat_makan { get; set; }
+        public string nama_tempat_makan { get; set; }
+        public string lokasi_tempat_makan { get; set; }
+        public string deskripsi_tempat_makan { get; set; }
+        public string no_telepon_tempat_makan { get; set; }
+        public int wisata_id { get; set; }
     }
 }

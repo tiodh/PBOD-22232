@@ -122,10 +122,10 @@
             // 
             pictureBox1.BackColor = Color.FromArgb(111, 106, 248);
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(7, 5);
+            pictureBox1.Location = new Point(7, 14);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(315, 46);
+            pictureBox1.Size = new Size(274, 37);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -204,7 +204,6 @@
             button4.Text = "Data Riwayat Kunjungan";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = true;
-            //button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -318,7 +317,6 @@
             edit10.Text = "Edit";
             edit10.TextAlign = ContentAlignment.MiddleLeft;
             edit10.UseVisualStyleBackColor = false;
-            //edit10.Click += edit10_Click;
             // 
             // keamanan
             // 
@@ -335,7 +333,6 @@
             keamanan.Text = "Keamanan dan Keselamatan";
             keamanan.TextAlign = ContentAlignment.MiddleLeft;
             keamanan.UseVisualStyleBackColor = false;
-            //keamanan.Click += keamanan_Click;
             // 
             // edit9
             // 
@@ -367,10 +364,9 @@
             transaksi.Name = "transaksi";
             transaksi.Size = new Size(258, 34);
             transaksi.TabIndex = 25;
-            transaksi.Text = "Tiket";
+            transaksi.Text = "Transaksi Tiket";
             transaksi.TextAlign = ContentAlignment.MiddleLeft;
             transaksi.UseVisualStyleBackColor = false;
-            transaksi.Click += transaksi_Click;
             // 
             // edit8
             // 
@@ -404,7 +400,6 @@
             informasi.Text = "Informasi";
             informasi.TextAlign = ContentAlignment.MiddleLeft;
             informasi.UseVisualStyleBackColor = false;
-            //informasi.Click += informasi_Click;
             // 
             // edit7
             // 
@@ -488,7 +483,6 @@
             edit5.Text = "Edit";
             edit5.TextAlign = ContentAlignment.MiddleLeft;
             edit5.UseVisualStyleBackColor = false;
-          //  edit5.Click += edit5_Click;
             // 
             // saranaPrasarana
             // 
@@ -571,6 +565,7 @@
             transportasi.Text = "Transportasi";
             transportasi.TextAlign = ContentAlignment.MiddleLeft;
             transportasi.UseVisualStyleBackColor = false;
+            transportasi.Click += transportasi_Click;
             // 
             // edit2
             // 
@@ -702,7 +697,6 @@
             // 
             // panelContent
             // 
-            panelContent.AutoScroll = true;
             panelContent.Dock = DockStyle.Fill;
             panelContent.Location = new Point(334, 78);
             panelContent.Name = "panelContent";

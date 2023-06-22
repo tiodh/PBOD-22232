@@ -11,7 +11,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using Npgsql;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using System.Diagnostics.CodeAnalysis;
 
@@ -41,6 +40,7 @@ namespace frontendpbo
         {
             contextTiket.Read();
             DataGridViewTiket.DataSource = contextTiket.listTiket;
+            DataGridViewTiket.Columns[4].Visible = false;
         }
 
         private void radioButtonRoda2_CheckedChanged(object sender, EventArgs e)

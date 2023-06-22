@@ -1,6 +1,6 @@
 ﻿namespace frontendpbo
 {
-    partial class CreateSarana
+    partial class CRUDSarana
     {
         /// <summary>
         ///  Required designer variable.
@@ -34,12 +34,17 @@
             tbxDeskripsi = new TextBox();
             simpan = new Button();
             dataGridView1 = new DataGridView();
-            btnJudul = new Button();
             textBox1 = new TextBox();
             panel1 = new Panel();
             Cari = new Button();
+            panel2 = new Panel();
+            label1 = new Label();
+            panelSARANA = new Panel();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panelSARANA.SuspendLayout();
             SuspendLayout();
             // 
             // labelNama
@@ -104,17 +109,6 @@
             dataGridView1.TabIndex = 5;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
-            // btnJudul
-            // 
-            btnJudul.Dock = DockStyle.Top;
-            btnJudul.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnJudul.Location = new Point(0, 0);
-            btnJudul.Name = "btnJudul";
-            btnJudul.Size = new Size(1195, 51);
-            btnJudul.TabIndex = 6;
-            btnJudul.Text = "DATA SARANA DAN PRASARANA";
-            btnJudul.UseVisualStyleBackColor = true;
-            // 
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -122,6 +116,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(434, 34);
             textBox1.TabIndex = 7;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // panel1
             // 
@@ -143,24 +138,69 @@
             Cari.UseVisualStyleBackColor = true;
             Cari.Click += Cari_Click;
             // 
-            // CreateSarana
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.ButtonShadow;
+            panel2.Controls.Add(label1);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1195, 72);
+            panel2.TabIndex = 9;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.None;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(448, 26);
+            label1.Name = "label1";
+            label1.Size = new Size(280, 28);
+            label1.TabIndex = 0;
+            label1.Text = "DATA SARANA PRASARANA";
+            // 
+            // panelSARANA
+            // 
+            panelSARANA.Controls.Add(button1);
+            panelSARANA.Dock = DockStyle.Bottom;
+            panelSARANA.Location = new Point(0, 78);
+            panelSARANA.Name = "panelSARANA";
+            panelSARANA.Size = new Size(1195, 640);
+            panelSARANA.TabIndex = 10;
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.None;
+            button1.Location = new Point(258, 329);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 4;
+            button1.Text = "EDIT";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // CRUDSarana
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1195, 718);
+            Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(btnJudul);
             Controls.Add(simpan);
             Controls.Add(tbxDeskripsi);
             Controls.Add(tbxNama);
             Controls.Add(labelDeskripsi);
             Controls.Add(labelNama);
-            Name = "CreateSarana";
+            Controls.Add(panelSARANA);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "CRUDSarana";
             Text = "Form1";
             Load += CreateSarana_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panelSARANA.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -173,9 +213,12 @@
         private TextBox tbxDeskripsi;
         private Button simpan;
         private DataGridView dataGridView1;
-        private Button btnJudul;
         private TextBox textBox1;
         private Panel panel1;
         private Button Cari;
+        private Panel panel2;
+        private Label label1;
+        private Panel panelSARANA;
+        private Button button1;
     }
 }

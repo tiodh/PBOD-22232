@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="CreateSarana.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="CRUDDataPenginapan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CRUDEvent.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CRUDKeselamatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CRUDSarana.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="CRUDTransportasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CRUDKeselamatan.cs">
+    <Compile Update="CRUDUlasan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CRUDUmkm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="crud_informasi_pengumuman.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="crud_umkm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="CURDPengunjung.cs">
-      <SubType>Form</SubType>
+    <Compile Update="CUR_Pengunjung.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="DataPengguna.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Data_Pengunjung.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DeletedanUpdateDataTempatMakan.cs">
@@ -47,6 +47,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DetailTiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailTransportasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DetailUlasan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DetailWisata.cs">
@@ -74,18 +80,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormDetailTransportasi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="CRUDUlasan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DetailUlasan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="jenis_umkm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginAdmin.cs">

@@ -26,6 +26,7 @@ namespace frontendpbo
             this.WindowState = FormWindowState.Maximized;
             //ContextKeamanan keamanan = new ContextKeamanan();
             ReadKeselamatanContext readKeselamatanContext = new ReadKeselamatanContext();
+            Keamanan = new ContextKeamanan();
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -57,8 +58,15 @@ namespace frontendpbo
             }
             else
             {
+                Keamanan data = new Keamanan();
+                data.Name = textBox_nama_lembaga_dataKeamanan.Text;
+                data.Description = textBoxdeskripsi_dataKeamanan.Text;
+                data.Alamat = textBoxalamat_dataKeamanan.Text;
+                data.No_Tlp = textBoxnoHp_dataKeamanan.Text;
+                data.Id = id_;
+
                 Keamanan = new ContextKeamanan();
-                Keamanan.edit(textBox_nama_lembaga_dataKeamanan.Text, textBoxdeskripsi_dataKeamanan.Text, textBoxalamat_dataKeamanan.Text, textBoxnoHp_dataKeamanan.Text, id_);
+                Keamanan.edit(data.Name, data.Description, data.Alamat, data.No_Tlp , data.Id);
                 textBox_nama_lembaga_dataKeamanan.Text = "";
                 textBoxnoHp_dataKeamanan.Text = "";
                 textBoxalamat_dataKeamanan.Text = "";
@@ -69,34 +77,41 @@ namespace frontendpbo
 
         private void Tambah_Keselamatan_Click(object sender, EventArgs e)
         {
-            Keamanan = new ContextKeamanan();
-            Keamanan.create(textBox_nama_lembaga_dataKeamanan.Text, textBoxnoHp_dataKeamanan.Text, textBoxalamat_dataKeamanan.Text, textBoxdeskripsi_dataKeamanan.Text);
-            textBox_nama_lembaga_dataKeamanan.Text = "";
-            textBoxnoHp_dataKeamanan.Text = "";
-            textBoxalamat_dataKeamanan.Text = "";
-            textBoxdeskripsi_dataKeamanan.Text = "";
-            LoadData();
-            //using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=peta_jember;user id=postgres;password=123"))
-            //{
-            //    connection.Open();
-            //    NpgsqlCommand command = connection.CreateCommand();
-            //    command.Connection = connection;
-            //    command.CommandText = "insert into data_keamanan(nama_keamanan, deskripsi_keamanan, alamat_keamanan, no_tlp) values(@nama_keamanan, @deskripsi_keamanan, @alamat_keamanan, @no_tlp)";
-            //    command.Parameters.Add(new NpgsqlParameter("@nama_keamanan", textBox_nama_lembaga_dataKeamanan.Text));
-            //    command.Parameters.Add(new NpgsqlParameter("@no_tlp", textBoxnoHp_dataKeamanan.Text));
-            //    command.Parameters.Add(new NpgsqlParameter("@alamat_keamanan", textBoxalamat_dataKeamanan.Text));
-            //    command.Parameters.Add(new NpgsqlParameter("@deskripsi_keamanan", textBoxdeskripsi_dataKeamanan.Text));
+            string Name = textBox_nama_lembaga_dataKeamanan.Text;
+            string Description = textBoxdeskripsi_dataKeamanan.Text;
+            string Alamat = textBoxalamat_dataKeamanan.Text;
+            string No_Tlp = textBoxnoHp_dataKeamanan.Text;
 
+            Keamanan newKeamanan = new Keamanan()
+            {
+                Name = Name,
+                Description = Description,
+                Alamat = Alamat,
+                No_Tlp = No_Tlp
+            };
+            bool isSucces = Keamanan.create(newKeamanan);
+            if (isSucces)
+            {
+                MessageBox.Show("input sukses");
+            }
+            else
+            {
+                MessageBox.Show("input gagal");
+            }
+            //ol isSuccess = ContextKeamanan
+            //Keamanan = new ContextKeamanan();
+            //Keamanan.create(textBox_nama_lembaga_dataKeamanan.Text, textBoxnoHp_dataKeamanan.Text, textBoxalamat_dataKeamanan.Text, textBoxdeskripsi_dataKeamanan.Text);
             //textBox_nama_lembaga_dataKeamanan.Text = "";
             //textBoxnoHp_dataKeamanan.Text = "";
             //textBoxalamat_dataKeamanan.Text = "";
             //textBoxdeskripsi_dataKeamanan.Text = "";
-            //    command.ExecuteNonQuery();
-            //    connection.Close();
-            //    MessageBox.Show("Data berhasil diinput");
-            //    //RefreshUlasanTerakhir();
-            //    //RefreshRatingTerakhir();
-            //}
+            //LoadData();
+
+        }
+
+        private void textBox_nama_lembaga_dataKeamanan_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

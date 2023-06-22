@@ -124,6 +124,7 @@
             textBox_nama_lembaga_dataKeamanan.Name = "textBox_nama_lembaga_dataKeamanan";
             textBox_nama_lembaga_dataKeamanan.Size = new Size(501, 34);
             textBox_nama_lembaga_dataKeamanan.TabIndex = 3;
+            textBox_nama_lembaga_dataKeamanan.TextChanged += textBox_nama_lembaga_dataKeamanan_TextChanged;
             // 
             // noHp_dataKeamanan
             // 
@@ -199,6 +200,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             ClientSize = new Size(1924, 1024);
             Controls.Add(pictureBox1);
             Controls.Add(textBoxdeskripsi_dataKeamanan);

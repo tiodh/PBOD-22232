@@ -1,6 +1,6 @@
 ﻿namespace frontendpbo
 {
-    partial class FormDetailTransportasi
+    partial class DetailTransportasi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             panel7 = new Panel();
-            Enter = new Button();
             panel2 = new Panel();
             label2 = new Label();
             pictureBox1 = new PictureBox();
@@ -46,39 +45,28 @@
             label6 = new Label();
             label5 = new Label();
             label3 = new Label();
-            Tampil = new DataGridView();
+            TampilData = new DataGridView();
             panel7.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)GambarTransportasi).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Tampil).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)TampilData).BeginInit();
             SuspendLayout();
             // 
             // panel7
             // 
             panel7.BackColor = Color.FromArgb(111, 106, 248);
-            panel7.Controls.Add(Enter);
             panel7.Controls.Add(panel2);
             panel7.Controls.Add(TampilkanDataTransportasi);
             panel7.Controls.Add(label4);
             panel7.Controls.Add(panel3);
             panel7.Controls.Add(label3);
-            panel7.Controls.Add(Tampil);
+            panel7.Controls.Add(TampilData);
             panel7.Location = new Point(-5, 0);
             panel7.Name = "panel7";
             panel7.Size = new Size(1021, 732);
             panel7.TabIndex = 3;
-            // 
-            // Enter
-            // 
-            Enter.Location = new Point(749, 399);
-            Enter.Name = "Enter";
-            Enter.Size = new Size(75, 23);
-            Enter.TabIndex = 7;
-            Enter.Text = "ENTER";
-            Enter.UseVisualStyleBackColor = true;
-            Enter.Click += Enter_Click;
             // 
             // panel2
             // 
@@ -124,6 +112,7 @@
             TampilkanDataTransportasi.Name = "TampilkanDataTransportasi";
             TampilkanDataTransportasi.Size = new Size(347, 23);
             TampilkanDataTransportasi.TabIndex = 4;
+            TampilkanDataTransportasi.TextChanged += TampilkanDataTransportasi_TextChanged;
             // 
             // label4
             // 
@@ -243,18 +232,19 @@
             label3.TabIndex = 1;
             label3.Text = "TAMPILKAN DATA";
             // 
-            // Tampil
+            // TampilData
             // 
-            Tampil.AllowUserToAddRows = false;
-            Tampil.AllowUserToDeleteRows = false;
-            Tampil.BackgroundColor = Color.White;
-            Tampil.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            Tampil.Location = new Point(59, 134);
-            Tampil.Name = "Tampil";
-            Tampil.ReadOnly = true;
-            Tampil.RowTemplate.Height = 25;
-            Tampil.Size = new Size(906, 228);
-            Tampil.TabIndex = 0;
+            TampilData.AllowUserToAddRows = false;
+            TampilData.AllowUserToDeleteRows = false;
+            TampilData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            TampilData.BackgroundColor = Color.White;
+            TampilData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            TampilData.Location = new Point(59, 134);
+            TampilData.Name = "TampilData";
+            TampilData.ReadOnly = true;
+            TampilData.RowTemplate.Height = 25;
+            TampilData.Size = new Size(906, 228);
+            TampilData.TabIndex = 0;
             // 
             // FormDetailTransportasi
             // 
@@ -262,9 +252,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1014, 729);
             Controls.Add(panel7);
-            Name = "FormDetailTransportasi";
-            Text = "FormDetailTransportasi";
-            Load += FormDetailTransportasi_Load;
+            Name = "DetailTransportasi";
+            Text = "DetailTransportasi";
+            Load += DetailTransportasi_Load;
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
             panel2.ResumeLayout(false);
@@ -273,7 +263,7 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)GambarTransportasi).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Tampil).EndInit();
+            ((System.ComponentModel.ISupportInitialize)TampilData).EndInit();
             ResumeLayout(false);
         }
 
@@ -292,11 +282,10 @@
         private Label label6;
         private Label label5;
         private Label label3;
-        private DataGridView Tampil;
+        private DataGridView TampilData;
         private Label label2;
         private Panel panel2;
         private PictureBox pictureBox1;
         private PictureBox GambarTransportasi;
-        private Button Enter;
     }
 }

@@ -8,10 +8,9 @@ namespace frontendpbo.Models
 {
     internal class Transportasi
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public string Type { get; set; }
-        public string Description { get; set; }
-        public int Wisata_ID { get; set; }
+        public int Id_transportasi { get; set; }
+        public string Nama_transportasi { get; set; }
+        public string Jenis_transportasi { get; set; }
+        public string Deskripsi_transportasi { get; set; }
     }
 }
