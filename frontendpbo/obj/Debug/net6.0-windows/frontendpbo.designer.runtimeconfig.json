@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\saya\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\saya\\.nuget\\packages"
+      "C:\\Users\\QISA\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\QISA\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
