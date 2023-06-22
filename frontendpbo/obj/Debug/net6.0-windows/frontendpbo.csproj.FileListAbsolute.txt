@@ -688,6 +688,7 @@ C:\Users\Muhammad Ainol Yakin\Documents\projeck pbo\PBOD-22232\frontendpbo\obj\D
 C:\Users\Muhammad Ainol Yakin\Documents\projeck pbo\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
 C:\Users\Muhammad Ainol Yakin\Documents\projeck pbo\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
 C:\Users\Muhammad Ainol Yakin\Documents\projeck pbo\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+<<<<<<< HEAD
 D:\PROJEKKELASPBOD\LASTCLONEEEEEE\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
 D:\PROJEKKELASPBOD\LASTCLONEEEEEE\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Pengunjung.resources
 D:\PROJEKKELASPBOD\LASTCLONEEEEEE\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
@@ -1067,16 +1068,285 @@ D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.
 D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
 D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
 D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
-D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
-D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
-D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
-D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
-D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
-D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
-D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
-D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
-D:\Tugas\PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
-D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
-D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
-D:\Tugas\PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Class_crud_umkm.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDDataPenginapan.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselamatan.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDTransportasi.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDUlasan.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_umkm.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Pengunjung.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DataPengguna.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DeletedanUpdateDataTempatMakan.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetaildanReadDataTempatMakan.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailEvent.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailSarpras.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailTiket.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailUlasan.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.detail_dataKeselamatan.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.detail_umkm.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DWisata.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\CUD_DataTiket.EditTiketing.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Edit_Riwayat_Kunjungan.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.form.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailTransportasi.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.jenis_umkm.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.LoginAdmin.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.wisata.resources
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+C:\Users\asus\Downloads\PROJECT_AKHIR PBO\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+=======
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Pengunjung.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDDataPenginapan.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDTransportasi.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselamatan.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_umkm.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DataPengguna.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DeletedanUpdateDataTempatMakan.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetaildanReadDataTempatMakan.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailEvent.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailSarpras.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.detail_dataKeselamatan.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.detail_umkm.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DWisata.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\CUD_DataTiket.EditTiketing.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Edit_Riwayat_Kunjungan.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.form.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailDataTiket.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailTransportasi.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditUlasan.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormShowUlasan.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.jenis_umkm.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.LoginAdmin.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.wisata.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Class_crud_umkm.resources
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+F:\sem 2\PBO\project_akhir\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Pengunjung.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Class_crud_umkm.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDDataPenginapan.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDTransportasi.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselamatan.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_umkm.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DataPengguna.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DeletedanUpdateDataTempatMakan.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetaildanReadDataTempatMakan.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailEvent.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailSarpras.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.detail_dataKeselamatan.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.detail_umkm.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DWisata.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\CUD_DataTiket.EditTiketing.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Edit_Riwayat_Kunjungan.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.form.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailDataTiket.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailTransportasi.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditUlasan.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormShowUlasan.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.jenis_umkm.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.LoginAdmin.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.wisata.resources
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+D:\PROJEKKELASPBOD\MAULLLLLL\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Pengunjung.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Class_crud_umkm.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDDataPenginapan.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDTransportasi.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselamatan.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_umkm.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DataPengguna.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DeletedanUpdateDataTempatMakan.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetaildanReadDataTempatMakan.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailEvent.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailSarpras.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.detail_dataKeselamatan.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.detail_umkm.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DWisata.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\CUD_DataTiket.EditTiketing.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Edit_Riwayat_Kunjungan.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.form.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailDataTiket.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailTransportasi.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditUlasan.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormShowUlasan.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.jenis_umkm.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.LoginAdmin.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.wisata.resources
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+C:\Users\rangga\OneDrive\Dokumen\tugas\pbo_umkm1\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Pengunjung.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Class_crud_umkm.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CreateSarana.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDDataPenginapan.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUD_Data_Keselamatan.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDTransportasi.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.CRUDUlasan.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_informasi_pengumuman.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.crud_umkm.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DataPengguna.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Data_Penngunjungcs.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DeletedanUpdateDataTempatMakan.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetaildanReadDataTempatMakan.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailEvent.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailSarpras.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailUlasan.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailWisata.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.detail_dataKeselamatan.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.detail_umkm.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DWisata.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\CUD_DataTiket.EditTiketing.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Edit_Riwayat_Kunjungan.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.form.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form1.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form2.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Form3.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormDetailTransportasi.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.FormEditEvent.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\tampil_data_umkm.jenis_umkm.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.LoginAdmin.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.Properties.Resources.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.RiwayatKunjungan.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.wisata.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.GenerateResource.cache
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.AssemblyInfo.cs
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\refint\frontendpbo.dll
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.DetailTiket.resources
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.exe
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.deps.json
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.runtimeconfig.json
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.dll
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\frontendpbo.pdb
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.dll
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\bin\Debug\net6.0-windows\OxyPlot.WindowsForms.dll
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.csproj.CopyComplete
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\frontendpbo.genruntimeconfig.cache
+C:\Users\Lenovo\Documents\PBO\PBOBarulagi\PBOD-22232\frontendpbo\obj\Debug\net6.0-windows\ref\frontendpbo.dll
+>>>>>>> 56ac4cae13f1de3e846202d66c748f0762583e63
