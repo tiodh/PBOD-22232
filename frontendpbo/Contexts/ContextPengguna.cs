@@ -15,7 +15,7 @@ namespace frontendpbo.Contexts
         public bool Create(Pengguna pengguna)
         {
             bool isSuccess = false;
-            string conStr = "Server=localhost;Port=5432;User Id=hamzah;Password=adminpbo;Database=peta_jember;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql =
