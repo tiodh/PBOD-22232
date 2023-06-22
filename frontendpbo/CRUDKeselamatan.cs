@@ -26,6 +26,7 @@ namespace frontendpbo
             this.WindowState = FormWindowState.Maximized;
             //ContextKeamanan keamanan = new ContextKeamanan();
             ReadKeselamatanContext readKeselamatanContext = new ReadKeselamatanContext();
+            Keamanan = new ContextKeamanan();
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -76,13 +77,35 @@ namespace frontendpbo
 
         private void Tambah_Keselamatan_Click(object sender, EventArgs e)
         {
-            Keamanan = new ContextKeamanan();
-            Keamanan.create(textBox_nama_lembaga_dataKeamanan.Text, textBoxnoHp_dataKeamanan.Text, textBoxalamat_dataKeamanan.Text, textBoxdeskripsi_dataKeamanan.Text);
-            textBox_nama_lembaga_dataKeamanan.Text = "";
-            textBoxnoHp_dataKeamanan.Text = "";
-            textBoxalamat_dataKeamanan.Text = "";
-            textBoxdeskripsi_dataKeamanan.Text = "";
-            LoadData();
+            string Name = textBox_nama_lembaga_dataKeamanan.Text;
+            string Description = textBoxdeskripsi_dataKeamanan.Text;
+            string Alamat = textBoxalamat_dataKeamanan.Text;
+            string No_Tlp = textBoxnoHp_dataKeamanan.Text;
+
+            Keamanan newKeamanan = new Keamanan()
+            {
+                Name = Name,
+                Description = Description,
+                Alamat = Alamat,
+                No_Tlp = No_Tlp
+            };
+            bool isSucces = Keamanan.create(newKeamanan);
+            if (isSucces)
+            {
+                MessageBox.Show("input sukses");
+            }
+            else
+            {
+                MessageBox.Show("input gagal");
+            }
+            //ol isSuccess = ContextKeamanan
+            //Keamanan = new ContextKeamanan();
+            //Keamanan.create(textBox_nama_lembaga_dataKeamanan.Text, textBoxnoHp_dataKeamanan.Text, textBoxalamat_dataKeamanan.Text, textBoxdeskripsi_dataKeamanan.Text);
+            //textBox_nama_lembaga_dataKeamanan.Text = "";
+            //textBoxnoHp_dataKeamanan.Text = "";
+            //textBoxalamat_dataKeamanan.Text = "";
+            //textBoxdeskripsi_dataKeamanan.Text = "";
+            //LoadData();
 
         }
     }
