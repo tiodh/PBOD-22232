@@ -48,11 +48,12 @@
             // 
             datagridcrudwisata1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             datagridcrudwisata1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            datagridcrudwisata1.Location = new Point(662, 122);
+            datagridcrudwisata1.Location = new Point(579, 92);
+            datagridcrudwisata1.Margin = new Padding(3, 2, 3, 2);
             datagridcrudwisata1.Name = "datagridcrudwisata1";
             datagridcrudwisata1.RowHeadersWidth = 51;
             datagridcrudwisata1.RowTemplate.Height = 29;
-            datagridcrudwisata1.Size = new Size(743, 754);
+            datagridcrudwisata1.Size = new Size(650, 566);
             datagridcrudwisata1.TabIndex = 0;
             datagridcrudwisata1.CellContentClick += datagridwisata1_CellContentClick;
             // 
@@ -60,9 +61,10 @@
             // 
             btnclearwisata.BackColor = Color.Lime;
             btnclearwisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnclearwisata.Location = new Point(38, 783);
+            btnclearwisata.Location = new Point(33, 587);
+            btnclearwisata.Margin = new Padding(3, 2, 3, 2);
             btnclearwisata.Name = "btnclearwisata";
-            btnclearwisata.Size = new Size(129, 63);
+            btnclearwisata.Size = new Size(113, 47);
             btnclearwisata.TabIndex = 1;
             btnclearwisata.Text = "Clear";
             btnclearwisata.UseVisualStyleBackColor = false;
@@ -72,9 +74,10 @@
             // 
             btntambahwisata.BackColor = Color.FromArgb(128, 128, 255);
             btntambahwisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btntambahwisata.Location = new Point(178, 783);
+            btntambahwisata.Location = new Point(156, 587);
+            btntambahwisata.Margin = new Padding(3, 2, 3, 2);
             btntambahwisata.Name = "btntambahwisata";
-            btntambahwisata.Size = new Size(129, 63);
+            btntambahwisata.Size = new Size(113, 47);
             btntambahwisata.TabIndex = 2;
             btntambahwisata.Text = "Tambah";
             btntambahwisata.UseVisualStyleBackColor = false;
@@ -84,9 +87,10 @@
             // 
             btneditwisata.BackColor = Color.Yellow;
             btneditwisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btneditwisata.Location = new Point(320, 783);
+            btneditwisata.Location = new Point(280, 587);
+            btneditwisata.Margin = new Padding(3, 2, 3, 2);
             btneditwisata.Name = "btneditwisata";
-            btneditwisata.Size = new Size(129, 63);
+            btneditwisata.Size = new Size(113, 47);
             btneditwisata.TabIndex = 3;
             btneditwisata.Text = "Edit";
             btneditwisata.UseVisualStyleBackColor = false;
@@ -95,9 +99,10 @@
             // 
             btnhapuswisata.BackColor = Color.Red;
             btnhapuswisata.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnhapuswisata.Location = new Point(464, 783);
+            btnhapuswisata.Location = new Point(406, 587);
+            btnhapuswisata.Margin = new Padding(3, 2, 3, 2);
             btnhapuswisata.Name = "btnhapuswisata";
-            btnhapuswisata.Size = new Size(129, 63);
+            btnhapuswisata.Size = new Size(113, 47);
             btnhapuswisata.TabIndex = 4;
             btnhapuswisata.Text = "Hapus";
             btnhapuswisata.UseVisualStyleBackColor = false;
@@ -106,9 +111,9 @@
             // 
             label1_Nama_Wisata.AutoSize = true;
             label1_Nama_Wisata.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1_Nama_Wisata.Location = new Point(38, 51);
+            label1_Nama_Wisata.Location = new Point(33, 38);
             label1_Nama_Wisata.Name = "label1_Nama_Wisata";
-            label1_Nama_Wisata.Size = new Size(141, 25);
+            label1_Nama_Wisata.Size = new Size(112, 20);
             label1_Nama_Wisata.TabIndex = 5;
             label1_Nama_Wisata.Text = "Nama Wisata :";
             // 
@@ -117,10 +122,11 @@
             textBox1_Nama_Wisata.BackColor = SystemColors.Control;
             textBox1_Nama_Wisata.BorderStyle = BorderStyle.FixedSingle;
             textBox1_Nama_Wisata.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1_Nama_Wisata.Location = new Point(38, 79);
+            textBox1_Nama_Wisata.Location = new Point(33, 59);
+            textBox1_Nama_Wisata.Margin = new Padding(3, 2, 3, 2);
             textBox1_Nama_Wisata.Multiline = true;
             textBox1_Nama_Wisata.Name = "textBox1_Nama_Wisata";
-            textBox1_Nama_Wisata.Size = new Size(555, 27);
+            textBox1_Nama_Wisata.Size = new Size(486, 21);
             textBox1_Nama_Wisata.TabIndex = 6;
             // 
             // textBox2_Deskripsi_Wisata
@@ -128,19 +134,20 @@
             textBox2_Deskripsi_Wisata.BackColor = SystemColors.Control;
             textBox2_Deskripsi_Wisata.BorderStyle = BorderStyle.FixedSingle;
             textBox2_Deskripsi_Wisata.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2_Deskripsi_Wisata.Location = new Point(38, 150);
+            textBox2_Deskripsi_Wisata.Location = new Point(33, 112);
+            textBox2_Deskripsi_Wisata.Margin = new Padding(3, 2, 3, 2);
             textBox2_Deskripsi_Wisata.Multiline = true;
             textBox2_Deskripsi_Wisata.Name = "textBox2_Deskripsi_Wisata";
-            textBox2_Deskripsi_Wisata.Size = new Size(555, 482);
+            textBox2_Deskripsi_Wisata.Size = new Size(486, 362);
             textBox2_Deskripsi_Wisata.TabIndex = 7;
             // 
             // label2_Deskripsi_Wisata
             // 
             label2_Deskripsi_Wisata.AutoSize = true;
             label2_Deskripsi_Wisata.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2_Deskripsi_Wisata.Location = new Point(38, 122);
+            label2_Deskripsi_Wisata.Location = new Point(33, 92);
             label2_Deskripsi_Wisata.Name = "label2_Deskripsi_Wisata";
-            label2_Deskripsi_Wisata.Size = new Size(103, 25);
+            label2_Deskripsi_Wisata.Size = new Size(82, 20);
             label2_Deskripsi_Wisata.TabIndex = 9;
             label2_Deskripsi_Wisata.Text = "Deskripsi :";
             label2_Deskripsi_Wisata.Click += label2_Deskripsi_Click;
@@ -150,19 +157,20 @@
             textBox3_Lokasi_Wisata.BackColor = SystemColors.Control;
             textBox3_Lokasi_Wisata.BorderStyle = BorderStyle.FixedSingle;
             textBox3_Lokasi_Wisata.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3_Lokasi_Wisata.Location = new Point(38, 687);
+            textBox3_Lokasi_Wisata.Location = new Point(33, 515);
+            textBox3_Lokasi_Wisata.Margin = new Padding(3, 2, 3, 2);
             textBox3_Lokasi_Wisata.Multiline = true;
             textBox3_Lokasi_Wisata.Name = "textBox3_Lokasi_Wisata";
-            textBox3_Lokasi_Wisata.Size = new Size(555, 50);
+            textBox3_Lokasi_Wisata.Size = new Size(486, 38);
             textBox3_Lokasi_Wisata.TabIndex = 10;
             // 
             // label3_Lokasi_Wisata
             // 
             label3_Lokasi_Wisata.AutoSize = true;
             label3_Lokasi_Wisata.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3_Lokasi_Wisata.Location = new Point(38, 659);
+            label3_Lokasi_Wisata.Location = new Point(33, 494);
             label3_Lokasi_Wisata.Name = "label3_Lokasi_Wisata";
-            label3_Lokasi_Wisata.Size = new Size(80, 25);
+            label3_Lokasi_Wisata.Size = new Size(63, 20);
             label3_Lokasi_Wisata.TabIndex = 11;
             label3_Lokasi_Wisata.Text = "Lokasi :";
             // 
@@ -171,10 +179,11 @@
             textBox1.BackColor = SystemColors.Control;
             textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(662, 79);
+            textBox1.Location = new Point(579, 59);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(743, 27);
+            textBox1.Size = new Size(650, 21);
             textBox1.TabIndex = 13;
             textBox1.TextChanged += textBox1_TextChanged_1;
             // 
@@ -182,17 +191,17 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(662, 51);
+            label1.Location = new Point(579, 38);
             label1.Name = "label1";
-            label1.Size = new Size(105, 25);
+            label1.Size = new Size(84, 20);
             label1.TabIndex = 12;
             label1.Text = "Cari Data :";
             // 
             // wisata
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1440, 1024);
+            ClientSize = new Size(1386, 788);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(label3_Lokasi_Wisata);
@@ -207,6 +216,7 @@
             Controls.Add(btnclearwisata);
             Controls.Add(datagridcrudwisata1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "wisata";
             Text = "wisata";
             Load += wisata_Load;

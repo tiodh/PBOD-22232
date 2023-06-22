@@ -1,4 +1,5 @@
 ﻿using frontendpbo.Contexts;
+using frontendpbo.Models;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -93,6 +94,20 @@ namespace frontendpbo
         private void CreateSarana_Load(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void Cari_Click(object sender, EventArgs e)
+        {
+            if(textBox1.Text != null)
+            {
+                Sarana = new ContextSarana();
+                List<SaranaPrasarana> ListSarana = Sarana.ListSarana;
+                Sarana.search(textBox1.Text);
+            }
+            else
+            {
+                LoadData();
+            }
         }
     }
 }
