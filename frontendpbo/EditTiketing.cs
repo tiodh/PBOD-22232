@@ -147,7 +147,7 @@ namespace CUD_DataTiket
 
         private void btnPopUpInfo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Silahkan Click salah satu data yang ingin anda tampilkan", "Informasi Lebih Lanjut nan Lengkap Hubungi Aril",
+            MessageBox.Show("Silahkan Click salah satu data yang ingin anda tampilkan", "Informasi Lebih Lanjut",
                  MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
