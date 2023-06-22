@@ -13,7 +13,7 @@ namespace frontendpbo.Contexts
         public List<Event> listDataEvent = new List<Event>() { };
         public bool Readdata()
         {
-            bool isSucces = true; //mengapa false? jika salah akan membaca file selanjutnya
+            bool isSucces = false; //mengapa false? jika salah akan membaca file selanjutnya
             string connec = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(connec))
@@ -177,6 +177,37 @@ namespace frontendpbo.Contexts
             }
             return isSucces = Readdata();
 
+        }
+        public List<Event> Search(string query)
+        {
+            List<Event> searchResults = new List<Event>();
+
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+
+            using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
+            {
+                string sql = "SELECT * FROM event_acara WHERE nama_event ILIKE @query OR  deskripsi_event ILIKE @query";
+
+                conn.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@query", "%" + query + "%");
+
+                    NpgsqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        Event even = new Event();
+                        even.Id = (int)reader["id_event"];
+                        even.Nama = (string)reader["nama_event"];
+                        even.Deskripsi = (string)reader["deskripsi_event"];
+                        even.Tanggal_Event = DateOnly.FromDateTime((DateTime)reader["tanggal_event"]);
+                        even.Wisata_ID = (int)reader["wisata_id"];
+                        searchResults.Add(even);
+                    }
+                }
+            }
+            return searchResults;
         }
     }
 }

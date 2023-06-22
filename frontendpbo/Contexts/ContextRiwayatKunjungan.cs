@@ -50,7 +50,7 @@ namespace frontendpbo.Contexts
             string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             { 
-                string sql = $"SELECT rk.id_riwayat_kunjungan, rk.tanggal_kunjungan, rk.jumlah_tiket, t.nama_tiket, p.nama_pengunjung FROM riwayat_kunjungan rk JOIN tiket t ON rk.tiket_id = t.id_tiket JOIN pengunjung p ON rk.pengunjung_id = p.id_pengunjung";
+                string sql = $"SELECT id_riwayat, tanggal_kunjungan, jumlah_tiket, t.nama_tiket, p.nama_pengunjung FROM riwayat_kunjungan JOIN tiket t ON tiket_id = t.id_tiket JOIN pengunjung p ON pengunjung_id = p.id_pengunjung";
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
                 {
@@ -61,7 +61,7 @@ namespace frontendpbo.Contexts
                     while (reader.Read())
                     {
                         Riwayat riwayat = new Riwayat();
-                        riwayat.Id = (int)reader["id_riwayat_kunjungan"];
+                        riwayat.Id = (int)reader["id_riwayat"];
                         riwayat.nama = (string)reader["nama_pengunjung"];
                         riwayat.Tanggal_Kunjungan = (DateTime)reader["tanggal_kunjungan"];
                         riwayat.Jumlah_Tiket = (int)reader["jumlah_tiket"];
@@ -70,6 +70,11 @@ namespace frontendpbo.Contexts
                     }
                 }
             }
+        }
+
+        public void Insert()
+        {
+
         }
 
     }

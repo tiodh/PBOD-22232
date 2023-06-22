@@ -27,21 +27,23 @@ namespace frontendpbo
         public DetailRiwayatKunjungan()
         {
             InitializeComponent();
+            ReadDataRiwayatKunjungan();
         }
 
         private void setDataGridview()
         {
+            dataGridView1.Columns["nama"].HeaderText = "Nama_Pengunjung";
             dataGridView1.Columns["Tanggal_kunjungan"].HeaderText = "Tanggal_kunjungan";
-            dataGridView1.Columns["Tanggal_kunjungan"].HeaderText = "Tanggal_kunjungan";
-            dataGridView1.Columns["Tanggal_kunjungan"].HeaderText = "Tanggal_kunjungan";
-            dataGridView1.Columns["Tanggal_kunjungan"].HeaderText = "Tanggal_kunjungan";
-            dataGridView1.Columns["Edit"].DisplayIndex = 4;
-            dataGridView1.Columns["Delete"].DisplayIndex = 5;
+            dataGridView1.Columns["Jumlah_Tiket"].HeaderText = "Jumlah_Tiket";
+            dataGridView1.Columns["nama_tiket"].HeaderText = "Nama_Tiket"; 
         }
 
         private void ReadDataRiwayatKunjungan()
         {
-            
+            contextRiwayat.ListRiwayat = listRiwayats;
+            contextRiwayat.Read();
+            dataGridView1.DataSource = contextRiwayat.ListRiwayat;
+            setDataGridview();
         }
 
         private void GetDataRiwayatKunjungan()
