@@ -25,13 +25,10 @@
     <Compile Update="crud_informasi_pengumuman.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CURDPengunjung.cs">
-      <SubType>Form</SubType>
+    <Compile Update="CUR_Pengunjung.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="DataPengguna.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Data_Pengunjung.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="DeletedanUpdateDataTempatMakan.cs">

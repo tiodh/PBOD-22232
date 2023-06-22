@@ -1,18 +1,17 @@
-﻿using System;
-using frontendpbo.Models;
+﻿using frontendpbo.Models;
+using Npgsql;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Npgsql;
-using System.Data;
-using System.Windows.Forms;
 
 namespace frontendpbo.Contexts
 {
     internal class ContextPengunjung
     {
-        private string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=peta_jember;";
+        private string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=132435;Database=peta_jember;";
 
         public DataTable Read()
         {
@@ -118,3 +117,4 @@ namespace frontendpbo.Contexts
         }
     }
 }
+
