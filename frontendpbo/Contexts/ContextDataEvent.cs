@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace frontendpbo.Contexts
 {
-    internal class ContextEvent
+    internal class ContextDataEvent
     {
         public List<Event> listDataEvent = new List<Event>() { };
         public bool Readdata()
