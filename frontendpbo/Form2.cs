@@ -63,7 +63,7 @@ namespace frontendpbo
 
         private void edit9_Click(object sender, EventArgs e)
         {
-            openChildForm(new CRUDTiket());
+            openChildForm(new EditTiketing());
         }
 
         private void panelContent_Paint(object sender, PaintEventArgs e)

@@ -12,6 +12,5 @@ namespace frontendpbo.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public int Wisata_ID { get; set; }
     }
 }
