@@ -9,8 +9,8 @@ namespace frontendpbo.Models
 {
     internal class ReadKeselamatanContext
     {
-        public List<readKeselamatan> readKeselamatanList= new List<readKeselamatan>();
-
+        public List<readKeselamatan> readKeselamatanList = new List<readKeselamatan>();
+     
         public bool Read()
         {
             bool isSuccess = false;
