@@ -1,4 +1,6 @@
-﻿using Npgsql;
+﻿using frontendpbo.Contexts;
+using frontendpbo.Models;
+using Npgsql;
 using OxyPlot;
 using System;
 using System.Collections.Generic;
@@ -14,16 +16,34 @@ namespace frontendpbo
 {
     public partial class FormEditEvent : Form
     {
+        ContextDataEvent contextDataEvent;
+        List<Event> events = new List<Event>();
         public FormEditEvent()
         {
             InitializeComponent();
-            LoadData();
+            contextDataEvent = new ContextDataEvent();
+            contextDataEvent.Readdata();
+            dataGridView1.DataSource = contextDataEvent.listDataEvent;
 
+        }
+        private Models.Event GetDataEvent()
+        {
+            Models.Event dataevent = new Models.Event();
+            dataevent.Id = int.Parse(tbIdEvent.Text);
+            dataevent.Nama = tbNamaEvent.Text;
+            dataevent.Deskripsi = textBox1.Text;
+            dataevent.Tanggal_Event = new DateOnly(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, dateTimePicker1.Value.Day);
+            dataevent.Wisata_ID = int.Parse(tvIdWisata.Text);
+
+            return dataevent;
         }
 
         private void FormEditEvent_Load(object sender, EventArgs e)
         {
-
+            Models.Event dataEvent = this.GetDataEvent();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = contextDataEvent.listDataEvent;
+            contextDataEvent.Readdata();
         }
 
         private void LoadData()
@@ -50,30 +70,34 @@ namespace frontendpbo
 
         private void btnCreateEvent_Click(object sender, EventArgs e)
         {
-            int id_event = int.Parse(tbIdEvent.Text);
-            DateOnly tanggal = DateOnly.Parse(dateTimePicker1.Value.ToShortDateString());
-            int wisata = int.Parse(tvIdWisata.Text);
-            Crud.CreateData(id_event, tbNamaEvent.Text, textBox1.Text, tanggal, wisata);
-            LoadData();
+            Models.Event dataEvent = this.GetDataEvent();
+            contextDataEvent.insert(dataEvent);
+            dataGridView1.DataSource = null;
+            List<Event> updatedData = contextDataEvent.GetListDataEvent();
+            dataGridView1.DataSource = contextDataEvent.listDataEvent;
+            contextDataEvent.Readdata();
 
         }
 
         private void btnUpdateEvent_Click(object sender, EventArgs e)
         {
-            int id_event = int.Parse(tbIdEvent.Text);
-            DateOnly tanggal = DateOnly.Parse(dateTimePicker1.Value.ToShortDateString());
-            int wisata = int.Parse(tvIdWisata.Text);
-            Crud.UpdateData(id_event, tbNamaEvent.Text, textBox1.Text, tanggal, wisata);
-            LoadData();
-
+            Models.Event dataEvent = this.GetDataEvent();
+            contextDataEvent.Update(dataEvent);
+            List<Event> updatedData = contextDataEvent.GetListDataEvent();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = contextDataEvent.listDataEvent;
+            contextDataEvent.Readdata();
         }
 
         private void btnDeleteEvent_Click(object sender, EventArgs e)
         {
 
-            int id_event = int.Parse(tbIdEvent.Text);
-            Crud.DeleteData(id_event);
-            LoadData();
+            Models.Event dataEvent = this.GetDataEvent();
+            contextDataEvent.deleted(dataEvent);
+            List<Event> updatedData = contextDataEvent.GetListDataEvent();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = contextDataEvent.listDataEvent;
+            contextDataEvent.Readdata();
 
         }
 
@@ -81,69 +105,54 @@ namespace frontendpbo
         {
             this.Close();
         }
-    }
 
-    class Crud
-    {
-        public static void CreateData(int id_event, string nama_event, string deskripsi_event, DateOnly tanggal_event, int wisata_id)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Connec koneksidb = new Connec();
-            string querycreate = $"insert into event_acara (id_event, nama_event, deskripsi_Event, tanggal_event, wisata_id) values ('{id_event}', '{nama_event}', '{deskripsi_event}', '{tanggal_event}', '{wisata_id}');";
-            koneksidb.Run(querycreate);
+            var senderGrid = (DataGridView)sender;
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewLinkColumn && e.RowIndex >= 0)
+            {
+                using (FormEditEvent dataEvent = new FormEditEvent())
+                {
+
+                    dataEvent.Text = "FormEditEvent";
+
+
+                    DialogResult dr = dataEvent.ShowDialog();
+
+                    if (dr == DialogResult.OK)
+                    {
+                        Models.Event newDataEvent = dataEvent.GetDataEvent();
+                        contextDataEvent.Update(newDataEvent);
+                    }
+
+
+                }
+
+            }
         }
 
-        public static void UpdateData(int id_event, string nama_event, string deskripsi_event, DateOnly tanggal_event, int wisata_id)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Connec connectdb = new Connec();
-            string queryupdate = $"update event_acara set nama_event = '{nama_event}', deskripsi_event = '{deskripsi_event}', tanggal_event = '{tanggal_event}' where id_event = {id_event}";
-            connectdb.Run(queryupdate);
-        }
-
-        public static void DeleteData(int id_event)
-        {
-            Connec connectdb = new Connec();
-            string querydelete = $"delete from event_acara where id_event = {id_event}::integer;;";
-            connectdb.Run(querydelete);
-        }
-
-
-    }
-
-    class Connec
-    {
-        public NpgsqlConnection connect;
-
-        public Connec()
-        {
-            NpgsqlConnection connect = new NpgsqlConnection();
-            connect.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
-        }
-
-        public DataTable Run(string sql)
-        {
-            NpgsqlConnection connect = new NpgsqlConnection();
-            connect.ConnectionString = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
-
-            DataTable dt = new DataTable();
             try
             {
-                connect.Open();
-                NpgsqlCommand cmd = new NpgsqlCommand();
-                cmd.Connection = connect;
-                cmd.CommandText = sql;
-                cmd.CommandType = CommandType.Text;
-                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
-                da.Fill(dt);
-                cmd.Dispose();
-                connect.Close();
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    tbIdEvent.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                    tbNamaEvent.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                    textBox1.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                    dateTimePicker1.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                    tvIdWisata.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                }
+
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.Write(ex);
+
             }
-            return dt;
         }
     }
+
+
 
 
 }

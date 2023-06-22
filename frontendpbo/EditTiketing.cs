@@ -1,6 +1,5 @@
 using frontendpbo.Contexts;
 using frontendpbo.Models;
-using OxyPlot;
 using System.Drawing;
 using System.Security.Policy;
 using System.Windows.Forms;
@@ -22,7 +21,7 @@ namespace CUD_DataTiket
             tkt.nama_tiket = txtNamaTiket.Text;
             tkt.deskripsi_tiket = txtDeskTiket.Text;
             tkt.harga_tiket = Convert.ToInt32(txtHargaTiket.Text);
-            tkt.wisata_id = Convert.ToInt32(txtIDWisataEditTiket.Text);
+            //tkt.wisata_id = Convert.ToInt32(txtIDWisataEditTiket.Text);
             return tkt;
         }
         public EditTiketing()
@@ -32,11 +31,11 @@ namespace CUD_DataTiket
             loadgrid();
             DataGridViewEditTiket.DataSource = contextTiket.GetListTiket();
         }
-        void loadgrid()
+        private void loadgrid()
         {
             contextTiket.Read();
-            DataGridViewEditTiket.DataSource = contextTiket.listTiket;
-            //DataGridViewEditTiket.Column(0).Visible = false;
+            DataGridViewEditTiket.DataSource = contextTiket.GetListTiket();
+            DataGridViewEditTiket.Columns[4].Visible = false;
         }
 
         private void btnTambahTiket_Click(object sender, EventArgs e)
@@ -48,7 +47,7 @@ namespace CUD_DataTiket
             txtNamaTiket.Text = "";
             txtDeskTiket.Text = "";
             txtHargaTiket.Text = "";
-            txtIDWisataEditTiket.Text = "";
+            //txtIDWisataEditTiket.Text = "";
         }
 
         private void btnClearIsi_Click(object sender, EventArgs e)
@@ -56,7 +55,7 @@ namespace CUD_DataTiket
             txtNamaTiket.Text = "";
             txtDeskTiket.Text = "";
             txtHargaTiket.Text = "";
-            txtIDWisataEditTiket.Text = "";
+            //txtIDWisataEditTiket.Text = "";
         }
         private void DataGridViewEditTiket_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -65,7 +64,7 @@ namespace CUD_DataTiket
             txtNamaTiket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtDeskTiket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtHargaTiket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtIDWisataEditTiket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[4].Value.ToString();
+            //txtIDWisataEditTiket.Text = DataGridViewEditTiket.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
 
         private void NamaKolom_SelectedIndexChanged(object sender, EventArgs e)
@@ -78,13 +77,11 @@ namespace CUD_DataTiket
             txtNamaTiket.Text = "";
             txtDeskTiket.Text = "";
             txtHargaTiket.Text = "";
-            txtIDWisataEditTiket.Text = "";
+            //txtIDWisataEditTiket.Text = "";
         }
 
         public void CariTiket_TextChanged(object sender, EventArgs e)
         {
-
-
             if ((string)NamaKolom.SelectedItem == "Nama")
             {
                 List<Tiket> cari = contextTiket.Search(CariTiket.Text, "nama_tiket");
@@ -131,7 +128,7 @@ namespace CUD_DataTiket
             txtNamaTiket.Text = "";
             txtDeskTiket.Text = "";
             txtHargaTiket.Text = "";
-            txtIDWisataEditTiket.Text = "";
+            //txtIDWisataEditTiket.Text = "";
 
         }
 
@@ -146,6 +143,12 @@ namespace CUD_DataTiket
         private void CariTiket_Click(object sender, EventArgs e)
         {
             CariTiket.Text = " ";
+        }
+
+        private void btnPopUpInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Silahkan Click salah satu data yang ingin anda tampilkan", "Informasi Lebih Lanjut",
+                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
