@@ -41,5 +41,40 @@ namespace frontendpbo.Contexts
             }
             return isSuccess;
         }
+
+
+        public bool Read()
+        {
+            bool isSuccess = false;
+
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
+
+            using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
+            {
+                string sql = "SELECT * FROM umkm";
+
+                conn.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                {
+                    cmd.CommandText = sql;
+                    NpgsqlDataReader reader = cmd.ExecuteReader();
+
+                    listUMKM.Clear();
+                    while (reader.Read())
+                    {
+                        UMKM umkm = new UMKM();
+                        umkm.Id = (int)reader["id_umkm"];
+                        umkm.Name = (string)reader["nama_umkm"];
+                        umkm.Description = (string)reader["deskripsi_umkm"];
+                        umkm.Pemilik_UMKM = (string)reader["pemilik_umkm"];
+                        umkm.No_Telepon_UMKM = (string)reader["no_telpon_umkm"];
+                        umkm.Wisata_ID = (int)reader["wisata_id"];
+
+                        listUMKM.Add(umkm);
+                    }
+                }
+            }
+            return isSuccess;
+        }
     }
 }
