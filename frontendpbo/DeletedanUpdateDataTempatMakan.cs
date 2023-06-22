@@ -175,22 +175,7 @@ namespace frontendpbo
 
         private void HapusTempatMakanbutton4_Click_1(object sender, EventArgs e)
         {
-            if (id_tempat_makan == 0)
-            {
-                MessageBox.Show("Baris nya tolong dipilih dulu ya", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                contexttempatmakan.DeleteTempatMakan(id_tempat_makan);
-                loaddata();
-
-                NamaTempatMakantextBox1.Text = "";
-                LokasiTempatMakantextBox2.Text = "";
-                DeskripsiTempatMakantextBox3.Text = "";
-                NoTeleponTempatMakantextBox4.Text = "";
-
-                CRUDTempatMakandataGridView1.CurrentRow.Selected = false;
-            }
+           
         }
 
         private void ClearTempatMakanbutton1_Click_1(object sender, EventArgs e)
