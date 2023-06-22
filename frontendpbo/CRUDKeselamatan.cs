@@ -17,7 +17,6 @@ namespace frontendpbo
     public partial class CRUD_Data_Keselamatan : Form
     {
         private int id_;
-        private int id_w;
 
         ContextKeamanan Keamanan;
         ReadKeselamatanContext readKeselamatanContext;
@@ -36,7 +35,6 @@ namespace frontendpbo
             textBoxnoHp_dataKeamanan.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             textBoxalamat_dataKeamanan.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             textBoxdeskripsi_dataKeamanan.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-            id_w = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[5].Value);
         }
 
         private void Data_Keselamatan_Load(object sender, EventArgs e)
