@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\KUMPULAN PROJEK\\new2\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
+    "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {}
   },
   "projects": {
-    "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\KUMPULAN PROJEK\\new2\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
+    "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\KUMPULAN PROJEK\\new2\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "projectUniqueName": "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
         "projectName": "frontendpbo",
-        "projectPath": "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\KUMPULAN PROJEK\\new2\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "E:\\RANDOM FILE KULIAH\\SEMESTER 2\\KUMPULAN PROJEK\\new2\\PBOD-22232\\frontendpbo\\obj\\",
+        "projectPath": "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\frontendpbo.csproj",
+        "packagesPath": "C:\\Users\\AMIRUL277\\.nuget\\packages\\",
+        "outputPath": "D:\\KULIAH\\2. SEMESTER 2\\PBO\\data pengguna lagi\\PBOD-22232\\frontendpbo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AMIRUL277\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

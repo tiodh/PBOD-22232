@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Class_crud_umkm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="CreateSarana.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -40,6 +37,9 @@
     <Compile Update="DetailSarpras.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DetailTiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DetailWisata.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -51,8 +51,6 @@
     </Compile>
     <Compile Update="DWisata.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-      <SubType>Form</SubType>
     </Compile>
     <Compile Update="EditTiketing.cs">
       <SubType>Form</SubType>
@@ -73,9 +71,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="AddPengunjung.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DetailTiket.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormDetailTransportasi.cs">
