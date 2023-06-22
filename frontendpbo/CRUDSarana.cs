@@ -29,7 +29,7 @@ namespace frontendpbo
                 try
                 {
                     connection.Open();
-                    string query = "SELECT * FROM sarana_prasarana ORDER BY id_sarana ASC";
+                    string query = "SELECT id_sarana,nama_sarana,deskripsi_sarana FROM sarana_prasarana ORDER BY id_sarana ASC";
 
                     // Membuat objek perintah dan menentukan koneksi
                     using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
@@ -88,7 +88,8 @@ namespace frontendpbo
             id_ = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
             tbxNama.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             tbxDeskripsi.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            id_w = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[3].Value);
+            //id_w = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[3].Value);
+
         }
 
         private void CreateSarana_Load(object sender, EventArgs e)
@@ -98,7 +99,23 @@ namespace frontendpbo
 
         private void Cari_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text != null)
+            if (textBox1.Text != null)
+            {
+                Sarana = new ContextSarana();
+                List<SaranaPrasarana> ListSarana = Sarana.ListSarana;
+                Sarana.search(textBox1.Text);
+                dataGridView1.DataSource = ListSarana;
+            }
+            else
+            {
+                MessageBox.Show("tidak ditemukan");
+                LoadData();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text != null)
             {
                 Sarana = new ContextSarana();
                 List<SaranaPrasarana> ListSarana = Sarana.ListSarana;
