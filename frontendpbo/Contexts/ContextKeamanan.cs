@@ -40,7 +40,6 @@ namespace frontendpbo.Contexts
                     string queryupdate = $"update data_keamanan set nama_lembaga = @DataA, deskripsi_keamanan = @DataB, alamat_keamanan = @DataC, no_tlp = @DataD where id_keamanan = @ID";
                     using (NpgsqlCommand command = new NpgsqlCommand(queryupdate, connection))
                     {
-                        // Defina os valores dos parâmetros
                         command.Parameters.AddWithValue("@DataA", nama);
                         command.Parameters.AddWithValue("@DataB", deskripsi);
                         command.Parameters.AddWithValue("@DataC", alamat);
@@ -48,14 +47,6 @@ namespace frontendpbo.Contexts
                         command.Parameters.AddWithValue("@ID", ID);
                         command.ExecuteNonQuery();
                     }
-                    /*LoadData();
-
-                    textBox_nama_lembaga_dataKeamanan.Text = "";
-                    textBoxnoHp_dataKeamanan.Text = "";
-                    textBoxalamat_dataKeamanan.Text = "";
-                    textBoxdeskripsi_dataKeamanan.Text = "";
-
-                    dataGridView1.CurrentRow.Selected = false;*/
                 }
                 catch (Exception ex)
                 {
