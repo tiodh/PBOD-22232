@@ -108,6 +108,11 @@ namespace frontendpbo
             //LoadData();
 
         }
+
+        private void textBox_nama_lembaga_dataKeamanan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

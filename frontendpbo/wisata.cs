@@ -55,11 +55,6 @@ namespace frontendpbo
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void datagridwisata1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
