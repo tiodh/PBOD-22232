@@ -10,11 +10,13 @@ namespace frontendpbo.Models
     {
         public int Id { get; set; }
         public string nama { get; set; }
-        public DateTime Tanggal_Kunjungan { get; set; }
+        public DateOnly Tanggal_Kunjungan { get; set; }
         public int Jumlah_Tiket { get; set; }
-        public string nama_tiket { get; set; }  
-            
-            
+        public string nama_tiket { get; set; }
+        public int Tiket_ID { get; set; }
+        public int Pengunjung_ID { get; set; }
+
+
 
     }
 }

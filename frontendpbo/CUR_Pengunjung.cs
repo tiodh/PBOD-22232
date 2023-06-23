@@ -6,7 +6,7 @@ using frontendpbo.Models;
 
 namespace frontendpbo
 {
-    public partial class CUR_Pengunjung : UserControl
+    public partial class CUR_Pengunjung : Form
     {
         private ContextPengunjung context;
         private Color activeButtonColor = Color.Green; // Warna tombol aktif
@@ -136,6 +136,11 @@ namespace frontendpbo
         {
             // Mengembalikan warna tombol Create ke warna default setelah dilepas
             button_Create.BackColor = defaultButtonColor;
+        }
+
+        private void gridView_Data_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
