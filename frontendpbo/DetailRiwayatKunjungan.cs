@@ -59,7 +59,7 @@ namespace frontendpbo
         {
             Riwayat riwayatKunjungan = new Riwayat();
 
-            
+
             riwayatKunjungan.Tanggal_Kunjungan = DateOnly.Parse(dtTanggal.Value.ToShortDateString());
             riwayatKunjungan.Jumlah_Tiket = int.Parse(tbJumlah.Text);
             riwayatKunjungan.Tiket_ID = ((Tiket)cbTiket.SelectedItem).id_tiket;
@@ -72,7 +72,7 @@ namespace frontendpbo
             return riwayatKunjungan;
         }
 
-        
+
 
         private void Edit_Riwayat_Kunjungan_Load(object sender, EventArgs e)
         {
@@ -92,12 +92,12 @@ namespace frontendpbo
 
         private void loadComboBoxTiket()
         {
-            List<Tiket> tiketList =  contextTiket.ReadtoCard();
+            List<Tiket> tiketList = contextTiket.ReadtoCard();
 
             cbTiket.DataSource = tiketList;
             cbTiket.ValueMember = "id_tiket";
             cbTiket.DisplayMember = "nama_tiket";
-        } 
+        }
 
         private void label1_Click_1(object sender, EventArgs e)
         {

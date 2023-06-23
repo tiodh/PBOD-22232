@@ -23,7 +23,7 @@ namespace frontendpbo
             this.WindowState = FormWindowState.Maximized;
             panel1.Visible = false;
             edit1.Visible = false;
-            edit2.Visible = false;  
+            edit2.Visible = false;
             edit3.Visible = false;
             editTempatMakan.Visible = false;
             editSarana.Visible = false;
@@ -57,7 +57,6 @@ namespace frontendpbo
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            pictureBox1.Location = new System.Drawing.Point(25, (panel3.Height - pictureBox1.Height) / 2);
 
         }
 
@@ -100,16 +99,6 @@ namespace frontendpbo
             openChildForm(new EditTiketing());
         }
 
-        private void panelContent_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
             GraphicsPath path = new GraphicsPath();
@@ -139,41 +128,24 @@ namespace frontendpbo
             form.ShowDialog();
         }
 
-        private void edit1_Click(object sender, EventArgs e)
-        {
-            openChildForm(new wisata());
-        }
-
         private void transportasi_Click(object sender, EventArgs e)
         {
             openChildForm(new DetailTransportasi());
             showSubMenu(edit3);
         }
 
-        private void keamanan_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void penginapan_Click(object sender, EventArgs e)
         {
             showSubMenu(edit2);
         }
 
-        private void edit2_Click(object sender, EventArgs e)
-        {
-            openChildForm(new CRUDDataPenginapan());
-        }
-
-        private void edit3_Click(object sender, EventArgs e)
-        {
-            openChildForm(new CRUDTransportasi());
-        }
 
         private void tempatMakan_Click(object sender, EventArgs e)
         {
-            openChildForm(new DetaildanReadDataTempatMakan());
             showSubMenu(editTempatMakan);
+            openChildForm(new DetaildanReadDataTempatMakan());
+
 
         }
 
@@ -186,6 +158,7 @@ namespace frontendpbo
         {
             openChildForm(new DetailSarpras());
             showSubMenu(editSarana);
+
         }
 
         private void edit5_Click(object sender, EventArgs e)
@@ -195,8 +168,9 @@ namespace frontendpbo
 
         private void acara_Click(object sender, EventArgs e)
         {
-            openChildForm(new DetailEvent());
             showSubMenu(editEvent);
+            openChildForm(new DetailEvent());
+
         }
 
         private void edit6_Click(object sender, EventArgs e)
@@ -210,21 +184,12 @@ namespace frontendpbo
             showSubMenu(edit7);
         }
 
-        private void edit7_Click(object sender, EventArgs e)
-        {
-            openChildForm(new CRUDUmkm());
-
-        }
 
         private void informasi_Click(object sender, EventArgs e)
         {
             showSubMenu(edit8);
         }
 
-        private void edit8_Click(object sender, EventArgs e)
-        {
-            openChildForm(new crud_informasi_pengumuman());
-        }
 
         private void transaksi_Click(object sender, EventArgs e)
         {
@@ -250,9 +215,83 @@ namespace frontendpbo
             showSubMenu(edit11);
         }
 
-        private void edit11_Click(object sender, EventArgs e)
+
+        private void edit1_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new wisata());
+        }
+
+        private void edit2_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new CRUDDataPenginapan());
+        }
+
+        private void edit3_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new CRUDTransportasi());
+
+        }
+
+        private void editTempatMakan_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetaildanReadDataTempatMakan());
+        }
+
+        private void editSarana_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetailSarpras());
+        }
+
+        private void editEvent_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormEditEvent());
+        }
+
+        private void edit7_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new CRUDUmkm());
+        }
+
+        private void edit8_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new crud_informasi_pengumuman());
+
+        }
+
+        private void edit11_Click_1(object sender, EventArgs e)
         {
             openChildForm(new CRUDUlasan());
+        }
+
+        private void umkm_Click_1(object sender, EventArgs e)
+        {
+            showSubMenu(edit7);
+            openChildForm(new detail_umkm());
+
+        }
+
+        private void transaksi_Click_1(object sender, EventArgs e)
+        {
+            showSubMenu(edit7);
+            openChildForm(new DetailTiket());
+
+        }
+
+        private void ulasan_Click_1(object sender, EventArgs e)
+        {
+            showSubMenu(edit11);
+            openChildForm(new DetailUlasan());
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CUR_Pengunjung());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetailRiwayatKunjungan());
 
         }
     }

@@ -75,7 +75,7 @@ namespace frontendpbo
 
         private void btnclearwisata_Click(object sender, EventArgs e)
         {
-
+            Clear();
         }
 
         private void label2_Deskripsi_Click(object sender, EventArgs e)

@@ -48,7 +48,7 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
             {
-                string query = "SELECT id_transportasi, nama_transportasi, jenis_transportasi, deskripsi_transportasi " +
+                string query = "SELECT id_transportasi, nama_transportasi, jenis_kendaraan, deskripsi_transportasi " +
                                "FROM transportasi " +
                                "WHERE nama_transportasi ILIKE '%' || @Nama_transportasi || '%' ";
 
@@ -80,11 +80,11 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=Paulus21.;Database=peta_jember;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql = "UPDATE transportasi " +
-                               "SET nama_transportasi = @nama_transportasi, jenis_transportasi = @jenis_transportasi, " +
+                               "SET nama_transportasi = @nama_transportasi, jenis_kendaraan = @jenis_transportasi, " +
                                "deskripsi_transportasi = @deskripsi_transportasi " +
                                "WHERE id_transportasi = @id_transportasi";
                 conn.Open();
@@ -149,10 +149,10 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=Paulus21.;Database= peta_jember;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database= peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
-                string sql = "INSERT INTO transportasi (nama_transportasi, jenis_transportasi, deskripsi_transportasi, wisata_id) " +
+                string sql = "INSERT INTO transportasi (nama_transportasi, jenis_kendaraan, deskripsi_transportasi, wisata_id) " +
                              "VALUES (@nama_transportasi, @jenis_transportasi, @deskripsi_transportasi, @idwisata) RETURNING id_transportasi";
 
                 conn.Open();
@@ -183,7 +183,7 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=Paulus21.;Database=peta_jember;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql = "DELETE FROM transportasi WHERE id_transportasi = CAST(@id_transportasi AS INTEGER);";

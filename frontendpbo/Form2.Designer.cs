@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             side = new Panel();
             menu = new PictureBox();
             panel3 = new Panel();
-            pictureBox1 = new PictureBox();
-            Login = new Label();
+            label2 = new Label();
             panel2 = new Panel();
             label1 = new Label();
             mainside = new Panel();
@@ -72,7 +70,6 @@
             side.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)menu).BeginInit();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             mainside.SuspendLayout();
             panel4.SuspendLayout();
@@ -107,8 +104,7 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(111, 106, 248);
-            panel3.Controls.Add(pictureBox1);
-            panel3.Controls.Add(Login);
+            panel3.Controls.Add(label2);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(21, 15);
             panel3.Margin = new Padding(2, 3, 2, 3);
@@ -118,29 +114,16 @@
             panel3.TabIndex = 2;
             panel3.Paint += panel3_Paint;
             // 
-            // pictureBox1
+            // label2
             // 
-            pictureBox1.BackColor = Color.FromArgb(111, 106, 248);
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(8, 19);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(313, 49);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // Login
-            // 
-            Login.BackColor = Color.Transparent;
-            Login.Dock = DockStyle.Right;
-            Login.Font = new Font("Microsoft Sans Serif", 17F, FontStyle.Bold, GraphicsUnit.Point);
-            Login.ImageAlign = ContentAlignment.MiddleRight;
-            Login.Location = new Point(831, 4);
-            Login.Name = "Login";
-            Login.Size = new Size(110, 66);
-            Login.TabIndex = 1;
-            Login.Text = "Login";
-            Login.TextAlign = ContentAlignment.MiddleLeft;
-            Login.Click += Login_Click;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(27, 21);
+            label2.Name = "label2";
+            label2.Size = new Size(332, 31);
+            label2.TabIndex = 0;
+            label2.Text = "PENDATAAN WISATA JEMBER";
             // 
             // panel2
             // 
@@ -205,6 +188,7 @@
             button4.Text = "Data Riwayat Kunjungan";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -220,6 +204,7 @@
             button3.Text = "Data Pengunjung";
             button3.TextAlign = ContentAlignment.MiddleLeft;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -270,7 +255,6 @@
             panel1.Padding = new Padding(15, 0, 0, 0);
             panel1.Size = new Size(308, 1020);
             panel1.TabIndex = 14;
-            panel1.Paint += panel1_Paint;
             // 
             // edit11
             // 
@@ -288,6 +272,7 @@
             edit11.Text = "Edit";
             edit11.TextAlign = ContentAlignment.MiddleLeft;
             edit11.UseVisualStyleBackColor = false;
+            edit11.Click += edit11_Click_1;
             // 
             // ulasan
             // 
@@ -304,6 +289,7 @@
             ulasan.Text = "Ulasan dan Komentar";
             ulasan.TextAlign = ContentAlignment.MiddleLeft;
             ulasan.UseVisualStyleBackColor = false;
+            ulasan.Click += ulasan_Click_1;
             // 
             // edit10
             // 
@@ -373,6 +359,7 @@
             transaksi.Text = "Transaksi Tiket";
             transaksi.TextAlign = ContentAlignment.MiddleLeft;
             transaksi.UseVisualStyleBackColor = false;
+            transaksi.Click += transaksi_Click_1;
             // 
             // edit8
             // 
@@ -390,6 +377,7 @@
             edit8.Text = "Edit";
             edit8.TextAlign = ContentAlignment.MiddleLeft;
             edit8.UseVisualStyleBackColor = false;
+            edit8.Click += edit8_Click_1;
             // 
             // informasi
             // 
@@ -424,6 +412,7 @@
             edit7.Text = "Edit";
             edit7.TextAlign = ContentAlignment.MiddleLeft;
             edit7.UseVisualStyleBackColor = false;
+            edit7.Click += edit7_Click_1;
             // 
             // umkm
             // 
@@ -440,6 +429,7 @@
             umkm.Text = "UMKM";
             umkm.TextAlign = ContentAlignment.MiddleLeft;
             umkm.UseVisualStyleBackColor = false;
+            umkm.Click += umkm_Click_1;
             // 
             // editEvent
             // 
@@ -457,6 +447,7 @@
             editEvent.Text = "Edit";
             editEvent.TextAlign = ContentAlignment.MiddleLeft;
             editEvent.UseVisualStyleBackColor = false;
+            editEvent.Click += editEvent_Click;
             // 
             // acara
             // 
@@ -491,6 +482,7 @@
             editSarana.Text = "Edit";
             editSarana.TextAlign = ContentAlignment.MiddleLeft;
             editSarana.UseVisualStyleBackColor = false;
+            editSarana.Click += editSarana_Click;
             // 
             // saranaPrasarana
             // 
@@ -525,6 +517,7 @@
             editTempatMakan.Text = "Edit";
             editTempatMakan.TextAlign = ContentAlignment.MiddleLeft;
             editTempatMakan.UseVisualStyleBackColor = false;
+            editTempatMakan.Click += editTempatMakan_Click;
             // 
             // tempatMakan
             // 
@@ -559,6 +552,7 @@
             edit3.Text = "Edit";
             edit3.TextAlign = ContentAlignment.MiddleLeft;
             edit3.UseVisualStyleBackColor = false;
+            edit3.Click += edit3_Click_1;
             // 
             // transportasi
             // 
@@ -593,6 +587,7 @@
             edit2.Text = "Edit";
             edit2.TextAlign = ContentAlignment.MiddleLeft;
             edit2.UseVisualStyleBackColor = false;
+            edit2.Click += edit2_Click_1;
             // 
             // penginapan
             // 
@@ -627,6 +622,7 @@
             edit1.Text = "Edit";
             edit1.TextAlign = ContentAlignment.MiddleLeft;
             edit1.UseVisualStyleBackColor = false;
+            edit1.Click += edit1_Click_1;
             // 
             // wisata
             // 
@@ -659,7 +655,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.Gainsboro;
+            button1.BackColor = Color.Transparent;
             button1.Dock = DockStyle.Top;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatAppearance.MouseDownBackColor = Color.Gainsboro;
@@ -672,7 +668,7 @@
             button1.Padding = new Padding(0, 0, 50, 0);
             button1.Size = new Size(308, 44);
             button1.TabIndex = 11;
-            button1.Text = "Rembangan";
+            button1.Text = "Data Wisata";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
@@ -734,7 +730,7 @@
             side.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)menu).EndInit();
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel3.PerformLayout();
             panel2.ResumeLayout(false);
             mainside.ResumeLayout(false);
             mainside.PerformLayout();
@@ -785,7 +781,6 @@
         private Button edit1;
         private Button wisata;
         private Panel panelContent;
-        private Label Login;
-        private PictureBox pictureBox1;
+        private Label label2;
     }
 }

@@ -191,6 +191,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1324, 608);
             Controls.Add(button_Create);
             Controls.Add(button_Update);
             Controls.Add(button_Search);
@@ -205,7 +206,7 @@
             Controls.Add(textbox_Nama);
             Controls.Add(panel1);
             Name = "CUR_Pengunjung";
-            Size = new Size(1342, 655);
+            Load += CUR_Pengunjung_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)gridView_Data).EndInit();

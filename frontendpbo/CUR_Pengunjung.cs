@@ -142,5 +142,10 @@ namespace frontendpbo
         {
 
         }
+
+        private void CUR_Pengunjung_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

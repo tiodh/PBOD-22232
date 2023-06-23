@@ -100,7 +100,7 @@
             label6_umkm.AutoSize = true;
             label6_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label6_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label6_umkm.Location = new Point(26, 169);
+            label6_umkm.Location = new Point(26, 91);
             label6_umkm.Name = "label6_umkm";
             label6_umkm.Size = new Size(124, 27);
             label6_umkm.TabIndex = 29;
@@ -124,7 +124,7 @@
             label5_umkm.AutoSize = true;
             label5_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label5_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label5_umkm.Location = new Point(26, 892);
+            label5_umkm.Location = new Point(26, 820);
             label5_umkm.Name = "label5_umkm";
             label5_umkm.Size = new Size(175, 27);
             label5_umkm.TabIndex = 27;
@@ -133,7 +133,7 @@
             // textBox4_telepon_umkm
             // 
             textBox4_telepon_umkm.BackColor = Color.Plum;
-            textBox4_telepon_umkm.Location = new Point(26, 923);
+            textBox4_telepon_umkm.Location = new Point(26, 851);
             textBox4_telepon_umkm.Multiline = true;
             textBox4_telepon_umkm.Name = "textBox4_telepon_umkm";
             textBox4_telepon_umkm.Size = new Size(509, 49);
@@ -146,7 +146,7 @@
             label4_umkm.AutoSize = true;
             label4_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label4_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label4_umkm.Location = new Point(26, 793);
+            label4_umkm.Location = new Point(26, 721);
             label4_umkm.Name = "label4_umkm";
             label4_umkm.Size = new Size(92, 27);
             label4_umkm.TabIndex = 25;
@@ -155,7 +155,7 @@
             // textBox3_pemilik_umkm
             // 
             textBox3_pemilik_umkm.BackColor = Color.Plum;
-            textBox3_pemilik_umkm.Location = new Point(26, 823);
+            textBox3_pemilik_umkm.Location = new Point(26, 751);
             textBox3_pemilik_umkm.Multiline = true;
             textBox3_pemilik_umkm.Name = "textBox3_pemilik_umkm";
             textBox3_pemilik_umkm.Size = new Size(509, 49);
@@ -168,7 +168,7 @@
             label3_umkm.AutoSize = true;
             label3_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label3_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label3_umkm.Location = new Point(26, 503);
+            label3_umkm.Location = new Point(26, 431);
             label3_umkm.Name = "label3_umkm";
             label3_umkm.Size = new Size(115, 27);
             label3_umkm.TabIndex = 23;
@@ -177,7 +177,7 @@
             // textBox2_desk_umkm
             // 
             textBox2_desk_umkm.BackColor = Color.Plum;
-            textBox2_desk_umkm.Location = new Point(26, 533);
+            textBox2_desk_umkm.Location = new Point(26, 461);
             textBox2_desk_umkm.Multiline = true;
             textBox2_desk_umkm.Name = "textBox2_desk_umkm";
             textBox2_desk_umkm.Size = new Size(509, 244);
@@ -190,7 +190,7 @@
             label2_umkm.AutoSize = true;
             label2_umkm.Font = new Font("Cambria", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label2_umkm.ForeColor = SystemColors.ButtonHighlight;
-            label2_umkm.Location = new Point(26, 403);
+            label2_umkm.Location = new Point(26, 331);
             label2_umkm.Name = "label2_umkm";
             label2_umkm.Size = new Size(147, 27);
             label2_umkm.TabIndex = 21;
@@ -199,7 +199,7 @@
             // textBox1_nama_umkm
             // 
             textBox1_nama_umkm.BackColor = Color.Plum;
-            textBox1_nama_umkm.Location = new Point(26, 432);
+            textBox1_nama_umkm.Location = new Point(26, 360);
             textBox1_nama_umkm.Multiline = true;
             textBox1_nama_umkm.Name = "textBox1_nama_umkm";
             textBox1_nama_umkm.Size = new Size(509, 49);
@@ -222,7 +222,7 @@
             // pictureBox1_umkm
             // 
             pictureBox1_umkm.BackColor = SystemColors.ActiveBorder;
-            pictureBox1_umkm.Location = new Point(26, 199);
+            pictureBox1_umkm.Location = new Point(26, 121);
             pictureBox1_umkm.Name = "pictureBox1_umkm";
             pictureBox1_umkm.Size = new Size(237, 191);
             pictureBox1_umkm.TabIndex = 19;
@@ -236,7 +236,7 @@
             dataGridView1_umkm.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1_umkm.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridView1_umkm.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1_umkm.Location = new Point(606, 199);
+            dataGridView1_umkm.Location = new Point(580, 116);
             dataGridView1_umkm.Name = "dataGridView1_umkm";
             dataGridView1_umkm.ReadOnly = true;
             dataGridView1_umkm.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -250,7 +250,7 @@
             // 
             textBox5_id_umkm.BackColor = Color.Plum;
             textBox5_id_umkm.Font = new Font("Arial", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox5_id_umkm.Location = new Point(302, 353);
+            textBox5_id_umkm.Location = new Point(302, 235);
             textBox5_id_umkm.Multiline = true;
             textBox5_id_umkm.Name = "textBox5_id_umkm";
             textBox5_id_umkm.Size = new Size(233, 37);
@@ -262,7 +262,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Cambria", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(302, 317);
+            label1.Location = new Point(302, 199);
             label1.Name = "label1";
             label1.Size = new Size(111, 27);
             label1.TabIndex = 34;
@@ -274,7 +274,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Cambria", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(302, 241);
+            label2.Location = new Point(302, 123);
             label2.Name = "label2";
             label2.Size = new Size(111, 27);
             label2.TabIndex = 36;
@@ -284,7 +284,7 @@
             // 
             textBox6_wisata_id.BackColor = Color.Plum;
             textBox6_wisata_id.Font = new Font("Arial", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox6_wisata_id.Location = new Point(302, 277);
+            textBox6_wisata_id.Location = new Point(302, 159);
             textBox6_wisata_id.Multiline = true;
             textBox6_wisata_id.Name = "textBox6_wisata_id";
             textBox6_wisata_id.Size = new Size(233, 37);
@@ -296,7 +296,7 @@
             button1_clear_umkm.BackColor = Color.Red;
             button1_clear_umkm.Font = new Font("Cambria", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             button1_clear_umkm.ForeColor = SystemColors.ButtonHighlight;
-            button1_clear_umkm.Location = new Point(1380, 892);
+            button1_clear_umkm.Location = new Point(1369, 637);
             button1_clear_umkm.Name = "button1_clear_umkm";
             button1_clear_umkm.Size = new Size(160, 68);
             button1_clear_umkm.TabIndex = 37;
@@ -309,7 +309,7 @@
             button2_edit_umkm.BackColor = Color.Gold;
             button2_edit_umkm.Font = new Font("Cambria", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             button2_edit_umkm.ForeColor = SystemColors.ButtonHighlight;
-            button2_edit_umkm.Location = new Point(1132, 892);
+            button2_edit_umkm.Location = new Point(1121, 637);
             button2_edit_umkm.Name = "button2_edit_umkm";
             button2_edit_umkm.Size = new Size(160, 68);
             button2_edit_umkm.TabIndex = 38;
@@ -322,7 +322,7 @@
             button3_read_umkm.BackColor = Color.CornflowerBlue;
             button3_read_umkm.Font = new Font("Cambria", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             button3_read_umkm.ForeColor = SystemColors.ButtonHighlight;
-            button3_read_umkm.Location = new Point(873, 892);
+            button3_read_umkm.Location = new Point(862, 637);
             button3_read_umkm.Name = "button3_read_umkm";
             button3_read_umkm.Size = new Size(160, 68);
             button3_read_umkm.TabIndex = 39;
@@ -335,7 +335,7 @@
             button4_add_umkm.BackColor = Color.MediumSpringGreen;
             button4_add_umkm.Font = new Font("Cambria", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             button4_add_umkm.ForeColor = SystemColors.ButtonHighlight;
-            button4_add_umkm.Location = new Point(606, 892);
+            button4_add_umkm.Location = new Point(595, 637);
             button4_add_umkm.Name = "button4_add_umkm";
             button4_add_umkm.Size = new Size(160, 68);
             button4_add_umkm.TabIndex = 40;
@@ -343,7 +343,7 @@
             button4_add_umkm.UseVisualStyleBackColor = false;
             button4_add_umkm.Click += button4_add_umkm_Click;
             // 
-            // crud_umkm
+            // CRUDUmkm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -373,7 +373,7 @@
             Controls.Add(label1_umkm);
             Controls.Add(pictureBox1_umkm);
             Controls.Add(dataGridView1_umkm);
-            Name = "crud_umkm";
+            Name = "CRUDUmkm";
             Text = "crud_umkm";
             Load += crud_umkm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1_umkm).EndInit();
