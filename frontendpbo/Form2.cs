@@ -89,7 +89,7 @@ namespace frontendpbo
 
         private void ediTransportasi_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new CRUDTransportasi());
         }
 
         private void tempatMakan_Click(object sender, EventArgs e)
