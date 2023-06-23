@@ -80,7 +80,6 @@ namespace frontendpbo
             tbxNama.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             tbxDeskripsi.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             //id_w = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[3].Value);
-
         }
 
         private void CreateSarana_Load(object sender, EventArgs e)
@@ -116,6 +115,29 @@ namespace frontendpbo
             else
             {
                 LoadData();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int id = id_;
+            string namaSarana = tbxNama.Text;
+            string deskripsiSarana = tbxDeskripsi.Text;
+            SaranaPrasarana updatedSarana = new SaranaPrasarana
+            {
+                id_sarana = id,
+                nama_sarana = namaSarana,
+                deskripsi_sarana = deskripsiSarana
+            };
+            bool isSuccess = Sarana.Update(updatedSarana);
+            if (isSuccess)
+            {
+                MessageBox.Show("Data Telah di Update");
+                LoadData();
+            }
+            else
+            {
+                MessageBox.Show("Data Gagal di Update");
             }
         }
     }

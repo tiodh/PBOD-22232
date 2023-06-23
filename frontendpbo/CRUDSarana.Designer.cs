@@ -40,7 +40,7 @@
             panel2 = new Panel();
             label1 = new Label();
             panelSARANA = new Panel();
-            button1 = new Button();
+            Update = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -161,22 +161,23 @@
             // 
             // panelSARANA
             // 
-            panelSARANA.Controls.Add(button1);
+            panelSARANA.Controls.Add(Update);
             panelSARANA.Dock = DockStyle.Bottom;
             panelSARANA.Location = new Point(0, 78);
             panelSARANA.Name = "panelSARANA";
             panelSARANA.Size = new Size(1195, 640);
             panelSARANA.TabIndex = 10;
             // 
-            // button1
+            // Update
             // 
-            button1.Anchor = AnchorStyles.None;
-            button1.Location = new Point(258, 329);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 4;
-            button1.Text = "EDIT";
-            button1.UseVisualStyleBackColor = true;
+            Update.Anchor = AnchorStyles.None;
+            Update.Location = new Point(258, 329);
+            Update.Name = "Update";
+            Update.Size = new Size(94, 29);
+            Update.TabIndex = 4;
+            Update.Text = "EDIT";
+            Update.UseVisualStyleBackColor = true;
+            Update.Click += button1_Click;
             // 
             // CRUDSarana
             // 
@@ -219,6 +220,6 @@
         private Panel panel2;
         private Label label1;
         private Panel panelSARANA;
-        private Button button1;
+        private Button Update;
     }
 }
