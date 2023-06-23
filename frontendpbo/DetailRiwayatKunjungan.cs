@@ -18,7 +18,7 @@ namespace frontendpbo
     public partial class DetailRiwayatKunjungan : Form
     {
         ContextRiwayatKunjungan contextRiwayat = new ContextRiwayatKunjungan();
-        ContextPengunjung contextPengunjung = new ContextPengunjung();
+        ContextRiwayatPengunjung contextPengunjung = new ContextRiwayatPengunjung();
         ContextTiket contextTiket = new ContextTiket();
 
         public List<Riwayat> listRiwayats = new List<Riwayat>();
@@ -83,7 +83,7 @@ namespace frontendpbo
 
         private void loadComboBoxPengunjung()
         {
-            List<PengunjungWisata> pengunjungList = contextPengunjung.Readata();
+            List<PengunjungWisata> pengunjungList = contextPengunjung.Read();
 
             cbPengunjung.DataSource = pengunjungList;
             cbPengunjung.ValueMember = "Id";
