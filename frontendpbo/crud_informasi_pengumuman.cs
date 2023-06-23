@@ -296,6 +296,16 @@ namespace frontendpbo
         {
 
         }
+
+        private void crud_informasi_pengumuman_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateInformasiPengumuman_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     class Readed

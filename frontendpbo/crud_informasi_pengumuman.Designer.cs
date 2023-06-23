@@ -142,6 +142,7 @@
             this.UpdateInformasiPengumuman.TabIndex = 8;
             this.UpdateInformasiPengumuman.Text = "Update";
             this.UpdateInformasiPengumuman.UseVisualStyleBackColor = false;
+            this.UpdateInformasiPengumuman.Click += new System.EventHandler(this.UpdateInformasiPengumuman_Click);
             // 
             // Exit_informasipengumuman
             // 
@@ -222,6 +223,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "crud_informasi_pengumuman";
             this.Text = "crud_informasi_pengumuman";
+            this.Load += new System.EventHandler(this.crud_informasi_pengumuman_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.TampilInformasi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

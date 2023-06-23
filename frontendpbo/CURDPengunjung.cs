@@ -7,6 +7,7 @@ namespace frontendpbo
     public partial class Pengunjung : Form
     {
         private DataTable? dataTable;
+        ContextPengunjung contextPengunjung = new ContextPengunjung();
         public Pengunjung()
         {
             InitializeComponent();
@@ -16,7 +17,7 @@ namespace frontendpbo
         public void ShowData()
         {
             DataTable dt = new DataTable();
-            dt = Contexts.ContextPengunjung.Read();
+            dt = contextPengunjung.Read();
             dataGridView1.DataSource = dt;
         }
 
@@ -54,7 +55,7 @@ namespace frontendpbo
             }
             else
             {
-                dataGridView1.DataSource = ContextPengunjung.Read();
+                dataGridView1.DataSource = contextPengunjung.Read();
             }
         }
 
