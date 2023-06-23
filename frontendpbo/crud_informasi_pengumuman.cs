@@ -297,45 +297,46 @@ namespace frontendpbo
 
         }
 
-        private void crud_informasi_pengumuman_Load_1(object sender, EventArgs e)
+        private void IDWisata_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void UpdateInformasiPengumuman_Click(object sender, EventArgs e)
+        private void TampilInformasi_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+        class Readed
+        {
+            static public DataTable ContohSelect()
+            {
+                NpgsqlConnection connection = new NpgsqlConnection();
+                string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Informasi Pengumuman;";
+                connection.ConnectionString = constr;
+                DataTable dt = new DataTable();
+                try
+                {
+                    connection.Open();
+                    NpgsqlCommand cmd = new NpgsqlCommand();
+                    cmd.Connection = connection;
+                    string StrSql = "SELECT * FROM pengumuman";
+                    cmd.CommandText = StrSql;
+                    cmd.CommandType = CommandType.Text;
+                    NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                    da.Fill(dt);
+                    cmd.Dispose();
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                return dt;
+            }
         }
     }
 
-    class Readed
-    {
-        static public DataTable ContohSelect()
-        {
-            NpgsqlConnection connection = new NpgsqlConnection();
-            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=1;Database=Data Informasi Pengumuman;";
-            connection.ConnectionString = constr;
-            DataTable dt = new DataTable();
-            try
-            {
-                connection.Open();
-                NpgsqlCommand cmd = new NpgsqlCommand();
-                cmd.Connection = connection;
-                string StrSql = "SELECT * FROM pengumuman";
-                cmd.CommandText = StrSql;
-                cmd.CommandType = CommandType.Text;
-                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
-                da.Fill(dt);
-                cmd.Dispose();
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            return dt;
-        }
-    }
+
 
 
 }

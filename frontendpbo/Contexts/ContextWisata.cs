@@ -12,14 +12,14 @@ namespace frontendpbo.Contexts
     internal class ContextWisata
     {
 
+        private int? CurrentID;
         public List<Wisata> listWisata = new List<Wisata>() { };
-        Wisata wisata = new Wisata();
 
         public bool Read()
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using(NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
@@ -51,7 +51,7 @@ namespace frontendpbo.Contexts
         {
             List<Wisata> searchResults = new List<Wisata>();
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
@@ -66,10 +66,12 @@ namespace frontendpbo.Contexts
                     while (reader.Read())
                     {
                         Wisata wisata = new Wisata();
+
                         wisata.Id_Wisata = (int)reader["id_wisata"];
                         wisata.Nama_Wisata = (string)reader["nama_wisata"];
                         wisata.Deskripsi = (string)reader["deskripsi_wisata"];
                         wisata.Lokasi = (string)reader["lokasi_wisata"];
+
                         searchResults.Add(wisata);
                     }
                 }
@@ -87,7 +89,7 @@ namespace frontendpbo.Contexts
         public bool Insert(Wisata wisata)
         {
             bool isSuccess = false;
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql =
@@ -115,46 +117,39 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember;";
-            using(NpgsqlConnection conn = new NpgsqlConnection( conStr ))
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
+            using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
-                string sql = @"UPDATE SET nama_wisata = :nama_wisat a, deskripsi_wisata = :deskripsi,lokasi_wisata = :lokasi where id_wisata = :id_wisata";
+                string sql = "UPDATE public.objek_wisata SET nama_wisata=:namawisata, deskripsi_wisata=:desc, lokasi_wisata=:lok WHERE id_wisata=:id;";
                 conn.Open();
-                using(NpgsqlCommand cmd = new NpgsqlCommand( sql, conn))
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
                 {
-                    cmd.Parameters.Add(new NpgsqlParameter(":nama_wisata", wisata.Nama_Wisata));
-                    cmd.Parameters.Add(new NpgsqlParameter(":deskripsi_wisata", wisata.Deskripsi));
-                    cmd.Parameters.Add(new NpgsqlParameter(":lokasi_wisata", wisata.Lokasi));
-                    cmd.Parameters.Add(new NpgsqlParameter(":id_wisata", wisata.Id_Wisata));
+                    CurrentID = wisata.Id_Wisata;
+                    cmd.Parameters.Add(new NpgsqlParameter(":id", CurrentID));
+                    cmd.Parameters.Add(new NpgsqlParameter(":namawisata", wisata.Nama_Wisata));
+                    cmd.Parameters.Add(new NpgsqlParameter(":desc", wisata.Deskripsi));
+                    cmd.Parameters.Add(new NpgsqlParameter(":lok", wisata.Lokasi));
 
                     cmd.CommandType = System.Data.CommandType.Text;
-                    int JumlahData = cmd.ExecuteNonQuery();
-                    if (JumlahData > 0 )
+                    int jumlahData = cmd.ExecuteNonQuery();
+                    if (jumlahData > 0)
                     {
-                        isSuccess=true;
-                        foreach(var temp in this.listWisata)
-                        {
-                            var t = temp as Wisata;
-                            if ( t != null && t.Id_Wisata.Equals(wisata.Id_Wisata))
-                            {
-                                t.Nama_Wisata = wisata.Nama_Wisata;
-                                t.Deskripsi = wisata.Deskripsi;
-                                t.Lokasi = wisata.Lokasi;
-                                t.Id_Wisata = wisata.Id_Wisata;
-                            }
-                        }
+                        isSuccess = true;
+                        this.listWisata.Add(wisata);
                     }
                 }
             }
+
             return isSuccess;
         }
+
 
         public List<Wisata> ReadtoCard()
         {
 
             List<Wisata> listWisata = new List<Wisata>();
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
@@ -179,12 +174,6 @@ namespace frontendpbo.Contexts
             }
 
             return listWisata;
-        }
-
-        public bool Delete(string id)
-        {
-            bool isSuccess = false;
-            return isSuccess;
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using frontendpbo.Contexts;
+using frontendpbo.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +15,23 @@ namespace frontendpbo
 {
     public partial class LoginAdmin : Form
     {
+        ContextAdmin contextAdmin;
+        Pengguna admin = new Pengguna();
         public LoginAdmin()
         {
             InitializeComponent();
-            this.Size = new System.Drawing.Size(1200,800);
+            contextAdmin = new ContextAdmin();
+            this.Size = new System.Drawing.Size(1200, 800);
             //this.WindowState = FormWindowState.Maximized;
+        }
+
+        private Models.Pengguna GetData()
+        {
+
+            admin.Username = tbx_user.Text;
+            admin.Password = tbx_pasw.Text;
+
+            return admin;
         }
 
         private void LoginAdmin_Load(object sender, EventArgs e)
@@ -68,6 +82,21 @@ namespace frontendpbo
             if (tbx_user.TextLength == 0)
             {
                 label1.Visible = true;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Models.Pengguna pengguna = this.GetData();
+            bool loginSuccess = contextAdmin.Login(pengguna);
+
+            if (loginSuccess)
+            {
+                MessageBox.Show("Login berhasil!");
+            }
+            else
+            {
+                MessageBox.Show("Username atau password salah. Silakan coba lagi.","Error Message");
             }
         }
     }

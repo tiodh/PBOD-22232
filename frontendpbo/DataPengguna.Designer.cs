@@ -42,7 +42,6 @@
             btnCreate = new Button();
             btnUpdate = new Button();
             btnClear = new Button();
-            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)DGVdataPengguna).BeginInit();
             SuspendLayout();
             // 
@@ -171,7 +170,7 @@
             // tbSearchDataPengguna
             // 
             tbSearchDataPengguna.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            tbSearchDataPengguna.BackColor = SystemColors.Control;
+            tbSearchDataPengguna.BackColor = SystemColors.ButtonShadow;
             tbSearchDataPengguna.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             tbSearchDataPengguna.Location = new Point(606, 66);
             tbSearchDataPengguna.Multiline = true;
@@ -220,21 +219,11 @@
             btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += btnClear_Click;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(487, 75);
-            label6.Name = "label6";
-            label6.Size = new Size(105, 15);
-            label6.TabIndex = 14;
-            label6.Text = "Search Pengguna :";
-            // 
             // DataPengguna
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1350, 650);
-            Controls.Add(label6);
             Controls.Add(btnClear);
             Controls.Add(btnUpdate);
             Controls.Add(btnCreate);
@@ -273,6 +262,5 @@
         private Button btnCreate;
         private Button btnUpdate;
         private Button btnClear;
-        private Label label6;
     }
 }

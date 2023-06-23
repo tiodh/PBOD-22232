@@ -13,14 +13,15 @@ using System.Windows.Forms;
 
 namespace frontendpbo
 {
-    public partial class CreateSarana : Form
+    public partial class CRUDSarana : Form
     {
         ContextSarana Sarana;
         private int id_;
         private int id_w;
-        public CreateSarana()
+        public CRUDSarana()
         {
             InitializeComponent();
+            Sarana = new ContextSarana();
         }
         private void LoadData()
         {
@@ -51,35 +52,25 @@ namespace frontendpbo
         }
         private void simpan_Click(object sender, EventArgs e)
         {
+            string Nama_sarana = tbxNama.Text;
+            string Deskripsi_sarana = tbxDeskripsi.Text;
 
-            Sarana = new ContextSarana();
-            Sarana.create(tbxNama.Text, tbxDeskripsi.Text);
+            SaranaPrasarana newSarana = new SaranaPrasarana();
+            {
+                newSarana.nama_sarana = Nama_sarana;
+                newSarana.deskripsi_sarana = Deskripsi_sarana;
+            };
+            bool isSuccess = Sarana.create(newSarana);
+            if (isSuccess)
+            {
+                MessageBox.Show("input sukses");
+                LoadData();
 
-            tbxNama.Text = "";
-            tbxDeskripsi.Text = "";
-            LoadData();
-            //using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=peta_jember;user id=postgres;password=12345678"))
-            //{
-            //    connection.Open();
-            //    NpgsqlCommand command = connection.CreateCommand();
-            //    command.Connection = connection;
-            //    command.CommandText = "insert into sarana_prasarana(nama_sarana,deskripsi_sarana) values(@nama_sarana,@deskripsi_sarana)";
-            //    command.Parameters.Add(new NpgsqlParameter("@nama_sarana", tbxNama.Text));
-            //    command.Parameters.Add(new NpgsqlParameter("@deskripsi_sarana", tbxDeskripsi.Text));
-
-            //    tbxNama.Text = "";
-            //    tbxDeskripsi.Text = "";
-            //    command.ExecuteNonQuery();
-            //    connection.Close();
-            //    MessageBox.Show("Data berhasil diinput");
-            //    //RefreshUlasanTerakhir();
-            //    //RefreshRatingTerakhir();
-            //}
-            //string nama_sektor = tbxNama.Text;
-            //string deskripsi = tbxDeskripsi.Text;
-
-            //dataGridView1.Rows.Add(nama_sektor, deskripsi);
-            //this.DialogResult = DialogResult.OK;
+            }
+            else
+            {
+                MessageBox.Show("input gagal");
+            }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -99,12 +90,13 @@ namespace frontendpbo
 
         private void Cari_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != null)
+            if ((textBox1.Text).Length != 0)
             {
                 Sarana = new ContextSarana();
                 List<SaranaPrasarana> ListSarana = Sarana.ListSarana;
                 Sarana.search(textBox1.Text);
                 dataGridView1.DataSource = ListSarana;
+                textBox1.Text = null;
             }
             else
             {

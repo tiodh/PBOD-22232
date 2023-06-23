@@ -1,71 +1,120 @@
-﻿using System;
-using frontendpbo.Models;
+﻿using frontendpbo.Models;
+using Npgsql;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Npgsql;
-using System.Data;
 
 namespace frontendpbo.Contexts
 {
-    public class ContextPengunjung
+    internal class ContextPengunjung
     {
-        List<Models.Pengunjung> pengunjungList = new List<Models.Pengunjung>() { };
+        private string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=132435;Database=peta_jember;";
 
         public DataTable Read()
         {
-            NpgsqlConnection connection = new NpgsqlConnection();
-
-            string constr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
-            connection.ConnectionString = constr;
             DataTable dt = new DataTable();
+
             try
             {
-                connection.Open();
-                NpgsqlCommand cmd = new NpgsqlCommand();
-                cmd.Connection = connection;
-                string StrSql = "select * from Pengunjung";
-                cmd.CommandText = StrSql;
-                cmd.CommandType = CommandType.Text;
-                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
-                da.Fill(dt);
-                cmd.Dispose();
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-            }
-            return dt;
-        }
-
-        public List<PengunjungWisata> Readata()
-        {
-            List<PengunjungWisata> pengunjungList = new List<PengunjungWisata>() { };
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
-
-            using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
-            {
-                string sql = "select * from pengunjung";
-                conn.Open();
-                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
                 {
-                    cmd.CommandText = sql;
-                    NpgsqlDataReader reader = cmd.ExecuteReader();
-                    while (reader.Read())
+                    connection.Open();
+                    string strSql = "SELECT * FROM Pengunjung";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(strSql, connection))
                     {
-                        PengunjungWisata pgnj = new PengunjungWisata();
-
-                        pgnj.Id = (int)reader["id_pengunjung"];
-                        pgnj.Name = (string)reader["nama_pengunjung"];
-                        pgnj.Asal = (string)reader["asal_pengunjung"];
-
-                        pengunjungList.Add(pgnj);
+                        using (NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
                     }
                 }
             }
-            return pengunjungList;
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return dt;
+        }
+
+        public void Create(Pengunjung pengunjung)
+        {
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string strSql = "INSERT INTO Pengunjung (Id, Name, Asal, Wisata_ID) VALUES (@Id, @Name, @Asal, @Wisata_ID)";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(strSql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@Id", pengunjung.Id);
+                        cmd.Parameters.AddWithValue("@Name", pengunjung.Name);
+                        cmd.Parameters.AddWithValue("@Asal", pengunjung.Asal);
+                        cmd.Parameters.AddWithValue("@Wisata_ID", pengunjung.Wisata_ID);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void Update(Pengunjung pengunjung)
+        {
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string strSql = "UPDATE Pengunjung SET Name = @Name, Asal = @Asal, Wisata_ID = @Wisata_ID WHERE Id = @Id";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(strSql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@Id", pengunjung.Id);
+                        cmd.Parameters.AddWithValue("@Name", pengunjung.Name);
+                        cmd.Parameters.AddWithValue("@Asal", pengunjung.Asal);
+                        cmd.Parameters.AddWithValue("@Wisata_ID", pengunjung.Wisata_ID);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public DataTable Search(string keyword)
+        {
+            DataTable dt = new DataTable();
+
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string strSql = "SELECT * FROM Pengunjung WHERE Name ILIKE @Keyword OR Asal ILIKE @Keyword";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(strSql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@Keyword", "%" + keyword + "%");
+                        using (NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return dt;
         }
     }
 }
+

@@ -108,7 +108,7 @@ namespace frontendpbo
                 DGVdataPengguna.DataSource = cari;
                 SetDataGrid();
             }
-            
+
         }
 
         private void tbSearchDataPengguna_Click(object sender, EventArgs e)

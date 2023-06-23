@@ -20,9 +20,8 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
-                string sql = "SELECT tiket.id_tiket, tiket.nama_tiket, tiket.deskripsi_tiket, tiket.harga_tiket, objek_wisata.id_wisata " +
-                             "FROM tiket " +
-                             "JOIN objek_wisata ON tiket.wisata_id = objek_wisata.id_wisata";
+                string sql = "SELECT tiket.id_tiket, tiket.nama_tiket, tiket.deskripsi_tiket, tiket.harga_tiket FROM tiket Order by id_tiket ";
+                             
 
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
@@ -39,7 +38,7 @@ namespace frontendpbo.Contexts
                         tiket.nama_tiket = (string)reader["nama_tiket"];
                         tiket.deskripsi_tiket = (string)reader["deskripsi_tiket"];
                         tiket.harga_tiket = (int)reader["harga_tiket"];
-                        tiket.wisata_id = (int)reader["id_wisata"];
+                        //tiket.wisata_id = (int)reader["id_wisata"];
                         listTiket.Add(tiket);
                     }
                 }
@@ -70,7 +69,7 @@ namespace frontendpbo.Contexts
                         tiket.nama_tiket = (string)reader["nama_tiket"];
                         tiket.deskripsi_tiket = (string)reader["deskripsi_tiket"];
                         tiket.harga_tiket = (int)reader["harga_tiket"];
-                        tiket.wisata_id = (int)reader["wisata_id"];
+//                        tiket.wisata_id = (int)reader["wisata_id"];
                         searchResults.Add(tiket);
                     }
                 }
@@ -113,8 +112,8 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
             {
-                string sql = "INSERT INTO tiket (nama_tiket, deskripsi_tiket, harga_tiket, wisata_id) " +
-                     "VALUES (:NamaTiket, :DeskripsiTiket, :HargaTiket, :IDWisata)";
+                string sql = "INSERT INTO tiket (nama_tiket, deskripsi_tiket, harga_tiket) " +
+                     "VALUES (:NamaTiket, :DeskripsiTiket, :HargaTiket)";
                 connection.Open();
 
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, connection))
@@ -122,7 +121,7 @@ namespace frontendpbo.Contexts
                     cmd.Parameters.Add(new NpgsqlParameter(":NamaTiket", tiket.nama_tiket));
                     cmd.Parameters.Add(new NpgsqlParameter(":DeskripsiTiket", tiket.deskripsi_tiket));
                     cmd.Parameters.Add(new NpgsqlParameter(":HargaTiket", tiket.harga_tiket));
-                    cmd.Parameters.Add(new NpgsqlParameter(":IDWisata", tiket.wisata_id));
+                    //cmd.Parameters.Add(new NpgsqlParameter(":IDWisata", tiket.wisata_id));
 
                     cmd.CommandType = System.Data.CommandType.Text;
                     int jmlDataBaru = cmd.ExecuteNonQuery();
@@ -200,7 +199,7 @@ namespace frontendpbo.Contexts
                         tiket.nama_tiket = (string)reader["nama_tiket"];
                         tiket.deskripsi_tiket = (string)reader["deskripsi_tiket"];
                         tiket.harga_tiket = (int)reader["harga_tiket"];
-                        tiket.wisata_id = (int)reader["id_wisata"];
+  //                      tiket.wisata_id = (int)reader["id_wisata"];
                         listTiket.Add(tiket);
                     }
                 }

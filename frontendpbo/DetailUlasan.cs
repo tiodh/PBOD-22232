@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using frontendpbo.Helpers;
+using frontendpbo.Models;
 
 namespace frontendpbo
 {
@@ -22,6 +23,8 @@ namespace frontendpbo
             ulasanContext.Read();
             dataGridViewsShowUlasan.DataSource = ulasanContext.listUlasan;
 
+            LoadComboBox1();
+
 
             //dgv1.Columns[0].Width = 60;
             //dgv1.Columns[1].Width = 200;
@@ -29,6 +32,18 @@ namespace frontendpbo
             //dgv1.Columns[3].Width = 200;
 
         }
+
+        private void LoadComboBox1()
+        {
+            List<Wisata> namaWisataList = ulasanContext.GetNamaWisataList();
+
+            comboBox1.DataSource = namaWisataList;
+            comboBox1.ValueMember = "Id_Wisata";
+            comboBox1.DisplayMember = "Nama_Wisata";
+        }
+
+
+
 
 
 
@@ -71,6 +86,37 @@ namespace frontendpbo
         private void FormShowUlasan_Load(object sender, EventArgs e)
         {
             //LoadData("");
+        }
+
+        private void textBoxCariBerdasarkan_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = textBoxCariBerdasarkan.Text;
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                dataGridViewsShowUlasan.DataSource = ulasanContext.listUlasan;
+            }
+            else
+            {
+                List<Ulasan> searchResults = ulasanContext.Search(searchText);
+                dataGridViewsShowUlasan.DataSource = searchResults;
+
+            }
+        }
+        private void dataGridViewsShowUlasan_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow selectedRow = dataGridViewsShowUlasan.Rows[e.RowIndex];
+
+                // Mengisi data ke TextBox
+                textBoxNamaPengguna.Text = selectedRow.Cells["nama_user"].Value.ToString();
+                textBoxDeskripsiUlasan.Text = selectedRow.Cells["deskripsi_ulasan"].Value.ToString();
+
+                // Menampilkan data terkait di ComboBox
+                int wisataId = Convert.ToInt32(selectedRow.Cells["wisata_id"].Value);
+                comboBox1.SelectedValue = wisataId;
+            }
         }
     }
 }
