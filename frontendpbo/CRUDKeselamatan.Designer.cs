@@ -44,10 +44,10 @@
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             panel5 = new Panel();
+            button_searchKeselamatan = new Button();
+            textBox_dataKeselamatan = new TextBox();
             panel2 = new Panel();
             panel4 = new Panel();
-            textBox_dataKeselamatan = new TextBox();
-            button_searchKeselamatan = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -217,6 +217,23 @@
             panel5.Size = new Size(650, 882);
             panel5.TabIndex = 7;
             // 
+            // button_searchKeselamatan
+            // 
+            button_searchKeselamatan.Location = new Point(530, 27);
+            button_searchKeselamatan.Name = "button_searchKeselamatan";
+            button_searchKeselamatan.Size = new Size(94, 34);
+            button_searchKeselamatan.TabIndex = 7;
+            button_searchKeselamatan.Text = "Search";
+            button_searchKeselamatan.UseVisualStyleBackColor = true;
+            // 
+            // textBox_dataKeselamatan
+            // 
+            textBox_dataKeselamatan.Location = new Point(31, 27);
+            textBox_dataKeselamatan.Name = "textBox_dataKeselamatan";
+            textBox_dataKeselamatan.Size = new Size(467, 34);
+            textBox_dataKeselamatan.TabIndex = 6;
+            textBox_dataKeselamatan.TextChanged += textBox_dataKeselamatan_TextChanged;
+            // 
             // panel2
             // 
             panel2.Controls.Add(Tambah_Keselamatan);
@@ -244,22 +261,6 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(666, 882);
             panel4.TabIndex = 6;
-            // 
-            // textBox_dataKeselamatan
-            // 
-            textBox_dataKeselamatan.Location = new Point(31, 27);
-            textBox_dataKeselamatan.Name = "textBox_dataKeselamatan";
-            textBox_dataKeselamatan.Size = new Size(467, 34);
-            textBox_dataKeselamatan.TabIndex = 6;
-            // 
-            // button_searchKeselamatan
-            // 
-            button_searchKeselamatan.Location = new Point(530, 27);
-            button_searchKeselamatan.Name = "button_searchKeselamatan";
-            button_searchKeselamatan.Size = new Size(94, 34);
-            button_searchKeselamatan.TabIndex = 7;
-            button_searchKeselamatan.Text = "Search";
-            button_searchKeselamatan.UseVisualStyleBackColor = true;
             // 
             // CRUD_Data_Keselamatan
             // 

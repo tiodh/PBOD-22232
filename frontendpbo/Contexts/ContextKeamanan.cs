@@ -12,6 +12,10 @@ namespace frontendpbo.Contexts
     internal class ContextKeamanan
     {
         public List<Keamanan> keamananList = new List<Keamanan>();
+        public List<Keamanan> GetlistKeamanan()
+        {
+            return keamananList;
+        }
 
         public bool create(Keamanan newKeamanan)
         {
@@ -64,6 +68,38 @@ namespace frontendpbo.Contexts
                     MessageBox.Show("Terjadi kesalahan: " + ex.Message);
                 }
             }
+        }
+        public List<Keamanan> Search(string query)
+        {
+            List<Keamanan> searchResults = new List<Keamanan>();
+
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=garudart10rw02;Database=peta_jember";
+
+            using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
+            {
+                string sql = "SELECT * FROM data_keamanan WHERE nama_keamanan ILIKE @query or deskripsi_keamanan ILIKE @query or alamat_keamanan ILIKE @query or no_tlp ILIKE @query ";
+
+                conn.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@query", "%" + query + "%");
+
+                    NpgsqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        Keamanan keamanan = new Keamanan();
+                        keamanan.Id = (int)reader["id_keamanan"];
+                        keamanan.Name = (string)reader["nama_keamanan"];
+                        keamanan.No_Tlp = (string)reader["no_tlp"];
+                        keamanan.Alamat = (string)reader["alamat_keamanan"];
+                        keamanan.Description = (string)reader["deskripsi_keamanan"];
+                        //                        tiket.wisata_id = (int)reader["wisata_id"];
+                        searchResults.Add(keamanan);
+                    }
+                }
+            }
+            return searchResults;
         }
     }
 }

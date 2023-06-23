@@ -16,10 +16,12 @@ namespace frontendpbo
 {
     public partial class CRUD_Data_Keselamatan : Form
     {
-        private int id_;
+        private int id_keamanan;
 
         ContextKeamanan Keamanan;
         ReadKeselamatanContext readKeselamatanContext;
+
+        private List<Keamanan> searchResults;
         public CRUD_Data_Keselamatan()
         {
             InitializeComponent();
@@ -31,7 +33,7 @@ namespace frontendpbo
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             dataGridView1.CurrentRow.Selected = true;
-            id_ = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
+            id_keamanan = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
             textBox_nama_lembaga_dataKeamanan.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             textBoxnoHp_dataKeamanan.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             textBoxalamat_dataKeamanan.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
@@ -53,7 +55,7 @@ namespace frontendpbo
 
         private void Edit_Keamanan_Click(object sender, EventArgs e)
         {
-            if (id_ == 0)
+            if (id_keamanan == 0)
             {
                 MessageBox.Show("Pilih baris dahulu", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -64,7 +66,7 @@ namespace frontendpbo
                 data.Description = textBoxdeskripsi_dataKeamanan.Text;
                 data.Alamat = textBoxalamat_dataKeamanan.Text;
                 data.No_Tlp = textBoxnoHp_dataKeamanan.Text;
-                data.Id = id_;
+                data.Id = id_keamanan;
 
                 Keamanan = new ContextKeamanan();
                 Keamanan.edit(data);
@@ -118,6 +120,12 @@ namespace frontendpbo
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void textBox_dataKeselamatan_TextChanged(object sender, EventArgs e)
+        {
+            List<Keamanan> cari = Keamanan.Search(textBox_dataKeselamatan.Text);
+            dataGridView1.DataSource = cari;
         }
     }
 }
