@@ -32,7 +32,7 @@ namespace frontendpbo.Contexts
                             Transportasi transportasi = new Transportasi();
                             transportasi.Id_transportasi = Convert.ToInt32(reader["id_transportasi"]);
                             transportasi.Nama_transportasi = reader["nama_transportasi"].ToString();
-                            transportasi.Jenis_transportasi = reader["jenis_transportasi"].ToString();
+                            transportasi.Jenis_transportasi = reader["jenis_kendaraan"].ToString();
                             transportasi.Deskripsi_transportasi = reader["deskripsi_transportasi"].ToString();
                             
                             transportasiList.Add(transportasi);

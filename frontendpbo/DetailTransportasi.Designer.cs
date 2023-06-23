@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             panel7 = new Panel();
-            panel2 = new Panel();
-            label2 = new Label();
-            pictureBox1 = new PictureBox();
             TampilkanDataTransportasi = new TextBox();
             label4 = new Label();
             panel3 = new Panel();
@@ -47,8 +44,6 @@
             label3 = new Label();
             TampilData = new DataGridView();
             panel7.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)GambarTransportasi).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TampilData).BeginInit();
@@ -57,62 +52,21 @@
             // panel7
             // 
             panel7.BackColor = Color.FromArgb(111, 106, 248);
-            panel7.Controls.Add(panel2);
             panel7.Controls.Add(TampilkanDataTransportasi);
             panel7.Controls.Add(label4);
             panel7.Controls.Add(panel3);
             panel7.Controls.Add(label3);
             panel7.Controls.Add(TampilData);
-            panel7.Dock = DockStyle.Fill;
-            panel7.Location = new Point(0, 0);
+            panel7.Dock = DockStyle.Top;
+            panel7.Location = new Point(20, 20);
             panel7.Margin = new Padding(3, 4, 3, 4);
             panel7.Name = "panel7";
-            panel7.Size = new Size(970, 708);
+            panel7.Size = new Size(930, 708);
             panel7.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.White;
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Margin = new Padding(2, 3, 2, 3);
-            panel2.Name = "panel2";
-            panel2.Padding = new Padding(9, 0, 9, 0);
-            panel2.Size = new Size(970, 91);
-            panel2.TabIndex = 6;
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(111, 106, 248);
-            label2.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(164, 19);
-            label2.Name = "label2";
-            label2.Size = new Size(686, 46);
-            label2.TabIndex = 5;
-            label2.Text = "TAMPILAN ADMIN DATA TRANSPORTASI";
-            label2.Click += label2_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.White;
-            pictureBox1.Dock = DockStyle.Top;
-            pictureBox1.Image = Properties.Resources.Rectangle_28__1_;
-            pictureBox1.Location = new Point(9, 0);
-            pictureBox1.Margin = new Padding(2, 3, 2, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(952, 91);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
             // 
             // TampilkanDataTransportasi
             // 
-            TampilkanDataTransportasi.Location = new Point(423, 401);
+            TampilkanDataTransportasi.Location = new Point(423, 311);
             TampilkanDataTransportasi.Margin = new Padding(3, 4, 3, 4);
             TampilkanDataTransportasi.Name = "TampilkanDataTransportasi";
             TampilkanDataTransportasi.Size = new Size(532, 27);
@@ -124,7 +78,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(9, 400);
+            label4.Location = new Point(9, 310);
             label4.Name = "label4";
             label4.Size = new Size(408, 28);
             label4.TabIndex = 3;
@@ -143,10 +97,10 @@
             panel3.Controls.Add(label7);
             panel3.Controls.Add(label6);
             panel3.Controls.Add(label5);
-            panel3.Location = new Point(12, 435);
+            panel3.Location = new Point(12, 345);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(943, 225);
+            panel3.Size = new Size(903, 225);
             panel3.TabIndex = 2;
             // 
             // GambarTransportasi
@@ -239,7 +193,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(12, 99);
+            label3.Location = new Point(12, 9);
             label3.Name = "label3";
             label3.Size = new Size(65, 28);
             label3.TabIndex = 1;
@@ -253,13 +207,13 @@
             TampilData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             TampilData.BackgroundColor = Color.White;
             TampilData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            TampilData.Location = new Point(12, 131);
+            TampilData.Location = new Point(12, 41);
             TampilData.Margin = new Padding(3, 4, 3, 4);
             TampilData.Name = "TampilData";
             TampilData.ReadOnly = true;
             TampilData.RowHeadersWidth = 51;
             TampilData.RowTemplate.Height = 25;
-            TampilData.Size = new Size(945, 241);
+            TampilData.Size = new Size(905, 241);
             TampilData.TabIndex = 0;
             // 
             // DetailTransportasi
@@ -270,13 +224,11 @@
             Controls.Add(panel7);
             Margin = new Padding(3, 4, 3, 4);
             Name = "DetailTransportasi";
+            Padding = new Padding(20);
             Text = "DetailTransportasi";
             Load += DetailTransportasi_Load;
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)GambarTransportasi).EndInit();
@@ -300,9 +252,6 @@
         private Label label5;
         private Label label3;
         private DataGridView TampilData;
-        private Label label2;
-        private Panel panel2;
-        private PictureBox pictureBox1;
         private PictureBox GambarTransportasi;
     }
 }
