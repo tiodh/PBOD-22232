@@ -56,7 +56,7 @@
             RestoRembanganpanel1.Controls.Add(LokasiRestoRembanganlabel2);
             RestoRembanganpanel1.Controls.Add(JudulRestoRembanganlabel1);
             RestoRembanganpanel1.Controls.Add(RestoRembanganTempatMakanpictureBox1);
-            RestoRembanganpanel1.Location = new Point(116, 276);
+            RestoRembanganpanel1.Location = new Point(117, 130);
             RestoRembanganpanel1.Name = "RestoRembanganpanel1";
             RestoRembanganpanel1.Size = new Size(1215, 268);
             RestoRembanganpanel1.TabIndex = 0;
@@ -119,7 +119,7 @@
             // SearchDataTempatMakantextBox1
             // 
             SearchDataTempatMakantextBox1.BorderStyle = BorderStyle.FixedSingle;
-            SearchDataTempatMakantextBox1.Location = new Point(947, 194);
+            SearchDataTempatMakantextBox1.Location = new Point(948, 48);
             SearchDataTempatMakantextBox1.Name = "SearchDataTempatMakantextBox1";
             SearchDataTempatMakantextBox1.Size = new Size(384, 27);
             SearchDataTempatMakantextBox1.TabIndex = 1;
@@ -133,7 +133,7 @@
             CafeRembanganpanel2.Controls.Add(LokasiCafeRembanganlabel7);
             CafeRembanganpanel2.Controls.Add(JudulCafeRembanganlabel8);
             CafeRembanganpanel2.Controls.Add(CafeRembanganTempatMakanpictureBox2);
-            CafeRembanganpanel2.Location = new Point(116, 658);
+            CafeRembanganpanel2.Location = new Point(117, 512);
             CafeRembanganpanel2.Name = "CafeRembanganpanel2";
             CafeRembanganpanel2.Size = new Size(1215, 268);
             CafeRembanganpanel2.TabIndex = 5;

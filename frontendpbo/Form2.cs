@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tampil_data_umkm;
 
 namespace frontendpbo
 {
@@ -43,6 +44,8 @@ namespace frontendpbo
         private void wisata_Click(object sender, EventArgs e)
         {
             openChildForm(new DetailWisata());
+            showSubMenu(edit1);
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -51,8 +54,32 @@ namespace frontendpbo
 
         }
 
+        private void showSubMenu(Button subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+        }
+        private void showSubMenuPanel(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
+            showSubMenuPanel(panel1);
 
         }
 
@@ -113,6 +140,7 @@ namespace frontendpbo
         private void transportasi_Click(object sender, EventArgs e)
         {
             openChildForm(new DetailTransportasi());
+            showSubMenu(edit3);
         }
 
         private void keamanan_Click(object sender, EventArgs e)
@@ -120,9 +148,105 @@ namespace frontendpbo
 
         }
 
+        private void penginapan_Click(object sender, EventArgs e)
+        {
+            showSubMenu(edit2);
+        }
+
+        private void edit2_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CRUDDataPenginapan());
+        }
+
+        private void edit3_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CRUDTransportasi());
+        }
+
+        private void tempatMakan_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetaildanReadDataTempatMakan());
+            showSubMenu(edit4);
+
+        }
+
+        private void edit4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DeletedanUpdateDataTempatMakan());
+        }
+
+        private void saranaPrasarana_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetailSarpras());
+            showSubMenu(edit5);
+        }
+
+        private void edit5_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CRUDSarana());
+        }
+
+        private void acara_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetailEvent());
+            showSubMenu(edit6);
+        }
+
+        private void edit6_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormEditEvent());
+        }
+
+        private void umkm_Click(object sender, EventArgs e)
+        {
+            openChildForm(new detail_umkm());
+            showSubMenu(edit7);
+        }
+
+        private void edit7_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CRUDUmkm());
+
+        }
+
         private void informasi_Click(object sender, EventArgs e)
         {
-            openChildForm(new DetailInformasi(panelContent.Width));
+            showSubMenu(edit8);
+        }
+
+        private void edit8_Click(object sender, EventArgs e)
+        {
+            openChildForm(new crud_informasi_pengumuman());
+        }
+
+        private void transaksi_Click(object sender, EventArgs e)
+        {
+            openChildForm(new detail_umkm());
+            showSubMenu(edit9);
+        }
+
+        private void keamanan_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new detail_dataKeselamatan());
+            showSubMenu(edit10);
+        }
+
+        private void edit10_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CRUD_Data_Keselamatan());
+
+        }
+
+        private void ulasan_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetailUlasan());
+            showSubMenu(edit11);
+        }
+
+        private void edit11_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CRUDUlasan());
+
         }
     }
 }

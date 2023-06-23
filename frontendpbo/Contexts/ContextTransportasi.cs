@@ -10,7 +10,7 @@ namespace frontendpbo.Contexts
     {
         private string CurrentIDTransportasi;
         public List<Transportasi> TransportasiList = new List<Transportasi>() { };
-        private string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=Paulus21.;Database=peta_jember";
+        private string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
         public List<Transportasi> GetTransportasiList()
         {
@@ -18,7 +18,7 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
             {
-                string query = "SELECT id_transportasi, nama_transportasi, jenis_transportasi, deskripsi_transportasi " +
+                string query = "SELECT id_transportasi, nama_transportasi, jenis_kendaraan, deskripsi_transportasi " +
                                 "FROM transportasi";
 
                 connection.Open();
@@ -32,7 +32,7 @@ namespace frontendpbo.Contexts
                             Transportasi transportasi = new Transportasi();
                             transportasi.Id_transportasi = Convert.ToInt32(reader["id_transportasi"]);
                             transportasi.Nama_transportasi = reader["nama_transportasi"].ToString();
-                            transportasi.Jenis_transportasi = reader["jenis_transportasi"].ToString();
+                            transportasi.Jenis_transportasi = reader["jenis_kendaraan"].ToString();
                             transportasi.Deskripsi_transportasi = reader["deskripsi_transportasi"].ToString();
                             
                             transportasiList.Add(transportasi);
@@ -120,10 +120,10 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=Paulus21.;Database=peta_jember;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
-                string sql = "SELECT id_transportasi, nama_transportasi, jenis_transportasi, deskripsi_transportasi, objek_wisata.id_wisata FROM transportasi JOIN objek_wisata ON transportasi.wisata_id = objek_wisata.id_wisata";
+                string sql = "SELECT id_transportasi, nama_transportasi, jenis_kendaraan, deskripsi_transportasi, objek_wisata.id_wisata FROM transportasi JOIN objek_wisata ON transportasi.wisata_id = objek_wisata.id_wisata";
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
                 {

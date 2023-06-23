@@ -52,11 +52,11 @@
             informasi = new Button();
             edit7 = new Button();
             umkm = new Button();
-            edit6 = new Button();
+            editEvent = new Button();
             acara = new Button();
-            edit5 = new Button();
+            editSarana = new Button();
             saranaPrasarana = new Button();
-            edit4 = new Button();
+            editTempatMakan = new Button();
             tempatMakan = new Button();
             edit3 = new Button();
             transportasi = new Button();
@@ -205,6 +205,7 @@
             button4.Text = "Data Riwayat Kunjungan";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -251,11 +252,11 @@
             panel1.Controls.Add(informasi);
             panel1.Controls.Add(edit7);
             panel1.Controls.Add(umkm);
-            panel1.Controls.Add(edit6);
+            panel1.Controls.Add(editEvent);
             panel1.Controls.Add(acara);
-            panel1.Controls.Add(edit5);
+            panel1.Controls.Add(editSarana);
             panel1.Controls.Add(saranaPrasarana);
-            panel1.Controls.Add(edit4);
+            panel1.Controls.Add(editTempatMakan);
             panel1.Controls.Add(tempatMakan);
             panel1.Controls.Add(edit3);
             panel1.Controls.Add(transportasi);
@@ -274,7 +275,7 @@
             // 
             // edit11
             // 
-            edit11.BackColor = Color.Violet;
+            edit11.BackColor = Color.Transparent;
             edit11.Dock = DockStyle.Top;
             edit11.FlatAppearance.BorderSize = 0;
             edit11.FlatStyle = FlatStyle.Flat;
@@ -321,6 +322,7 @@
             edit10.Text = "Edit";
             edit10.TextAlign = ContentAlignment.MiddleLeft;
             edit10.UseVisualStyleBackColor = false;
+            edit10.Click += edit10_Click;
             // 
             // keamanan
             // 
@@ -337,6 +339,7 @@
             keamanan.Text = "Keamanan dan Keselamatan";
             keamanan.TextAlign = ContentAlignment.MiddleLeft;
             keamanan.UseVisualStyleBackColor = false;
+            keamanan.Click += keamanan_Click_1;
             // 
             // edit9
             // 
@@ -439,22 +442,23 @@
             umkm.TextAlign = ContentAlignment.MiddleLeft;
             umkm.UseVisualStyleBackColor = false;
             // 
-            // edit6
+            // editEvent
             // 
-            edit6.BackColor = Color.Transparent;
-            edit6.Dock = DockStyle.Top;
-            edit6.FlatAppearance.BorderSize = 0;
-            edit6.FlatStyle = FlatStyle.Flat;
-            edit6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit6.Location = new Point(15, 495);
-            edit6.Margin = new Padding(0);
-            edit6.Name = "edit6";
-            edit6.Padding = new Padding(21, 0, 0, 0);
-            edit6.Size = new Size(293, 45);
-            edit6.TabIndex = 17;
-            edit6.Text = "Edit";
-            edit6.TextAlign = ContentAlignment.MiddleLeft;
-            edit6.UseVisualStyleBackColor = false;
+            editEvent.BackColor = Color.Transparent;
+            editEvent.Dock = DockStyle.Top;
+            editEvent.FlatAppearance.BorderSize = 0;
+            editEvent.FlatStyle = FlatStyle.Flat;
+            editEvent.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            editEvent.Location = new Point(15, 495);
+            editEvent.Margin = new Padding(0);
+            editEvent.Name = "editEvent";
+            editEvent.Padding = new Padding(21, 0, 0, 0);
+            editEvent.Size = new Size(293, 45);
+            editEvent.TabIndex = 17;
+            editEvent.Text = "Edit";
+            editEvent.TextAlign = ContentAlignment.MiddleLeft;
+            editEvent.UseVisualStyleBackColor = false;
+            editEvent.Click += editEvent_Click;
             // 
             // acara
             // 
@@ -471,23 +475,25 @@
             acara.Text = " Event Acara";
             acara.TextAlign = ContentAlignment.MiddleLeft;
             acara.UseVisualStyleBackColor = false;
+            acara.Click += acara_Click;
             // 
-            // edit5
+            // editSarana
             // 
-            edit5.BackColor = Color.Transparent;
-            edit5.Dock = DockStyle.Top;
-            edit5.FlatAppearance.BorderSize = 0;
-            edit5.FlatStyle = FlatStyle.Flat;
-            edit5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit5.Location = new Point(15, 405);
-            edit5.Margin = new Padding(0);
-            edit5.Name = "edit5";
-            edit5.Padding = new Padding(21, 0, 0, 0);
-            edit5.Size = new Size(293, 45);
-            edit5.TabIndex = 14;
-            edit5.Text = "Edit";
-            edit5.TextAlign = ContentAlignment.MiddleLeft;
-            edit5.UseVisualStyleBackColor = false;
+            editSarana.BackColor = Color.Transparent;
+            editSarana.Dock = DockStyle.Top;
+            editSarana.FlatAppearance.BorderSize = 0;
+            editSarana.FlatStyle = FlatStyle.Flat;
+            editSarana.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            editSarana.Location = new Point(15, 405);
+            editSarana.Margin = new Padding(0);
+            editSarana.Name = "editSarana";
+            editSarana.Padding = new Padding(21, 0, 0, 0);
+            editSarana.Size = new Size(293, 45);
+            editSarana.TabIndex = 14;
+            editSarana.Text = "Edit";
+            editSarana.TextAlign = ContentAlignment.MiddleLeft;
+            editSarana.UseVisualStyleBackColor = false;
+            editSarana.Click += editSarana_Click;
             // 
             // saranaPrasarana
             // 
@@ -504,23 +510,25 @@
             saranaPrasarana.Text = "Sarana Prasarana";
             saranaPrasarana.TextAlign = ContentAlignment.MiddleLeft;
             saranaPrasarana.UseVisualStyleBackColor = false;
+            saranaPrasarana.Click += saranaPrasarana_Click;
             // 
-            // edit4
+            // editTempatMakan
             // 
-            edit4.BackColor = Color.Transparent;
-            edit4.Dock = DockStyle.Top;
-            edit4.FlatAppearance.BorderSize = 0;
-            edit4.FlatStyle = FlatStyle.Flat;
-            edit4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            edit4.Location = new Point(15, 315);
-            edit4.Margin = new Padding(0);
-            edit4.Name = "edit4";
-            edit4.Padding = new Padding(21, 0, 0, 0);
-            edit4.Size = new Size(293, 45);
-            edit4.TabIndex = 11;
-            edit4.Text = "Edit";
-            edit4.TextAlign = ContentAlignment.MiddleLeft;
-            edit4.UseVisualStyleBackColor = false;
+            editTempatMakan.BackColor = Color.Transparent;
+            editTempatMakan.Dock = DockStyle.Top;
+            editTempatMakan.FlatAppearance.BorderSize = 0;
+            editTempatMakan.FlatStyle = FlatStyle.Flat;
+            editTempatMakan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            editTempatMakan.Location = new Point(15, 315);
+            editTempatMakan.Margin = new Padding(0);
+            editTempatMakan.Name = "editTempatMakan";
+            editTempatMakan.Padding = new Padding(21, 0, 0, 0);
+            editTempatMakan.Size = new Size(293, 45);
+            editTempatMakan.TabIndex = 11;
+            editTempatMakan.Text = "Edit";
+            editTempatMakan.TextAlign = ContentAlignment.MiddleLeft;
+            editTempatMakan.UseVisualStyleBackColor = false;
+            editTempatMakan.Click += editTempatMakan_Click;
             // 
             // tempatMakan
             // 
@@ -537,6 +545,7 @@
             tempatMakan.Text = "Tempat Makan";
             tempatMakan.TextAlign = ContentAlignment.MiddleLeft;
             tempatMakan.UseVisualStyleBackColor = false;
+            tempatMakan.Click += tempatMakan_Click;
             // 
             // edit3
             // 
@@ -554,6 +563,7 @@
             edit3.Text = "Edit";
             edit3.TextAlign = ContentAlignment.MiddleLeft;
             edit3.UseVisualStyleBackColor = false;
+            edit3.Click += ediTransportasi_Click;
             // 
             // transportasi
             // 
@@ -588,6 +598,7 @@
             edit2.Text = "Edit";
             edit2.TextAlign = ContentAlignment.MiddleLeft;
             edit2.UseVisualStyleBackColor = false;
+            edit2.Click += editPenginapan_Click;
             // 
             // penginapan
             // 
@@ -604,6 +615,7 @@
             penginapan.Text = "Penginapan";
             penginapan.TextAlign = ContentAlignment.MiddleLeft;
             penginapan.UseVisualStyleBackColor = false;
+            penginapan.Click += penginapan_Click;
             // 
             // edit1
             // 
@@ -621,7 +633,7 @@
             edit1.Text = "Edit";
             edit1.TextAlign = ContentAlignment.MiddleLeft;
             edit1.UseVisualStyleBackColor = false;
-            edit1.Click += edit1_Click;
+            edit1.Click += editWisata_Click;
             // 
             // wisata
             // 
@@ -767,11 +779,11 @@
         private Button informasi;
         private Button edit7;
         private Button umkm;
-        private Button edit6;
+        private Button editEvent;
         private Button acara;
-        private Button edit5;
+        private Button editSarana;
         private Button saranaPrasarana;
-        private Button edit4;
+        private Button editTempatMakan;
         private Button tempatMakan;
         private Button edit3;
         private Button transportasi;

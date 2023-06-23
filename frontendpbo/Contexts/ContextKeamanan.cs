@@ -40,7 +40,7 @@ namespace frontendpbo.Contexts
             return isSucces;
         }
 
-        public void edit(string nama, string deskripsi, string alamat, string nomtelp, int ID)
+        public void edit(Keamanan data)
         {
             
             using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 123"))
@@ -51,11 +51,11 @@ namespace frontendpbo.Contexts
                     string queryupdate = $"update data_keamanan set nama_lembaga = @DataA, deskripsi_keamanan = @DataB, alamat_keamanan = @DataC, no_tlp = @DataD where id_keamanan = @ID";
                     using (NpgsqlCommand command = new NpgsqlCommand(queryupdate, connection))
                     {
-                        command.Parameters.AddWithValue("@DataA", nama);
-                        command.Parameters.AddWithValue("@DataB", deskripsi);
-                        command.Parameters.AddWithValue("@DataC", alamat);
-                        command.Parameters.AddWithValue("@DataD", nomtelp);
-                        command.Parameters.AddWithValue("@ID", ID);
+                        command.Parameters.AddWithValue("@DataA", data.Name);
+                        command.Parameters.AddWithValue("@DataB", data.Description);
+                        command.Parameters.AddWithValue("@DataC", data.Alamat);
+                        command.Parameters.AddWithValue("@DataD", data.No_Tlp);
+                        command.Parameters.AddWithValue("@ID", data.Id);
                         command.ExecuteNonQuery();
                     }
                 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            jdl_Header = new Label();
             Status_Database = new Label();
+            jdl_Header = new Label();
             textbox_Nama = new TextBox();
             label_namaPengunjung = new Label();
             label1 = new Label();
@@ -57,6 +57,15 @@
             panel1.Size = new Size(1336, 61);
             panel1.TabIndex = 0;
             // 
+            // Status_Database
+            // 
+            Status_Database.AutoSize = true;
+            Status_Database.Location = new Point(1178, 39);
+            Status_Database.Name = "Status_Database";
+            Status_Database.Size = new Size(153, 20);
+            Status_Database.TabIndex = 1;
+            Status_Database.Text = "peta_jember [normal]";
+            // 
             // jdl_Header
             // 
             jdl_Header.AutoSize = true;
@@ -66,15 +75,6 @@
             jdl_Header.Size = new Size(178, 25);
             jdl_Header.TabIndex = 0;
             jdl_Header.Text = "Data Pengunjung";
-            // 
-            // Status_Database
-            // 
-            Status_Database.AutoSize = true;
-            Status_Database.Location = new Point(1178, 39);
-            Status_Database.Name = "Status_Database";
-            Status_Database.Size = new Size(153, 20);
-            Status_Database.TabIndex = 1;
-            Status_Database.Text = "peta_jember [normal]";
             // 
             // textbox_Nama
             // 
@@ -155,6 +155,7 @@
             gridView_Data.RowTemplate.Height = 29;
             gridView_Data.Size = new Size(697, 557);
             gridView_Data.TabIndex = 9;
+            gridView_Data.CellContentClick += gridView_Data_CellContentClick;
             // 
             // button_Search
             // 
