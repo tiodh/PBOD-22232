@@ -124,5 +124,11 @@ namespace frontendpbo
         {
             openChildForm(new DetailInformasi(panelContent.Width));
         }
+
+        private void edit10_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CRUD_Data_Keselamatan());
+            
+        }
     }
 }

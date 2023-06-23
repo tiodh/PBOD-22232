@@ -48,6 +48,7 @@ namespace frontendpbo
             readKeselamatanContext = new ReadKeselamatanContext();
             readKeselamatanContext.Read();
             dataGridView1.DataSource = readKeselamatanContext.readKeselamatanList;
+            dataGridView1.Columns[0].Visible = false;
         }
 
         private void Edit_Keamanan_Click(object sender, EventArgs e)
@@ -66,7 +67,7 @@ namespace frontendpbo
                 data.Id = id_;
 
                 Keamanan = new ContextKeamanan();
-                Keamanan.edit(data.Name, data.Description, data.Alamat, data.No_Tlp , data.Id);
+                Keamanan.edit(data);
                 textBox_nama_lembaga_dataKeamanan.Text = "";
                 textBoxnoHp_dataKeamanan.Text = "";
                 textBoxalamat_dataKeamanan.Text = "";
@@ -110,6 +111,11 @@ namespace frontendpbo
         }
 
         private void textBox_nama_lembaga_dataKeamanan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

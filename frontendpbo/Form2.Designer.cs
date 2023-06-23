@@ -321,6 +321,7 @@
             edit10.Text = "Edit";
             edit10.TextAlign = ContentAlignment.MiddleLeft;
             edit10.UseVisualStyleBackColor = false;
+            edit10.Click += edit10_Click;
             // 
             // keamanan
             // 
