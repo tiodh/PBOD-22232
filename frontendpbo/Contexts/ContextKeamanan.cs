@@ -73,7 +73,7 @@ namespace frontendpbo.Contexts
         {
             List<Keamanan> searchResults = new List<Keamanan>();
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=garudart10rw02;Database=peta_jember";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
