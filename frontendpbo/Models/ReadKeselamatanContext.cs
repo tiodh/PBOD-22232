@@ -14,7 +14,7 @@ namespace frontendpbo.Models
         public bool Read()
         {
             bool isSuccess = false;
-            string constr = " Host=localhost;Port=5432;Database= peta_jember;Username=postgres;Password=123";
+            string constr = " Host=localhost;Port=5432;Database= peta_jember;Username=postgres;Password=garudart10rw02";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(constr))
             {
@@ -33,7 +33,7 @@ namespace frontendpbo.Models
                     {
                         readKeselamatan newRead = new readKeselamatan();
                         newRead.id = (int)Reader["id_keamanan"];
-                        newRead.nama = (string)Reader["nama_lembaga"];
+                        newRead.nama = (string)Reader["nama_keamanan"];
                         newRead.noTlp = (string)Reader["no_tlp"];
                         newRead.alamat = (string)Reader["alamat_keamanan"];
                         newRead.deskripsi = (string)Reader["deskripsi_keamanan"];

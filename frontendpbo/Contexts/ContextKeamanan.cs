@@ -16,7 +16,7 @@ namespace frontendpbo.Contexts
         public bool create(Keamanan newKeamanan)
         {
             bool isSucces = false;
-            using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=peta_jember;user id=postgres;password=123"))
+            using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=peta_jember;user id=postgres;password=garudart10rw02"))
             {
                 connection.Open();
                 NpgsqlCommand command = connection.CreateCommand();
@@ -43,7 +43,7 @@ namespace frontendpbo.Contexts
         public void edit(Keamanan data)
         {
             
-            using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 123"))
+            using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = garudart10rw02"))
             {
                 try
                 {
