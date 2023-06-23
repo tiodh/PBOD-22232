@@ -119,5 +119,10 @@ namespace frontendpbo
         {
 
         }
+
+        private void informasi_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetailInformasi(panelContent.Width));
+        }
     }
 }
