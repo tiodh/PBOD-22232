@@ -49,7 +49,7 @@ namespace frontendpbo
                 TextBox textBox3 = new TextBox();
 
 
-                panel1.Location = new Point(lebar / 6 + (550 * posisix), 30 + (360 * posisiy));
+                panel1.Location = new Point((lebar / 6) - 170 + (550 * posisix), 30 + (360 * posisiy));
                 panel1.Size = new Size(490, 300);
                 panel1.BackColor = Color.AntiqueWhite;
                 panel1.BackColor = Color.FromArgb(217, 217, 217);

@@ -43,26 +43,36 @@
             deksripsi_dataKeamanan = new Label();
             textBoxdeskripsi_dataKeamanan = new TextBox();
             pictureBox1 = new PictureBox();
+            panel1 = new Panel();
+            panel5 = new Panel();
+            panel2 = new Panel();
+            panel4 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
+            panel5.SuspendLayout();
+            panel2.SuspendLayout();
+            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = SystemColors.ButtonFace;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(773, 31);
+            dataGridView1.Dock = DockStyle.Top;
+            dataGridView1.Location = new Point(0, 0);
             dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(1119, 869);
+            dataGridView1.Size = new Size(650, 710);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // Clear_Keamanan
             // 
             Clear_Keamanan.BackColor = Color.Lime;
-            Clear_Keamanan.Location = new Point(1028, 940);
+            Clear_Keamanan.Location = new Point(0, 6);
             Clear_Keamanan.Margin = new Padding(4);
             Clear_Keamanan.Name = "Clear_Keamanan";
             Clear_Keamanan.Size = new Size(129, 63);
@@ -73,7 +83,7 @@
             // Tambah_Keselamatan
             // 
             Tambah_Keselamatan.BackColor = Color.LightSkyBlue;
-            Tambah_Keselamatan.Location = new Point(1292, 940);
+            Tambah_Keselamatan.Location = new Point(168, 6);
             Tambah_Keselamatan.Margin = new Padding(4);
             Tambah_Keselamatan.Name = "Tambah_Keselamatan";
             Tambah_Keselamatan.Size = new Size(129, 63);
@@ -85,7 +95,7 @@
             // Edit_Keamanan
             // 
             Edit_Keamanan.BackColor = Color.Gold;
-            Edit_Keamanan.Location = new Point(1530, 940);
+            Edit_Keamanan.Location = new Point(349, 6);
             Edit_Keamanan.Margin = new Padding(4);
             Edit_Keamanan.Name = "Edit_Keamanan";
             Edit_Keamanan.Size = new Size(129, 63);
@@ -97,7 +107,7 @@
             // Hapus_Keamanan
             // 
             Hapus_Keamanan.BackColor = Color.Red;
-            Hapus_Keamanan.Location = new Point(1764, 940);
+            Hapus_Keamanan.Location = new Point(521, 6);
             Hapus_Keamanan.Margin = new Padding(4);
             Hapus_Keamanan.Name = "Hapus_Keamanan";
             Hapus_Keamanan.Size = new Size(129, 63);
@@ -109,7 +119,7 @@
             // 
             nama_lembaga_dataKeamanan.AutoSize = true;
             nama_lembaga_dataKeamanan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            nama_lembaga_dataKeamanan.Location = new Point(68, 600);
+            nama_lembaga_dataKeamanan.Location = new Point(13, 566);
             nama_lembaga_dataKeamanan.Margin = new Padding(4, 0, 4, 0);
             nama_lembaga_dataKeamanan.Name = "nama_lembaga_dataKeamanan";
             nama_lembaga_dataKeamanan.Size = new Size(151, 25);
@@ -120,7 +130,7 @@
             // 
             textBox_nama_lembaga_dataKeamanan.BackColor = SystemColors.ButtonFace;
             textBox_nama_lembaga_dataKeamanan.BorderStyle = BorderStyle.FixedSingle;
-            textBox_nama_lembaga_dataKeamanan.Location = new Point(68, 632);
+            textBox_nama_lembaga_dataKeamanan.Location = new Point(13, 598);
             textBox_nama_lembaga_dataKeamanan.Name = "textBox_nama_lembaga_dataKeamanan";
             textBox_nama_lembaga_dataKeamanan.Size = new Size(501, 34);
             textBox_nama_lembaga_dataKeamanan.TabIndex = 3;
@@ -130,7 +140,7 @@
             // 
             noHp_dataKeamanan.AutoSize = true;
             noHp_dataKeamanan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            noHp_dataKeamanan.Location = new Point(68, 678);
+            noHp_dataKeamanan.Location = new Point(13, 644);
             noHp_dataKeamanan.Margin = new Padding(4, 0, 4, 0);
             noHp_dataKeamanan.Name = "noHp_dataKeamanan";
             noHp_dataKeamanan.Size = new Size(69, 25);
@@ -141,7 +151,7 @@
             // 
             textBoxnoHp_dataKeamanan.BackColor = SystemColors.ButtonFace;
             textBoxnoHp_dataKeamanan.BorderStyle = BorderStyle.FixedSingle;
-            textBoxnoHp_dataKeamanan.Location = new Point(68, 710);
+            textBoxnoHp_dataKeamanan.Location = new Point(13, 676);
             textBoxnoHp_dataKeamanan.Name = "textBoxnoHp_dataKeamanan";
             textBoxnoHp_dataKeamanan.Size = new Size(501, 34);
             textBoxnoHp_dataKeamanan.TabIndex = 3;
@@ -150,7 +160,7 @@
             // 
             Alamat_dataKeamanan.AutoSize = true;
             Alamat_dataKeamanan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Alamat_dataKeamanan.Location = new Point(68, 754);
+            Alamat_dataKeamanan.Location = new Point(13, 720);
             Alamat_dataKeamanan.Margin = new Padding(4, 0, 4, 0);
             Alamat_dataKeamanan.Name = "Alamat_dataKeamanan";
             Alamat_dataKeamanan.Size = new Size(73, 25);
@@ -161,7 +171,7 @@
             // 
             textBoxalamat_dataKeamanan.BackColor = SystemColors.ButtonFace;
             textBoxalamat_dataKeamanan.BorderStyle = BorderStyle.FixedSingle;
-            textBoxalamat_dataKeamanan.Location = new Point(68, 786);
+            textBoxalamat_dataKeamanan.Location = new Point(13, 752);
             textBoxalamat_dataKeamanan.Name = "textBoxalamat_dataKeamanan";
             textBoxalamat_dataKeamanan.Size = new Size(501, 34);
             textBoxalamat_dataKeamanan.TabIndex = 3;
@@ -170,7 +180,7 @@
             // 
             deksripsi_dataKeamanan.AutoSize = true;
             deksripsi_dataKeamanan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            deksripsi_dataKeamanan.Location = new Point(68, 835);
+            deksripsi_dataKeamanan.Location = new Point(13, 801);
             deksripsi_dataKeamanan.Margin = new Padding(4, 0, 4, 0);
             deksripsi_dataKeamanan.Name = "deksripsi_dataKeamanan";
             deksripsi_dataKeamanan.Size = new Size(92, 25);
@@ -181,7 +191,7 @@
             // 
             textBoxdeskripsi_dataKeamanan.BackColor = SystemColors.ButtonFace;
             textBoxdeskripsi_dataKeamanan.BorderStyle = BorderStyle.FixedSingle;
-            textBoxdeskripsi_dataKeamanan.Location = new Point(68, 867);
+            textBoxdeskripsi_dataKeamanan.Location = new Point(13, 833);
             textBoxdeskripsi_dataKeamanan.Name = "textBoxdeskripsi_dataKeamanan";
             textBoxdeskripsi_dataKeamanan.Size = new Size(501, 34);
             textBoxdeskripsi_dataKeamanan.TabIndex = 3;
@@ -189,12 +199,60 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(68, 31);
+            pictureBox1.Location = new Point(13, 15);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(640, 539);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(panel5);
+            panel1.Controls.Add(panel4);
+            panel1.Location = new Point(14, 32);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1316, 882);
+            panel1.TabIndex = 5;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(dataGridView1);
+            panel5.Controls.Add(panel2);
+            panel5.Dock = DockStyle.Left;
+            panel5.Location = new Point(666, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(650, 882);
+            panel5.TabIndex = 7;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(Tambah_Keselamatan);
+            panel2.Controls.Add(Clear_Keamanan);
+            panel2.Controls.Add(Edit_Keamanan);
+            panel2.Controls.Add(Hapus_Keamanan);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(0, 798);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(650, 84);
+            panel2.TabIndex = 5;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(pictureBox1);
+            panel4.Controls.Add(nama_lembaga_dataKeamanan);
+            panel4.Controls.Add(textBoxdeskripsi_dataKeamanan);
+            panel4.Controls.Add(textBoxnoHp_dataKeamanan);
+            panel4.Controls.Add(Alamat_dataKeamanan);
+            panel4.Controls.Add(deksripsi_dataKeamanan);
+            panel4.Controls.Add(noHp_dataKeamanan);
+            panel4.Controls.Add(textBox_nama_lembaga_dataKeamanan);
+            panel4.Controls.Add(textBoxalamat_dataKeamanan);
+            panel4.Dock = DockStyle.Left;
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(666, 882);
+            panel4.TabIndex = 6;
             // 
             // CRUD_Data_Keselamatan
             // 
@@ -202,20 +260,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             ClientSize = new Size(1924, 1024);
-            Controls.Add(pictureBox1);
-            Controls.Add(textBoxdeskripsi_dataKeamanan);
-            Controls.Add(deksripsi_dataKeamanan);
-            Controls.Add(textBoxalamat_dataKeamanan);
-            Controls.Add(Alamat_dataKeamanan);
-            Controls.Add(textBoxnoHp_dataKeamanan);
-            Controls.Add(noHp_dataKeamanan);
-            Controls.Add(textBox_nama_lembaga_dataKeamanan);
-            Controls.Add(nama_lembaga_dataKeamanan);
-            Controls.Add(Hapus_Keamanan);
-            Controls.Add(Edit_Keamanan);
-            Controls.Add(Tambah_Keselamatan);
-            Controls.Add(Clear_Keamanan);
-            Controls.Add(dataGridView1);
+            Controls.Add(panel1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
@@ -224,8 +269,12 @@
             Load += Data_Keselamatan_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -244,5 +293,9 @@
         private Label deksripsi_dataKeamanan;
         private TextBox textBoxdeskripsi_dataKeamanan;
         private PictureBox pictureBox1;
+        private Panel panel1;
+        private Panel panel5;
+        private Panel panel4;
+        private Panel panel2;
     }
 }
