@@ -95,9 +95,9 @@ namespace frontendpbo
             dGV_wisata.Columns.Clear();
 
             // Memeriksa apakah ada baris dalam DataTable
-            if (dataTable.Rows.Count >= 3)
+            if (dataTable.Rows.Count >= 4)
             {
-                DataRow firstRow = dataTable.Rows[2];
+                DataRow firstRow = dataTable.Rows[3];
                 string deskripsiSarana = firstRow["deskripsi_sarana"].ToString();
 
                 // Menambahkan baris pertama ke dalam DataGridView
