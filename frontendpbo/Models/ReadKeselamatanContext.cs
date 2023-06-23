@@ -14,7 +14,7 @@ namespace frontendpbo.Models
         public bool Read()
         {
             bool isSuccess = false;
-            string constr = " Host=localhost;Port=5432;Database= peta_jember;Username=postgres;Password=garudart10rw02";
+            string constr = " Host=localhost;Port=5432;Database= peta_jember;Username=postgres;Password=123";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(constr))
             {
