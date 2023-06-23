@@ -70,7 +70,7 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
             {
-                string sql = "UPDATE public.tiket SET id_sarana = :IdWisata, nama_sarana = :NamaSarana, deskripsi_sarana = :DeskripsiSarana \nWHERE Wisata_ID = :IDWisata;";
+                string sql = "UPDATE public.SaranaPrasarana SET id_sarana = :IdSarana, nama_sarana = :NamaSarana, deskripsi_sarana = :DeskripsiSarana \nWHERE Wisata_ID = :IDWisata;";
 
                 connection.Open();
 
