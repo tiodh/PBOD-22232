@@ -47,10 +47,9 @@ namespace frontendpbo.Contexts
                 using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
                 {
                     connection.Open();
-                    string strSql = "INSERT INTO Pengunjung (Id, Name, Asal, Wisata_ID) VALUES (@Id, @Name, @Asal, @Wisata_ID)";
+                    string strSql = "INSERT INTO Pengunjung (nama_pengunjung, asal_pengunjung, wisata_id) VALUES (@Name, @Asal, @Wisata_ID)";
                     using (NpgsqlCommand cmd = new NpgsqlCommand(strSql, connection))
                     {
-                        cmd.Parameters.AddWithValue("@Id", pengunjung.Id);
                         cmd.Parameters.AddWithValue("@Name", pengunjung.Name);
                         cmd.Parameters.AddWithValue("@Asal", pengunjung.Asal);
                         cmd.Parameters.AddWithValue("@Wisata_ID", pengunjung.Wisata_ID);
@@ -71,7 +70,7 @@ namespace frontendpbo.Contexts
                 using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
                 {
                     connection.Open();
-                    string strSql = "UPDATE Pengunjung SET Name = @Name, Asal = @Asal, Wisata_ID = @Wisata_ID WHERE Id = @Id";
+                    string strSql = "UPDATE Pengunjung SET nama_pengunjung = @Name, asal_pengunjung = @Asal, wisata_id = @Wisata_ID WHERE id_pengunjung = @Id";
                     using (NpgsqlCommand cmd = new NpgsqlCommand(strSql, connection))
                     {
                         cmd.Parameters.AddWithValue("@Id", pengunjung.Id);
@@ -97,7 +96,7 @@ namespace frontendpbo.Contexts
                 using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
                 {
                     connection.Open();
-                    string strSql = "SELECT * FROM Pengunjung WHERE Name ILIKE @Keyword OR Asal ILIKE @Keyword";
+                    string strSql = "SELECT * FROM Pengunjung WHERE nama_pengunjung ILIKE @Keyword OR asal_pengunjung ILIKE @Keyword";
                     using (NpgsqlCommand cmd = new NpgsqlCommand(strSql, connection))
                     {
                         cmd.Parameters.AddWithValue("@Keyword", "%" + keyword + "%");

@@ -107,7 +107,7 @@ namespace frontendpbo.Contexts
         {
             DataTable dataTable = new DataTable();
 
-            using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=Julpangmumet;user id=postgres;password=123"))
+            using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=peta_jember;user id=postgres;password=123"))
             {
                 connection.Open();
                 NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM sarana_prasarana", connection);

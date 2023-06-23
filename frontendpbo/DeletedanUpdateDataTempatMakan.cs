@@ -125,8 +125,8 @@ namespace frontendpbo
 
         private void HapusTempatMakanbutton4_Click(object sender, EventArgs e)
         {
-           
-          
+
+
         }
 
         private void ClearTempatMakanbutton1_Click(object sender, EventArgs e)
@@ -151,7 +151,7 @@ namespace frontendpbo
             LokasiTempatMakantextBox2.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             DeskripsiTempatMakantextBox3.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             NoTeleponTempatMakantextBox4.Text = CRUDTempatMakandataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-        } 
+        }
 
         private void EditTempatMakanbutton3_Click(object sender, EventArgs e)
         {
@@ -175,7 +175,7 @@ namespace frontendpbo
 
         private void HapusTempatMakanbutton4_Click_1(object sender, EventArgs e)
         {
-           
+
         }
 
         private void ClearTempatMakanbutton1_Click_1(object sender, EventArgs e)
@@ -187,6 +187,6 @@ namespace frontendpbo
         }
     }
 
-    
+
 
 }
