@@ -338,6 +338,7 @@
             keamanan.Text = "Keamanan dan Keselamatan";
             keamanan.TextAlign = ContentAlignment.MiddleLeft;
             keamanan.UseVisualStyleBackColor = false;
+            keamanan.Click += keamanan_Click_1;
             // 
             // edit9
             // 

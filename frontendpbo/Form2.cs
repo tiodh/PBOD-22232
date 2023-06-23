@@ -128,7 +128,12 @@ namespace frontendpbo
         private void edit10_Click(object sender, EventArgs e)
         {
             openChildForm(new CRUD_Data_Keselamatan());
-            
+
+        }
+
+        private void keamanan_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new detail_dataKeselamatan());
         }
     }
 }
