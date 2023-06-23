@@ -18,8 +18,7 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
             {
-                string query = "SELECT id_transportasi, nama_transportasi, jenis_kendaraan, deskripsi_transportasi " +
-                                "FROM transportasi";
+                string query = "SELECT id_transportasi, nama_transportasi, jenis_kendaraan, deskripsi_transportasi FROM transportasi";
 
                 connection.Open();
 
@@ -34,7 +33,6 @@ namespace frontendpbo.Contexts
                             transportasi.Nama_transportasi = reader["nama_transportasi"].ToString();
                             transportasi.Jenis_transportasi = reader["jenis_kendaraan"].ToString();
                             transportasi.Deskripsi_transportasi = reader["deskripsi_transportasi"].ToString();
-                            
                             transportasiList.Add(transportasi);
                         }
                     }

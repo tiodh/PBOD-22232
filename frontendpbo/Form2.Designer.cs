@@ -205,7 +205,6 @@
             button4.Text = "Data Riwayat Kunjungan";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -458,7 +457,6 @@
             editEvent.Text = "Edit";
             editEvent.TextAlign = ContentAlignment.MiddleLeft;
             editEvent.UseVisualStyleBackColor = false;
-            editEvent.Click += editEvent_Click;
             // 
             // acara
             // 
@@ -493,7 +491,6 @@
             editSarana.Text = "Edit";
             editSarana.TextAlign = ContentAlignment.MiddleLeft;
             editSarana.UseVisualStyleBackColor = false;
-            editSarana.Click += editSarana_Click;
             // 
             // saranaPrasarana
             // 
@@ -528,7 +525,6 @@
             editTempatMakan.Text = "Edit";
             editTempatMakan.TextAlign = ContentAlignment.MiddleLeft;
             editTempatMakan.UseVisualStyleBackColor = false;
-            editTempatMakan.Click += editTempatMakan_Click;
             // 
             // tempatMakan
             // 
@@ -563,7 +559,6 @@
             edit3.Text = "Edit";
             edit3.TextAlign = ContentAlignment.MiddleLeft;
             edit3.UseVisualStyleBackColor = false;
-            edit3.Click += ediTransportasi_Click;
             // 
             // transportasi
             // 
@@ -598,7 +593,6 @@
             edit2.Text = "Edit";
             edit2.TextAlign = ContentAlignment.MiddleLeft;
             edit2.UseVisualStyleBackColor = false;
-            edit2.Click += editPenginapan_Click;
             // 
             // penginapan
             // 
@@ -633,7 +627,6 @@
             edit1.Text = "Edit";
             edit1.TextAlign = ContentAlignment.MiddleLeft;
             edit1.UseVisualStyleBackColor = false;
-            edit1.Click += editWisata_Click;
             // 
             // wisata
             // 

@@ -15,13 +15,25 @@ namespace frontendpbo
 {
     public partial class Form2 : Form
     {
+
+        private Form activeForm = null;
         public Form2()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            panel1.Visible = false;
+            edit1.Visible = false;
+            edit2.Visible = false;  
+            edit3.Visible = false;
+            editTempatMakan.Visible = false;
+            editSarana.Visible = false;
+            editEvent.Visible = false;
+            edit7.Visible = false;
+            edit8.Visible = false;
+            edit9.Visible = false;
+            edit10.Visible = false;
+            edit11.Visible = false;
         }
-
-        private Form activeForm = null;
 
         private void openChildForm(Form childForm)
         {
@@ -34,11 +46,6 @@ namespace frontendpbo
             panelContent.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void wisata_Click(object sender, EventArgs e)
@@ -166,7 +173,7 @@ namespace frontendpbo
         private void tempatMakan_Click(object sender, EventArgs e)
         {
             openChildForm(new DetaildanReadDataTempatMakan());
-            showSubMenu(edit4);
+            showSubMenu(editTempatMakan);
 
         }
 
@@ -178,7 +185,7 @@ namespace frontendpbo
         private void saranaPrasarana_Click(object sender, EventArgs e)
         {
             openChildForm(new DetailSarpras());
-            showSubMenu(edit5);
+            showSubMenu(editSarana);
         }
 
         private void edit5_Click(object sender, EventArgs e)
@@ -189,7 +196,7 @@ namespace frontendpbo
         private void acara_Click(object sender, EventArgs e)
         {
             openChildForm(new DetailEvent());
-            showSubMenu(edit6);
+            showSubMenu(editEvent);
         }
 
         private void edit6_Click(object sender, EventArgs e)
