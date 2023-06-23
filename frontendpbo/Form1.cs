@@ -12,7 +12,7 @@ namespace frontendpbo
         public Form1()
         {
             InitializeComponent();
-            mainside.Visible = true;
+            mainside.Visible = false;
         }
 
 

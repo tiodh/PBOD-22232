@@ -14,66 +14,12 @@ namespace frontendpbo
 {
     public partial class Form2 : Form
     {
+
+        private Form activeForm = null;
         public Form2()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-        }
-
-        private Form activeForm = null;
-
-        private void openChildForm(Form childForm)
-        {
-            if (activeForm != null) activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelContent.Controls.Add(childForm);
-            panelContent.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void wisata_Click(object sender, EventArgs e)
-        {
-            openChildForm(new DetailWisata());
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            pictureBox1.Location = new System.Drawing.Point(25, (panel3.Height - pictureBox1.Height) / 2);
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            openChildForm(new DataPengguna());
-        }
-
-        private void edit9_Click(object sender, EventArgs e)
-        {
-            openChildForm(new EditTiketing());
-        }
-
-        private void panelContent_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -93,6 +39,121 @@ namespace frontendpbo
             panel3.Region = new Region(path);
         }
 
+
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null) activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelContent.Controls.Add(childForm);
+            panelContent.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new System.Drawing.Point(25, (panel3.Height - pictureBox1.Height) / 2);
+
+        }
+
+
+
+        //FITURR
+
+        private void wisata_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetailWisata());
+        }
+
+        private void editWisata_Click(object sender, EventArgs e)
+        {
+            openChildForm(new wisata());
+        }
+
+        private void penginapan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editPenginapan_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void transportasi_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DetailTransportasi());
+        }
+
+        private void ediTransportasi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tempatMakan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editTempatMakan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saranaPrasarana_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editSarana_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void acara_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editEvent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DataPengguna());
+        }
+
+        private void edit9_Click(object sender, EventArgs e)
+        {
+            openChildForm(new EditTiketing());
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
         private void dashboard_Click(object sender, EventArgs e)
         {
             Form1 form = new Form1();
@@ -103,21 +164,6 @@ namespace frontendpbo
         {
             LoginAdmin form = new LoginAdmin();
             form.ShowDialog();
-        }
-
-        private void edit1_Click(object sender, EventArgs e)
-        {
-            openChildForm(new wisata());
-        }
-
-        private void transportasi_Click(object sender, EventArgs e)
-        {
-            openChildForm(new DetailTransportasi());
-        }
-
-        private void keamanan_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void informasi_Click(object sender, EventArgs e)
@@ -132,6 +178,11 @@ namespace frontendpbo
         }
 
         private void keamanan_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new detail_dataKeselamatan());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
         {
             openChildForm(new detail_dataKeselamatan());
         }
