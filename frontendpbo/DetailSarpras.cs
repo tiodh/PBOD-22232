@@ -76,11 +76,11 @@ namespace frontendpbo
             DataTable dataTable = contextSarana.ReadAll();
 
             // Menghapus semua kolom dan baris yang ada pada DataGridView
-            dGV_kolam.Rows.Clear();
-            dGV_kolam.Columns.Clear();
+            dGV_camp.Rows.Clear();
+            dGV_camp.Columns.Clear();
 
             // Menambahkan kolom-kolom yang ingin ditampilkan
-            dGV_kolam.Columns.Add("deskripsi_sarana", "Deskripsi Sarana");
+            dGV_camp.Columns.Add("deskripsi_sarana", "Deskripsi Sarana");
 
             // Memeriksa apakah ada baris dalam DataTable
             if (dataTable.Rows.Count >= 3)
@@ -89,7 +89,7 @@ namespace frontendpbo
                 string deskripsiSarana = firstRow["deskripsi_sarana"].ToString();
 
                 // Menambahkan baris pertama ke dalam DataGridView
-                dGV_kolam.Rows.Add(deskripsiSarana);
+                dGV_camp.Rows.Add(deskripsiSarana);
             }
 
         }
@@ -100,11 +100,11 @@ namespace frontendpbo
             DataTable dataTable = contextSarana.ReadAll();
 
             // Menghapus semua kolom dan baris yang ada pada DataGridView
-            dGV_kolam.Rows.Clear();
-            dGV_kolam.Columns.Clear();
+            dGV_wisata.Rows.Clear();
+            dGV_wisata.Columns.Clear();
 
             // Menambahkan kolom-kolom yang ingin ditampilkan
-            dGV_kolam.Columns.Add("deskripsi_sarana", "Deskripsi Sarana");
+            dGV_wisata.Columns.Add("deskripsi_sarana", "Deskripsi Sarana");
 
             // Memeriksa apakah ada baris dalam DataTable
             if (dataTable.Rows.Count >= 3)
@@ -113,7 +113,7 @@ namespace frontendpbo
                 string deskripsiSarana = firstRow["deskripsi_sarana"].ToString();
 
                 // Menambahkan baris pertama ke dalam DataGridView
-                dGV_kolam.Rows.Add(deskripsiSarana);
+                dGV_wisata.Rows.Add(deskripsiSarana);
             }
 
         }
