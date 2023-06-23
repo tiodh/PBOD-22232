@@ -1,4 +1,6 @@
-﻿using System;
+﻿using frontendpbo.Contexts;
+using frontendpbo.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,14 @@ namespace frontendpbo
 {
     public partial class Form3 : Form
     {
+        ContextAdmin contextAdmin;
+        Pengguna pengguna = new Pengguna();
+
         public Form3()
         {
             InitializeComponent();
+            contextAdmin = new ContextAdmin();
+
             this.WindowState = FormWindowState.Maximized;
             Rectangle bounds = Screen.PrimaryScreen.Bounds;
             this.Size = new System.Drawing.Size(bounds.Width, bounds.Height);
@@ -37,6 +44,7 @@ namespace frontendpbo
             panel3.Location = new System.Drawing.Point(587 - ((1920 - bounds.Width) / 2), 224 - ((1080 - bounds.Height) / 2));
 
         }
+
 
 
         private void Form3_Load(object sender, EventArgs e)
@@ -79,6 +87,11 @@ namespace frontendpbo
             {
                 label1.Visible = true;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace frontendpbo.Models
 {
-    internal class RiwayatKunjungan
+    public class RiwayatKunjungan
     {
         public int IdKunjungan { get; set; }
         public DateTime Tanggal_Kunjungan { get; set; }

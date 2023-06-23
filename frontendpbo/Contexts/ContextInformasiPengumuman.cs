@@ -12,13 +12,13 @@ namespace frontendpbo.Contexts
     {
         public List<Pengumuman> ListInformasiPengumuman = new List<Pengumuman>() { };
 
-        public void Read()
+        public void Read(int id_w)
         {
             string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
-                string sql = "SELECT * FROM informasi_pengumuman";
+                string sql = $"SELECT * FROM informasi_pengumuman where status = '1' and wisata_id = {id_w}";
 
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
@@ -30,11 +30,9 @@ namespace frontendpbo.Contexts
                     while (reader.Read())
                     {
                         Pengumuman pengumuman = new Pengumuman();
-                        pengumuman.Id = (int)reader["id_wisata"];
                         pengumuman.Name = (string)reader["nama_informasi"];
                         pengumuman.Description = (string)reader["deskripsi_informasi"];
                         pengumuman.Tanggal_Informasi = (DateTime)reader["tanggal_informasi"];
-                        //pengumuman.Id = (int)reader["wisata_id"];
                         ListInformasiPengumuman.Add(pengumuman);
                     }
                 }

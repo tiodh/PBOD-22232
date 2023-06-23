@@ -40,6 +40,9 @@
     <Compile Update="DetailEvent.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DetailInformasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DetailRiwayatKunjungan.cs">
       <SubType>Form</SubType>
     </Compile>
