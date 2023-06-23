@@ -35,18 +35,7 @@ namespace frontendpbo
         }
 
 
-        private void SetDataGrid()
-        {
-            TampilData.Columns["ID"].HeaderText = "Id_Transportasi";
-            TampilData.Columns["Nama Transportasi"].HeaderText = "Nama Transportasi";
-            TampilData.Columns["jenis_transportasi"].HeaderText = "jenis_transportasi";
-            TampilData.Columns["deskripsi_transportasi"].HeaderText = "deskripsi_transportasi";
 
-            TampilData.Columns["ID"].DataPropertyName = "Id_transportasi";
-            TampilData.Columns["Nama Transportasi"].DataPropertyName = "Nama_transportasi";
-            TampilData.Columns["Jenis Transportasi"].DataPropertyName = "Jenis_transportasi";
-            TampilData.Columns["Deskripsi Transportasi"].DataPropertyName = "Deskripsi_transportasi";
-        }
 
         private void ReadDataTransportasi()
         {
@@ -55,7 +44,7 @@ namespace frontendpbo
             contextTransportasi.Read();
             TampilData.DataSource = contextTransportasi.TransportasiList;
 
-            SetDataGrid();
+
         }
 
         private Models.Transportasi GetData()

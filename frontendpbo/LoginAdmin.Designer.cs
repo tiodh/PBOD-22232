@@ -136,6 +136,7 @@
             Controls.Add(panel1);
             Name = "LoginAdmin";
             Text = "LoginAdmin";
+            WindowState = FormWindowState.Maximized;
             Load += LoginAdmin_Load;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();

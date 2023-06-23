@@ -98,7 +98,7 @@
             // 
             Login.BackColor = Color.Transparent;
             Login.Dock = DockStyle.Right;
-            Login.Font = new Font("Perpetua", 17F, FontStyle.Bold, GraphicsUnit.Point);
+            Login.Font = new Font("Microsoft Sans Serif", 17F, FontStyle.Bold, GraphicsUnit.Point);
             Login.ImageAlign = ContentAlignment.MiddleRight;
             Login.Location = new Point(1246, 0);
             Login.Name = "Login";
@@ -112,7 +112,7 @@
             // 
             pictureBox1.BackColor = Color.FromArgb(111, 106, 248);
             pictureBox1.Image = Properties.Resources.Dashboard;
-            pictureBox1.Location = new Point(261, 15);
+            pictureBox1.Location = new Point(45, 15);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(287, 45);
             pictureBox1.TabIndex = 1;

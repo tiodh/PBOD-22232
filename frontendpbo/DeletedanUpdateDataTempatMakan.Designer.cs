@@ -140,6 +140,7 @@
             // 
             // CRUDTempatMakandataGridView1
             // 
+            CRUDTempatMakandataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             CRUDTempatMakandataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             CRUDTempatMakandataGridView1.Location = new Point(599, 29);
             CRUDTempatMakandataGridView1.Name = "CRUDTempatMakandataGridView1";
