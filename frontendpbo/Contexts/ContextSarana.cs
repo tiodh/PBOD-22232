@@ -46,7 +46,7 @@ namespace frontendpbo.Contexts
         public bool create(SaranaPrasarana newSarana)
         {
             bool isSuccess = false;
-            using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=123;Database=Julpangmumet"))
+            using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember"))
             {
                 connection.Open();
                 NpgsqlCommand command = connection.CreateCommand();
@@ -106,7 +106,7 @@ namespace frontendpbo.Contexts
         public DataTable ReadAll()
         {
             DataTable dataTable = new DataTable();
-            using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=123;Database=Julpangmumet"))
+            using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember"))
             {
                 connection.Open();
                 NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM sarana_prasarana", connection);
