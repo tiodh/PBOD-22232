@@ -23,12 +23,13 @@ namespace frontendpbo.Contexts
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql =
-                    "INSERT INTO penginapan(nama_penginapan, deskripsi_penginapan) values (:nama_penginapan,:deskripsi_penginapan)";
+                    "INSERT INTO penginapan(nama_penginapan, deskripsi_penginapan,wisata_id) values (:nama_penginapan,:deskripsi_penginapan,:wisata_id)";
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
                 {
                     cmd.Parameters.Add(new NpgsqlParameter(":nama_penginapan", penginapan.Name));
                     cmd.Parameters.Add(new NpgsqlParameter(":deskripsi_penginapan", penginapan.Description));
+                    cmd.Parameters.Add(new NpgsqlParameter(":wisata_id", penginapan.Wisata_ID));
 
                     cmd.CommandType = System.Data.CommandType.Text;
                     int jmlDataBaru = cmd.ExecuteNonQuery();
@@ -69,15 +70,15 @@ namespace frontendpbo.Contexts
                         listPenginapan.Add(penginapan);
                     }
                 }
-                return isSuccess;
             }
+            return isSuccess;
 
         }
         public bool Update(Penginapan penginapan)
         {
             bool isSuccess = false;
 
-            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=dewi2493;Database=peta_jember;";
+            string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql = "UPDATE SET id_penginapan = :id_penginapan, nama_penginapan = :nama_penginapan,deskripsi_penginapan = :deskripsi_penginapan where id_wisata = :id_wisata";
