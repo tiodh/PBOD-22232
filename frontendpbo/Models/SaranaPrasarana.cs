@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace frontendpbo.Models
 {
-    internal class SaranaPrasarana
+    public class SaranaPrasarana
     {
         public int id_sarana { get; set; }
         public string nama_sarana { get; set; }
