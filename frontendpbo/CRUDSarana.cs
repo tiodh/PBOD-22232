@@ -34,7 +34,7 @@ namespace frontendpbo
         }
         private void LoadData()
         {
-            using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = peta_jember; Username = postgres; Password = 123"))
+            using (NpgsqlConnection connection = new NpgsqlConnection("Host = localhost; Port = 5432; Database = Julpangmumet; Username = postgres; Password = 123"))
             {
                 try
                 {

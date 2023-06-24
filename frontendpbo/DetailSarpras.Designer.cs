@@ -149,6 +149,8 @@
             // 
             // dGV_Hotel
             // 
+            dGV_Hotel.AllowUserToAddRows = false;
+            dGV_Hotel.AllowUserToDeleteRows = false;
             dGV_Hotel.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dGV_Hotel.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dGV_Hotel.BackgroundColor = Color.DarkGray;
@@ -173,6 +175,7 @@
             dGV_Hotel.DefaultCellStyle = dataGridViewCellStyle2;
             dGV_Hotel.Location = new Point(360, 123);
             dGV_Hotel.Name = "dGV_Hotel";
+            dGV_Hotel.ReadOnly = true;
             dGV_Hotel.RowHeadersVisible = false;
             dGV_Hotel.RowHeadersWidth = 51;
             dGV_Hotel.RowTemplate.Height = 29;
@@ -204,6 +207,8 @@
             // 
             // dGV_kolam
             // 
+            dGV_kolam.AllowUserToAddRows = false;
+            dGV_kolam.AllowUserToDeleteRows = false;
             dGV_kolam.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dGV_kolam.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dGV_kolam.BackgroundColor = Color.DarkGray;
@@ -228,6 +233,7 @@
             dGV_kolam.DefaultCellStyle = dataGridViewCellStyle4;
             dGV_kolam.Location = new Point(360, 123);
             dGV_kolam.Name = "dGV_kolam";
+            dGV_kolam.ReadOnly = true;
             dGV_kolam.RowHeadersVisible = false;
             dGV_kolam.RowHeadersWidth = 51;
             dGV_kolam.RowTemplate.Height = 29;
@@ -291,6 +297,8 @@
             // 
             // dGV_camp
             // 
+            dGV_camp.AllowUserToAddRows = false;
+            dGV_camp.AllowUserToDeleteRows = false;
             dGV_camp.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dGV_camp.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dGV_camp.BackgroundColor = Color.DarkGray;
@@ -315,6 +323,7 @@
             dGV_camp.DefaultCellStyle = dataGridViewCellStyle6;
             dGV_camp.Location = new Point(360, 123);
             dGV_camp.Name = "dGV_camp";
+            dGV_camp.ReadOnly = true;
             dGV_camp.RowHeadersVisible = false;
             dGV_camp.RowHeadersWidth = 51;
             dGV_camp.RowTemplate.Height = 29;
@@ -378,6 +387,8 @@
             // 
             // dGV_wisata
             // 
+            dGV_wisata.AllowUserToAddRows = false;
+            dGV_wisata.AllowUserToDeleteRows = false;
             dGV_wisata.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dGV_wisata.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dGV_wisata.BackgroundColor = Color.DarkGray;
@@ -402,6 +413,7 @@
             dGV_wisata.DefaultCellStyle = dataGridViewCellStyle8;
             dGV_wisata.Location = new Point(360, 123);
             dGV_wisata.Name = "dGV_wisata";
+            dGV_wisata.ReadOnly = true;
             dGV_wisata.RowHeadersVisible = false;
             dGV_wisata.RowHeadersWidth = 51;
             dGV_wisata.RowTemplate.Height = 29;
