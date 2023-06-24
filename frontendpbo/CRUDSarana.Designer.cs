@@ -53,9 +53,9 @@
             labelNama.AutoSize = true;
             labelNama.Location = new Point(60, 199);
             labelNama.Name = "labelNama";
-            labelNama.Size = new Size(98, 20);
+            labelNama.Size = new Size(95, 20);
             labelNama.TabIndex = 0;
-            labelNama.Text = "Nama Sarana";
+            labelNama.Text = "Nama Sektor";
             labelNama.Click += labelNama_Click;
             // 
             // labelDeskripsi
