@@ -38,6 +38,8 @@
             Editbutton3 = new Button();
             Deletebutton4 = new Button();
             txt_search = new TextBox();
+            label1 = new Label();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)DataPenginapandataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -55,7 +57,7 @@
             // 
             DeskripsiPenginapan.AutoSize = true;
             DeskripsiPenginapan.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            DeskripsiPenginapan.Location = new Point(65, 237);
+            DeskripsiPenginapan.Location = new Point(65, 168);
             DeskripsiPenginapan.Name = "DeskripsiPenginapan";
             DeskripsiPenginapan.Size = new Size(202, 25);
             DeskripsiPenginapan.TabIndex = 2;
@@ -63,7 +65,7 @@
             // 
             // NamaPenginapantextBox1
             // 
-            NamaPenginapantextBox1.Location = new Point(65, 149);
+            NamaPenginapantextBox1.Location = new Point(65, 112);
             NamaPenginapantextBox1.Name = "NamaPenginapantextBox1";
             NamaPenginapantextBox1.Size = new Size(404, 27);
             NamaPenginapantextBox1.TabIndex = 3;
@@ -71,7 +73,7 @@
             // 
             // DeskripsiPenginapantextBox2
             // 
-            DeskripsiPenginapantextBox2.Location = new Point(65, 313);
+            DeskripsiPenginapantextBox2.Location = new Point(65, 208);
             DeskripsiPenginapantextBox2.Multiline = true;
             DeskripsiPenginapantextBox2.Name = "DeskripsiPenginapantextBox2";
             DeskripsiPenginapantextBox2.Size = new Size(404, 288);
@@ -142,11 +144,31 @@
             txt_search.TabIndex = 10;
             txt_search.TextChanged += txt_search_TextChanged;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(65, 536);
+            label1.Name = "label1";
+            label1.Size = new Size(73, 25);
+            label1.TabIndex = 11;
+            label1.Text = "Wisata";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(65, 564);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(404, 28);
+            comboBox1.TabIndex = 12;
+            // 
             // CRUDDataPenginapan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1422, 977);
+            Controls.Add(comboBox1);
+            Controls.Add(label1);
             Controls.Add(txt_search);
             Controls.Add(Deletebutton4);
             Controls.Add(Editbutton3);
@@ -178,5 +200,7 @@
         private Button Editbutton3;
         private Button Deletebutton4;
         private TextBox txt_search;
+        private Label label1;
+        private ComboBox comboBox1;
     }
 }
