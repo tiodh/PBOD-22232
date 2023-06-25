@@ -46,28 +46,18 @@ namespace frontendpbo
             {
                 string nama = textbox_Nama.Text;
                 string asal = textbox_asal.Text;
-                int idWisata;
-                if (int.TryParse(textbox_idWisata.Text, out idWisata))
+                Pengunjung pengunjung = new Pengunjung
                 {
-                    // Membuat objek Pengunjung berdasarkan data yang diinputkan
-                    Pengunjung pengunjung = new Pengunjung
-                    {
-                        Id = idPengunjung,
-                        Name = nama,
-                        Asal = asal,
-                        Wisata_ID = idWisata
-                    };
+                    Id = idPengunjung,
+                    Name = nama,
+                    Asal = asal
+                };
 
-                    // Melakukan update data pengunjung
-                    context.Update(pengunjung);
+                // Melakukan update data pengunjung
+                context.Update(pengunjung);
 
-                    // Memuat ulang data setelah update
-                    LoadData();
-                }
-                else
-                {
-                    MessageBox.Show("ID Wisata harus berupa angka.", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                // Memuat ulang data setelah update
+                LoadData();
             }
             else
             {
@@ -78,28 +68,18 @@ namespace frontendpbo
         private void button_Create_Click(object sender, EventArgs e)
         {
             string nama = textbox_Nama.Text;
-            string asal = textbox_asal.Text;
-            int idWisata;
-            if (int.TryParse(textbox_idWisata.Text, out idWisata))
-            {
-                // Membuat objek Pengunjung berdasarkan data yang diinputkan
-                Pengunjung pengunjung = new Pengunjung
+            string asal = textbox_asal.Text;           
+            Pengunjung pengunjung = new Pengunjung
                 {
                     Name = nama,
-                    Asal = asal,
-                    Wisata_ID = idWisata
+                    Asal = asal
                 };
 
                 // Melakukan penambahan data pengunjung
-                context.Create(pengunjung);
+            context.Create(pengunjung);
 
                 // Memuat ulang data setelah penambahan
-                LoadData();
-            }
-            else
-            {
-                MessageBox.Show("ID Wisata harus berupa angka.", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            LoadData();
         }
 
         private void button_Search_MouseDown(object sender, MouseEventArgs e)

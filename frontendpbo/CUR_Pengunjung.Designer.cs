@@ -35,8 +35,6 @@
             label_namaPengunjung = new Label();
             label1 = new Label();
             textbox_asal = new TextBox();
-            label_idWisata = new Label();
-            textbox_idWisata = new TextBox();
             id_pengunjung = new Label();
             textbox_idPengunjung = new TextBox();
             gridView_Data = new DataGridView();
@@ -60,7 +58,7 @@
             // Status_Database
             // 
             Status_Database.AutoSize = true;
-            Status_Database.Location = new Point(1178, 39);
+            Status_Database.Location = new Point(1155, 39);
             Status_Database.Name = "Status_Database";
             Status_Database.Size = new Size(153, 20);
             Status_Database.TabIndex = 1;
@@ -110,28 +108,11 @@
             textbox_asal.Size = new Size(471, 27);
             textbox_asal.TabIndex = 3;
             // 
-            // label_idWisata
-            // 
-            label_idWisata.AutoSize = true;
-            label_idWisata.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label_idWisata.Location = new Point(21, 311);
-            label_idWisata.Name = "label_idWisata";
-            label_idWisata.Size = new Size(83, 20);
-            label_idWisata.TabIndex = 6;
-            label_idWisata.Text = "ID Wisata";
-            // 
-            // textbox_idWisata
-            // 
-            textbox_idWisata.Location = new Point(21, 334);
-            textbox_idWisata.Name = "textbox_idWisata";
-            textbox_idWisata.Size = new Size(471, 27);
-            textbox_idWisata.TabIndex = 5;
-            // 
             // id_pengunjung
             // 
             id_pengunjung.AutoSize = true;
             id_pengunjung.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            id_pengunjung.Location = new Point(26, 416);
+            id_pengunjung.Location = new Point(26, 324);
             id_pengunjung.Name = "id_pengunjung";
             id_pengunjung.Size = new Size(118, 20);
             id_pengunjung.TabIndex = 8;
@@ -139,7 +120,7 @@
             // 
             // textbox_idPengunjung
             // 
-            textbox_idPengunjung.Location = new Point(21, 439);
+            textbox_idPengunjung.Location = new Point(21, 347);
             textbox_idPengunjung.Name = "textbox_idPengunjung";
             textbox_idPengunjung.Size = new Size(471, 27);
             textbox_idPengunjung.TabIndex = 7;
@@ -153,13 +134,13 @@
             gridView_Data.Name = "gridView_Data";
             gridView_Data.RowHeadersWidth = 51;
             gridView_Data.RowTemplate.Height = 29;
-            gridView_Data.Size = new Size(697, 557);
+            gridView_Data.Size = new Size(677, 501);
             gridView_Data.TabIndex = 9;
             gridView_Data.CellContentClick += gridView_Data_CellContentClick;
             // 
             // button_Search
             // 
-            button_Search.Location = new Point(26, 539);
+            button_Search.Location = new Point(22, 447);
             button_Search.Name = "button_Search";
             button_Search.Size = new Size(94, 29);
             button_Search.TabIndex = 10;
@@ -169,7 +150,7 @@
             // 
             // button_Update
             // 
-            button_Update.Location = new Point(203, 539);
+            button_Update.Location = new Point(199, 447);
             button_Update.Name = "button_Update";
             button_Update.Size = new Size(94, 29);
             button_Update.TabIndex = 11;
@@ -179,7 +160,7 @@
             // 
             // button_Create
             // 
-            button_Create.Location = new Point(398, 539);
+            button_Create.Location = new Point(394, 447);
             button_Create.Name = "button_Create";
             button_Create.Size = new Size(94, 29);
             button_Create.TabIndex = 12;
@@ -198,15 +179,12 @@
             Controls.Add(gridView_Data);
             Controls.Add(id_pengunjung);
             Controls.Add(textbox_idPengunjung);
-            Controls.Add(label_idWisata);
-            Controls.Add(textbox_idWisata);
             Controls.Add(label1);
             Controls.Add(textbox_asal);
             Controls.Add(label_namaPengunjung);
             Controls.Add(textbox_Nama);
             Controls.Add(panel1);
             Name = "CUR_Pengunjung";
-            Load += CUR_Pengunjung_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)gridView_Data).EndInit();
@@ -223,8 +201,6 @@
         private Label label_namaPengunjung;
         private Label label1;
         private TextBox textbox_asal;
-        private Label label_idWisata;
-        private TextBox textbox_idWisata;
         private Label id_pengunjung;
         private TextBox textbox_idPengunjung;
         private DataGridView gridView_Data;
