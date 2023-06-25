@@ -93,7 +93,7 @@ namespace frontendpbo
             if (loginSuccess)
             {
 
-                Form2 form2 = new Form2();
+                Form2 form2 = new Form2("Admin");
                 form2.ShowDialog();
                 this.Close();
             }

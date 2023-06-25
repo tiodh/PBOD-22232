@@ -118,7 +118,7 @@ namespace frontendpbo
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
+            Form2 form = new Form2("user");
             form.ShowDialog();
         }
 
@@ -146,7 +146,7 @@ namespace frontendpbo
 
         private void panel1_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
+            Form2 form = new Form2("user");
             form.Show();
         }
 

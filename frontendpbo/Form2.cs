@@ -15,12 +15,39 @@ namespace frontendpbo
 {
     public partial class Form2 : Form
     {
-
+        private string pengguna;
         private Form activeForm = null;
-        public Form2()
+        public Form2(string pngna)
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            if (pngna != "user" )
+            {
+                Button logout = new Button();
+                logout.Text = "Log Out";
+                logout.Font = new Font("Roboto", 12);
+                logout.BringToFront();
+                logout.Dock = DockStyle.Right;
+                logout.FlatStyle = FlatStyle.Flat;
+                logout.FlatAppearance.BorderSize = 0;
+                logout.Click += (sender, e) =>
+                {
+                    pengguna = "user";
+                    logout.Visible = false;
+                    button2.Visible = false;
+                    button3.Visible = false;
+                    button4.Visible = false;
+                    panel1.Visible = false;
+                };
+                panel3.Controls.Add(logout);
+            }
+            else
+            {
+                button2.Visible = false;
+                button3.Visible = false;
+                button4.Visible = false;
+            }
+            pengguna = pngna;
             panel1.Visible = false;
             edit1.Visible = false;
             edit2.Visible = false;
@@ -33,6 +60,8 @@ namespace frontendpbo
             edit9.Visible = false;
             edit10.Visible = false;
             edit11.Visible = false;
+            MinimizeBox = false;
+            MaximizeBox = false;
         }
 
         private void openChildForm(Form childForm)
@@ -62,7 +91,7 @@ namespace frontendpbo
 
         private void showSubMenu(Button subMenu)
         {
-            if (subMenu.Visible == false)
+            if (subMenu.Visible == false && pengguna != "user")
             {
                 subMenu.Visible = true;
             }
@@ -118,8 +147,9 @@ namespace frontendpbo
 
         private void dashboard_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.Show();
+            this.Close();
+            //Form1 form = new Form1();
+            //form.Show();
         }
 
         private void Login_Click(object sender, EventArgs e)
