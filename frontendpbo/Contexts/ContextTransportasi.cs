@@ -18,7 +18,7 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
             {
-                string query = "SELECT id_transportasi, nama_transportasi, jenis_kendaraan, deskripsi_transportasi FROM transportasi";
+                string query = "SELECT id_transportasi, nama_transportasi, jenis_transportasi, deskripsi_transportasi FROM transportasi";
 
                 connection.Open();
 
@@ -31,7 +31,7 @@ namespace frontendpbo.Contexts
                             Transportasi transportasi = new Transportasi();
                             transportasi.Id_transportasi = Convert.ToInt32(reader["id_transportasi"]);
                             transportasi.Nama_transportasi = reader["nama_transportasi"].ToString();
-                            transportasi.Jenis_transportasi = reader["jenis_kendaraan"].ToString();
+                            transportasi.Jenis_transportasi = reader["jenis_transportasi"].ToString();
                             transportasi.Deskripsi_transportasi = reader["deskripsi_transportasi"].ToString();
                             transportasiList.Add(transportasi);
                         }
@@ -48,27 +48,26 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
             {
-                string query = "SELECT id_transportasi, nama_transportasi, jenis_kendaraan, deskripsi_transportasi " +
-                               "FROM transportasi " +
-                               "WHERE nama_transportasi ILIKE '%' || @Nama_transportasi || '%' ";
+                string query = $"SELECT id_transportasi, nama_transportasi, jenis_transportasi, deskripsi_transportasi FROM transportasi WHERE nama_transportasi ILIKE '%{nama_transportasi}%' ";
 
                 connection.Open();
+                Transportasi transportasi = new Transportasi();
 
                 using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@Nama_transportasi", nama_transportasi);
 
                     using (NpgsqlDataReader reader = command.ExecuteReader())
                     {
+                        TransportasiList.Clear();
                         while (reader.Read())
                         {
-                            Transportasi transportasi = new Transportasi();
+                            
                             transportasi.Id_transportasi = Convert.ToInt32(reader["id_transportasi"]);
                             transportasi.Nama_transportasi = reader["nama_transportasi"].ToString();
                             transportasi.Jenis_transportasi = reader["jenis_transportasi"].ToString();
                             transportasi.Deskripsi_transportasi = reader["deskripsi_transportasi"].ToString();
 
-                            searchResults.Add(transportasi);
+                            TransportasiList.Add(transportasi);
                         }
                     }
                 }
@@ -84,7 +83,7 @@ namespace frontendpbo.Contexts
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
                 string sql = "UPDATE transportasi " +
-                               "SET nama_transportasi = @nama_transportasi, jenis_kendaraan = @jenis_transportasi, " +
+                               "SET nama_transportasi = @nama_transportasi, jenis_transportasi = @jenis_transportasi, " +
                                "deskripsi_transportasi = @deskripsi_transportasi " +
                                "WHERE id_transportasi = @id_transportasi";
                 conn.Open();
@@ -121,7 +120,7 @@ namespace frontendpbo.Contexts
             string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
-                string sql = "SELECT id_transportasi, nama_transportasi, jenis_kendaraan, deskripsi_transportasi, objek_wisata.id_wisata FROM transportasi JOIN objek_wisata ON transportasi.wisata_id = objek_wisata.id_wisata";
+                string sql = "SELECT id_transportasi, nama_transportasi, jenis_transportasi, deskripsi_transportasi, objek_wisata.id_wisata FROM transportasi JOIN objek_wisata ON transportasi.wisata_id = objek_wisata.id_wisata";
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
                 {
@@ -152,8 +151,8 @@ namespace frontendpbo.Contexts
             string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database= peta_jember;";
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
-                string sql = "INSERT INTO transportasi (nama_transportasi, jenis_kendaraan, deskripsi_transportasi, wisata_id) " +
-                             "VALUES (@nama_transportasi, @jenis_transportasi, @deskripsi_transportasi, @idwisata) RETURNING id_transportasi";
+                string sql = "INSERT INTO transportasi (nama_transportasi, jenis_transportasi, deskripsi_transportasi, wisata_id) " +
+                             "VALUES (@nama_transportasi, @jenis_transportasi, @deskripsi_transportasi, @idwisata)";
 
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))
@@ -167,7 +166,7 @@ namespace frontendpbo.Contexts
                     cmd.CommandType = System.Data.CommandType.Text;
                     int rowsAffected = cmd.ExecuteNonQuery();
                     //return rowsAffected > 0;
-                    if (rowsAffected > 0)
+                    if (rowsAffected > 0) 
                     {
                         isSuccess = true;
                         this.TransportasiList.Add(transportasi);

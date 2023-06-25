@@ -28,276 +28,281 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            panel4 = new Panel();
-            panel2 = new Panel();
-            panel5 = new Panel();
-            label1 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            CreateTransportasi = new Button();
-            IDTransportasi = new TextBox();
-            label2 = new Label();
-            NamaTransportasi = new TextBox();
-            DeskripsiTransportasi = new TextBox();
-            JenisTransportasi = new TextBox();
-            SearchTransportasi = new Button();
-            TampilanData = new TextBox();
-            label6 = new Label();
-            DeleteTransportasi = new Button();
-            UpdateTransportasi = new Button();
-            panel3 = new Panel();
-            TampilData = new DataGridView();
-            panel1.SuspendLayout();
-            panel4.SuspendLayout();
-            panel2.SuspendLayout();
-            panel5.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)TampilData).BeginInit();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.CreateTransportasi = new System.Windows.Forms.Button();
+            this.IDTransportasi = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.NamaTransportasi = new System.Windows.Forms.TextBox();
+            this.DeskripsiTransportasi = new System.Windows.Forms.TextBox();
+            this.JenisTransportasi = new System.Windows.Forms.TextBox();
+            this.SearchTransportasi = new System.Windows.Forms.Button();
+            this.TampilanData = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.DeleteTransportasi = new System.Windows.Forms.Button();
+            this.UpdateTransportasi = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.TampilData = new System.Windows.Forms.DataGridView();
+            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TampilData)).BeginInit();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(111, 106, 248);
-            panel1.Controls.Add(panel4);
-            panel1.Controls.Add(panel3);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(20, 20);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1330, 709);
-            panel1.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(106)))), ((int)(((byte)(248)))));
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(18, 15);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1163, 532);
+            this.panel1.TabIndex = 0;
             // 
             // panel4
             // 
-            panel4.Controls.Add(panel2);
-            panel4.Dock = DockStyle.Top;
-            panel4.Location = new Point(0, 305);
-            panel4.Name = "panel4";
-            panel4.Padding = new Padding(20);
-            panel4.Size = new Size(1330, 376);
-            panel4.TabIndex = 17;
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 229);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Padding = new System.Windows.Forms.Padding(18, 15, 18, 15);
+            this.panel4.Size = new System.Drawing.Size(1163, 282);
+            this.panel4.TabIndex = 17;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.White;
-            panel2.Controls.Add(panel5);
-            panel2.Controls.Add(SearchTransportasi);
-            panel2.Controls.Add(TampilanData);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(DeleteTransportasi);
-            panel2.Controls.Add(UpdateTransportasi);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(20, 20);
-            panel2.Margin = new Padding(3, 4, 3, 4);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1290, 336);
-            panel2.TabIndex = 15;
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.SearchTransportasi);
+            this.panel2.Controls.Add(this.TampilanData);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.DeleteTransportasi);
+            this.panel2.Controls.Add(this.UpdateTransportasi);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(18, 15);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1127, 252);
+            this.panel2.TabIndex = 15;
             // 
             // panel5
             // 
-            panel5.Controls.Add(label1);
-            panel5.Controls.Add(label4);
-            panel5.Controls.Add(label3);
-            panel5.Controls.Add(CreateTransportasi);
-            panel5.Controls.Add(IDTransportasi);
-            panel5.Controls.Add(label2);
-            panel5.Controls.Add(NamaTransportasi);
-            panel5.Controls.Add(DeskripsiTransportasi);
-            panel5.Controls.Add(JenisTransportasi);
-            panel5.Dock = DockStyle.Right;
-            panel5.Location = new Point(584, 0);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(706, 336);
-            panel5.TabIndex = 16;
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.CreateTransportasi);
+            this.panel5.Controls.Add(this.IDTransportasi);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.NamaTransportasi);
+            this.panel5.Controls.Add(this.DeskripsiTransportasi);
+            this.panel5.Controls.Add(this.JenisTransportasi);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(509, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(618, 252);
+            this.panel5.TabIndex = 16;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(21, 15);
-            label1.Name = "label1";
-            label1.Size = new Size(221, 23);
-            label1.TabIndex = 0;
-            label1.Text = "ID TRANSPORTASI             :";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(18, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID TRANSPORTASI             :";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(16, 160);
-            label4.Name = "label4";
-            label4.Size = new Size(224, 23);
-            label4.TabIndex = 3;
-            label4.Text = "DESKRIPSI TRANSPORTASI :";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(14, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(174, 17);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "DESKRIPSI TRANSPORTASI :";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(18, 109);
-            label3.Name = "label3";
-            label3.Size = new Size(222, 23);
-            label3.TabIndex = 2;
-            label3.Text = "JENIS TRANSPORTASI        :";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(16, 82);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(173, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "JENIS TRANSPORTASI        :";
             // 
             // CreateTransportasi
             // 
-            CreateTransportasi.BackColor = Color.Green;
-            CreateTransportasi.Location = new Point(21, 225);
-            CreateTransportasi.Margin = new Padding(3, 4, 3, 4);
-            CreateTransportasi.Name = "CreateTransportasi";
-            CreateTransportasi.Size = new Size(142, 45);
-            CreateTransportasi.TabIndex = 10;
-            CreateTransportasi.Text = "CREATE DATA";
-            CreateTransportasi.UseVisualStyleBackColor = false;
-            CreateTransportasi.Click += CreateTransportasi_Click;
+            this.CreateTransportasi.BackColor = System.Drawing.Color.Green;
+            this.CreateTransportasi.Location = new System.Drawing.Point(18, 169);
+            this.CreateTransportasi.Name = "CreateTransportasi";
+            this.CreateTransportasi.Size = new System.Drawing.Size(124, 34);
+            this.CreateTransportasi.TabIndex = 10;
+            this.CreateTransportasi.Text = "CREATE DATA";
+            this.CreateTransportasi.UseVisualStyleBackColor = false;
             // 
             // IDTransportasi
             // 
-            IDTransportasi.Location = new Point(237, 11);
-            IDTransportasi.Margin = new Padding(3, 4, 3, 4);
-            IDTransportasi.Name = "IDTransportasi";
-            IDTransportasi.Size = new Size(414, 27);
-            IDTransportasi.TabIndex = 6;
+            this.IDTransportasi.Location = new System.Drawing.Point(207, 8);
+            this.IDTransportasi.Name = "IDTransportasi";
+            this.IDTransportasi.Size = new System.Drawing.Size(363, 23);
+            this.IDTransportasi.TabIndex = 6;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(21, 60);
-            label2.Name = "label2";
-            label2.Size = new Size(220, 23);
-            label2.TabIndex = 1;
-            label2.Text = "NAMA TRANSPORTASI      :";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(18, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(172, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "NAMA TRANSPORTASI      :";
             // 
             // NamaTransportasi
             // 
-            NamaTransportasi.Location = new Point(237, 58);
-            NamaTransportasi.Margin = new Padding(3, 4, 3, 4);
-            NamaTransportasi.Name = "NamaTransportasi";
-            NamaTransportasi.Size = new Size(414, 27);
-            NamaTransportasi.TabIndex = 7;
+            this.NamaTransportasi.Location = new System.Drawing.Point(207, 44);
+            this.NamaTransportasi.Name = "NamaTransportasi";
+            this.NamaTransportasi.Size = new System.Drawing.Size(363, 23);
+            this.NamaTransportasi.TabIndex = 7;
             // 
             // DeskripsiTransportasi
             // 
-            DeskripsiTransportasi.Location = new Point(237, 158);
-            DeskripsiTransportasi.Margin = new Padding(3, 4, 3, 4);
-            DeskripsiTransportasi.Multiline = true;
-            DeskripsiTransportasi.Name = "DeskripsiTransportasi";
-            DeskripsiTransportasi.Size = new Size(414, 112);
-            DeskripsiTransportasi.TabIndex = 9;
+            this.DeskripsiTransportasi.Location = new System.Drawing.Point(207, 118);
+            this.DeskripsiTransportasi.Multiline = true;
+            this.DeskripsiTransportasi.Name = "DeskripsiTransportasi";
+            this.DeskripsiTransportasi.Size = new System.Drawing.Size(363, 85);
+            this.DeskripsiTransportasi.TabIndex = 9;
             // 
             // JenisTransportasi
             // 
-            JenisTransportasi.Location = new Point(237, 109);
-            JenisTransportasi.Margin = new Padding(3, 4, 3, 4);
-            JenisTransportasi.Name = "JenisTransportasi";
-            JenisTransportasi.Size = new Size(414, 27);
-            JenisTransportasi.TabIndex = 8;
+            this.JenisTransportasi.Location = new System.Drawing.Point(207, 82);
+            this.JenisTransportasi.Name = "JenisTransportasi";
+            this.JenisTransportasi.Size = new System.Drawing.Size(363, 23);
+            this.JenisTransportasi.TabIndex = 8;
             // 
             // SearchTransportasi
             // 
-            SearchTransportasi.Location = new Point(414, 81);
-            SearchTransportasi.Margin = new Padding(3, 4, 3, 4);
-            SearchTransportasi.Name = "SearchTransportasi";
-            SearchTransportasi.Size = new Size(86, 29);
-            SearchTransportasi.TabIndex = 15;
-            SearchTransportasi.Text = "SEARCH";
-            SearchTransportasi.UseVisualStyleBackColor = true;
+            this.SearchTransportasi.Location = new System.Drawing.Point(362, 61);
+            this.SearchTransportasi.Name = "SearchTransportasi";
+            this.SearchTransportasi.Size = new System.Drawing.Size(75, 22);
+            this.SearchTransportasi.TabIndex = 15;
+            this.SearchTransportasi.Text = "SEARCH";
+            this.SearchTransportasi.UseVisualStyleBackColor = true;
+            this.SearchTransportasi.Click += new System.EventHandler(this.SearchTransportasi_Click);
             // 
             // TampilanData
             // 
-            TampilanData.Location = new Point(33, 83);
-            TampilanData.Margin = new Padding(3, 4, 3, 4);
-            TampilanData.Name = "TampilanData";
-            TampilanData.Size = new Size(351, 27);
-            TampilanData.TabIndex = 14;
+            this.TampilanData.Location = new System.Drawing.Point(29, 62);
+            this.TampilanData.Name = "TampilanData";
+            this.TampilanData.Size = new System.Drawing.Size(308, 23);
+            this.TampilanData.TabIndex = 14;
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(30, 36);
-            label6.Name = "label6";
-            label6.Size = new Size(271, 23);
-            label6.TabIndex = 13;
-            label6.Text = "TAMPILKAN DATA BERDASARKAN";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(26, 27);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(212, 17);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "TAMPILKAN DATA BERDASARKAN";
             // 
             // DeleteTransportasi
             // 
-            DeleteTransportasi.BackColor = Color.Red;
-            DeleteTransportasi.Location = new Point(242, 225);
-            DeleteTransportasi.Margin = new Padding(3, 4, 3, 4);
-            DeleteTransportasi.Name = "DeleteTransportasi";
-            DeleteTransportasi.Size = new Size(142, 45);
-            DeleteTransportasi.TabIndex = 12;
-            DeleteTransportasi.Text = "DELETE DATA";
-            DeleteTransportasi.UseVisualStyleBackColor = false;
+            this.DeleteTransportasi.BackColor = System.Drawing.Color.Red;
+            this.DeleteTransportasi.Location = new System.Drawing.Point(212, 169);
+            this.DeleteTransportasi.Name = "DeleteTransportasi";
+            this.DeleteTransportasi.Size = new System.Drawing.Size(124, 34);
+            this.DeleteTransportasi.TabIndex = 12;
+            this.DeleteTransportasi.Text = "DELETE DATA";
+            this.DeleteTransportasi.UseVisualStyleBackColor = false;
+            this.DeleteTransportasi.Click += new System.EventHandler(this.DeleteTransportasi_Click);
             // 
             // UpdateTransportasi
             // 
-            UpdateTransportasi.BackColor = Color.Yellow;
-            UpdateTransportasi.Location = new Point(30, 225);
-            UpdateTransportasi.Margin = new Padding(3, 4, 3, 4);
-            UpdateTransportasi.Name = "UpdateTransportasi";
-            UpdateTransportasi.Size = new Size(142, 45);
-            UpdateTransportasi.TabIndex = 11;
-            UpdateTransportasi.Text = "UPDATE DATA";
-            UpdateTransportasi.UseVisualStyleBackColor = false;
-            UpdateTransportasi.Click += UpdateTransportasi_Click;
+            this.UpdateTransportasi.BackColor = System.Drawing.Color.Yellow;
+            this.UpdateTransportasi.Location = new System.Drawing.Point(26, 169);
+            this.UpdateTransportasi.Name = "UpdateTransportasi";
+            this.UpdateTransportasi.Size = new System.Drawing.Size(124, 34);
+            this.UpdateTransportasi.TabIndex = 11;
+            this.UpdateTransportasi.Text = "UPDATE DATA";
+            this.UpdateTransportasi.UseVisualStyleBackColor = false;
+            this.UpdateTransportasi.Click += new System.EventHandler(this.UpdateTransportasi_Click);
             // 
             // panel3
             // 
-            panel3.Controls.Add(TampilData);
-            panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(0, 0);
-            panel3.Name = "panel3";
-            panel3.Padding = new Padding(20);
-            panel3.Size = new Size(1330, 305);
-            panel3.TabIndex = 16;
+            this.panel3.Controls.Add(this.TampilData);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(18, 15, 18, 15);
+            this.panel3.Size = new System.Drawing.Size(1163, 229);
+            this.panel3.TabIndex = 16;
             // 
             // TampilData
             // 
-            TampilData.AllowUserToAddRows = false;
-            TampilData.AllowUserToDeleteRows = false;
-            TampilData.BackgroundColor = Color.White;
-            TampilData.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            TampilData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            TampilData.Dock = DockStyle.Fill;
-            TampilData.GridColor = Color.White;
-            TampilData.Location = new Point(20, 20);
-            TampilData.Margin = new Padding(3, 4, 3, 4);
-            TampilData.Name = "TampilData";
-            TampilData.ReadOnly = true;
-            TampilData.RowHeadersWidth = 62;
-            TampilData.RowTemplate.Height = 25;
-            TampilData.Size = new Size(1290, 265);
-            TampilData.TabIndex = 5;
+            this.TampilData.AllowUserToAddRows = false;
+            this.TampilData.AllowUserToDeleteRows = false;
+            this.TampilData.BackgroundColor = System.Drawing.Color.White;
+            this.TampilData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.TampilData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TampilData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Edit});
+            this.TampilData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TampilData.GridColor = System.Drawing.Color.White;
+            this.TampilData.Location = new System.Drawing.Point(18, 15);
+            this.TampilData.Name = "TampilData";
+            this.TampilData.ReadOnly = true;
+            this.TampilData.RowHeadersWidth = 62;
+            this.TampilData.RowTemplate.Height = 25;
+            this.TampilData.Size = new System.Drawing.Size(1127, 199);
+            this.TampilData.TabIndex = 5;
+            this.TampilData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TampilData_CellContentClick_1);
+            // 
+            // Edit
+            // 
+            this.Edit.HeaderText = "";
+            this.Edit.Name = "Edit";
+            this.Edit.ReadOnly = true;
+            this.Edit.Text = "Pilih";
+            this.Edit.ToolTipText = "Edit";
+            this.Edit.UseColumnTextForButtonValue = true;
             // 
             // CRUDTransportasi
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 749);
-            Controls.Add(panel1);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "CRUDTransportasi";
-            Padding = new Padding(20);
-            Text = "Form4";
-            panel1.ResumeLayout(false);
-            panel4.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)TampilData).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1199, 562);
+            this.Controls.Add(this.panel1);
+            this.Name = "CRUDTransportasi";
+            this.Padding = new System.Windows.Forms.Padding(18, 15, 18, 15);
+            this.Text = "Form4";
+            this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TampilData)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -322,5 +327,6 @@
         private Panel panel3;
         private Panel panel4;
         private Panel panel5;
+        private DataGridViewButtonColumn Edit;
     }
 }

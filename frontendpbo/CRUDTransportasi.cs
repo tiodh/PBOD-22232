@@ -30,7 +30,7 @@ namespace frontendpbo
 
             InitializeComponent();
 
-            TampilData.AutoGenerateColumns = false;
+            /*TampilData.AutoGenerateColumns = false;*/
             ReadDataTransportasi();
         }
 
@@ -108,17 +108,58 @@ namespace frontendpbo
 
         private void DeleteTransportasi_Click(object sender, EventArgs e)
         {
-            IDTransportasi.Enabled = true;
+            Models.Transportasi transportasi = this.GetData();
+            contextTransportasi.Delete(transportasi);
+            TampilData.DataSource = null;
+            ReadDataTransportasi();
+
+            /*IDTransportasi.Enabled = true;
             UpdateTransportasi.Enabled = false;
-            CreateTransportasi.Enabled = true;
+            CreateTransportasi.Enabled = true;*/
             IDTransportasi.Text = "";
             NamaTransportasi.Text = "";
+            JenisTransportasi.Text = "";
             DeskripsiTransportasi.Text = "";
+
+            
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TampilData_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (TampilData.Columns[e.ColumnIndex].Name == "Edit")
+            {
+                IDTransportasi.Enabled = false;
+                CreateTransportasi.Enabled = false;
+                UpdateTransportasi.Enabled = true;
+                Transportasi transportasi = listTransportasis[e.RowIndex];
+                IDTransportasi.Text = transportasi.Id_transportasi.ToString();
+                NamaTransportasi.Text = transportasi.Nama_transportasi;
+                JenisTransportasi.Text = transportasi.Jenis_transportasi;
+                DeskripsiTransportasi.Text = transportasi.Deskripsi_transportasi;
+
+
+            }
+            else if (TampilData.Columns[e.ColumnIndex].Name == "Delete")
+            {
+                Transportasi transportasi = listTransportasis[e.RowIndex];
+                CurrentIdTransportasi = transportasi.Id_transportasi.ToString();
+                contextTransportasi.Delete(transportasi);
+                TampilData.DataSource = null;
+                ReadDataTransportasi();
+            }
+        }
+
+        private void SearchTransportasi_Click(object sender, EventArgs e)
+        {
+            List<Transportasi> listTransportasis = new List<Transportasi>();
+            contextTransportasi.TransportasiList = listTransportasis;
+            contextTransportasi.SearchTransportasi(TampilanData.Text);
+            TampilData.DataSource = contextTransportasi.TransportasiList;
         }
     }
 }
