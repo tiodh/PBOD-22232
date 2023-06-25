@@ -5,13 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace frontendpbo.Contexts
 {
     internal class ContextTempatMakan
     {
         private string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
-        List<TempatMakan> tempatMakanList = new List<TempatMakan>() { };
+        public List<TempatMakan> tempatMakanList = new List<TempatMakan>() { };
 
         public List<TempatMakan> GetListtempatmakan()
         {
@@ -26,7 +27,7 @@ namespace frontendpbo.Contexts
 
             using (NpgsqlConnection conn = new NpgsqlConnection(conStr))
             {
-                string sql = "SELECT * FROM tempat_makan";
+                string sql = "SELECT id_tempat_makan, nama_tempat_makan, lokasi_tempat_makan, deskripsi_tempat_makan, no_telepon_tempat_makan, wisata_id FROM tempat_makan";
 
                 conn.Open();
                 using (NpgsqlCommand cmd = new NpgsqlCommand(sql, conn))

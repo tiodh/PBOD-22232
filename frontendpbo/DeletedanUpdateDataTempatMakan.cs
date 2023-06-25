@@ -20,7 +20,7 @@ namespace frontendpbo
         private int id_tempat_makan;
 
         ContextTempatMakan contexttempatmakan;
-        private List<TempatMakan> listtempatmakan;
+        public List<TempatMakan> listtempatmakan = new List<TempatMakan>();
 
         public Models.TempatMakan GetTempatMakan()
         {
@@ -39,13 +39,14 @@ namespace frontendpbo
             contexttempatmakan = new ContextTempatMakan();
 
             loaddata();
-            CRUDTempatMakandataGridView1.DataSource = contexttempatmakan.GetListtempatmakan();
         }
 
         void loaddata()
         {
+            ContextTempatMakan contexttempatmakan = new ContextTempatMakan();
+            /*contexttempatmakan.tempatMakanList = listtempatmakan;*/
             contexttempatmakan.ReadTempatMakan();
-            CRUDTempatMakandataGridView1.DataSource = contexttempatmakan.GetListtempatmakan();
+            CRUDTempatMakandataGridView1.DataSource =contexttempatmakan.tempatMakanList;
         }
 
 
@@ -161,7 +162,8 @@ namespace frontendpbo
             }
             else
             {
-                TempatMakan tempatMakan = GetTempatMakan();
+                TempatMakan tempatMakan = new TempatMakan();
+                tempatMakan = GetTempatMakan();
                 contexttempatmakan.UpdateTempatMakan(tempatMakan);
                 loaddata();
 
