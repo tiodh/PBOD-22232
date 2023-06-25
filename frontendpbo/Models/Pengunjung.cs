@@ -11,6 +11,5 @@ namespace frontendpbo.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Asal { get; set; }
-        public int Wisata_ID { get; set; }
     }
 }
