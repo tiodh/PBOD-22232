@@ -38,7 +38,7 @@ namespace frontendpbo.Contexts
                         Riwayat riwayat = new Riwayat();
                         riwayat.Id = (int)reader["id_riwayat"];
                         riwayat.nama = (string)reader["nama_pengunjung"];
-                        riwayat.Tanggal_Kunjungan = (DateOnly)reader["tanggal_kunjungan"];
+                        riwayat.Tanggal_Kunjungan = DateOnly.FromDateTime((DateTime)reader["tanggal_kunjungan"]);
                         riwayat.Jumlah_Tiket = (int)reader["jumlah_tiket"];
                         riwayat.nama_tiket = (string)reader["nama_tiket"];
                         riwayat.Pengunjung_ID = (int)reader["pengunjung_id"];

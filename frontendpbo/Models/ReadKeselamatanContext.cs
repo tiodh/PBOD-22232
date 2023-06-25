@@ -33,7 +33,7 @@ namespace frontendpbo.Models
                     {
                         readKeselamatan newRead = new readKeselamatan();
                         newRead.id = (int)Reader["id_keamanan"];
-                        newRead.nama = (string)Reader["nama_lembaga"];
+                        newRead.nama = (string)Reader["nama_keamanan"];
                         newRead.noTlp = (string)Reader["no_tlp"];
                         newRead.alamat = (string)Reader["alamat_keamanan"];
                         newRead.deskripsi = (string)Reader["deskripsi_keamanan"];

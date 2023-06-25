@@ -40,7 +40,7 @@
             panel2 = new Panel();
             label1 = new Label();
             panelSARANA = new Panel();
-            button1 = new Button();
+            Update = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -51,17 +51,18 @@
             // 
             labelNama.Anchor = AnchorStyles.None;
             labelNama.AutoSize = true;
-            labelNama.Location = new Point(60, 263);
+            labelNama.Location = new Point(60, 199);
             labelNama.Name = "labelNama";
             labelNama.Size = new Size(95, 20);
             labelNama.TabIndex = 0;
             labelNama.Text = "Nama Sektor";
+            labelNama.Click += labelNama_Click;
             // 
             // labelDeskripsi
             // 
             labelDeskripsi.Anchor = AnchorStyles.None;
             labelDeskripsi.AutoSize = true;
-            labelDeskripsi.Location = new Point(60, 313);
+            labelDeskripsi.Location = new Point(60, 254);
             labelDeskripsi.Name = "labelDeskripsi";
             labelDeskripsi.Size = new Size(69, 20);
             labelDeskripsi.TabIndex = 1;
@@ -74,6 +75,7 @@
             tbxNama.Name = "tbxNama";
             tbxNama.Size = new Size(265, 27);
             tbxNama.TabIndex = 2;
+            tbxNama.TextChanged += tbxNama_TextChanged;
             // 
             // tbxDeskripsi
             // 
@@ -82,6 +84,7 @@
             tbxDeskripsi.Name = "tbxDeskripsi";
             tbxDeskripsi.Size = new Size(265, 27);
             tbxDeskripsi.TabIndex = 3;
+            tbxDeskripsi.TextChanged += tbxDeskripsi_TextChanged;
             // 
             // simpan
             // 
@@ -99,6 +102,7 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.Anchor = AnchorStyles.None;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(29, 79);
             dataGridView1.Name = "dataGridView1";
@@ -161,22 +165,25 @@
             // 
             // panelSARANA
             // 
-            panelSARANA.Controls.Add(button1);
+            panelSARANA.Controls.Add(Update);
+            panelSARANA.Controls.Add(labelNama);
+            panelSARANA.Controls.Add(labelDeskripsi);
             panelSARANA.Dock = DockStyle.Bottom;
             panelSARANA.Location = new Point(0, 78);
             panelSARANA.Name = "panelSARANA";
             panelSARANA.Size = new Size(1195, 640);
             panelSARANA.TabIndex = 10;
             // 
-            // button1
+            // Update
             // 
-            button1.Anchor = AnchorStyles.None;
-            button1.Location = new Point(258, 329);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 4;
-            button1.Text = "EDIT";
-            button1.UseVisualStyleBackColor = true;
+            Update.Anchor = AnchorStyles.None;
+            Update.Location = new Point(258, 329);
+            Update.Name = "Update";
+            Update.Size = new Size(94, 29);
+            Update.TabIndex = 4;
+            Update.Text = "EDIT";
+            Update.UseVisualStyleBackColor = true;
+            Update.Click += button1_Click;
             // 
             // CRUDSarana
             // 
@@ -188,8 +195,6 @@
             Controls.Add(simpan);
             Controls.Add(tbxDeskripsi);
             Controls.Add(tbxNama);
-            Controls.Add(labelDeskripsi);
-            Controls.Add(labelNama);
             Controls.Add(panelSARANA);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CRUDSarana";
@@ -201,6 +206,7 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panelSARANA.ResumeLayout(false);
+            panelSARANA.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -219,6 +225,6 @@
         private Panel panel2;
         private Label label1;
         private Panel panelSARANA;
-        private Button button1;
+        private Button Update;
     }
 }

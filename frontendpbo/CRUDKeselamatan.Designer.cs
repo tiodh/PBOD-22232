@@ -33,7 +33,6 @@
             Clear_Keamanan = new Button();
             Tambah_Keselamatan = new Button();
             Edit_Keamanan = new Button();
-            Hapus_Keamanan = new Button();
             nama_lembaga_dataKeamanan = new Label();
             textBox_nama_lembaga_dataKeamanan = new TextBox();
             noHp_dataKeamanan = new Label();
@@ -45,6 +44,8 @@
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             panel5 = new Panel();
+            button_searchKeselamatan = new Button();
+            textBox_dataKeselamatan = new TextBox();
             panel2 = new Panel();
             panel4 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -59,8 +60,8 @@
             // 
             dataGridView1.BackgroundColor = SystemColors.ButtonFace;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Top;
-            dataGridView1.Location = new Point(0, 0);
+            dataGridView1.Dock = DockStyle.Bottom;
+            dataGridView1.Location = new Point(0, 88);
             dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
@@ -103,17 +104,6 @@
             Edit_Keamanan.Text = "Edit";
             Edit_Keamanan.UseVisualStyleBackColor = false;
             Edit_Keamanan.Click += Edit_Keamanan_Click;
-            // 
-            // Hapus_Keamanan
-            // 
-            Hapus_Keamanan.BackColor = Color.Red;
-            Hapus_Keamanan.Location = new Point(521, 6);
-            Hapus_Keamanan.Margin = new Padding(4);
-            Hapus_Keamanan.Name = "Hapus_Keamanan";
-            Hapus_Keamanan.Size = new Size(129, 63);
-            Hapus_Keamanan.TabIndex = 1;
-            Hapus_Keamanan.Text = "Hapus";
-            Hapus_Keamanan.UseVisualStyleBackColor = false;
             // 
             // nama_lembaga_dataKeamanan
             // 
@@ -217,6 +207,8 @@
             // 
             // panel5
             // 
+            panel5.Controls.Add(button_searchKeselamatan);
+            panel5.Controls.Add(textBox_dataKeselamatan);
             panel5.Controls.Add(dataGridView1);
             panel5.Controls.Add(panel2);
             panel5.Dock = DockStyle.Left;
@@ -225,12 +217,28 @@
             panel5.Size = new Size(650, 882);
             panel5.TabIndex = 7;
             // 
+            // button_searchKeselamatan
+            // 
+            button_searchKeselamatan.Location = new Point(530, 27);
+            button_searchKeselamatan.Name = "button_searchKeselamatan";
+            button_searchKeselamatan.Size = new Size(94, 34);
+            button_searchKeselamatan.TabIndex = 7;
+            button_searchKeselamatan.Text = "Search";
+            button_searchKeselamatan.UseVisualStyleBackColor = true;
+            // 
+            // textBox_dataKeselamatan
+            // 
+            textBox_dataKeselamatan.Location = new Point(31, 27);
+            textBox_dataKeselamatan.Name = "textBox_dataKeselamatan";
+            textBox_dataKeselamatan.Size = new Size(467, 34);
+            textBox_dataKeselamatan.TabIndex = 6;
+            textBox_dataKeselamatan.TextChanged += textBox_dataKeselamatan_TextChanged;
+            // 
             // panel2
             // 
             panel2.Controls.Add(Tambah_Keselamatan);
             panel2.Controls.Add(Clear_Keamanan);
             panel2.Controls.Add(Edit_Keamanan);
-            panel2.Controls.Add(Hapus_Keamanan);
             panel2.Dock = DockStyle.Bottom;
             panel2.Location = new Point(0, 798);
             panel2.Name = "panel2";
@@ -271,6 +279,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             panel2.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
@@ -283,7 +292,6 @@
         private Button Clear_Keamanan;
         private Button Tambah_Keselamatan;
         private Button Edit_Keamanan;
-        private Button Hapus_Keamanan;
         private Label nama_lembaga_dataKeamanan;
         private TextBox textBox_nama_lembaga_dataKeamanan;
         private Label noHp_dataKeamanan;
@@ -297,5 +305,7 @@
         private Panel panel5;
         private Panel panel4;
         private Panel panel2;
+        private Button button_searchKeselamatan;
+        private TextBox textBox_dataKeselamatan;
     }
 }

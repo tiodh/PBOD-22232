@@ -46,47 +46,47 @@
             dGV_Hotel = new DataGridView();
             pictureBox1 = new PictureBox();
             panel3 = new Panel();
+            dGV_kolam = new DataGridView();
             label3 = new Label();
             label6 = new Label();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             panel5 = new Panel();
+            dGV_camp = new DataGridView();
             label7 = new Label();
             label8 = new Label();
             pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
             panel4 = new Panel();
+            dGV_wisata = new DataGridView();
             label4 = new Label();
             label9 = new Label();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
-            dGV_kolam = new DataGridView();
-            dGV_camp = new DataGridView();
-            dGV_wisata = new DataGridView();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dGV_Hotel).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dGV_kolam).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dGV_camp).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dGV_wisata).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dGV_kolam).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dGV_camp).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dGV_wisata).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.Highlight;
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(12, 46);
+            panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(1465, 127);
             panel1.TabIndex = 0;
@@ -149,6 +149,8 @@
             // 
             // dGV_Hotel
             // 
+            dGV_Hotel.AllowUserToAddRows = false;
+            dGV_Hotel.AllowUserToDeleteRows = false;
             dGV_Hotel.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dGV_Hotel.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dGV_Hotel.BackgroundColor = Color.DarkGray;
@@ -173,6 +175,7 @@
             dGV_Hotel.DefaultCellStyle = dataGridViewCellStyle2;
             dGV_Hotel.Location = new Point(360, 123);
             dGV_Hotel.Name = "dGV_Hotel";
+            dGV_Hotel.ReadOnly = true;
             dGV_Hotel.RowHeadersVisible = false;
             dGV_Hotel.RowHeadersWidth = 51;
             dGV_Hotel.RowTemplate.Height = 29;
@@ -201,6 +204,41 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(857, 329);
             panel3.TabIndex = 4;
+            // 
+            // dGV_kolam
+            // 
+            dGV_kolam.AllowUserToAddRows = false;
+            dGV_kolam.AllowUserToDeleteRows = false;
+            dGV_kolam.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dGV_kolam.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dGV_kolam.BackgroundColor = Color.DarkGray;
+            dGV_kolam.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle3.BackColor = Color.DarkGray;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = Color.DarkGray;
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dGV_kolam.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dGV_kolam.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dGV_kolam.ColumnHeadersVisible = false;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Window;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = Color.DarkGray;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            dGV_kolam.DefaultCellStyle = dataGridViewCellStyle4;
+            dGV_kolam.Location = new Point(360, 123);
+            dGV_kolam.Name = "dGV_kolam";
+            dGV_kolam.ReadOnly = true;
+            dGV_kolam.RowHeadersVisible = false;
+            dGV_kolam.RowHeadersWidth = 51;
+            dGV_kolam.RowTemplate.Height = 29;
+            dGV_kolam.Size = new Size(454, 155);
+            dGV_kolam.TabIndex = 6;
             // 
             // label3
             // 
@@ -257,6 +295,41 @@
             panel5.Size = new Size(857, 329);
             panel5.TabIndex = 6;
             // 
+            // dGV_camp
+            // 
+            dGV_camp.AllowUserToAddRows = false;
+            dGV_camp.AllowUserToDeleteRows = false;
+            dGV_camp.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dGV_camp.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dGV_camp.BackgroundColor = Color.DarkGray;
+            dGV_camp.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle5.BackColor = Color.DarkGray;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = Color.DarkGray;
+            dataGridViewCellStyle5.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dGV_camp.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dGV_camp.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dGV_camp.ColumnHeadersVisible = false;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = SystemColors.Window;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = Color.DarkGray;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            dGV_camp.DefaultCellStyle = dataGridViewCellStyle6;
+            dGV_camp.Location = new Point(360, 123);
+            dGV_camp.Name = "dGV_camp";
+            dGV_camp.ReadOnly = true;
+            dGV_camp.RowHeadersVisible = false;
+            dGV_camp.RowHeadersWidth = 51;
+            dGV_camp.RowTemplate.Height = 29;
+            dGV_camp.Size = new Size(454, 155);
+            dGV_camp.TabIndex = 7;
+            // 
             // label7
             // 
             label7.AutoSize = true;
@@ -312,6 +385,41 @@
             panel4.Size = new Size(857, 329);
             panel4.TabIndex = 7;
             // 
+            // dGV_wisata
+            // 
+            dGV_wisata.AllowUserToAddRows = false;
+            dGV_wisata.AllowUserToDeleteRows = false;
+            dGV_wisata.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dGV_wisata.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dGV_wisata.BackgroundColor = Color.DarkGray;
+            dGV_wisata.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle7.BackColor = Color.DarkGray;
+            dataGridViewCellStyle7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = Color.DarkGray;
+            dataGridViewCellStyle7.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
+            dGV_wisata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dGV_wisata.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dGV_wisata.ColumnHeadersVisible = false;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = SystemColors.Window;
+            dataGridViewCellStyle8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = Color.DarkGray;
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
+            dGV_wisata.DefaultCellStyle = dataGridViewCellStyle8;
+            dGV_wisata.Location = new Point(360, 123);
+            dGV_wisata.Name = "dGV_wisata";
+            dGV_wisata.ReadOnly = true;
+            dGV_wisata.RowHeadersVisible = false;
+            dGV_wisata.RowHeadersWidth = 51;
+            dGV_wisata.RowTemplate.Height = 29;
+            dGV_wisata.Size = new Size(454, 155);
+            dGV_wisata.TabIndex = 7;
+            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -354,102 +462,6 @@
             pictureBox6.TabIndex = 0;
             pictureBox6.TabStop = false;
             // 
-            // dGV_kolam
-            // 
-            dGV_kolam.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dGV_kolam.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dGV_kolam.BackgroundColor = Color.DarkGray;
-            dGV_kolam.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle3.BackColor = Color.DarkGray;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = Color.DarkGray;
-            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dGV_kolam.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dGV_kolam.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dGV_kolam.ColumnHeadersVisible = false;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = SystemColors.Window;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = Color.DarkGray;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
-            dGV_kolam.DefaultCellStyle = dataGridViewCellStyle4;
-            dGV_kolam.Location = new Point(360, 123);
-            dGV_kolam.Name = "dGV_kolam";
-            dGV_kolam.RowHeadersVisible = false;
-            dGV_kolam.RowHeadersWidth = 51;
-            dGV_kolam.RowTemplate.Height = 29;
-            dGV_kolam.Size = new Size(454, 155);
-            dGV_kolam.TabIndex = 6;
-            // 
-            // dGV_camp
-            // 
-            dGV_camp.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dGV_camp.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dGV_camp.BackgroundColor = Color.DarkGray;
-            dGV_camp.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle5.BackColor = Color.DarkGray;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = Color.DarkGray;
-            dataGridViewCellStyle5.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dGV_camp.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dGV_camp.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dGV_camp.ColumnHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = SystemColors.Window;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = Color.DarkGray;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            dGV_camp.DefaultCellStyle = dataGridViewCellStyle6;
-            dGV_camp.Location = new Point(360, 123);
-            dGV_camp.Name = "dGV_camp";
-            dGV_camp.RowHeadersVisible = false;
-            dGV_camp.RowHeadersWidth = 51;
-            dGV_camp.RowTemplate.Height = 29;
-            dGV_camp.Size = new Size(454, 155);
-            dGV_camp.TabIndex = 7;
-            // 
-            // dGV_wisata
-            // 
-            dGV_wisata.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dGV_wisata.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dGV_wisata.BackgroundColor = Color.DarkGray;
-            dGV_wisata.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle7.BackColor = Color.DarkGray;
-            dataGridViewCellStyle7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle7.ForeColor = Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = Color.DarkGray;
-            dataGridViewCellStyle7.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
-            dGV_wisata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dGV_wisata.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dGV_wisata.ColumnHeadersVisible = false;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = SystemColors.Window;
-            dataGridViewCellStyle8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = Color.DarkGray;
-            dataGridViewCellStyle8.SelectionForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
-            dGV_wisata.DefaultCellStyle = dataGridViewCellStyle8;
-            dGV_wisata.Location = new Point(360, 123);
-            dGV_wisata.Name = "dGV_wisata";
-            dGV_wisata.RowHeadersVisible = false;
-            dGV_wisata.RowHeadersWidth = 51;
-            dGV_wisata.RowTemplate.Height = 29;
-            dGV_wisata.Size = new Size(454, 155);
-            dGV_wisata.TabIndex = 7;
-            // 
             // DetailSarpras
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -472,19 +484,19 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dGV_kolam).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dGV_camp).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dGV_wisata).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dGV_kolam).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dGV_camp).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dGV_wisata).EndInit();
             ResumeLayout(false);
         }
 

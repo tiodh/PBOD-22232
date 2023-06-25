@@ -12,7 +12,7 @@ namespace frontendpbo
         public Form1()
         {
             InitializeComponent();
-            mainside.Visible = true;
+            mainside.Visible = false;
         }
 
 
@@ -111,14 +111,14 @@ namespace frontendpbo
             childForm.Show();
         }
 
-       /* private void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            openChildForm(new Pengunjung());
-        }*/
+            //openChildForm(new CPengunjung());
+        }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
+            Form2 form = new Form2("user");
             form.ShowDialog();
         }
 
@@ -146,7 +146,7 @@ namespace frontendpbo
 
         private void panel1_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
+            Form2 form = new Form2("user");
             form.Show();
         }
 

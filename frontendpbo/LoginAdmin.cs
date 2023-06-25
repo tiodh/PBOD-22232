@@ -92,11 +92,14 @@ namespace frontendpbo
 
             if (loginSuccess)
             {
-                MessageBox.Show("Login berhasil!");
+
+                Form2 form2 = new Form2("Admin");
+                form2.ShowDialog();
+                this.Close();
             }
             else
             {
-                MessageBox.Show("Username atau password salah. Silakan coba lagi.","Error Message");
+                MessageBox.Show("Username atau password salah. Silakan coba lagi.", "Error Message");
             }
         }
     }

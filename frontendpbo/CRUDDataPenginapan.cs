@@ -18,18 +18,31 @@ namespace frontendpbo
     {
         ContextPenginapan contextPenginapan;
         private List<Penginapan> listPenginapan;
+        ContextUlasan ulasanContext;
         private int id_penginapan;
+
         public CRUDDataPenginapan()
         {
             InitializeComponent();
             contextPenginapan = new ContextPenginapan();
+            ulasanContext = new ContextUlasan();
+            loaddata();
+            //DataPenginapandataGridView1.DataSource = ContextPenginapan.GetListPenginapan();
+            LoadComboBox();
+        }
 
-            //  loaddata();
-            //  DataPenginapandataGridView1.DataSource = ContextPenginapan.GetListPenginapan();
+        private void LoadComboBox()
+        {
+            List<Wisata> namaWisataList = ulasanContext.GetNamaWisataList();
+
+            comboBox1.DataSource = namaWisataList;
+            comboBox1.ValueMember = "Id_Wisata";
+            comboBox1.DisplayMember = "Nama_Wisata";
         }
 
         void loaddata()
         {
+            contextPenginapan.Read();
             DataPenginapandataGridView1.DataSource = contextPenginapan.listPenginapan;
         }
 
@@ -42,15 +55,17 @@ namespace frontendpbo
         private Models.Penginapan GetPenginapan()
         {
             Models.Penginapan mPenginapan = new Models.Penginapan();
+
             mPenginapan.Name = NamaPenginapantextBox1.Text;
             mPenginapan.Description = DeskripsiPenginapantextBox2.Text;
+            mPenginapan.Wisata_ID = ((Wisata)comboBox1.SelectedItem).Id_Wisata;
 
             return mPenginapan;
         }
 
         private void CRUDDataPenginapan_Load(object sender, EventArgs e)
         {
-            loaddata();
+
         }
 
         private void NamaPenginapantextBox1_TextChanged(object sender, EventArgs e)
@@ -118,7 +133,7 @@ namespace frontendpbo
             Models.Penginapan penginapan = this.GetPenginapan();
             contextPenginapan.Insert(penginapan);
             DataPenginapandataGridView1.DataSource = null;
-            // loaddata();
+            loaddata();
             Clear();
         }
 

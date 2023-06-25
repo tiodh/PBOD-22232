@@ -12,6 +12,10 @@ namespace frontendpbo.Contexts
     internal class ContextSarana
     {
         public List<SaranaPrasarana> ListSarana = new List<SaranaPrasarana>() { };
+        public List<SaranaPrasarana> GetListSarana()
+        {
+            return ListSarana;
+        }
 
         public void search(string cari)
         {
@@ -67,10 +71,9 @@ namespace frontendpbo.Contexts
         {
             bool isSuccess = false;
             string conStr = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember";
-
             using (NpgsqlConnection connection = new NpgsqlConnection(conStr))
             {
-                string sql = "UPDATE public.tiket SET id_sarana = :IdWisata, nama_sarana = :NamaSarana, deskripsi_sarana = :DeskripsiSarana \nWHERE Wisata_ID = :IDWisata;";
+                string sql = "UPDATE sarana_prasarana SET nama_sarana =:NamaSarana, deskripsi_sarana = :DeskripsiSarana WHERE id_sarana = :IdSarana;";
 
                 connection.Open();
 
@@ -79,7 +82,6 @@ namespace frontendpbo.Contexts
                     cmd.Parameters.Add(new NpgsqlParameter(":IdSarana", sarana.id_sarana));
                     cmd.Parameters.Add(new NpgsqlParameter(":NamaSarana", sarana.nama_sarana));
                     cmd.Parameters.Add(new NpgsqlParameter(":DeskripsiSarana", sarana.deskripsi_sarana));
-                    cmd.Parameters.Add(new NpgsqlParameter(":IDWisata", sarana.Wisata_ID));
                     cmd.CommandType = System.Data.CommandType.Text;
                     int JumlahData = cmd.ExecuteNonQuery();
                     if (JumlahData > 0)
@@ -93,7 +95,6 @@ namespace frontendpbo.Contexts
                                 t.id_sarana = sarana.id_sarana;
                                 t.nama_sarana = sarana.nama_sarana;
                                 t.deskripsi_sarana = sarana.deskripsi_sarana;
-                                t.Wisata_ID = sarana.Wisata_ID;
                             }
                         }
                     }
@@ -102,22 +103,17 @@ namespace frontendpbo.Contexts
                 return isSuccess;
             }
         }
-
         public DataTable ReadAll()
         {
             DataTable dataTable = new DataTable();
-
-            using (NpgsqlConnection connection = new NpgsqlConnection("host=localhost;port=5432;database=Julpangmumet;user id=postgres;password=123"))
+            using (NpgsqlConnection connection = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember"))
             {
                 connection.Open();
                 NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM sarana_prasarana", connection);
-
                 NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(command);
                 adapter.Fill(dataTable);
-
                 connection.Close();
             }
-
             return dataTable;
         }
     }

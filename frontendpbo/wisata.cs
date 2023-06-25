@@ -47,6 +47,7 @@ namespace frontendpbo
         public Models.Wisata GetWisata()
         {
             Models.Wisata wst = new Models.Wisata();
+
             wst.Id_Wisata = CurrentID;
             wst.Nama_Wisata = textBox1_Nama_Wisata.Text;
             wst.Deskripsi = textBox2_Deskripsi_Wisata.Text;
@@ -74,7 +75,7 @@ namespace frontendpbo
 
         private void btnclearwisata_Click(object sender, EventArgs e)
         {
-
+            Clear();
         }
 
         private void label2_Deskripsi_Click(object sender, EventArgs e)
@@ -84,6 +85,7 @@ namespace frontendpbo
 
         private void btntambahwisata_Click(object sender, EventArgs e)
         {
+            
             if (CurrentID > 0)
             {
                 Models.Wisata wisatas = this.GetWisata();

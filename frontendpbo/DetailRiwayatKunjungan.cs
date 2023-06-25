@@ -59,7 +59,7 @@ namespace frontendpbo
         {
             Riwayat riwayatKunjungan = new Riwayat();
 
-            
+
             riwayatKunjungan.Tanggal_Kunjungan = DateOnly.Parse(dtTanggal.Value.ToShortDateString());
             riwayatKunjungan.Jumlah_Tiket = int.Parse(tbJumlah.Text);
             riwayatKunjungan.Tiket_ID = ((Tiket)cbTiket.SelectedItem).id_tiket;
@@ -72,7 +72,7 @@ namespace frontendpbo
             return riwayatKunjungan;
         }
 
-        
+
 
         private void Edit_Riwayat_Kunjungan_Load(object sender, EventArgs e)
         {
@@ -92,34 +92,27 @@ namespace frontendpbo
 
         private void loadComboBoxTiket()
         {
-            List<Tiket> tiketList =  contextTiket.ReadtoCard();
+            List<Tiket> tiketList = contextTiket.ReadtoCard();
 
             cbTiket.DataSource = tiketList;
             cbTiket.ValueMember = "id_tiket";
             cbTiket.DisplayMember = "nama_tiket";
-        } 
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-            contextRiwayat = new ContextRiwayatKunjungan();
-            List<Riwayat> ListRiwayat = contextRiwayat.ListRiwayat;
-            contextRiwayat.search(textBox1.Text);
-            dataGridView1.DataSource = ListRiwayat;
         }
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridView1.Columns[e.ColumnIndex].Name == "Edit")
             {
-                /*tbNIM.Enabled = false;
-                btnInsert.Enabled = false;
-                btnUpdate.Enabled = true;*/
                 Riwayat riwayat = listRiwayats[e.RowIndex];
                 CurrentId = riwayat.Id;
                 cbPengunjung.SelectedValue = riwayat.Pengunjung_ID;
                 cbTiket.SelectedValue = riwayat.Tiket_ID;
                 tbJumlah.Text = riwayat.Jumlah_Tiket.ToString();
             }
+
+            btUpdate.Enabled = true;
+            btInsert.Enabled = false;
         }
 
         private void btInsert_Click(object sender, EventArgs e)
@@ -137,14 +130,14 @@ namespace frontendpbo
             dataGridView1.DataSource = null;
             ReadDataRiwayatKunjungan();
         }
-
+/*
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridView1.Columns[e.ColumnIndex].Name == "Edit")
             {
-                /*tbNIM.Enabled = false;
+                *//*tbNIM.Enabled = false;
                 btnInsert.Enabled = false;
-                btnUpdate.Enabled = true;*/
+                btnUpdate.Enabled = true;*//*
                 Riwayat riwayat = listRiwayats[e.RowIndex];
                 CurrentId = riwayat.Id;
                 cbPengunjung.SelectedValue = riwayat.Pengunjung_ID;
@@ -154,9 +147,9 @@ namespace frontendpbo
 
             btUpdate.Enabled = true;
             btInsert.Enabled = false;
-        }
+        }*/
 
-        private void DetailRiwayatKunjungan_Load(object sender, EventArgs e)
+        /*private void DetailRiwayatKunjungan_Load(object sender, EventArgs e)
         {
 
         }
@@ -164,7 +157,7 @@ namespace frontendpbo
         private void label4_Click(object sender, EventArgs e)
         {
 
-        }
+        }*/
 
         private void btClear_Click(object sender, EventArgs e)
         {
@@ -173,6 +166,14 @@ namespace frontendpbo
             tbJumlah.Text = "";
             cbPengunjung.SelectedValue = "";
             cbTiket.SelectedValue = "";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            contextRiwayat = new ContextRiwayatKunjungan();
+            List<Riwayat> ListRiwayat = contextRiwayat.ListRiwayat;
+            contextRiwayat.search(textBox1.Text);
+            dataGridView1.DataSource = ListRiwayat;
         }
     }
 }

@@ -30,14 +30,12 @@
         {
             flowLayoutPanel1 = new FlowLayoutPanel();
             panelDetail = new Panel();
-            pbIcon = new PictureBox();
-            textBox_searchingdataKeselamatan = new TextBox();
-            button_searchDetailkeselamatan = new Button();
-            panel1 = new Panel();
-            lbNama = new Label();
-            lbNomor = new Label();
-            lbAlamat = new Label();
             lbDeskripsi = new Label();
+            lbAlamat = new Label();
+            lbNomor = new Label();
+            lbNama = new Label();
+            pbIcon = new PictureBox();
+            panel1 = new Panel();
             flowLayoutPanel1.SuspendLayout();
             panelDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbIcon).BeginInit();
@@ -68,6 +66,42 @@
             panelDetail.Size = new Size(1264, 240);
             panelDetail.TabIndex = 6;
             // 
+            // lbDeskripsi
+            // 
+            lbDeskripsi.AutoSize = true;
+            lbDeskripsi.Location = new Point(387, 169);
+            lbDeskripsi.Name = "lbDeskripsi";
+            lbDeskripsi.Size = new Size(69, 20);
+            lbDeskripsi.TabIndex = 9;
+            lbDeskripsi.Text = "Deskripsi";
+            // 
+            // lbAlamat
+            // 
+            lbAlamat.AutoSize = true;
+            lbAlamat.Location = new Point(387, 128);
+            lbAlamat.Name = "lbAlamat";
+            lbAlamat.Size = new Size(57, 20);
+            lbAlamat.TabIndex = 8;
+            lbAlamat.Text = "Alamat";
+            // 
+            // lbNomor
+            // 
+            lbNomor.AutoSize = true;
+            lbNomor.Location = new Point(387, 90);
+            lbNomor.Name = "lbNomor";
+            lbNomor.Size = new Size(86, 20);
+            lbNomor.TabIndex = 7;
+            lbNomor.Text = "No Telepon";
+            // 
+            // lbNama
+            // 
+            lbNama.AutoSize = true;
+            lbNama.Location = new Point(387, 52);
+            lbNama.Name = "lbNama";
+            lbNama.Size = new Size(115, 20);
+            lbNama.TabIndex = 6;
+            lbNama.Text = "Nama Lembaga";
+            // 
             // pbIcon
             // 
             pbIcon.Dock = DockStyle.Left;
@@ -78,22 +112,6 @@
             pbIcon.SizeMode = PictureBoxSizeMode.Zoom;
             pbIcon.TabIndex = 0;
             pbIcon.TabStop = false;
-            // 
-            // textBox_searchingdataKeselamatan
-            // 
-            textBox_searchingdataKeselamatan.Location = new Point(393, 39);
-            textBox_searchingdataKeselamatan.Name = "textBox_searchingdataKeselamatan";
-            textBox_searchingdataKeselamatan.Size = new Size(682, 27);
-            textBox_searchingdataKeselamatan.TabIndex = 1;
-            // 
-            // button_searchDetailkeselamatan
-            // 
-            button_searchDetailkeselamatan.Location = new Point(1097, 39);
-            button_searchDetailkeselamatan.Name = "button_searchDetailkeselamatan";
-            button_searchDetailkeselamatan.Size = new Size(94, 29);
-            button_searchDetailkeselamatan.TabIndex = 2;
-            button_searchDetailkeselamatan.Text = "Search";
-            button_searchDetailkeselamatan.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -106,49 +124,11 @@
             panel1.TabIndex = 3;
             panel1.Paint += panel1_Paint;
             // 
-            // lbNama
-            // 
-            lbNama.AutoSize = true;
-            lbNama.Location = new Point(387, 52);
-            lbNama.Name = "lbNama";
-            lbNama.Size = new Size(115, 20);
-            lbNama.TabIndex = 6;
-            lbNama.Text = "Nama Lembaga";
-            // 
-            // lbNomor
-            // 
-            lbNomor.AutoSize = true;
-            lbNomor.Location = new Point(387, 90);
-            lbNomor.Name = "lbNomor";
-            lbNomor.Size = new Size(86, 20);
-            lbNomor.TabIndex = 7;
-            lbNomor.Text = "No Telepon";
-            // 
-            // lbAlamat
-            // 
-            lbAlamat.AutoSize = true;
-            lbAlamat.Location = new Point(387, 128);
-            lbAlamat.Name = "lbAlamat";
-            lbAlamat.Size = new Size(57, 20);
-            lbAlamat.TabIndex = 8;
-            lbAlamat.Text = "Alamat";
-            // 
-            // lbDeskripsi
-            // 
-            lbDeskripsi.AutoSize = true;
-            lbDeskripsi.Location = new Point(387, 169);
-            lbDeskripsi.Name = "lbDeskripsi";
-            lbDeskripsi.Size = new Size(69, 20);
-            lbDeskripsi.TabIndex = 9;
-            lbDeskripsi.Text = "Deskripsi";
-            // 
             // detail_dataKeselamatan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1422, 977);
-            Controls.Add(button_searchDetailkeselamatan);
-            Controls.Add(textBox_searchingdataKeselamatan);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "detail_dataKeselamatan";
@@ -164,8 +144,6 @@
         }
 
         #endregion
-        private TextBox textBox_searchingdataKeselamatan;
-        private Button button_searchDetailkeselamatan;
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
         private Panel panelDetail;

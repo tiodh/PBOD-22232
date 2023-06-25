@@ -11,7 +11,7 @@ namespace frontendpbo.Contexts
 {
     internal class ContextPengunjung
     {
-        private string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=132435;Database=peta_jember;";
+        private string connectionString = "Server=localhost;Port=5432;User Id=postgres;Password=123;Database=peta_jember;";
 
         public DataTable Read()
         {

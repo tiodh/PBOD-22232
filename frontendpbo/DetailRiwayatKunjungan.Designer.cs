@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -105,7 +105,6 @@
             this.label4.Size = new System.Drawing.Size(142, 21);
             this.label4.TabIndex = 13;
             this.label4.Text = "Tanggal Kunjungan";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -164,7 +163,7 @@
             // btClear
             // 
             this.btClear.BackColor = System.Drawing.Color.PaleGreen;
-            this.btClear.Location = new System.Drawing.Point(324, 534);
+            this.btClear.Location = new System.Drawing.Point(275, 438);
             this.btClear.Name = "btClear";
             this.btClear.Size = new System.Drawing.Size(125, 48);
             this.btClear.TabIndex = 6;
@@ -175,7 +174,7 @@
             // btUpdate
             // 
             this.btUpdate.BackColor = System.Drawing.Color.Gold;
-            this.btUpdate.Location = new System.Drawing.Point(167, 534);
+            this.btUpdate.Location = new System.Drawing.Point(144, 438);
             this.btUpdate.Name = "btUpdate";
             this.btUpdate.Size = new System.Drawing.Size(125, 48);
             this.btUpdate.TabIndex = 4;
@@ -186,7 +185,7 @@
             // btInsert
             // 
             this.btInsert.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btInsert.Location = new System.Drawing.Point(13, 534);
+            this.btInsert.Location = new System.Drawing.Point(14, 438);
             this.btInsert.Name = "btInsert";
             this.btInsert.Size = new System.Drawing.Size(125, 48);
             this.btInsert.TabIndex = 3;
@@ -209,19 +208,21 @@
             this.dataGridView1.RowTemplate.Height = 29;
             this.dataGridView1.Size = new System.Drawing.Size(562, 409);
             this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Edit
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Edit.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Edit.DefaultCellStyle = dataGridViewCellStyle3;
             this.Edit.HeaderText = "";
+            this.Edit.MinimumWidth = 6;
             this.Edit.Name = "Edit";
             this.Edit.ReadOnly = true;
             this.Edit.Text = "Edit";
             this.Edit.ToolTipText = "Edit";
             this.Edit.UseColumnTextForButtonValue = true;
+            this.Edit.Width = 125;
             // 
             // panel3
             // 
@@ -259,6 +260,7 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Search";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // DetailRiwayatKunjungan
             // 
@@ -269,7 +271,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DetailRiwayatKunjungan";
             this.Text = "Edit_Riwayat_Kunjungan";
-            this.Load += new System.EventHandler(this.DetailRiwayatKunjungan_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
