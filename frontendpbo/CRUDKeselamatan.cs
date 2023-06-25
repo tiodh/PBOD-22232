@@ -96,6 +96,7 @@ namespace frontendpbo
             if (isSucces)
             {
                 MessageBox.Show("input sukses");
+                LoadData();
             }
             else
             {
@@ -126,6 +127,7 @@ namespace frontendpbo
         {
             List<Keamanan> cari = Keamanan.Search(textBox_dataKeselamatan.Text);
             dataGridView1.DataSource = cari;
+            dataGridView1.Columns["Wisata_ID"].Visible = false; 
         }
     }
 }

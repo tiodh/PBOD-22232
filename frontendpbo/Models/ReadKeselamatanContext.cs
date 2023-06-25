@@ -19,9 +19,7 @@ namespace frontendpbo.Models
             using (NpgsqlConnection conn = new NpgsqlConnection(constr))
             {
                 string sql =
-                    @"SELECT * FROM data_keamanan";
-                //JOIN wisata ON transaksi.id_wisata = wisata.id_wisata
-                //JOIN tiket ON trasaksi.id_tiket = tiket.id_tiket";
+                    @"SELECT * FROM data_keamanan order by id_keamanan";
 
                 conn.Open();
                 using NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);

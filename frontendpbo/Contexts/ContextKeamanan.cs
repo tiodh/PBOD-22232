@@ -25,11 +25,13 @@ namespace frontendpbo.Contexts
                 connection.Open();
                 NpgsqlCommand command = connection.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = "insert into data_keamanan(nama_lembaga, alamat_keamanan, no_tlp, deskripsi_keamanan) values(@nama_keamanan, @alamat_keamanan, @no_tlp, @deskripsi_keamanan)";
-                command.Parameters.Add(new NpgsqlParameter("@nama_keamanan", newKeamanan.Name));
+                command.CommandText = "insert into data_keamanan(nama_keamanan, alamat_keamanan, no_tlp, deskripsi_keamanan, id_wisata) values(@nama_keamanan, @alamat_keamanan, @no_tlp, @deskripsi_keamanan, @id_wisata)"; 
+                command.Parameters.Add(new NpgsqlParameter("@nama_keamanan", newKeamanan.Name));    
                 command.Parameters.Add(new NpgsqlParameter("@deskripsi_keamanan", newKeamanan.Description));
                 command.Parameters.Add(new NpgsqlParameter("@alamat_keamanan", newKeamanan.Alamat));
                 command.Parameters.Add(new NpgsqlParameter("@no_tlp", newKeamanan.No_Tlp));
+                command.Parameters.Add(new NpgsqlParameter("@id_wisata", 1));
+
 
                 command.CommandType = System.Data.CommandType.Text;
                 int jmlDataBaru = command.ExecuteNonQuery();
@@ -38,8 +40,6 @@ namespace frontendpbo.Contexts
                     isSucces = true;
                     keamananList.Add(newKeamanan);
                 }
-                //connection.Close();
-                MessageBox.Show("Data berhasil diinput");
             }
             return isSucces;
         }
@@ -52,7 +52,7 @@ namespace frontendpbo.Contexts
                 try
                 {
                     connection.Open();
-                    string queryupdate = $"update data_keamanan set nama_lembaga = @DataA, deskripsi_keamanan = @DataB, alamat_keamanan = @DataC, no_tlp = @DataD where id_keamanan = @ID";
+                    string queryupdate = $"update data_keamanan set nama_keamanan = @DataA, deskripsi_keamanan = @DataB, alamat_keamanan = @DataC, no_tlp = @DataD where id_keamanan = @ID";
                     using (NpgsqlCommand command = new NpgsqlCommand(queryupdate, connection))
                     {
                         command.Parameters.AddWithValue("@DataA", data.Name);
@@ -94,7 +94,7 @@ namespace frontendpbo.Contexts
                         keamanan.No_Tlp = (string)reader["no_tlp"];
                         keamanan.Alamat = (string)reader["alamat_keamanan"];
                         keamanan.Description = (string)reader["deskripsi_keamanan"];
-                        //                        tiket.wisata_id = (int)reader["wisata_id"];
+
                         searchResults.Add(keamanan);
                     }
                 }
