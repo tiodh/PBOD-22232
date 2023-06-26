@@ -167,6 +167,7 @@ namespace frontendpbo
 
         private void penginapan_Click(object sender, EventArgs e)
         {
+            //openChildForm(new ); Belum Ada Form Detail
             showSubMenu(edit2);
         }
 
